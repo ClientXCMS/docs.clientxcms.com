@@ -27,7 +27,13 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'NEXT GEN',
+              path: '',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -67,6 +73,11 @@ const config: Config = {
           href: 'https://clientxcms.com',
           label: 'Retour au site',
           position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
         },
         /*{
           type: 'localeDropdown',
