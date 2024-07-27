@@ -87,7 +87,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcementBar',
-      content: `ClientXCMS V1 n'est plus maintenu. Nous travaillons actuellement sur la version NextGen. Consultez la nouvelle documentation ici : https://new-docs.clientxcms.com`,
+      content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
       backgroundColor: '#828eb7',
       textColor: '#000000',
       isCloseable: false,

@@ -23,7 +23,6 @@ apt-get install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod
 #### Installation des fichiers
 
 ```
-
 cd /var/www/pterodactyl/public
 apt-get install zip unzip
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip
@@ -57,7 +56,6 @@ Ajoutez un enregistrement A avec cette informations dans votre zone DNS:
 #### Installation des fichiers
 
 ```
-
 cd /var/www/
 apt-get install zip unzip
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip
@@ -78,7 +76,6 @@ nano phpmyadmin.exemple.com.conf
 
 ###### Exemple de fichier de configuration
 ```bash
-
 <VirtualHost *:80>
     ServerAdmin admin@example.com
     ServerName phpmyadmin.example.com

@@ -10,16 +10,16 @@ ClientXCMS est un projet open-source qui permet de gérer les services, factures
 Nous avons nativement développés les modules de création de services ou de moyens de paiement reconnus.
 
 #### Certains de nos principaux services pris en charge incluent :
-- [Plesk](https://clientxcms.com/app/Plesk)
-- [cPanel](https://clientxcms.com/app/Cpanel)
-- [Virtualizor](https://clientxcms.com/app/Virtualizor) - [Virtualizor pour revendeurs](https://clientxcms.com/app/Virtualizorcloud)
-- [Pterodactyl](https://clientxcms.com/app/Pterodactyl)
-- [Wisp](https://clientxcms.com/app/Wisp)
-- [Proxmox](https://clientxcms.com/app/Proxmox)
+- [Plesk](https://clientxcms.com/marketplace/plesk)
+- [cPanel](https://clientxcms.com/marketplace/Cpanel)
+- [Virtualizor](https://clientxcms.com/marketplace/Virtualizor) - [Virtualizor pour revendeurs](https://clientxcms.com/marketplace/Virtualizorcloud)
+- [Pterodactyl](https://clientxcms.com/marketplace/Pterodactyl)
+- [Wisp](https://clientxcms.com/marketplace/Wisp)
+- [Proxmox](https://clientxcms.com/marketplace/Proxmox)
 
 #### Certains de nos principaux passerelles de paiements pris en charge incluent :
 
-- [PayPal](https://clientxcms.com/app/Paypal)
-- [Stripe](https://clientxcms.com/app/Stripe)
-- [DediPass](https://clientxcms.com/app/Dedipass) 
-- [Paysafecard](https://clientxcms.com/app/Paysafecard)
+- [PayPal](https://clientxcms.com/marketplace/Paypal)
+- [Stripe](https://clientxcms.com/marketplace/Stripe)
+- [DediPass](https://clientxcms.com/marketplace/Dedipass) 
+- [Paysafecard](https://clientxcms.com/marketplace/Paysafecard)
