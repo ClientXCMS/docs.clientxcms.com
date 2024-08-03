@@ -27,6 +27,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           lastVersion: 'current',
           versions: {
             current: {

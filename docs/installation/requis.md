@@ -4,17 +4,45 @@ sidebar_position: 2
 
 # Prérequis
 
-Il est possible d'installer ClientXCMS sur la plupart des hébergements web ainsi que sur un VPS ou un dédié linux.
-On peut aussi l'installer sur un serveur Windows, mais cela n'est pas recommandé dù à des soucis de compatibilité avec lesquels le support technique ne pourrait pas vous aider. 
+## Cloud
+L'unique prérequis pour l'installation de l'espace client sur les serveurs de CLIENTXCMS est de disposer **d'un compte CLIENTXCMS** et d'une **licence valide**. Pour cela, rendez-vous sur [cette page](https://clientxcms.com/pricing) pour la commander.
+
+## Autohébergement
+Il est possible d'installer ClientXCMS sur la plupart des hébergements web ainsi que sur un VPS ou un dédié linux et de certaines connaissances techniques. Il est également nécessaire de disposer d'une **licence valide** pour l'installation en autohébergement. Pour cela, rendez-vous sur [cette page](https://clientxcms.com/pricing) pour la commander.
+
+### Prérequis techniques
+Nous conseillons d'avoir au minimum 100 Mo d'espace disque pour l'installation de ClientXCMS.
+:::info CTXHosting
+Si vous souhaitez un VPS optimisé pour ClientXCMS, nous vous recommandons de vous tourner vers [CTXHosting](https://ctxhosting.fr). Notre filiale propose des VPS optimisés pour ClientXCMS.
+:::
+#### Extensions PHP
+| Extensions | Extensions |
+|------------|------------|
+| Curl       | JSON       |
+| XML        | Zip        |
+| MBString   | Intl       |
+| BCMath     | Ctype      |
+| Fileinfo   | OpenSSL    |
+| JSON       | Mbstring   |
+| PDO        | Tokenizer  |
+| XML        |            |
 
 
+Pour vérifier si ces extensions sont installées, vous pouvez créer un fichier `info.php` à la racine de votre serveur contenant le code suivant :
+```php
+<?php
+phpinfo();
+```
 
-## Prérequis
-| Prérequis      |                  Minimum                   |        Recommandé |
-|:---------------|:-----------------------------------------:|------------------:|
-| Version PHP    |                    8.1                    |               8.1 |
-| PDO            |                    PDO                    |               PDO |
-| Espace disque  |                  150 MO                   |              2 GO |
-| Version MySQL  |                   5.2.0                   | 8.0.28 (Dernière) |
-| Extensions PHP | Curl JSON XML Zip MBString Intl simplexml |
-| Modules apache |                mod_rewrite                |
+Pour installer les extensions manquantes, vous pouvez utiliser la commande suivante :
+```bash
+sudo apt-get update
+sudo apt-get install php8.2 php8.2-bcmath php8.2-ctype php8.2-fileinfo php8.2-json php8.2-mbstring php8.2-openssl php8.2-pdo php8.2-tokenizer php8.2-xml
+```
+
+### Base de données
+ClientXCMS supporte nativement MySQL. Il est recommandé d'utiliser la **version 8.0.38** ou supérieure pour une compatibilité optimale. Cependant, vous pouvez utiliser d'autres bases de données supportées par Laravel.
+### Serveur web
+ClientXCMS est compatible avec la plupart des serveurs web. Il est recommandé d'utiliser [Apache ou Nginx](./selfhosted) ou un [hébergement Plesk](./plesk). 
+### Docker
+ClientXCMS pourra bientôt être installé via Docker. Pour cela, vous aurez besoin de Docker et Docker Compose installés sur votre serveur.
