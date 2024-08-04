@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ctxhostingvitrine:
+    restart: always
+    image: registry.as216117.net:9443/docsclientxcms:latest
+    ports:
+      - "8092:80"
+    volumes:
+      - ./docs:/app/docs
+      - ./blog:/app/blog
+      - ./versioned_docs:/app/versioned_docs
