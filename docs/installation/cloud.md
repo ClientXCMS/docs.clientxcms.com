@@ -67,6 +67,8 @@ Si vous souhaitez réinstaller votre espace client, vous pouvez le faire depuis 
 Il vous sera demandé de confirmer la réinstallation. Une fois confirmé, le système va réinstaller l'espace client sur votre domaine.
 ![Réinstallation](/img/next_gen/Installation/cloud/reinstall.png)
 
+Les identifiants de connexion vous seront envoyés par e-mail une fois l'installation terminée.
+
 :::info TIPS
 Dans le cas ou il y a un réinstallation et un changement de domaine, il faudra changer le domaine avant de réinstaller l'instance.
 :::

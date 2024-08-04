@@ -80,11 +80,14 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
 
 1. Créez une base de données dans le tableau de bord de gestion du domaine, sous "Fichiers et bases de données" → "Bases de données".
    ![Bases de données - Plesk](/img/next_gen/Installation/Plesk/Plesk_BDDs.png)
+
 2. Utilisez un mot de passe robuste pour des raisons de sécurité et notez bien les informations de connexion avant de confirmer.
    ![Bases de données (création) - Plesk](/img/next_gen/Installation/Plesk/Plesk_DB_create.png)
+
 3. Dans le gestionnaire de fichiers de Plesk, allez dans la racine du projet Laravel (par défaut "httpdocs").
 4. Renommez le fichier `.env.example` en `.env`.
    ![Fichier .env.example (renommage) - Plesk](/img/next_gen/Installation/Plesk/Plesk_envexample_rename.png)
+
 5. Cliquez sur le fichier `.env` et modifiez les valeurs :
     - `APP_ENV=production` → `APP_ENV=dev`
     - `APP_URL=http://localhost` → `APP_URL=https://votre.domaine.com` (mettez bien le domaine de votre espace client)
