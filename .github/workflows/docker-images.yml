@@ -6,7 +6,7 @@ on:
       - V2
 
 jobs:
-  docker:
+  Build-Images:
     runs-on: ubuntu-latest
     steps:
       -
@@ -40,4 +40,3 @@ jobs:
           user: ${{ secrets.VPS_USER }}
           private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           command: /var/www/docs.clientxcms.com/restart-docker.sh
-          
