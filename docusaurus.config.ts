@@ -87,11 +87,8 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcementBar',
-<<<<<<< Updated upstream
       content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
-=======
       content: `ClientXCMS V1 n'est plus maintenu. Nous travaillons actuellement sur la version NextGen.`,
->>>>>>> Stashed changes
       backgroundColor: '#828eb7',
       textColor: '#000000',
       isCloseable: false,
