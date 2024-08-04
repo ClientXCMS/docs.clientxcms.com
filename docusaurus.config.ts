@@ -11,15 +11,15 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://cdn.clientxcms.com/ressources/Themes/CLIENTXCMS/images/favicon.ico',
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
-  projectName: 'clientxcms-docs', // Usually your repo name.
+  projectName: 'docs.clientxcms.com', // Usually your repo name.
 
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   presets: [
@@ -89,6 +89,7 @@ const config: Config = {
     announcementBar: {
       id: 'announcementBar',
       content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
+      content: `ClientXCMS V1 n'est plus maintenu. Nous travaillons actuellement sur la version NextGen.`,
       backgroundColor: '#828eb7',
       textColor: '#000000',
       isCloseable: false,
