@@ -4,6 +4,8 @@ node_modules/
 .dockerignore
 .gitignore
 .git
+.github
+./github
 ./git
 .markdownlint_ignore
 .markdownlint.json
