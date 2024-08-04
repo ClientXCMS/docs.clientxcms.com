@@ -13,8 +13,7 @@ Ceci une page de documentation globale sur la gestion des modules.
 *Note* : Les modules autorisés sont récupérés depuis l'API CLIENTXCMS de l'utilisateur de la licence de l'installation. En cas d'achat depuis un autre utilisateur, il faudra demander à notre support de modifier.
 
 ## Installation d'un module
-Pour installer un module officiel, il vous suffit de se rendre dans votre `Espace d'administration` > `Extention` puis cliquez sur "Télécharger" en dessous de du nom du module
-Le module se téléchargera directement depuis *clientxcms.com* et va s'installer sur votre installation de lui même.
+Pour installer un module officiel, il vous suffit de se rendre dans votre `Espace d'administration` > `Extention` puis cliquez sur "Activer" en dessous de du nom du module
 :::info Information
 Si aucun bouton apparait, il suffit de forcer l'actualisation du cache en cliquant sur le bouton Forcer la vérification qui ce trouvent dans `Espace d'administration` > `licence`.
 Si le problème persiste, veuillez contacter notre support.
