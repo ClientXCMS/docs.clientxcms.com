@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  ctxhostingvitrine:
+  docs:
     restart: always
     image: registry.as216117.net:9443/docsclientxcms:latest
     ports:
