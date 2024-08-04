@@ -6,12 +6,12 @@ sidebar_position: 2
 
 Pour identifier vos clients, un système complet de compte utilisateurs est disponible pour sécuriser votre espace client.
 
-Pour y accéder : `Espace Administration` > `Utilisateurs`
+Pour y accéder : `Espace Administration` > `Clients`
 
 ## Espace client
 Les pages d'authentification sont disponibles uniquement aux utilisateurs non identifiés.
 ### Inscription
-![img](https://media.discordapp.net/attachments/475073153509490689/1049085429011451945/image.png?width=455&height=675)
+![img](/img/next_gen/Autres/Utilisateur/image.png)
 :::info Informations
 L'adresse du client sera demandé lors du processus de paiement pour émettre une facture avec les informations détaillés de l'utilisateur
 :::
