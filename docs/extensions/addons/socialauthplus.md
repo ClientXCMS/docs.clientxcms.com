@@ -103,7 +103,7 @@ Sélectionnez tous les champs et cliquez sur le bouton bleu "**Mettre à jour**"
 **1.** Rendez-vous sur le [portail développeur Discord](https://discord.com/developers/applications) et connectez-vous à votre compte Discord.
 
 **2.** Cliquez sur le bouton bleu "New Application" en haut à droite pour créer une nouvelle application.
-![Image : Discord Config - Nouvelle Application](/img/next_gen/Modules/SocialAuth/Sa+_Discord1.png)
+![Image : Discord Config - Nouvelle Application](/img/next_gen/Modules/SocialAuth/SA+_Discord1.png)
 
 **3.** Donnez un nom à votre application, cochez pour approuver les conditions générales d'utilisation et les politiques pour les développeurs de Discord. Cliquez ensuite sur le bouton "Create" en bas à droite pour enregistrer la nouvelle application.
 ![Image : Discord Config - Créer l'Application](/img/next_gen/Modules/SocialAuth/SA+_Discord2.png)
