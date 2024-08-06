@@ -1,6 +1,4 @@
-build/
 node_modules/
-
 .dockerignore
 .gitignore
 .git
@@ -15,5 +13,3 @@ Dockerfile
 LICENSE
 makefile
 README.md
-
-pages/
