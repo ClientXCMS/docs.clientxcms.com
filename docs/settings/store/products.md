@@ -40,6 +40,7 @@ Les cycles de facturation permettent de définir la période de facturation pour
 - Triennal
 - Hebdomadaire
 ## Création
+Pour ajouter un produit, cliquez sur le bouton "Créer" en haut à gauche de la page.
 ![img](/img/next_gen/settings/store/products/create_product.png)
 **Nom du produit** : Nom de vente qui sera affiché aux clients
 
