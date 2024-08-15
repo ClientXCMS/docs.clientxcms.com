@@ -38,3 +38,5 @@ jobs:
         with:
           pull-request-number: ${{ github.event.pull_request.number }}
           merge-method: merge
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_SECRETS }}
