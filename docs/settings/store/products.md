@@ -80,7 +80,7 @@ Vous pouvez éditer un produit en cliquant sur le bouton "Afficher" dans la colo
 ### Edition de la configuration
 Vous pouvez configurer les performances de l'offre en définissant les ressources, les fonctionnalités et les limitations selon le type du produit.
 
-![Configuration de l'offre](/img/next_gen/Modules/Pterodactyl/images_4.png)
+![Configuration de l'offre](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
 
 Voici un exemple de configuration pour un produit Pterodactyl.
 

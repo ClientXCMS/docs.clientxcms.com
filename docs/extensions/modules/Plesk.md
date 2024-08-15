@@ -6,10 +6,6 @@ sidebar_position: 2
 
 Le module Plesk permet de fournir des offres Plesk à vos clients. Le module supporte les revendeurs web et hébergement simple. Il fonctionne avec les plans Plesk qui facilite grandement sa configuration puisqu'il suffit de lié un produit à un plan Plesk.
 
-| Création 	| Suspension 	| Expiration 	| Unsuspend 	| Importation 	|
-|----------	|------------	|------------	|-----------	|-------------	|
-|     ✅    	|      ✅     	|      ✅     	|     ✅     	|      ✅      	|
-
 :::success À savoir
 Ce module est compatible avec les versions 11, 11.5, 12, 12.5, Onyx, et Obsidian de Plesk.
 :::
@@ -21,7 +17,7 @@ apt install php-xml
 :::
 
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre ClientXCMS. [cliquez ici pour l'activer](../)
+Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
 :::
 ### Fonctionnalités supportées 
 - Automatisez la création et l'approvisionnement des comptes
@@ -33,9 +29,9 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit a
 
 ## Création du serveur
 
-Créer un serveur ClientXCMS dans `Espace d'administration` > `Paramètre` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Plesk". 
+Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Paramètres généraux` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Plesk".
 
-![img](/img/next_gen/Modules/Plesk/image.png)
+![img](/img/next_gen/extensions/modules/plesk/image.png)
 
 **Adresse IP** : Sous domaine ou adresse IP du Plesk
 
@@ -43,18 +39,18 @@ Créer un serveur ClientXCMS dans `Espace d'administration` > `Paramètre` > `Se
 
 **Password** : Mot de passe admin
 
-Le port suivant doit être ouvert pour connecter ClientXCMS à votre Plesk : 8443
+Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Plesk : 8443
 
 Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
 
 ## Configuration de l'offre
-En premier lieu, [créez votre produit](../../store/produits#création) en sélectionnant **Plesk Hosting** pour les hébergements Web ou **Plesk Reselling** pour livrer des revendeurs Web.
+En premier lieu, [créez votre produit](../../store/produits#création) en sélectionnant Plesk.
 
-![img](/img/next_gen/Modules/Plesk/image_2.png)
+![img](/img/next_gen/extensions/modules/plesk/image_2.png)
 
-Après appuyez sur le bouton "Créer" il vous créer votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigeras vers la page de configuration de l'offre. Si le champs est vide, assurez vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système pour récupérer les plans Plesk.
+Après appuyer sur le bouton "Créer" il vous crée votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigera vers la page de configuration de l'offre. Si les champs est vide, assurez-vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système pour récupérer les plans Plesk.
 
-![img](/img/next_gen/Modules/Plesk/image_3.png)
+![img](/img/next_gen/extensions/modules/plesk/image_3.png)
 
 Dans cette page, vous pourrez sélectionner le plan qui faudra livrer à vos clients puis sauvegarder.
 
@@ -66,25 +62,25 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Hosting" label="Hosting">
 
-![img](/img/next_gen/Modules/Plesk/image_4.png)
+![img](/img/next_gen/extensions/modules/plesk/image_4.png)
 
 </TabItem>
 
 <TabItem value="Revendeur" label="Revendeur">
 
-![img](/img/next_gen/Modules/Plesk/image_5.png)
+![img](/img/next_gen/extensions/modules/plesk/image_5.png)
 
 </TabItem>
 
 <TabItem value="AdminHosing" label="Admin Hosting">
 
-![img](/img/next_gen/Modules/Plesk/image_6.png)
+![img](/img/next_gen/extensions/modules/plesk/image_6.png)
 
 </TabItem>
 
 <TabItem value="AdminRevendeur" label="Admin Revendeur">
 
-![img](/img/next_gen/Modules/Plesk/image_7.png)
+![img](/img/next_gen/extensions/modules/plesk/image_7.png)
 
 </TabItem>
 

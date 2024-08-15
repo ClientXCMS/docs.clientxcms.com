@@ -5,21 +5,19 @@ sidebar_position: 1
 # Wisp
 Wisp.gg est un panel très répandu pour gérer des serveurs de jeux très rapidement et simplement. Ce module permet de créer les services de vos clients avec les performances choisis. Il permet de proposer tous les types d'œuf Wisp possible à la vente.
 
-
-| Création 	| Suspension 	| Expiration 	| Unsuspend 	| Importation 	|
-|----------	|------------	|------------	|-----------	|-------------	|
-|     ✅    	|      ✅     	|      ✅     	|     ✅     	|      ✅      	|
-
 :::info Modules
 Pour utiliser les fonctionnalités suivantes, il faut que le module Wisp soit activé sur votre ClientXCMS. [cliquez ici pour l'activer](../)
 :::
 
 ## Authentification
-Créez un serveur ClientXCMS dans `Espace d'administration ` > `Paramètre` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Wisp". 
+Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Paramètres généraux` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Wisp".
+![img](/img/next_gen/extensions/modules/wisp/images_1.png)
 
-![img](/img/next_gen/Modules/Wisp/images_1.png)
+**Adresse IP** : Adresse IP du Pterodactyl.
 
-**Adresse IP** : Sous domaine ou Adresse IP du Wisp.
+**Nom d'hôte** : Nom d'hôte du Pterodactyl.
+
+**Port** : 443 avec un domaine ou 80 avec une IP.
 
 **Client API** : Clé client.
 
@@ -28,7 +26,7 @@ Créez un serveur ClientXCMS dans `Espace d'administration ` > `Paramètre` > `S
 ### Clé client 
 
 Clé d'api client disponible sur votre Wisp `/account/api`
-![img](/img/next_gen/Modules/Wisp/images_2.png)
+![img](/img/next_gen/extensions/modules/wisp/images_2.png)
 
 **Description** : CLIENTXCMSAPI
 
@@ -39,26 +37,26 @@ Votre clé d'api client vous sera donnée qu'une seule fois, après elle sera tr
 
 Clé d'api client (Account) disponible sur votre Wisp `/admin/api/new`
 
-![img](/img/next_gen/Modules/Wisp/images_3.png)
+![img](/img/next_gen/extensions/modules/wisp/images_3.png)
 
 **Permissions** : Comme dans la capture
 
 **Description** : CLIENTXCMSAPI
 
 ## Configuration de l'offre
-![img](/img/next_gen/Modules/Wisp/images_4.png)
-- **Mémoire (MB)**: Mémoire du serveur
-- **Espace Disque (MB)**: Espace disque du serveur
-- **Block IO**: poids IO du serveur.
-- **Swap**: Swap du serveur
-- **ID Egg Wisp**: Eggs disponible
-- **ID Location Wisp**: Location Wisp
-- **Serveur**: Serveur Wisp où le service va être livrer
-- **Port à attribuer au serveur**: Ports spécifiques (Exemple FIVEM)
-- **Nom du serveur**: Nom du serveur**
-- **Bases de données à attribuer au serveur**: Nombre de bases de données
-- **Sauvegardes de données à attribuer au serveur**: Nombre de sauvegardes
-- **Allocation à attributer au serveur**: Nombre d'allocation (port à donner)
+![img](/img/next_gen/extensions/modules/wisp/images_4.png)
+- **Mémoire (MB)** : Mémoire du serveur
+- **Espace Disque (MB)** : Espace disque du serveur
+- **Block IO** : poids IO du serveur.
+- **Swap** : Swap du serveur
+- **ID Egg Wisp** : Eggs disponible
+- **ID Location Wisp** : Location Wisp
+- **Serveur** : Serveur Wisp où le service va être livrer
+- **Port à attribuer au serveur** : Ports spécifiques (Exemple FIVEM)
+- **Nom du serveur** : Nom du serveur**
+- **Bases de données à attribuer au serveur** : Nombre de bases de données
+- **Sauvegardes de données à attribuer au serveur** : Nombre de sauvegardes
+- **Allocation à attribuer au serveur** : Nombre d'allocations (port à donner)
 
 :::success Conseil de pro
 Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf Wisp qui veulent parmi la liste
@@ -79,5 +77,5 @@ Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf 
 | %service_id%      | Id du service                 |
 
 ## Panel de gestion
-![img](/img/next_gen/Modules/Wisp/images_5.png)
+![img](/img/next_gen/extensions/modules/wisp/images_5.png)
 

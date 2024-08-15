@@ -6,24 +6,23 @@ sidebar_position: 1
 Pterodactyl est un panel très répandu pour gérer des serveurs de jeux très rapidement et simplement. Ce module permet de créer les services de vos clients avec les performances choisis.
 Il permet de proposer tous les types d'œuf Pterodactyl possible à la vente.
 
-
-| Création 	| Suspension 	| Expiration 	| Unsuspend 	| Importation 	|
-|----------	|------------	|------------	|-----------	|-------------	|
-|     ✅    	|      ✅     	|      ✅     	|     ✅     	|      ✅      	|
-
 :::warning Attention
 Les versions 0.7 de Pterodactyl sont dépréciées et donc plus supportés sur ce module.
 :::
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Pterodactyl soit activé sur votre ClientXCMS. [cliquez ici pour l'activer](../)
+Pour utiliser les fonctionnalités suivantes, il faut que le module Pterodactyl soit activé sur votre CLIENTXCMS . [cliquez ici pour l'activer](../)
 :::
 
 ## Authentification
-Créez un serveur ClientXCMS dans `Espace d'administration ` > `Paramètre` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Pterodactyl". 
+Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Paramètres généraux` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Pterodactyl". 
 
-![img](/img/next_gen/Modules/Pterodactyl/images_1.png)
+![img](/img/next_gen/extensions/modules/pterodactyl/images_1.png)
 
-**Adresse IP** : Sous domaine ou Adresse IP du Pterodactyl.
+**Adresse IP** : Adresse IP du Pterodactyl.
+
+**Nom d'hôte** : Nom d'hôte du Pterodactyl.
+
+**Port** : 443 avec un domaine ou 80 avec une IP.
 
 **Client API** : Clé client.
 
@@ -32,35 +31,35 @@ Créez un serveur ClientXCMS dans `Espace d'administration ` > `Paramètre` > `S
 ### Clé client 
 
 Clé d'api client disponible sur votre Pterodactyl `/account/api`
-![img](/img/next_gen/Modules/Pterodactyl/images_2.png)
+![img](/img/next_gen/extensions/modules/pterodactyl/images_2.png)
 
-**Description** : CLIENTXCMSAPI
+**Description** : CLIENTXCMS API
 
-**Allowed ips** : Laissez vide ou mettez l'IP de votre ClientXCMS pour plus de sécurité.
+**Allowed ips** : Laissez vide ou mettez l'IP de votre CLIENTXCMS pour plus de sécurité.
 
 Votre clé d'api client vous sera donnée qu'une seule fois, après elle sera tronquée.
 ### Clé application
 Clé d'api client (Account) disponible sur votre Pterodactyl `/admin/api/new`
 
-![img](/img/next_gen/Modules/Pterodactyl/images_3.png)
+![img](/img/next_gen/extensions/modules/pterodactyl/images_3.png)
 **Permissions** : Comme dans la capture
 
-**Description** : CLIENTXCMSAPI
+**Description** : CLIENTXCMS API
 
 ## Configuration de l'offre
-![img](/img/next_gen/Modules/Pterodactyl/images_4.png)
+![img](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
 - **Mémoire (MB)**: Mémoire du serveur
-- **Espace Disque (MB)**: Espace disque du serveur
-- **Block IO**: poids IO du serveur.
+- **Espace Disque (MB)** : Espace disque du serveur
+- **Block IO** : poids IO du serveur.
 - **Swap**: Swap du serveur
 - **ID Egg Pterodactyl**: Eggs disponible
 - **ID Location Pterodactyl**: Location Pterodactyl
 - **Serveur**: Serveur Pterodactyl où le service va être livrer
-- **Port à attribuer au serveur**: Ports spécifiques (Exemple FIVEM)
-- **Nom du serveur**: Nom du serveur**
-- **Bases de données à attribuer au serveur**: Nombre de bases de données
-- **Sauvegardes de données à attribuer au serveur**: Nombre de sauvegardes
-- **Allocation à attributer au serveur**: Nombre d'allocation (port à donner)
+- **Port à attribuer au serveur** : Ports spécifiques (Exemple FIVEM)
+- **Nom du serveur** : Nom du serveur**
+- **Bases de données à attribuer au serveur** : Nombre de bases de données
+- **Sauvegardes de données à attribuer au serveur** : Nombre de sauvegardes
+- **Allocation à attribuer au serveur** : Nombre d'allocations (port à donner)
 
 :::success Conseil de pro
 Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf pterodactyl qui veulent parmi la liste
@@ -81,5 +80,5 @@ Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf 
 | %service_id%      | Id du service                 |
 
 ## Panel de gestion
-![img](/img/next_gen/Modules/Pterodactyl/images_5.png)
+![img](/img/next_gen/extensions/modules/pterodactyl/images_5.png)
 
