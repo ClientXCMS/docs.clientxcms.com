@@ -38,5 +38,5 @@ jobs:
         with:
           pull-request-number: ${{ github.event.pull_request.number }}
           merge-method: merge
-        env:
           token: ${{ secrets.DOCS_SECRETS }}
+
