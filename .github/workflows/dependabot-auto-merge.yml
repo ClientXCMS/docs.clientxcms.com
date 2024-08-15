@@ -34,9 +34,7 @@ jobs:
             return pr ? pr.number : null;
 
       - name: Auto merge Dependabot PR
-        uses: peter-evans/enable-pull-request-automerge@v2
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
-          pull-request-number: ${{ steps.get_pr_id.outputs.result }}
+          pull-request-number: ${{ github.event.pull_request.number }}
           merge-method: merge
-        env:
-          GITHUB_TOKEN: ${{ secrets.DOCS_SECRETS }}
