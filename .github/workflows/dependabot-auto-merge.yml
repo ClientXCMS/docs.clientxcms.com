@@ -38,3 +38,5 @@ jobs:
         with:
           pull-request-number: ${{ steps.get_pr_id.outputs.result }}
           merge-method: merge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
