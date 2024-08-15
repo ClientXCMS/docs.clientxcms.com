@@ -24,11 +24,11 @@ jobs:
 
       - name: Run build
         run: npm run build
+
           
-      - name: Auto approve/merge Dependabot (native) PR
-        uses: Yproximite/auto-approve-and-merge-dependabot-action@v0.1.0
+      - name: auto-dependabot-pull-request-merge
+        # You may pin to the exact commit or the version.
+        # uses: KeisukeYamashita/auto-dependabot-pull-request-merge@a7ac708f2c3b0c28e86ad099d6ce7f2a5219fd94
+        uses: KeisukeYamashita/auto-dependabot-pull-request-merge@v1
         with:
-          # The GitHub token to use for auto-approving and auto-merging, can be ${{ secrets.GITHUB_TOKEN }}.
-          github-token:  ${{ secrets.DOCS_SECRETS }}
-          # Type of update for auto-merging, can be "major", "minor" or "patch".
-          update-type: patch
+          token: ${{ secrets.DOCS_SECRETS }}
