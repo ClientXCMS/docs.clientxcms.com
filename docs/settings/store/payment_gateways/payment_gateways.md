@@ -14,7 +14,7 @@ Dans chaque passerelle, vous pouvez modifier ces paramètres :
 - **Montant minimum** : Le montant minimum pour utiliser cette passerelle de paiement.
 - **Statut** : Le statut de la passerelle de paiement  [(Voir ici pour plus d'informations)](./payment_gateways#status)
 
-![img](/img/next_gen/settings/store/payment_gateways/balance/balance.png)
+![img](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 Voici un exemple de configuration de la passerelle de paiement Balance.
 
 Pour chaque passerelle de paiement, des champs supplémentaires peuvent être configurés. Pour plus d'informations sur la configuration d'une passerelle de paiement, veuillez consulter la documentation de la passerelle de paiement concernée.
@@ -26,3 +26,6 @@ Les status permettent de définir l'état de la passerelle de paiement.
 ## Modifier la passerelle de paiement d'une facture
 Vous pouvez modifier la passerelle de paiement d'une facture en allant dans la section `Factures` puis en selection la facture que vous souhaitez modifier. Vous pouvez ensuite modifier la passerelle de paiement de la facture et sauvegarder.
 ![img](/img/next_gen/settings/store/payment_gateways/invoice.png)
+
+## Abonnement
+A l'heure actuelle, il n'est pas possible de configurer une passerelle de paiement pour les abonnements. Cependant, vous pouvez configurer une passerelle de paiement pour les produits et services.
