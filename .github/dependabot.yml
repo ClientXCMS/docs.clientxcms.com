@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 1
+    target-branch: "V2"  # Assurez-vous que cette branche est correcte
+    # Group updates to reduce the number of PRs
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
