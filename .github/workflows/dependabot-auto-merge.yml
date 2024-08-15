@@ -25,18 +25,7 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Get Pull Request ID
-        id: get_pr_id
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const pr = context.payload.pull_request;
-            return pr ? pr.number : null;
-
       - name: Auto merge Dependabot PR
-        uses: peter-evans/enable-pull-request-automerge@v3
+        uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          pull-request-number: ${{ github.event.pull_request.number }}
-          merge-method: merge
-          token: ${{ secrets.DOCS_SECRETS }}
-
+          github-token: ${{ secrets.DOCS_SECRETS }}
