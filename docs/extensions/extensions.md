@@ -14,7 +14,7 @@ Ceci une page de documentation globale sur la gestion des modules.
 - **Thèmes** : Ensemble de fichiers de style pour personnaliser l'apparence du CMS
 
 ### Extensions officiels
-![img](/img/next_gen/Modules/image_1.png)
+![img](/img/next_gen/extensions/image_1.png)
 
 *Note* : Les extensions autorisées sont récupérées depuis l'API CLIENTXCMS de l'utilisateur de la licence de l'installation. En cas d'achat depuis un autre utilisateur, il faudra demander à notre support de modifier.
 
@@ -25,7 +25,7 @@ Si aucun bouton apparait, il suffit de forcer l'actualisation du cache en cliqua
 Si le problème persiste, veuillez contacter notre support.
 Pour un achat recent, veuillez attendre un peu ou forcer également l'actualisation du cache.
 :::
-![img](/img/next_gen/Modules/image_2.png)
+![img](/img/next_gen/extensions/image_2.png)
 ## Activation d'une extension
 
 L'activation se fait en 1 clic, sur la page `Espace d'administration` > `Extention` en cliquant sur le bouton `Activer` en bas de la boite d'informations de l'extension.
