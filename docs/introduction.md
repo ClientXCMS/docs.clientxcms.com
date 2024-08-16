@@ -4,7 +4,7 @@ slug: /
 ---
 # Introduction
 Bienvenue sur la documentation de **CLIENTXCMS**. Vous trouverez ici toutes les informations nécessaires pour installer, configurer et utiliser notre CMS.
-
+![img](https://clientxcms.com/Themes/CLIENTXCMS/images/CLIENTXCMS/home/nextgen/home.png)
 ## Présentation
 Projet lancé en 2020, **CLIENTXCMS** est un système de gestion de clients pour les hébergeurs de jeux et de serveurs. Il permet de gérer les clients, les services, les factures, les tickets et bien plus encore. Il est basé sur le framework [PHP Laravel](https://laravel.com) et utilise une base de données MySQL.
 
