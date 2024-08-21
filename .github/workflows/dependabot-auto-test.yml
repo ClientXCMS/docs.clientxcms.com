@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: Discord notification
-        uses: cl8dep/action-discord@v0
+        uses: cl8dep/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: 'The {{ EVENT_PAYLOAD.repository.full_name }} project has some dependencies to update.'
