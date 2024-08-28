@@ -10,7 +10,7 @@ Pour configurer le virement bancaire, allez dans le menu `Paramètres` puis dans
 - Le client reçoit la commande
 ## Configuration du virement bancaire
 Vous pouvez configurer le nom et le montant minimum pour le virement bancaire.
-Plus d'information sur la configuration d'une passerelle de paiement [ici](/docs/settings/store/payment_gateways).
+Plus d'information sur la configuration d'une passerelle de paiement [ici](/payment_gateways).
 
 Vous pouvez également ajouter des instructions pour le virement bancaire qui sera affiché sur la facture comme ceci : 
 ![img](/img/next_gen/settings/store/payment_gateways/bank_transfert/bank_transfert.png)

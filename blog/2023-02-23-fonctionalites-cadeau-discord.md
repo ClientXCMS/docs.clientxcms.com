@@ -2,13 +2,15 @@
 slug: fonctionalites-cadeau-discord
 title: Fonctionnalités Cadeau webhook Discord
 authors:
-    name: MartinDev
-    title: Président
+  - name: MartinDev
+    title: ClientXCMS Team
     url: https://github.com/DarkIncognito85
     image_url: https://github.com/DarkIncognito85.png
 tags: [nouvelle fonctionnalités, news, mise à jour, discord, cadeau, webhook]
 ---
 Nous sommes heureux de vous présenter notre toute nouvelle fonctionnalité avec le module [DiscordGift](https://clientxcms.com/store/DiscordGift) : l'envoi de codes cadeaux aléatoires donnant des crédits via une webhook sur votre serveur Discord !
+
+<!-- truncate -->
 
 Désormais, vous pouvez configurer votre compte pour envoyer des codes cadeaux à vos utilisateurs de manière aléatoire, avec un certain nombre d'utilisations. Lorsqu'un utilisateur utilise le code, une webhook sera envoyée sur votre serveur Discord pour vous informer les autres utilisateurs que le code vient d'être utilisé et qu'il faut vite profiter du code également.
 

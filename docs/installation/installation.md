@@ -18,5 +18,5 @@ L'installation en autohébergement nécessite des connaissances en administratio
 :::
 
 ## Ancienne version
-L'utisation de l'ancienne version de l'espace client est déconseillée. Cependant, si vous souhaitez l'utiliser, vous pouvez suivre les instructions d'installation [ici](/v1/).
+L'utisation de l'ancienne version de l'espace client est déconseillée. Cependant, si vous souhaitez l'utiliser, vous pouvez suivre les instructions d'installation [ici](/v1/introduction).
 à savoir que cette version n'est plus maintenue et ne reçoit plus de mises à jour de sécurité. Il sera donc plus difficile de trouver de l'aide en cas de problème. Nous vous recommandons donc de migrer vers la [nouvelle version de l'espace client](./migrate).
