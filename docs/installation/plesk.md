@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Plesk
 
-Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées sur plesk. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](/cloud).
+Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées sur plesk. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](./cloud).
 
 ## Demander le téléchargement
 :::info
