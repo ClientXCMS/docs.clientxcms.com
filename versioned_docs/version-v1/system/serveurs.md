@@ -72,10 +72,10 @@ Module         | Port           |
 Vous pouvez supprimer un serveur en cliquant sur le bouton rouge dans la colonne "Actions". Une confirmation vous sera demandé, après ceci il supprimera le serveur et toutes les données attachées à celui-là.
 ## Edition
 Pour éditer un serveur, appuyez sur le bouton Bleu dans la colonne "Actions".
-Modifiez les informations comme vous le souhaitez puis [Tester la connexion](serveurs#Test-de-connexion) pour être sûr de pas avoir désynchronisé quelque chose.
+Modifiez les informations comme vous le souhaitez puis [Tester la connexion](serveurs#test-de-connexion) pour être sûr de pas avoir désynchronisé quelque chose.
 :::danger
 Il est fortement déconseillé de modifier le type de serveur. Cela pourrait provoquer des graves répercussions s'il y a des produits/services déjà configurés sur le serveur.
-[Vous pouvez créer un autre serveur pour éviter tout problème.](serveurs#Création)
+[Vous pouvez créer un autre serveur pour éviter tout problème.](serveurs#création)
 :::
 ![img](https://media.discordapp.net/attachments/475073153509490689/957599353571250196/unknown.png)
 

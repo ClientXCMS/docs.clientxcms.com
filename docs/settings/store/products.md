@@ -48,9 +48,9 @@ Pour ajouter un produit, cliquez sur le bouton "Créer" en haut à gauche de la 
 
 **Statut** : Statut du produit [(Voir ici pour plus d'informations)](./products#status)
 
-**Groupe** : Permet d'associer un produit à un groupe - Ne peut pas être dans aucun groupe [(Si vide créez en un ici)](./groupes#Création)
+**Groupe** : Permet d'associer un produit à un groupe - Ne peut pas être dans aucun groupe [(Si vide créez en un ici)](./groupes#création)
 
-**Ordre de tri** : Ordre d'apparition - [Gérer nativement par la réorganisation des produits facilement](./groupes#Réorganisation-des-produits)
+**Ordre de tri** : Ordre d'apparition - [Gérer nativement par la réorganisation des produits facilement](./groupes#edition)
 
 **Type** : Type de produit - [(Si vide activez un module d'approvisionnement ici)](../../extensions)
 
