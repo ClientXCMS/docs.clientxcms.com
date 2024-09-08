@@ -26,8 +26,6 @@ L'exemple ci-dessous est basé sur Debian 12, mais les commandes peuvent varier 
 Créez un dossier d'installation pour votre CMS. Vous pouvez le faire en utilisant la commande suivante :
 ```bash
 mkdir /var/www/clientxcms
-sudo chown -R $USER:$USER /var/www/clientxcms
-cp .env.example .env
 ```
 ## Téléchargement de l'archive
 Téléchargez l'archive du CMS en utilisant la commande suivante envoyé par e-mail :
@@ -37,17 +35,25 @@ wget https://clientxcms.com/licensing/downloads/{uuid}
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
 unzip clientxcms.zip -d /var/www/clientxcms
-mv -r /var/www/clientxcms/DarkIncognito85-clientxcms-v2-xxx/* /var/www/clientxcms
+mv /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/* /var/www/clientxcms
+rm -r /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/
+cp /var/www/clientxcms/.env.example /var/www/clientxcms/.env
 ```
+:::info
+Si vous n'avez pas installé ZIP, vous pouvez l'installer avec la commande suivante :
+```bash
+sudo apt-get install zip unzip 
+```
+:::
 
 ## Mise en place de PHP & Composer
 Pour installer PHP, vous pouvez utiliser la commande suivante :
 ```bash
 sudo apt-get update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
+sudo apt-get install ca-certificates apt-transport-https software-properties-common wget curl lsb-release
+curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
 sudo apt-get update
-sudo apt-get install php8.2 php8.2-bcmath php8.2-ctype php8.2-fileinfo php8.2-json php8.2-mbstring php8.2-openssl php8.2-pdo php8.2-tokenizer php8.2-xml
+sudo apt-get install php8.1-common php8.1-curl php8.1-bcmath php8.1-intl php8.1-mbstring php8.1-xmlrpc php8.1-mcrypt php8.1-mysql php8.1-gd php8.1-xml php8.1-cli php8.1-zip
 ```
 Pour installer Composer, vous pouvez utiliser la commande suivante :
 ```bash
@@ -60,6 +66,11 @@ Vous pouvez maintenant installer les dépendances du projet en utilisant la comm
 ./composer.phar install --optimize-autoloader --no-dev
 ```
 ## Mise en place de MySQL
+
+:::info
+Ici nous présentons Mysql, mais MariaDB est aussi compatible à Clientxcms.
+:::
+
 Pour installer MySQL, vous pouvez utiliser la commande suivante :
 ```bash
 sudo apt-get install mysql-server
@@ -71,7 +82,7 @@ Une fois l’installation terminée, il est recommandé d’exécuter un script 
 sudo mysql_secure_installation
 ```
 Répondez aux questions suivantes en fonction de vos besoins :
-- Entrez le mot de passe root actuel pour MySQL (entrée si vous n’en avez pas défini)
+- Appuyez sur la touche entrée si vous n’en avez pas défini précédemment
 - Définissez un mot de passe root pour MySQL
 - Supprimez l’utilisateur anonyme > Y
 - Interdisez la connexion à distance à la base de données > Y
@@ -89,9 +100,13 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="apache" label="Apache">
+:::info
+Ici, nous ne présentons pas comment installer un certificat SSL.
+:::
+
   Pour installer Apache, vous pouvez utiliser la commande suivante :
 ```bash
-sudo apt-get install libapache2-mod-php
+sudo apt-get install apache2 libapache2-mod-php
 ```
 Pour activer le module rewrite, vous pouvez utiliser la commande suivante :
 ```bash
@@ -113,17 +128,18 @@ sudo nano /etc/apache2/sites-available/clientxcms.conf
                 Options FollowSymLinks
                 AllowOverride All
         </Directory>
-
-    <Directory /var/www/clientxcms/public>
-        Options FollowSymLinks MultiViews
-        AllowOverride All
-        Order allow,deny
-        allow from all
-    </Directory>
+        <Directory /var/www/clientxcms/public >
+                Options FollowSymLinks MultiViews
+                Options -Indexes
+                AllowOverride All
+                Order allow,deny
+                allow from all
+        </Directory>
 
     LogLevel debug
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+
 </VirtualHost>
 ```
 Pour activer le vhost, vous pouvez utiliser la commande suivante :
@@ -140,13 +156,12 @@ sudo systemctl restart apache2
 ```
   </TabItem>
   <TabItem value="nginx" label="Nginx">
+:::info
+Ici, nous ne présentons pas comment installer un certificat SSL.
+:::
   Pour installer Nginx, vous pouvez utiliser la commande suivante :
 ```bash
-sudo apt-get install nginx
-```
-Pour activer le module rewrite, vous pouvez utiliser la commande suivante :
-```bash
-sudo a2enmod rewrite
+sudo apt-get install nginx php8.1-fpm
 ```
 Pour ajouter un hôte virtuel, vous pouvez utiliser la commande suivante :
 ```bash
@@ -164,10 +179,11 @@ server {
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
-
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
     }
 
     location ~ /\.ht {
@@ -195,26 +211,23 @@ Pour configurer la base de données, vous pouvez utiliser la commande suivante :
 ```bash
 mysql -u root -p
 ```
-Créez une base de données et un utilisateur en utilisant les commandes suivantes :
+Créez une base de données et un utilisateur en utilisant les commandes suivantes. Nous vous recommandons de remplacer le mot de passe par un mot de passe plus sécurisé :
 ```sql
 CREATE DATABASE clientxcms;
-CREATE USER 'clientxcms'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON clientxcms.*
-TO 'clientxcms'@'localhost';
+CREATE USER clientxcms@localhost IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON clientxcms.* TO clientxcms@localhost;
 FLUSH PRIVILEGES;
 ```
 Vous pouvez maintenant quitter MySQL en utilisant la commande suivante :
 ```sql
 exit
 ```
-Vous pouvez maintenant configurer votre fichier `.env` en utilisant la commande suivante :
-```bash
-cp .env.example .env
-```
+
 Vous pouvez maintenant modifier les informations de connexion à la base de données dans le fichier `.env` en utilisant la commande suivante :
 ```bash
 nano .env
 ```
+
 Puis modifiez les informations de connexion à la base de données :
 ```env
 DB_CONNECTION=mysql
@@ -244,8 +257,29 @@ sudo chmod -R 775 storage bootstrap/cache
 ```
 
 ## Assets
+:::info
+La première partie va concerner l'installation de nodejs, mais si vous l'avez déjà installé, vous pouvez passer à la compilation des assets.
+:::
 
-Pour compiler les assets, vous pouvez utiliser la commande suivante :
+Pour commencer, nous devons installer NVM, qui est un gestionnaire de versions de Node.js. Pour ce faire, exécutez la commande suivante :
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
+
+Ensuite, vous pouvez télécharger et installer Node.js (il peut être nécessaire de redémarrer le terminal) : 
+```bash
+nvm install 18
+```
+
+Vérifiez maintenant que la bonne version de Node.js est installée via cette commande :
+```bash
+node -v
+```
+Celle-ci devrait afficher `v18.20.4`, qui est la version LTS actuelle de Node.js version 18.
+
+<br />
+
+Pour compiler les assets, vous pouvez utiliser les commandes suivantes :
 ```bash
 npm install
 npm run build
