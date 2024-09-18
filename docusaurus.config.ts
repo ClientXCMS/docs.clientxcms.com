@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/docs/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/blog/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/',
         },
         theme: {
           customCss: './src/css/custom.css',
