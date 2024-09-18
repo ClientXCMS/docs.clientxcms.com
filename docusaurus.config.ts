@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ClientXCMS/docs.clientxcms.com/tree/V2/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ClientXCMS/docs.clientxcms.com/tree/V2/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
