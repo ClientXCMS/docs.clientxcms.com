@@ -1,4 +1,4 @@
-# PayPal express checkout
+# PayPal (Express Checkout)
 
 Parmi les passerelles de paiement disponibles pour votre espace client, PayPal Express Checkout est une solution de paiement en ligne qui permet à vos clients de payer rapidement et en toute sécurité. Cette passerelle de paiement est très simple à configurer et à utiliser.
 Pour configurer PayPal Express Checkout, allez dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin sélectionnez PayPal Express Checkout.
