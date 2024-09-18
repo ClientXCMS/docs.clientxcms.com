@@ -1,3 +1,3 @@
-# Paypal
+# PayPal
 
 En rédaction
