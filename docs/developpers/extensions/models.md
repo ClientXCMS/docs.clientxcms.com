@@ -1,8 +1,5 @@
 # Modèles Laravel
-
-Nous avons un ensemble de modèles Laravel qui sont utilisés pour gérer les données de CLIENTXCMS, comme les utilisateurs, factures ou services ainsi que leurs relations.
-
-Je vais créer plusieurs tableaux en Markdown basés sur les dossiers visibles dans l'image. Chaque modèle sera accompagné de son namespace complet, d'une brève description et d'un exemple d'utilisation avec une méthode simple comme `find($id)`.
+ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace client. Ces modèles sont répartis en plusieurs catégories, chacune correspondant à un domaine spécifique.
 
 ## Clients
 

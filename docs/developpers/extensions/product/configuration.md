@@ -1,11 +1,14 @@
+# Configuration
 
-### 7. Gestion de la configuration des produits avec `ProductConfigInterface`
+Les produits peuvent avoir des configurations permettant de contrôler les performances comme la mémoire ou la RAM. Ils permettent par la suite de livrer des services à partir de cette configuration.
 
-Le CMS permet aux développeurs de gérer des configurations spécifiques pour chaque type de produit, comme la configuration d'un serveur ou d'autres options spécifiques. Ces configurations sont associées aux produits via une table de base de données contenant les détails nécessaires.
+Interface : `App/Contracts/Store/ProductConfigInterface`
 
-#### 7.1. Interface : `ProductConfigInterface`
+Classe abstraite : `App/Abstracts/AbstractConfig`
 
-L'interface `ProductConfigInterface` définit les méthodes que chaque classe de configuration doit implémenter pour gérer la configuration des produits. Les méthodes principales sont :
+## Création de la classe
+
+L'interface `App/Contracts/Store/ProductConfigInterface` définit les méthodes que chaque classe de configuration doit implémenter pour gérer la configuration des produits. Les méthodes principales sont :
 
 - `validate()`: Définit les règles de validation pour la configuration.
 - `render()`: Retourne le formulaire HTML pour afficher et modifier la configuration du produit.
@@ -15,23 +18,19 @@ L'interface `ProductConfigInterface` définit les méthodes que chaque classe de
 - `getConfig()`: Récupère la configuration d'un produit.
 - `cloneConfig()`: Permet de cloner une configuration d'un produit vers un autre.
 
-#### 7.2. Exemple : Classe de configuration pour un serveur de jeu
-
-Voici un exemple d'implémentation basé sur la configuration d'un **serveur de jeu**.
-
-##### 7.2.1. Implémentation de la classe `GameserverConfig`
-
 ```php
-namespace App\Core\GameConfig;
+<?php
+// addons/fund/src/CustomProductConfig.php
+namespace App\Addons\Fund;
 
 use App\Abstracts\AbstractConfig;
 use App\Models\Store\Product;
 use App\Models\Provisioning\Server;
 
-class GameserverConfig extends AbstractConfig
+class CustomProductConfig extends AbstractConfig
 {
-    protected string $type = 'gameserver';
-    protected string $model = \App\Core\GameConfig\Models\GameserverConfigModel::class;
+    protected string $type = 'custom-product';
+    protected string $model = \App\Addons\Fund\Models\GameserverConfigModel::class;
 
     /**
      * Rendre le formulaire de configuration pour un produit spécifique
@@ -43,7 +42,7 @@ class GameserverConfig extends AbstractConfig
             'config' => $this->getConfig($product->id, new $this->model), // La configuration existante ou une nouvelle instance
         ];
 
-        return view('gameserver_admin::product-config', $context);
+        return view('fund_admin::product-config', $context);
     }
 
     /**
@@ -77,12 +76,108 @@ class GameserverConfig extends AbstractConfig
 }
 ```
 
-##### Explication :
+## Création de la migration
 
-1. **render()** : Génère le formulaire HTML pour la configuration du produit, incluant les options de mémoire, CPU, disque, et serveur associé.
-2. **validate()** : Définit les règles de validation pour les champs de la configuration.
-3. **storeConfig()** et **updateConfig()** : Gèrent la création et la mise à jour des configurations dans la base de données.
+Utilisez la commande artisan suivante pour créer une migration pour la table de configuration du serveur de jeu :
 
----
+```bash
+php artisan clientxcms:create-migration-extension
+```
 
-Cela conclut la section sur la gestion des panels et des configurations de produits. Si tu souhaites plus d'informations ou continuer avec une autre section, fais-le moi savoir !
+Lorsque la commande demande le nom de la migration, entrez :
+
+```
+CreateGameserverConfigTable
+```
+
+Ensuite, dans le fichier de migration généré, définissez la structure de la table en ajoutant un champ **`product_id`** pour faire la liaison avec les produits :
+
+```php
+// database/migrations/2022_01_01_000000_create_gameserver_config_table.php
+<?php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateGameserverConfigTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('gameserver_configs', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade'); // Lien avec la table des produits
+            $table->integer('memory');
+            $table->integer('cpu');
+            $table->integer('disk');
+            $table->foreignId('server_id')->constrained('servers')->onDelete('cascade'); // Lien avec la table des serveurs
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('gameserver_configs');
+    }
+}
+```
+## Vue du formulaire de configuration
+Vous pouvez créer une vue dans le dossier `addons/fund/views/admin/product-config.blade.php` pour afficher le formulaire de configuration :
+
+```blade
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div>
+        @include("admin/shared/input", ['name' => 'memory', 'label' => __('provisioning.memory'), 'value' => $config->memory, 'help' => __('provisioning.in_gb'), 'type' => 'number','step' => '0.1', 'min' => 0])
+    </div>
+    <div>
+        @include("admin/shared/input", ['name' => 'disk', 'label' => __('provisioning.disk'), 'value' => $config->disk, 'help' => __('provisioning.in_gb'), 'type' => 'number', 'step' => '0.1', 'min' => 0])
+    </div>
+    <div>
+        @include("admin/shared/input", ['name' => 'cpu', 'label' => __('provisioning.cpu'), 'value' => $config->cpu, 'type' => 'number'])
+    </div>
+</div>
+``` 
+## Création du modèle associé
+
+Créez un modèle pour représenter la configuration du serveur de jeu. Nous recommandons de nommer ce modèle **`GameserverConfigModel`** pour plus de clarté :
+
+```php
+namespace App\Addons\Fund\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class GameserverConfigModel extends Model
+{
+    protected $table = 'gameserver_configs'; // Nom de la table
+
+    protected $fillable = [
+        'product_id',
+        'memory',
+        'cpu',
+        'disk',
+        'server_id',
+    ];
+
+    public function product()
+    {
+        return $this->belongsTo(\App\Models\Store\Product::class);
+    }
+
+    public function server()
+    {
+        return $this->belongsTo(\App\Models\Provisioning\Server::class);
+    }
+}
+```
+
+## Enregistrement de la classe dans le produit
+
+Une fois la classe de configuration et le modèle créé, vous devez associer cette configuration au produit en l'enregistrant dans la méthode **`config()`** de la classe produit. Voici un exemple :
+
+```php
+public function config(): ?\App\Contracts\Store\ProductConfigInterface
+{
+    return new \App\Addons\Fund\GameserverConfig(); // Retourne la classe de configuration pour ce produit
+}
+```
+
+Cela permet au CMS d'utiliser la configuration lors de la gestion des produits, en affichant le formulaire de configuration et en validant les données lors de la création ou modification d'un produit.

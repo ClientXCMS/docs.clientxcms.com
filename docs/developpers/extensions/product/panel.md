@@ -1,12 +1,12 @@
-
-Cela complète la section sur la gestion des produits et des données de produits dans le CMS. Si tu veux plus d'informations ou continuer avec une autre section, fais-le moi savoir !
-### 6. Gestion des panels de services avec `PanelProvisioningInterface`
-
+# Panel de gestion 
 Le CMS permet d'ajouter des **panels de gestion avancée** sur les services, offrant ainsi aux utilisateurs la possibilité de gérer et d'interagir avec leurs services via des interfaces graphiques spécifiques. Le panel peut inclure plusieurs **tabs** (sous-pages) pour structurer les différentes actions possibles.
 
-#### 6.1. Interface : `PanelProvisioningInterface`
+Interface : `App/Contracts/Provisioning/PanelProvisioningInterface`
 
-L'interface `PanelProvisioningInterface` définit les méthodes qui doivent être implémentées pour créer un panel de gestion de service. Chaque **tab** représente une sous-page du panel, permettant aux utilisateurs d'effectuer des actions spécifiques sur leur service.
+Class abstraite : `App/Abstracts/AbstractPanelProvisioning`
+## Création de la classe
+
+L'interface `App/Contracts/Provisioning/PanelProvisioningInterface` définit les méthodes qui doivent être implémentées pour créer un panel de gestion de service. Chaque **tab** représente une sous-page du panel, permettant aux utilisateurs d'effectuer des actions spécifiques sur leur service.
 
 Les principales méthodes à implémenter sont :
 
@@ -14,24 +14,18 @@ Les principales méthodes à implémenter sont :
 - `tabs()`: Retourne un tableau de **tabs** sous forme d'objets `ProvisioningTabDTO` qui définissent les sous-pages du panel.
 - `render()`: Gère le rendu du panel pour l'utilisateur.
 - `renderAdmin()`: Gère le rendu du panel dans l'administration.
-- `permissions()`: Définit les permissions nécessaires pour accéder au panel.
-
-#### 6.2. Classe abstraite : `AbstractPanelProvisioning`
-
-La classe `AbstractPanelProvisioning` fournit une base pour implémenter un panel de service. Les développeurs peuvent se concentrer sur la personnalisation du panel en utilisant les méthodes fournies.
-
-#### 6.3. Exemple : Panel de gestion d'un service de jeu vidéo
-
-Dans cet exemple, nous allons créer un panel de gestion pour un service de jeu vidéo, basé sur l'implémentation de **Pterodactyl**.
+- `permissions()`: Définit les permissions nécessaires pour accéder au panel. (Pas encore implémenté)
 
 ```php
-namespace App\Core\GamePanel;
+<?php
+// addons/fund/src/CustomProductPanel.php
+namespace App\Addons\Fund;
 
 use App\Abstracts\AbstractPanelProvisioning;
 use App\DTO\Provisioning\ProvisioningTabDTO;
 use App\Models\Provisioning\Service;
 
-class GameServerPanel extends AbstractPanelProvisioning
+class CustomProductPanel extends AbstractPanelProvisioning
 {
     protected string $uuid = 'gameserver'; // UUID unique du panel
 
@@ -47,14 +41,7 @@ class GameServerPanel extends AbstractPanelProvisioning
                 'icon' => '<i class="bi bi-terminal"></i>',
                 'uuid' => 'console',
                 'active' => true,
-            ]),
-            new ProvisioningTabDTO([
-                'title' => 'Fichiers',
-                'permission' => $this->uuid . '.panel.files',
-                'icon' => '<i class="bi bi-folder"></i>',
-                'uuid' => 'files',
-                'active' => false,
-            ]),
+            ])
         ];
     }
 
@@ -111,26 +98,22 @@ class GameServerPanel extends AbstractPanelProvisioning
     }
 }
 ```
+## Vue du panel
+Vous pouvez créer une vue dans le dossier `addons/fund/views/default/panel/index.blade.php` pour afficher le panel de gestion du service. Cette vue peut inclure des onglets pour naviguer entre les différentes sous-pages du panel.
 
-#### Explications :
+```blade
+Info : {{ $serverInfo['cpu'] }} CPU, {{ $serverInfo['ram'] }} RAM, Uptime : {{ $serverInfo['uptime'] }}
+```
+## Vue de la console
+Vous pouvez créer une vue dans le dossier `addons/fund/views/default/panel/console.blade.php` pour afficher la console du serveur de jeu. Cette vue peut inclure un terminal interactif pour permettre aux utilisateurs d'interagir avec leur serveur.
 
-1. **UUID et Tabs** :
-    - La méthode `tabs()` retourne un tableau d'objets `ProvisioningTabDTO`. Chaque **tab** représente une sous-page du panel avec des propriétés comme `uuid`, `title`, `icon`, et `permission`.
-    - Exemple de tabs dans cet exemple :
-        - **Console** : Affiche la console du serveur.
-        - **Fichiers** : Accès aux fichiers du serveur.
+```blade
+<div class="console">
+    <pre>Server console...</pre>
+</div>
+```
 
-2. **Rendu des Tabs** :
-    - Chaque tab peut être rendu à l'aide de la méthode `render{uuid}()`. Par exemple, pour la tab **Console**, on utilise `renderConsole()` pour afficher les informations de la console du serveur.
-    - Cette méthode est appelée dynamiquement grâce au `uuid` de la tab, ce qui permet d'organiser facilement plusieurs sous-pages.
-
-3. **Permissions** :
-    - La méthode `permissions()` retourne les permissions requises pour accéder aux différentes sections du panel.
-
-4. **Rendu pour l'administration** :
-    - `renderAdmin()` affiche une version du panel accessible aux administrateurs avec toutes les permissions.
-
-#### 6.4. Utilisation dans un produit
+## Enregistrement de la classe dans le produit
 
 Une fois le panel créé, vous pouvez l'associer à un produit via la méthode `panel()` dans la classe du produit. Voici comment l'intégrer dans une classe de produit :
 
@@ -140,7 +123,3 @@ public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
     return new GameServerPanel(); // Retourne le panel associé au produit
 }
 ```
-
-Cela permet au CMS de reconnaître le panel et de l'afficher pour les services associés à ce produit.
-
----

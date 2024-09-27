@@ -7,8 +7,6 @@ Dans **CLIENTXCMS**, vous pouvez tirer parti des [événements Laravel](https://
 
 Voici un tableau des événements disponibles dans CLIENTXCMS :
 
-Voici la traduction de la colonne "Événement" :
-
 | Catégorie | Événement                        | Nom complet (namespace)                              |
 |-----------|----------------------------------|------------------------------------------------------|
 | Invoice   | Facture annulée                  | `App\Events\Invoice\InvoiceCancelled`                |

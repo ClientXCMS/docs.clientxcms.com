@@ -1,46 +1,65 @@
 
 # Produits & Services
 
-Pour ajouter un nouveau type de produit dans le CMS, les développeurs peuvent implémenter l'interface `ProductTypeInterface` ou utiliser la classe abstraite `AbstractProductType`, qui offre une implémentation de base de cette interface. Cela permet de créer différents types de produits tels que des services, des domaines, des cartes cadeaux, et plus encore.
+Les produits et services sont des éléments essentiels de toute boutique en ligne. Ils définissent les offres disponibles pour les clients et les options de provisionnement pour les administrateurs. Dans le cadre de l'extension, les produits et services sont gérés via des classes spécifiques qui définissent les caractéristiques et les comportements de chaque type de produit.
 
-#### 4.1. Interface : `ProductTypeInterface`
+:::info
+Cette section est majeure puisqu'elle permet de définir : 
+- l'automatisation de la création de produit avec les serveurs
+- la configuration du produit
+- la gestion des données à la commande
+- la gestion des options
+:::
+Interface : `App/Contracts/Store/ProductTypeInterface`
 
-L'interface `ProductTypeInterface` définit les méthodes à implémenter pour chaque type de produit. Voici un aperçu des méthodes clés de l'interface :
+Classe abstraite : `App/Abstracts/AbstractProductType`
+## Création de la classe
+
+L'interface `App/Contracts/Store/ProductTypeInterface` définit les méthodes à implémenter pour chaque type de produit. Voici un aperçu des méthodes clés de l'interface :
 
 - `uuid()`: Retourne l'UUID unique du produit.
 - `title()`: Retourne le titre du produit.
-- `type()`: Retourne le type de provisionnement du produit. Les types recommandés incluent `service`, `domain`, `license`, et autres.
-- `data()`: (Méthode à détailler plus tard) Permet d'ajouter des informations supplémentaires à demander à l'utilisateur lors de la commande.
+- `type()`: Retourne le type de provisionnement du produit..
+- `data()`: Permet d'ajouter des informations supplémentaires à demander à l'utilisateur lors de la commande.
 - `panel()`: Retourne l'interface de provisionnement du panel si nécessaire.
 - `server()`: Retourne l'interface de provisionnement du serveur pour les produits de type service.
 - `options()`: Retourne un tableau des options supplémentaires pour le produit.
-- `config()`: (Méthode à détailler plus tard) Retourne la configuration spécifique du produit.
-
-#### 4.2. Classe abstraite : `AbstractProductType`
-
-La classe `AbstractProductType` fournit une implémentation par défaut de l'interface `ProductTypeInterface`. Elle est conçue pour simplifier le développement en offrant une structure de base pour les méthodes principales, tout en laissant les développeurs personnaliser uniquement les aspects nécessaires.
+- `config()`: Retourne la configuration spécifique du produit.
 
 Voici un exemple de classe abstraite avec des implémentations par défaut des méthodes :
 
 ```php
-namespace App\Core\Product;
+// addons/fund/src/CustomProductType
+namespace App\Addons\Fund;
 
 use App\Abstracts\AbstractProductType;
 use App\Models\Store\Product;
 
 class CustomProductType extends AbstractProductType
 {
-    protected string $uuid = 'custom-product-uuid'; // UUID unique du produit
+    protected string $uuid = 'custom-product'; // UUID unique du produit
     protected string $title = 'Custom Product'; // Titre du produit
     protected string $type = self::SERVICE; // Type de provisionnement (service)
 
+
+    public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
+    {
+        return new CustomProductData();
+    }
+    
+    /**
+     * Retourne la classe de configuration du produit
+     */
+    public function config(?Product $product = null): ?\App\Contracts\Store\ProductConfigInterface
+    {
+        return new CustomProductConfig(); // Ou null
+    }
     /**
      * Retourne des données supplémentaires liées au produit
      */
     public function data(?Product $product = null): ?\App\Contracts\Store\ProductDataInterface
     {
-        // Implémentation personnalisée de la méthode data (détails à fournir plus tard)
-        return null;
+        return new CustomProductData(); // Ou null
     }
 
     /**
@@ -48,35 +67,32 @@ class CustomProductType extends AbstractProductType
      */
     public function server(): ?\App\Contracts\Provisioning\ServerTypeInterface
     {
-        // Retourne un type de serveur si le produit en nécessite un
-        return null;
+        // Retourne une implémentation de la classe produit si le produit en nécessite un
+        return new CustomProductServer(); // ou null
     }
 
     /**
-     * Retourne les options supplémentaires disponibles pour le produit
+     * Pour l'instant n'est encore implémenté
      */
     public function options(): array
     {
         return [
-            // Exemple d'options supplémentaires
         ];
     }
 }
 ```
 
-Dans cet exemple, nous définissons les propriétés `uuid`, `title`, et `type`, puis nous personnalisons les méthodes pour répondre aux besoins du produit. Les autres méthodes peuvent être implémentées ou laissées avec leur comportement par défaut.
+Les classes `CustomProductData` et `CustomProductServer` doivent être implémentées pour gérer les données et le provisionnement du produit. Elle seront définies dans les sections suivantes.
 
-#### 4.3. Enregistrement du produit dans le Service Provider
+## Enregistrement du produit dans le Service Provider
 
 Une fois la classe de produit définie, elle doit être enregistrée dans le **Service Provider** de l'extension pour que le CMS puisse la reconnaître et l'utiliser.
-
-Voici un exemple d'enregistrement du produit dans le `FundServiceProvider` :
 
 ```php
 namespace App\Addons\Fund;
 
 use \App\Extensions\BaseAddonServiceProvider;
-use App\Services\Core\ProductTypeService;
+use App\Addons\Fund\CustomProductType;
 
 class FundServiceProvider extends BaseAddonServiceProvider
 {
@@ -90,9 +106,15 @@ class FundServiceProvider extends BaseAddonServiceProvider
     public function boot()
     {
         // Enregistrement du nouveau type de produit
-        $this->app(ProductTypeService::class)->add('custom-product-uuid', CustomProductType::class);
+        $this->registerProductTypes();
     }
+    
+    
+    public function productsTypes(): array
+    {
+        return [
+            CustomProductType::class,
+        ];
+    }    
 }
 ```
-
-Dans cet exemple, le type de produit `CustomProductType` est enregistré via le service `ProductTypeService`, en utilisant l'UUID unique du produit et la classe correspondante. Cela permet au CMS de lister et d'utiliser ce produit lors de la configuration ou de la gestion des produits dans la boutique.
