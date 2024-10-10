@@ -57,7 +57,7 @@ class FundServiceProvider extends BaseAddonServiceProvider
 
         // Routes publiques
         \Route::middleware(['web'])
-            ->name($this->uuid . '.')
+            ->name($this->uuid . '.admin.')
             ->group(function () {
                 require addon_path($this->uuid, 'routes/web.php');
             });
