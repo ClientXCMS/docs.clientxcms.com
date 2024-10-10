@@ -60,3 +60,69 @@ Cette commande vous permettra de sélectionner l'extension pour laquelle vous so
 ```bash
 php artisan clientxcms:db-extension --all
 ```
+
+## Seeder 
+Vous pouvez également créer des seeders pour votre extension. Pour cela, vous pouvez utiliser la méthode `addSeeders()` dans le fichier `ServiceProvider` de l'extension. Voici un exemple de l'utilisation dans la classe `FundServiceProvider` :
+
+```php
+<?php
+// addons/fund/src/FundServiceProvider.php
+namespace App\Addons\Fund;
+
+use \App\Extensions\BaseAddonServiceProvider;
+use App\Addons\Fund\Database\Seeders\FundSeeder;
+use App\Addons\Fund\Database\Seeders\FundSeeder2;
+
+class FundServiceProvider extends BaseAddonServiceProvider
+{
+    protected string $uuid = 'fund';
+
+    public function register()
+    {
+        //
+    }
+
+    public function boot()
+    {
+        $this->loadMigrations();
+        $this->addSeeder(FundSeeder::class);
+        // or
+        $this->addSeeders([FundSeeder::class, FundSeeder2::class]);
+        // si vous voulez uniquement en local
+        if (config('app.env') === 'local') {
+            $this->addSeeder(FundSeeder::class);
+        }
+    }
+}
+```
+
+puis vous pouvez créer votre seeder comme ceci :
+
+```php
+<?php
+// addons/fund/database/seeders/FundSeeder.php
+namespace App\Addons\Fund\Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class FundSeeder extends Seeder
+{
+    public function run()
+    {
+        // Code
+    }
+}
+```
+?>
+
+et enfin, vous pouvez exécuter les seeders pour une extension en utilisant la commande suivante :
+
+```bash
+php artisan db:seed --class=App\Addons\Fund\Database\Seeders\FundSeeder
+```
+
+ou pour tous les seeders :
+
+```bash
+php artisan db:seed
+```
