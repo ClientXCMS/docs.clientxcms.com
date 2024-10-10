@@ -45,9 +45,7 @@ ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace cli
 | Modèle               | Namespace                                      | Description                                      | Exemple                                                   |
 |----------------------|------------------------------------------------|--------------------------------------------------|-----------------------------------------------------------|
 | Basket               | `App\Models\Store\Basket\Basket`               | Gère le panier d'achat                           | `App\Models\Store\Basket\Basket::find($id)`               |
-| BasketCouponTrait    | `App\Models\Store\Basket\BasketCouponTrait`    | Trait pour la gestion des coupons dans le panier | `App\Models\Store\Basket\BasketCouponTrait::find($id)`    |
 | BasketRow            | `App\Models\Store\Basket\BasketRow`            | Gère une ligne d'article dans le panier          | `App\Models\Store\Basket\BasketRow::find($id)`            |
-| BasketRowCouponTrait | `App\Models\Store\Basket\BasketRowCouponTrait` | Trait pour la gestion des coupons par ligne      | `App\Models\Store\Basket\BasketRowCouponTrait::find($id)` |
 
 | Modèle         | Namespace                         | Description                            | Exemple                                      |
 |----------------|-----------------------------------|----------------------------------------|----------------------------------------------|
