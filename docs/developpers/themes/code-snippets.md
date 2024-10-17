@@ -9,7 +9,7 @@ Voici quelques exemples de code pour vous aider à personnaliser votre thème.
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
 <head>
     {{-- ... --}}
-    <title>@yield('title') {{ setting('seo_site_title') }}</title>
+    <title>@yield('title') {{ translated_setting('seo_site_title') }}</title>
     @yield('styles')
     @vite('resources/themes/yourtheme/css/app.scss')
     @vite('resources/themes/yourtheme/js/app.js')
@@ -126,10 +126,10 @@ Fichier `resources/themes/theme_name/views/front/store/group.blade.php`
             </span>
                     @endif
                     <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 dark:hover:text-white">
-                        {{ $group->name }}
+                        {{ $group->trans('name') }}
                     </h3>
                     <p class="mt-3 text-gray-500">
-                        {{ $group->description }}
+                        {{ $group->trans('description') }}
                     </p>
                 </div>
                 <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">

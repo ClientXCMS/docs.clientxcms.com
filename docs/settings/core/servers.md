@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Serveurs
 
-Chaque produit/services de vos clients est relié un serveur CLIENTXCMS qui permet de faire la jointure entre votre CLIENTXCMS et votre serveur avec votre application (Proxmox, Plesk, Pterodactyl). Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Paramètres généraux` et enfin dans `Serveurs`.
+Chaque produit/services de vos clients est relié un serveur CLIENTXCMS qui permet de faire la jointure entre votre CLIENTXCMS et votre serveur avec votre application (Proxmox, Plesk, Pterodactyl). Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Approvionement` et enfin dans `Serveurs`.
 ## Listes des serveurs
 Vous pouvez voir les serveurs disponibles dans la page principale.
 
@@ -77,3 +77,11 @@ Exemple de message de succès et d'exemple de message d'erreur :
 ![Test de connexion réussis](/img/next_gen/settings/core/servers/test_connection_sucessfully.png)
 ![Test de connexion échoué](/img/next_gen/settings/core/servers/test_connection_failed.png)
 
+## Meta données
+-------------
+| Clé | Valeur | Description |
+| --- | ------ | ----------- |
+| `proxmox_backup_storage` | string | Nom du stockage PBS de stockage |
+| `virtualizor_cloud_url`  | https://exemple.com:4083/ |       URL de connexion des revendeurs             |
+| `proxmox_backup_node` | pbs | Nom de la node contenant les sauvegardes |
+-------------

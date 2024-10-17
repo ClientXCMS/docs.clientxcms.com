@@ -56,3 +56,4 @@ Vous pouvez les récupérer avec la fonction `{{ setting() }}`.
 | `seo_site_title`           | Titre du site (affiché à coté du titre de la page) |
 
 
+Vous pouvez les récupérer avec la fonction `{{ setting() }}` ou `{{ translated_setting() }}`.

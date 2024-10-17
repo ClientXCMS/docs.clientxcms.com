@@ -31,10 +31,15 @@ Et un fichier `resources/views/sections/sections.json` avec le contenu suivant :
 ## Propriétés
 
 **path** : Chemin de la vue de la section
+
 **uuid** : Identifiant unique de la section
+
 **default** (faculatif): Si la section est la section par défaut
+
 **thumbnail**(faculatif) : Image de prévisualisation de la section
+
 **default_url**(faculatif) : URL par défaut de la section
+
 **section_type** : Type de section
 
 
