@@ -58,4 +58,4 @@ Voici un exemple de la structure d'un addon, basé sur l'extension `fund` :
 - **src/** : Contient les fichiers principaux de l'extension, tels que les contrôleurs, les modèles, et le service provider (`FundServiceProvider.php`).
 - **addon.json|module.json** : Fichier de configuration principal de l'addon/module, contenant les métadonnées et informations nécessaires au CMS pour reconnaître et charger l'extension.
 - **composer.json** : Fichier standard Composer pour la gestion des dépendances de l'extension.
-- **permissions.json** : Fichier contenant les permissions spécifiques à l'extension. Plus d'informations sur les permissions [ici](/developpers/extensions/permissions).
+- **permissions.json** : Fichier contenant les permissions spécifiques à l'extension. Plus d'informations sur les permissions [ici](/developpers/extensions/definitions/permissions).

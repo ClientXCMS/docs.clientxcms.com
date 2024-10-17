@@ -1,3 +1,4 @@
+
 # Modèles Laravel
 ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace client. Ces modèles sont répartis en plusieurs catégories, chacune correspondant à un domaine spécifique.
 

@@ -117,6 +117,8 @@ Une fois que la passerelle de paiement est créée, il est nécessaire de l'enre
 Exemple d'enregistrement de la passerelle **FundType** dans le `FundServiceProvider` :
 
 ```php
+<?php
+// addons/fund/src/FundServiceProvider.php
 namespace App\Addons\Fund;
 
 use \App\Extensions\BaseAddonServiceProvider;
@@ -138,5 +140,54 @@ class FundServiceProvider extends BaseAddonServiceProvider
     }
 }
 ```
+Il vous faudra également créer un seeders pour ajouter la passerelle dans la base de données.
+Pour cela, créez un fichier `FundSeeder.php` dans le dossier `database/seeders` de votre extension :
+```php
+<?php
+// addons/fund/database/seeders/FundSeeder.php
+namespace App\Addons\Fund\Database\Seeders;
+
+use App\Models\Billing\Gateway;
+use Illuminate\Database\Seeder;
+use App\Addons\Fund\FundType;
+
+class FundSeeder extends Seeder
+{
+    public function run()
+    {
+        
+        Gateway::updateOrCreate([
+            'name' => 'Fund',
+            'uuid' => FundType::UUID,
+            'status' => 'unreferenced',
+        ]);
+    }
+}
+```
+Enfin, ajoutez le seeder dans votre **Service Provider** pour qu'il soit exécuté lors de l'installation de l'extension :
+```php
+<?php
+// addons/fund/src/FundServiceProvider.php
+namespace App\Addons\Fund;
+
+use \App\Extensions\BaseAddonServiceProvider;
+
+class FundServiceProvider extends BaseAddonServiceProvider
+{
+    protected string $uuid = 'fund';
+    
+    public function register()
+    {
+        //
+    }
+
+    public function boot()
+    {
+        $this->loadMigrations();
+        $this->addSeeder(FundSeeder::class);
+    }
+}
+```
+
 ## Activation de la passerelle
 Vous devriez maintenant voir la passerelle de paiement **Fund** dans la section **"Boutique"** des paramètres du CMS. Vous pouvez activer la passerelle et la configurer en fonction de vos besoins.

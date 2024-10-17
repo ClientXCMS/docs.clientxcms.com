@@ -51,7 +51,8 @@ Le fichier `composer.json` est utilisé par Composer pour gérer les dépendance
     },
     "autoload": {
         "psr-4": {
-            "App\\Addons\\Fund\\": "src/"
+            "App\\Addons\\Fund\\": "src/",
+            "App\\Addons\\Fund\\Database\\Seeders\\": "database/seeders/"
         }
     }
 }

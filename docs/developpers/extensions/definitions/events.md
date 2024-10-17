@@ -1,5 +1,5 @@
 
-# Events
+# Evenements
 
 Dans **CLIENTXCMS**, vous pouvez tirer parti des [événements Laravel](https://laravel.com/docs/11.x/events) pour exécuter des actions spécifiques en réponse à certaines actions. Un événement permet de déclencher une logique, et un **listener** est attaché pour écouter cet événement et exécuter du code lorsqu'il se produit.
 

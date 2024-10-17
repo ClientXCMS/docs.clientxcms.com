@@ -113,7 +113,6 @@ class FundSeeder extends Seeder
     }
 }
 ```
-?>
 
 et enfin, vous pouvez exécuter les seeders pour une extension en utilisant la commande suivante :
 
