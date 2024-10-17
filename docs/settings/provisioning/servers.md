@@ -8,7 +8,7 @@ Chaque produit/services de vos clients est relié un serveur CLIENTXCMS qui perm
 ## Listes des serveurs
 Vous pouvez voir les serveurs disponibles dans la page principale.
 
-![img](/img/next_gen/settings/core/servers/admin_list.png)
+![img](/img/next_gen/settings/provisioning/servers/admin_list.png)
 
 ### Actions
 - **Afficher** : Permet de voir les détails du produit et de le modifier
@@ -20,7 +20,7 @@ La suppression d'un serveur peut provoquer des problèmes dans le système.
 :::
 ## Création
 Pour ajouter un serveur, cliquez sur le bouton "Créer" en haut à gauche de la page.
-![img](/img/next_gen/settings/core/servers/create_server.png)
+![img](/img/next_gen/settings/provisioning/servers/create_server.png)
 
 **Nom** : Nom qui sera affiché à titre d'information.
 
@@ -74,8 +74,8 @@ Après avoir testé la connexion, vous pouvez sauvegarder les modifications ou c
 
 Exemple de message de succès et d'exemple de message d'erreur :
 
-![Test de connexion réussis](/img/next_gen/settings/core/servers/test_connection_sucessfully.png)
-![Test de connexion échoué](/img/next_gen/settings/core/servers/test_connection_failed.png)
+![Test de connexion réussis](/img/next_gen/settings/provisioning/servers/test_connection_sucessfully.png)
+![Test de connexion échoué](/img/next_gen/settings/provisioning/servers/test_connection_failed.png)
 
 ## Meta données
 -------------
