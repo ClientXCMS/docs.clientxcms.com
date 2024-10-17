@@ -77,4 +77,3 @@ Exemple de message de succès et d'exemple de message d'erreur :
 ![Test de connexion réussis](/img/next_gen/settings/core/servers/test_connection_sucessfully.png)
 ![Test de connexion échoué](/img/next_gen/settings/core/servers/test_connection_failed.png)
 
-### Erreur réguilière
