@@ -307,8 +307,9 @@ Puis ajoutez la ligne suivante :
    Les identifiants "**OAuth Client ID**" et "**OAuth Secret**" sont nécessaires pour connecter la licence ClientXCMS à votre site. Cliquez ensuite sur le bouton "Se connecter" sur votre instance.
 
 
-## Terminé
-👏 Bravo, ClientXCMS NextGen est maintenant installé sur votre serveur !
-➡️ La documentation continuera de vous aider pour migrer, ou encore configurer les différentes extensions présentes.
+## Achat d'extension
+Si vous achetez des extensions entre-temps et que vous avez le message d'erreur suivant lorsque vous souhaitez les activer :
 
-😊 Merci de votre confiance.
+> **"Le fichier composer.json n'a pas été trouvé."**
+
+Vous devez redemander à télécharger la source depuis **clientxcms.com**. Une fois retéléchargée, vous trouverez la source de l'extension soit dans le dossier `/addons` ou `/modules`.

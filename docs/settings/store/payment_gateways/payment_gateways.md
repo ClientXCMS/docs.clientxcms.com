@@ -1,11 +1,9 @@
+import DocCardList from '@theme/DocCardList';
+
 # Passerelle de paiement
 Vous pouvez configurer plusieurs passerelles de paiement pour votre espace client. Cette page répertorie toutes les passerelles de paiement disponibles pour votre espace client et les configurations possible sur ces paserelles.
 ## Passerelles de paiement disponibles
-- [Virement bancaire](./bank_transfert)
-- [Paypal](./paypal)
-- [Stripe](./stripe)
-- [PayPal Express Checkout](./paypal_express_checkout)
-- [Balance](./balance)
+<DocCardList />
 ## Configuration des passerelles de paiement
 Vous pouvez configurer vos passerelles de paiement en allant dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin selectionnez la passerelle de paiement que vous souhaitez configurer.
 
