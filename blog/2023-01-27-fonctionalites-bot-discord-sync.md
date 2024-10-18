@@ -2,13 +2,15 @@
 slug: fonctionalites-bot-discord-sync
 title: Fonctionnalités Bot Discord sync
 authors:
-    name: MartinDev
-    title: Président
+  - name: MartinDev
+    title: ClientXCMS Team
     url: https://github.com/DarkIncognito85
     image_url: https://github.com/DarkIncognito85.png
 tags: [nouvelle fonctionnalités, news, mise à jour, discordsync]
 ---
 Nous sommes ravis de vous annoncer l'ajout d'une nouvelle fonctionnalité incroyable à notre bot Discord "Discord sync". Disponible d'abord pour les personnes ayant leur propre bot personnalisé (ceux ayant acheté : [Discordlink Bot](https://clientxcms.com/basket/add/45)), puis par la suite disponible sur notre bot communautaire pour des raisons techniques. Désormais, lorsque vous créez un ticket sur notre serveur Discord, un client synchronisé a la possibilité d'afficher ses services, transactions et détails de son compte, tout cela d'un simple clic sur un bouton. Il peut également refuser.
+
+<!-- truncate -->
 
 Cette fonctionnalité vous permet d'avoir les informations de vos clients directement dans le ticket discord, afin de pouvoir répondre rapidement et efficacement à leurs besoins. Plus besoin de parcourir l'espace administration ou de demander des informations supplémentaires, tout est disponible en quelques secondes.
 

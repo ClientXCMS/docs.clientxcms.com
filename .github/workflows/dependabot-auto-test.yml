@@ -1,0 +1,29 @@
+name: Dependabot Test Build
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+permissions:
+  contents: write
+  pull-requests: write
+  
+jobs:
+  Test-Build:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Assurez-vous d'utiliser la version Node.js appropriée pour le projet
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build

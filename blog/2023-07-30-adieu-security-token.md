@@ -2,16 +2,18 @@
 slug: a-dieu-security
 title: A dieu sécurity token
 authors:
-  name: MartinDev
-  title: ClientXCMS Team
-  url: https://github.com/DarkIncognito85
-  image_url: https://github.com/DarkIncognito85.png
+  - name: MartinDev
+    title: ClientXCMS Team
+    url: https://github.com/DarkIncognito85
+    image_url: https://github.com/DarkIncognito85.png
 tags: [nouvelle documentation, news, mise à jour]
 ---
 
 Chers clients de CLIENTXCMS,
 
 Nous sommes ravis de vous annoncer que nous avons résolu le problème récurrent lié à l'erreur "Security token is invalid" qui a pu affecter l'expérience de certains d'entre vous sur notre plateforme. Notre équipe technique a travaillé diligemment pour identifier et éliminer cette erreur, afin de garantir la sécurité et la stabilité de votre expérience sur notre CMS.
+
+<!-- truncate -->
 
 **La Fin d'un Problème Embêtant : "Security Token is Invalid"**
 

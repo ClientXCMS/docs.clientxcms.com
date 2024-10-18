@@ -10,7 +10,7 @@ Vous pouvez configurer vos passerelles de paiement en allant dans le menu `Param
 Dans chaque passerelle, vous pouvez modifier ces paramètres : 
 - **Nom** : Le nom de la passerelle de paiement.
 - **Montant minimum** : Le montant minimum pour utiliser cette passerelle de paiement.
-- **Statut** : Le statut de la passerelle de paiement  [(Voir ici pour plus d'informations)](./payment_gateways#status)
+- **Statut** : Le statut de la passerelle de paiement  [(Voir ici pour plus d'informations)](./#statut-des-passerelles-de-paiement)
 
 ![img](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 Voici un exemple de configuration de la passerelle de paiement Balance.

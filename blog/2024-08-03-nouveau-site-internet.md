@@ -11,6 +11,8 @@ tags: [nouveau site internet, news, mise à jour]
 Bonjour à tous,
 
 Près d'un an après notre dernière annonce, nous sommes fiers de vous retrouver pour vous annoncer la sortie de notre nouveau site internet et faire le point sur le développement de CLIENTXCMS ainsi que sur les nouveautés à venir au cours de l'année.
+ 
+<!-- truncate -->
 
 ## Nouveau site internet
 ![img](/img/blog/nouveau-site/home.png)
