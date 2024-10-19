@@ -12,4 +12,4 @@ Vous pouvez voir les informations de votre licence depuis  `Paramètres` puis da
 ## Améliorer la licence
 Vous pouvez augmenter la limitation de votre licence à l'offre supérieure. Il suffit de payer la différence entre les deux offres.
 ## Réactualiser la licence
-En cas d'achat de nouvelle extensions, vous pouvez forcer la réactualisation en appuyant sur le bouton adéqua.
+En cas d'achat de nouvelle extensions, vous pouvez forcer la réactualisation en appuyant sur le bouton "forcer l'actualisation".

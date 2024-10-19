@@ -12,7 +12,7 @@ Le PHPMyAdmin est uniquement disponible pour les instances cloud.
 La migration de la base de données est une opération délicate. Cette fonctionnalité est réservée aux utilisateurs avancés, souvent en offre auto-hébergée.
 :::
 Vous pouvez migrez votre base de données pour rajouter des tables ou des colonnes. Il suffit de selectionner l'extension à migrer ou choisir "Core" pour les migration système. Ensuite, cliquez sur le bouton "Migrer" pour lancer l'opération.
-### Sorttie
+### Sortie
 ![img](/img/next_gen/settings/security/database/migrate.png)
 
 ## Seeder la base de données
