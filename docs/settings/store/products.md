@@ -93,8 +93,8 @@ La suppression d'un produit peut provoquer des problèmes dans le système.
 :::
 Vous pouvez supprimer un produit en cliquant sur le bouton rouge dans la colonne "Actions". Une confirmation vous sera demandée puis le produit sera supprimé.
 
-### Status
-Les status permettent de définir l'état du produit.
+### Statut
+Les statut permettent de définir l'état du produit.
 - Disponible : Visible et disponible à l'achat
 - Non référencé : Visible uniquement par les administrateurs
 - Caché : Invisible pour les clients
