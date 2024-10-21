@@ -127,4 +127,5 @@ Les métadonnées permettent de définir des informations supplémentaires sur l
 | `disabled_stock`          | true   | Désactive la gestion du stock                                   |
 | `max_renewals_in_current_month` | 1 | Nombre de renouvellements maximum par mois                     |
 | `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                   |
+| `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
 --------------------------------
