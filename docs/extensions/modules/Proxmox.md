@@ -18,11 +18,11 @@ ClientXCMS utilise le système d'API de PVE (Proxmox Virtual Environment) pour g
 
 Pour connecter ClientXCMS à votre serveur Proxmox, suivez ces étapes :
 
-### 1. Activer le module Proxmox
+#### 1. Activer le module Proxmox
 
 Assurez-vous que le module Proxmox est activé dans **ClientXCMS**.
 
-### 2. Configurer un serveur Proxmox dans ClientXCMS
+#### 2. Configurer un serveur Proxmox dans ClientXCMS
 
 1. Connectez-vous à votre espace d'administration ClientXCMS.
 2. Allez dans **Paramètres** > **Paramètres généraux** > **Serveurs**.
@@ -40,7 +40,7 @@ Remplissez les informations suivantes :
 
 ![img](../../../static/img/next_gen/extensions/modules/proxmox/image_1.png)
 
-### 3. Générer un Token API dans Proxmox
+#### 3. Générer un Token API dans Proxmox
 
 1. Connectez-vous à votre interface Proxmox VE.
 2. Accédez à **Datacenter (XXX)** > **Permissions** > **API Tokens**.
@@ -56,12 +56,12 @@ Remplissez les informations suivantes :
 
 4. Cliquez sur **Add** pour finaliser la création du jeton.
 
-### 4. Récupérer le Token ID et le Secret
+#### 4. Récupérer le Token ID et le Secret
 
 Dans le **modal** qui s'ouvre, copiez les valeurs **Token ID** et **Secret**. Ces informations seront nécessaires lors de la création du serveur dans ClientXCMS (étape 2).
 
 ![img](../../../static/img/next_gen/extensions/modules/proxmox/image_3.png)
 
-### 5. Tester la connexion
+#### 5. Tester la connexion
 
 Une fois les informations d'authentification saisies dans la page de création du serveur, cliquez sur **Vérifier** pour tester la connexion. Si le statut renvoyé est `200` et que le message ``Connection successful`` apparaît, vous pouvez cliquer sur **Créer** pour ajouter votre serveur Proxmox à ClientXCMS.
