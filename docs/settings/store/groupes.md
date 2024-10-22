@@ -49,4 +49,6 @@ Si la condition est remplie, un bouton sera disponible "Supprimer ce groupe". Un
 | Clé | Valeur | Description |
 | --- | ------ | ----------- |
 | `use_image_as_background` | true | Définit l’image du groupe comme image de fond |
+| `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
+
 -------------

@@ -29,7 +29,7 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit a
 
 ## Création du serveur
 
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Paramètres généraux` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Plesk".
+Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Plesk".
 
 ![img](/img/next_gen/extensions/modules/plesk/image.png)
 

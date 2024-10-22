@@ -10,7 +10,7 @@ Nous recommandons d'avoir de bonnes connaissances en **PHP** et **Laravel**, ain
 - [Les controllers](https://laravel.com/docs/11.x/controllers)
 - [Les vues](https://laravel.com/docs/11.x/views)
 - [Les modèles Eloquent](https://laravel.com/docs/11.x/eloquent)
-- [Les service providers](https://laravel.com/docs/11.x/providers)
+- [Les services providers](https://laravel.com/docs/11.x/providers)
 - Et tout autre concept de Laravel
 
 Ces sujets ne seront pas forcément abordés en détail dans cette documentation.
