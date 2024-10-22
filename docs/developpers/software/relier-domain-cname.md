@@ -50,4 +50,4 @@ Une fois l'ajout confirmé, la propagation DNS peut prendre jusqu'à 24 heures p
 La modification prendra effet après la propagation DNS, qui est souvent rapide avec Cloudflare, mais peut prendre jusqu'à 24 heures.
 
 ## Conclusion
-Vous êtes désormais relier à nos serveurs. Vous pouvez vérifier en utilisant le site internet [check-host.net](check-host.net). L'installation de votre instance sera fait quelques minutes après.
+Vous êtes désormais relier à nos serveurs. Vous pouvez vérifier en utilisant le site internet [check-host.net](https://www.check-host.net/). L'installation de votre instance sera fait quelques minutes après.
