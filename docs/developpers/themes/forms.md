@@ -97,8 +97,8 @@ ClientXCMS prend en charge les messages flash pour les formulaires. Vous pouvez 
 ```
 
 ### Validation
-Pour la validation des formulaires, nous utilisons la validation de Laravel. Vous pouvez consulter la [documentation de Laravel](https://laravel.com/docs/11.x/validation) pour plus d'informations sur la validation.
-Pour debuguer les erreurs de validation, vous pouvez utiliser la méthode `errors()` de Laravel.
+ClientXCMS prend en charge la validation des formulaires et affiche le message d'erreur à côté du champ concerné. Vous pouvez consulter la [documentation de Laravel](https://laravel.com/docs/11.x/validation) pour plus d'informations sur la validation.
+Pour debuguer les erreurs de validation, vous pouvez utiliser la méthode `errors()` ou `@dump($errors);`de Laravel.
 ```blade
 @if ($errors->any())
     <div class="alert alert-danger">

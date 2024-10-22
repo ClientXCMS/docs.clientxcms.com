@@ -10,7 +10,7 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Wisp soit ac
 :::
 
 ## Authentification
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Paramètres généraux` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Wisp".
+Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Wisp".
 ![img](/img/next_gen/extensions/modules/wisp/images_1.png)
 
 **Adresse IP** : Adresse IP du Pterodactyl.

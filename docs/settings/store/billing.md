@@ -2,10 +2,8 @@
 sidebar_position: 3
 ---
 # Facturation
-Vous pouvez configurer les paramètres de facturation de votre boutique en ligne. Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin dans `Facturation`.
-Vous retrouverez ici tous les paramètres de la boutique.
-![img](/img/next_gen/settings/store/billing/settings.png)
-
+Vous pouvez configurer les paramètres de facturation de votre boutique en ligne. Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Facturation` et enfin dans `Facturation`.
+Vous retrouverez ici tous les paramètres de facturation.
 ### Configuration des conditions de paiement
 Vous pouvez définir des des conditions générales de vente de votre boutique. Il sera demandé à l'utilisateur de les confirmer avant une commande. Elle sera affichée sur la page de paiement comme ceci.
 ![img](/img/next_gen/settings/store/billing/cgv.png)
@@ -27,7 +25,12 @@ Vous pouvez définir des termes et conditions de la facture (par exemple TVA non
 Vous pouvez configurer le mode de facturation de votre boutique. Vous pouvez choisir entre les modes suivants :
 - **Facture** : Les clients recevrons une facture classique
 - **Proforma** : Les clients recevrons une facture proforma puis une facture classique une fois le paiement effectué
+## Taux de TVA
+Vous pouvez définir un taux de TVA par défaut pour votre boutique. Ce taux sera utilisé pour les factures si le taux de TVA n'est pas défini pour un client. Vous pouvez choisir entre deux modes suivants :
+- **Taux fixe** : Un taux de TVA unique pour tous les clients & produits
+- **Taux variable** : Un taux de TVA défini par le pays du client.
 
+Selon la législation européenne, en cas de vente à un client particulier, vous devez facturer la TVA française jusqu'à 10 000 € de vente totales dans l'UE. Au-delà de ce montant, vous devez facturer la TVA du pays du client. 
 ## Prefixe de facture
 Vous pouvez définir un préfixe pour les factures. Par exemple, si vous définissez le préfixe à `INV-`, les factures seront nommées `INV-2024-08-0001`, `INV-2024-08-0001`, etc.
 

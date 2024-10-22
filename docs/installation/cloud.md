@@ -17,6 +17,8 @@ Après ceci, le système va vous indiquer le serveur sur lequel votre espace cli
 
 ![Enregistrement CNAME](/img/next_gen/Installation/Cloud/cname.png)
 
+Pour plus d'information pour ajouter le CNAME, une page dédiée est disponible [ici](../developpers/software/relier-domain-cname.md)
+
 Pour vérifier que votre domaine est bien relié aux serveurs de CLIENTXCMS, vous pouvez utiliser le site [CheckHost](https://check-host.net) et renseigner votre domaine.
 Il devrait vous indiquer que l'enregistrement CNAME est bien relié à l'adresse IP du serveur de CLIENTXCMS.
 

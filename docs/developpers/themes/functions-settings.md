@@ -57,3 +57,4 @@ Vous pouvez les récupérer avec la fonction `{{ setting() }}`.
 | `theme_home_image_meta`     | Image meta de la page d'accueil                    |
 | `seo_site_title`            | Titre du site (affiché à côté du titre de la page) |
 
+Vous pouvez les récupérer avec la fonction `{{ setting() }}` ou `{{ translated_setting() }}`.
