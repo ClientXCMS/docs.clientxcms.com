@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ClientXCMS/docs.clientxcms.com/blob/V2/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -89,7 +89,7 @@ const config: Config = {
     announcementBar: {
       id: 'announcementBar',
       content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
-      content: `ClientXCMS V1 n'est plus maintenu. Nous travaillons actuellement sur la version NextGen.`,
+      content: `ClientXCMS V1 n'étant plus maintenu, nous travaillons actuellement sur la version NextGen V2 sortie à partir du 31/01/2024.`,
       backgroundColor: '#828eb7',
       textColor: '#000000',
       isCloseable: false,

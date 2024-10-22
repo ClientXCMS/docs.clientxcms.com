@@ -53,6 +53,9 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
   "demo": "https://demo.clientxcms.com"
 }
 ```
+### Ajouter une image de prévisualisation
+Vous pouvez ajouter une image de prévisualisation pour votre thème en ajoutant un fichier `screenshot.png` dans le dossier `resources/themes/theme_name/`.
+
 ## Technologie
 Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/11.x/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
 Vous êtes libre d'utiliser les technologies que vous souhaitez pour votre thème en termes de CSS.

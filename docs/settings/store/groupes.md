@@ -42,3 +42,13 @@ Cette option permet de décider si le groupe ne doit pas être disponible à l'a
 Pour supprimer un groupe, il faut que le groupe soit vide de tout produit. 
 
 Si la condition est remplie, un bouton sera disponible "Supprimer ce groupe". Une confirmation vous serra demandée après ceci, il supprime le groupe.
+
+## Metadonnées
+-----
+-------------
+| Clé | Valeur | Description |
+| --- | ------ | ----------- |
+| `use_image_as_background` | true | Définit l’image du groupe comme image de fond |
+| `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
+
+-------------

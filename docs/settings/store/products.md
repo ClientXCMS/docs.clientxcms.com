@@ -93,8 +93,8 @@ La suppression d'un produit peut provoquer des problèmes dans le système.
 :::
 Vous pouvez supprimer un produit en cliquant sur le bouton rouge dans la colonne "Actions". Une confirmation vous sera demandée puis le produit sera supprimé.
 
-### Status
-Les status permettent de définir l'état du produit.
+### Statut
+Les statut permettent de définir l'état du produit.
 - Disponible : Visible et disponible à l'achat
 - Non référencé : Visible uniquement par les administrateurs
 - Caché : Invisible pour les clients
@@ -125,4 +125,7 @@ Les métadonnées permettent de définir des informations supplémentaires sur l
 | `disabled_many_services`  | all    | Désactive la possibilité de commander plusieurs services        |
 | `auto_stock`              | true   | Permet de gérer le stock automatiquement                        |
 | `disabled_stock`          | true   | Désactive la gestion du stock                                   |
+| `max_renewals_in_current_month` | 1 | Nombre de renouvellements maximum par mois                     |
+| `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                   |
+| `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
 --------------------------------

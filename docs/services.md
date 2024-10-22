@@ -124,3 +124,13 @@ Les cycles de facturation permettent de définir la période de facturation pour
 - Biannuel
 - Triennal
 - Hebdomadaire
+
+### Metadonnées
+-------------
+| Clé | Valeur | Description |
+| --- | ------ | ----------- |
+| `max_renewals_in_current_month` | nbr | L imite le nombre de renouvellement pour le mois courant |
+| `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                   |
+| `max_renewals` | 1 | Nombre de renouvellements maximum |
+| `disable_notify_expiration` | true | Désactive les notifications d'expiration |
+-------------

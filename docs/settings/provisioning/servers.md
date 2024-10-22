@@ -4,11 +4,11 @@ sidebar_position: 7
 
 # Serveurs
 
-Chaque produit/services de vos clients est relié un serveur CLIENTXCMS qui permet de faire la jointure entre votre CLIENTXCMS et votre serveur avec votre application (Proxmox, Plesk, Pterodactyl). Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Paramètres généraux` et enfin dans `Serveurs`.
+Chaque produit/services de vos clients est relié un serveur CLIENTXCMS qui permet de faire la jointure entre votre CLIENTXCMS et votre serveur avec votre application (Proxmox, Plesk, Pterodactyl). Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Approvionement` et enfin dans `Serveurs`.
 ## Listes des serveurs
 Vous pouvez voir les serveurs disponibles dans la page principale.
 
-![img](/img/next_gen/settings/core/servers/admin_list.png)
+![img](/img/next_gen/settings/provisioning/servers/admin_list.png)
 
 ### Actions
 - **Afficher** : Permet de voir les détails du produit et de le modifier
@@ -20,7 +20,7 @@ La suppression d'un serveur peut provoquer des problèmes dans le système.
 :::
 ## Création
 Pour ajouter un serveur, cliquez sur le bouton "Créer" en haut à gauche de la page.
-![img](/img/next_gen/settings/core/servers/create_server.png)
+![img](/img/next_gen/settings/provisioning/servers/create_server.png)
 
 **Nom** : Nom qui sera affiché à titre d'information.
 
@@ -74,7 +74,14 @@ Après avoir testé la connexion, vous pouvez sauvegarder les modifications ou c
 
 Exemple de message de succès et d'exemple de message d'erreur :
 
-![Test de connexion réussis](/img/next_gen/settings/core/servers/test_connection_sucessfully.png)
-![Test de connexion échoué](/img/next_gen/settings/core/servers/test_connection_failed.png)
+![Test de connexion réussis](/img/next_gen/settings/provisioning/servers/test_connection_sucessfully.png)
+![Test de connexion échoué](/img/next_gen/settings/provisioning/servers/test_connection_failed.png)
 
-### Erreur réguilière
+## Meta données
+-------------
+| Clé | Valeur | Description |
+| --- | ------ | ----------- |
+| `proxmox_backup_storage` | string | Nom du stockage PBS de stockage |
+| `virtualizor_cloud_url`  | https://exemple.com:4083/ |       URL de connexion des revendeurs             |
+| `proxmox_backup_node` | pbs | Nom de la node contenant les sauvegardes |
+-------------
