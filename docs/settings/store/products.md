@@ -46,7 +46,7 @@ Pour ajouter un produit, cliquez sur le bouton "Créer" en haut à gauche de la 
 
 **Stock disponible** : Stock disponible pour le produit (-1 pour illimité)
 
-**Statut** : Statut du produit [(Voir ici pour plus d'informations)](./products#status)
+**Statut** : Statut du produit [(Voir ici pour plus d'informations)](#statut)
 
 **Groupe** : Permet d'associer un produit à un groupe - Ne peut pas être dans aucun groupe [(Si vide créez en un ici)](./groupes#création)
 
