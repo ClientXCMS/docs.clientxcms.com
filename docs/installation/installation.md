@@ -1,9 +1,9 @@
----
-sidebar_position: 1
----
+import DocCardList from '@theme/DocCardList';
 
 # Installation
 L'espace client peut être installé de deux manières différentes : en autohébergement ou sur les serveurs de CLIENTXCMS. Cette page vous guidera dans le choix de l'installation qui vous convient le mieux.
+
+<DocCardList />
 
 ## Cloud
 L'installation la plus simple, elle permet d'être installé en quelques minutes de manière automatique. Pour cela, il vous suffit de vous rendre sur [cette page](https://clientxcms.com/cloud) et de suivre les instructions.
@@ -20,3 +20,4 @@ L'installation en autohébergement nécessite des connaissances en administratio
 ## Ancienne version
 L'utisation de l'ancienne version de l'espace client est déconseillée. Cependant, si vous souhaitez l'utiliser, vous pouvez suivre les instructions d'installation [ici](/v1/introduction).
 à savoir que cette version n'est plus maintenue et ne reçoit plus de mises à jour de sécurité. Il sera donc plus difficile de trouver de l'aide en cas de problème. Nous vous recommandons donc de migrer vers la [nouvelle version de l'espace client](./migrate).
+

@@ -21,5 +21,7 @@ A chaque execution de ces commandes, le fichier journal est mis à jour avec les
 Les erreurs sont stockées dans des fichiers quoditiennement comme ceci : `laravel-{annee}-{month}-{day}` qui se garde **15 jours**.
 ## Actions disponible
 **Bouton gris** : Permet de télécharger le fichier de log
-**Bouton vers** : Permet de vider le fichier de log
+
+**Bouton vert** : Permet de vider le fichier de log
+
 **Bouton rouge** : Permet de supprimer le fichier de log

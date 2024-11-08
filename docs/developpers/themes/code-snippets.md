@@ -4,6 +4,7 @@ sidebar_position: 4
 # Code d'exemple
 Voici quelques exemples de code pour vous aider à personnaliser votre thème.
 ### Head
+Fichier `resources/themes/theme_name/includes/head.blade.php`
 ```blade
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
@@ -20,6 +21,8 @@ Voici quelques exemples de code pour vous aider à personnaliser votre thème.
 </head>
 ```
 ### Header
+Fichier `resources/themes/theme_name/includes/header.blade.php`
+
 ```blade
 <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-2.5 sm:py-4 bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700 print:hidden">
     <nav class="max-w-7xl flex basis-full items-center mx-auto px-4 sm:px-6 lg:px-8" aria-label="Global">
@@ -116,7 +119,7 @@ Fichier `resources/themes/theme_name/views/front/store/group.blade.php`
             <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                 @if ($group->image)
                     <div class="h-52 flex flex-col justify-center items-center bg-indigo-600 rounded-t-xl">
-                        <img src="{{ Storage::url($group->image) }}" class="{{ $group->useImageAsBackground() ? 'h-full w-full' : 'h-32 w-32' }}" alt="{{ $group->name }}">
+                        <img src="{{ Storage::url($group->image) }}" class="{{ $group->useImageAsBackground() ? 'h-full w-full' : 'h-32 w-32' }}" alt="{{ $group->trans('name') }}">
                     </div>
                 @endif
                 <div class="p-4 md:p-6">
