@@ -71,7 +71,11 @@ Une fois les informations d'authentification saisies dans la page de création d
 Dans ClientXCMS, vous pouvez importer des adresses IP pour les assigner à vos VPS clients. Pour ce faire, suivez ces étapes :  
 
 1. Rendez-vous dans l'espace d'administration de ClientXCMS.  
-2. Allez dans **Paramètres > Catégorie "Proxmox" > "IPAM"**.  
+
+2. Allez dans **Paramètres > Catégorie "Proxmox" > "IPAM"**. 
+Vous pouvez voir un tableau avec la liste des IPs que vous avez alloué pour vos clients VPS, et leur statut.
+![img](../../../static/img/next_gen/extensions/modules/proxmox/image_5.png)
+
 3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
 ![img](../../../static/img/next_gen/extensions/modules/proxmox/image_4.png)  
 
@@ -117,3 +121,39 @@ Pour importer un bloc d'adresses IP, complétez les champs suivants :
 > - **Range** : `10-199`  
 
 Cliquez sur **"Importer"** pour ajouter la plage d'adresses. 
+
+## **Ajouter des systèmes d'exploitation LXC (OS) et modèles KVM (templates CloudInit)**
+
+:::info 
+Si vous gérez plusieurs serveurs (nœuds ou clusters), assurez-vous que le système d'exploitation ou le modèle est correctement configuré sur un disque appartenant au nœud Proxmox de chaque serveur concerné.  
+:::
+
+### **Ajouter un système d'exploitation (pour LXC)**
+
+1. Accédez à l'espace d'administration de ClientXCMS.  
+2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Systèmes d'exploitation"**.  
+3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
+![img](../../../static/img/next_gen/extensions/modules/proxmox/image_6.png)  
+
+Complétez les champs suivants :  
+- **Nom** : Nom du système d'exploitation visible lors de la configuration d’un VPS (exemple : *Debian 12*).  
+- **Systèmes d'exploitation** : Identifiant du modèle de conteneur (CT) situé sur les disques des serveurs.  
+
+Une fois les informations remplies, cliquez sur le bouton **"Créer"**. Un message de confirmation s'affichera si l'opération a réussi.  
+
+### **Ajouter une template CloudInit (pour KVM)**
+
+1. Accédez à l'espace d'administration de ClientXCMS.  
+2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Modèles"**.  
+3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
+![img](../../../static/img/next_gen/extensions/modules/proxmox/image_7.png)  
+
+Complétez les champs suivants :  
+- **Nom** : Nom du modèle qui apparaîtra lors de la configuration d’un VPS (exemple : *Windows Server 2025*).  
+- **ID de la machine virtuelle** : Identifiant de la VM utilisée comme modèle sur les différentes nodes Proxmox VE.  
+
+Cliquez ensuite sur **"Créer"**. Vous recevrez une confirmation si le modèle a été ajouté avec succès.  
+
+:::tip  
+N’oubliez pas d’intégrer les systèmes d’exploitation et modèles dans la configuration de vos produits Proxmox. Cela garantit qu’ils seront disponibles pour vos clients lors de leurs commandes.  
+:::  
