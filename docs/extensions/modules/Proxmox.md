@@ -80,8 +80,6 @@ Deux modes d'importation sont disponibles :
 - **Créer une adresse IP** : Ajouter une seule adresse IP unique.  
 - **Ajout rapide d'adresses IP** : Importer une plage (pool) d'adresses IP successives.  
 
----
-
 ### **Créer une adresse IP (unique)**
 
 Remplissez les champs suivants :  
@@ -100,8 +98,6 @@ Remplissez les champs suivants :
 - **Serveur** : L'ID du serveur Proxmox associé à cette adresse IP.  
 
 Cliquez sur **"Créer"** pour enregistrer l'adresse IP. Un message de confirmation s'affichera si l'adresse a été importée avec succès.  
-
----
 
 ### **Ajout rapide d'adresses IP (range)**
 
