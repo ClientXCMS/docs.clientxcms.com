@@ -28,7 +28,7 @@ Grâce à OAuth2, la synchronisation des modules et des thèmes entre vos diffé
 
 **Comment profiter de la synchronisation via OAuth2 ?**
 
-![Etape 1](https://media.discordapp.net/attachments/475073153509490689/1135136801137377330/image.png?width=1766&height=1008)
+![Etape 1](https://share.byh.fr/files/MBuPzXg2a67lLvq-image.png)
 
 1. Connectez-vous à votre compte CLIENTXCMS.
 2. Allez dans votre "Espace Licence" et cherchez la section dédiée à OAuth2.
