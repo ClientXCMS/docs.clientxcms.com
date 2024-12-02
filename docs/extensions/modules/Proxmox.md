@@ -103,7 +103,7 @@ Remplissez les champs suivants :
 
 Cliquez sur **"Créer"** pour enregistrer l'adresse IP. Un message de confirmation s'affichera si l'adresse a été importée avec succès.  
 
-### **Ajout rapide d'adresses IP (range)**
+### Ajout rapide d'adresses IP (range)
 
 Pour importer un bloc d'adresses IP, complétez les champs suivants :  
 
@@ -122,13 +122,13 @@ Pour importer un bloc d'adresses IP, complétez les champs suivants :
 
 Cliquez sur **"Importer"** pour ajouter la plage d'adresses. 
 
-## **Ajouter des systèmes d'exploitation LXC (OS) et modèles KVM (templates CloudInit)**
+## Ajouter des systèmes d'exploitation LXC (OS) et modèles KVM (templates CloudInit)
 
 :::info 
 Si vous gérez plusieurs serveurs (nœuds ou clusters), assurez-vous que le système d'exploitation ou le modèle est correctement configuré sur un disque appartenant au nœud Proxmox de chaque serveur concerné.  
 :::
 
-### **Ajouter un système d'exploitation (pour LXC)**
+### Ajouter un système d'exploitation (pour LXC)
 
 1. Accédez à l'espace d'administration de ClientXCMS.  
 2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Systèmes d'exploitation"**.  
@@ -141,7 +141,7 @@ Complétez les champs suivants :
 
 Une fois les informations remplies, cliquez sur le bouton **"Créer"**. Un message de confirmation s'affichera si l'opération a réussi.  
 
-### **Ajouter une template CloudInit (pour KVM)**
+### Ajouter une template CloudInit (pour KVM)
 
 1. Accédez à l'espace d'administration de ClientXCMS.  
 2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Modèles"**.  
