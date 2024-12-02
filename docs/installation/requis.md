@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 # Prérequis
+Retrouvez ici les prérequis pour l'installation de ClientXCMS en cloud ou en autohébergement.
 
 ## Cloud
 L'unique prérequis pour l'installation de l'espace client sur les serveurs de CLIENTXCMS est de disposer **d'un compte CLIENTXCMS** et d'une **licence valide**. Pour cela, rendez-vous sur [cette page](https://clientxcms.com/pricing) pour la commander.
@@ -14,6 +15,14 @@ Il est possible d'installer ClientXCMS sur la plupart des hébergements web ains
 Nous conseillons d'avoir au minimum 100 Mo d'espace disque pour l'installation de ClientXCMS.
 :::info CTXHosting
 Si vous souhaitez un VPS optimisé pour ClientXCMS, nous vous recommandons de vous tourner vers [CTXHosting](https://ctxhosting.fr). Notre filiale propose des VPS optimisés pour ClientXCMS.
+:::
+### PHP
+ClientXCMS nécessite PHP 8.2 ou supérieur. Il est recommandé d'utiliser la **version 8.3** pour une compatibilité optimale. Vous pouvez vérifier la version de PHP installée sur votre serveur en utilisant la commande suivante :
+```bash
+php -v
+```
+:::warning
+ClientXCMS ne supporte pas les versions de PHP inférieures à 8.2.
 :::
 #### Extensions PHP
 | Extensions | Extensions |
@@ -37,7 +46,7 @@ phpinfo();
 Pour installer les extensions manquantes, vous pouvez utiliser la commande suivante :
 ```bash
 sudo apt-get update
-sudo apt-get install php8.2 php8.2-bcmath php8.2-ctype php8.2-fileinfo php8.2-json php8.2-mbstring php8.2-openssl php8.2-pdo php8.2-tokenizer php8.2-xml
+sudo apt-get install php8.3 php8.3-bcmath php8.3-ctype php8.3-fileinfo php8.3-json php8.3-mbstring php8.3-openssl php8.3-pdo php8.3-tokenizer php8.3-xml
 ```
 
 ### Base de données

@@ -1,76 +1,75 @@
 ---
-slug: a-dieu-security
-title: A dieu sécurity token
-authors:
-  - name: MartinDev
-    title: ClientXCMS Team
-    url: https://github.com/DarkIncognito85
-    image_url: https://github.com/DarkIncognito85.png
-tags: [nouvelle documentation, news, mise à jour]
+slug: a-dieu-security  
+title: Adieu au token de sécurité  
+authors:  
+  - name: MartinDev  
+    title: ClientXCMS Team  
+    url: https://github.com/DarkIncognito85  
+    image_url: https://github.com/DarkIncognito85.png  
+tags: [nouvelle documentation, news, mise à jour]  
 ---
 
-Chers clients de CLIENTXCMS,
+Chers utilisateurs de CLIENTXCMS,
 
-Nous sommes ravis de vous annoncer que nous avons résolu le problème récurrent lié à l'erreur "Security token is invalid" qui a pu affecter l'expérience de certains d'entre vous sur notre plateforme. Notre équipe technique a travaillé diligemment pour identifier et éliminer cette erreur, afin de garantir la sécurité et la stabilité de votre expérience sur notre CMS.
+Nous avons le plaisir de vous annoncer que le problème récurrent lié à l'erreur **"Security token is invalid"** a été résolu. Cette erreur, qui a pu affecter certains d'entre vous, n'est désormais plus un obstacle. Notre équipe technique a travaillé avec diligence pour identifier et corriger la cause, afin de garantir une expérience plus stable et sécurisée sur notre plateforme.
 
 <!-- truncate -->
 
-**La Fin d'un Problème Embêtant : "Security Token is Invalid"**
+### La fin d'un problème gênant : "Security Token is Invalid"
 
-Nous comprenons combien il était frustrant de rencontrer l'erreur "Security token is invalid" lors de l'utilisation de notre CMS. Cette erreur peut survenir pour diverses raisons, mais nous avons modifier en profondeur le système pour résoudre ce problème
+Nous savons à quel point il était frustrant de rencontrer l'erreur **"Security token is invalid"** lors de l'utilisation de CLIENTXCMS. Cette erreur pouvait survenir pour diverses raisons, mais grâce à une refonte complète du système, nous avons pu résoudre définitivement ce problème.
 
-**Nouvelle Fonctionnalité : Synchronisation via OAuth2**
+### Nouvelle fonctionnalité : Synchronisation via OAuth2
 
-Outre la résolution de ce problème, nous sommes ravis de vous présenter une nouvelle fonctionnalité passionnante qui améliorera considérablement votre expérience avec CLIENTXCMS. Nous avons mis en place un système de synchronisation basé sur OAuth2 pour les modules et les thèmes.
+En plus de résoudre cette erreur, nous avons le plaisir de vous présenter une nouvelle fonctionnalité qui simplifiera et sécurisera encore davantage votre expérience avec CLIENTXCMS. Nous avons intégré un système de synchronisation basé sur **OAuth2** pour la gestion des modules et des thèmes.
 
-Qu'est-ce que cela signifie pour vous ?
-
-Grâce à OAuth2, la synchronisation des modules et des thèmes entre vos différents sites web devient plus fluide et sécurisée.
+**Qu'est-ce que cela change pour vous ?**  
+Grâce à OAuth2, la synchronisation des modules et des thèmes entre vos différents sites se fait désormais de manière plus fluide et sécurisée.
 
 **Comment profiter de la synchronisation via OAuth2 ?**
-![Etape 1](https://media.discordapp.net/attachments/475073153509490689/1135136801137377330/image.png?width=1766&height=1008)
+
+![Etape 1](https://share.byh.fr/files/MBuPzXg2a67lLvq-image.png)
+
 1. Connectez-vous à votre compte CLIENTXCMS.
-2. Accédez à votre "Espace Licence" et cherchez la section dédiée à OAuth2.
-3. Vous y trouverez vos identifiants OAuth2 voici un exemple :
-   - **Client ID :** 6267874835637
-   - **Client Secret :** v1ejuvj1ruhupstkdlguersbfqaul7yc4kfemk4ysl1rmmz0ha51vo42osf9pl0a8xbkiisbewbsfsaonskhagkmsu1jlrb6pggnsrts8lkvfp8z6bypbgvfpmylcdk3
+2. Allez dans votre "Espace Licence" et cherchez la section dédiée à OAuth2.
+3. Vous y trouverez vos identifiants OAuth2, tels que :  
+   - **Client ID :** 6267874835637  
+   - **Client Secret :** [Votre Secret]  
 ![Etape 1](/img/tutorial/step3.png)
 
-4. Copiez ces informations et collez-les dans votre fichier .env selon le format suivant :
+4. Copiez ces informations et collez-les dans votre fichier `.env` en respectant le format suivant :  
    ```
-   APP_CLIENTID=6267874835637
-   APP_SECRET=v1ejuvj1ruhupstkdlguersbfqaul7yc4kfemk4ysl1rmmz0ha51vo42osf9pl0a8xbkiisbewbsfsaonskhagkmsu1jlrb6pggnsrts8lkvfp8z6bypbgvfpmylcdk3
+   APP_CLIENTID=6267874835637  
+   APP_SECRET=v1ejuvj1ruhupstkdlguersbfqaul7yc4kfemk4ysl1rmmz0ha51vo42osf9pl0a8xbkiisbewbsfsaonskhagkmsu1jlrb6pggnsrts8lkvfp8z6bypbgvfpmylcdk3  
    ```
 
-Si vous rencontrez des problèmes ou si vous avez des questions concernant la mise en place de cette fonctionnalité, n'hésitez pas à contacter notre équipe d'assistance. Nous serons ravis de vous aider.
-## Nouveautés de la mise à jour v2.8.10
+Si vous avez des questions ou des difficultés lors de l'intégration de cette fonctionnalité, notre équipe d'assistance est à votre disposition pour vous guider.
 
-### Module SEO : Améliorez votre Visibilité en Ligne
+### Nouveautés de la mise à jour v2.8.10
 
-Le module SEO est spécialement conçu pour vous aider à optimiser le référencement de vos sites web. Grâce à cet outil puissant, vous pouvez facilement gérer les métadonnées, les balises, les descriptions et bien plus encore. Améliorez la visibilité de votre contenu sur les moteurs de recherche et attirez plus de visiteurs qualifiés vers vos sites. Avec notre module SEO convivial, vous serez mieux positionné pour conquérir les sommets des résultats de recherche.
+#### Module SEO : Optimisez votre visibilité en ligne
 
-### Module SocialAuth+ : Connexion Simplifiée avec des Services Tiers ###
+Le module **SEO** a été conçu pour vous aider à améliorer le référencement de vos sites. Grâce à lui, vous pouvez facilement gérer vos métadonnées, balises, descriptions et bien plus encore. Cette fonctionnalité vous permet d’augmenter la visibilité de vos sites sur les moteurs de recherche et d'attirer davantage de visiteurs qualifiés.
 
-Désormais, offrez à vos utilisateurs la possibilité de se connecter rapidement à leurs comptes en utilisant des services tiers populaires tels que Facebook, Google, Twitter et bien d'autres encore. Avec le module SocialAuth+, l'inscription et la connexion à vos sites web deviennent un jeu d'enfant, ce qui facilite l'engagement des utilisateurs et encourage une plus grande interaction. Simplifiez l'expérience de vos visiteurs tout en collectant des données utiles pour mieux comprendre votre audience.
+#### Module SocialAuth+ : Connexion simplifiée avec des services tiers
+
+Le module **SocialAuth+** vous permet désormais de proposer à vos utilisateurs la possibilité de se connecter rapidement via des services populaires tels que **Facebook**, **Google**, **Twitter**, et bien d'autres. Cela simplifie l'inscription et améliore l'interaction avec vos utilisateurs.
+
 ![Etape 1](/img/tutorial/step5.png)
 
-### Ajout d'options pour les services existant 
+#### Ajout d'options pour les services existants
 
-Nous comprenons que chaque site web a ses propres besoins et exigences spécifiques. C'est pourquoi nous avons écouté vos commentaires et pris en compte vos demandes. Avec notre dernière mise à jour, nous vous offrons désormais la possibilité d'ajouter des options personnalisées aux services déjà en cours d'utilisation. Cette fonctionnalité flexible vous permet de configurer les services selon vos préférences particulières, garantissant ainsi une intégration parfaite avec votre vision créative.
+Nous avons pris en compte vos retours et, grâce à cette mise à jour, vous pouvez maintenant personnaliser les services déjà en place. Cette nouvelle fonctionnalité vous permet de mieux adapter les services à vos besoins spécifiques, en garantissant une parfaite intégration à vos projets.
 
-Nous sommes convaincus que ces nouveaux modules et fonctionnalités amélioreront considérablement votre expérience globale avec CLIENTXCMS. Notre objectif est de continuer à innover et à fournir des solutions de pointe pour répondre à vos besoins en constante évolution.
 ![Etape 1](/img/tutorial/step4.png)
 
-## Merci pour votre confiance
+### Merci pour votre confiance
 
-Nous tenons à exprimer notre sincère gratitude pour votre confiance continue envers CLIENTXCMS. Vos retours, vos suggestions et vos idées sont essentiels pour façonner l'avenir de notre plateforme. Notre équipe reste dévouée à fournir un support exceptionnel et à vous aider à atteindre vos objectifs en ligne.
+Nous tenons à vous remercier chaleureusement pour la confiance que vous accordez à CLIENTXCMS. Vos retours, suggestions et idées sont essentiels pour nous aider à améliorer continuellement notre plateforme. Notre équipe est à votre disposition pour vous offrir un support de qualité et vous accompagner dans vos projets.
 
-Connectez-vous dès aujourd'hui pour découvrir les nouvelles fonctionnalités et modules. Si vous avez des questions ou avez besoin d'aide pour les intégrer à vos sites web existants, n'hésitez pas à contacter notre équipe d'assistance. Nous sommes là pour vous aider à tirer le meilleur parti de votre expérience avec CLIENTXCMS.
+N'hésitez pas à vous connecter dès aujourd'hui pour découvrir toutes les nouvelles fonctionnalités et modules. Si vous avez des questions ou des préoccupations concernant leur intégration, notre équipe d'assistance est là pour vous aider.
 
-Restez à l'affût, car nous avons encore plus d'améliorations passionnantes à venir dans un avenir proche !
+Restez à l'écoute, car d'autres améliorations passionnantes arrivent bientôt !
 
-Merci de faire partie de la famille CLIENTXCMS !
-
-Cordialement,
-
+Cordialement,  
 L'équipe CLIENTXCMS

@@ -312,4 +312,14 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
-Vous devez redemander à télécharger la source depuis **clientxcms.com**. Une fois retéléchargée, vous trouverez la source de l'extension soit dans le dossier `/addons` ou `/modules`.
+Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire dans le dossier `addons` ou `modules` de votre installation.
+## Problèmes courants
+
+### Interface introuvable Jsonable
+
+Si vous avez l'erreur suivante :
+"Interface "DragonCode/Contracts/Support/Jsonable" not found"
+Vous pouvez la régler en executant la commande : 
+```bash
+composer require dragon-code/contracts
+```

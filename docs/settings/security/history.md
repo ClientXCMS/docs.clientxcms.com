@@ -19,7 +19,9 @@ Les résultats de chaque planifiées sont enregistrés dans les logs à partir d
 A chaque execution de ces commandes, le fichier journal est mis à jour avec les informations de l'action effectuée.
 ## Logs
 Les erreurs sont stockées dans des fichiers quoditiennement comme ceci : `laravel-{annee}-{month}-{day}` qui se garde **15 jours**.
-## Actions disponible
+## Actions disponibles
 **Bouton gris** : Permet de télécharger le fichier de log
-**Bouton vers** : Permet de vider le fichier de log
+
+**Bouton vert** : Permet de vider le fichier de log
+
 **Bouton rouge** : Permet de supprimer le fichier de log

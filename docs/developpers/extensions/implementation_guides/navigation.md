@@ -66,7 +66,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../settings).
+Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../../../settings).
 
 ## Gestion des widgets dans le tableau de bord admin
 
