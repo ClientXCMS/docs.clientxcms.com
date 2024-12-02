@@ -22,7 +22,7 @@ jobs:
         name: Login to Registery
         uses: docker/login-action@v3
         with:
-          registry: registry.as216117.net:9443
+          registry: ${{ secrets.REGISTRY_URL }}
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_TOKEN }}
       -
@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: registry.as216117.net:9443/docsclientxcms:preprod
+          tags: ${{ secrets.REGISTRY_URL }}/docsclientxcms:preprod
 
       - name: Restart docker-compose via ssh
         uses: D3rHase/ssh-command-action@v0.2.2
@@ -39,4 +39,4 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           user: ${{ secrets.VPS_USER }}
           private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          command: /var/www/preprod.docs.clientxcms.com/restart-docker.sh
+          command: ${{ secrets.COMMAND_PREPROD }}
