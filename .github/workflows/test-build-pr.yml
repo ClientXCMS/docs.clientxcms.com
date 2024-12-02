@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
   
 jobs:
-  Test-Build:
+  Test-Build-Pr:
     runs-on: ubuntu-latest
     if: github.actor != 'dependabot[bot]'
     steps:
