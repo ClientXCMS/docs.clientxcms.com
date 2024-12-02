@@ -1,4 +1,4 @@
-# Clientxcms Documentation 🚀
+# Clientxcms Documentation 🚀 [![Build Image](https://github.com/ClientXCMS/docs.clientxcms.com/actions/workflows/docker-images.yml/badge.svg?branch=V2)](https://github.com/ClientXCMS/docs.clientxcms.com/actions/workflows/docker-images.yml)
 
 Bienvenue dans la documentation officielle du projet **Clientxcms** ! Ce projet utilise **Docusaurus** pour créer une documentation moderne, claire et rapide.
 
