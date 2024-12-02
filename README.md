@@ -1,7 +1,5 @@
 # Clientxcms Documentation 🚀
 
-![Clientxcms Logo](https://cdn.clientxcms.com/ressources/docs/logo.png)
-
 Bienvenue dans la documentation officielle du projet **Clientxcms** ! Ce projet utilise **Docusaurus** pour créer une documentation moderne, claire et rapide.
 
 ---
