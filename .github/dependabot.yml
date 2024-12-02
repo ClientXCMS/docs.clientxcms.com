@@ -8,8 +8,7 @@ updates:
     commit-message:
       prefix: "deps"
     open-pull-requests-limit: 1
-    target-branch: "V2"  # Assurez-vous que cette branche est correcte
-    # Group updates to reduce the number of PRs
+    target-branch: "V2"
     groups:
       all-dependencies:
         patterns:

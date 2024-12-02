@@ -1,41 +1,64 @@
-# Website
+# Clientxcms Documentation 🚀
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+![Clientxcms Logo](https://cdn.clientxcms.com/ressources/docs/logo.png)
 
-### Installation
+Bienvenue dans la documentation officielle du projet **Clientxcms** ! Ce projet utilise **Docusaurus** pour créer une documentation moderne, claire et rapide.
 
-```
-$ yarn
-```
+---
 
-### Local Development
+## 🚀 Mise en route
 
-```
-$ yarn start
-```
+### **1. Installation des dépendances**
+Assurez-vous d'avoir **Node.js** et **npm** installés sur votre machine. Exécutez la commande suivante pour installer les paquets nécessaires :
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```bash
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+> Cette commande installe toutes les dépendances nécessaires spécifiées dans le fichier `package.json`.
 
-### Deployment
+---
 
-Using SSH:
+### **2. Lancer le serveur de développement**
+Pour démarrer un environnement de développement local :
 
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+> Cette commande démarre le serveur en mode développement. Accédez à votre documentation localement via [http://localhost:3000](http://localhost:3000). Toute modification dans vos fichiers sera rechargée automatiquement !
+
+---
+
+### **3. Construire le projet**
+Pour générer une version statique de votre documentation :
+
+```bash
+npm run build
+```
+
+> Cette commande génère les fichiers statiques dans le dossier `build/`. Utilisez ces fichiers pour héberger votre documentation sur un serveur web.
+
+---
+
+### **4. Lancer en mode production**
+Si vous souhaitez à la fois construire votre projet et lancer un serveur local en mode production, utilisez :
+
+```bash
+npm run prod
+```
+
+> Cette commande combine le `build` et le `serve` pour simplifier le workflow. Accédez à [http://localhost:3000](http://localhost:3000) pour voir le rendu final.
+
+---
+
+## 📝 Contribuer
+Nous accueillons les contributions ! Si vous souhaitez proposer des améliorations ou corriger des erreurs, faites un pull request sur ce dépôt.
+
+---
+
+Merci d'utiliser **Clientxcms** ❤️ ! Si vous avez des questions, n'hésitez pas à nous contacter.
+
+---
+
+© 2024 Clientxcms. Tous droits réservés.
