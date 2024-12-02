@@ -50,8 +50,50 @@ npm run prod
 
 ---
 
-## 📝 Contribuer
-Nous accueillons les contributions ! Si vous souhaitez proposer des améliorations ou corriger des erreurs, faites un pull request sur ce dépôt.
+## 📝 Contribution
+
+Nous accueillons les contributions ! Voici comment contribuer :
+
+### **1. Cloner le projet**
+Commencez par cloner le dépôt GitHub sur votre machine locale :
+
+```bash
+git clone https://github.com/ClientXCMS/docs.clientxcms.com.git
+cd docs.clientxcms.com
+```
+
+### **2. Créez une branche pour vos modifications**
+Travaillez sur une branche dédiée pour vos changements :
+
+```bash
+git checkout -b feat/nom-de-la-feature
+```
+
+### **3. Installez les dépendances**
+Avant de commencer, assurez-vous d'installer toutes les dépendances :
+
+```bash
+npm install
+```
+
+### **4. Faites vos modifications**
+Apportez vos changements et testez-les localement en utilisant :
+
+```bash
+npm run start
+```
+
+### **5. Poussez vos modifications**
+Poussez votre branche vers le dépôt distant :
+
+```bash
+git add .
+git commit -m "Ajout de la fonctionnalité X"
+git push origin feat/nom-de-la-feature
+```
+
+### **6. Faites une Pull Request**
+Créez une Pull Request vers la branche `preprod` via l'interface GitHub.
 
 ---
 
