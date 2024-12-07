@@ -9,6 +9,13 @@ Proxmox est une plateforme populaire permettant de gérer des serveurs virtuels 
 :::info Modules
 Pour utiliser les fonctionnalités décrites ci-dessous, vous devez activer le module Proxmox dans **ClientXCMS**.
 :::
+### Fonctionnalités supportées 
+- Automatisez la création et l'approvisionnement des VPS
+- Gestion des VPS depuis l'espace client
+- Envoie des identifiants de connexion par E-mail
+- Gestions de comptes proxmox par client
+- Automatisez les suspensions et les résiliations
+- Amélioration de service
 
 ## Authentification
 
@@ -219,3 +226,28 @@ import TabItem from '@theme/TabItem';
 ![img](/img/next_gen/extensions/modules/proxmox/logs.png)
 </TabItem>
 </Tabs>
+
+
+## Options supportées
+- Espace disque supplémentaires (curseurs ou menu déroulant)
+- Adresses IP supplémentaires (curseurs ou menu déroulant)
+- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
+- Coeurs CPU supplémentaires (curseurs ou menu déroulant)
+- Socket CPU supplémentaires (curseurs ou menu déroulant)
+- Débit réseau personnalisé (menu déroulant)
+- Noeud Proxmox personnalisé (menu déroulant)
+
+Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](../../../settings/provisioning/configoptions).
+
+### Exemple de configuration
+#### Espace disque supplémentaire
+![img](/img/next_gen/settings/provisioning/configoptions/example_disk.png)
+#### Node Proxmox personnalisé
+![img](/img/next_gen/settings/provisioning/configoptions/example_node.png)
+
+Cette configuration permet de sélectionner un nœud Proxmox spécifique si par exemple vous avez un noeud dans un autre datacenter ou un autre pays.
+Chaque option peut avoir un prix différent selon l'option sélectionnée.
+#### Coeurs CPU supplémentaires
+![img](/img/next_gen/settings/provisioning/configoptions/example_core.png)
+
+Cette configuration permet de sélectionner le nombre de coeurs CPU supplémentaires pour le VPS.

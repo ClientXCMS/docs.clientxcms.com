@@ -24,7 +24,6 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit a
 - Gestion des hébergements depuis l'espace client
 - Envoie des identifiants de connexion par E-mail
 - Connexion automatique au Plesk
-- Réinitialiser les mots de passe et gérer les comptes
 - Automatisez les suspensions et les résiliations
 - Amélioration de service
 
