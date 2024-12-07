@@ -38,7 +38,7 @@ Remplissez les informations suivantes :
 - **Token ID :** L'ID du jeton Proxmox pour l'API.
 - **Secret :** Le secret associé au jeton Proxmox pour l'API.
 
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_1.png)
+![img](/img/next_gen/extensions/modules/proxmox/image_1.png)
 
 #### 3. Générer un Token API dans Proxmox
 
@@ -52,7 +52,7 @@ Remplissez les informations suivantes :
    - **Token ID :** Choisissez un nom pour votre jeton, par exemple `clientxcms`.
    - **Privilege Separation :** Désactivez cette option en la décochant.
 
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_2.png)
+![img](/img/next_gen/extensions/modules/proxmox/image_2.png)
 
 4. Cliquez sur **Add** pour finaliser la création du jeton.
 
@@ -60,13 +60,13 @@ Remplissez les informations suivantes :
 
 Dans le **modal** qui s'ouvre, copiez les valeurs **Token ID** et **Secret**. Ces informations seront nécessaires lors de la création du serveur dans ClientXCMS (étape 2).
 
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_3.png)
+![img](/img/next_gen/extensions/modules/proxmox/image_3.png)
 
 #### 5. Tester la connexion
 
 Une fois les informations d'authentification saisies dans la page de création du serveur, cliquez sur **Vérifier** pour tester la connexion. Si le statut renvoyé est `200` et que le message ``Connection successful`` apparaît, vous pouvez cliquer sur **Créer** pour ajouter votre serveur Proxmox à ClientXCMS.
 
-## **Importation des adresses IP**
+## Importation des adresses IP
 
 Dans ClientXCMS, vous pouvez importer des adresses IP pour les assigner à vos VPS clients. Pour ce faire, suivez ces étapes :  
 
@@ -74,17 +74,16 @@ Dans ClientXCMS, vous pouvez importer des adresses IP pour les assigner à vos V
 
 2. Allez dans **Paramètres > Catégorie "Proxmox" > "IPAM"**. 
 Vous pouvez voir un tableau avec la liste des IPs que vous avez alloué pour vos clients VPS, et leur statut.
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_5.png)
+![img](/img/next_gen/extensions/modules/proxmox/image_5.png)
 
 3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_4.png)  
+![img](/img/next_gen/extensions/modules/proxmox/image_4.png)  
 
-### **Options disponibles**
 Deux modes d'importation sont disponibles :  
 - **Créer une adresse IP** : Ajouter une seule adresse IP unique.  
 - **Ajout rapide d'adresses IP** : Importer une plage (pool) d'adresses IP successives.  
 
-### **Créer une adresse IP (unique)**
+### Créer une adresse IP
 
 Remplissez les champs suivants :  
 
@@ -122,18 +121,19 @@ Pour importer un bloc d'adresses IP, complétez les champs suivants :
 
 Cliquez sur **"Importer"** pour ajouter la plage d'adresses. 
 
-## Ajouter des systèmes d'exploitation LXC (OS) et modèles KVM (templates CloudInit)
 
+
+## Gestion système d'exploitation (pour LXC)
+
+  
 :::info 
-Si vous gérez plusieurs serveurs (nœuds ou clusters), assurez-vous que le système d'exploitation ou le modèle est correctement configuré sur un disque appartenant au nœud Proxmox de chaque serveur concerné.  
+Si vous gérez plusieurs serveurs (nœuds ou clusters), assurez-vous que le système d'exploitation ou le modèle est correctement configuré sur un disque appartenant au nœud Proxmox de chaque serveur concerné. 
 :::
-
-### Ajouter un système d'exploitation (pour LXC)
 
 1. Accédez à l'espace d'administration de ClientXCMS.  
 2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Systèmes d'exploitation"**.  
 3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_6.png)  
+![img](/img/next_gen/extensions/modules/proxmox/image_6.png)  
 
 Complétez les champs suivants :  
 - **Nom** : Nom du système d'exploitation visible lors de la configuration d’un VPS (exemple : *Debian 12*).  
@@ -141,12 +141,12 @@ Complétez les champs suivants :
 
 Une fois les informations remplies, cliquez sur le bouton **"Créer"**. Un message de confirmation s'affichera si l'opération a réussi.  
 
-### Ajouter une template CloudInit (pour KVM)
+## Gestion template CloudInit (pour KVM)
 
 1. Accédez à l'espace d'administration de ClientXCMS.  
 2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Modèles"**.  
 3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](../../../static/img/next_gen/extensions/modules/proxmox/image_7.png)  
+![img](/img/next_gen/extensions/modules/proxmox/image_7.png)  
 
 Complétez les champs suivants :  
 - **Nom** : Nom du modèle qui apparaîtra lors de la configuration d’un VPS (exemple : *Windows Server 2025*).  
@@ -156,4 +156,66 @@ Cliquez ensuite sur **"Créer"**. Vous recevrez une confirmation si le modèle a
 
 :::tip  
 N’oubliez pas d’intégrer les systèmes d’exploitation et modèles dans la configuration de vos produits Proxmox. Cela garantit qu’ils seront disponibles pour vos clients lors de leurs commandes.  
-:::  
+:::
+
+## Configuration de l'offre
+En premier lieu, [créez votre produit](../../../settings/store/products#création) en sélectionnant Proxmox.
+
+![img](/img/next_gen/extensions/modules/proxmox/image.png)
+
+Après avoir créé votre produit, cliquez sur le bouton **"Configurer l'offre"** pour accéder à la page de configuration de l'offre. Si les champs sont vides, assurez-vous que votre serveur ne soit pas caché.
+
+![img](/img/next_gen/extensions/modules/proxmox/config.png)  
+**Mémoire (Go)** : Quantité totale de mémoire RAM allouée.
+
+**Disque (Go)** : Espace disque total alloué.
+
+**Type de virtualisation** : Type de virtualisation utilisé pour les VPS. (QUEMU (KVM) ou LXC)
+
+**Système d'exploitation** : Sélectionnez le système d'exploitation à utiliser pour les VPS pour LXC.
+
+**Modèle KVM** : Sélectionnez le modèle CloudInit à utiliser pour les VPS pour KVM.
+
+**Disque** : Stockage alloué pour le VPS.
+
+**Serveur**: Serveur Proxmox configuré sur ClientXCMS où les VPS seront hébergés.
+
+**Noeud** : Noeud Proxmox sur lequel le VPS sera créé.
+
+**Débit** : Débit de la connexion réseau allouée au VPS.
+
+**Stockage du disque** : Stockage alloué pour le disque du VPS. (souvent le même que le disque)
+
+**Coeurs** : Nombre de coeurs CPU alloués.
+
+**Socket** : Nombre de sockets CPU alloués.
+
+**Bridge** : Pont réseau utilisé pour connecter le VPS au réseau.
+
+**Features** : Fonctionnalités supplémentaires activées pour le VPS. (LXC seulement)
+
+**Nombre de réinstallations** : Nombre de réinstallations autorisées pour le VPS.
+
+**Nombre de sauvegardes** : Nombre de sauvegardes autorisées pour le VPS.
+
+**Nombre de snapshots** : Nombre de snapshots autorisés pour le VPS.
+
+## Panel de gestion
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="Overview" label="Gestion VPS">
+![img](/img/next_gen/extensions/modules/proxmox/overview.png)
+</TabItem>
+<TabItem value="Data" label="Nouvelle commande">
+![img](/img/next_gen/extensions/modules/proxmox/new_order.png)
+</TabItem>
+
+<TabItem value="Graph" label="Graphique">
+![img](/img/next_gen/extensions/modules/proxmox/graph.png)
+</TabItem>
+<TabItem value="Logs" label="Historique">
+![img](/img/next_gen/extensions/modules/proxmox/logs.png)
+</TabItem>
+</Tabs>

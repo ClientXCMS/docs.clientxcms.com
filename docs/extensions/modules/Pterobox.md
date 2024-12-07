@@ -36,7 +36,7 @@ Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS
 Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf qui veulent pour chacun de leurs serveurs créés, parmi la liste.
 :::
 
-** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.
+** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.**
 
 ### Variables disponibles 
 | Variables            | Description                   |
@@ -49,14 +49,19 @@ Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf 
 | %owner_firstname%    | Prénom de l'utilisateur       |
 | %owner_lastname%     | Nom de l'utilisateur          |
 
-## Aperçus
-### Point de vue : Client
-#### Panneau de gestion des serveurs
+
+## Panel de gestion
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="Overview" label="Gestion serveurs">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_overview.png)
-
-#### Création de serveur
+</TabItem>
+<TabItem value="Create" label="Création de serveur">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_create-server.png)
-
-
-### Point de vue : Administrateur
+</TabItem>
+<TabItem value="Admin" label="Administration">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_admin.png)
+</TabItem>
+</Tabs>
