@@ -57,7 +57,12 @@ const config: Config = {
       "@easyops-cn/docusaurus-search-local",
       {
         hashed: true,
-        
+        indexBlog: false,
+        indexPages: true,
+        indexDocs: true,
+        docsDir: ["docs"],
+        docsRouteBasePath: ["docs"],
+        ignoreFiles: ['version-v1/**']
       },
     ],
   ],
