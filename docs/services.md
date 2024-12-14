@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Services
@@ -125,6 +125,11 @@ Les cycles de facturation permettent de définir la période de facturation pour
 - Biannuel
 - Triennal
 - Hebdomadaire
+### Améliorations
+
+### Options supplémentaires
+
+### Abonnements
 
 ### Metadonnées
 -------------

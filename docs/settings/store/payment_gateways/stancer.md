@@ -2,6 +2,7 @@
 Stancer est une passerelle de paiement qui permet à vos clients de payer rapidement et en toute sécurité. Cette passerelle de paiement est très simple à configurer et à utiliser.
 
 Pour configurer Stancer, allez dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin sélectionnez Stancer.
+
 ![img](/img/next_gen/settings/store/payment_gateways/stancer/config.png)
 
 ## Processus
