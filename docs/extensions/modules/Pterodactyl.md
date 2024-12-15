@@ -101,3 +101,7 @@ Voici un exemple de configuration d'une option supplémentaire pour demander une
 Lors d'une commande, le client pourra renseigner la valeur de cette variable d'environnement.
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/image_fivem.png)
+
+## Erreurs courantes
+
+Oeuf non trouvé dans la configuration de l'offre : Il faut vider le cache de CLIENTXCMS dans `Paramètres` > `Extensions`.

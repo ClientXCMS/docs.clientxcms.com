@@ -4,6 +4,7 @@ Les départements sont des catégories qui permettent de classer les tickets. Vo
 
 ## Départements par défaut
 CLIENTXCMS crée automatiquement des départements par défaut pour vous aider à démarrer. Vous pouvez les modifier ou les supprimer selon vos besoins.
+
 Liste des départements par défaut :
 - Général
 - Facturation
@@ -20,10 +21,22 @@ Pour créer un département, cliquez sur le bouton `Créer` en haut à droite de
 **Description** : Description du département
 
 
-Rendu sur la création de ticket :
+### Rendu sur la création de ticket
 
 ![img](/img/next_gen/settings/helpdesk/departments/departments.png)
 
+Vous pouvez préselectionner certains valeurs lors de la création de ticket avec des paramètres dans l'URL : 
+
+- `department` : Département préselectionné
+- `priority` : Priorité préselectionnée
+- `content` : Contenu prérempli
+- `subject` : Sujet prérempli
+- `related_id` : ID du service lié
+
+Par exemple : 
+```
+https://clientxcms.app/client/support/create?department=1&priority=low&content=Bonjour&subject=Problème&related_id=1
+```
 ## Modifier un département
 Pour modifier un département, cliquez sur le bouton `Afficher` sur la liste des départements. Vous serez redirigé vers la page de modification de département.
 Vous pouvez modifier le nom, l'icône et la description du département ou traduire le nom et la description du département avec l'icone à droite du champ.
