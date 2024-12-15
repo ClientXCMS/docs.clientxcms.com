@@ -13,7 +13,6 @@ const config: Config = {
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
   projectName: 'docs.clientxcms.com', // Usually your repo name.
 
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -21,7 +20,6 @@ const config: Config = {
     defaultLocale: 'fr',
     locales: ['fr'],
   },
-
   presets: [
     [
       'classic',
@@ -49,11 +47,25 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+
         },
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        indexBlog: false,
+        indexPages: true,
+        indexDocs: true,
+        docsDir: ["docs"],
+        docsRouteBasePath: ["docs"],
+        ignoreFiles: ['version-v1/**']
+      },
+    ],
+  ],
   themeConfig: {
     metadata: [{name: 'keywords', content: 'CMS,CLIENTX,Clientx,docs,doc,blog'}],
     navbar: {
@@ -89,15 +101,15 @@ const config: Config = {
     announcementBar: {
       id: 'announcementBar',
       content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
-      content: `ClientXCMS V1 n'étant plus maintenu, nous travaillons actuellement sur la version NextGen V2 sortie à partir du 31/01/2024.`,
-      backgroundColor: '#828eb7',
-      textColor: '#000000',
+      backgroundColor: '#2c46ba',
+      textColor: '#fff',
       isCloseable: false,
     },
     
     footer: {
       style: 'dark',
       links: [
+
         {
           title: 'Communautés',
           items: [
@@ -124,19 +136,22 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/ClientXCMS/clientxcms-docs',
+              href: 'https://github.com/ClientXCMS/docs.clientxcms.com',
+            },
+
+            {
+              label: 'Ouvrir un ticket',
+              href: 'https://clientxcms.com/client/support',
             },
           ],
         },
       ],
       logo: {
-        alt: 'Logo',
-        src: 'https://cdn.clientxcms.com/ressources/Themes/CLIENTXCMS/images/Fichier-24_2x.webp',
+        alt: 'Logo CLIENTXCMS',
+        src: 'https://clientxcms.com/assets/images/logo/LogoBlueText.png',
         href: 'https://clientxcms.com/',
-        width: 160,
-        height: 51,
       },
-      copyright: `Copyright © ${new Date().getFullYear()} ClientXCMS.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Association CLIENTXCMS`,
     },
     prism: {
       theme: prismThemes.github,

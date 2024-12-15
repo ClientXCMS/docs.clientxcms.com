@@ -24,8 +24,8 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit a
 - Gestion des hébergements depuis l'espace client
 - Envoie des identifiants de connexion par E-mail
 - Connexion automatique au Plesk
-- Réinitialiser les mots de passe et gérer les comptes
 - Automatisez les suspensions et les résiliations
+- Amélioration de service
 
 ## Création du serveur
 
@@ -60,7 +60,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Hosting" label="Hosting">
+<TabItem value="Hosting" label="Hébergement">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_4.png)
 
@@ -72,7 +72,7 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 
-<TabItem value="AdminHosing" label="Admin Hosting">
+<TabItem value="AdminHosing" label="Admin Hébergement">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_6.png)
 

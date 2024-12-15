@@ -72,6 +72,9 @@ Cela vous fait gain de temps pour calculer le prix du produit.
 Les cycles de facturation sont affichés sur la page de configuration du produit lors de l'ajout dans le panier.
 ![img](/img/next_gen/settings/store/products/config_billing.png)
 
+Vous pouvez préselectionner un cycle de facturation par défaut pour le produit depuis les query params `billing` dans l'url de configuration.
+Par exemple, si vous voulez préselectionner le cycle de facturation annuel, vous pouvez ajouter `?billing=annuel` à l'url de configuration du produit.
+
 #### Plus de tarifs
 Vous pouvez ajouter plus de tarifs en cliquant sur le bouton "Configurer plus de tarifs" pour pouvoir utiliser le biannuel, triennal ou hebdomadaire.
 ## Edition

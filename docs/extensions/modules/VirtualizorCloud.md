@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Virtualizor Cloud
+# Virtualizor pour revendeur
 
-Le module Virtualizor Cloud permet de fournir des offres VPS à vos clients. Le module supporte les hébergement VPS.
+Le module Virtualizor Cloud permet de fournir des offres VPS à vos clients. Le module supporte les hébergement VPS. Ce module est fait pour les revendeurs qui veulent proposer des offres VPS à leurs clients.
 
 :::info Modules
 Pour utiliser les fonctionnalités suivantes, il faut que le module Virtualizor Cloud soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
