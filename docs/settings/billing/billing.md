@@ -59,3 +59,7 @@ Vous pouvez créer un webhook depuis discord ou un autre service. Voici un pour 
 Voici un aperçu d'un webhook discord : 
 
 ![img](https://cdn.clientxcms.com/ressources/docs/order.png)
+
+## Amélorations des services
+**Ajouter des frais de configuration lors d'un amélioration** : Cela permet d'appliquer les frais d'installation lors d'un amélioration de service.
+**Délais minimum en jours pour forcer le renouvellement avec une amélioration** : Cela permet de forcer le renouvellement d'un service avec une amélioration si le nombre de jours restant est inférieur à ce nombre de jours.

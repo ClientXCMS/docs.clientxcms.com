@@ -14,3 +14,5 @@ Une fois que vous avez créé votre groupe de produits, vous pouvez ajouter des 
 Dans cette page vous pourrais configurer votre produit en fonction de vos besoins en remplissant les champs nécessaires ainsi que le type de produit que vous souhaitez créer. (Le même que le type de serveur que vous avez configuré)
 
 Vous pouvez également ajouter le prix du produit, rajouter des frais d'installation ou une description du produit.
+
+Votre produit est maintenant créé et disponible à la vente sur votre boutique en ligne.
