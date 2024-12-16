@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import dotenv from 'dotenv';
 dotenv.config(); // Charge les variables d'environnement depuis le fichier .env
 
-console.log('Tracking ID:', process.env.GTAG_TRACKING_ID); // Vérification de la variable
+// console.log('Tracking ID:', process.env.GTAG_TRACKING_ID); // Vérification de la variable
 
 
 
@@ -54,11 +54,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
 
-        },
-          gtag: {
-            trackingID: 'process.env.GTAG_TRACKING_ID',
-            anonymizeIP: false,
-        },                 
+        },             
       } satisfies Preset.Options,
     ],
   ],
@@ -73,6 +69,13 @@ const config: Config = {
         docsDir: ["docs"],
         docsRouteBasePath: ["docs"],
         ignoreFiles: ['version-v1/**']
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'process.env.GTAG_TRACKING_ID',
+        anonymizeIP: false,
       },
     ],
   ],
