@@ -49,6 +49,10 @@ const config: Config = {
           customCss: './src/css/custom.css',
 
         },
+          gtag: {
+            trackingID: 'process.env.GTAG_TRACKING_ID',
+            anonymizeIP: false,
+        },                 
       } satisfies Preset.Options,
     ],
   ],

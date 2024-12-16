@@ -16,4 +16,4 @@ En désactivant la page d'accueil, vous redirigerez les utilisateurs vers la pag
 
 Pour enregistrer les modifications, cliquez sur le bouton `Enregistrer`.
 
-Pour modifier les différentes sections de la page d'accueil, rendez-vous dans `Personnalisation` puis `Sections`. Plus d'informations [ici](/docs/settings/personalization/sections).
+Pour modifier les différentes sections de la page d'accueil, rendez-vous dans `Personnalisation` puis `Sections`. Plus d'informations [ici](./sections).

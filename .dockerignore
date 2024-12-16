@@ -12,4 +12,5 @@ docker-compose.yml
 Dockerfile
 LICENSE
 makefile
+.env
 README.md

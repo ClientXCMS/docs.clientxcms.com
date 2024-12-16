@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 # Configuration des paiements
-Vous pouvez configurer plusieurs méthodes de paiement pour votre espace client. La liste est disponible [ici](/settings/store/payment_gateways/payment_gateways).
+Vous pouvez configurer plusieurs méthodes de paiement pour votre espace client. La liste est disponible [ici](../settings/store/payment_gateways/).
 
 Vous pouvez configurer vos méthodes de paiement en allant dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin sélectionnez la méthode de paiement que vous souhaitez configurer.
 
