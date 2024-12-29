@@ -124,11 +124,11 @@ Les métadonnées permettent de définir des informations supplémentaires sur l
 | `basket_url`              | Any    | Lien pour ajouter le produit au panier                          |
 | `is_personalized_product` | true   | Définis comme produit sur demande                               |
 | `basket_title`            | Any    | Titre du bouton d'ajout au panier                               |
-| `disabled_many_services`  | active | Désactive la possibilité de commander plusieurs services actifs |
-| `disabled_many_services`  | all    | Désactive la possibilité de commander plusieurs services        |
+| `allow_only_as_much_services`      | active:nombre max | Autorise uniquement un nombre maximum de services actifs |
+| `allow_only_as_much_services`  | all:nombre max    | Autorise uniquement un nombre maximum de services    |
 | `auto_stock`              | true   | Permet de gérer le stock automatiquement                        |
 | `disabled_stock`          | true   | Désactive la gestion du stock                                   |
 | `max_renewals_in_current_month` | 1 | Nombre de renouvellements maximum par mois                     |
-| `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                   |
+| `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                  |
 | `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
 --------------------------------
