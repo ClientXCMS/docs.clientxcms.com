@@ -1,11 +1,7 @@
 ---
 slug: nouvelle-documentation  
 title: Nouvelle documentation  
-authors:  
-  - name: MartinDev  
-    title: ClientXCMS Team  
-    url: https://github.com/DarkIncognito85  
-    image_url: https://github.com/DarkIncognito85.png  
+authors: [martindev]
 tags: [nouvelle documentation, news, mise à jour]  
 ---
 
