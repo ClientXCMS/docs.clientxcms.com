@@ -315,6 +315,18 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
 Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire dans le dossier `addons` ou `modules` de votre installation.
+
+## Migration depuis une version cloud
+Si vous souhaitez reprendre une installation cloud sur votre serveur, vous pouvez suivre les étapes suivantes :
+1. Téléchargez une sauvegarde de votre base de données depuis l'interface PHPMyAdmin depuis la page base de données de l'administration.
+2. Ouvrir une demande d'aide pour obtenir la clé d'encryption de votre instance cloud.
+3. Importez la sauvegarde dans votre base de données locale.
+4. Modifiez le fichier `.env` pour correspondre votre clé d'encryption avec la clé d'encryption de votre instance cloud.
+5. Exécutez la commande `php artisan migrate --force --seed` pour mettre à jour votre base de données.
+6. Exécutez la commande `php artisan storage:link` pour lier le dossier de stockage.
+7. Créez un fichier `storage/installed` pour indiquer que l'installation est terminée.
+8. Vous pouvez maintenant accéder à votre instance locale.
+9. 
 ## Problèmes courants
 
 ### Interface introuvable Jsonable
