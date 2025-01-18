@@ -1,11 +1,7 @@
 ---
 slug: nouvelle-site-internet
 title: Nouveau site internet
-authors:
-  name: MartinDev
-  title: ClientXCMS Team
-  url: https://github.com/DarkIncognito85
-  image_url: https://github.com/DarkIncognito85.png
+authors: [martindev]
 tags: [nouveau site internet, news, mise à jour]
 ---
 Bonjour à tous,
