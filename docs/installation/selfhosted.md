@@ -337,3 +337,16 @@ Vous pouvez la régler en executant la commande :
 ```bash
 composer require dragon-code/contracts
 ```
+
+### Logo non affichage sur l'interface
+
+Si vous avez pas d'erreur à l'ajoût de votre logo, vous avez peut-être un problème de permission sur le dossier de stockage. Vous pouvez régler ce problème en executant la commande suivante :
+```bash
+sudo chmod -R 775 storage
+```
+
+Si vous avez des problèmes du jour au lendemain, vous avez problablement un problème de cache. Vous pouvez le régler en executant la commande suivante :
+```bash
+php artisan cache:clear
+```
+ou vous pouvez vérifier les permissions de votre dossier de cache (storage/framework/cache).
