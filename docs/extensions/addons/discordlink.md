@@ -6,12 +6,16 @@ import TabItem from '@theme/TabItem';
 Il est possible de synchroniser votre espace client avec votre serveur Discord grâce à un bot.
 
 :::tip
-La synchronisation fonctionne avec l'addon SocialAuth+ est requis avec la connexion avec discord pour utiliser cette fonctionnalité. Vous pouvez le trouver [ici](./socialauthplus.md).
+La synchronisation fonctionne avec l'addon SocialAuth+ est requis avec la connexion avec discord pour utiliser cette fonctionnalité. Vous pouvez retrouver la documentation sur l'addon [ici](./socialauthplus.md).
 :::
 
 ## Processus
-1. Le client se connecte via Discord ou synchronise son compte
-2. Si l'option ""
+1. Le client se connecte via Discord ou synchronise son compte à l'espace client
+2. Le client peut rejoindre le serveur Discord via l'espace client
+3. Si l'option "Compte synchronisé" le rôle discord est ajouté
+4. Si l'option "Client synchronisé ayant un service actif" le rôle discord est ajouté si le client a un service actif
+5. Si l'option "Client synchronisé ayant déjà eu un service actif" le rôle discord est ajouté si le client a déjà eu un service actif
+
 ## Configuration
 
 Une fois l'extension activée, vous pouvez accéder à la configuration de l'addon dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `DiscordLink`
