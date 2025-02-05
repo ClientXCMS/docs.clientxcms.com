@@ -326,7 +326,7 @@ Si vous souhaitez reprendre une installation cloud sur votre serveur, vous pouve
 6. Exécutez la commande `php artisan storage:link` pour lier le dossier de stockage.
 7. Créez un fichier `storage/installed` pour indiquer que l'installation est terminée.
 8. Vous pouvez maintenant accéder à votre instance locale.
-9. 
+
 ## Problèmes courants
 
 ### Interface introuvable Jsonable
