@@ -50,7 +50,7 @@ Avec ces améliorations, nous voulons rendre le développement **plus accessible
 
 ![Development](/img/blog/communication-v2.14/development.png)
 
-
+N'hésitez à pas faire vos propres thèmes pour la communauté! 
 ## Pourquoi la mise à jour n’est pas sortie en décembre ?  
 
 Vous l’avez compris, la mise à jour **était quasiment prête**. Alors pourquoi avoir attendu ?  
