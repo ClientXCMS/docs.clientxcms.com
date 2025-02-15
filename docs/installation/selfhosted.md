@@ -30,8 +30,10 @@ mkdir /var/www/clientxcms
 ## Téléchargement de l'archive
 Téléchargez l'archive du CMS en utilisant la commande suivante envoyé par e-mail :
 ```bash
-wget https://clientxcms.com/licensing/downloads/{uuid}
+curl -o clientxcms.zip https://clientxcms.com/licensing/downloads/{uuid}
 ```
+Veuillez à remplacer `{uuid}` par le lien de téléchargement reçu par e-mail.
+
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
 unzip clientxcms.zip -d /var/www/clientxcms
@@ -53,7 +55,7 @@ sudo apt-get update
 sudo apt-get install ca-certificates apt-transport-https software-properties-common wget curl lsb-release
 curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
 sudo apt-get update
-sudo apt-get install php8.1-common php8.1-curl php8.1-bcmath php8.1-intl php8.1-mbstring php8.1-xmlrpc php8.1-mcrypt php8.1-mysql php8.1-gd php8.1-xml php8.1-cli php8.1-zip
+sudo apt-get install php8.2-common php8.2-curl php8.2-bcmath php8.2-intl php8.2-mbstring php8.2-xmlrpc php8.2-mcrypt php8.2-mysql php8.2-gd php8.2-xml php8.2-cli php8.2-zip
 ```
 Pour installer Composer, vous pouvez utiliser la commande suivante :
 ```bash
@@ -161,7 +163,7 @@ Ici, nous ne présentons pas comment installer un certificat SSL.
 :::
   Pour installer Nginx, vous pouvez utiliser la commande suivante :
 ```bash
-sudo apt-get install nginx php8.1-fpm
+sudo apt-get install nginx php8.2-fpm
 ```
 Pour ajouter un hôte virtuel, vous pouvez utiliser la commande suivante :
 ```bash
@@ -181,7 +183,7 @@ server {
     }
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
@@ -313,6 +315,18 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
 Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire dans le dossier `addons` ou `modules` de votre installation.
+
+## Migration depuis une version cloud
+Si vous souhaitez reprendre une installation cloud sur votre serveur, vous pouvez suivre les étapes suivantes :
+1. Téléchargez une sauvegarde de votre base de données depuis l'interface PHPMyAdmin depuis la page base de données de l'administration.
+2. Ouvrir une demande d'aide pour obtenir la clé d'encryption de votre instance cloud.
+3. Importez la sauvegarde dans votre base de données locale.
+4. Modifiez le fichier `.env` pour correspondre votre clé d'encryption avec la clé d'encryption de votre instance cloud.
+5. Exécutez la commande `php artisan migrate --force --seed` pour mettre à jour votre base de données.
+6. Exécutez la commande `php artisan storage:link` pour lier le dossier de stockage.
+7. Créez un fichier `storage/installed` pour indiquer que l'installation est terminée.
+8. Vous pouvez maintenant accéder à votre instance locale.
+
 ## Problèmes courants
 
 ### Interface introuvable Jsonable
@@ -323,3 +337,16 @@ Vous pouvez la régler en executant la commande :
 ```bash
 composer require dragon-code/contracts
 ```
+
+### Logo non affichage sur l'interface
+
+Si vous avez pas d'erreur à l'ajoût de votre logo, vous avez peut-être un problème de permission sur le dossier de stockage. Vous pouvez régler ce problème en executant la commande suivante :
+```bash
+sudo chmod -R 775 storage
+```
+
+Si vous avez des problèmes du jour au lendemain, vous avez problablement un problème de cache. Vous pouvez le régler en executant la commande suivante :
+```bash
+php artisan cache:clear
+```
+ou vous pouvez vérifier les permissions de votre dossier de cache (storage/framework/cache).

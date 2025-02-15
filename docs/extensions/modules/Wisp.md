@@ -79,3 +79,25 @@ Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf 
 ## Panel de gestion
 ![img](/img/next_gen/extensions/modules/wisp/images_5.png)
 
+## Options supportées
+- Espace disque supplémentaires (curseurs ou menu déroulant)
+- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
+- Swap supplémentaire (curseurs ou menu déroulant)
+- IO supplémentaire (curseurs ou menu déroulant)
+- CPU supplémentaire (curseurs ou menu déroulant)
+- Bases de données supplémentaires (curseurs ou menu déroulant)
+- Allocations supplémentaires (curseurs ou menu déroulant)
+- Sauvegardes supplémentaires (curseurs ou menu déroulant)
+- Emplacement (location_id) (menu déroulant)
+- IP dédiée (case à cocher)
+
+### Environnement personnalisé
+Vous pouvez également ajouter des options supplémentaires avec les variables d'enviroennement du serveur. Pour cela, rendez-vous dans `Paramètres` > `Approvisionnement` > `Options supplémentaires` et sélectionnez le type texte avec une clé personnalisée ayant le nom de la variable d'environnement du serveur préfixé par `wisp_custom_` par exemple `wisp_custom_fivem_license` pour demander une licence FiveM à votre client.
+
+Voici un exemple de configuration d'une option supplémentaire pour demander une licence FiveM à votre client.
+
+![img](/img/next_gen/extensions/modules/pterodactyl/image.png)
+
+Lors d'une commande, le client pourra renseigner la valeur de cette variable d'environnement.
+
+![img](/img/next_gen/extensions/modules/pterodactyl/image_fivem.png)

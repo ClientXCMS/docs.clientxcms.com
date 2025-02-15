@@ -36,7 +36,7 @@ Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS
 Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf qui veulent pour chacun de leurs serveurs créés, parmi la liste.
 :::
 
-** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.
+** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.**
 
 ### Variables disponibles 
 | Variables            | Description                   |
@@ -49,14 +49,32 @@ Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf 
 | %owner_firstname%    | Prénom de l'utilisateur       |
 | %owner_lastname%     | Nom de l'utilisateur          |
 
-## Aperçus
-### Point de vue : Client
-#### Panneau de gestion des serveurs
+
+## Panel de gestion
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="Overview" label="Gestion serveurs">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_overview.png)
-
-#### Création de serveur
+</TabItem>
+<TabItem value="Create" label="Création de serveur">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_create-server.png)
-
-
-### Point de vue : Administrateur
+</TabItem>
+<TabItem value="Admin" label="Administration">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_admin.png)
+</TabItem>
+</Tabs>
+
+## Options supportées
+- Espace disque supplémentaires (curseurs ou menu déroulant)
+- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
+- Swap supplémentaire (curseurs ou menu déroulant)
+- Bases de données supplémentaires (curseurs ou menu déroulant)
+- Allocations supplémentaires (curseurs ou menu déroulant)
+- Sauvegardes supplémentaires (curseurs ou menu déroulant)
+- IO supplémentaires (curseurs ou menu déroulant)
+- CPU supplémentaires (curseurs ou menu déroulant)
+- Serveurs supplémentaires (curseurs ou menu déroulant)
+
+Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](../../../settings/provisioning/configoptions).

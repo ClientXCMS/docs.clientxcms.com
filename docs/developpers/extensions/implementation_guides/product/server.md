@@ -19,9 +19,8 @@ Les principales méthodes à implémenter sont :
 - **`unsuspendAccount()`** : Réactive le compte.
 - **`expireAccount()`** : Expire le compte.
 - **`onRenew()`** : Action déclenchée lors du renouvellement d'un service.
-- **`upgradeService()`** : Permet de mettre à jour un service (pas encore utilisé).
-- **`downgradeService()`** : Permet de rétrograder un service (pas encore utilisé).
-
+- **`upgradeService()`** : Permet de mettre à jour un service
+- **`getSupportedOptions()`** : Retourne les options supportées par le serveur.
 
 ```php
 <?php 
@@ -83,6 +82,19 @@ class CustomGameServerType extends AbstractServerType
     {
         // Logique de test de connexion
         return new \App\DTO\Provisioning\ConnectionResponse(200, 'Connection successful');
+    }
+
+    public function upgradeService(Service $service, Product $product): ServiceStateChangeDTO
+    {
+        return new ServiceStateChangeDTO($service, true, 'Service upgraded');
+    }
+
+    public function getSupportedOptions(): array
+    {
+        return [
+            'additional_ip' => 'Additional IP',
+            'additional_storage' => 'Additional Storage',
+        ];
     }
 }
 ```

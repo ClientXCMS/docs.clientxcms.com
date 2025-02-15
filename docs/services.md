@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # Services
@@ -110,6 +110,7 @@ Il y a deux types d'annulation :
 Permet de relivrer le service. Il va forcer la suppression du service et le recréer.
 ### Sous page
 ![img](/img/next_gen/services/tab.png)
+
 Il peut avoir que le module de livraison dispose de plusieurs onglets pour mieux organiser les informations.
 ### Panel
 ![img](/img/next_gen/services/panel.png)
@@ -124,6 +125,11 @@ Les cycles de facturation permettent de définir la période de facturation pour
 - Biannuel
 - Triennal
 - Hebdomadaire
+### Améliorations
+
+### Options supplémentaires
+
+### Abonnements
 
 ### Metadonnées
 -------------

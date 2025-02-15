@@ -36,7 +36,7 @@ Pour configurer les webhooks, vous aurez besoin de récupérer l'URL de votre si
     ![img](/img/next_gen/settings/store/payment_gateways/stripe/webhooks.png)
 3. Remplissez comme ceci :
 
-- **URL d'endpoint** : votredomain.fr/gateways/stripe/notifications
+- **URL d'endpoint** : votredomain.fr/gateways/stripe/notification
 - **Description** : Notification de paiement
 - **Ecouter** : Évènements de paiement
 - **Version** : 2023-10-16

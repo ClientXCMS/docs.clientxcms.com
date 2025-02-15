@@ -6,3 +6,5 @@ services:
     image: registry.as216117.net:9443/docsclientxcms:latest
     ports:
       - "127.0.0.1:8092:3000"
+    volumes:
+      - ./.env:/app/.env
