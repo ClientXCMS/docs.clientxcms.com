@@ -68,7 +68,6 @@ const config: Config = {
         indexDocs: true,
         docsDir: ["docs"],
         docsRouteBasePath: ["docs"],
-        ignoreFiles: ['version-v1/**']
       },
     ],
     [
