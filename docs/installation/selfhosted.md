@@ -297,6 +297,52 @@ Puis ajoutez la ligne suivante :
 * * * * * php /var/www/clientxcms/artisan schedule:run >> /dev/null 2>&1
 ```
 
+
+## Configuration des Queues Laravel
+
+Laravel utilise un système de files d'attente (queues) pour exécuter des tâches en arrière-plan, ce qui améliore les performances en évitant le traitement synchrone.
+Dans votre fichier `.env`, configurez le driver de file d'attente en fonction de votre environnement :
+
+```env
+QUEUE_CONNECTION=database
+```
+
+Les options disponibles sont :
+- `sync` : Exécute les jobs immédiatement (pas en arrière-plan).
+- `database` : Utilise la base de données pour stocker les jobs.
+- `redis` : Utilise Redis pour une gestion plus performante des queues.
+- `sqs` : Utilise Amazon SQS.
+
+Assurez-vous que votre application utilise le bon driver.
+
+Si vous voulez vous assurer que le worker tourne toujours, utilisez `supervisor`. Installez-le d'abord :
+
+```bash
+sudo apt update
+sudo apt install supervisor
+```
+
+Ensuite, créez un fichier de configuration `/etc/supervisor/conf.d/clientxcms-worker.conf` :
+
+```ini
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/clientxcms/artisan queue:work --daemon
+autostart=true
+autorestart=true
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/log/laravel-worker.log
+```
+
+Recharge et démarre Supervisor :
+
+```bash
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start clientxcms-worker:*
+```
+
 ## Configuration de ClientXCMS
 
 1. Rendez-vous sur l'adresse de votre espace client. Vous devriez voir une page d'installation similaire à celle-ci :
