@@ -360,7 +360,8 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
-Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire dans le dossier `addons` ou `modules` de votre installation.
+Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire sur votre instance ClientXCMS.
+![Page de téléchargement - Extensions](/img/next_gen/Installation/Selfhosting/download_extension.png)
 
 ## Migration depuis une version cloud
 Si vous souhaitez reprendre une installation cloud sur votre serveur, vous pouvez suivre les étapes suivantes :
@@ -383,6 +384,16 @@ Vous pouvez la régler en executant la commande :
 ```bash
 composer require dragon-code/contracts
 ```
+
+### Thème activé mais non affiché sur l'interface
+
+Si vous avez activé un thème mais qu'il n'est pas affiché sur l'interface, vous pouvez ajouter la variable suivante dans le fichier `.env` :
+```env
+APP_REVERSE_PATHS=true
+```
+
+Cela vient du fait que PHP ne lit pas les fichiers de la même manière sur chaque serveur. Cette variable permet de corriger ce problème.
+
 
 ### Logo non affichage sur l'interface
 
