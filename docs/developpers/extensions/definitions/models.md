@@ -17,8 +17,13 @@ ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace cli
 | Gateway         | `App\Models\Billing\Gateway`         | Gère les passerelles de paiement             | `App\Models\Billing\Gateway::find($id)`         |
 | Invoice         | `App\Models\Billing\Invoice`         | Représente une facture                       | `App\Models\Billing\Invoice::find($id)`         |
 | InvoiceItem     | `App\Models\Billing\InvoiceItem`     | Représente les éléments d'une facture        | `App\Models\Billing\InvoiceItem::find($id)`     |
+| InvoiceLog      | `App\Models\Billing\InvoiceLog`      | Journalise les actions liées aux factures    | `App\Models\Billing\InvoiceLog::find($id)`      |
 | Subscription    | `App\Models\Billing\Subscription`    | Gère les abonnements                         | `App\Models\Billing\Subscription::find($id)`    |
 | SubscriptionLog | `App\Models\Billing\SubscriptionLog` | Journalise les actions liées aux abonnements | `App\Models\Billing\SubscriptionLog::find($id)` |
+| ConfigOption    | `App\Models\Billing\ConfigOption`    | Gère les options de configuration            | `App\Models\Billing\ConfigOption::find($id)`    |
+| ConfigOptionOption | `App\Models\Billing\ConfigOptionOption` | Gère les options des options de configuration | `App\Models\Billing\ConfigOptionOption::find($id)` |
+| ConfigOptionProduct | `App\Models\Billing\ConfigOptionProduct` | Gère les produits associés aux options de configuration | `App\Models\Billing\ConfigOptionProduct::find($id)` |
+| Upgrade         | `App\Models\Billing\Upgrade`         | Gère les améliorations de service            | `App\Models\Billing\Upgrade::find($id)`         |
 
 ## Centre d'aide
 
@@ -38,7 +43,7 @@ ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace cli
 | Service            | `App\Models\Provisioning\Service`            | Représente un service                | `App\Models\Provisioning\Service::find($id)`            |
 | ServiceRenewals    | `App\Models\Provisioning\ServiceRenewals`    | Gère les renouvellements de service  | `App\Models\Provisioning\ServiceRenewals::find($id)`    |
 | SubdomainHost      | `App\Models\Provisioning\SubdomainHost`      | Gère les sous-domaines d'hébergement | `App\Models\Provisioning\SubdomainHost::find($id)`      |
-
+| ConfigOptionService | `App\Models\Provisioning\ConfigOptionService` | Gère les options de configuration des services | `App\Models\Provisioning\ConfigOptionService::find($id)` |
 ## Boutique
 
 ### Panier
