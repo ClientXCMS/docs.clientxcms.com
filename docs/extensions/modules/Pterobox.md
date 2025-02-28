@@ -36,7 +36,7 @@ Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS
 Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf qui veulent pour chacun de leurs serveurs créés, parmi la liste.
 :::
 
-** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.**
+**Vous pouvez utiliser des variables pour personnaliser le nom du serveur.**
 
 ### Variables disponibles 
 | Variables            | Description                   |
@@ -78,3 +78,13 @@ import TabItem from '@theme/TabItem';
 - Serveurs supplémentaires (curseurs ou menu déroulant)
 
 Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](../../../settings/provisioning/configoptions).
+
+## Metadonnées utilisées
+
+| Clé              | Valeur | Description                        |
+|------------------|--------|------------------------------------|
+| `config`         | JSON   | Configuration de la box            |
+| `config_used`    | JSON   | Performances utilisées de la box   |
+| `linked_servers` | CSV    | Liste des serveurs reliés à la box |
+----
+
