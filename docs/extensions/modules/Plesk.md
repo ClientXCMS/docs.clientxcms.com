@@ -85,3 +85,16 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 
 </Tabs>
+
+## Metadonnées utilisées
+
+| Clé           | Valeur            | Description              |
+|---------------|-------------------|--------------------------|
+| `login`       | string            | Identifiant du client    |
+| `type`        | reseller ou login | Type d'hébergement       |
+| `reseller_id` | int               | Identifiant du revendeur |
+| `webspace_id` | int               | Identifiant du webspace  |
+| `domain`      | string            | Domaine du webspace      |
+
+
+

@@ -20,6 +20,7 @@ Les principales méthodes à implémenter sont :
 - **`expireAccount()`** : Expire le compte.
 - **`onRenew()`** : Action déclenchée lors du renouvellement d'un service.
 - **`upgradeService()`** : Permet de mettre à jour un service
+- **addOption()** : Ajoute une option à un service
 - **`getSupportedOptions()`** : Retourne les options supportées par le serveur.
 
 ```php
@@ -30,6 +31,7 @@ namespace App\Addons\Fund;
 use App\Abstracts\AbstractServerType;
 use App\DTO\Provisioning\ServiceStateChangeDTO;
 use App\Models\Provisioning\Service;
+use App\Models\Billing\ConfigOption;
 
 class CustomGameServerType extends AbstractServerType
 {
@@ -87,6 +89,11 @@ class CustomGameServerType extends AbstractServerType
     public function upgradeService(Service $service, Product $product): ServiceStateChangeDTO
     {
         return new ServiceStateChangeDTO($service, true, 'Service upgraded');
+    }
+    
+    public function addOption(Service $service, ConfigOption $configOption): ServiceStateChangeDTO
+    {
+        return new ServiceStateChangeDTO($service, true, 'Option added');
     }
 
     public function getSupportedOptions(): array

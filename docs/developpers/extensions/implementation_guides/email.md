@@ -25,8 +25,9 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Queue\SerializesModels;
 use App\Models\Billing\Invoice;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
-class FundMail extends Notification
+class FundMail extends Notification implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -54,6 +55,23 @@ class FundMail extends Notification
 }
 ```
 
+### Désactiver la sauvegarde de l'email
+
+Par défaut, les emails envoyés sont enregistrés dans la base de données. Pour désactiver cette fonctionnalité, vous pouvez ajouter la métadata **`disabled_save`** au mail.
+Par exemple : 
+
+```php
+        $context = [
+            'invoice' => $this->invoice,
+        ];
+        $route = route('front.invoice.show', $this->invoice->idn true);
+        $mail = EmailTemplate::getMailMessage("fund", $route, $context, $notifiable);
+        $mail->metadata('disable_save', true);
+        return $mail;
+```
+
+Cela permet d'éviter de stocker les emails dans la base de données ou pour toutes personnes qui n'ont pas de compte client (ex: Personnel, Non client).
+
 Dans cet exemple, nous utilisons **`EmailTemplate::getMailMessage()`** pour envoyer l'email en fonction d'un modèle spécifique nommé **"fund"**. Le contexte personnalisé est passé au modèle via un tableau **`$context`** qui contient des informations comme une facture.
 
 ## Envoie d'une notification 
@@ -70,18 +88,19 @@ Pour créer un modèle d'email, vous devez ajouter une nouvelle entrée dans le 
 
 ```json
 {
-    "fund": {
-        "fr_FR": {
-            "subject": "Facture payée",
-            "button": "Voir la facture",
-            "body": "Veuillez cliquer sur le bouton ci-dessous pour voir votre facture.\n<strong>Total</strong>: {{ formatted_price($invoice->total, $invoice->currency) }} <br/>\n@foreach($invoice->items as $item)\n<strong>Nom</strong> : {{ $item->name }} <br/>\n<strong>Prix </strong> : {{ formatted_price($item->price(), $invoice->currency) }} <br/>\n@endforeach"
-        },
-        "en_GB": {
-            "subject": "Your invoice has been paid",
-            "button": "View invoice",
-            "body": "Please click the button below to view your invoice.\n<strong>Total</strong>: {{ formatted_price($invoice->total, $invoice->currency) }} <br/>\n@foreach($invoice->items as $item)\n<strong>Name</strong> : {{ $item->name }} <br/>\n<strong>Price </strong> : {{ formatted_price($item->price(), $invoice->currency) }} <br/>\n@endforeach"
-        }
+  "fund": {
+    "fr_FR": {
+      "subject": "Facture payée",
+      "button": "Voir la facture",
+      "body": "Veuillez cliquer sur le bouton ci-dessous pour voir votre facture.\n<strong>Total</strong>: {{ formatted_price($invoice->total, $invoice->currency) }} <br/>\n@foreach($invoice->items as $item)\n<strong>Nom</strong> : {{ $item->name }} <br/>\n<strong>Prix </strong> : {{ formatted_price($item->price(), $invoice->currency) }} <br/>\n@endforeach"
     },
+    "en_GB": {
+      "subject": "Your invoice has been paid",
+      "button": "View invoice",
+      "body": "Please click the button below to view your invoice.\n<strong>Total</strong>: {{ formatted_price($invoice->total, $invoice->currency) }} <br/>\n@foreach($invoice->items as $item)\n<strong>Name</strong> : {{ $item->name }} <br/>\n<strong>Price </strong> : {{ formatted_price($item->price(), $invoice->currency) }} <br/>\n@endforeach"
+    }
+  }
+}
 ```
 Puis vous pouvez l'importer avec la commande suivante : 
 ```bash

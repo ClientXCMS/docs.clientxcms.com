@@ -17,13 +17,13 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Virtualizor 
 - Automatisez les suspensions et les résiliations
 
 ## Création API Virtualizor Cloud 
-Créez un API dans `Votre Virtualizor Cloud` > `Clef d'api` > `Menu de profil en hait à droite` > `API credentials` > `ajouter L'IP a autoriser`
+Créez un API dans `Votre Virtualizor Cloud` > `Clef d'api` > `Menu de profil en haut à droite` > `API credentials` > `ajouter L'IP a autoriser`
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image2.png)
 
 Appuyer sur "Create API Key Pair"
 
-Ensuite vous allez avoir les clef API pour relier votre vitualizor cloud sur votre espace client
+Ensuite, vous allez avoir la clef API pour relier votre vitualizor cloud sur votre espace client
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image3.png)
 
@@ -85,3 +85,9 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 
 </Tabs>
+
+## Metadonnées utilisées
+
+| Clé     | Valeur | Description        |
+|---------|--------|--------------------|
+| `vpsid` | int    | Identifiant du VPS |

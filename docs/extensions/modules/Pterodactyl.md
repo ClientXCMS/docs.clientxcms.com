@@ -105,3 +105,5 @@ Lors d'une commande, le client pourra renseigner la valeur de cette variable d'e
 ## Erreurs courantes
 
 Oeuf non trouvé dans la configuration de l'offre : Il faut vider le cache de CLIENTXCMS dans `Paramètres` > `Extensions`.
+
+**No allocations satisfying the requirements for automatic deployment were found.** : Vérifiez que vous avez bien des allocations disponibles sur votre node Pterodactyl ou que la création automatique d'allocation est activée dans les paramètres avancés de votre pterodactyl.
