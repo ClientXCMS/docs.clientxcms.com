@@ -4,14 +4,30 @@ sidebar_position: 1
 
 # Produits
 
-Dans CLIENTXCMS, un **produit** représente un service que vous pouvez vendre à vos clients depuis votre boutique en ligne.  
+Dans **CLIENTXCMS**, un **produit** est l'élément central que vous proposez à la vente dans votre boutique ce dernier représente concrètement un service qui peut être acheté par vos clients - qu’il s’agisse d’un serveur pterodactyl, d’un VPS, d’un nom de domaine, d'un tunnel IP ou tout autre service lié à votre activité.
+
 Chaque produit peut être entièrement personnalisé : prix, description, type, durée, stock, etc.
 
 Vous pouvez gérer les produits depuis :
 
-Paramètres > Paramètres de la boutique > Produits
+`Paramètres` > `Paramètres de la boutique` > `Produits`
 
 ![Accès à la configuration des produits](/img/next_gen/settings/store/products/settings.png)
+
+:::tip Astuce
+N’oubliez pas de tester le parcours d’achat de vos produits une fois créés, afin de vous assurer que tout fonctionne comme prévu et que la présentation est claire pour vos clients.
+:::
+
+## Pourquoi bien configurer vos produits ?
+
+Une bonne configuration produit permet de :
+
+* Décrire clairement ce que le client achète 📝
+* Définir des prix précis 💰
+* Gérer les stocks, la durée de souscription, les types d’automatisation 🔧
+* Faciliter le processus de commande et éviter les malentendus
+
+Autrement dit, plus votre produit est claire et bien configuré, plus la vente est fluide 🚀
 
 ## Interfaces utilisateur
 
