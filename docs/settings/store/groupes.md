@@ -9,7 +9,7 @@ L’objectif est simple : **organiser vos services et améliorer le processus d'
 
 Chaque groupe peut être entièrement personnalisé : nom de ce dernier, description, visibilité, etc...
 
-Vous pouvez gérer les produits depuis :
+Vous pouvez gérer les groupes depuis :
 
 `Paramètres` > `Paramètres de la boutique` > `Groupes`
 
@@ -53,7 +53,7 @@ Cela permet de **classer vos offres par type de service**, comme par exemple :
 - VPS KVM
 - VPS LXC
 - Licences ClientXCMS
-- Starter Packs Hébergeur
+- Starter Pack Hébergeur
 
 ### Vue administrateur
 
@@ -78,7 +78,7 @@ La fin personnalisée de l’URL, permettant d’accéder directement à la page
 (exemple : `vps-linux` donnera une URL du type : `clientxcms.com/store/vps-linux`)
 
 **Groupe Parent** | (menu déroulant)<br />
-Si ce groupe appartient à une catégorie supérieure, vous pouvez le rattacher ici. Utile pour créer des hiérarchies (ex. : `Hébergement` > `VPS Linux`).
+Si ce groupe appartient à une catégorie supérieure, vous pouvez le rattacher ici. Utile pour créer des hiérarchies (ex. : `VPS` > `VPS Linux`).
 
 **Statut** | (menu déroulant)<br />
 Définit la visibilité du groupe dans la boutique :  
@@ -92,7 +92,7 @@ Définit la visibilité du groupe dans la boutique :
 **Image** | (fichiers)<br />
 Illustration affichée sur la boutique. Cela permet de rendre l’interface plus visuelle et attractive.
 
-**Ordre de tri** | (nombre)<br />
+**Ordre de tri** | (champ numérique)<br />
  Contrôle la position du groupe dans la liste affichée. Plus le chiffre est bas, plus le groupe apparaît haut dans la boutique.
 
 **Épinglé** | (case à cocher)<br />
@@ -136,8 +136,6 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 </div>
 
-Voici une version améliorée et conforme à ton style (`997267968679965`) pour la section **"Traduire un groupe"** – plus claire, fluide et professionnelle, tout en gardant un ton engageant :
-
 #### Traduire un groupe
 
 CLIENTXCMS intègre un **système de traduction complet** vous permettant d’adapter chaque groupe à différentes langues, sans compromis sur la précision ou l’expérience utilisateur.
@@ -145,6 +143,8 @@ CLIENTXCMS intègre un **système de traduction complet** vous permettant d’ad
 Chaque champ (nom, description, etc.) est **entièrement personnalisable** selon la langue sélectionnée. Vous pouvez donc affiner chaque traduction manuellement pour garantir une cohérence parfaite avec votre offre.
 
 ![Traduire un groupe dans l'administration](/img/next_gen/settings/store/groups/trad_group_in_admin.png)
+
+Merci de vous référer à la section lié [aux traductions](../core/locales) pour de plus ample informations à ce sujet.
 
 :::tip Astuce
 La qualité de vos traductions peut grandement améliorer la perception de votre boutique par les utilisateurs internationaux — prenez le temps de les adapter avec soin.
@@ -157,7 +157,7 @@ Cette restriction permet d’éviter toute suppression accidentelle de services 
 ✅ **Étapes à suivre :**
 
 1. Assurez-vous que le groupe concerné ne contient **aucun produit actif**.
-2. Une fois cette condition remplie, le bouton **"Supprimer ce groupe"** s’affichera automatiquement.
+2. Une fois cette condition remplie, vous pourrez supprimer ce dernier depuis la page de gestion des groupes au sein de votre espace d'adminsitration.
 3. Cliquez sur ce bouton : une **demande de confirmation** s’affichera pour valider votre action.
 4. Après confirmation, le groupe sera définitivement supprimé.
 
