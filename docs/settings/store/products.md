@@ -122,7 +122,6 @@ Chaque cycle de facturation peut avoir :
 🔴 Si vous laissez le champ vide pour un cycle, **il sera désactivé**.
 
 ---
-
 ### Utiliser la calculatrice intégrée
 
 CLIENTXCMS propose une **calculatrice de prix intégrée**.  
@@ -136,7 +135,6 @@ Cette fonction est idéale pour proposer des offres dégressives cohérentes.
 ![Interface de la calculatrice de prix](/img/next_gen/settings/store/products/create_pricing2.png)
 
 ---
-
 ### Résultat dans l’interface de configuration
 
 Les tarifs calculés apparaîtront ainsi dans la fiche produit côté boutique.
@@ -144,7 +142,6 @@ Les tarifs calculés apparaîtront ainsi dans la fiche produit côté boutique.
 ![Affichage des tarifs calculés](/img/next_gen/settings/store/products/config_pricing.png)
 
 Cela permet de simplifier le choix du client tout en maintenant une cohérence commerciale dans vos offres.
-
 ### Affichage des cycles de facturation
 
 Les cycles de facturation disponibles pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.
@@ -154,7 +151,6 @@ Les cycles de facturation disponibles pour un produit sont automatiquement affic
 Cela permet au client de choisir facilement la durée de souscription souhaitée.
 
 ---
-
 ### Présélection d’un cycle via l’URL
 
 Il est possible de **préselectionner un cycle de facturation** par défaut, directement depuis l’URL, à l’aide du paramètre `billing`.  
@@ -186,7 +182,6 @@ Assurez-vous que le cycle sélectionné est bien **activé et tarifé** dans la 
 :::
 
 ---
-
 ### Activer des cycles de facturation supplémentaires
 
 Par défaut, certains cycles comme le **biannuel**, le **triennal** ou **l’hebdomadaire** peuvent ne pas être visibles dans l’interface de configuration du produit.
