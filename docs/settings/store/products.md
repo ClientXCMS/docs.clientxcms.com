@@ -4,8 +4,10 @@ sidebar_position: 1
 
 # Produits
 
-Dans CLIENTXCMS, un **produit** représente un service que vous pouvez vendre à vos clients depuis votre boutique en ligne.  
-Chaque produit peut être entièrement personnalisé : prix, description, type, durée, stock, etc...
+Dans **CLIENTXCMS**, un **produit** correspond à un **service que vous proposez à la location** dans votre boutique. <br/>
+L’objectif est clair : **définir précisément chaque offre, personnaliser son apparence et maîtriser sa commercialisation**. Une bonne configuration des produits permet à vos clients de **comprendre rapidement ce qu’ils achètent** et de passer commande en toute confiance.
+
+Chaque produit peut être entièrement personnalisé : nom, description, prix, type, durée, gestion du stock, visibilité, etc.
 
 Vous pouvez gérer les produits depuis :
 
@@ -13,17 +15,35 @@ Vous pouvez gérer les produits depuis :
 
 ![Accès à la configuration des produits](/img/next_gen/settings/store/products/settings.png)
 
----
+:::tip Astuce
+Un produit **ne peut pas exister sans être rattaché à un groupe**.
+Avant de créer un produit, assurez-vous que les groupes sont bien définis pour garantir une boutique cohérente et facile à naviguer.
+:::
 
-## Vue côté boutique
+## Pourquoi utiliser des produits ?
+
+Les produits sont le cœur de votre boutique. Ils représentent concrètement ce que vous vendez — que ce soit un service d'hébergement comme un VPS, une instance Plesk, cPanel ou tout autre service.
+
+Créer des produits bien définis vous permet de :
+
+* Présenter clairement chaque service proposé à vos clients
+* Définir précisément les caractéristiques, les prix et les options de chaque offre
+* Gérer facilement la facturation, la durée, et le renouvellement de vos services
+
+:::tip Astuce
+C’est un peu comme étiqueter chaque article dans un magasin 🏷️ — vos clients savent exactement ce qu’ils achètent, et vous, vous gardez le contrôle sur chaque aspect de la vente.
+:::
+
+## Interfaces utilisateur
+### Vue côté boutique
 
 Les produits sont affichés dans la boutique et organisés par **groupes**.  
 Chaque groupe est accessible via une URL structurée comme suit :
 
-https://manager.monsuperhebergeur.com/store/nomdugroupe
+https://demo.clientxcms.com/store/nomdugroupe
 
 Par exemple, pour un groupe nommé **pterodactyl** :
-https://manager.monsuperhebergeur.com/store/pterodactyl
+https://demo.clientxcms.com/store/pterodactyl
 
 ![Vision dans un groupe de produit](/img/next_gen/settings/store/products/store_list.png)
 
@@ -39,7 +59,7 @@ Cela permet de **classer vos offres par type de service**, comme par exemple :
 ## Vue administrateur
 
 Dans l’interface d’administration, vous disposez d’une liste complète des produits créés. Vous pouvez :
-- **Rechercher** un produit par son nom
+- **Rechercher** un produit par son nom ou le groupe de produit
 - **Filtrer** par groupe
 - **Effectuer des actions** comme modifier, dupliquer ou supprimer un produit
 
@@ -55,7 +75,7 @@ Dans l’interface d’administration, vous disposez d’une liste complète des
 
 :::danger Attention
 La suppression d’un produit peut provoquer des erreurs si celui-ci est lié à des services ou commandes.  
-Procédez avec prudence.
+Procédez avec prudence, nous recommandons de ne rien supprimer sous aucun pretexte à aucun moment du cycle de vie de votre CMS.
 :::
 
 ### Types de produits
@@ -63,7 +83,7 @@ Procédez avec prudence.
 Chaque produit doit obligatoirement être **associé à un type**.  
 Les types sont fournis par les **modules d’approvisionnement** (comme *Pterodactyl*, *Proxmox* ou *Plesk*) que vous pouvez activer dans les paramètres d'administration situé dans `Paramètres` > `Paramètres des extensions` > `Extensions`
 
-Ces types permettent à CLIENTXCMS de synchroniser automatiquement vos produits avec les modules de gestion (création de service, configuration, etc.).
+Ces types permettent à CLIENTXCMS de synchroniser automatiquement vos produits avec les modules de gestion (facturation, création de service, configuration, etc.).
 
 Merci de vous reporter directement à la section des [modules](../../../extensions) pour plus d'information à ce sujet.
 
@@ -109,11 +129,11 @@ Sélectionnez le type de service que vous souhaitez livrer à votre client. Pour
 
 Définit la visibilité du produit dans la boutique :
 
-* **Actif** : visible par tous
+* **Actif** : Disponible à l'achat
 * **Non référencé** : accessible uniquement via un lien direct
-* **Caché** : totalement invisible pour les clients
+* **Caché** : Indisponible à l'achat
 
-Merci de vous reporter à la section dédié [au statut d'un produit](./products#statut-du-produit). pour de plus ample informations <br />
+Merci de vous reporter à la section dédié [au statut d'un produit](./products#statut-du-produit). pour de plus ample informations à ce sujet. <br />
 
 **Groupe de produit** | (menu déroulant)<br />
 
@@ -168,9 +188,7 @@ Chaque cycle de facturation peut avoir :
 
 CLIENTXCMS propose une **calculatrice de prix intégrée**.  
 Elle vous aide à :
-- définir un **prix de base**
 - appliquer une **réduction en %**
-- choisir une **durée** (ex. : 6 mois pour un semestriel)
 
 Cette fonction est idéale pour proposer des offres dégressives cohérentes.
 
@@ -178,9 +196,15 @@ Les tarifs calculés apparaîtront ainsi dans la fiche produit côté panier.
 
 Cela permet de simplifier le choix du client tout en maintenant une cohérence commerciale dans vos offres.
 
+:::tip Astuce
+Si vous souhaitez configurer des cycles de facturation additionnels avant d’ouvrir la calculatrice, cliquez sur le bouton « Configurer plus de tarifs ».
+Cela permettra d’afficher tous les cycles disponibles.
+Sans cette étape, la calculatrice appliquera votre réduction uniquement sur les cycles visibles à l’écran.
+:::
+
 ### Affichage des cycles de facturation
 
-Les cycles de facturation disponibles pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.
+Les cycles de facturation configuré pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.
 
 ![Affichage des cycles](/img/next_gen/settings/store/products/config_billing.png)
 
@@ -189,7 +213,7 @@ Cela permet au client de choisir facilement la durée de souscription souhaitée
 ### Présélection d’un cycle via l’URL
 
 Il est possible de **préselectionner un cycle de facturation** par défaut, directement depuis l’URL, à l’aide du paramètre `billing`.  
-Cela est particulièrement utile pour orienter vos visiteurs vers une offre précise depuis votre site vitrine.
+Cela est particulièrement utile pour orienter vos visiteurs vers un cycle associée à une offre précise depuis votre site vitrine.
 
 Par exemple, pour présélectionner un cycle **annuel**, ajoutez ce paramètre à votre URL :
 
@@ -211,7 +235,7 @@ Voici les valeurs possibles du paramètre `billing` :
 | `weekly`             | Hebdomadaire         | Facturation chaque semaine            |
 
 :::tip Astuce
-Assurez-vous que le cycle sélectionné est bien **activé et tarifé** dans la configuration du produit. Si le champ de prix est vide, le cycle ne pourra pas être affiché ni sélectionné.
+Assurez-vous que le cycle sélectionné est bien **tarifé** dans la configuration du produit. Si le champ de prix est vide, le cycle ne pourra pas être affiché ni sélectionné.
 :::
 
 ### Activer des cycles de facturation supplémentaires
@@ -225,7 +249,8 @@ Pour les rendre disponibles, cliquez sur le bouton **« Configurer plus de tarif
 Vous pourrez alors ajouter et personnaliser les tarifs de ces cycles selon vos besoins.
 
 :::info
-Assurez-vous de bien renseigner un prix pour chaque cycle que vous activez, sinon il ne sera pas affiché aux clients.
+Assurez-vous de **renseigner un prix pour chaque cycle de facturation que vous activez**, sans quoi il ne sera pas affiché aux clients dans la boutique. <br/>
+Concernant les **frais d'installation**, même si vous videz le champ, ils seront automatiquement ramenés à zéro — c’est un comportement normal du système.
 :::
 
 ## Édition d’un produit
@@ -258,28 +283,46 @@ Chaque produit peut avoir une **configuration spécifique** selon son type (ex. 
 
 ### Exemple avec un module : Pterodactyl
 
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
+
+<div style={{ flex: '1 1 400px' }}>
+
 Si votre produit repose sur le module **Pterodactyl**, vous pouvez configurer :
-- Le nombre de **CPU**
-- La quantité de **RAM**
-- Le **stockage**
-- Le nombre **d'allocations (ports)**
-- Le nombre de **backups** ou bien de **bases de données**
 
-![Exemple de configuration Pterodactyl](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
+| Fonctionnalité                            | Description                                                                 |
+|------------------------------------------|------------------------------------------------------------------------------|
+| Nom / Description du serveur             | Permet de personnaliser le nom et la description affichés à la livraison.    |
+| L’emplacement de livraison               | Définit le serveur physique sur lequel le service sera déployé.              |
+| L’œuf                                    | Sélectionne l’egg Pterodactyl à utiliser pour le service.                    |
+| Commande de démarrage                    | Détermine comment l’instance démarre sur le serveur Pterodactyl.             |
+| Image Docker                             | Définit l’image système utilisée pour le déploiement.                        |
+| CPU                                      | Spécifie le nombre de cœurs alloués à l’instance.                            |
+| RAM                                      | Quantité de mémoire vive allouée.                                            |
+| Stockage                                 | Espace disque attribué à l’instance.                                         |
+| Allocations (ports)                      | Nombre de ports assignés au service.                                         |
+| Backups / Bases de données               | Nombre de sauvegardes ou de bases de données autorisées.                     |
 
-:::info
+</div>
+
+<div style={{ flex: '1 1 200px', textAlign: 'center' }}>
+  <img src="/img/next_gen/extensions/modules/pterodactyl/images_4.png" alt="Exemple de configuration Pterodactyl" style={{ maxWidth: '100%', borderRadius: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
+</div>
+
+</div>
+
+:::info  
 Les champs affichés dépendent du **type de produit** et du **module d’approvisionnement** activé.  
-Consultez la documentation spécifique du module pour connaître les paramètres disponibles.
+Consultez la documentation spécifique du module pour connaître les paramètres disponibles pour ce dernier.  
 :::
 
 ## Supprimer un produit
 
 :::danger Avertissement
-La suppression d’un produit peut provoquer des dysfonctionnements dans le système, notamment si le produit est lié à des services ou une commande existantes.
+La suppression d’un produit peut provoquer des dysfonctionnements dans le système, notamment si le produit est lié à des services ou une commande existantes. Les recommandations de l'équipe sont de ne jamais supprimer un élément quelques soit le cycle de vie du CMS.
 :::
 
 Pour supprimer un produit :
-1. Cliquez sur le bouton **rouge « Supprimer »** dans la colonne **Actions**.
+1. Cliquez sur le bouton rouge **« Supprimer »** dans la colonne **Actions**.
 2. Confirmez l’opération.
 
 ![Supression d'un produit](/img/next_gen/settings/store/products/edit_product.png)
@@ -292,11 +335,11 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 <div style={{ flex: 1 }}>
 
-| Statut           | Visibilité                          |
-|------------------|--------------------------------------|
-| **Disponible**   | Visible et disponible à l’achat     |
-| **Non référencé**| Visible uniquement par l’admin      |
-| **Caché**        | Invisible pour les clients          |
+| Statut           | Visibilité                               |
+|------------------|------------------------------------------|
+| **Disponible**   | Disponible à l'achat                     |
+| **Non référencé**| Accessible uniquement via un lien direct |
+| **Caché**        | Indisponible à l'achat                   |
 
 </div>
 
