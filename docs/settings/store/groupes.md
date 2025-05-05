@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Groupes
 
-Dans **CLIENTXCMS**, un **groupe** correspond à une **catégorie logique de produits** que vous proposez dans votre boutique.
+Dans **CLIENTXCMS**, un **groupe** correspond à une **catégorie logique de produits** que vous proposez dans votre boutique. <br/>
 L’objectif est simple : **organiser vos services et améliorer le processus d'achat** pour que vos clients puissent **naviguer facilement et acheter rapidement**. Un bon groupement améliore l’expérience utilisateur, guide la décision d’achat et donne à votre boutique un aspect structuré et professionnel.
 
 Chaque groupe peut être entièrement personnalisé : nom de ce dernier, description, visibilité, etc...
@@ -19,6 +19,7 @@ Vous pouvez gérer les groupes depuis :
 Un produit **doit toujours appartenir à un groupe** pour apparaître dans la boutique.
 Prenez donc un moment pour structurer vos groupes avant d’ajouter de nouveaux services.
 :::
+---
 
 ## Pourquoi utiliser des groupes ?
 
@@ -29,7 +30,9 @@ Créer un groupe distinct pour chacun de ces types de produits permet à vos cli
 * Comprendre rapidement les différences entre les offres
 * Gagner du temps pour vos clients dans leur parcours d’achat
 
+:::tip Astuce
 C’est un peu comme organiser les rayons d’un magasin 🛒 — plus c’est clair, plus c’est efficace.
+:::
 
 ## Interfaces utilisateur
 
@@ -82,9 +85,9 @@ Si ce groupe appartient à une catégorie supérieure, vous pouvez le rattacher 
 
 **Statut** | (menu déroulant)<br />
 Définit la visibilité du groupe dans la boutique :  
-- **Actif** : visible pour tous  
-- **Non référencé** : accessible par lien direct seulement  
-- **Caché** : invisible pour les clients
+- **Actif** : Disponible à l'achat
+- **Non référencé** : Accessible uniquement via un lien direct  
+- **Caché** : Indisponible à l'achat
 
 **Description** | (zone de texte)<br />
  Un court texte explicatif qui sera visible sur la page du groupe, pour aider le client à comprendre l’offre globale.
@@ -105,6 +108,40 @@ Permet d’appliquer l’image sélectionnée comme arrière-plan du groupe sur 
 Prenez le temps de rédiger un nom et une description clairs et engageants. C’est souvent la première chose que vos clients liront avant de découvrir vos produits et cela améliorera votre référencement.
 :::
 
+Voici une version améliorée et plus détaillée de ta section **"Cloner un groupe"**, avec un style cohérent et une explication claire des deux options. Je t’indique également où insérer les captures d’écran pour une UX optimale :
+
+### Cloner un groupe
+
+Vous pouvez cloner un groupe existant depuis l’interface d’administration en cliquant sur le bouton **« Cloner »** situé à droite du groupe concerné, dans la liste de vos groupes.
+
+Une fois cette action lancée, **deux choix s’offrent à vous** :
+
+* **Cloner avec les produits** :
+  Cette option permet de dupliquer non seulement les paramètres du groupe (nom, description, visibilité...), mais également **tous les produits** qu’il contient.
+  Les produits clonés auront les mêmes réglages que les originaux, ce qui vous permet de gagner du temps si vous souhaitez proposer une offre similaire dans une autre catégorie.
+
+* **Cloner sans les produits** :
+  Ici, seul le groupe est dupliqué, sans aucun produit.
+  C’est idéal si vous souhaitez repartir d’un modèle de groupe sans dupliquer son contenu.
+
+---
+
+**Captures d’écran :**
+
+1. **Liste des groupes avec le bouton "Cloner" visible**
+![Vue de la liste des groupes avec l'option "cloner" dans l'administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_in_admin.png)
+
+2. **Fenêtre modale avec les deux options "Avec les produits" / "Sans les produits"**
+
+![Vue de la liste des groupes avec la fenêtre modal de l'option "cloner" dans l'administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_modal_in_admin.png)
+
+3. **Résultat final : aperçu du groupe cloné avec ou sans produits selon l’option choisie**
+
+![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_without_product_into_group_in_admin.png)
+
+![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_with_product_into_group_in_admin.png)
+
+
 ### Editer un groupe
 
 Pour éditer un groupe, appuyez sur le bouton "Afficher" présent dans la liste de vos groupes sur l'interface d'administration.<br />
@@ -124,9 +161,9 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 | Statut           | Visibilité                                                |
 |------------------|-----------------------------------------------------------|
-| **Actif**        | Visible et disponible à l’achat                           |
-| **Non référencé**| Visible uniquement par l’admin                            |
-| **Caché**        | Invisible pour les clients et les administrateurs         |
+| **Actif**        | Disponible à l'achat                                      |
+| **Non référencé**| Accessible uniquement via un lien direct                  |
+| **Caché**        | Indisponible à l'achat                                    |
 
 </div>
 
@@ -140,7 +177,7 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 CLIENTXCMS intègre un **système de traduction complet** vous permettant d’adapter chaque groupe à différentes langues, sans compromis sur la précision ou l’expérience utilisateur.
 
-Chaque champ (nom, description, etc.) est **entièrement personnalisable** selon la langue sélectionnée. Vous pouvez donc affiner chaque traduction manuellement pour garantir une cohérence parfaite avec votre offre.
+Chaque champ (nom, description, slug, etc.) est **entièrement personnalisable** selon la langue sélectionnée. Vous pouvez donc affiner chaque traduction manuellement pour garantir une cohérence parfaite avec votre offre.
 
 ![Traduire un groupe dans l'administration](/img/next_gen/settings/store/groups/trad_group_in_admin.png)
 
