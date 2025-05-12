@@ -4,9 +4,10 @@ on:
   push:
       branches:
       - preprod
+
 jobs:
   Build-Images:
-    runs-on: ubuntu-8-cores
+    runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
