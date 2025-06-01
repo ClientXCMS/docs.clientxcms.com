@@ -47,6 +47,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'Blog',
+          blogDescription: 'Retrouvez ici les dernières actualités de ClientXCMS',
           blogSidebarCount: 'ALL',
           postsPerPage: 10,
           // Please change this to your repo.
