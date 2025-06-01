@@ -43,7 +43,6 @@ Nous sommes ravis de vous annoncer la sortie de la version **v2.14.0** de Client
 - 🔄 Modification de la page des extensions.
 - 🔄 Modification de la page d'inscription (changement des champs e-mail et téléphone).
 - 🔧 [SocialAuth] Vérification de l'existence d'un compte client avec le même e-mail avant la création.
-- 🔧
 - 📦 Modification de la page d'un service.
 - 📦 Amélioration de la page des gains.
 - 🔒 Ajout de la possibilité de désactiver l'A2F (authentification à deux facteurs) via l'administration sur un compte.
