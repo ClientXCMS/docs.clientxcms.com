@@ -112,6 +112,12 @@ Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fich
 ```
 Avec `name` qui est le nom de la permission, `label` qui est la traduction de la permission dans le fichier de langue et `group` qui est le groupe de la permission.
 
+
+Vous devez par la suite seedez la base de données avec la commande suivante :
+```bash
+php artisan db:seed --class=PermissionsSeeder
+```
+
 Puis vous pouvez utiliser la permission dans votre code comme ceci :
 ```php
 if (staff_has_permission('admin.fund')) {
