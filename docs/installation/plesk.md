@@ -79,6 +79,7 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
 ## Configuration de la base de données
 
 1. Créez une base de données dans le tableau de bord de gestion du domaine, sous "Fichiers et bases de données" → "Bases de données".
+
    ![Bases de données - Plesk](/img/next_gen/Installation/Plesk/Plesk_BDDs.png)
 
 2. Utilisez un mot de passe robuste pour des raisons de sécurité et notez bien les informations de connexion avant de confirmer.
@@ -125,6 +126,12 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
    ![Gestion licence - Plesk](/img/next_gen/Installation/ClientX_panel_gestion_licence.png)
    Les identifiants "**OAuth Client ID**" et "**OAuth Secret**" sont nécessaires pour connecter la licence ClientXCMS à votre site. Cliquez ensuite sur le bouton "Se connecter" sur votre instance.
 
+
+## Configuration des taches cron
+1. Dans le tableau de bord de gestion du domaine, cliquez sur "Tâches planifiées" sous "Outils et paramètres".
+2. Cliquez sur "Ajouter une tâche planifiée".
+3. Configurez les tâches cron suivantes
+   ![Tâches planifiées - Plesk](/img/next_gen/Installation/Plesk/Plesk_cron.png)
 
 ## Terminé
 👏 Bravo, ClientXCMS NextGen est maintenant installé sur votre serveur !
