@@ -1,5 +1,5 @@
-# Add-on **Discord Gift**
-> Cette page explique pas à pas comment configurer, utiliser et personnaliser l’add-on **Discord Gift** de ClientXCMS.
+# Add-on **Cadeaux Discord**
+> Cette page explique pas à pas comment configurer, utiliser et personnaliser l’add-on **Cadeaux Discord / Discord Gift** de ClientXCMS.
 > Objectif : automatiser des « cadeaux Discord » (crédits aléatoires) envoyés à vos utilisateurs via un code unique, le tout piloté par Webhook.
 
 ---
