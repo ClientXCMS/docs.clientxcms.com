@@ -2,7 +2,7 @@
 
 Bienvenue dans la documentation officielle de **CLIENTXCMS** écrit en markdown ! Vous trouverez ici toutes les informations nécessaires pour installer, configurer et utiliser notre CMS.
 
-La documentation est disponible à l'addresse : [https://docs.clientxcms.com]()
+La documentation est disponible à l'adresse : [https://docs.clientxcms.com]()
 
 ---
 
