@@ -1,5 +1,5 @@
 # Options supplémentaires
-Les options supplémentaires sont des fonctionnalités qui peuvent être ajoutées à un service lors de la commande ou après pour le personnaliser davantage. 
+Les options supplémentaires sont des fonctionnalités qui peuvent être ajoutées à un service lors de la commande ou après pour le personnaliser davantage. Celle-ci ont un coût supplémentaire et peuvent être synchronisées avec le même cycle de facturation que le service ou avoir une date d'expiration différente.
 
 ## Types d'options disponibles
 - **Curseurs** : Les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire.
@@ -75,3 +75,6 @@ Nous conseillons de définir un prix pour chaque récurrence pour chaque option.
 :::
 
 Verifiez bien que l'option n'est pas caché pour être visible lors de la commande.
+
+## Ajout d'une option à un service
+Pour ajouter une option à un service, rendez-vous sur la page du service et cliquez sur la section "Options du service". 

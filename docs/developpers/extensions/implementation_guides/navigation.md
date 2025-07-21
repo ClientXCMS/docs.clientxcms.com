@@ -23,6 +23,8 @@ $this->app['extension']->addAdminMenuItem(
 Si vous souhaitez que l'élément de menu ne soit visible que par les utilisateurs disposant d'une permission spécifique, vous pouvez définir cette permission dans le dernier paramètre :
 
 ```php
+
+use App\Core\Menu\AdminMenuItem;
 $this->app['extension']->addAdminMenuItem(
     new AdminMenuItem(
         'fund',              // UUID unique de l'item
@@ -33,9 +35,13 @@ $this->app['extension']->addAdminMenuItem(
         'admin.manage_customers'    // Permission requise pour voir ce menu
     )
 );
+
 ```
+#### Résultat
+![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
+
 :::info TIPS
-Cela affichera pas le menu mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
+Cela affichera pas le menu, mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
 :::
 ##  Gestion des items et cards dans les paramètres
 
@@ -66,6 +72,8 @@ $this->app['settings']->addCardItem(
 );
 ```
 
+![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+
 Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../../../settings).
 
 ## Gestion des widgets dans le tableau de bord admin
@@ -82,18 +90,22 @@ Ce widget est utilisé pour afficher des statistiques dans le tableau de bord ad
 #### Exemple : Afficher le nombre total de clients
 
 ```php
-$users = \App\Models\Customer::where('is_deleted', false)->count();
+
+use App\Core\Admin\Dashboard\AdminCountWidget;
 
 $this->app['extension']->addAdminCountWidget(
     new AdminCountWidget(
         'total_customers',         // UUID unique
         'bi bi-people',            // Icône
         'Total Clients',           // Titre
-        (string)$users,            // Valeur affichée
+        function() { return \App\Models\Account\Customer::where('is_deleted', false)->count(); },            // Valeur affichée
         'admin.show_customers'     // Permission requise pour voir ce widget
     )
 );
 ```
+#### Résultat
+
+![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
 
 ### Widgets complexes
 
@@ -102,6 +114,8 @@ Ce widget permet d'afficher des informations plus complexes ou dynamiques dans l
 #### Exemple : Afficher les 3 derniers utilisateurs connectés
 
 ```php
+use App\Core\Admin\Dashboard\AdminCardWidget;
+
 $this->app['extension']->addAdminCardsWidget(
     new AdminCardWidget(
         'last_login',
@@ -134,3 +148,22 @@ Dans cet exemple, le widget affiche une vue contenant les 3 derniers utilisateur
     </ul>
 </div>
 ```
+
+## Exemple de menu client
+
+```php
+
+use App\Core\Menu\FrontMenuItem;
+$this->app['extension']->addFrontMenuItem(
+    new FrontMenuItem(
+        'fund',            // UUID unique de l'item
+        'front.fund',      // Route
+        'bi bi-speedometer2',   // Icône (classe Bootstrap)
+        'front.fund.title',// Texte de traduction
+        1,                      // Position
+    )
+);
+```
+### Résultat
+
+![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)

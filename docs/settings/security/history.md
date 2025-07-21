@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Des fichiers de logs permettent de garder une trace des erreurs ou des actions effectuées par les tâches planifiées. Vous pouvez consulter ces logs depuis la page **Historique** accèsible depuis les `Paramètres` > `Sécurité` > `Historique`.
 ## Tâches planifiées
-Les résultats de chaque planifiées sont enregistrés dans les logs à partir d'un fichier journal souvent appeler comme le nom de la commande. Par exemple : 
+Les résultats de chaques tâches planifiées sont enregistrés dans les logs à partir d'un fichier journal souvent appeler comme le nom de la commande. Par exemple : 
 - `services-delivery.log` pour la commande `services:delivery`
 - `services-expire.log` pour la commande `services:expire`
 - `services-renewals.log` pour la commande `services:renewals`

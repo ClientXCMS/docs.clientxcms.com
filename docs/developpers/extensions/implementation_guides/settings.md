@@ -23,7 +23,7 @@ public function boot(): void
         4,                                  // Ordre d'affichage
         null,                               // Liste d'items (null pour les injecter automatiquement)
         true,                               // Indique que la carte est active
-        1                                   // Priorité de la carte
+        1                                   // Indique la longueur de la carte (1 par défaut, 2, 4, 8)
     );
 }
 ```
@@ -44,7 +44,7 @@ public function boot(): void
     }
 
     // Ajoute la carte
-    $this->app['settings']->addCard('fund', 'fund::messages.admin.title', 'fund::messages.admin.subheading', 4, null, true, 1);
+    $this->app['settings']->addCard('fund', 'fund::messages.admin.title', 'fund::messages.admin.subheading', 4, null, true);
 
     // Ajoute un item dans la carte 'fund'
     $this->app['settings']->addCardItem(
@@ -61,6 +61,8 @@ public function boot(): void
 
 Dans cet exemple, l'item renvoie à l'action `showFund` du `FundAdminController`, qui affiche une vue dédiée dans l'administration de l'extension.
 
+![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+
 ## Signature des méthodes
 
 Voici la signature des deux méthodes `addCard()` et `addCardItem()` utilisées dans les exemples ci-dessus :
@@ -74,7 +76,7 @@ public function addCard(
     int $order,          // Ordre d'affichage dans la liste des cartes
     ?Collection $items = null, // Collection des items à afficher
     bool $is_active = true,    // Indique si la carte est active
-    int $priority = 1          // Priorité d'affichage
+    int $size = 1          // Taille de la carte (1, 2, 4, 8) 1 par défaut
 ): void
 
 // Ajoute un item dans une carte existante
@@ -158,3 +160,5 @@ Vous devez créer une vue pour l'item dans le répertoire de vues de votre exten
 @endsection
 ```
 Vous pouvez avoir plus d'informations sur les options sur les [champs possibles des formulaires](https://docs.clientxcms.com/developpers/themes/forms) dans la documentation thème.
+
+Vous pourrez ainsi récupérer le paramètre avec la fonction `setting('fund_key_1')` dans votre vue ou controller.

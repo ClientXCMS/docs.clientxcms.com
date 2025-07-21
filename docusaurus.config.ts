@@ -68,7 +68,6 @@ const config: Config = {
         indexDocs: true,
         docsDir: ["docs"],
         docsRouteBasePath: ["docs"],
-        ignoreFiles: ['version-v1/**']
       },
     ],
     [
@@ -80,6 +79,10 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
     metadata: [{name: 'keywords', content: 'CMS,CLIENTX,Clientx,docs,doc,blog'}],
     navbar: {
       title: 'CLIENTXCMS Docs',

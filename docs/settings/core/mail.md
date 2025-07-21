@@ -39,3 +39,7 @@ Si la connexion a échoué, vérifiez les paramètres SMTP que vous avez entrés
 :::info
 Vérifiez l'addresse e-mail de l'expéditeur pour éviter que les e-mails soient marqués comme spam.
 :::
+
+#### Erreurs courantes
+
+**scheme is not supported; supported schemes for mailer "smtp" are: "smtp", "smtps"** : Cela signifie que le protocole de chiffrement SMTP que vous avez sélectionné n'est pas pris en charge. Essayez de remplacer TLS par SSL ou vice versa.

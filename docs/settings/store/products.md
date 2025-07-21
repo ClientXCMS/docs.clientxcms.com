@@ -4,131 +4,406 @@ sidebar_position: 1
 
 # Produits
 
-Dans CLIENTXCMS, vous pouvez vendre des services à vos clients depuis la boutique. Vous pouvez gérer les produits en configurant le prix, la description, son type ou son nom depuis la section `Paramètres de boutique` des paramètres puis `produits`.
+Dans **CLIENTXCMS**, un **produit** correspond à un **service que vous proposez à la location** dans votre boutique. <br/>
+L’objectif est clair : **définir précisément chaque offre, personnaliser son apparence et maîtriser sa commercialisation**. Une bonne configuration des produits permet à vos clients de **comprendre rapidement ce qu’ils achètent** et de passer commande en toute confiance.
 
-![img](/img/next_gen/settings/store/products/settings.png)
+Chaque produit peut être entièrement personnalisé : nom, description, prix, type, durée, gestion du stock, visibilité, etc.
 
-## Affichage des produits
-Vous pouvez voir les produits disponibles dans votre boutique. Ils sont regroupés par groupe de produits disponibles sur l'url `/store/{group}` de votre boutique.
-![Vision dans un groupe de produit](/img/next_gen/settings/store/products/store_list.png)
-## Administration
-### Liste des produits
-Vous pouvez voir la liste des produits disponibles dans votre boutique. Vous pouvez les filtrer par groupe ou rechercher un produit en particulier.
+Vous pouvez gérer les produits depuis :
 
-![Vision administrateur](/img/next_gen/settings/store/products/admin_list.png)
+`Paramètres` > `Paramètres de la boutique` > `Produits`
 
-#### Actions
-- **Clone** : Permet de cloner un produit
+![Accès à la configuration des produits](/img/next_gen/settings/store/products/settings.png)
 
-- **Afficher** : Permet de voir les détails du produit et de le modifier
-
-- **Supprimer** : Permet de supprimer un produit
-
-:::danger Danger!
-La suppression d'un produit peut provoquer des problèmes dans le système.
+:::tip Astuce
+Un produit **ne peut pas exister sans être rattaché à un groupe**.
+Avant de créer un produit, assurez-vous que les groupes sont bien définis pour garantir une boutique cohérente et facile à naviguer.
 :::
 
-### Types
-Chaque produit doit avoir un type associé. Les types de produits sont ajoutés par les modules approvisionnements comme Pterodactyl ou Plesk, ils permettent de pouvoir synchroniser votre offre à l'automatisation du module. Vous pouvez activer un module d'approvisionnement depuis les extensions.
-### Cycle de facturation
-Les cycles de facturation permettent de définir la période de facturation pour un produit. Voici les cycles de facturation disponibles :
-- Mensuel
-- Trimestriel
-- Semestriel
-- Annuel
-- Biannuel
-- Triennal
-- Hebdomadaire
-## Création
-Pour ajouter un produit, cliquez sur le bouton "Créer" en haut à gauche de la page.
-![img](/img/next_gen/settings/store/products/create_product.png)
-**Nom du produit** : Nom de vente qui sera affiché aux clients
+## Pourquoi utiliser des produits ?
 
-**Stock disponible** : Stock disponible pour le produit (-1 pour illimité)
+Les produits sont le cœur de votre boutique. Ils représentent concrètement ce que vous vendez — que ce soit un service d'hébergement comme un VPS, une instance Plesk, cPanel ou tout autre service.
 
-**Statut** : Statut du produit [(Voir ici pour plus d'informations)](#statut)
+Créer des produits bien définis vous permet de :
 
-**Groupe** : Permet d'associer un produit à un groupe - Ne peut pas être dans aucun groupe [(Si vide créez en un ici)](./groupes#création)
+* Présenter clairement chaque service proposé à vos clients
+* Définir précisément les caractéristiques, les prix et les options de chaque offre
+* Gérer facilement la facturation, la durée, et le renouvellement de vos services
 
-**Ordre de tri** : Ordre d'apparition - [Gérer nativement par la réorganisation des produits facilement](./groupes#edition)
+:::tip Astuce
+C’est un peu comme étiqueter chaque article dans un magasin 🏷️ — vos clients savent exactement ce qu’ils achètent, et vous, vous gardez le contrôle sur chaque aspect de la vente.
+:::
 
-**Type** : Type de produit - [(Si vide activez un module d'approvisionnement ici)](../../extensions)
+## Interfaces utilisateur
+### Vue côté boutique
 
-**Description** : Texte avec la description du produit qui sera affiché dans la boutique
+Les produits sont affichés dans la boutique et organisés par **groupes**.  
+Chaque groupe est accessible via une URL structurée comme suit :
 
-**Epingle** : Permet de mettre en avant le produit dans la boutique
-### Configuration des prix
-Vous pouvez définir le prix du produit ainsi que les frais d'installation selon le cycle de facturation. Pour chaque cycle de facturation, vous pouvez définir un prix différent.
-Pour définir un produit comme gratuit, vous pouvez définir le prix à 0. Si vous souhaitez désactiver un cycle de facturation, vous **DEVEZ** le laisser vide.
-#### Calculatrice
-![img](/img/next_gen/settings/store/products/create_pricing2.png)
+https://demo.clientxcms.com/store/nomdugroupe
 
-Nous avons ajouté une calculatrice intégrée pour vous aider à calculer le prix du produit avec une réduction possible sur la durée. Vous pouvez définir le prix de base, la réduction en pourcentage si vous voulez faire des réductions sur la durée et le nombre de mois pour le cycle de facturation. 
+Par exemple, pour un groupe nommé **pterodactyl** :
+https://demo.clientxcms.com/store/pterodactyl
 
-![img](/img/next_gen/settings/store/products/config_pricing.png)
+![Vision dans un groupe de produit](/img/next_gen/settings/store/products/store_list.png)
 
-Cela vous fait gain de temps pour calculer le prix du produit.
-### Affichages des cycles
-Les cycles de facturation sont affichés sur la page de configuration du produit lors de l'ajout dans le panier.
-![img](/img/next_gen/settings/store/products/config_billing.png)
+Cela permet de **classer vos offres par type de service**, comme par exemple :
 
-Vous pouvez préselectionner un cycle de facturation par défaut pour le produit depuis les query params `billing` dans l'url de configuration.
-Par exemple, si vous voulez préselectionner le cycle de facturation annuel, vous pouvez ajouter `?billing=annuel` à l'url de configuration du produit.
+- Hébergement Pterodactyl
+- Hébergement Minecraft
+- VPS KVM
+- VPS LXC
+- Licences ClientXCMS
+- Starter Pack Hébergeur
 
-#### Plus de tarifs
-Vous pouvez ajouter plus de tarifs en cliquant sur le bouton "Configurer plus de tarifs" pour pouvoir utiliser le biannuel, triennal ou hebdomadaire.
-## Edition
-Vous pouvez éditer un produit en cliquant sur le bouton "Afficher" dans la colonne "Actions". Vous pouvez modifier les informations du produit, sensiblement à une création.
+## Vue administrateur
 
-### Edition de la configuration
-Vous pouvez configurer les performances de l'offre en définissant les ressources, les fonctionnalités et les limitations selon le type du produit.
+Dans l’interface d’administration, vous disposez d’une liste complète des produits créés. Vous pouvez :
+- **Rechercher** un produit par son nom ou le groupe de produit
+- **Filtrer** par groupe
+- **Effectuer des actions** comme modifier, dupliquer ou supprimer un produit
 
-![Configuration de l'offre](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
+![Vue de la liste des produits en administration](/img/next_gen/settings/store/products/admin_list.png)
 
-Voici un exemple de configuration pour un produit Pterodactyl.
+### Actions disponibles
+
+| Action        | Description                                  |
+|---------------|----------------------------------------------|
+| **Cloner**    | Duplique le produit existant                 |
+| **Afficher**  | Ouvre le produit pour l’éditer               |
+| **Supprimer** | Supprime définitivement le produit           |
+
+:::danger Attention
+La suppression d’un produit peut provoquer des erreurs si celui-ci est lié à des services ou commandes.  
+Procédez avec prudence, nous recommandons de ne rien supprimer sous aucun pretexte à aucun moment du cycle de vie de votre CMS.
+:::
+
+### Types de produits
+
+Chaque produit doit obligatoirement être **associé à un type**.  
+Les types sont fournis par les **modules d’approvisionnement** (comme *Pterodactyl*, *Proxmox* ou *Plesk*) que vous pouvez activer dans les paramètres d'administration situé dans `Paramètres` > `Paramètres des extensions` > `Extensions`
+
+Ces types permettent à CLIENTXCMS de synchroniser automatiquement vos produits avec les modules de gestion (facturation, création de service, configuration, etc.).
+
+Merci de vous reporter directement à la section des [modules](../../../extensions) pour plus d'information à ce sujet.
+
+### Cycles de facturation disponibles
+
+Un **cycle de facturation** détermine la fréquence à laquelle le client paiera pour le produit.
+
+Voici les cycles disponibles :
+
+- **Mensuel**
+- **Trimestriel**
+- **Semestriel**
+- **Annuel**
+- **Biannuel**
+- **Triennal**
+- **Hebdomadaire**
+
+Chaque cycle peut avoir son propre prix.
+
+## Créer un nouveau produit
+
+Pour ajouter un produit à votre boutique, cliquez sur le bouton **« Créer »** en haut à droite de la page.
+
+![Création d'un produit](/img/next_gen/settings/store/products/create_product.png)
+
+### Paramètres à définir
+
+Voici les champs à compléter lors de la création d’un produit :
+
+**Nom** | (texte)<br />
+
+Le nom du produit tel qu’il apparaîtra dans votre boutique, ce dernier sera également sa référence commerciale sur les factures
+
+**Stock disponible** |  (champ numérique)<br />
+
+Quantité disponible pour ce produit. Reportez-vous à la section [Gérer le stock d’un produit](./products#gérer-le-stock-dun-produit) pour en savoir plus.
+
+**Type de produit** | (menu déroulant)<br />
+
+Sélectionnez le type de service que vous souhaitez livrer à votre client. Pour plus d'informations, consultez la section dédiée aux [types de produits](./products#types-de-produits).
+
+**Statut** | (menu déroulant)<br />
+
+Définit la visibilité du produit dans la boutique :
+
+* **Actif** : Disponible à l'achat
+* **Non référencé** : accessible uniquement via un lien direct
+* **Caché** : Indisponible à l'achat
+
+Merci de vous reporter à la section dédié [au statut d'un produit](./products#statut-du-produit). pour de plus ample informations à ce sujet. <br />
+
+**Groupe de produit** | (menu déroulant)<br />
+
+Associez votre produit à un groupe pour qu’il apparaisse correctement dans la boutique.<br />
+Merci de vous reporter à la page dédié aux [groupes](./groupes) pour de plus ample informations à ce sujet.<br />
+
+**Ordre de tri** | (champ numérique)<br />
+
+Détermine la position du produit dans son groupe. Un chiffre plus bas le place plus haut dans la liste.
+
+**Épinglé** | (case à cocher)<br />
+
+Permet de mettre en avant ce produit. Il sera affiché en tête de liste dans son groupe.
+
+**Description** | (zone de texte avec éditeur HTML)<br />
+
+Rédigez ici une courte description qui sera affichée dans la description du produit. Ce champ prend en charge le HTML et le CSS via l'éditeur intégré (compatible avec TailwindCSS).
+
+> ⚠️ Soyez rigoureux : un code mal structuré ou une balise non fermée peut altérer l'affichage du CMS.
+
+Exemple de description en HTML
+
+```html
+<p class="ql-align-center">Une solution conçue pour allier accessibilité et fiabilité, soutenue par votre engagement.</p>
+<p class="ql-align-center"><em>(Offre réservée aux adhérents de l'association)</em></p>
+<ol>
+    <li class="ql-align-center"><strong>Processeur</strong> : 8 vCPU Ryzen 9 7950x3D @ 4.2 GHz jusqu'à 5.7 GHz</li>
+    <li class="ql-align-center"><strong>Mémoire vive</strong> : 32 Go de RAM DDR5</li>
+    <li class="ql-align-center"><strong>Stockage</strong> : 200 Go SSD</li>
+    <li class="ql-align-center"><strong>Connectivité</strong> : IPv4 incluse, 1 Gbps en burst</li>
+</ol>
+<p class="ql-align-center">🛡️ | Protection Anti-DDoS (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
+<p class="ql-align-center">🚚 | Livraison en <strong>quelques minutes seulement</strong></p>
+```
+
+:::tip Astuce
+Prenez le temps de rédiger un **nom clair** et une **description engageante**. C’est souvent le premier contact qu’a un client avec votre service. Une bonne présentation peut faire toute la différence – et améliorer votre référencement naturel.
+:::
+
+## Configuration des prix
+
+Chaque cycle de facturation peut avoir :
+- un **prix** distinct
+- des **frais d’installation** facultatifs
+
+🟢 Un produit avec un prix de `0` est **considéré comme gratuit**.  
+🔴 Si vous laissez le champ prix vide pour un cycle, **il sera désactivé**.
+
+### Utiliser la calculatrice intégrée
+
+![Interface de la calculatrice de prix](/img/next_gen/settings/store/products/create_pricing2.png)
+
+CLIENTXCMS propose une **calculatrice de prix intégrée**.  
+Elle vous aide à :
+- appliquer une **réduction en %**
+
+Cette fonction est idéale pour proposer des offres dégressives cohérentes.
+
+Les tarifs calculés apparaîtront ainsi dans la fiche produit côté panier.
+
+Cela permet de simplifier le choix du client tout en maintenant une cohérence commerciale dans vos offres.
+
+:::tip Astuce
+Si vous souhaitez configurer des cycles de facturation additionnels avant d’ouvrir la calculatrice, cliquez sur le bouton « Configurer plus de tarifs ».
+Cela permettra d’afficher tous les cycles disponibles.
+Sans cette étape, la calculatrice appliquera votre réduction uniquement sur les cycles visibles à l’écran.
+:::
+
+### Affichage des cycles de facturation
+
+Les cycles de facturation configuré pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.
+
+![Affichage des cycles](/img/next_gen/settings/store/products/config_billing.png)
+
+Cela permet au client de choisir facilement la durée de souscription souhaitée.
+
+### Présélection d’un cycle via l’URL
+
+Il est possible de **préselectionner un cycle de facturation** par défaut, directement depuis l’URL, à l’aide du paramètre `billing`.  
+Cela est particulièrement utile pour orienter vos visiteurs vers un cycle associée à une offre précise depuis votre site vitrine.
+
+Par exemple, pour présélectionner un cycle **annuel**, ajoutez ce paramètre à votre URL :
+
+Ce qui donne une URL complète comme :
+https://demo.clientxcms.com/store/basket/add/4?billing=annually
+
+#### Paramètres disponibles pour préselectionner le cycle de facturation
+
+Voici les valeurs possibles du paramètre `billing` :
+
+| Valeur du paramètre | Cycle de facturation | Description                           |
+|----------------------|----------------------|---------------------------------------|
+| `monthly`            | Mensuel              | Facturation tous les mois             |
+| `quarterly`          | Trimestriel          | Facturation tous les 3 mois           |
+| `semiannually`       | Semestriel           | Facturation tous les 6 mois           |
+| `annually`           | Annuel               | Facturation tous les 12 mois          |
+| `biennially`         | Biannuel             | Facturation tous les 24 mois          |
+| `triennially`        | Triennal             | Facturation tous les 36 mois          |
+| `weekly`             | Hebdomadaire         | Facturation chaque semaine            |
+
+:::tip Astuce
+Assurez-vous que le cycle sélectionné est bien **tarifé** dans la configuration du produit. Si le champ de prix est vide, le cycle ne pourra pas être affiché ni sélectionné.
+:::
+
+### Activer des cycles de facturation supplémentaires
+
+Par défaut, certains cycles comme le **biannuel**, le **triennal** ou **l’hebdomadaire** peuvent ne pas être visibles dans l’interface de configuration du produit.
+
+Pour les rendre disponibles, cliquez sur le bouton **« Configurer plus de tarifs »** dans la section des prix de la fiche produit.
+
+![Configurer d'autres cycles de facturation](/img/next_gen/settings/store/products/config_more_princing.png)
+
+Vous pourrez alors ajouter et personnaliser les tarifs de ces cycles selon vos besoins.
 
 :::info
-Veuillez-vous référez à la page du module pour plus d'information en termes de configuration du produit.
+Assurez-vous de **renseigner un prix pour chaque cycle de facturation que vous activez**, sans quoi il ne sera pas affiché aux clients dans la boutique. <br/>
+Concernant les **frais d'installation**, même si vous videz le champ, ils seront automatiquement ramenés à zéro — c’est un comportement normal du système.
 :::
-## Suppression
-:::danger
-La suppression d'un produit peut provoquer des problèmes dans le système.
+
+## Édition d’un produit
+
+L’édition d’un produit vous permet de **modifier ses caractéristiques**, comme si vous le recréiez, tout en conservant son lien avec les commandes existantes ou son historique de ventes.
+
+### Accéder à l’édition
+
+Pour éditer un produit :
+
+1. Rendez-vous dans la liste des produits.
+2. Cliquez sur le bouton **« Afficher »** dans la colonne **Actions** du produit concerné.
+
+![Accès à l'édition d'un produit](/img/next_gen/settings/store/products/edit_product.png)
+
+### Modifier les informations générales
+
+Une fois dans l’interface d’édition, vous pouvez modifier :
+- Le **nom du produit**
+- Sa **description**
+- Son **type**, **groupe**, **stock**, **ordre d’affichage**, etc.
+
+![Affichage d'un service](/img/next_gen/settings/store/products/view_product.png)
+
+Cela fonctionne exactement comme lors de la **création** du produit. Les modifications sont prises en compte immédiatement après l’enregistrement.
+
+## Configuration technique du produit
+
+Chaque produit peut avoir une **configuration spécifique** selon son type (ex. : hébergement pterodactyl, VPS livré sur un proxmox, licence ClientXCMS, etc.). Cette configuration détermine **les ressources et les limitations** de l’offre, c'est la configuration du produit.
+
+### Exemple avec un module : Pterodactyl
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
+
+<div style={{ flex: '1 1 400px' }}>
+
+Si votre produit repose sur le module **Pterodactyl**, vous pouvez configurer :
+
+| Fonctionnalité                            | Description                                                                 |
+|------------------------------------------|------------------------------------------------------------------------------|
+| Nom / Description du serveur             | Permet de personnaliser le nom et la description affichés à la livraison.    |
+| L’emplacement de livraison               | Définit le serveur physique sur lequel le service sera déployé.              |
+| L’œuf                                    | Sélectionne l’egg Pterodactyl à utiliser pour le service.                    |
+| Commande de démarrage                    | Détermine comment l’instance démarre sur le serveur Pterodactyl.             |
+| Image Docker                             | Définit l’image système utilisée pour le déploiement.                        |
+| CPU                                      | Spécifie le nombre de cœurs alloués à l’instance.                            |
+| RAM                                      | Quantité de mémoire vive allouée.                                            |
+| Stockage                                 | Espace disque attribué à l’instance.                                         |
+| Allocations (ports)                      | Nombre de ports assignés au service.                                         |
+| Backups / Bases de données               | Nombre de sauvegardes ou de bases de données autorisées.                     |
+
+</div>
+
+<div style={{ flex: '1 1 200px', textAlign: 'center' }}>
+  <img src="/img/next_gen/extensions/modules/pterodactyl/images_4.png" alt="Exemple de configuration Pterodactyl" style={{ maxWidth: '100%', borderRadius: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
+</div>
+
+</div>
+
+:::info  
+Les champs affichés dépendent du **type de produit** et du **module d’approvisionnement** activé.  
+Consultez la documentation spécifique du module pour connaître les paramètres disponibles pour ce dernier.  
 :::
-Vous pouvez supprimer un produit en cliquant sur le bouton rouge dans la colonne "Actions". Une confirmation vous sera demandée puis le produit sera supprimé.
 
-### Statut
-Les statut permettent de définir l'état du produit.
-- Disponible : Visible et disponible à l'achat
-- Non référencé : Visible uniquement par les administrateurs
-- Caché : Invisible pour les clients
+## Supprimer un produit
 
-### Lien pour ajouter un produit
-Lors de l'édition d'un produit vous pouvez avoir les deux liens pour ajouter le produit
-`https://demo.clientxcms.com/store/basket/add/[id]`
-### Gestions du stock
-Vous pouvez activer la gestion du stock pour un produit avec l'option stock disponible. Si le stock est à 0, le produit ne sera plus disponible à l'achat. et si le stock est à -1 le produit sera illimité.
-### Gestion du stock automatique
-Vous pouvez utiliser la gestion de stock automatique pour gérer le stock de manière automatique, lors qu'un produit est acheté le stock est décrémenté et lors qu'un service expire et suppression le stock est incrémenté.
-Pour activer la gestion de stock automatique, vous devez activer l'option `auto_stock` dans les métadonnées.
+:::danger Avertissement
+La suppression d’un produit peut provoquer des dysfonctionnements dans le système, notamment si le produit est lié à des services ou une commande existantes. Les recommandations de l'équipe sont de ne jamais supprimer un élément quelques soit le cycle de vie du CMS.
+:::
 
-### Désactivation de la gestion du stock
-Vous pouvez désactiver la gestion du stock pour un produit avec l'option `disabled_stock`.
-### Metadonnées
+Pour supprimer un produit :
+1. Cliquez sur le bouton rouge **« Supprimer »** dans la colonne **Actions**.
+2. Confirmez l’opération.
 
-Les métadonnées permettent de définir des informations supplémentaires sur le produit. Vous pouvez définir des métadonnées pour chaque produit.
+![Supression d'un produit](/img/next_gen/settings/store/products/edit_product.png)
 
-###### Metadonnées disponibles
--------------------------
-| Clé                       | Valeur | Description                                                     |
-|---------------------------|--------|-----------------------------------------------------------------|
-| `basket_url`              | Any    | Lien pour ajouter le produit au panier                          |
-| `is_personalized_product` | true   | Définis comme produit sur demande                               |
-| `basket_title`            | Any    | Titre du bouton d'ajout au panier                               |
-| `allow_only_as_much_services`      | active:nombre max | Autorise uniquement un nombre maximum de services actifs |
-| `allow_only_as_much_services`  | all:nombre max    | Autorise uniquement un nombre maximum de services    |
-| `auto_stock`              | true   | Permet de gérer le stock automatiquement                        |
-| `disabled_stock`          | true   | Désactive la gestion du stock                                   |
-| `max_renewals_in_current_month` | 1 | Nombre de renouvellements maximum par mois                     |
-| `max_renewals_in_current_week`  | 1 | Nombre de renouvellements maximum par semaine                  |
-| `pinned_label`            | Any    | Texte pour l'épingle du produit                                 |
---------------------------------
+## Statut du produit
+
+Le **statut** détermine la visibilité et l’accessibilité du produit :
+
+<div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
+
+<div style={{ flex: 1 }}>
+
+| Statut           | Visibilité                               |
+|------------------|------------------------------------------|
+| **Disponible**   | Disponible à l'achat                     |
+| **Non référencé**| Accessible uniquement via un lien direct |
+| **Caché**        | Indisponible à l'achat                   |
+
+</div>
+
+<div style={{ flex: 1 }}>
+  <img src="/img/next_gen/settings/store/products/statut_product.png" alt="Statut d'un produit" style={{ maxWidth: '100%' }} />
+</div>
+
+</div>
+
+## Lien direct pour ajouter un produit au panier
+
+Lorsque vous éditez un produit, un lien est généré automatiquement.  
+Ce dernier permet d’ajouter le produit au panier depuis votre site vitrine :
+
+https://demo.clientxcms.com/store/basket/add/[id]
+
+Remplacez `[id]` par l’ID réel du produit ou bien récupérer le lien directement sur la page de votre produit.
+
+![Lien Basket](/img/next_gen/settings/store/products/view_link_basket.png)
+
+## Gérer le stock d’un produit
+
+### Stock manuel
+
+- Définissez une valeur dans le champ **Stock disponible** :
+  - `0` → Le produit est **indisponible à l’achat**.
+  - `-1` → Le stock est **illimité**.
+
+### Stock automatique
+
+CLIENTXCMS permet d’automatiser la gestion du stock grâce à une métadonnée :
+
+| Clé          | Valeur | Effet                              |
+|--------------|--------|-------------------------------------|
+| `auto_stock` | `true` | Le stock est ajusté automatiquement |
+
+- Lorsqu’un **service est commandé**, le stock est décrémenté.
+- Lorsqu’un **service est expiré ou supprimé**, le stock est incrémenté.
+
+### Désactiver la gestion de stock
+
+Pour forcer l’interface à ignorer toute gestion de stock, utilisez la métadonnée :
+
+| Clé             | Valeur | Effet                              |
+|------------------|--------|-------------------------------------|
+| `disabled_stock` | `true` | La gestion de stock est désactivée |
+
+## Métadonnées disponibles
+
+Les **métadonnées** permettent d’ajouter des options personnalisées à un produit.
+
+Voici les clés disponibles :
+
+| Clé                             | Valeur              | Description                              |
+|---------------------------------|---------------------|------------------------------------------|
+| `basket_url`                    | Texte               | Lien pour ajouter le produit au panier   |
+| `is_personalized_product`       | `true`              | Produit réalisé à la demande             |
+| `basket_title`                  | Texte               | Titre du bouton d’ajout au panier        |
+| `allow_only_as_much_services`   | `active:3` / `all:5`| Limite le nombre de services autorisés   |
+| `auto_stock`                    | `true`              | Active la gestion automatique du stock   |
+| `disabled_stock`                | `true`              | Désactive toute gestion de stock         |
+| `pinned_label`                  | Texte               | Étiquette spéciale visible en boutique   |
+| `max_renewals`                  | Nombre              | Nombre total de renouvellements possibles|
+
+:::tip À retenir
+Utilisez les métadonnées pour affiner le comportement du produit sans modifier son code ou son module source.
+:::

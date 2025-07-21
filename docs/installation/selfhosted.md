@@ -23,7 +23,7 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
 L'exemple ci-dessous est basé sur Debian 12, mais les commandes peuvent varier en fonction de votre distribution.
 :::
 ## Dossier d'installation
-Créez un dossier d'installation pour votre CMS. Vous pouvez le faire en utilisant la commande suivante :
+Créez un dossier d'installation pour votre CMS si vous n'avez pas encore de serveur web. Vous pouvez le faire en utilisant la commande suivante :
 ```bash
 mkdir /var/www/clientxcms
 ```
@@ -32,14 +32,14 @@ Téléchargez l'archive du CMS en utilisant la commande suivante envoyé par e-m
 ```bash
 curl -o clientxcms.zip https://clientxcms.com/licensing/downloads/{uuid}
 ```
-Veuillez à remplacer `{uuid}` par le lien de téléchargement reçu par e-mail.
+Veillez à remplacer `{uuid}` par le lien de téléchargement reçu par e-mail.
 
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
+
 unzip clientxcms.zip -d /var/www/clientxcms
 mv /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/* /var/www/clientxcms
 rm -r /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/
-cp /var/www/clientxcms/.env.example /var/www/clientxcms/.env
 ```
 :::info
 Si vous n'avez pas installé ZIP, vous pouvez l'installer avec la commande suivante :
@@ -48,6 +48,13 @@ sudo apt-get install zip unzip
 ```
 :::
 
+## Mise en place de l'environnement
+Créez un fichier `.env` en utilisant la commande suivante :
+```bash
+  nano /var/www/clientxcms/.env
+```
+Puis copiez le contenu disponible [dans ce fichier d'exemple](https://cdn.clientxcms.com/ressources/docs/environment.example.txt) dans le fichier `.env`.
+
 ## Mise en place de PHP & Composer
 Pour installer PHP, vous pouvez utiliser la commande suivante :
 ```bash
@@ -55,7 +62,7 @@ sudo apt-get update
 sudo apt-get install ca-certificates apt-transport-https software-properties-common wget curl lsb-release
 curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
 sudo apt-get update
-sudo apt-get install php8.2-common php8.2-curl php8.2-bcmath php8.2-intl php8.2-mbstring php8.2-xmlrpc php8.2-mcrypt php8.2-mysql php8.2-gd php8.2-xml php8.2-cli php8.2-zip
+sudo apt-get install php8.3-common php8.3-curl php8.3-bcmath php8.3-intl php8.3-mbstring php8.3-xmlrpc php8.3-mcrypt php8.3-mysql php8.3-gd php8.3-xml php8.3-cli php8.3-zip
 ```
 Pour installer Composer, vous pouvez utiliser la commande suivante :
 ```bash
@@ -70,12 +77,12 @@ Vous pouvez maintenant installer les dépendances du projet en utilisant la comm
 ## Mise en place de MySQL
 
 :::info
-Ici nous présentons Mysql, mais MariaDB est aussi compatible à Clientxcms.
+Nous allons installer MariaDB, qui est une version améliorée de MySQL.
 :::
 
-Pour installer MySQL, vous pouvez utiliser la commande suivante :
+Pour installer le serveur MySQL, vous pouvez utiliser la commande suivante :
 ```bash
-sudo apt-get install mysql-server
+sudo apt-get install mariadb-server
 ```
 Lorsque vous y êtes invité, confirmez l’installation en tapant Y, puis ENTRÉE.
 
@@ -297,6 +304,52 @@ Puis ajoutez la ligne suivante :
 * * * * * php /var/www/clientxcms/artisan schedule:run >> /dev/null 2>&1
 ```
 
+
+## Configuration des Queues Laravel
+
+Laravel utilise un système de files d'attente (queues) pour exécuter des tâches en arrière-plan, ce qui améliore les performances en évitant le traitement synchrone.
+Dans votre fichier `.env`, configurez le driver de file d'attente en fonction de votre environnement :
+
+```env
+QUEUE_CONNECTION=database
+```
+
+Les options disponibles sont :
+- `sync` : Exécute les jobs immédiatement (pas en arrière-plan).
+- `database` : Utilise la base de données pour stocker les jobs.
+- `redis` : Utilise Redis pour une gestion plus performante des queues.
+- `sqs` : Utilise Amazon SQS.
+
+Assurez-vous que votre application utilise le bon driver.
+
+Si vous voulez vous assurer que le worker tourne toujours, utilisez `supervisor`. Installez-le d'abord :
+
+```bash
+sudo apt update
+sudo apt install supervisor
+```
+
+Ensuite, créez un fichier de configuration `/etc/supervisor/conf.d/clientxcms-worker.conf` :
+
+```ini
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/clientxcms/artisan queue:work --daemon
+autostart=true
+autorestart=true
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/log/laravel-worker.log
+```
+
+Recharge et démarre Supervisor :
+
+```bash
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start clientxcms-worker:*
+```
+
 ## Configuration de ClientXCMS
 
 1. Rendez-vous sur l'adresse de votre espace client. Vous devriez voir une page d'installation similaire à celle-ci :
@@ -314,7 +367,23 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
-Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire dans le dossier `addons` ou `modules` de votre installation.
+Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire sur votre instance ClientXCMS.
+![Page de téléchargement - Extensions](/img/next_gen/Installation/Selfhosting/download_extension.png)
+
+:::info
+Pour les thèmes vous devez relancer la commande `npm run build` pour les activer.
+:::
+## Migration depuis une version cloud
+Si vous souhaitez reprendre une installation cloud sur votre serveur, vous pouvez suivre les étapes suivantes :
+1. Téléchargez une sauvegarde de votre base de données depuis l'interface PHPMyAdmin depuis la page base de données de l'administration.
+2. Ouvrir une demande d'aide pour obtenir la clé d'encryption de votre instance cloud.
+3. Importez la sauvegarde dans votre base de données locale.
+4. Modifiez le fichier `.env` pour correspondre votre clé d'encryption avec la clé d'encryption de votre instance cloud.
+5. Exécutez la commande `php artisan migrate --force --seed` pour mettre à jour votre base de données.
+6. Exécutez la commande `php artisan storage:link` pour lier le dossier de stockage.
+7. Créez un fichier `storage/installed` pour indiquer que l'installation est terminée.
+8. Vous pouvez maintenant accéder à votre instance locale.
+
 ## Problèmes courants
 
 ### Interface introuvable Jsonable
@@ -325,3 +394,26 @@ Vous pouvez la régler en executant la commande :
 ```bash
 composer require dragon-code/contracts
 ```
+
+### Thème activé mais non affiché sur l'interface
+
+Si vous avez activé un thème mais qu'il n'est pas affiché sur l'interface, vous pouvez ajouter la variable suivante dans le fichier `.env` :
+```env
+APP_REVERSE_PATHS=true
+```
+
+Cela vient du fait que PHP ne lit pas les fichiers de la même manière sur chaque serveur. Cette variable permet de corriger ce problème.
+
+
+### Logo non affichage sur l'interface
+
+Si vous avez pas d'erreur à l'ajoût de votre logo, vous avez peut-être un problème de permission sur le dossier de stockage. Vous pouvez régler ce problème en executant la commande suivante :
+```bash
+sudo chmod -R 775 storage
+```
+
+Si vous avez des problèmes du jour au lendemain, vous avez problablement un problème de cache. Vous pouvez le régler en executant la commande suivante :
+```bash
+php artisan cache:clear
+```
+ou vous pouvez vérifier les permissions de votre dossier de cache (storage/framework/cache).
