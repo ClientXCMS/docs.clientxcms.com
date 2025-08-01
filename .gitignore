@@ -20,3 +20,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+ai.py
+documentation_compilée.txt
+documentation_resumee.txt
