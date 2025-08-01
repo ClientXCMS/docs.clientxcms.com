@@ -1,5 +1,5 @@
-# Add-on Cadeaux Discord
-> Cette page explique pas à pas comment configurer, utiliser et personnaliser l’add-on **Cadeaux Discord / Discord Gift** de ClientXCMS.
+# Cadeaux Discord
+> Cette page explique pas à pas comment configurer, utiliser et personnaliser l’addon **Cadeaux Discord / Discord Gift** de ClientXCMS.
 > Objectif : automatiser des « cadeaux Discord » (crédits aléatoires) envoyés à vos utilisateurs via un code unique, le tout piloté par Webhook.
 
 ---
@@ -18,7 +18,7 @@
 
 3. **Notification**
 
-   * L’add-on envoie automatiquement un ou plusieurs messages Webhook :
+   * L'addon envoie automatiquement un ou plusieurs messages Webhook :
 
      * *Démarrage* : annonce du cadeau.
      * *Utilisation* : lorsqu’un membre utilise le code.
@@ -149,7 +149,7 @@ Chaque événement peut déclencher un JSON personnalisé :
 ## 7. Bonnes pratiques
 
 1. **Limiter les montants** : fixez un max raisonnable pour éviter des crédits trop élevés accidentellement.
-2. **Webhook dédié** : créez un Webhook spécifique à l’add-on afin de ne pas mélanger avec d’autres intégrations.
+2. **Webhook dédié** : créez un Webhook spécifique à L'addon afin de ne pas mélanger avec d’autres intégrations.
 3. **Tester sur un salon privé** : avant le premier lancement public, vérifiez vos messages dans un canal réservé au staff.
 4. **Utilisations multiples** : si vous fixez `Nombre maximum d’utilisations > 1`, préviennez clairement la communauté pour éviter les malentendus.
 5. **Logs** : couplé au module de facturation, chaque utilisation est historisée pour un audit complet.

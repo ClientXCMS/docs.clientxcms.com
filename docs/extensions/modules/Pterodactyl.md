@@ -102,6 +102,44 @@ Lors d'une commande, le client pourra renseigner la valeur de cette variable d'e
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/image_fivem.png)
 
+
+
+## Connexion automatique (SSO) Pterodactyl
+
+Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis CLIENTXCMS, sans avoir à ressaisir leur mot de passe.
+
+### Mise en place rapide
+1. Sur votre VPS, placez-vous dans le dossier du panel :
+   ```bash
+   cd /var/www/pterodactyl
+   composer require "clientxcms/pterodactyl-sso"
+   ```
+2. Videz le cache :
+   ```bash
+   php artisan cache:clear
+   ```
+3. Générez la clé SSO :
+   ```bash
+   php artisan clientxcms:generate
+   ```
+   > Un jeton SSO est généré et ajouté dans votre `.env`. Gardez-le secret !
+![img](/img/next_gen/extensions/modules/pterodactyl/image_sso_generate.png)
+
+4. Dans CLIENTXCMS, sur la page de configuration de votre serveur Pterodactyl (`/admin/servers`), ajoutez une meta donnée :
+   - **Clé** : `sso_key`
+   - **Valeur** : le jeton SSO généré
+
+**Alternative avancée** :
+Vous pouvez aussi placer le jeton dans le `.env` de CLIENTXCMS avec la variable `SSO_CLIENTXCMS_KEY{SERVER_ID}` (remplacez `{SERVER_ID}` par l'ID du serveur). Dans ce cas, la meta donnée n'est pas nécessaire.
+
+![img](/img/next_gen/extensions/modules/pterodactyl/image_sso_metadata.png)
+
+Vos clients profiteront alors d'une connexion directe à leur panel Pterodactyl depuis CLIENTXCMS.
+
+:::info
+L'autoconnexion ne fonctionne pas si l'authentification à deux facteurs est activée sur Pterodactyl ou pour les comptes administrateurs.
+:::
+
 ## Erreurs courantes
 
 Oeuf non trouvé dans la configuration de l'offre : Il faut vider le cache de CLIENTXCMS dans `Paramètres` > `Extensions`.
