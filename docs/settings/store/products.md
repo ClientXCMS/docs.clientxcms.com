@@ -129,8 +129,8 @@ Sélectionnez le type de service que vous souhaitez livrer à votre client. Pour
 
 Définit la visibilité du produit dans la boutique :
 
-* **Actif** : Disponible à l'achat
-* **Non référencé** : accessible uniquement via un lien direct
+* **Actif** : Disponible à l'achat dans la boutique
+* **Non référencé** : Accessible uniquement via un lien direct
 * **Caché** : Indisponible à l'achat
 
 Merci de vous reporter à la section dédié [au statut d'un produit](./products#statut-du-produit). pour de plus ample informations à ce sujet. <br />
@@ -337,7 +337,7 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 | Statut           | Visibilité                               |
 |------------------|------------------------------------------|
-| **Disponible**   | Disponible à l'achat                     |
+| **Actif**        | Disponible à l'achat                     |
 | **Non référencé**| Accessible uniquement via un lien direct |
 | **Caché**        | Indisponible à l'achat                   |
 
