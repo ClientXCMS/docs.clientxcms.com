@@ -7,6 +7,7 @@ tags: [clientxcms, opensource, community]
 # ClientXCMS devient open source : une nouvelle ère s'ouvre
 Nous avons aujourd’hui le plaisir de vous annoncer un changement significatif dans le monde de l'hébergement : **le projet prend une nouvelle direction**. Une évolution pensée, mesurée, et portée par un objectif clair : rendre un CMS plus ouvert, plus accessible et résolument tourné vers une dynamique collective.
 
+![image](/img/blog/mise-en-opensource/image.png)
 <!-- truncate -->
 
 ### Un CMS conçu pour être ouvert à toutes et à tous
