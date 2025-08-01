@@ -1,6 +1,7 @@
-# Purchase alert
+# Notifications d'achat
 
-Purchase alerte est un add-on qui permet d'afficher des alertes flash pour informer vos visiteurs des achats récents effectués sur votre site. Cela peut aider à créer un sentiment d'urgence et à encourager les visiteurs à passer à l'action.
+Purchase Alert (ou Notifications d'achat) est un add-on qui permet d'afficher des alertes flash pour informer vos visiteurs des achats récents effectués sur votre site. Cela peut aider à créer un sentiment d'urgence et à encourager les visiteurs à passer à l'action.
+
 ## Configuration de l'alerte d'achat
 Pour configurer l'alerte d'achat, allez dans les paramètres de personnalisation. Vous y trouverez les options suivantes :
 
