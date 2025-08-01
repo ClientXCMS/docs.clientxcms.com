@@ -139,8 +139,6 @@ Une fois cette action lancée, **deux choix s’offrent à vous** :
 
 ![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_without_product_into_group_in_admin.png)
 
-![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_with_product_into_group_in_admin.png)
-
 
 ### Editer un groupe
 
