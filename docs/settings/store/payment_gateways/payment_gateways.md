@@ -171,11 +171,15 @@ Toutes les passerelles intégrées respectent :
 
 ### Abonnements
 
-:::info À noter
-Les **abonnements récurrents** ne sont pas encore pris en charge par toutes les passerelles. Cette fonctionnalité est en cours de développement et sera disponible dans une future mise à jour.
-:::
+PayPal et Stripe supportent les abonnements. Vos clients peuvent se connecter leur compte PayPal ou carte bancaire pour gérer autoriser les paiements récurrents faits par CLIENTXCMS.
 
-Pour l'instant, les paiements récurrents doivent être gérés manuellement via la facturation automatique.
+Le principe est simple :
+1. Le client ajoute une source de paiement (carte ou compte PayPal)
+2. Le client active l'abonnement pour un service il choisit le jour de facturation
+3. CLIENTXCMS facture automatiquement le montant chaque mois de la facture de renouvellement
+
+Nous n'utilisons pas les abonnements Stripe ou PayPal pour les services récurrents. Mais un système où CLIENTXCMS facture automatiquement les clients chaque mois pour les services avec un abonnement.
+![img](/img/next_gen/settings/store/payment_gateways/subscriptions.png)
 
 ## Configuration par passerelle
 

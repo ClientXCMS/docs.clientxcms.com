@@ -30,6 +30,7 @@ resources/themes/
     │   │   └── client.blade.php <!-- Layout pour les pages client -->
     │   │   └── front.blade.php <!-- Layout pour les pages front -->
     └── theme.json
+    └── menus.json
 ```
 ## Commande de création d'un thème
 Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI.
@@ -50,6 +51,11 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
     "name": "ClientXCMS",
     "email": "contact@clientxcms.com"
   },
+  "supported_options": {
+    "menu_dropdown": true,
+    "multi_footer_columns": true
+  },
+  "default_theme_mode": "dark",
   "demo": "https://demo.clientxcms.com"
 }
 ```

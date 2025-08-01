@@ -66,7 +66,7 @@ Utilisez "PayPal Express" ou "PayPal" pour une identification claire de cette ve
 
 **Montant minimal** | (montant)<br />
 
-Aucune restriction PayPal. Configurez 0€ pour accepter tous les montants.
+Aucune restriction PayPal. Configurez 0.50€ pour accepter tous les montants.
 
 **Statut** | (menu déroulant)<br />
 
@@ -80,7 +80,7 @@ Maintenez en **"Actif"** pour offrir la meilleure expérience PayPal à vos clie
 :::info Configuration recommandée
 Pour PayPal Express Checkout :
 - **Nom** : "PayPal Express" ou "PayPal"
-- **Montant minimal** : 0€
+- **Montant minimal** : 0.50€
 - **Statut** : Actif
 - **Mode** : Live (après tests complets)
 :::
@@ -154,10 +154,6 @@ Le mode Live active :
 **Configuration requise** :
 - Compte PayPal Business vérifié
 - Identifiants Live (Client ID et Secret de production)
-
-:::tip Conseil
-Testez **exhaustivement en mode Sandbox** avant le passage en Live. Vérifiez tous les scénarios : paiements réussis, échoués, remboursements.
-:::
 
 ## Gestion avancée
 
@@ -234,7 +230,3 @@ Pour diagnostiquer un problème :
 * **Gestion des erreurs** proactive
 * **Monitoring** des temps de réponse
 * **Tests réguliers** de l'intégration
-
-:::tip À retenir
-PayPal Express Checkout représente le **futur de l'intégration PayPal** avec des performances supérieures et une expérience utilisateur premium. C'est l'option recommandée pour maximiser vos conversions PayPal.
-:::

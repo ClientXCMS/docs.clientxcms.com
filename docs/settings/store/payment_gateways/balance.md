@@ -138,14 +138,6 @@ Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leu
 * **Communiquez clairement** sur le fonctionnement du système
 * **Offrez plusieurs moyens** de recharger le solde
 
-### Intégration avec d'autres systèmes
-
-La passerelle Balance s'intègre parfaitement avec :
-- Les **coupons de réduction** (combinable)
-- Les **factures automatiques** pour les services récurrents
-- Les **remboursements** en cas d'annulation
-- Les **programmes de fidélité** via des crédits offerts
-
 :::warning Important
 Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
 :::

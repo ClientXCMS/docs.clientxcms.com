@@ -1,6 +1,6 @@
-# Add-on Fonds
+# Fonds
 
-> Ce guide présente la configuration et l’usage de l’add-on **Funds** pour ClientXCMS.
+> Cette page présente la configuration et l’usage de l'addon **Funds** pour ClientXCMS.
 > Objectif : permettre aux clients de créditer leur solde (pré-paiement) et, si vous l’autorisez, de **transférer** des fonds vers d’autres comptes.
 
 ---
