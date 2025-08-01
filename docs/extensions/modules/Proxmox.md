@@ -283,3 +283,12 @@ Si aucune IP n'est trouvée. Cette erreur est renvoyée.
 **VPS non trouvé (metadata)** : Vérifiez les metadonnées de votre service (vmid, node, config)
 
 **VPS non trouvé (resources)** : CLIENTXCMS n'arrive pas à récupérer les resources du VPS.
+
+### Commande Artisan
+
+| Commande                   | Description                                                      | Paramètres |
+|:---------------------------|:-----------------------------------------------------------------|:-----------|
+| `proxmox:delete-vps`       | Supprime les VPS marqués comme "deleted" sur le serveur Proxmox. | -          |
+| `proxmox:disk-vps`         | Gère le disque pour l'installation d'un VPS.                     | -          |
+| `proxmox:installation-vps` | Gère l'installation des VPS qui doivent être installés.          | -          |
+| `proxmox:migrate-config`   | Migre la configuration de Proxmox.                               | -          |

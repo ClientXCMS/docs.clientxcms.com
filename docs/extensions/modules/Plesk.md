@@ -26,6 +26,7 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit a
 - Connexion automatique au Plesk
 - Automatisez les suspensions et les résiliations
 - Amélioration de service
+- Importation des comptes Plesk existants
 
 ## Création du serveur
 
@@ -98,3 +99,8 @@ import TabItem from '@theme/TabItem';
 
 
 
+
+## Importer un compte Plesk existant
+
+Si vous avez déjà des Plesk cPanel existants, vous pouvez les importer dans CLIENTXCMS. Pour cela, allez dans `Espace d'administration` > `Services` > `Créer`.
+Plus d'informations sur la création de service [ici](/services/). Vous pourrez sélectionner l'hébergement cPanel que vous souhaitez importer dans la liste des hébergements disponibles.

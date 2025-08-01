@@ -104,8 +104,8 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
    ![Laravel env (gestion) - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_env_manage.png)
 3. Exécutez les commandes suivantes dans cet ordre :
     - `key:generate`
-    - `db:seed`
-    - `migrate`
+    - `db:seed --force`
+    - `migrate --force`
     - `storage:link`
       ![Laravel env (commandes Artisan)](/img/next_gen/Installation/Plesk/Plesk_Laravel_ArtisanCMD.png)
 4. Cliquez sur la section "Node.js".
