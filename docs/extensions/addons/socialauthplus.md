@@ -10,14 +10,14 @@ L'extension SocialAuth+ permet de faciliter les connexions avec OAuth2 pour les 
 
 ## Configuration dans ClientXCMS
 
-L'extension **SocialAuth+** est disponible __gratuitement__, et activable depuis l'onglet "Extensions" de votre espace d'administration de votre site ClientXCMS.
+L'extension **SocialAuth+** est disponible __gratuitement__, et activable depuis l'onglet "Personnalisation" de votre espace d'administration de votre site ClientXCMS.
 
 ### Activation de l'extension
 
 Pour activer l'extension SocialAuth+ gratuitement, procédez comme suit :
 1. Connectez-vous à l'espace d'administration de ClientXCMS.
 2. Cliquez sur le bouton "Paramètres" sur la barre de navigation en haut.
-2. Dans la section "Paramètres d'extensions", cliquez sur la page "Extensions".
+2. Dans la section "Personalisation", cliquez sur la page "Extensions".
 3. Recherchez l'extension "Social Auth+" dans la liste des extensions disponibles.
 4. Cliquez sur le bouton "Activer" en dessous de cette dernière pour la mettre en place gratuitement.
 

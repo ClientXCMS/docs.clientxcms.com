@@ -140,7 +140,7 @@ Veuillez nous indiquer vos changements sur la description de la Pull request qu'
 *Lancement validé* : Déploiement d’une fonctionnalité validée ou qui a déjà été testée en preprod.
 ### Version de preprod
 
-La version preprod de la documentation est disponible sur [https://preprod-docs.clientxcms.com/]()
+La version preprod de la documentation est disponible sur [https://preprod-docs.clientxcms.com/](https://preprod-docs.clientxcms.com/)
 
 Merci à tous à l'ensemble des contributeurs : 
 

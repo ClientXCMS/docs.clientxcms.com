@@ -1,46 +1,211 @@
-# Stripe (Carte bancaire)
-Stripe est un service de paiement en ligne qui permet de payer des biens et des services en ligne. Il est très populaire et est utilisé par des millions de sites Web dans le monde entier.
-Pour configurer Stripe, allez dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin sélectionnez Stripe.
-![img](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
-## Processus
-- Le client choisit Stripe comme moyen de paiement
-- Le client est redirigé vers le site de Stripe pour effectuer le paiement
-- Le client saisit ses informations de paiement
-- Le client confirme le paiement
-- Le client est redirigé vers votre boutique
-- Vous recevez une notification de paiement
-- La commande est validée
-- Le client reçoit une confirmation de paiement
-- Le client reçoit la commande
-## Mode live et mode test
-Vous pouvez configurer Stripe en mode live ou en mode test. En mode test, vous pouvez effectuer des paiements de test pour vérifier que tout fonctionne correctement. En mode live, les paiements sont réels et les clients peuvent payer pour de vrai.
-## Configuration de Stripe
-Vous pouvez configurer Stripe en allant dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin en sélectionnant Stripe.
-### Récupération des identifiants Stripe
-Pour configurer Stripe, vous aurez besoin de récupérer vos identifiants Stripe. Voici comment faire :
-1. Connectez-vous à votre compte Stripe
-2. Allez dans l'onglet Développeurs [ici](https://dashboard.stripe.com/developers)
-3. Allez dans l'onglet Clés API [ici](https://dashboard.stripe.com/apikeys)
+# Stripe (Paiements par carte)
 
-    ![img](/img/next_gen/settings/store/payment_gateways/stripe/apikeys.png)
-4. Cliquer sur le bouton Créer une clé API
+La passerelle **Stripe** dans **CLIENTXCMS** correspond à l'**intégration de la solution de paiement américaine de référence mondiale** qui permet à vos clients de régler leurs commandes avec leur carte bancaire via l'une des plateformes les plus avancées du marché. <br/>
+L'objectif est clair : **offrir l'expérience de paiement par carte la plus sophistiquée avec des outils de gestion avancés et une fiabilité éprouvée**. Un système Stripe bien configuré permet à vos clients de **payer avec une fluidité exceptionnelle** tout en vous donnant accès aux meilleurs outils d'analytics et de gestion du marché.
 
-    ![img](/img/next_gen/settings/store/payment_gateways/stripe/apikey.png)
+La passerelle Stripe peut être entièrement personnalisée : nom d'affichage, montant minimum, mode test/live, clés API, webhooks, etc.
 
-4. Copiez votre clé publique et votre clé secrète
-5. Collez ces identifiants dans les champs correspondants dans les paramètres.
-### Configuration des webhooks
-Pour configurer les webhooks, vous aurez besoin de récupérer l'URL de votre site. Voici comment faire :
-1. Allez dans l'onglet Webhooks [ici](https://dashboard.stripe.com/webhooks)
-2. Cliquez sur le bouton Ajouter un endpoint
-    ![img](/img/next_gen/settings/store/payment_gateways/stripe/webhooks.png)
-3. Remplissez comme ceci :
+Vous pouvez configurer Stripe depuis :
 
-- **URL d'endpoint** : votredomain.fr/gateways/stripe/notification
-- **Description** : Notification de paiement
-- **Ecouter** : Évènements de paiement
-- **Version** : 2023-10-16
-- **évènements** : checkout.session.completed
-4. Copier en revelant la clé secrète
-    ![img](/img/next_gen/settings/store/payment_gateways/stripe/secret.png)
-5. Collez cette clé dans le champ correspondant dans les paramètres.
+`Paramètres` > `Paramètres de la boutique` > `Stripe`
+
+![Configuration de la passerelle Stripe](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
+
+:::tip Astuce
+**Stripe** est considéré comme la **Rolls-Royce** des passerelles de paiement avec une technologie de pointe, des outils exceptionnels et une réputation mondiale inégalée.
+:::
+
+## Pourquoi choisir Stripe ?
+
+Stripe représente l'excellence technologique dans le domaine des paiements en ligne, utilisé par des millions d'entreprises dans le monde, des startups aux plus grandes corporations internationales.
+
+Intégrer Stripe vous permet de :
+
+* Bénéficier de la technologie de paiement la plus avancée au monde
+* Accéder aux meilleurs outils d'analytics et de reporting du marché
+* Profiter d'une interface utilisateur exceptionnellement fluide
+* Utiliser des fonctionnalités avancées (abonnements, paiements différés, etc.)
+* Garantir une sécurité maximale avec les dernières innovations
+* S'appuyer sur une infrastructure mondiale ultra-fiable
+
+:::tip Astuce
+Stripe est comme la **Ferrari des paiements** 🏎️ — performance maximale, technologie de pointe et prestige international. C'est le choix des entreprises qui ne veulent aucun compromis sur la qualité.
+:::
+
+## Fonctionnement du système
+
+### Processus de paiement de pointe
+
+Le paiement via Stripe suit un processus ultra-optimisé :
+
+1. **Sélection Stripe** : Le client choisit "Paiement par carte" (Stripe)
+2. **Interface premium** : Redirection vers l'interface Stripe ultra-moderne
+3. **Saisie optimisée** : Formulaire intelligent avec auto-complétion
+4. **Validation instantanée** : Vérification en temps réel des données
+5. **3D Secure intelligent** : Authentification adaptative selon le risque
+6. **Confirmation ultra-rapide** : Traitement instantané du paiement
+7. **Webhooks avancés** : Notifications sécurisées et détaillées
+8. **Retour seamless** : Intégration parfaite avec votre boutique
+
+### Excellence technique Stripe
+
+| Avantage                    | Description                                        |
+|-----------------------------|----------------------------------------------------|
+| **Performance mondiale**    | Infrastructure distribuée dans le monde entier    |
+| **IA anti-fraude**         | Machine learning avancé pour détecter les fraudes |
+| **Interface adaptative**   | UX qui s'adapte selon l'appareil et le contexte   |
+| **Fiabilité 99.99%**       | Uptime exceptionnel avec redondance maximale      |
+
+## Configuration de la passerelle
+
+### Paramètres essentiels
+
+**Nom de la passerelle** | (texte)<br />
+
+Utilisez "Paiement sécurisé" ou "Carte bancaire" pour valoriser la sécurité Stripe.
+
+**Montant minimal** | (montant)<br />
+
+Stripe n'impose pas de minimum. Configurez selon votre stratégie (0€ ou 1€ minimum).
+
+**Statut** | (menu déroulant)<br />
+
+Maintenez en **"Actif"** pour offrir la meilleure expérience de paiement.
+
+**Mode de fonctionnement** | (Test/Live)<br />
+
+- **Mode Test** : Tests avec l'environnement sandbox Stripe
+- **Mode Live** : Production avec de vraies transactions
+
+:::info Configuration recommandée
+Pour Stripe :
+- **Nom** : "Paiement sécurisé" ou "Carte bancaire"
+- **Montant minimal** : 1€
+- **Statut** : Actif
+- **Mode** : Live (après tests complets)
+:::
+
+## Récupération des identifiants API
+
+### Accès au dashboard Stripe
+
+Pour configurer Stripe, vous devez récupérer vos clés API depuis votre compte :
+
+1. **Connectez-vous** à votre [dashboard Stripe](https://dashboard.stripe.com/)
+2. Accédez à la section **« Développeurs »**
+3. Cliquez sur **« Clés API »**
+
+![Section Clés API dans Stripe](/img/next_gen/settings/store/payment_gateways/stripe/apikeys.png)
+
+### Création des clés API
+
+4. **Créez une nouvelle clé** si nécessaire :
+
+![Création d'une clé API Stripe](/img/next_gen/settings/store/payment_gateways/stripe/apikey.png)
+
+### Types de clés Stripe
+
+Stripe utilise deux types de clés pour sécuriser les intégrations :
+
+**Clé publique** | (pk_...)<br />
+- Utilisée côté client pour initialiser les paiements
+- Peut être exposée publiquement en toute sécurité
+- Commence par `pk_test_` (test) ou `pk_live_` (live)
+
+**Clé secrète** | (sk_...)<br />
+- Utilisée côté serveur pour les opérations critiques
+- Doit rester absolument confidentielle
+- Commence par `sk_test_` (test) ou `sk_live_` (live)
+
+5. **Copiez vos clés** (publique et secrète)
+6. **Collez-les** dans les champs correspondants de CLIENTXCMS
+
+:::warning Sécurité critique
+La **clé secrète Stripe** ne doit jamais être exposée publiquement. Elle donne un accès complet à votre compte et vos paiements. Stockez-la de manière ultra-sécurisée.
+:::
+
+## Configuration des webhooks
+
+### Importance des webhooks
+
+Les webhooks Stripe sont **essentiels** pour recevoir les notifications de paiement en temps réel et garantir la synchronisation parfaite entre Stripe et votre boutique.
+
+### Configuration étape par étape
+
+1. Dans votre dashboard Stripe, accédez à **« Webhooks »**
+2. Cliquez sur **« Ajouter un endpoint »**
+
+![Configuration des webhooks Stripe](/img/next_gen/settings/store/payment_gateways/stripe/webhooks.png)
+
+3. **Configurez l'endpoint** avec les paramètres suivants :
+
+| Paramètre           | Valeur                                    |
+|---------------------|-------------------------------------------|
+| **URL d'endpoint**  | `https://votre-domaine.com/gateways/stripe/notification` |
+| **Description**     | Notifications de paiement CLIENTXCMS     |
+| **Écouter**         | Événements de paiement                   |
+| **Version API**     | 2023-10-16 (ou version recommandée)      |
+| **Événements**      | `checkout.session.completed`             |
+
+4. **Récupérez la clé secrète** du webhook :
+
+![Secret du webhook Stripe](/img/next_gen/settings/store/payment_gateways/stripe/secret.png)
+
+5. **Copiez cette clé secrète** dans le champ webhook de CLIENTXCMS
+
+:::info Événements recommandés
+Pour une intégration complète, ajoutez aussi :
+- `payment_intent.succeeded`
+- `payment_intent.payment_failed`
+- `invoice.payment_succeeded` (pour les abonnements)
+:::
+
+## Modes de fonctionnement
+
+### Mode Test (Sandbox)
+
+Le mode test Stripe offre un environnement complet pour :
+- **Tester toutes les fonctionnalités** sans argent réel
+- **Simuler différents scénarios** avec des cartes de test spécialisées
+- **Valider les webhooks** et intégrations
+- **Former vos équipes** en toute sécurité
+
+**Cartes de test Stripe** :
+- `4242424242424242` : Visa réussie
+- `4000000000000002` : Carte déclinée
+- `4000002500003155` : Authentification 3D Secure requise
+
+### Mode Live (Production)
+
+Le mode live active toute la puissance de Stripe :
+- **Vrais paiements** avec de l'argent réel
+- **Analytics avancés** et rapports détaillés
+- **Outils de gestion** professionnels
+- **Support Stripe** premium
+
+:::tip Conseil
+Testez **exhaustivement** tous vos parcours en mode test avant la mise en production. Stripe offre des outils de simulation très avancés.
+:::
+
+## Résolution des problèmes
+
+### Problèmes courants
+
+| Problème                    | Solution                                           |
+|-----------------------------|-----------------------------------------------------|
+| **Clés API invalides**      | Vérifier la correspondance test/live et les droits |
+| **Webhooks non reçus**      | Contrôler l'URL et les événements configurés      |
+| **Paiements 3D Secure**     | Valider la configuration SCA/DSP2                 |
+| **Cartes déclinées**        | Analyser les codes d'erreur Stripe                |
+
+### Outils de diagnostic
+
+Stripe offre des outils exceptionnels :
+- **Logs détaillés** de toutes les transactions
+- **Simulateur d'événements** pour tester les webhooks
+- **Monitoring temps réel** des performances
+- **Alertes automatiques** en cas de problème
+
+:::tip À retenir
+Stripe représente l'**excellence absolue** dans le paiement par carte avec une technologie inégalée, des outils exceptionnels et une fiabilité légendaire. C'est le choix premium pour les entreprises exigeantes.
+:::
