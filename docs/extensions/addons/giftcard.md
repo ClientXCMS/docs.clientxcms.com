@@ -1,4 +1,4 @@
-# Add-on **Cartes-cadeaux**
+# Add-on Cartes-cadeaux
 
 > Ce guide détaille la mise en place, la gestion et l’utilisation de l’add-on **Cartes-cadeaux / Gift cards** pour ClientXCMS.
 > Objectif : permettre la création, la vente et l’utilisation de cartes-cadeaux (montant fixe ou aléatoire) avec suivi complet côté administration et côté client.

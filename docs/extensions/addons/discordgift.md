@@ -1,4 +1,4 @@
-# Add-on **Cadeaux Discord**
+# Add-on Cadeaux Discord
 > Cette page explique pas à pas comment configurer, utiliser et personnaliser l’add-on **Cadeaux Discord / Discord Gift** de ClientXCMS.
 > Objectif : automatiser des « cadeaux Discord » (crédits aléatoires) envoyés à vos utilisateurs via un code unique, le tout piloté par Webhook.
 
@@ -71,6 +71,8 @@ Une fois l'extension activée, vous pouvez accéder à la configuration de l'add
 
 ## 5. Messages Webhook
 
+![img](/img/next_gen/extensions/addons/discordgift/discordgift_webhooks.png)
+
 Chaque événement peut déclencher un JSON personnalisé :
 
 ### 5.1 Placeholders disponibles
@@ -136,8 +138,11 @@ Chaque événement peut déclencher un JSON personnalisé :
 
 * **Graphique des utilisations**
   Affiche le nombre d’utilisations (points verts) pour chacun des 30 derniers lancements. Utile pour suivre l’engagement et ajuster la valeur du cadeau ou la fréquence.
+  ![img](/img/next_gen/extensions/addons/discordgift/discordgift_graph_utilisations.png)
+
 * **Section Paramètres**
   Tous les champs sont réactifs ; cliquer sur **Enregistrer** applique immédiatement les nouvelles valeurs et met à jour la planification.
+  ![img](/img/next_gen/extensions/addons/discordgift/discordgift_admin_config.png)
 
 ---
 
@@ -148,14 +153,4 @@ Chaque événement peut déclencher un JSON personnalisé :
 3. **Tester sur un salon privé** : avant le premier lancement public, vérifiez vos messages dans un canal réservé au staff.
 4. **Utilisations multiples** : si vous fixez `Nombre maximum d’utilisations > 1`, préviennez clairement la communauté pour éviter les malentendus.
 5. **Logs** : couplé au module de facturation, chaque utilisation est historisée pour un audit complet.
-
----
-
-## 8. FAQ
-
-| Question                                  | Réponse courte                                                                      |
-| ----------------------------------------- | ----------------------------------------------------------------------------------- |
-| **Le code n’apparaît pas sur Discord ?**  | Vérifiez l’URL du Webhook et les permissions du bot.                                |
-| **Les placeholders ne se remplacent pas** | Assurez-vous qu’ils sont exactement écrits (`%code%`, `%amount%`, etc.).            |
-| **Le graphique reste vide**               | Aucune utilisation n’a encore été enregistrée ou la période n’inclut pas vos tests. |
-| **Changer d’heure de lancement**          | Modifiez « Prochain cadeau Discord défini » puis cliquez **Enregistrer**.           |
+     |
