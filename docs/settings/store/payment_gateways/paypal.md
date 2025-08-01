@@ -66,7 +66,7 @@ Utilisez simplement "PayPal" pour une reconnaissance immédiate par vos clients.
 
 **Montant minimal** | (montant)<br />
 
-PayPal n'impose pas de montant minimal. Vous pouvez configurer 0€ pour accepter tous les montants.
+PayPal n'impose pas de montant minimal. Vous pouvez configurer 0.50€ pour accepter tous les montants.
 
 **Statut** | (menu déroulant)<br />
 
