@@ -129,6 +129,8 @@ Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis 
    - **Clé** : `sso_key`
    - **Valeur** : le jeton SSO généré
 
+Vérifiez que vous avez bien un SSL ainsi qu'un nom de domaine de définit dans le nom d'hôte de votre configuration serveur.
+
 **Alternative avancée** :
 Vous pouvez aussi placer le jeton dans le `.env` de CLIENTXCMS avec la variable `SSO_CLIENTXCMS_KEY{SERVER_ID}` (remplacez `{SERVER_ID}` par l'ID du serveur). Dans ce cas, la meta donnée n'est pas nécessaire.
 
