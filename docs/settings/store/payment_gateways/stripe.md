@@ -80,7 +80,7 @@ Maintenez en **"Actif"** pour offrir la meilleure expérience de paiement.
 :::info Configuration recommandée
 Pour Stripe :
 - **Nom** : "Paiement sécurisé" ou "Carte bancaire"
-- **Montant minimal** : 0€ ou 1€
+- **Montant minimal** : 1€
 - **Statut** : Actif
 - **Mode** : Live (après tests complets)
 :::
@@ -244,24 +244,7 @@ Stripe propose une tarification claire :
 | **Pas de frais cachés** | Transparence totale sur la tarification         |
 | **Facturation claire** | Rapports détaillés des frais                     |
 
-## Résolution des problèmes
-
-### Problèmes courants
-
-| Problème                    | Solution                                           |
-|-----------------------------|-----------------------------------------------------|
-| **Clés API invalides**      | Vérifier la correspondance test/live et les droits |
-| **Webhooks non reçus**      | Contrôler l'URL et les événements configurés      |
-| **Paiements 3D Secure**     | Valider la configuration SCA/DSP2                 |
-| **Cartes déclinées**        | Analyser les codes d'erreur Stripe                |
-
-### Outils de diagnostic
-
-Stripe offre des outils exceptionnels :
-- **Logs détaillés** de toutes les transactions
-- **Simulateur d'événements** pour tester les webhooks
-- **Monitoring temps réel** des performances
-- **Alertes automatiques** en cas de problème
+=======
 
 ## Support et ressources
 

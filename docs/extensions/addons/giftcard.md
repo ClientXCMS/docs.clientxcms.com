@@ -1,6 +1,6 @@
-# Add-on **Cartes-cadeaux**
+# Cartes-cadeaux
 
-> Ce guide détaille la mise en place, la gestion et l’utilisation de l’add-on **Cartes-cadeaux / Gift cards** pour ClientXCMS.
+> Cette page détaille la mise en place, la gestion et l’utilisation de l’addon **Cartes-cadeaux / Gift cards** pour ClientXCMS.
 > Objectif : permettre la création, la vente et l’utilisation de cartes-cadeaux (montant fixe ou aléatoire) avec suivi complet côté administration et côté client.
 
 ---
@@ -27,7 +27,7 @@
 
 ## 2. Prérequis
 
-Une fois l’add-on activé :
+Une fois L'addon activé :
 
 * **Administration → Paramètres → Paramètres des extensions → Paramètres des cartes-cadeaux**
 * Interface de gestion : **Administration → Paramètres → Paramètres de la boutique → Cartes-cadeaux**
@@ -56,6 +56,7 @@ Une fois l’add-on activé :
 ## 4. Interface d’administration
 
 ### 4.1 Tableau de bord
+![img](/img/next_gen/extensions/addons/giftcards/giftcards_admin_view.png)
 
 * **Cartes-cadeaux créées** : compteur total.
 * **Montant total reversé** : somme créditée aux clients.
@@ -84,6 +85,8 @@ Une fois l’add-on activé :
 
 ## 5. Création manuelle
 
+![img](/img/next_gen/extensions/addons/giftcards/giftcards_creer_admin.png)
+
 **Administration → Cartes-cadeaux → Créer**
 
 | Champ                      | Type *Montant fixe*                  | Type *Montant aléatoire*   |
@@ -100,6 +103,8 @@ Cliquez **Créer** : la carte apparaît dans la liste et peut être envoyée man
 ---
 
 ## 6. Expérience côté client
+
+![img](/img/next_gen/extensions/addons/giftcards/giftcards_client_view.png)
 
 > Menu **Mon compte → Moyens de paiement → Cartes-cadeaux**
 
@@ -126,15 +131,3 @@ Cliquez **Créer** : la carte apparaît dans la liste et peut être envoyée man
 3. **Expiration raisonnable** : 6 – 12 mois suffisent tout en respectant les obligations légales locales.
 4. **Limitez les utilisations** : 1 par défaut ; illimité seulement pour des besoins précis (ex. programme fidélité).
 5. **Support** : conservez l’ID interne (#) pour toute demande de traçabilité.
-
----
-
-## 8. FAQ
-
-| Question                                          | Réponse courte                                                                                     |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Le client n’a pas reçu le mail avec le code ?** | Vérifiez le journal des e-mails et l’adresse déclarée ; renvoyez manuellement si besoin.           |
-| **Montant débité mais carte non créée ?**         | Consultez les logs de paiement, régénérez une carte équivalente et créditez le client.             |
-| **Comment désactiver temporairement la vente ?**  | Décochez **Autoriser l’achat de cartes-cadeaux** dans les paramètres globaux puis **Enregistrer**. |
-| **Impossible d’utiliser une carte expirée ?**     | Prolongez la date dans la fiche carte ou créez une nouvelle carte pour dédommager le client.       |
-| **Plusieurs devises ?**                           | Les cartes-cadeaux utilisent la devise principale ; changez la devise boutique avant de générer.   |

@@ -294,4 +294,3 @@ Une équipe exceptionnelle !"
 
 :::tip À retenir
 Vos sections personnalisées doivent raconter l'histoire de votre entreprise et guider naturellement vers l'achat. Chaque section doit avoir un objectif clair et mesurable. Testez, mesurez, optimisez en continu.
-:::

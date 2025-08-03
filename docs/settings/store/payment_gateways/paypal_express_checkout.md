@@ -66,7 +66,7 @@ Utilisez "PayPal Express" ou "PayPal" pour une identification claire de cette ve
 
 **Montant minimal** | (montant)<br />
 
-Aucune restriction PayPal. Configurez 0€ pour accepter tous les montants.
+Aucune restriction PayPal. Configurez 0.50€ pour accepter tous les montants.
 
 **Statut** | (menu déroulant)<br />
 
@@ -80,7 +80,7 @@ Maintenez en **"Actif"** pour offrir la meilleure expérience PayPal à vos clie
 :::info Configuration recommandée
 Pour PayPal Express Checkout :
 - **Nom** : "PayPal Express" ou "PayPal"
-- **Montant minimal** : 0€
+- **Montant minimal** : 0.50€
 - **Statut** : Actif
 - **Mode** : Live (après tests complets)
 :::
@@ -233,6 +233,7 @@ Pour diagnostiquer un problème :
 * **Cache intelligent** des tokens d'authentification
 * **Gestion des erreurs** proactive
 * **Monitoring** des temps de réponse
+
 * **Tests réguliers** de l'intégration
 
 :::tip À retenir

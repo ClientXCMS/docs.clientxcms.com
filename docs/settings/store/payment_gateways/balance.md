@@ -145,7 +145,7 @@ La passerelle Balance s'intègre parfaitement avec :
 - Les **factures automatiques** pour les services récurrents
 - Les **remboursements** en cas d'annulation
 - Les **programmes de fidélité** via des crédits offerts
-
+- 
 :::warning Important
 Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
 :::
