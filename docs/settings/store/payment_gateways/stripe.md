@@ -187,24 +187,81 @@ Le mode live active toute la puissance de Stripe :
 Testez **exhaustivement** tous vos parcours en mode test avant la mise en production. Stripe offre des outils de simulation très avancés.
 :::
 
-## Résolution des problèmes
+## Fonctionnalités avancées
 
-### Problèmes courants
+### Stripe Dashboard
 
-| Problème                    | Solution                                           |
-|-----------------------------|-----------------------------------------------------|
-| **Clés API invalides**      | Vérifier la correspondance test/live et les droits |
-| **Webhooks non reçus**      | Contrôler l'URL et les événements configurés      |
-| **Paiements 3D Secure**     | Valider la configuration SCA/DSP2                 |
-| **Cartes déclinées**        | Analyser les codes d'erreur Stripe                |
+Le dashboard Stripe vous donne accès à :
 
-### Outils de diagnostic
+| Fonctionnalité              | Description                                        |
+|-----------------------------|----------------------------------------------------|
+| **Analytics temps réel**    | Métriques détaillées sur vos paiements           |
+| **Gestion des clients**     | Base de données clients intégrée                 |
+| **Détection de fraude**     | IA avancée avec scoring de risque                |
+| **Rapports automatiques**   | Exports comptables et fiscaux                    |
 
-Stripe offre des outils exceptionnels :
-- **Logs détaillés** de toutes les transactions
-- **Simulateur d'événements** pour tester les webhooks
-- **Monitoring temps réel** des performances
-- **Alertes automatiques** en cas de problème
+### Outils de croissance
+
+Stripe propose des outils uniques :
+- **Stripe Radar** : Protection anti-fraude avec IA
+- **Stripe Sigma** : Analytics avancés avec SQL
+- **Stripe Atlas** : Création d'entreprise internationale
+- **Stripe Capital** : Financement basé sur vos revenus
+
+## Sécurité et conformité
+
+### Standards de sécurité
+
+Stripe respecte tous les standards les plus exigeants :
+- **PCI-DSS Level 1** : Certification maximale
+- **SOC 1 et SOC 2** : Audits de conformité
+- **GDPR Compliant** : Conformité européenne
+- **ISO 27001** : Sécurité informatique
+
+### Technologies de protection
+
+* **Chiffrement AES-256** pour toutes les données
+* **TLS 1.2+** pour toutes les communications
+* **Tokenisation** avancée des cartes
+* **Machine Learning** pour la détection de fraude
+
+## Tarification Stripe
+
+### Structure tarifaire
+
+Stripe propose une tarification claire :
+- **Cartes européennes** : 1,4% + 0,25€
+- **Cartes non-européennes** : 2,9% + 0,25€
+- **American Express** : Tarifs spéciaux
+- **Échecs de paiement** : Pas de frais
+
+### Avantages tarifaires
+
+| Avantage                | Description                                        |
+|-------------------------|----------------------------------------------------|
+| **Pas de frais fixes** | Uniquement des commissions sur les transactions  |
+| **Tarifs dégressifs**  | Réductions selon le volume                        |
+| **Pas de frais cachés** | Transparence totale sur la tarification         |
+| **Facturation claire** | Rapports détaillés des frais                     |
+
+=======
+
+## Support et ressources
+
+### Documentation Stripe
+
+Stripe propose la meilleure documentation du secteur :
+- **Guides détaillés** pour chaque fonctionnalité
+- **Exemples de code** dans tous les langages
+- **API référence** interactive
+- **Tutorials vidéo** officiels
+
+### Support technique
+
+* **Centre d'aide** ultra-complet
+* **Chat support** 24/7 pour les comptes live
+* **Documentation développeur** de référence
+* **Communauté active** sur GitHub et forums
 
 :::tip À retenir
 Stripe représente l'**excellence absolue** dans le paiement par carte avec une technologie inégalée, des outils exceptionnels et une fiabilité légendaire. C'est le choix premium pour les entreprises exigeantes.
