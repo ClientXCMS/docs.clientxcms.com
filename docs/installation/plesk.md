@@ -6,20 +6,6 @@ sidebar_position: 4
 
 Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées sur plesk. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](./cloud).
 
-## Demander le téléchargement
-:::info
-L'accès aux licences autohébergées est restreint. Pour demander une licence à héberger sur vos propres serveurs, rendez-vous sur l'espace client de ClientXCMS via l'URL : [https://clientxcms.com/client/services](https://clientxcms.com/client/services).
-:::
-1. Cliquez sur le bouton "Gérer le service" de la licence en question.
-2. Cliquez sur le bouton "Télécharger" en bas à droite pour ouvrir le formulaire de demande.
-3. Remplissez les informations de votre hébergeur. Vous serez recontacté par e-mail dans les 72 heures.
-
-![Formulaire demande de téléchargement](/img/next_gen/Installation/formulaire_download.png)
-
-Si la page de téléchargement apparaît, la demande a été acceptée et vous pouvez cliquer sur le bouton "Télécharger" pour obtenir l'archive du CMS.
-
-![Page de téléchargement](/img/next_gen/Installation/page_download.png)
-
 
 ## Mise en place de l'abonnement et du domaine
 
@@ -34,47 +20,17 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
    ![Extension "Laravel ToolKit" - Plesk](/img/next_gen/Installation/Plesk/Plesk_extension_LaravelTK.png)
 5. Générez un certificat SSL gratuitement via Let's Encrypt.
    ![Certificat SSL - Plesk](/img/next_gen/Installation/Plesk/Plesk_ssl.png)
-6. Dans le tableau de bord de votre domaine, cliquez sur "PHP" sous les outils de développement. Utilisez la version **8.2** de PHP pour une compatibilité optimale.
-   ![PHP version - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHP82.png)
+6. Dans le tableau de bord de votre domaine, cliquez sur "PHP" sous les outils de développement. Utilisez la version **8.3** de PHP pour une compatibilité optimale.
+   ![PHP version - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHP83.png)
 
 ## Installation de l'environnement Laravel
 
 1. Revenez à la gestion de votre domaine. Sous le menu "Démarrer", sélectionnez "Laravel".
    ![Laravel env - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_env.png)
-2. Cliquez sur "Installer l'application", choisissez "installer le squelette" et confirmez.
+2. Cliquez sur "Installer l'application", choisissez "Installer depuis un dépot distant" mettez dans le champs l'URL : https://github.com/ClientXCMS/ClientXCMS et confirmez
    ![Laravel install - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_install.png)
    ![Laravel install 2 - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_install2.png)
-3. Attendez la fin du déploiement de votre projet Laravel.
-
-## Importation des fichiers de ClientXCMS
-
-1. Supprimez tous les fichiers de la racine du site web correspondant à votre espace client dans "Fichiers" (par défaut "httpdocs").
-2. Importez l'archive du CMS via le bouton "+" puis "Téléverser le fichier".
-
-   ![Téléverser fichiers - Plesk](/img/next_gen/Installation/Plesk/Plesk_televerser.png)
-
-3. Extrayez l'archive en cliquant sur "Extraire les fichiers".
-
-   ![Extraction archive - Plesk](/img/next_gen/Installation/Plesk/Plesk_outil_fichier.png)
-
-4. Un répertoire nommé "DarkIncognito85-clientxcms-v2-xxx" devrait apparaître. Cliquez dessus et sélectionnez tous les fichiers.
-
-   ![Sélectionner tout - Plesk](/img/next_gen/Installation/Plesk/Plesk_select_all.png)
-
-5. Cliquez sur "Déplacer" et migrez tous les fichiers et répertoires vers la racine de votre site d'espace client (par défaut "httpdocs").
-
-   ![Déplacer fichiers - Plesk](/img/next_gen/Installation/Plesk/Plesk_deplacer_fichiers.png)
-
-6. Supprimez le dossier précédent vide et l'archive ZIP de ClientXCMS pour faire propre.
-
-## Installation des composants PHP
-
-1. Installez les composants PHP dans Outils Développement → "**PHP Composer**" et cliquez sur "Rechercher".
-   ![PHP Composer (rechercher) - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHPComposer_search.png)
-2. Changez le mode de "Production" à "Développement".
-   ![PHP Composer (environnement) - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHPComposer_env.png)
-3. Cliquez sur "Installer" pour installer toutes les dépendances nécessaires.
-   ![PHP Composer (installer) - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHPComposer_install.png)
+3. Attendez la fin du déploiement de CLIENTXCMS.
 
 ## Configuration de la base de données
 
@@ -86,7 +42,7 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
    ![Bases de données (création) - Plesk](/img/next_gen/Installation/Plesk/Plesk_DB_create.png)
 
 3. Dans le gestionnaire de fichiers de Plesk, allez dans la racine du projet Laravel (par défaut "httpdocs").
-4. Renommez le fichier `.env.example` en `.env`.
+4. Renommez le fichier `.env.example` en `.env` ou ouvrez le fichier.
    ![Fichier .env.example (renommage) - Plesk](/img/next_gen/Installation/Plesk/Plesk_envexample_rename.png)
 
 5. Cliquez sur le fichier `.env` et modifiez les valeurs :
@@ -132,9 +88,3 @@ Si la page de téléchargement apparaît, la demande a été acceptée et vous p
 2. Cliquez sur "Ajouter une tâche planifiée".
 3. Configurez les tâches cron suivantes
    ![Tâches planifiées - Plesk](/img/next_gen/Installation/Plesk/Plesk_cron.png)
-
-## Terminé
-👏 Bravo, ClientXCMS NextGen est maintenant installé sur votre serveur !
-➡️ La documentation continuera de vous aider pour migrer, ou encore configurer les différentes extensions présentes.
-
-😊 Merci de votre confiance.
