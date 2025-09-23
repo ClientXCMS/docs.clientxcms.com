@@ -29,3 +29,11 @@ Pour mettre à jour l'espace client, vous devez suivre les étapes suivantes :
 11. Exécutez la commande `npm install && npm run build` pour installer les dépendances npm et compiler les assets.
 12. Exécutez la commande `php artisan up` pour sortir l'espace client de la maintenance.
 13. Exécutez la commande `php artisan clientxcms:on-update` pour exécuter les actions nécessaires après la mise à jour si besoin.
+
+### Plesk
+Si vous utilisez Plesk et que vous avez installé l'espace client via le Laravel Toolkit, vous pouvez suivre les étapes suivantes :
+1. Connectez-vous à votre espace Plesk.
+2. Allez dans le gestionnaire des dépôts Git.
+3. Mettez à jour le dépôt Git avec la nouvelle version de l'espace client en cliquant sur le bouton "Déployer maintenant".
+![Déploiement Git - Plesk](/img/next_gen/Installation/Plesk/Plesk_Git_deploy.png)
+4. Suivez les étapes 4 à 13 de la mise à jour en autohébergement ci-dessus en utilisant l'interface du Laravel Toolkit.

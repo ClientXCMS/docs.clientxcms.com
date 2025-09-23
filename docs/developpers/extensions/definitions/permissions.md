@@ -100,7 +100,6 @@ La permission `admin.manage_extensions` est conventionnellement utilisée pour t
 Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fichier `permissions.json` de votre extension. Voici un exemple de fichier `permissions.json` :
 
 ```json
-{
 [
     {
         "name": "admin.fund",
@@ -108,7 +107,6 @@ Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fich
         "group": "permissions.store"
     },
 ],
-}
 ```
 Avec `name` qui est le nom de la permission, `label` qui est la traduction de la permission dans le fichier de langue et `group` qui est le groupe de la permission.
 

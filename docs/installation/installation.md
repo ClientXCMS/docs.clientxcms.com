@@ -12,7 +12,7 @@ L'installation la plus simple, elle permet d'être installé en quelques minutes
 :::success Remarque
 Vous pouvez interchanger vos extensions à tout moment depuis votre espace client.
 :::
-L'offre cloud n'est pas un abonnement mensuel en plus de votre licence, elle est incluse dans votre licence (même à vie!).
+L'offre cloud est disponible pour toutes les licences Premium et Entreprise. Vous pouvez retrouver plus d'information sur les offres cloud [ici](https://clientxcms.com/pricing).
 ## Autohébergement
 L'installation en autohébergement est plus complexe nécessitant une accreditation validée. Pour cela, vous devez disposer d'un serveur web, d'une base de données et de PHP. Vous pouvez suivre les instructions d'installation en autohébergement [ici](./selfhosted).
 :::warning

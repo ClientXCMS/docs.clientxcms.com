@@ -4,20 +4,14 @@ sidebar_position: 5
 # Autohébergement
 
 Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](./cloud).
-## Demander le téléchargement
-:::info
-L'accès aux licences autohébergées est restreint. Pour demander une licence à héberger sur vos propres serveurs, rendez-vous sur l'espace client de ClientXCMS via l'URL : [https://clientxcms.com/client/services](https://clientxcms.com/client/services).
-:::
-1. Cliquez sur le bouton "Gérer le service" de la licence en question.
-2. Cliquez sur le bouton "Télécharger" en bas à droite pour ouvrir le formulaire de demande.
-3. Remplissez les informations de votre hébergeur. Vous serez recontacté par e-mail dans les 72 heures.
 
-![Formulaire demande de téléchargement](/img/next_gen/Installation/formulaire_download.png)
 
-Si la page de téléchargement apparaît, la demande a été acceptée et vous pouvez cliquer sur le bouton "Télécharger" pour obtenir l'archive du CMS.
+## Téléchargement
 
-![Page de téléchargement](/img/next_gen/Installation/page_download.png)
+Vous pouvez télécharger la dernière version de ClientXCMS NextGen depuis [L'espace téléchargement](https://clientxcms.com/client/downloads) ou depuis github directement : [https://github.com/ClientXCMS/ClientXCMS](https://github.com/ClientXCMS/ClientXCMS) 
+N'oubliez pas de vérifier les [prérequis techniques](./requis) avant de commencer l'installation aini que d'avoir une licence valide. (voir [ici](https://clientxcms.com/pricing) pour commander une licence)
 
+![Page de téléchargement - NextGen](/img/next_gen/Installation/Selfhosting/download_nextgen.png)
 
 :::info
 L'exemple ci-dessous est basé sur Debian 12, mais les commandes peuvent varier en fonction de votre distribution.
@@ -28,23 +22,24 @@ Créez un dossier d'installation pour votre CMS si vous n'avez pas encore de ser
 mkdir /var/www/clientxcms
 ```
 ## Téléchargement de l'archive
-Téléchargez l'archive du CMS en utilisant la commande suivante envoyé par e-mail :
+unzip clientxcms.zip -d /var/www/clientxcms
+
+Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub avec la commande suivante :
 ```bash
-curl -o clientxcms.zip https://clientxcms.com/licensing/downloads/{uuid}
+curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/archive/refs/heads/master.zip
 ```
-Veillez à remplacer `{uuid}` par le lien de téléchargement reçu par e-mail.
 
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
-
 unzip clientxcms.zip -d /var/www/clientxcms
-mv /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/* /var/www/clientxcms
-rm -r /var/www/clientxcms/DarkIncognito85-clientxcms-v2-*/
+mv /var/www/clientxcms/ClientXCMS-master/* /var/www/clientxcms
+rm -r /var/www/clientxcms/ClientXCMS-master
 ```
+
 :::info
 Si vous n'avez pas installé ZIP, vous pouvez l'installer avec la commande suivante :
 ```bash
-sudo apt-get install zip unzip 
+sudo apt-get install zip unzip
 ```
 :::
 
@@ -367,7 +362,7 @@ Si vous achetez des extensions entre-temps et que vous avez le message d'erreur 
 
 > **"Le fichier composer.json n'a pas été trouvé."**
 
-Vous pouvez demander à télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire sur votre instance ClientXCMS.
+Vous pouvez télécharger l'archive de l'extension via la page de téléchargement de l'espace client. Vous pouvez ensuite l'extraire sur votre instance ClientXCMS.
 ![Page de téléchargement - Extensions](/img/next_gen/Installation/Selfhosting/download_extension.png)
 
 :::info

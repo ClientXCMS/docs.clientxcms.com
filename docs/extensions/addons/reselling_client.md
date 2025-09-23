@@ -24,7 +24,7 @@ Pour toute demande ou pour devenir partenaire, veuillez contacter le support.
 
 Ce système garantit une gestion simplifiée des licences et des services VPS pour vos clients, tout en offrant flexibilité et automatisation.
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
+Pour utiliser les fonctionnalités suivantes, il faut que le module Revente client soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
 :::
 
 ### Fonctionnalité supportées
