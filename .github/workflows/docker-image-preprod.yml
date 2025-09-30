@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.REGISTRY_URL }}/docsclientxcms:preprod
+          tags: ${{ secrets.REGISTRY_URL }}/clientxcms/docsclientxcms:preprod
 
       - name: Restart docker-compose via ssh
         uses: D3rHase/ssh-command-action@v0.2.2
