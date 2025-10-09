@@ -134,8 +134,8 @@ Gestion complète de votre infrastructure de services. Cette section centralise 
 * **[Paramètres des services](./provisioning/services)** : Configuration des options de services
 * **[Serveurs](./provisioning/servers)** : Liste et état des serveurs configurés
 * **Sous-domaines** : Gestion des sous-domaines autorisés
-* **[Options de configuration](./provisioning/configoptions)** : Personnalisation des services
-* **[Configuration](./provisioning/provisioning)** : Options générales d'approvisionnement
+* **[Options de configuration](./provisioning/provisioning.md)** : Personnalisation des services
+* **[Configuration](./provisioning/provisioning.md)** : Options générales d'approvisionnement
 
 **[→ Configurer l'approvisionnement](./provisioning)**
 
@@ -213,7 +213,7 @@ Configuration spécifique à l'intégration Proxmox pour la gestion de machines 
 * **Systèmes d'exploitation LXC** : Templates de conteneurs
 * **Historique** : Suivi des actions sur les machines virtuelles
 
-**[→ Configurer Proxmox](../extensions/proxmox)**
+**[→ Configurer Proxmox](../extensions/modules/Proxmox.md)**
 
 :::note
 Cette section n'est disponible que si le module Proxmox est installé et activé.
@@ -258,7 +258,7 @@ Système de facturation avancé pour gérer les abonnements, renouvellements et 
 
 **Configuration disponible :**
 * **Abonnements** : Gestion des renouvellements automatiques
-* **[Facturation](./billing/billing)** : Configuration des factures et taxes
+* **[Facturation](./billing/billing.md)** : Configuration des factures et taxes
 * **Améliorations des services** : Upgrades et downgrades
 * **Transferts de fonds** : Historique des transactions
 

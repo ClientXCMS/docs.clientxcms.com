@@ -28,8 +28,8 @@ La boutique ClientXCMS s'articule autour de plusieurs composants clés :
 * **[Produits](./products)** : Les services que vous proposez à la vente (hébergement, VPS, licences, etc.)
 * **[Groupes](./groupes)** : Les catégories qui organisent vos produits de manière logique
 * **[Coupons](./coupon)** : Les codes promotionnels pour stimuler vos ventes
-* **[Moyens de paiement](./payment_gateways/payment_gateways)** : Les passerelles pour recevoir les paiements
-* **[Facturation](./billing)** : La gestion des factures et des paramètres comptables
+* **[Moyens de paiement](./payment_gateways/payment_gateways.md)** : Les passerelles pour recevoir les paiements
+* **[Facturation](../billing/billing.md)**gestion des factures et des paramètres comptables
 
 ### Parcours client type
 

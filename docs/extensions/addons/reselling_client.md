@@ -54,7 +54,7 @@ Ce n'est pas vos identifiants CLIENTXCMS, mais bien la clé d'API.
 Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
 
 ## Configuration de l'offre
-En premier lieu, [créez votre produit](../../../settings/store/products#création) en sélectionnant "Reselling".
+En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant "Reselling".
 ![img](/img/next_gen/extensions/addons/reselling_client/image_2.png)
 Après appuyer sur le bouton "Créer" il vous crée votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigera vers la page de configuration de l'offre. Si les champs est vide, assurez-vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système pour récupérer les offres de revente.
 
