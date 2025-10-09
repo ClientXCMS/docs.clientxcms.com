@@ -33,11 +33,11 @@ Ce programme vient en complément du programme partenaire pour les licences, afi
 3. Vos clients commandent, vous payez uniquement ce qu’ils consomment.
 4. Notre équipe vous accompagne si besoin.
 
-Pour tout savoir sur la configuration, consultez la documentation officielle : [Documentation CTX Reselling](/docs/extensions/addons/ctxreselling)
+Pour tout savoir sur la configuration, consultez la documentation officielle : [Documentation CTX Reselling](/extensions/addons/reselling_client)
 
 ## Questions fréquentes
 
 - **Qui peut devenir revendeur ?** Tout utilisateur CLIENTXCMS.
 - **Quels services puis-je revendre ?** VPS (LXC, KVM, HDD).
 - **Y a-t-il des prérequis ?** Aucun, tout est clé en main.
-- **Où trouver la documentation ?** [Voir la documentation](/docs/extensions/addons/ctxreselling)
+- **Où trouver la documentation ?** [Voir la documentation](/extensions/addons/reselling_client)

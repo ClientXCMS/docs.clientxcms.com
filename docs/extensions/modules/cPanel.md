@@ -50,7 +50,7 @@ Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre WHM : 2087
 Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
 
 ## Configuration de l'offre
-En premier lieu, [créez votre produit](../../../settings/store/products#création) en sélectionnant cPanel.
+En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant cPanel.
 
 ![img](/img/next_gen/extensions/modules/cpanel/img_3.png)
 
