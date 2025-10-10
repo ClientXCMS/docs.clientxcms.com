@@ -112,7 +112,7 @@ Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis 
 1. Sur votre VPS, placez-vous dans le dossier du panel :
    ```bash
    cd /var/www/pterodactyl
-   composer require "clientxcms/sso-pterodactyl"
+   composer require "clientxcms/pterodactyl-sso"
    ```
 2. Videz le cache :
    ```bash
@@ -128,8 +128,6 @@ Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis 
 4. Dans CLIENTXCMS, sur la page de configuration de votre serveur Pterodactyl (`/admin/servers`), ajoutez une meta donnée :
    - **Clé** : `sso_key`
    - **Valeur** : le jeton SSO généré
-
-Vérifiez que vous avez bien un SSL ainsi qu'un nom de domaine de définit dans le nom d'hôte de votre configuration serveur.
 
 **Alternative avancée** :
 Vous pouvez aussi placer le jeton dans le `.env` de CLIENTXCMS avec la variable `SSO_CLIENTXCMS_KEY{SERVER_ID}` (remplacez `{SERVER_ID}` par l'ID du serveur). Dans ce cas, la meta donnée n'est pas nécessaire.

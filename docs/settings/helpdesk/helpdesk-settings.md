@@ -1,18 +1,242 @@
+---
+sidebar_position: 1
+---
+
 # Paramètres du centre d'aide
-Les paramètres du centre d'aide vous permettent de personnaliser le centre d'aide à votre image. Vous pouvez modifier les paramètres du centre d'aide depuis les `Paramètres` > `Centre d'aide` > `Paramètres du centre d'aide`. 
 
-**Fermeture automatique des tickets après inactivité** : Nombre de jours avant la fermeture automatique des tickets après inactivité. Par défaut, il est de 7 jours. Vous pouvez désactiver cette fonctionnalité en mettant la valeur à 0.
+Dans **CLIENTXCMS**, les **paramètres du centre d'aide** définissent le comportement et les règles de fonctionnement de votre système de support. <br/>
+L'objectif est stratégique : **optimiser l'efficacité du support**, **automatiser les processus répétitifs** et **garantir une expérience cohérente** pour vos clients et votre équipe. Une configuration appropriée améliore la productivité, réduit la charge de travail manuelle et maintient un niveau de service élevé.
 
-**URL du webhook** : URL du webhook pour les notifications. Vous pouvez utiliser cette URL pour envoyer des notifications à votre système externe.
+Ces paramètres contrôlent les automatisations, les notifications, les pièces jointes et les intégrations externes.
 
-![image](https://cdn.clientxcms.com/ressources/docs/ticket.png)
+Vous pouvez modifier les paramètres depuis :
 
-**Autorisation de re-ouverture des tickets** : Vous pouvez autoriser la ré-ouverture des tickets par les clients. Par défaut, cette fonctionnalité est définit à 7 jours. Vous pouvez désactiver cette fonctionnalité en mettant la valeur à 0 ou -1 pour une ré-ouverture illimitée.
+`Paramètres` > `Centre d'aide` > `Paramètres du centre d'aide`
 
-**Autoriser les pièces jointes** : Vous pouvez autoriser les pièces jointes dans les tickets. Par défaut, cette fonctionnalité est désactivée.
+:::tip Astuce
+Des paramètres bien configurés transforment votre centre d'aide en **machine bien huilée**. 
+Chaque automatisation vous fait gagner du temps pour vous concentrer sur les cas complexes.
+:::
 
-**Taille maximale des pièces jointes** : Taille maximale des pièces jointes en Mo. Par défaut, elle est de 5 Mo.
+## Pourquoi configurer ces paramètres ?
 
-**Types de fichiers autorisés** : Types de fichiers autorisés pour les pièces jointes. Par défaut, les types de fichiers autorisés sont `jpg,jpeg,png,doc,docx, xls, xlsx`. Vous pouvez ajouter des types de fichiers en les séparant par une virgule.
-:::info
-Vous devez faire attention à la taille des pièces jointes pour ne pas surcharger votre serveur. Et faites attention aux types de fichiers autorisés pour éviter les attaques de sécurité. Nous vous recommandons de ne pas rajouter de types de fichiers sensibles.
+La configuration du centre d'aide est essentielle pour :
+
+* **Automatiser la gestion** des tickets inactifs
+* **Contrôler les interactions** avec les clients
+* **Sécuriser les échanges** de fichiers
+* **Intégrer avec vos outils** externes
+* **Maintenir la qualité** du service
+
+:::tip Astuce
+C'est comme régler les paramètres d'une machine industrielle ⚙️ — plus c'est précis, plus c'est efficace et fiable.
+:::
+
+## Gestion automatique des tickets
+
+### Fermeture automatique
+
+**Fermeture automatique après inactivité** | (nombre de jours)<br />
+Définit après combien de jours un ticket sans activité sera automatiquement fermé.
+
+**Valeurs recommandées** :
+- **7 jours** : Standard pour la plupart des cas
+- **3 jours** : Support haute réactivité
+- **14 jours** : Projets complexes nécessitant plus de temps
+- **0** : Désactive la fermeture automatique
+
+:::tip Avantages de la fermeture automatique
+- **Nettoie automatiquement** les tickets abandonnés
+- **Maintient des statistiques** précises
+- **Libère la charge** de travail des équipes
+- **Encourage la réactivité** des clients
+:::
+
+### Ré-ouverture contrôlée
+
+**Autorisation de ré-ouverture** | (nombre de jours)<br />
+Permet aux clients de rouvrir leurs tickets fermés pendant une période limitée.
+
+**Options disponibles** :
+- **7 jours** : Délai standard recommandé
+- **0** : Désactive la ré-ouverture
+- **-1** : Ré-ouverture illimitée dans le temps
+
+**Cas d'usage** :
+- **7 jours** : Pour les problèmes techniques standards
+- **14 jours** : Pour les migrations ou projets complexes
+- **0** : Pour forcer de nouveaux tickets et éviter la confusion
+- **-1** : Pour un support premium avec suivi long terme
+
+:::warning Attention
+Une ré-ouverture illimitée peut créer des tickets très anciens difficiles à gérer. Privilégiez un délai raisonnable.
+:::
+
+## Gestion des pièces jointes
+
+### Activation des fichiers
+
+**Autoriser les pièces jointes** | (interrupteur)<br />
+Active ou désactive la possibilité pour les clients de joindre des fichiers à leurs tickets.
+
+**Avantages des pièces jointes** :
+- **Captures d'écran** pour les problèmes visuels
+- **Logs d'erreur** pour le diagnostic technique
+- **Documents** pour les demandes administratives
+- **Preuves** pour les réclamations
+
+### Sécurité et limitations
+
+**Taille maximale** | (Mo)<br />
+Limite la taille des fichiers que les clients peuvent joindre.
+
+**Recommandations par type d'usage** :
+
+| Type de support | Taille recommandée | Justification |
+|-----------------|-------------------|---------------|
+| **Support général** | 5 Mo | Screenshots et documents légers |
+| **Support technique** | 10 Mo | Logs et fichiers de configuration |
+| **Support développeur** | 25 Mo | Archives de code et dumps |
+| **Serveur limité** | 2 Mo | Économie d'espace disque |
+
+### Types de fichiers autorisés
+
+**Extensions acceptées** | (liste séparée par virgules)<br />
+Définit quels types de fichiers sont acceptés dans les tickets.
+
+**Configuration par défaut** : `jpg,jpeg,png,doc,docx,xls,xlsx`
+
+**Configurations recommandées** :
+
+#### Support standard
+```
+jpg,jpeg,png,gif,pdf,doc,docx,txt,log
+```
+
+#### Support technique avancé
+```
+jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
+```
+
+#### Support sécurisé (restrictif)
+```
+jpg,jpeg,png,pdf,txt
+```
+
+:::warning Sécurité des fichiers
+**Types à éviter absolument** :
+- `.exe, .bat, .cmd` : Fichiers exécutables
+- `.php, .js, .html` : Scripts potentiellement malveillants
+- `.scr, .pif` : Extensions souvent utilisées par les malwares
+
+**Bonnes pratiques** :
+- Limitez aux types strictement nécessaires
+- Scannez les fichiers avec un antivirus
+- Vérifiez régulièrement les uploads suspects
+:::
+
+## Intégrations et notifications
+
+### Webhooks de notification
+
+**URL du webhook** | (URL HTTPS)<br />
+Configurez une URL pour recevoir des notifications en temps réel sur les événements du centre d'aide.
+
+![Exemple de notification webhook](https://cdn.clientxcms.com/ressources/docs/ticket.png)
+
+#### Types d'événements notifiés
+- **Nouveau ticket** créé
+- **Réponse client** ajoutée
+- **Ticket fermé** ou résolu
+- **Escalade** vers un département
+- **Pièce jointe** uploadée
+
+#### Configuration webhook Discord
+
+Exemple d'intégration avec Discord :
+
+1. **Créer un webhook** dans votre serveur Discord
+2. **Copier l'URL** générée
+3. **Coller dans le champ** URL du webhook
+4. **Tester** avec un ticket de démonstration
+
+#### Format des notifications
+
+Les notifications incluent :
+```json
+{
+  "ticket_id": 123,
+  "subject": "Problème de connexion",
+  "department": "Technique",
+  "priority": "high",
+  "client": "john@example.com",
+  "status": "open"
+}
+```
+
+### Intégrations populaires
+
+**Discord** : Notifications dans canal dédié
+**Slack** : Messages dans workspace équipe
+**Microsoft Teams** : Alertes dans channel support
+**Zapier** : Automatisation avec 1000+ services
+**API personnalisée** : Intégration avec vos outils internes
+
+## Exemples de configuration
+
+### Startup agile
+```
+Fermeture automatique : 3 jours
+Ré-ouverture : 7 jours
+Pièces jointes : Activées (5 Mo)
+Types autorisés : jpg,png,pdf,txt
+Webhook : Discord équipe
+```
+
+### Entreprise établie
+```
+Fermeture automatique : 7 jours
+Ré-ouverture : 14 jours
+Pièces jointes : Activées (10 Mo)
+Types autorisés : jpg,png,pdf,doc,docx,txt,log
+Webhook : Système CRM
+```
+
+### Support technique spécialisé
+```
+Fermeture automatique : 14 jours
+Ré-ouverture : -1 (illimitée)
+Pièces jointes : Activées (25 Mo)
+Types autorisés : jpg,png,pdf,txt,log,zip,sql,json
+Webhook : Slack + monitoring
+```
+
+### Organisation sécurisée
+```
+Fermeture automatique : 5 jours
+Ré-ouverture : 0 (désactivée)
+Pièces jointes : Activées (2 Mo)
+Types autorisés : jpg,png,pdf,txt
+Webhook : Système audit interne
+```
+
+## Optimisation des performances
+
+### Surveillance des métriques
+
+Analysez régulièrement :
+- **Taux de ré-ouverture** : Indicateur de qualité des résolutions
+- **Temps de fermeture** : Efficacité des automatisations
+- **Volume de pièces jointes** : Impact sur l'espace disque
+- **Types de fichiers** : Adaptation aux besoins réels
+
+### Maintenance préventive
+
+1. **Nettoyage périodique** : Supprimez les vieux fichiers
+2. **Révision des paramètres** : Ajustez selon l'évolution
+3. **Tests webhook** : Vérifiez la connectivité régulièrement
+4. **Formation équipe** : Assurez-vous que tous maîtrisent les paramètres
+
+:::tip À retenir
+Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui fonctionne pour une petite équipe peut ne pas convenir à une organisation plus importante. Révisez et ajustez régulièrement selon vos métriques et retours d'expérience.
+:::

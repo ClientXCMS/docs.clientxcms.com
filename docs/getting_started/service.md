@@ -30,7 +30,7 @@ La création ne crée pas de facture, il faudra passer par une commande sur votr
 Si vous avez un problème de livraison de service, rendez-vous sur `Espace Administation` > `Paramètres` > `Historique` et recherchez le fichier 'services-delivery.log'. Vous pouvez également consulter la page du module d'approvisionnement pour plus d'informations.
 ![img](/img/next_gen/services/delivery_log.png)
 
-Par exemple, dans ce cas de figure, le service n'a pas pu être livré, car le pterodactyl n'a plus d'allocation disponible. Plus d'informations sur la configuration du module Pterodactyl [ici](/extensions/modules/pterodactyl#erreurs-courantes).
+Par exemple, dans ce cas de figure, le service n'a pas pu être livré, car le pterodactyl n'a plus d'allocation disponible. Plus d'informations sur la configuration du module Pterodactyl [ici](../extensions/modules/Pterodactyl.md#erreurs-courantes).
 
 ## Aperçu d'un service
 Voici un aperçu d'un service.
