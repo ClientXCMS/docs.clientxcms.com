@@ -2,7 +2,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Passerelles de paiement
 
-Dans **CLIENTXCMS**, une **passerelle de paiement** correspond à un **système de traitement des transactions financières** que vous proposez à vos clients dans votre boutique. <br/>
+Dans **CLIENTXCMS**, une **passerelle de paiement** correspond à un **système de traitement des transactions financières** que vous proposez à vos clients dans votre boutique. `<br/>`
 L'objectif est clair : **offrir des méthodes de paiement sécurisées, diversifiées et adaptées à votre clientèle**. Une bonne configuration des passerelles de paiement permet à vos clients de **régler leurs commandes facilement** tout en vous garantissant la sécurité des transactions.
 
 Chaque passerelle peut être entièrement personnalisée : nom d'affichage, montant minimum, statut de visibilité, paramètres de connexion, etc.
@@ -42,12 +42,12 @@ CLIENTXCMS supporte nativement plusieurs passerelles de paiement populaires :
 
 Les passerelles se répartissent en plusieurs catégories :
 
-| Type de passerelle    | Description                                      | Exemples              |
-|-----------------------|--------------------------------------------------|-----------------------|
-| **Cartes bancaires**  | Paiement direct par carte de crédit/débit       | Stripe, Stancer       |
-| **Portefeuilles**     | Solutions de paiement en ligne                  | PayPal                |
-| **Virements**         | Transferts bancaires traditionnels              | Virement bancaire     |
-| **Crédit boutique**   | Système de solde interne                        | Balance               |
+| Type de passerelle         | Description                                 | Exemples          |
+| -------------------------- | ------------------------------------------- | ----------------- |
+| **Cartes bancaires** | Paiement direct par carte de crédit/débit | Stripe, Stancer   |
+| **Portefeuilles**    | Solutions de paiement en ligne              | PayPal            |
+| **Virements**        | Transferts bancaires traditionnels          | Virement bancaire |
+| **Crédit boutique** | Système de solde interne                   | Balance           |
 
 ## Configuration des passerelles
 
@@ -63,15 +63,15 @@ Pour configurer une passerelle de paiement :
 
 Chaque passerelle dispose de paramètres de base identiques :
 
-**Nom** | (texte)<br />
+**Nom** | (texte)`<br />`
 
 Le nom d'affichage de la passerelle tel qu'il apparaîtra à vos clients lors du paiement.
 
-**Montant minimal** | (montant)<br />
+**Montant minimal** | (montant)`<br />`
 
 Montant minimal requis pour que cette passerelle soit proposée aux clients.
 
-**Statut** | (menu déroulant)<br />
+**Statut** | (menu déroulant)`<br />`
 
 Définit la visibilité et la disponibilité de la passerelle :
 
@@ -99,16 +99,16 @@ Le **statut** détermine la visibilité et l'accessibilité de chaque passerelle
 
 <div style={{ flex: 1 }}>
 
-| Statut              | Visibilité                                |
-|---------------------|-------------------------------------------|
-| **Actif**           | Visible et utilisable par tous           |
-| **Non référencé**   | Accessible aux administrateurs uniquement |
+| Statut                     | Visibilité                               |
+| -------------------------- | ----------------------------------------- |
+| **Actif**            | Visible et utilisable par tous            |
+| **Non référencé** | Accessible aux administrateurs uniquement |
 | **Caché**           | Totalement invisible                      |
 
 </div>
 
 <div style={{ flex: 1, textAlign: 'center' }}>
-  
+
 :::tip Conseil
 Utilisez le statut **« Non référencé »** pour tester une nouvelle passerelle avant de la rendre publique.
 
@@ -140,6 +140,7 @@ La modification de la passerelle d'une facture peut affecter le processus de pai
 ### Montants minimums
 
 Chaque passerelle peut avoir un **montant minimum** différent :
+
 - Utile pour éviter les frais sur les petites transactions
 - Permet d'orienter les clients vers les passerelles les plus rentables
 - Améliore l'expérience utilisateur en masquant les options non pertinentes
@@ -147,6 +148,7 @@ Chaque passerelle peut avoir un **montant minimum** différent :
 ### Gestion des devises
 
 CLIENTXCMS gère automatiquement :
+
 - La **conversion de devises** si nécessaire
 - L'**affichage des montants** dans la devise du client
 - Les **taux de change** en temps réel
@@ -163,23 +165,10 @@ CLIENTXCMS gère automatiquement :
 ### Conformité
 
 Toutes les passerelles intégrées respectent :
+
 - Les standards **PCI-DSS** pour la sécurité des cartes
 - Le règlement **RGPD** pour la protection des données
-- Les exigences **DSP2** pour l'authentification forte
-
-## Limitations actuelles
-
-### Abonnements
-
-PayPal et Stripe supportent les abonnements. Vos clients peuvent se connecter leur compte PayPal ou carte bancaire pour gérer autoriser les paiements récurrents faits par CLIENTXCMS.
-
-Le principe est simple :
-1. Le client ajoute une source de paiement (carte ou compte PayPal)
-2. Le client active l'abonnement pour un service il choisit le jour de facturation
-3. CLIENTXCMS facture automatiquement le montant chaque mois de la facture de renouvellement
-
-Nous n'utilisons pas les abonnements Stripe ou PayPal pour les services récurrents. Mais un système où CLIENTXCMS facture automatiquement les clients chaque mois pour les services avec un abonnement.
-![img](/img/next_gen/settings/store/payment_gateways/subscriptions.png)
+- Les exigences **DSP2** pour l'authentification forte.
 
 ## Configuration par passerelle
 

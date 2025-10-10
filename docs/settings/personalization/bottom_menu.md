@@ -1,14 +1,12 @@
-# Menu de pied de la page
-Vous pouvez modifier les éléments du menu de pied de la page en allant dans les `Paramètres` puis dans `Personnalisation` puis `Menu du pied de la page`.
-![image](/img/next_gen/settings/personalization/bottom_menu/admin.png)
-Vous pouvez ajouter, modifier ou supprimer des éléments du menu de pied de la page.
+# Menu du pied de page
 
-**Description** : Vous pouvez ajouter une description de votre société en bas de page.
+Dans **CLIENTXCMS**, le **pied de page** représente l'ancrage final de votre plateforme et l'espace de confiance où vos visiteurs cherchent les informations essentielles. <br/>
+L'objectif est capital : **rassurer sur votre professionnalisme**, **fournir les liens légaux obligatoires** et **renforcer votre crédibilité**. Un footer bien structuré complète parfaitement l'expérience utilisateur et peut convertir les visiteurs hésitants en dernière instance.
 
-**Badge TopHeberg** : Vous pouvez ajouter un badge TopHeberg en bas de page.
+Cette page permet de configurer tous les éléments du pied de page pour créer une zone de confiance optimale.
 
-Vous pouvez sauvegarder les modifications en cliquant sur le bouton `Enregistrer`.
+Vous pouvez personnaliser le pied de page depuis :
 
-Vous pouvez également ajouter des liens vers vos [réseaux sociaux](/docs/settings/personalization/socials.md).
-## Bas de page
-![image](/img/next_gen/settings/personalization/socials/footer.png)
+`Paramètres` > `Personnalisation` > `Menu du pied de page`
+
+![Configuration du pied de page](/img/next_gen/settings/personalization/bottom_menu/admin.png)

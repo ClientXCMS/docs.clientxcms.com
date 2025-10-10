@@ -155,6 +155,10 @@ Le mode Live active :
 - Compte PayPal Business vérifié
 - Identifiants Live (Client ID et Secret de production)
 
+:::tip Conseil
+Testez **exhaustivement en mode Sandbox** avant le passage en Live. Vérifiez tous les scénarios : paiements réussis, échoués, remboursements.
+:::
+
 ## Gestion avancée
 
 ### Avantages de l'API REST
@@ -229,4 +233,9 @@ Pour diagnostiquer un problème :
 * **Cache intelligent** des tokens d'authentification
 * **Gestion des erreurs** proactive
 * **Monitoring** des temps de réponse
+
 * **Tests réguliers** de l'intégration
+
+:::tip À retenir
+PayPal Express Checkout représente le **futur de l'intégration PayPal** avec des performances supérieures et une expérience utilisateur premium. C'est l'option recommandée pour maximiser vos conversions PayPal.
+:::

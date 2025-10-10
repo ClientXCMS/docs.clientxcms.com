@@ -166,7 +166,7 @@ N’oubliez pas d’intégrer les systèmes d’exploitation et modèles dans la
 :::
 
 ## Configuration de l'offre
-En premier lieu, [créez votre produit](../../../settings/store/products#création) en sélectionnant Proxmox.
+En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant Proxmox.
 
 ![img](/img/next_gen/extensions/modules/proxmox/image.png)
 

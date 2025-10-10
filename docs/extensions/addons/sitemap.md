@@ -1,4 +1,4 @@
-# Addon Sitemap
+# Sitemap
 
 L'add-on **Sitemap** permet de générer un plan du site pour améliorer le référencement naturel (SEO) de votre site web. Il est accessible depuis la section **Extensions** et peut être configuré via les **paramètres des personnalisation**.
 

@@ -29,4 +29,4 @@ La migration depuis d’autres services sera bientôt disponible pour pouvoir ch
 ![img](/img/next_gen/extensions/addons/importation/importation.png)
 
 ## Réalisation de la migration
-Pour réaliser la migration, rendez vous sur la page de migration après avoir installé l'addon de migration. Vous y trouverez un guide détaillé pour vous accompagner tout au long du processus sur [notre page de documentation](/docs/extensions/addons/importation).
+Pour réaliser la migration, rendez vous sur la page de migration après avoir installé l'addon de migration. Vous y trouverez un guide détaillé pour vous accompagner tout au long du processus sur [notre page de documentation](/extensions/addons/importation).

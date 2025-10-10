@@ -28,6 +28,9 @@ Adopter Stancer vous permet de :
 * Réduire vos coûts de transaction comparé aux géants américains
 * Soutenir l'écosystème technologique européen
 
+:::tip Astuce
+Stancer est comme le **champion européen** du paiement par carte 🇫🇷 — performance internationale avec des valeurs et un service à la française, idéal pour les entreprises soucieuses de leurs données et coûts.
+:::
 
 ## Fonctionnement du système
 
@@ -146,6 +149,81 @@ Le mode live active :
 :::tip Conseil
 Utilisez les **cartes de test Stancer** pour valider tous vos scénarios avant le passage en production. Testez particulièrement les cas d'échec et les remboursements.
 :::
+
+## Avantages techniques
+
+### API moderne et performante
+
+Stancer propose une intégration technique de qualité :
+
+| Fonctionnalité          | Avantage                                           |
+|-------------------------|-----------------------------------------------------|
+| **API REST moderne**    | Intégration simple et standard                     |
+| **Webhooks fiables**    | Notifications temps réel sécurisées               |
+| **Documentation claire** | Guides détaillés et exemples de code             |
+| **SDKs multiples**      | Librairies pour tous les langages populaires      |
+
+### Sécurité et conformité
+
+Stancer respecte tous les standards de sécurité :
+- **Certification PCI-DSS Niveau 1**
+- **Conformité DSP2** et 3D Secure 2.0
+- **Chiffrement AES-256** pour toutes les données
+- **Tokenisation** des cartes bancaires
+- **Détection de fraude** en temps réel
+
+## Tarification Stancer
+
+### Structure tarifaire
+
+Stancer propose une tarification simple et transparente :
+- **Cartes européennes** : Tarifs préférentiels
+- **Cartes internationales** : Tarifs standard
+- **Pas de frais cachés** : Transparence totale
+- **Volume élevé** : Tarifs dégressifs négociables
+
+### Comparaison coûts
+
+| Aspect                    | Stancer      | Concurrents US |
+|---------------------------|--------------|----------------|
+| **Transparence**          | Totale       | Variable       |
+| **Support**               | Français     | International  |
+| **Conformité RGPD**       | Native       | Adaptée        |
+| **Tarifs européens**      | Optimisés    | Standard       |
+
+## Fonctionnalités avancées
+
+### Gestion des paiements
+
+Depuis votre dashboard Stancer :
+- **Suivi en temps réel** de toutes les transactions
+- **Gestion des remboursements** en un clic
+- **Rapports détaillés** et exports
+- **Détection de fraude** avec scoring
+
+### Outils de réconciliation
+
+* **Exports automatiques** vers vos outils comptables
+* **Webhooks détaillés** pour l'intégration système
+* **API de réconciliation** pour les grands volumes
+* **Rapports personnalisés** selon vos besoins
+
+## Support et assistance
+
+### Support client français
+
+Stancer propose :
+- **Équipe support** basée en France
+- **Temps de réponse** optimisés
+- **Documentation** en français
+- **Accompagnement** à l'intégration
+
+### Ressources disponibles
+
+* **Centre d'aide** complet en ligne
+* **Documentation technique** détaillée
+* **Exemples de code** prêts à l'emploi
+* **Communauté développeurs** active
 
 ## Résolution des problèmes
 

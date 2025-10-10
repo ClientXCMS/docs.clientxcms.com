@@ -1,15 +1,16 @@
 ---
-sidebar_position: 6
+sidebar_position: 2
 ---
 
 # Licence
-La licence permet de synchroniser votre instances à clientxcms. Cela permet d'avoir accès à vos extensions.
-Vous pouvez voir les informations de votre licence depuis  `Paramètres` puis dans la section `Paramètres généraux` et enfin dans `Licences`.
-## Information sur la license
 
-![img](/img/next_gen/settings/core/license/license.png)
+La **licence** est l'élément qui authentifie et active votre installation **CLIENTXCMS**. C'est elle qui débloque les fonctionnalités, synchronise vos extensions et garantit l'accès aux mises à jour. <br/>
+L'objectif est clair : **valider votre installation et débloquer tout le potentiel** de votre CMS selon l'offre souscrite.
 
-## Améliorer la licence
-Vous pouvez augmenter la limitation de votre licence à l'offre supérieure. Il suffit de payer la différence entre les deux offres.
-## Réactualiser la licence
-En cas d'achat de nouvelle extensions, vous pouvez forcer la réactualisation en appuyant sur le bouton "forcer l'actualisation".
+La licence permet la synchronisation avec les serveurs ClientXCMS, l'activation des modules achetés et le respect des limites de votre forfait.
+
+Vous pouvez gérer votre licence depuis :
+
+`Paramètres` > `Paramètres généraux` > `Licence`
+
+![Interface de gestion de la licence](/img/next_gen/settings/core/license/license.png)

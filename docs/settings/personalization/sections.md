@@ -1,20 +1,15 @@
-# Sections
+# Sections personnalisées
 
-Les sections sont des parties de la page de personnalisation qui permettent de regrouper les éléments du menu. Vous pouvez ajouter, modifier ou supprimer des sections dans les paramètres de personnalisation.
-Pour y accéder, rendez-vous dans `Paramètres` > `Personnalisation` > `Sections`.
+Dans **CLIENTXCMS**, les **sections personnalisées** constituent des blocs modulaires puissants pour **enrichir et structurer le contenu** de votre plateforme. <br/>
+L'objectif est stratégique : **créer des zones de contenu dynamiques**, **améliorer l'engagement utilisateur** et **personnaliser l'expérience client** selon vos besoins spécifiques. Des sections bien conçues peuvent augmenter de 300% le temps passé sur votre site et significativement améliorer vos taux de conversion.
 
-## Gestion des sections
-![image](/img/next_gen/settings/personalization/sections/img.png)
-Vous pouvez sélectionner une page pour laquelle vous souhaitez modifier les sections.
+Cette page permet de créer, configurer et organiser des sections de contenu modulaires pour votre espace client.
 
-### Ajouter une section
-Vous pouvez ajouter un modèle de section en cliquant sur le bouton "Télécharger" sur la page de gestion des sections.
-![image](/img/next_gen/settings/personalization/sections/img_1.png)
+Vous pouvez gérer les sections depuis :
 
-### Modifier une section
-Vous pouvez modifier une section en cliquant sur le bouton "Modifier" à côté de la section que vous souhaitez modifier. Vous pourrez modifier l'ensemble de l'HTML de la section
-![image](/img/next_gen/settings/personalization/sections/img_2.png)
+`Paramètres` > `Personnalisation` > `Sections`
 
-:::info 
-Certaines section peuvent être protégées. Ces sections ne peuvent pas être modifiées pour des raisons de sécurité.
+:::tip Astuce
+Les sections sont vos **blocs de construction marketing**. 
+Chaque section est une opportunité de convaincre, rassurer ou orienter vos visiteurs vers l'action souhaitée.
 :::

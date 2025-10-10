@@ -1,9 +1,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import dotenv from 'dotenv';
-dotenv.config(); // Charge les variables d'environnement depuis le fichier .env
-
 // console.log('Tracking ID:', process.env.GTAG_TRACKING_ID); // Vérification de la variable
 
 
@@ -14,7 +11,6 @@ const config: Config = {
   url: 'https://docs.clientxcms.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'https://cdn.clientxcms.com/ressources/Themes/CLIENTXCMS/images/favicon.ico',
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
   projectName: 'docs.clientxcms.com', // Usually your repo name.

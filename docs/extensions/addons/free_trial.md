@@ -1,4 +1,4 @@
-# Addon Essai
+# Essai Gratuit
 
 L'add-on **Essai Gratuit** permet de proposer des périodes d’essai gratuites pour vos services ou produits. Vous pouvez l’activer depuis la section **Extensions**, puis le configurer via les **paramètres d’extension**.
 

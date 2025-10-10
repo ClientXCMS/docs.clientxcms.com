@@ -20,4 +20,4 @@ VirtualizorCloud est un module implémentant la solution VirtualizorCloud, perme
 - `➕` **Importation de serveurs** : Importez facilement des serveurs existants dans le module VirtualizorCloud.
 
 ## Comment l'utiliser ?
-Vous pouvez retrouver l'ensemble de la documentation du module VirtualizorCloud sur notre [documentation officielle](/extensions/modules/virtualizor_cloud). Cette documentation vous guidera à travers les étapes d'installation, de configuration et d'utilisation du module.
+Vous pouvez retrouver l'ensemble de la documentation du module VirtualizorCloud sur notre [documentation officielle](/extensions/modules/VirtualizorCloud). Cette documentation vous guidera à travers les étapes d'installation, de configuration et d'utilisation du module.

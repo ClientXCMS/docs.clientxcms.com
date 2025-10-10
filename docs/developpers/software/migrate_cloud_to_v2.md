@@ -1,6 +1,6 @@
 # Migrer cloud vers self-hosted
 :::info
-CLIENTXCMS devient un logiciel open source, auto-hébergé et gratuit à partir du 1er septembre 2025. Pour les clients actuels, nous offrons une période de transition pour migrer vers la version auto-hébergée. Cette page vous guide à travers le processus de migration depuis CLIENTXCMS Cloud vers une instance auto-hébergée. Plus d'informations sur la transition [ici](/blog/2025-05-31-mise-en-opensource.md).
+CLIENTXCMS devient un logiciel open source, auto-hébergé et gratuit à partir du 1er septembre 2025. Pour les clients actuels, nous offrons une période de transition pour migrer vers la version auto-hébergée. Cette page vous guide à travers le processus de migration depuis CLIENTXCMS Cloud vers une instance auto-hébergée. Plus d'informations sur la transition [ici](/blog/mise-en-opensource).
 :::
 
 1. **Récupérer une sauvegarde de l’instance CLIENTXCMS Cloud**
@@ -34,17 +34,17 @@ CLIENTXCMS devient un logiciel open source, auto-hébergé et gratuit à partir 
      1. Connectez-vous à phpMyAdmin de votre serveur local (par exemple `https://votre-serveur/phpmyadmin`).
      2. Sélectionnez la base `clientxcms_local`.
      3. Cliquez sur **Importer** → **Choisir un fichier** → sélectionnez `sauvegarde_clientxcms_12345.sql` → cliquez sur **Exécuter**.
-    4. Attendez que l’importation soit terminée (cela peut prendre quelques minutes selon la taille de la base).
-    5. Vérifiez que toutes les tables sont présentes (ex. `customers`, etc.).
+    1. Attendez que l’importation soit terminée (cela peut prendre quelques minutes selon la taille de la base).
+    2. Vérifiez que toutes les tables sont présentes (ex. `customers`, etc.).
 
     __Via la ligne de commande__ :
-    1. Connectez-vous à votre serveur via SSH.
-    2. Exécutez les commandes suivantes pour créer la base de données et importer la sauvegarde :
+    3. Connectez-vous à votre serveur via SSH.
+    4. Exécutez les commandes suivantes pour créer la base de données et importer la sauvegarde :
      ```bash
      mysql -u root -p clientxcms_local < /chemin/vers/sauvegarde_clientxcms_12345.sql
      # Saisissez MotDePasseLocal quand demandé
      ```
-     3. Vérifiez que l’importation s’est bien déroulée en listant les tables :
+     5. Vérifiez que l’importation s’est bien déroulée en listant les tables :
      ```bash
      mysql -u root -p -e "USE clientxcms_local; SHOW TABLES;"
      # Vous devriez voir toutes les tables de CLIENTXCMS Cloud (ex. customers, settings.)
