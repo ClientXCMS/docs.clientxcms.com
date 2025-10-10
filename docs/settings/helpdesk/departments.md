@@ -118,7 +118,6 @@ Lors de la création d'un ticket, les clients voient tous les départements disp
 ![Sélection de département côté client](/img/next_gen/settings/helpdesk/departments/departments.png)
 
 L'affichage comprend :
-
 - **Icône** du département
 - **Nom** descriptif
 - **Description** d'aide au choix
@@ -192,7 +191,6 @@ Pour éditer un département existant :
 ### Traductions multilingues
 
 Chaque département peut être traduit dans toutes les langues activées :
-
 - **Nom** spécifique par langue
 - **Description** adaptée culturellement
 - **Cohérence** avec la terminologie locale

@@ -1,40 +1,98 @@
 ---
 sidebar_position: 1
 ---
-# Paramètres globaux
-Les paramètres globaux sont des paramètres qui affectent l'ensemble de votre espace client. Vous pouvez les retrouver en allant dans `Paramètres` > `Paramètres généraux` > `Paramètres globaux`.
 
-**Nom de l'espace client** : Vous pouvez définir le nom de votre espace client. Par défaut, il est de "ClientXCMS".
+import ThemedImage from '@theme/ThemedImage';
 
-**Environement de l'espace client** : Vous pouvez définir l'environement de votre espace client. Par défaut, il est de "Production".
+# Application
 
-**Mode debug** : Vous pouvez activer ou désactiver le mode debug. Par défaut, il est désactivé.
+La configuration de l'**application** définit l'identité et le comportement global de votre **CLIENTXCMS**. C'est ici que vous personnalisez l'apparence, définissez les paramètres techniques et adaptez l'interface à votre image de marque. <br/>
+L'objectif est clair : **créer une expérience cohérente et professionnelle** qui reflète votre identité tout en optimisant les performances techniques.
 
-**Fuseau horaire** : Vous pouvez définir le fuseau horaire de votre espace client. Par défaut, il est de "Europe/Paris".
+Chaque paramètre de l'application influence directement l'expérience utilisateur, de l'affichage du logo à la gestion des erreurs techniques.
 
-**Langue** : Vous pouvez définir la langue de votre espace client. Par défaut, il est en français.
+:::tip Astuce
+Une application bien configurée inspire confiance. Personnalisez chaque détail pour que vos clients reconnaissent immédiatement votre marque et bénéficient d'une expérience fluide.
+:::
 
-**Logo de l'espace client** : Vous pouvez définir le logo de votre espace client.
+## Paramètres essentiels
 
-**Favicon de l'espace client** : Vous pouvez définir le favicon de votre espace client.
+### Identité de l'application
 
-**Logo texte de l'espace client** : Vous pouvez définir le logo texte de votre espace client.
+**Nom de l'espace client** | (texte)<br />
+Le nom qui apparaît dans l'interface et les communications. Ce nom est visible dans :
+- Le titre des pages du navigateur
+- Les emails envoyés aux clients
+- L'interface d'administration
+- Les factures et documents
 
-## Différences entre les environnements
+**URL de l'application** | (URL)<br />
+L'adresse complète de votre installation ClientXCMS. Assurez-vous d'utiliser :
+- HTTPS en production (obligatoire pour la sécurité)
+- Un domaine stable et professionnel
+- Une URL sans slash final
 
-### Environnement de développement
-L'environnement de développement est utilisé pour tester les nouvelles fonctionnalités et les modifications avant de les déployer en production. Il est recommandé de ne pas utiliser l'environnement de développement pour les clients.
+**Logo de l'espace client** | (image)<br />
+Le logo principal affiché dans l'interface. Recommandations :
+- Format : PNG ou SVG pour la transparence
+- Dimensions : 200x200px minimum
+- Poids : Moins de 500 Ko
+- Fond transparent privilégié
 
-### Environnement de production
-L'environnement de production est utilisé pour les clients. Il est recommandé de ne pas utiliser l'environnement de production pour tester les nouvelles fonctionnalités et les modifications.
+**Logo texte de l'espace client** | (image)<br />
+Version horizontale du logo avec texte, utilisée dans :
+- La barre de navigation principale
+- Les emails
+- Les documents PDF
 
-## Différente entre le mode debug activé et désactivé
-La différence entre le mode debug activé et désactivé est que le mode debug activé affiche les erreurs et les avertissements. Il est recommandé de ne pas activer le mode debug pour les clients.
+**Favicon de l'espace client** | (image)<br />
+L'icône affichée dans l'onglet du navigateur. Spécifications :
+- Format : ICO, PNG ou SVG
+- Dimensions : 32x32px ou 64x64px
+- Poids : Moins de 100 Ko
 
-## Différence entre logo et logo texte
-Le logo est l'image sans texte ou label à coté. Le logo texte un logo plus en longeur avec le nom ou un label à coté.
-Si vous avez qu'une seule version de logo, vous pouvez utiliser le logo pour le logo texte.
-### Logo
-[<img src="https://clientxcms.com/storage/app_favicon2889.png" width="100"/>](https://clientxcms.com/storage/app_favicon2889.png)
+### Configuration technique
+
+**Environnement de l'espace client** | (menu déroulant)<br />
+Détermine le mode de fonctionnement :
+
+| Environnement | Usage | Caractéristiques |
+|---------------|-------|------------------|
+| **Production** | Clients réels | Cache activé, erreurs masquées, performances optimisées |
+| **Développement** | Tests et debug | Cache désactivé, erreurs détaillées, outils de debug |
+
+**Mode debug** | (case à cocher)<br />
+Active l'affichage détaillé des erreurs. À utiliser uniquement en développement :
+- ✅ **Activé** : Affiche les erreurs techniques détaillées
+- ❌ **Désactivé** : Affiche des messages d'erreur génériques
+
+**Fuseau horaire** | (menu déroulant)<br />
+Définit la référence temporelle pour :
+- Les timestamps dans les logs
+- La génération des factures
+- Les horaires affichés aux clients
+- Les tâches planifiées (cron)
+
+**Langue par défaut** | (menu déroulant)<br />
+La langue utilisée quand aucune préférence n'est définie. Impact :
+- Interface pour les nouveaux visiteurs
+- Emails système
+- Messages d'erreur
+- Documentation intégrée
+
+## Différences entre les logos
+
+### Logo standard
+Le logo carré ou vertical, utilisé comme icône :
+- Page de connexion
+- Emails (en-tête)
+- Favicon agrandi
+- Applications mobiles
+
+Exemple de dimensions recommandées :
+- 512x512px pour une qualité optimale
+- 256x256px pour un usage standard
+- 128x128px minimum accepté
+
 ### Logo texte
 [<img src="https://clientxcms.com/assets/images/logo/LogoBlueText.png" width="300" height="100"/>](https://clientxcms.com/assets/images/logo/LogoBlueText.png)

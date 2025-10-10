@@ -51,7 +51,6 @@ Les tâches automatiques génèrent leurs propres fichiers de logs pour tracer l
 #### Contenu des logs de tâches
 
 Chaque fichier contient :
-
 - **Horodatage** précis de l'exécution
 - **Statut** de la tâche (succès/échec)
 - **Nombre d'éléments traités** (services, factures, etc.)
@@ -65,7 +64,6 @@ Les erreurs applicatives sont enregistrées quotidiennement :
 **Format des fichiers** : `laravel-{année}-{mois}-{jour}.log`
 
 Exemples :
-
 - `laravel-2024-08-15.log`
 - `laravel-2024-08-16.log`
 
@@ -103,13 +101,11 @@ Utile pour archivage ou analyse avec des outils externes.
 - **Surveillance** des tendances long terme
 
 #### Vidage
-
 - **Nettoyage** d'un fichier devenu trop volumineux
 - **Reset** après résolution d'un problème récurrent
 - **Optimisation** de l'espace disque
 
 #### Suppression
-
 - **Maintenance** de l'espace disque
 - **Conformité** aux politiques de rétention
 - **Nettoyage** de logs non pertinents
@@ -126,7 +122,6 @@ Utile pour archivage ou analyse avec des outils externes.
 ### Analyse des logs
 
 #### Logs de tâches planifiées
-
 ```
 [2024-08-15 02:00:01] INFO: services:delivery started
 [2024-08-15 02:00:05] INFO: Processing 15 pending services
@@ -136,7 +131,6 @@ Utile pour archivage ou analyse avec des outils externes.
 ```
 
 #### Logs d'erreurs système
-
 ```
 [2024-08-15 14:23:45] ERROR: PDOException: Connection refused
 [2024-08-15 14:23:45] ERROR: Stack trace: /var/www/app/Database.php:42
@@ -149,7 +143,6 @@ Utile pour archivage ou analyse avec des outils externes.
 
 **Symptômes** : Fichiers de plusieurs Mo, lenteurs interface
 **Solutions** :
-
 1. Videz les logs anciens
 2. Identifiez la source des erreurs répétitives
 3. Corrigez les problèmes à l'origine
@@ -159,7 +152,6 @@ Utile pour archivage ou analyse avec des outils externes.
 
 **Symptômes** : Aucun fichier récent, tâches silencieuses
 **Solutions** :
-
 1. Vérifiez les permissions d'écriture
 2. Contrôlez l'espace disque disponible
 3. Redémarrez les services si nécessaire
@@ -169,7 +161,6 @@ Utile pour archivage ou analyse avec des outils externes.
 
 **Symptômes** : Mêmes erreurs répétées, instabilité
 **Solutions** :
-
 1. Analysez le pattern des erreurs
 2. Identifiez la cause racine
 3. Appliquez un correctif permanent
@@ -188,7 +179,6 @@ Selon votre secteur d'activité :
 ### Politique de rétention
 
 Définissez une politique claire :
-
 1. **Durée de conservation** selon les besoins légaux
 2. **Format d'archivage** (compression, chiffrement)
 3. **Accès contrôlé** aux logs archivés

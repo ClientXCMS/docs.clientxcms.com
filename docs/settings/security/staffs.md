@@ -129,7 +129,6 @@ Chaque compte dispose d'un historique détaillé des connexions :
 ![Historique des connexions](/img/next_gen/settings/security/staffs/staff_log.png)
 
 **Informations trackées** :
-
 - Date et heure de connexion
 - Adresse IP d'origine
 - Navigateur et système d'exploitation
@@ -143,7 +142,6 @@ Surveillez toutes les actions effectuées par chaque administrateur :
 ![Historique des actions](/img/next_gen/settings/security/staffs/staff_actionlog.png)
 
 **Actions enregistrées** :
-
 - Modifications de configuration
 - Gestion des clients et services
 - Actions sur les factures
@@ -153,7 +151,6 @@ Surveillez toutes les actions effectuées par chaque administrateur :
 ### Analyse des comportements
 
 Utilisez ces données pour :
-
 - **Détecter les activités suspectes**
 - **Auditer les modifications importantes**
 - **Identifier les besoins de formation**
@@ -171,7 +168,6 @@ Utilisez ces données pour :
 4. L'utilisateur clique sur le lien et définit un nouveau mot de passe
 
 **Avantages** :
-
 - Processus sécurisé et automatisé
 - Pas d'intervention manuelle nécessaire
 - Respect des politiques de sécurité
@@ -185,7 +181,6 @@ Cette méthode nécessite un accès direct à la base de données et doit être 
 :::
 
 **Étapes** :
-
 1. Accédez à PHPMyAdmin (voir section [Base de données](./database))
 2. Générez un mot de passe fort sur [motdepasse.xyz](https://www.motdepasse.xyz/)
 3. Créez le hash bcrypt sur [bcrypt.fr](https://www.bcrypt.fr/)

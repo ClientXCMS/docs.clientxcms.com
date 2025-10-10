@@ -48,7 +48,6 @@ La boutique est accessible publiquement à l'adresse :
 `https://votre-site.com/store`
 
 L'interface présente :
-
 - Une vue d'ensemble des groupes de produits disponibles
 - Un système de navigation intuitif par catégories
 - Des fiches produits détaillées avec prix et options
@@ -60,7 +59,6 @@ L'interface présente :
 ### Vue administrateur
 
 L'interface d'administration vous permet de :
-
 - Gérer l'ensemble des produits et groupes
 - Suivre les commandes et les paiements
 - Configurer les promotions et réductions
@@ -120,7 +118,6 @@ Une commande passe par plusieurs états :
 ### Automatisation
 
 ClientXCMS automatise plusieurs processus :
-
 - Création des services après paiement
 - Envoi des emails de confirmation
 - Génération des factures
@@ -132,7 +129,6 @@ ClientXCMS automatise plusieurs processus :
 ### Modules de provisioning
 
 La boutique s'intègre avec de nombreux modules :
-
 - **Pterodactyl** : Hébergement de serveurs de jeux
 - **Proxmox** : Création de VPS
 - **Plesk** : Hébergement web managé
@@ -142,7 +138,6 @@ La boutique s'intègre avec de nombreux modules :
 ### Passerelles de paiement
 
 Plusieurs options sont disponibles :
-
 - **PayPal** : Standard et Express Checkout
 - **Stripe** : Cartes bancaires et wallets
 - **Virement bancaire** : Paiements manuels

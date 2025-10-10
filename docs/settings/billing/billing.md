@@ -121,7 +121,7 @@ Notes utiles :
 - `_url`, `invoiceurl` ou `service_url` : liens internes vers la facture ou le service concerné.
 - Les valeurs sont envoyées en tant que chaînes. Adaptez la conversion (montant, devise…) selon votre intégration.
 
-## Amélorations des services
-**Ajouter des frais de configuration lors d'un amélioration** : Cela permet d'appliquer les frais d'installation lors d'un amélioration de service.
+**Taux de TVA par défaut** | (pourcentage)<br />
+Le taux appliqué par défaut si aucun taux spécifique n'est défini.
 
 **Délais minimum en jours pour forcer le renouvellement avec une amélioration** : Cela permet de forcer le renouvellement d'un service avec une amélioration si le nombre de jours restant est inférieur à ce nombre de jours.
