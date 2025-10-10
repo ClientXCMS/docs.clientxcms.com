@@ -17,12 +17,12 @@ Nous conseillons d'avoir au minimum 100 Mo d'espace disque pour l'installation d
 Si vous souhaitez un VPS optimisé pour ClientXCMS, nous vous recommandons de vous tourner vers [CTXHosting](https://ctxhosting.fr). Notre filiale propose des VPS optimisés pour ClientXCMS.
 :::
 ### PHP
-ClientXCMS nécessite PHP 8.3 ou supérieur. Vous pouvez vérifier la version de PHP installée sur votre serveur en utilisant la commande suivante :
+ClientXCMS nécessite PHP 8.1 ou supérieur mais il est recommandé d'utiliser PHP 8.3 ou supérieur. Vous pouvez vérifier la version de PHP installée sur votre serveur en utilisant la commande suivante :
 ```bash
 php -v
 ```
 :::warning
-ClientXCMS ne supporte pas les versions de PHP inférieures à 8.3.
+ClientXCMS ne supporte pas les versions de PHP inférieures à 8.0.
 :::
 #### Extensions PHP
 | Extensions | Extensions |
@@ -46,7 +46,7 @@ phpinfo();
 Pour installer les extensions manquantes, vous pouvez utiliser la commande suivante :
 ```bash
 sudo apt-get update
-sudo apt-get install php8.3 php8.3-bcmath php8.3-ctype php8.3-fileinfo php8.3-json php8.3-mbstring php8.3-openssl php8.3-pdo php8.3-tokenizer php8.3-xml
+sudo apt-get install php8.1 php8.1-bcmath php8.1-ctype php8.1-fileinfo php8.1-json php8.1-mbstring php8.1-openssl php8.1-pdo php8.1-tokenizer php8.1-xml php8.1-curl php8.1-zip php8.1-intl
 ```
 
 ### Base de données

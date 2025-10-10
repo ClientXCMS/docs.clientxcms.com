@@ -244,24 +244,6 @@ Stripe propose une tarification claire :
 | **Pas de frais cachés** | Transparence totale sur la tarification         |
 | **Facturation claire** | Rapports détaillés des frais                     |
 
-=======
-
-## Support et ressources
-
-### Documentation Stripe
-
-Stripe propose la meilleure documentation du secteur :
-- **Guides détaillés** pour chaque fonctionnalité
-- **Exemples de code** dans tous les langages
-- **API référence** interactive
-- **Tutorials vidéo** officiels
-
-### Support technique
-
-* **Centre d'aide** ultra-complet
-* **Chat support** 24/7 pour les comptes live
-* **Documentation développeur** de référence
-* **Communauté active** sur GitHub et forums
 
 :::tip À retenir
 Stripe représente l'**excellence absolue** dans le paiement par carte avec une technologie inégalée, des outils exceptionnels et une fiabilité légendaire. C'est le choix premium pour les entreprises exigeantes.

@@ -3,15 +3,17 @@ sidebar_position: 3
 ---
 # Cloud
 
-Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions cloud sur les serveurs de CLIENTXCMS. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS.
+Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions cloud sur les serveurs de CLIENTXCMS. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. Cela vous permet de bénéficier d'une installation optimisée et de mises à jour automatiques. Cette méthode est disponible pour toutes les licences Premium et Entreprise.
+
 ## Domaine
 Lors de la commande de votre licence, vous avez dû renseigner un nom de domaine. Ce nom de domaine sera utilisé pour l'installation de l'espace client. Si vous n'avez pas encore commandé de licence, rendez-vous sur [cette page](https://clientxcms.com/pricing) pour la commander.
 
 Si vous souhaitez installer l'espace client sur un sous-domaine, vous pouvez le faire en renseignant le sous-domaine dans la section "Changer le domaine" de votre espace client.
 
 ## Installation
-La première étape est de selectionner le type de licence que vous souhaitez installer, dans notre cas la première option.
-![Choix de la licence](/img/next_gen/Installation/Cloud/type.png)
+La première étape est d'activer l'offre cloud depuis votre espace client. Pour cela, rendez-vous sur la page "Mes Services" et cliquez sur le bouton "Cloud" dans les onglets de navigation.
+
+![Activation Cloud](/img/next_gen/Installation/Cloud/activation.png)
 
 Après ceci, le système va vous indiquer le serveur sur lequel votre espace client sera installer vous devez simplement relier votre domaine aux serveurs de CLIENTXCMS. Pour cela, récupérez l'enregistrement CNAME fourni par le système et ajoutez-le à votre domaine.
 
@@ -65,7 +67,7 @@ Il faudra au préalable ajouter un enregistrement CNAME pour le nouveau domaine.
 La modification du domaine est possible tout les 60 jours. Pour les changements de sous-domaine, cela n'est pas considéré comme un changement de domaine.
 :::
 ## Réinstallation de l'instance
-Si vous souhaitez réinstaller votre espace client, vous pouvez le faire depuis votre espace client. Pour cela, rendez-vous sur la page "Réinitialisation" et cliquez sur le bouton "Réinstaller".
+Si vous souhaitez réinstaller votre espace client, vous pouvez le faire depuis votre espace client. Pour cela, rendez-vous sur la page "Cloud" et cliquez sur le bouton "Réinstaller".
 Il vous sera demandé de confirmer la réinstallation. Une fois confirmé, le système va réinstaller l'espace client sur votre domaine.
 ![Réinstallation](/img/next_gen/Installation/Cloud/reinstall.png)
 
