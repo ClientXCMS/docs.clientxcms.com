@@ -149,32 +149,6 @@ Configurez une URL pour recevoir des notifications en temps réel sur les évén
 - **Réponse client** ajoutée
 - **Ticket fermé** 
 
-### Organisation sécurisée
-```
-Fermeture automatique : 5 jours
-Ré-ouverture : 0 (désactivée)
-Pièces jointes : Activées (2 Mo)
-Types autorisés : jpg,png,pdf,txt
-Webhook : Système audit interne
-```
-
-## Optimisation des performances
-
-### Surveillance des métriques
-
-Analysez régulièrement :
-- **Taux de ré-ouverture** : Indicateur de qualité des résolutions
-- **Temps de fermeture** : Efficacité des automatisations
-- **Volume de pièces jointes** : Impact sur l'espace disque
-- **Types de fichiers** : Adaptation aux besoins réels
-
-### Maintenance préventive
-
-1. **Nettoyage périodique** : Supprimez les vieux fichiers
-2. **Révision des paramètres** : Ajustez selon l'évolution
-3. **Tests webhook** : Vérifiez la connectivité régulièrement
-4. **Formation équipe** : Assurez-vous que tous maîtrisent les paramètres
-
 :::tip À retenir
 Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui fonctionne pour une petite équipe peut ne pas convenir à une organisation plus importante. Révisez et ajustez régulièrement selon vos métriques et retours d'expérience.
 :::
