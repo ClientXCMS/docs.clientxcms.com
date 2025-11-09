@@ -437,5 +437,3 @@ sudo chmod -R 775 storage/logs
 ```
 
 Cela peut également venir des cron jobs qui s'exécutent avec un utilisateur différent. Assurez-vous que les permissions sont correctement définies pour tous les utilisateurs qui pourraient accéder à ces fichiers.
-
-### Problème de fichier 
