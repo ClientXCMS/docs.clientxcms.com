@@ -327,14 +327,14 @@ sudo apt install supervisor
 Ensuite, créez un fichier de configuration `/etc/supervisor/conf.d/clientxcms-worker.conf` :
 
 ```ini
-[program:laravel-worker]
+[program:clientxcms-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/clientxcms/artisan queue:work --daemon
+command=php /var/www/clientxcms/artisan queue:work --sleep=3 --tries=3 --timeout=90
 autostart=true
 autorestart=true
 numprocs=1
 redirect_stderr=true
-stdout_logfile=/var/log/laravel-worker.log
+stdout_logfile=/var/log/clientxcms-worker.log
 ```
 
 Recharge et démarre Supervisor :
@@ -412,3 +412,13 @@ Si vous avez des problèmes du jour au lendemain, vous avez problablement un pro
 php artisan cache:clear
 ```
 ou vous pouvez vérifier les permissions de votre dossier de cache (storage/framework/cache).
+
+### Problème de permissions sur le dossier de logs
+Si vous avez régulièrement des problèmes de permissions dans le dossier de logs, cela vient problablement que vous avez executer des commandes avec un utilisateur différent de celui utilisé par le serveur web (www-data sur Debian/Ubuntu). Pour régler ce problème, vous pouvez exécuter la commande suivante pour donner les bonnes permissions :
+```bash 
+sudo chmod -R 775 storage/logs
+```
+
+Cela peut également venir des cron jobs qui s'exécutent avec un utilisateur différent. Assurez-vous que les permissions sont correctement définies pour tous les utilisateurs qui pourraient accéder à ces fichiers.
+
+### Problème de fichier 
