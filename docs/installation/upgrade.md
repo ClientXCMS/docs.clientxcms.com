@@ -5,15 +5,15 @@ L'espace est régulièrement mis à jour pour corriger des bugs, ajouter de nouv
 
 La mise à jour de l'espace client en cloud est automatique. Vous n'avez rien à faire, l'espace client se mettra à jour automatiquement.
 
-## Autohébergement & Plesk
+## Autohébergement
 
-La mise à jour de l'espace client en autohébergement est manuelle. Vous devez remplacer les fichiers de l'espace client par les nouveaux fichiers. Pour cela, vous devez faire une demande téléchargement.
+La mise à jour de l'espace client en autohébergement est manuelle. Vous devez remplacer les fichiers de l'espace client par les nouveaux fichiers.
 
 :::warning
 Nous vous recommandons de faire une sauvegarde de votre espace client et de la base de données avant de commencer une mise à jour.
 ::: 
 
-Pour mettre à jour l'espace client, vous devez suivre les étapes suivantes :
+Pour mettre à jour ClientXCMS, vous devez suivre les étapes suivantes :
 1. Téléchargez les fichiers de la nouvelle version de l'espace client.
 2. Mettre votre espace client en maintenance.
 3. Décompressez le fichier téléchargé.
