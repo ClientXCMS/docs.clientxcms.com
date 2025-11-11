@@ -147,7 +147,69 @@ Configurez une URL pour recevoir des notifications en temps réel sur les évén
 #### Types d'événements notifiés
 - **Nouveau ticket** créé
 - **Réponse client** ajoutée
-- **Ticket fermé** 
+- **Ticket fermé** ou résolu
+- **Escalade** vers un département
+- **Pièce jointe** uploadée
+
+#### Configuration webhook Discord
+
+Exemple d'intégration avec Discord :
+
+1. **Créer un webhook** dans votre serveur Discord
+2. **Copier l'URL** générée
+3. **Coller dans le champ** URL du webhook
+4. **Tester** avec un ticket de démonstration
+
+#### Format des notifications
+
+Les notifications incluent :
+```json
+{
+  "ticket_id": 123,
+  "subject": "Problème de connexion",
+  "department": "Technique",
+  "priority": "high",
+  "client": "john@example.com",
+  "status": "open"
+}
+```
+
+### Intégrations populaires
+
+**Discord** : Notifications dans canal dédié
+**Slack** : Messages dans workspace équipe
+**Microsoft Teams** : Alertes dans channel support
+**Zapier** : Automatisation avec 1000+ services
+**API personnalisée** : Intégration avec vos outils internes
+
+## Exemples de configuration
+
+### Startup agile
+```
+Fermeture automatique : 3 jours
+Ré-ouverture : 7 jours
+Pièces jointes : Activées (5 Mo)
+Types autorisés : jpg,png,pdf,txt
+Webhook : Discord équipe
+```
+
+### Entreprise établie
+```
+Fermeture automatique : 7 jours
+Ré-ouverture : 14 jours
+Pièces jointes : Activées (10 Mo)
+Types autorisés : jpg,png,pdf,doc,docx,txt,log
+Webhook : Système CRM
+```
+
+### Support technique spécialisé
+```
+Fermeture automatique : 14 jours
+Ré-ouverture : -1 (illimitée)
+Pièces jointes : Activées (25 Mo)
+Types autorisés : jpg,png,pdf,txt,log,zip,sql,json
+Webhook : Slack + monitoring
+```
 
 ### Organisation sécurisée
 ```
