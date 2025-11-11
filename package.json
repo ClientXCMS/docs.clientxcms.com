@@ -17,7 +17,7 @@
     "prod": "docusaurus build && docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.2",
+    "@docusaurus/core": "^3.9.2",
     "@docusaurus/plugin-google-gtag": "^3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@easyops-cn/docusaurus-search-local": "^0.52.1",
@@ -48,5 +48,9 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "overrides": {
+    "cross-spawn": "7.0.6",
+    "brace-expansion": "1.1.12"
   }
 }
