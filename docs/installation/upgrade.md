@@ -9,12 +9,10 @@ La mise à jour de l'espace client en cloud est automatique. Vous n'avez rien à
 
 La mise à jour de l'espace client en autohébergement est manuelle. Vous devez remplacer les fichiers de l'espace client par les nouveaux fichiers. Pour cela, vous devez faire une demande téléchargement.
 
-:::info
-Le déploiement de la mise à jour pour les clients autohébergés est disponible une ou deux semaines après la mise à jour en cloud pour s'assurer qu'il n'y a pas de bugs critiques.
-:::
 :::warning
-Nous vous recommandons de faire une sauvegarde de votre espace client et de la base de données avant de commencer la mise à jour.
+Nous vous recommandons de faire une sauvegarde de votre espace client et de la base de données avant de commencer une mise à jour.
 ::: 
+
 Pour mettre à jour l'espace client, vous devez suivre les étapes suivantes :
 1. Téléchargez les fichiers de la nouvelle version de l'espace client.
 2. Mettre votre espace client en maintenance.
