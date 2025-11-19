@@ -56,58 +56,11 @@ Changer l'algorithme de hashage rendra **tous les mots de passe existants invali
 
 Pour plus d'informations sur la configuration des captchas, consultez la documentation [ici](/developpers/software/captcha).
 
-
-## Authentification et accès
-
-### Gestion des sessions
-
-**Délai de vérification du mot de passe** | (secondes)<br />
-Durée pendant laquelle un utilisateur peut effectuer des actions sensibles sans ressaisir son mot de passe.
-
-- **Valeur par défaut** : `10800` secondes (3 heures)
-- **Sécurité élevée** : `1800` secondes (30 minutes)
-- **Convivialité** : `21600` secondes (6 heures)
-
-### Contrôle des inscriptions
-
-**Autoriser l'inscription** | (interrupteur)<br />
-Active ou désactive la possibilité pour de nouveaux utilisateurs de créer un compte.
-Désactivez cette option pour une plateforme sur invitation uniquement.
-
-**Confirmation automatique de l'inscription** | (interrupteur)<br />
-Détermine si les nouveaux comptes sont automatiquement activés ou nécessitent une validation manuelle.
-
-- **Activé** : Les utilisateurs peuvent se connecter immédiatement
-- **Désactivé** : Validation manuelle requise par un administrateur
-
-**Autoriser la réinitialisation du mot de passe** | (interrupteur)<br />
-Permet aux utilisateurs de réinitialiser leur mot de passe via e-mail.
-Désactivez uniquement si vous gérez les mots de passe manuellement.
-
-### Contrôle d'accès global
-
-**Forcer la connexion** | (interrupteur)<br />
-Oblige tous les visiteurs à s'authentifier pour accéder à n'importe quelle page de la plateforme.
-Idéal pour une plateforme privée ou en développement.
-
-## Filtrage et protection anti-spam
-
-### Emails bannis
-
-**Emails bannis** | (liste, séparée par des virgules)<br />
-Bloquez les domaines ou adresses e-mail spécifiques pour prévenir le spam et les inscriptions malveillantes.
-
-**Exemples d'utilisation** :
-
-```
-# Domaines temporaires
-mailinator.com, yopmail.com, 10minutemail.com
-
-# Domaines spécifiques  
-spam@example.com, fake-domain.xyz
-
-# Patterns de domaines
-*.temp-mail.org, *.disposable.email
+### Problème de connection avec un captcha mal configuré
+Si vous avez un problème de connexion à cause d'un captcha mal configuré, vous pouvez désactiver temporairement le captcha vous connectant à votre base de données et en modifiant la valeur `captcha_driver` dans la table `settings` à `none`. Cela désactivera le captcha et vous permettra de vous connecter à votre espace client pour corriger la configuration du captcha.
+Commande SQL à exécuter :
+```sql
+UPDATE settings SET value = 'none' WHERE `key` = 'captcha_driver';
 ```
 
 **Cas d'usage courants** :
