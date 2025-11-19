@@ -234,3 +234,52 @@ jpg,jpeg,png,pdf,txt
 - Scannez les fichiers avec un antivirus
 - Vérifiez régulièrement les uploads suspects
 :::
+
+
+### Entreprise établie
+```
+Fermeture automatique : 7 jours
+Ré-ouverture : 14 jours
+Pièces jointes : Activées (10 Mo)
+Types autorisés : jpg,png,pdf,doc,docx,txt,log
+Webhook : Système CRM
+```
+
+### Support technique spécialisé
+```
+Fermeture automatique : 14 jours
+Ré-ouverture : -1 (illimitée)
+Pièces jointes : Activées (25 Mo)
+Types autorisés : jpg,png,pdf,txt,log,zip,sql,json
+Webhook : Slack + monitoring
+```
+
+### Organisation sécurisée
+```
+Fermeture automatique : 5 jours
+Ré-ouverture : 0 (désactivée)
+Pièces jointes : Activées (2 Mo)
+Types autorisés : jpg,png,pdf,txt
+Webhook : Système audit interne
+```
+
+## Optimisation des performances
+
+### Surveillance des métriques
+
+Analysez régulièrement :
+- **Taux de ré-ouverture** : Indicateur de qualité des résolutions
+- **Temps de fermeture** : Efficacité des automatisations
+- **Volume de pièces jointes** : Impact sur l'espace disque
+- **Types de fichiers** : Adaptation aux besoins réels
+
+### Maintenance préventive
+
+1. **Nettoyage périodique** : Supprimez les vieux fichiers
+2. **Révision des paramètres** : Ajustez selon l'évolution
+3. **Tests webhook** : Vérifiez la connectivité régulièrement
+4. **Formation équipe** : Assurez-vous que tous maîtrisent les paramètres
+
+:::tip À retenir
+Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui fonctionne pour une petite équipe peut ne pas convenir à une organisation plus importante. Révisez et ajustez régulièrement selon vos métriques et retours d'expérience.
+:::
