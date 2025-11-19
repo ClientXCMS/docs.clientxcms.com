@@ -32,3 +32,16 @@ Les anciens mots de passe ne seront pas compatibles avec le nouveau driver. Vous
 **Clé secrète** : Clé secrète pour le captcha.
 
 Pour plus d'informations sur la configuration des captchas, consultez la documentation [ici](/developpers/software/captcha).
+
+### Problème de connection avec un captcha mal configuré
+Si vous avez un problème de connexion à cause d'un captcha mal configuré, vous pouvez désactiver temporairement le captcha vous connectant à votre base de données et en modifiant la valeur `captcha_driver` dans la table `settings` à `none`. Cela désactivera le captcha et vous permettra de vous connecter à votre espace client pour corriger la configuration du captcha.
+Commande SQL à exécuter :
+```sql
+UPDATE settings SET value = 'none' WHERE `key` = 'captcha_driver';
+```
+
+Vous pouvez ensuite vider le cache de l'application en exécutant la commande suivante dans votre terminal à la racine de votre projet :
+```bash
+php artisan cache:clear
+```
+Vous devriez maintenant pouvoir vous connecter à votre espace client et corriger la configuration du captcha.
