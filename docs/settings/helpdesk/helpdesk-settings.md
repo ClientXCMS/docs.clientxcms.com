@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 ```json
 {
    "payload": {
-        "action": "create",
+        "action": "helpdesk_create",
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 ```json
 {
    "payload": {
-        "action": "ticket_closed",
+        "action": "helpdesk_closed",
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
@@ -63,7 +63,7 @@ import TabItem from '@theme/TabItem';
 ```json
 {
     "payload": {
-        "action": "answered_staff",
+        "action": "helpdesk_answered_staff",
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
@@ -83,7 +83,7 @@ import TabItem from '@theme/TabItem';
 ```json
 {
     "payload": {
-        "action": "answered_customer",
+        "action": "helpdesk_answered_customer",
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",

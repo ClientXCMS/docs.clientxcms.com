@@ -60,6 +60,46 @@ Voici un aperçu d'un webhook discord :
 
 ![img](https://cdn.clientxcms.com/ressources/docs/order.png)
 
+**URL du webhook** : URL de votre endpoint pour recevoir les notifications de paiement (POST JSON). Utilisez une URL en HTTPS si possible.
+
+- Si l'URL fournie est un webhook Discord (ex. https://discord.com/api/webhooks/xxxxx), les notifications apparaîtront automatiquement sous forme d'embed (capture ci‑dessus).
+- Si vous utilisez un webhook personnalisé, CLIENTXCMS enverra une requête HTTP POST avec un payload JSON structuré. Exemple :
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+	<TabItem value="checkout_completed" label="Commande payée">
+
+
+```json
+{
+    "payload": {
+        "action": "checkout_completed",
+        "_url": "https://example.com/admin/invoices/42",
+        "invoiceurl": "https://example.com/admin/invoices/42",
+        "customer_url": "https://example.com/admin/customers/1",
+        "customername": "Martin Dev",
+        "customeremail": "test@clientxcms.com",
+        "basketid": "BASK-123",
+        "total": "199.99",
+        "currency": "€",
+        "gatewayname": "Stripe",
+        "productnames": "VPS Pro, Sauvegarde avancée"
+    }
+}
+```
+	</TabItem>
+
+
+</Tabs>
+
+Notes utiles :
+
+- `action` : identifie l'événement envoyé (`checkout_completed`, `service_upgraded`, etc.).
+- `_url`, `invoiceurl` ou `service_url` : liens internes vers la facture ou le service concerné.
+- Les valeurs sont envoyées en tant que chaînes. Adaptez la conversion (montant, devise…) selon votre intégration.
+
 ## Amélorations des services
 **Ajouter des frais de configuration lors d'un amélioration** : Cela permet d'appliquer les frais d'installation lors d'un amélioration de service.
 

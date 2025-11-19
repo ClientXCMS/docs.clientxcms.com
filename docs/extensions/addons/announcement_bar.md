@@ -5,6 +5,10 @@ sidebar_position: 1
 # Announcement Bar
 L'addon Announcement Bar permet d'afficher une barre de notification en haut de votre site web pour informer vos utilisateurs des nouveautés, promotions ou alertes importantes.
 
+:::warning
+Cet addon nécessite une version v2.14.9 ou supérieure de ClientXCMS.
+:::
+
 ## Configuration
 Vous pouvez gérer la configuration de l'announcement bar dans `Espace d'administration ` > `Paramètres` > `Personalisations ` > `Bandeau d'annonce`
 
