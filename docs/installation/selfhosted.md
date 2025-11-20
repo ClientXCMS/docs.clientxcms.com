@@ -1,6 +1,10 @@
 ---
 sidebar_position: 5
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Autohébergement
 
 Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](./cloud).
@@ -21,10 +25,11 @@ Créez un dossier d'installation pour votre CMS si vous n'avez pas encore de ser
 ```bash
 mkdir /var/www/clientxcms
 ```
-## Téléchargement de l'archive
-unzip clientxcms.zip -d /var/www/clientxcms
+## Téléchargement du code source
 
-Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub avec la commande suivante :
+<Tabs>
+  <TabItem value="archive" label="Archive ZIP">
+Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub :
 ```bash
 curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/archive/refs/heads/master.zip
 ```
@@ -42,6 +47,21 @@ Si vous n'avez pas installé ZIP, vous pouvez l'installer avec la commande suiva
 sudo apt-get install zip unzip
 ```
 :::
+  </TabItem>
+  <TabItem value="git" label="Git">
+Si vous préférez travailler avec Git, clonez directement le dépôt officiel :
+```bash
+cd /var/www
+git clone https://github.com/ClientXCMS/ClientXCMS.git clientxcms
+cd /var/www/clientxcms
+```
+
+Vous pourrez ensuite mettre à jour votre instance très simplement :
+```bash
+git pull origin master
+``` 
+  </TabItem>
+</Tabs>
 
 ## Mise en place de l'environnement
 Créez un fichier `.env` en utilisant la commande suivante :
@@ -98,9 +118,6 @@ Vous pouvez maintenant vous connecter à MySQL en utilisant la commande suivante
 mysql -u root -p
 ```
 ## Mise en place du serveur web
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="apache" label="Apache">
