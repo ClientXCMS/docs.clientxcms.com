@@ -173,6 +173,10 @@ Exemple de description en HTML
 Prenez le temps de rédiger un **nom clair** et une **description engageante**. C’est souvent le premier contact qu’a un client avec votre service. Une bonne présentation peut faire toute la différence – et améliorer votre référencement naturel.
 :::
 
+:::tip Astuce
+Certain thème supporte les descriptions personnalisées dans les mêtadata du produit. Plus d'informations dans la documentation du thème utilisé. Vous pouvez générer les descriptions avec ce [outil en ligne](https://cdn.clientxcms.com/ressources/simulator).
+:::
+
 ## Configuration des prix
 
 Chaque cycle de facturation peut avoir :

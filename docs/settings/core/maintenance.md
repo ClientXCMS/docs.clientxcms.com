@@ -5,23 +5,15 @@ sidebar_position: 4
 import ThemedImage from '@theme/ThemedImage';
 
 # Maintenance
-
-Dans **CLIENTXCMS**, le mode **maintenance** est un outil essentiel pour **gérer les périodes d'indisponibilité de votre plateforme**. <br/>
-L'objectif est clair : **informer vos clients de manière professionnelle** lors de travaux techniques tout en **gardant le contrôle de votre système**. Une bonne gestion de la maintenance permet de maintenir la confiance de vos clients, même pendant les interruptions de service, et de garantir une communication transparente.
-
-Le mode maintenance est particulièrement utile lors de mises à jour importantes, de migrations de données ou de résolutions de problèmes techniques.
-
-Vous pouvez gérer la maintenance depuis :
-
-`Paramètres` > `Paramètres généraux` > `Maintenance`
-
-<ThemedImage
-  alt="Accès à la configuration de la maintenance"
-  sources={{
-    light: '/img/next_gen/settings/core/maintenance/maintenance.png',
-    dark: '/img/next_gen/settings/core/maintenance/maintenance_dark.png'
-  }}
-/>
+Le système de maintenance vous permet de mettre votre **ClientXCMS** en mode maintenance. Cela signifie que votre **CLIENTXCMS** sera inaccessible pour les utilisateurs pendant la période de maintenance.
+Il permet d'informer les utilisateurs de la raison de la maintenance et de la durée estimée de la maintenance. Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Paramètres généraux` et enfin dans `Maintenance`.
+![Maintenance](/img/next_gen/settings/core/maintenance/maintenance.png)
+- **Activer la maintenance** : Activez ou désactivez la maintenance.
+- **Message de maintenance** : Le message de maintenance qui sera affiché aux utilisateurs.
+- **URL de maintenance** : L'URL pour passer outre la maintenance.
+- **Texte du bouton de maintenance** : Le texte du bouton pour passer outre la maintenance.
+- **URL de l'image de maintenance** : L'URL de l'image de maintenance.
+- **Icone de maintenance** : L'icone de maintenance.
 
 :::tip Astuce
 Le mode maintenance est votre **bouclier de protection** pendant les opérations sensibles.

@@ -1,10 +1,9 @@
 ---
 sidebar_position: 0
 ---
-
 # Boutique
 
-La **boutique** est le cœur commercial de **CLIENTXCMS**. C'est ici que vos clients découvrent vos services, comparent vos offres et passent commande. <br/>
+La **boutique** est le cœur commercial de **CLIENTXCMS**. C'est ici que vos clients découvrent vos services, comparent vos offres et passent commande.
 L'objectif est clair : **créer une expérience d'achat fluide et professionnelle** qui transforme vos visiteurs en clients satisfaits.
 
 La boutique est un écosystème complet qui regroupe plusieurs éléments essentiels : les produits, les groupes, les coupons, les moyens de paiement et la facturation.
@@ -73,26 +72,27 @@ L'interface d'administration vous permet de :
 Pour configurer votre boutique, suivez ces étapes dans l'ordre :
 
 1. **Configurer la facturation**
+
    - Définir les informations légales
    - Paramétrer le préfixe des factures
    - Configurer les CGV
-
 2. **Créer les groupes de produits**
+
    - Organiser la structure de votre catalogue
    - Définir les catégories principales
    - Ajouter les descriptions et images
-
 3. **Ajouter les produits**
+
    - Créer vos offres de services
    - Définir les prix et cycles de facturation
    - Configurer les options techniques
-
 4. **Activer les moyens de paiement**
+
    - Configurer au minimum une passerelle
    - Tester les transactions
    - Vérifier les webhooks
-
 5. **Créer des promotions (optionnel)**
+
    - Définir des coupons de réduction
    - Planifier des campagnes commerciales
 
@@ -106,14 +106,14 @@ Assurez-vous d'avoir configuré au moins un moyen de paiement actif avant d'ouvr
 
 Une commande passe par plusieurs états :
 
-| État | Description |
-|------|-------------|
-| **En attente** | Commande créée, paiement non reçu |
-| **Payée** | Paiement validé, service en cours de livraison |
-| **Active** | Service livré et opérationnel |
-| **Suspendue** | Service temporairement désactivé |
-| **Expirée** | Service arrivé à échéance |
-| **Annulée** | Commande annulée avant paiement |
+| État                | Description                                     |
+| -------------------- | ----------------------------------------------- |
+| **En attente** | Commande créée, paiement non reçu            |
+| **Payée**     | Paiement validé, service en cours de livraison |
+| **Active**     | Service livré et opérationnel                 |
+| **Suspendue**  | Service temporairement désactivé              |
+| **Expirée**   | Service arrivé à échéance                   |
+| **Annulée**   | Commande annulée avant paiement                |
 
 ### Automatisation
 
@@ -123,51 +123,6 @@ ClientXCMS automatise plusieurs processus :
 - Génération des factures
 - Rappels de renouvellement
 - Suspension en cas de non-paiement
-
-## Personnalisation de la boutique
-
-### Options d'affichage
-
-Vous pouvez personnaliser :
-- L'ordre d'affichage des groupes et produits
-- Les produits mis en avant (épinglés)
-- Les descriptions avec l'éditeur HTML
-- Les images et arrière-plans des groupes
-
-### SEO et marketing
-
-Pour optimiser votre boutique :
-- Rédigez des descriptions détaillées et uniques
-- Utilisez des URLs personnalisées (slugs)
-- Ajoutez des images de qualité
-- Créez des offres promotionnelles régulières
-
-## Bonnes pratiques
-
-### Organisation des produits
-
-- **Groupez logiquement** : Créez des catégories cohérentes
-- **Nommez clairement** : Utilisez des titres explicites
-- **Décrivez précisément** : Détaillez les caractéristiques et avantages
-- **Tarifez stratégiquement** : Proposez plusieurs cycles de facturation
-
-### Expérience client
-
-- **Simplifiez la navigation** : Limitez le nombre de clics nécessaires
-- **Soyez transparent** : Affichez clairement les prix et conditions
-- **Facilitez le paiement** : Proposez plusieurs moyens de paiement
-- **Communiquez** : Informez sur l'état des commandes
-
-### Sécurité
-
-- **Protégez les données** : Utilisez HTTPS systématiquement
-- **Validez les paiements** : Configurez correctement les webhooks
-- **Surveillez** : Vérifiez régulièrement les logs de transactions
-- **Sauvegardez** : Conservez des copies de vos configurations
-
-:::tip Conseil
-La réussite de votre boutique repose sur trois piliers : une offre claire, un parcours d'achat simple et un service client réactif. Investissez du temps dans chacun de ces aspects pour maximiser vos conversions.
-:::
 
 ## Intégrations et extensions
 
@@ -189,31 +144,8 @@ Plusieurs options sont disponibles :
 - **Solde client** : Crédit prépayé
 - **Stancer** : Solution européenne
 
-### Extensions tierces
-
-Enrichissez votre boutique avec :
-- Systèmes de tickets
-- Analyses avancées
-- Intégrations comptables
-- Outils marketing
-
-## Maintenance et optimisation
-
-### Surveillance régulière
-
-- Vérifiez les stocks de produits
-- Contrôlez les taux de conversion
-- Analysez les abandons de panier
-- Suivez les retours clients
-
-### Améliorations continues
-
-- Testez de nouvelles offres
-- Optimisez les descriptions
-- Ajustez les prix selon la demande
-- Innovez dans vos services
-
 :::info À retenir
+
 La boutique ClientXCMS est conçue pour évoluer avec votre activité. Commencez simple, puis enrichissez progressivement votre catalogue et vos fonctionnalités selon les besoins de vos clients.
 :::
 

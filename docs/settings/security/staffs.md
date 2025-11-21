@@ -1,10 +1,9 @@
 ---
 sidebar_position: 4
 ---
-
 # Personnels
 
-Dans **CLIENTXCMS**, la gestion des **comptes personnel** constitue le cœur de la sécurité administrative de votre plateforme. <br/>
+Dans **CLIENTXCMS**, la gestion des **comptes personnel** constitue le cœur de la sécurité administrative de votre plateforme.
 L'objectif est stratégique : **contrôler précisément qui peut accéder à l'administration**, **définir les niveaux d'autorisation appropriés** et **tracer toutes les activités administratives**. Une gestion rigoureuse des comptes administrateurs protège votre système contre les accès non autorisés et garantit une responsabilité claire des actions.
 
 Cette section permet de créer, gérer et surveiller tous les comptes ayant accès à l'interface d'administration.
@@ -16,7 +15,7 @@ Vous pouvez gérer les personnels depuis :
 ![Liste des comptes personnels](/img/next_gen/settings/security/staffs/staff_list.png)
 
 :::tip Astuce
-Chaque compte administrateur est une **clé d'accès** à votre système. 
+Chaque compte administrateur est une **clé d'accès** à votre système.
 Traitez-les avec le même soin que les clés de votre domicile — limitez le nombre et surveillez leur usage.
 :::
 
@@ -49,54 +48,57 @@ Pour ajouter un nouveau membre à votre équipe administrative :
 
 ### Informations du compte
 
-**Nom d'utilisateur** | (texte unique)<br />
+**Nom d'utilisateur** | (texte unique)
 Identifiant unique pour ce compte administrateur.
 Utilisez une convention claire (prénom.nom, initiales, etc.).
 
-**Prénom** | (texte)<br />
+**Prénom** | (texte)
 Prénom de la personne pour identification et personnalisation.
 
-**Nom de famille** | (texte)<br />
+**Nom de famille** | (texte)
 Nom de famille pour identification complète.
 
-**Adresse e-mail** | (e-mail unique)<br />
+**Adresse e-mail** | (e-mail unique)
 Adresse e-mail professionnelle utilisée pour :
+
 - L'authentification au système
 - Les notifications importantes
 - La récupération de mot de passe
 
 ### Configuration d'accès
 
-**Mot de passe** | (optionnel)<br />
+**Mot de passe** | (optionnel)
 Définissez un mot de passe initial ou laissez vide pour envoyer un e-mail d'activation.
 
 - **Mot de passe défini** : L'utilisateur peut se connecter immédiatement
 - **Champ vide** : Un e-mail d'activation sera envoyé
 
-**Date d'expiration** | (optionnel)<br />
+**Date d'expiration** | (optionnel)
 Définit une date limite d'utilisation du compte.
 
 - **Vide** : Compte permanent
 - **Date définie** : Accès automatiquement révoqué à cette date
 
 :::tip Bonnes pratiques
+
 - Utilisez des **comptes temporaires** pour les prestataires externes
 - Définissez des **dates d'expiration** pour les stages ou missions courtes
 - **Révisez régulièrement** les dates d'expiration
-:::
+  :::
 
 ### Personnalisation
 
-**Langue** | (menu déroulant)<br />
+**Langue** | (menu déroulant)
 Langue d'affichage de l'interface d'administration pour cet utilisateur.
 
-**Signature** | (texte)<br />
+**Signature** | (texte)
 Signature personnalisée utilisée dans :
+
 - Les réponses aux tickets de support
 - Les communications officielles
 - Les rapports générés
 
-**Rôle** | (menu déroulant)<br />
+**Rôle** | (menu déroulant)
 Définit les permissions et l'accès de l'utilisateur aux différentes sections.
 
 ## Modification d'un compte
@@ -204,63 +206,13 @@ Pour supprimer définitivement un compte :
 
 :::tip Alternative à la suppression
 Plutôt que de supprimer, considérez :
+
 - **Désactivation temporaire** avec date d'expiration passée
 - **Changement de rôle** vers un niveau sans permissions
 - **Archivage** pour conserver l'historique
-:::
-
-## Bonnes pratiques de sécurité
-
-### Principe du moindre privilège
-
-1. **Analysez les besoins** : Quelles fonctions sont nécessaires ?
-2. **Attribuez le rôle minimal** : Juste ce qu'il faut, pas plus
-3. **Révisez régulièrement** : Les besoins évoluent-ils ?
-4. **Auditez les accès** : Qui fait quoi, quand ?
-
-### Gestion des comptes temporaires
-
-- **Dates d'expiration systématiques** pour les prestataires
-- **Révision mensuelle** des comptes actifs
-- **Désactivation immédiate** en fin de mission
-- **Documentation** des raisons d'accès
-
-### Surveillance proactive
-
-- **Alertes sur connexions inhabituelles** (IP, horaires)
-- **Vérification des actions sensibles**
-- **Formation** des équipes aux bonnes pratiques
-- **Mise à jour** des mots de passe périodiquement
-
-## Exemples de configuration
-
-### Équipe restreinte
-
-```
-Admin principal : Tous droits, compte permanent
-Support client : Tickets + facturation, compte permanent  
-Stagiaire : Consultation seule, expiration 3 mois
-```
-
-### Organisation importante
-
-```
-Directeur : Tous droits, compte permanent
-Chef projet : Gestion boutique + services, permanent
-Support N1 : Tickets clients, permanent
-Support N2 : Tickets + facturation, permanent
-Prestataire : Migration données, expiration 1 mois
-```
-
-### Agence avec rotation
-
-```
-Admin agence : Tous droits sauf sécurité, permanent
-Développeur 1 : Paramètres techniques, permanent
-Développeur 2 : Boutique + contenu, temporaire 6 mois
-Client final : Consultation seule, accès limité
-```
+  :::
 
 :::tip À retenir
+
 La gestion des comptes administrateurs est un équilibre entre sécurité et praticité. Plus vous êtes rigoureux dans la gestion des accès, plus votre plateforme est sécurisée. Surveillez, auditez et adaptez régulièrement selon l'évolution de votre équipe.
 :::

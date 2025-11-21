@@ -30,47 +30,6 @@ Une sécurité robuste vous permet de :
 C'est comme avoir plusieurs verrous sur votre maison 🔒 — chaque couche de sécurité renforce la protection globale.
 :::
 
-## Composants de sécurité
-
-La sécurité de CLIENTXCMS est organisée en plusieurs domaines clés :
-
-### 🔐 Paramètres de sécurité
-Configuration des options d'authentification, hashage des mots de passe, et protections anti-spam.
-
-### 🗄️ Base de données
-Gestion sécurisée des accès à la base de données, migrations et maintenance.
-
-### 📋 Historique
-Surveillance et logging de toutes les activités critiques du système.
-
-### 👥 Personnels
-Gestion des comptes administrateurs et contrôle des accès privilégiés.
-
-## Bonnes pratiques de sécurité
-
-### Authentification forte
-- Utilisez des mots de passe complexes
-- Activez la double authentification quand disponible
-- Limitez les tentatives de connexion
-
-### Surveillance continue
-- Vérifiez régulièrement les logs
-- Surveillez les activités suspectes
-- Maintenez un historique des actions
-
-### Gestion des accès
-- Principe du moindre privilège
-- Révision périodique des permissions
-- Comptes temporaires avec expiration
-
-### Protection des données
-- Chiffrement des données sensibles
-- Sauvegardes régulières et sécurisées
-- Politique de rétention claire
-
-:::warning Important
-La sécurité est un processus continu, pas une configuration unique. Restez vigilant et mettez à jour régulièrement vos paramètres selon l'évolution des menaces.
-:::
 
 ## Navigation dans cette section
 

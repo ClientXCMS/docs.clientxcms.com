@@ -4,7 +4,7 @@ title: Nouvelle version v2.14.4
 authors: [martindev]
 tags: [version, release, clientxcms]
 ---
-# v2.14.4**
+# v2.14.4
 
 Nous sommes ravis de vous annoncer la sortie de la version **v2.14.4** de ClientXCMS, qui apporte de nombreuses améliorations et nouvelles fonctionnalités pour enrichir votre expérience utilisateur.
 ![version v2.14.4](/img/blog/versions/v2.14.4.png)

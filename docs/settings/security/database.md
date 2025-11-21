@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 ---
-
 # Base de données
 
-Dans **CLIENTXCMS**, la gestion de la **base de données** est un aspect critique de la maintenance et de la sécurité de votre plateforme. <br/>
+Dans **CLIENTXCMS**, la gestion de la **base de données** est un aspect critique de la maintenance et de la sécurité de votre plateforme.
 L'objectif est essentiel : **fournir un accès sécurisé aux données système** et **permettre les opérations de maintenance avancées** tout en **préservant l'intégrité des informations**. Cette section donne aux administrateurs expérimentés les outils nécessaires pour maintenir et mettre à jour leur installation.
 
 Cette page requiert une authentification renforcée et offre des outils de gestion de base de données pour les utilisateurs avancés.
@@ -38,22 +37,22 @@ C'est comme avoir accès au moteur de votre voiture 🔧 — puissant, mais néc
 
 Cette section affiche les informations de connexion à votre base de données MySQL/MariaDB :
 
-**Serveur de base de données** | (adresse)<br />
+**Serveur de base de données** | (adresse)
 L'adresse du serveur hébergeant votre base de données (localhost, IP, ou nom d'hôte).
 
-**Nom de la base** | (nom)<br />
+**Nom de la base** | (nom)
 Le nom de la base de données contenant toutes les tables de CLIENTXCMS.
 
-**Nom d'utilisateur** | (utilisateur)<br />
+**Nom d'utilisateur** | (utilisateur)
 L'identifiant utilisé pour se connecter à la base de données.
 
-**Mot de passe** | (masqué par défaut)<br />
+**Mot de passe** | (masqué par défaut)
 Le mot de passe de connexion, masqué par défaut pour des raisons de sécurité.
 Survolez le champ avec votre souris pour révéler temporairement le mot de passe.
 
 ### Accès PHPMyAdmin
 
-**Interface web de gestion** | (bouton d'accès)<br />
+**Interface web de gestion** | (bouton d'accès)
 Accès direct à PHPMyAdmin pour une gestion visuelle de votre base de données.
 
 :::info Disponibilité PHPMyAdmin
@@ -72,6 +71,7 @@ L'accès PHPMyAdmin est **uniquement disponible pour les instances cloud** hébe
 ### Qu'est-ce qu'une migration ?
 
 Les migrations sont des scripts qui modifient la structure de votre base de données :
+
 - Ajout de nouvelles tables
 - Modification de colonnes existantes
 - Création d'index pour les performances
@@ -79,13 +79,14 @@ Les migrations sont des scripts qui modifient la structure de votre base de donn
 
 ### Exécution des migrations
 
-**Sélection du module** | (menu déroulant)<br />
+**Sélection du module** | (menu déroulant)
 Choisissez le module ou l'extension pour lequel exécuter les migrations :
 
 - **Core** : Migrations du système principal ClientXCMS
 - **Extensions** : Migrations spécifiques aux modules installés
 
 **Processus de migration** :
+
 1. Sélectionnez le module approprié
 2. Cliquez sur **"Migrer"** pour lancer l'opération
 3. Surveillez la sortie pour détecter d'éventuelles erreurs
@@ -97,10 +98,11 @@ Choisissez le module ou l'extension pour lequel exécuter les migrations :
 Les migrations modifient la structure de votre base de données. Cette opération est **irréversible** et peut causer des dysfonctionnements si mal exécutée.
 
 **Prérequis obligatoires** :
+
 - Sauvegarde complète de la base de données
 - Environnement de test validé
 - Connaissance en administration de base de données
-:::
+  :::
 
 ### Quand utiliser les migrations
 
@@ -114,6 +116,7 @@ Les migrations modifient la structure de votre base de données. Cette opératio
 ### Principe des seeders
 
 Les seeders initialisent votre base de données avec des données par défaut :
+
 - Paramètres système standards
 - Données de démonstration
 - Valeurs de configuration par défaut
@@ -122,6 +125,7 @@ Les seeders initialisent votre base de données avec des données par défaut :
 ### Exécution des seeders
 
 **Processus de seeding** :
+
 1. Cliquez sur le bouton **"Seeder"**
 2. L'opération lance tous les seeders disponibles
 3. Les données par défaut sont insérées dans les tables appropriées
@@ -135,7 +139,7 @@ Les seeders peuvent **écraser ou dupliquer** des données existantes. Utilisez 
 - Sur une installation fraîche
 - Après avoir sauvegardé vos données
 - Si vous comprenez l'impact sur vos données actuelles
-:::
+  :::
 
 ### Cas d'usage des seeders
 
@@ -143,45 +147,6 @@ Les seeders peuvent **écraser ou dupliquer** des données existantes. Utilisez 
 - **Réinitialisation** : Pour restaurer les paramètres par défaut
 - **Développement** : Pour créer un environnement de test
 - **Démonstration** : Pour générer des données d'exemple
-
-## Bonnes pratiques de sécurité
-
-### Avant toute opération
-
-1. **Sauvegarde complète** : Exportez votre base de données
-2. **Test préalable** : Validez sur un environnement de développement
-3. **Planification** : Effectuez les opérations en période de faible activité
-4. **Documentation** : Notez les modifications effectuées
-
-### Gestion des accès
-
-1. **Principe du moindre privilège** : Limitez l'accès aux seuls administrateurs nécessaires
-2. **Audit des actions** : Surveillez qui effectue quelles opérations
-3. **Rotation des mots de passe** : Changez régulièrement les identifiants de base
-4. **Surveillance** : Monitorez les connexions à la base de données
-
-### En cas de problème
-
-1. **Ne paniquez pas** : Analysez calmement les erreurs
-2. **Consultez les logs** : Recherchez les messages d'erreur détaillés
-3. **Restaurez si nécessaire** : Utilisez votre sauvegarde de précaution
-4. **Contactez le support** : Pour les installations cloud, faites appel à l'équipe technique
-
-## Recommandations par type d'installation
-
-### Installation cloud
-
-- Utilisez l'interface fournie pour les opérations courantes
-- Contactez le support pour les migrations complexes
-- PHPMyAdmin disponible pour les opérations ponctuelles
-- Sauvegardes automatiques gérées par l'infrastructure
-
-### Installation auto-hébergée
-
-- Maîtrisez parfaitement l'administration MySQL/MariaDB
-- Mettez en place vos propres sauvegardes automatisées
-- Surveillez les performances et l'espace disque
-- Planifiez les maintenances en dehors des heures de pointe
 
 :::tip À retenir
 La gestion de base de données nécessite expertise et précaution. Ces outils sont puissants mais peuvent endommager votre installation si mal utilisés. En cas de doute, consultez un administrateur expérimenté ou le support technique.

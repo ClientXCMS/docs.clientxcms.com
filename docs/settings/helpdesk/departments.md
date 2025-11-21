@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 ---
-
 # Départements
 
-Dans **CLIENTXCMS**, les **départements** constituent l'épine dorsale de l'organisation de votre centre d'aide. <br/>
+Dans **CLIENTXCMS**, les **départements** constituent l'épine dorsale de l'organisation de votre centre d'aide.
 L'objectif est organisationnel : **structurer le support par spécialités**, **orienter efficacement les demandes** et **optimiser l'expertise de chaque équipe**. Une organisation départementale bien pensée accélère les résolutions, améliore la qualité des réponses et permet une montée en compétences ciblée.
 
 Les départements permettent de catégoriser automatiquement les tickets selon leur nature et de les diriger vers les bonnes équipes.
@@ -16,7 +15,7 @@ Vous pouvez gérer les départements depuis :
 ![Interface de gestion des départements](/img/next_gen/settings/helpdesk/departments/index_admin.png)
 
 :::tip Astuce
-Des départements bien organisés transforment le chaos des demandes en **flux de travail structuré**. 
+Des départements bien organisés transforment le chaos des demandes en **flux de travail structuré**.
 Chaque client est dirigé vers l'expert le plus qualifié pour son problème.
 :::
 
@@ -40,16 +39,17 @@ C'est comme organiser un hôpital en services spécialisés 🏥 — cardiologie
 
 CLIENTXCMS propose une structure départementale standard pour démarrer rapidement :
 
-| Département | Utilisation | Expertise requise |
-|-------------|-------------|-------------------|
-| 🔧 **Technique** | Problèmes serveurs, bugs, configurations | Informatique, développement |
-| 💰 **Facturation** | Factures, paiements, remboursements | Comptabilité, commercial |
-| 🏢 **Commercial** | Ventes, devis, négociations | Business, relation client |
-| 📋 **Général** | Demandes diverses, informations | Support généraliste |
+| Département            | Utilisation                               | Expertise requise            |
+| ----------------------- | ----------------------------------------- | ---------------------------- |
+| 🔧**Technique**   | Problèmes serveurs, bugs, configurations | Informatique, développement |
+| 💰**Facturation** | Factures, paiements, remboursements       | Comptabilité, commercial    |
+| 🏢**Commercial**  | Ventes, devis, négociations              | Business, relation client    |
+| 📋**Général**   | Demandes diverses, informations           | Support généraliste        |
 
 ### Adaptation à votre activité
 
 Ces départements par défaut peuvent être :
+
 - **Modifiés** : Changement de nom, icône, description
 - **Supprimés** : Si non pertinents pour votre activité
 - **Complétés** : Ajout de départements spécifiques
@@ -57,12 +57,14 @@ Ces départements par défaut peuvent être :
 **Exemples d'adaptations** :
 
 #### Hébergeur web
+
 - 🔧 **Technique** : Serveurs, DNS, SSL
 - 💰 **Facturation** : Paiements, renouvellements
 - 🚀 **Migration** : Transferts de sites
 - 📈 **Commercial** : Nouvelles offres
 
 #### Agence de développement
+
 - 💻 **Développement** : Bugs, nouvelles fonctionnalités
 - 🎨 **Design** : Interface, UX/UI
 - 📋 **Projet** : Planning, spécifications
@@ -83,29 +85,25 @@ Pour ajouter un nouveau département :
 
 ### Configuration du département
 
-**Nom** | (texte)<br />
+**Nom** | (texte)
 Le nom affiché dans l'interface client et administrateur.
 Utilisez un terme clair et immédiatement compréhensible.
 
 **Exemples de noms efficaces** :
+
 - ✅ "Support Technique" plutôt que "Tech"
 - ✅ "Facturation & Paiements" plutôt que "Compta"
 - ✅ "Assistance Commerciale" plutôt que "Ventes"
 
-**Icône** | (sélecteur d'icône)<br />
+**Icône** | (sélecteur d'icône)
 Représentation visuelle du département pour une identification rapide.
 
-**Icônes recommandées** :
-- 🔧 Technique : `fas fa-cogs`, `fas fa-wrench`
-- 💰 Facturation : `fas fa-dollar-sign`, `fas fa-credit-card`
-- 🏢 Commercial : `fas fa-handshake`, `fas fa-chart-line`
-- 📋 Général : `fas fa-question-circle`, `fas fa-info-circle`
-
-**Description** | (texte long)<br />
+**Description** | (texte long)
 Explication détaillée du type de demandes traitées par ce département.
 Aide les clients à choisir le bon département.
 
 **Exemple de description pour "Support Technique"** :
+
 ```
 Problèmes techniques, pannes serveur, configurations, erreurs de site, 
 questions DNS, certificats SSL, performances et optimisations.
@@ -130,37 +128,52 @@ Vous pouvez diriger automatiquement les clients vers un département via des par
 
 #### Paramètres disponibles
 
-| Paramètre | Description | Exemple de valeur |
-|-----------|-------------|-------------------|
-| `department` | ID du département | `1` (Technique) |
-| `priority` | Priorité du ticket | `low`, `medium`, `high` |
-| `subject` | Sujet pré-rempli | `Problème de connexion` |
-| `content` | Message pré-rempli | `Bonjour, j'ai un problème avec...` |
-| `related_id` | Service concerné | `123` (ID du service) |
+| Paramètre     | Description         | Exemple de valeur                      |
+| -------------- | ------------------- | -------------------------------------- |
+| `department` | ID du département  | `1` (Technique)                      |
+| `priority`   | Priorité du ticket | `low`, `medium`, `high`          |
+| `subject`    | Sujet pré-rempli   | `Problème de connexion`             |
+| `content`    | Message pré-rempli | `Bonjour, j'ai un problème avec...` |
+| `related_id` | Service concerné   | `123` (ID du service)                |
 
 #### Exemples d'URLs pré-configurées
 
-**Support technique avec contexte** :
-```
-https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Serveur+inaccessible
-```
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-**Facturation avec service lié** :
-```
-https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Question+facture
-```
+<Tabs>
+	<TabItem value="support_technique_with_contexte" label="Support technique avec contexte">
+	```
+	https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Serveur+inaccessible
+	```
+    </TabItem>
+    <TabItem value="billing_question" label="Question de facturation">
+	```
+	https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Question+facture
+	```
+    </TabItem>
+    <TabItem value="commercial_request" label="Demande commerciale">
+	```
+	https://demo.clientxcms.com/client/support/create?department=4&content=Je+souhaiterais+un+devis+pour...
+	```
+	</TabItem>
+</Tabs>
 
-**Demande commerciale** :
-```
-https://demo.clientxcms.com/client/support/create?department=4&content=Je+souhaiterais+un+devis+pour...
-```
+	Utilisez ces URLs pré-configurées pour :
+
+	- **Dans vos e-mails** : insérer un lien direct contextuel vers la création d'un ticket pré-rempli.
+	- **Sur votre site** : boutons d'aide qui ouvrent la création de ticket avec le bon département/priorité.
+	- **Dans les signatures** : proposer un accès rapide au support adapté selon la nature du message.
+	- **Automatisation** : appels depuis des scripts ou des notifications pour ouvrir un ticket lié à un service précis.
+
+	Astuce : encodez correctement les paramètres (espaces, caractères spéciaux) pour garantir le bon remplissage des champs.
 
 ### Utilisation des URLs pré-configurées
 
-**Dans vos e-mails** : Liens directs selon le contexte
-**Sur votre site** : Boutons d'aide contextuelle
-**En signature** : Accès rapide au support
-**Dans vos FAQ** : Création de ticket ciblée
+- **Dans vos e-mails** : Liens directs selon le contexte
+- **Sur votre site** : Boutons d'aide contextuelle
+- **En signature** : Accès rapide au support
+- **Dans vos FAQ** : Création de ticket ciblée
 
 ## Gestion des départements
 
@@ -183,102 +196,3 @@ Chaque département peut être traduit dans toutes les langues activées :
 - **Cohérence** avec la terminologie locale
 
 **Accès aux traductions** : Icône à droite de chaque champ
-
-### Suppression de départements
-
-**Conditions de suppression** :
-- Aucun ticket ouvert ou fermé associé
-- Aucune règle d'automatisation référençant ce département
-- Confirmation explicite de l'action
-
-**Alternative à la suppression** :
-Plutôt que supprimer, considérez :
-- **Désactivation temporaire** : Masquer sans supprimer
-- **Fusion** : Rediriger vers un autre département
-- **Archivage** : Conserver pour l'historique
-
-:::warning Attention
-La suppression d'un département est **irréversible**. Tous les liens et références seront brisés. Privilégiez la désactivation temporaire.
-:::
-
-## Stratégies d'organisation
-
-### Selon la taille d'équipe
-
-#### Petite équipe (1-3 personnes)
-```
-- Général (tout type de demande)
-- Technique (problèmes spécialisés)
-```
-
-#### Équipe moyenne (4-10 personnes)
-```
-- Technique (serveurs, bugs)
-- Commercial (ventes, devis)  
-- Facturation (paiements, comptes)
-- Général (divers)
-```
-
-#### Grande organisation (10+ personnes)
-```
-- Support N1 (premiers contacts)
-- Support N2 (problèmes complexes)
-- Facturation (comptabilité)
-- Commercial (ventes)
-- Projets (développements spécifiques)
-- Urgences (disponibilité 24/7)
-```
-
-### Selon le type d'activité
-
-#### Hébergeur
-```
-- Infrastructure (serveurs, réseau)
-- Applications (sites, e-mails)
-- Sécurité (SSL, sauvegardes)
-- Commercial (nouvelles offres)
-```
-
-#### SaaS/Logiciel
-```
-- Bugs (dysfonctionnements)
-- Fonctionnalités (demandes d'évolution)
-- Intégrations (API, webhooks)
-- Formation (aide à l'utilisation)
-```
-
-### Optimisation continue
-
-#### Métriques à surveiller
-- **Volume** par département
-- **Temps de résolution** moyen
-- **Taux de satisfaction** par équipe
-- **Transferts** entre départements
-
-#### Ajustements réguliers
-- **Répartition** selon les compétences
-- **Fusion** des départements peu actifs
-- **Division** des départements surchargés
-- **Formation** croisée des équipes
-
-## Automatisation avancée
-
-### Routage intelligent
-
-Configurez des règles pour diriger automatiquement les tickets :
-- **Mots-clés** dans le sujet → Département technique
-- **Services spécifiques** → Équipe dédiée
-- **Heures ouvrables** → Support standard vs urgences
-- **Langue client** → Équipe multilingue
-
-### Escalade automatique
-
-Définissez des processus d'escalade :
-- **Délai dépassé** → Niveau supérieur
-- **Mot-clé urgent** → Équipe prioritaire
-- **Client VIP** → Support premium
-- **Complexité élevée** → Experts spécialisés
-
-:::tip À retenir
-L'organisation en départements doit évoluer avec votre activité. Commencez simple, observez les flux de tickets, et adaptez progressivement. Une bonne organisation départementale peut diviser par deux votre temps de résolution moyen.
-:::
