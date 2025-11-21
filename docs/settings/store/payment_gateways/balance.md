@@ -108,7 +108,7 @@ Le solde client peut être alimenté de plusieurs façons :
 Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leur solde de manière autonome. Cela réduit votre charge administrative.
 :::
 
-::warning Important
+:::warning Important
 
 Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
 
