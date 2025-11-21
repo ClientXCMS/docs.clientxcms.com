@@ -40,6 +40,7 @@ Définit après combien de jours un ticket sans activité sera automatiquement f
 - **0** : Désactive la fermeture automatique
 
 :::tip Avantages de la fermeture automatique
+
 - **Nettoie automatiquement** les tickets abandonnés
 - **Maintient des statistiques** précises
 - **Libère la charge** de travail des équipes
@@ -58,6 +59,7 @@ Permet aux clients de rouvrir leurs tickets fermés pendant une période limité
 - **-1** : Ré-ouverture illimitée dans le temps
 
 **Cas d'usage** :
+
 - **7 jours** : Pour les problèmes techniques standards
 - **14 jours** : Pour les migrations ou projets complexes
 - **0** : Pour forcer de nouveaux tickets et éviter la confusion
@@ -215,22 +217,26 @@ Définit quels types de fichiers sont acceptés dans les tickets.
 **Configurations recommandées** :
 
 #### Support standard
+
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log
 ```
 
 #### Support technique avancé
+
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
 ```
 
 #### Support sécurisé (restrictif)
+
 ```
 jpg,jpeg,png,pdf,txt
 ```
 
 :::warning Sécurité des fichiers
 **Types à éviter absolument** :
+
 - `.exe, .bat, .cmd` : Fichiers exécutables
 - `.php, .js, .html` : Scripts potentiellement malveillants
 - `.scr, .pif` : Extensions souvent utilisées par les malwares
@@ -293,6 +299,7 @@ Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui f
 
 
 ### Entreprise établie
+
 ```
 Fermeture automatique : 7 jours
 Ré-ouverture : 14 jours
@@ -302,6 +309,7 @@ Webhook : Système CRM
 ```
 
 ### Support technique spécialisé
+
 ```
 Fermeture automatique : 14 jours
 Ré-ouverture : -1 (illimitée)
@@ -311,6 +319,7 @@ Webhook : Slack + monitoring
 ```
 
 ### Organisation sécurisée
+
 ```
 Fermeture automatique : 5 jours
 Ré-ouverture : 0 (désactivée)
@@ -324,6 +333,7 @@ Webhook : Système audit interne
 ### Surveillance des métriques
 
 Analysez régulièrement :
+
 - **Taux de ré-ouverture** : Indicateur de qualité des résolutions
 - **Temps de fermeture** : Efficacité des automatisations
 - **Volume de pièces jointes** : Impact sur l'espace disque
