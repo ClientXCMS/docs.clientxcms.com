@@ -4,7 +4,7 @@ title: Nouvelle version v2.14.3
 authors: [martindev]
 tags: [version, release, clientxcms]
 ---
-# v2.14.3 - Contact Update**
+# v2.14.3 - Contact Update
 
 Nous sommes ravis de vous annoncer la sortie de la version **v2.14.3** de ClientXCMS, qui apporte de nombreuses améliorations et nouvelles fonctionnalités pour enrichir votre expérience utilisateur.
 ![version v2.14.3](/img/blog/versions/v2.14.3.png)
