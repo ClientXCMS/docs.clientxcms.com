@@ -30,4 +30,13 @@ Les extensions chargées peuvent s'activer ou se désactiver dans la page Extens
 
 Pour faire simple, les modules sont utilisés comme livraison de service par exemple pour implémenter un panel de gestion comme Virtualizor, Plesk, ou Pterodactyl. Les addons sont utilisés pour ajouter des fonctionnalités supplémentaires comme des méthodes de paiement, logique, ou des pages personnalisées.
 ## Demande d'ajout au marketplace
-Pour toutes demandes, veuillez nous contacter.
+
+Vous pouvez faire la demande pour être développeur sur [https://clientxcms.com/client/resources](https://clientxcms.com/client/ressources) et ainsi proposer vos extensions à la communauté.
+![Capture d’écran création d'une extension](/img/blog/lancement-opensource/marketplace2.png)
+
+Désormais, chaque développeur peut :  
+- Créer ses propres extensions  
+- Publier et partager ses créations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)  
+- Explorer et installer facilement les extensions partagées par la communauté  
+
+Cette interface intuitive a été pensée pour simplifier la gestion et encourager l’écosystème collaboratif autour de CLIENTXCMS.

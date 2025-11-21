@@ -81,183 +81,47 @@ Le mode **inclusif** est généralement préféré pour le B2C car il évite les
 **Activation de la TVA** | (interrupteur)<br />
 Active ou désactive la gestion de la TVA sur votre boutique.
 
+**URL du webhook** : URL de votre endpoint pour recevoir les notifications de paiement (POST JSON). Utilisez une URL en HTTPS si possible.
+
+- Si l'URL fournie est un webhook Discord (ex. https://discord.com/api/webhooks/xxxxx), les notifications apparaîtront automatiquement sous forme d'embed (capture ci‑dessus).
+- Si vous utilisez un webhook personnalisé, CLIENTXCMS enverra une requête HTTP POST avec un payload JSON structuré. Exemple :
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+	<TabItem value="checkout_completed" label="Commande payée">
+
+    
+```json
+{
+    "payload": {
+        "action": "checkout_completed",
+        "_url": "https://example.com/admin/invoices/42",
+        "invoiceurl": "https://example.com/admin/invoices/42",
+        "customer_url": "https://example.com/admin/customers/1",
+        "customername": "Martin Dev",
+        "customeremail": "test@clientxcms.com",
+        "basketid": "BASK-123",
+        "total": "199.99",
+        "currency": "€",
+        "gatewayname": "Stripe",
+        "productnames": "VPS Pro, Sauvegarde avancée"
+    }
+}
+```
+	</TabItem>
+
+
+</Tabs>
+
+Notes utiles :
+
+- `action` : identifie l'événement envoyé (`checkout_completed`, `service_upgraded`, etc.).
+- `_url`, `invoiceurl` ou `service_url` : liens internes vers la facture ou le service concerné.
+- Les valeurs sont envoyées en tant que chaînes. Adaptez la conversion (montant, devise…) selon votre intégration.
+
 **Taux de TVA par défaut** | (pourcentage)<br />
 Le taux appliqué par défaut si aucun taux spécifique n'est défini.
 
-#### Modes de calcul de la TVA
-
-**Taux fixe** | Taux unique<br />
-Un seul taux de TVA appliqué à tous les clients et produits.
-Idéal pour une activité locale ou un pays unique.
-
-**Taux variable** | Selon la localisation<br />
-Le taux de TVA varie selon le pays du client.
-Essentiel pour la vente internationale et la conformité européenne.
-
-:::warning Important - Réglementation européenne
-Selon la législation européenne, pour les ventes B2C :
-- **Jusqu'à 10 000€** de ventes totales dans l'UE : TVA française
-- **Au-delà de 10 000€** : TVA du pays du client
-:::
-
-### TVA personnalisée par client
-
-Pour des cas spécifiques, vous pouvez personnaliser la TVA :
-
-| Métadonnée | Valeur | Effet |
-|------------|--------|-------|
-| `vat_percent` | `0` à `100` | Taux de TVA personnalisé |
-| `vat_disabled` | `true` | Désactive la TVA pour ce client |
-
-## Modes de facturation
-
-### Types de factures
-
-**Facture classique** | Mode standard<br />
-Les clients reçoivent directement une facture définitive après paiement.
-Adapté à la plupart des cas d'usage.
-
-**Facture proforma** | Mode pro<br />
-Les clients reçoivent d'abord une facture proforma (devis), puis une facture définitive après paiement.
-Idéal pour les commandes importantes ou les processus d'achat complexes.
-
-### Numérotation des factures
-
-**Préfixe de facture** | (texte)<br />
-Personnalisez le préfixe de vos numéros de facture.
-Par exemple : `INV-` donnera `INV-2024-08-0001`
-
-![Exemple de préfixe de facture](/img/next_gen/settings/store/billing/invoice_prefix.png)
-
-:::tip Bonnes pratiques
-- Utilisez un préfixe court et reconnaissable
-- Incluez l'année pour faciliter l'archivage
-- Respectez une logique cohérente dans le temps
-:::
-
-## Conditions commerciales
-
-### Conditions générales de vente
-
-**CGV** | (zone de texte ou lien)<br />
-Définissez vos conditions générales de vente qui seront présentées lors du processus de commande.
-Les clients devront les accepter avant de pouvoir finaliser leur achat.
-
-![Affichage des CGV lors du paiement](/img/next_gen/settings/store/billing/cgv.png)
-
-### Termes et conditions des factures
-
-**Mentions légales** | (zone de texte)<br />
-Ajoutez des mentions spécifiques qui apparaîtront sur toutes vos factures.
-Par exemple : "TVA non applicable", "Auto-entrepreneur", "Dispensé d'immatriculation".
-
-![Affichage des termes sur les factures](/img/next_gen/settings/store/billing/invoice_terms.png)
-
-## Sécurité et validation
-
-### Confirmation de compte
-
-**Forcer la confirmation pour commander** | (case à cocher)<br />
-Oblige les clients à valider leur adresse e-mail avant de pouvoir effectuer un achat.
-Recommandé pour réduire les commandes frauduleuses.
-
-## Gestion automatisée
-
-### Actions sur les factures impayées
-
-**Délai d'action** | (nombre de jours)<br />
-Définit après combien de jours les factures impayées sont traitées automatiquement.
-
-**Actions disponibles** :
-- **Annuler la facture** : Marque la facture comme annulée
-- **Supprimer la facture** : Supprime définitivement la facture
-
-Utiliser `0` désactive cette fonctionnalité.
-
-:::warning Attention
-La suppression automatique des factures peut impacter votre comptabilité. Préférez l'annulation pour conserver l'historique.
-:::
-
-## Notifications et intégrations
-
-### Webhooks de paiement
-
-**URL du webhook** | (URL)<br />
-Configurez une URL qui sera appelée automatiquement à chaque paiement réussi.
-Idéal pour intégrer avec Discord, Slack ou vos propres systèmes.
-
-#### Configuration d'un webhook Discord
-
-1. Accédez aux paramètres de votre serveur Discord
-2. Section `Intégrations` → `Créer une intégration`
-3. Nommez votre webhook et sélectionnez le canal
-4. Copiez l'URL générée
-5. Collez-la dans le champ webhook de ClientXCMS
-
-![Exemple de notification Discord](https://cdn.clientxcms.com/ressources/docs/order.png)
-
-Les webhooks permettent de :
-- Recevoir des notifications en temps réel
-- Synchroniser avec des outils externes
-- Automatiser des processus post-vente
-
-## Gestion des upgrades
-
-### Améliorations de services
-
-**Frais de configuration sur upgrade** | (case à cocher)<br />
-Applique les frais d'installation configurés lors d'une amélioration de service.
-Utile pour facturer les coûts de migration ou de reconfiguration.
-
-**Délai minimum pour renouvellement forcé** | (nombre de jours)<br />
-Force le renouvellement du service lors d'un upgrade si moins de X jours restent avant expiration.
-Évite les calculs de facturation complexes sur de courtes périodes.
-
-## Exemples de configuration
-
-### Configuration micro-entreprise (France)
-
-```
-Mode de taxe : Inclusif
-TVA : Désactivée
-Termes facture : "TVA non applicable, art. 293 B du CGI"
-Préfixe : "ME-"
-```
-
-### Configuration société soumise à TVA
-
-```
-Mode de taxe : Exclusif
-TVA : Activée (20%)
-Mode TVA : Taux variable (UE)
-Préfixe : "FACT-"
-```
-
-### Configuration boutique internationale
-
-```
-Devise : EUR
-Mode de taxe : Inclusif
-TVA : Taux variable
-Webhook : Configuré pour Slack
-```
-
-## Bonnes pratiques
-
-### Conformité légale
-
-1. **Vérifiez régulièrement** les taux de TVA en vigueur
-2. **Documentez vos choix** de configuration pour les audits
-3. **Testez les factures** avec différents profils clients
-4. **Sauvegardez** vos paramètres avant modifications
-
-### Optimisation commerciale
-
-1. **Mode inclusif** pour réduire l'abandon de panier
-2. **CGV claires** pour éviter les litiges
-3. **Webhooks configurés** pour un suivi temps réel
-4. **Préfixes cohérents** pour faciliter la comptabilité
-
-:::tip À retenir
-La facturation est le cœur financier de votre activité. Une configuration rigoureuse vous fait gagner du temps, évite les erreurs et renforce la confiance de vos clients. Investissez le temps nécessaire pour bien la paramétrer dès le début.
-:::
+**Délais minimum en jours pour forcer le renouvellement avec une amélioration** : Cela permet de forcer le renouvellement d'un service avec une amélioration si le nombre de jours restant est inférieur à ce nombre de jours.

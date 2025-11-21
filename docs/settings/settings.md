@@ -162,8 +162,7 @@ Configuration complète de votre boutique en ligne. Gérez vos produits, moyens 
 * **[Stripe](./store/payment_gateways/stripe)** : Configuration du processeur de paiement Stripe
 * **[Virement Bancaire](./store/payment_gateways/bank_transfert)** : Paramètres des virements bancaires
 * **[Stancer](./store/payment_gateways/stancer)** : Configuration du processeur Stancer
-* **Paramètres Fonds** : Gestion des transferts de fonds
-* **Carte-cadeau** : Système de cartes-cadeaux
+* **[Paramètres Fonds](../extensions/addons/fund.md)** : Gestion des transferts de fonds
 
 **[→ Configurer la boutique](./store)**
 
@@ -181,9 +180,10 @@ Configuration complète de votre boutique en ligne. Gérez vos produits, moyens 
 Configuration des modules et extensions installés sur votre plateforme. Cette section permet de gérer les paramètres spécifiques à chaque extension pour étendre les fonctionnalités de ClientXCMS.
 
 **Configuration disponible :**
-* **Extensions** : Gestion des extensions du Marketplace
-* **Discord Link** : Intégration avec Discord
-* **Double comptes** : Détection des comptes multiples
+* **[Extensions](../extensions/extensions.md)** : Gestion des extensions du Marketplace
+* **[Discord Link](../extensions/addons/discordlink.md)** : Discord OAuth2 et rôles automatiques
+* **[Discord Gift](../extensions/addons/discordgift.md)** : Distribution automatique de cartes-cadeaux Discord
+* **[Double comptes](../extensions/addons/antidoublecompt.md)** : Détection des comptes multiples
 * **Sentry** : Service de surveillance des erreurs
 * **Contacts** : Gestion des demandes de contact
 * **Paramètres des cartes cadeaux** : Configuration avancée des cartes-cadeaux

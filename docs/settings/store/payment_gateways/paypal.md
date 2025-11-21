@@ -93,9 +93,9 @@ Pour une utilisation optimale de PayPal :
 
 La passerelle PayPal nécessite quelques paramètres techniques pour fonctionner parfaitement :
 
-**Email du compte PayPal** : L'adresse de votre compte professionnel PayPal
-**URL de retour** : Automatiquement configurée par CLIENTXCMS
-**URL d'annulation** : Redirection en cas d'abandon du paiement
+- **Email du compte PayPal** : L'adresse de votre compte professionnel PayPal
+- **URL de retour** : Automatiquement configurée par CLIENTXCMS
+- **URL d'annulation** : Redirection en cas d'abandon du paiement
 
 ## Configuration des notifications (IPN)
 

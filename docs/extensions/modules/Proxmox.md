@@ -292,3 +292,6 @@ Si aucune IP n'est trouvée. Cette erreur est renvoyée.
 | `proxmox:disk-vps`         | Gère le disque pour l'installation d'un VPS.                     | -          |
 | `proxmox:installation-vps` | Gère l'installation des VPS qui doivent être installés.          | -          |
 | `proxmox:migrate-config`   | Migre la configuration de Proxmox.                               | -          |
+| `proxmox:process-post-install`     | Gère les actions post-installation des VPS.       | -          |
+
+### 

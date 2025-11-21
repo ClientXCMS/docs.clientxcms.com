@@ -15,10 +15,6 @@ const config: Config = {
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
   projectName: 'docs.clientxcms.com', // Usually your repo name.
 
-    future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -102,6 +98,9 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: 'https://clientxcms.com/resources', label: 'Ressources', position: 'left'},
+        {to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left'},
+        {to: 'https://ideas.clientxcms.com', label: 'Soumettre une idée', position: 'left'},
         {
           href: 'https://clientxcms.com',
           label: 'Retour au site',
@@ -120,7 +119,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcementBar',
-      content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
+      content: `Bienvenue sur la documentation officiel de ClientXCMS.com !  Explorez nos guides et ressources pour maîtriser pleinement notre CMS.`,
       backgroundColor: '#2c46ba',
       textColor: '#fff',
       isCloseable: false,
@@ -165,6 +164,23 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Développeurs',
+          items: [
+            {
+              label: 'Extensions',
+              href: 'https://docs.clientxcms.com/extensions',
+            },
+            {
+              label: 'Soumettre une idée',
+              href: 'https://ideas.clientxcms.com',
+            },
+            {
+              label: 'Soumettre une extension',
+              href: 'https://clientxcms.com/client/resources/submit',
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'Logo CLIENTXCMS',

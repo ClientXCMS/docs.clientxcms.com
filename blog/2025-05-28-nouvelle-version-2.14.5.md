@@ -4,7 +4,7 @@ title: Nouvelle version v2.14.5
 authors: [martindev]
 tags: [version, release, clientxcms]
 ---
-# v2.14.5 - Amélioration du centre d'aide**
+# v2.14.5 - Amélioration du centre d'aide
 
 Nous sommes ravis de vous annoncer la sortie de la version **v2.14.5** de ClientXCMS, qui apporte de nombreuses améliorations et nouvelles fonctionnalités pour enrichir votre expérience utilisateur.
 ![version v2.14.5](/img/blog/versions/v2.14.5.png)

@@ -10,7 +10,7 @@ Nous avons aujourd’hui le plaisir de vous annoncer un changement significatif 
 {/* truncate */}
 
 ![image](/img/blog/mise-en-opensource/image.png)
-=======
+<!-- truncate -->
 
 
 ### Un CMS conçu pour être ouvert à toutes et à tous

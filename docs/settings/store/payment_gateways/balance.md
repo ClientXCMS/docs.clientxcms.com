@@ -1,6 +1,6 @@
 # Balance (Crédit boutique)
 
-La passerelle **Balance** dans **CLIENTXCMS** correspond au **système de crédit boutique interne** qui permet à vos clients d'utiliser un solde prépayé pour régler leurs commandes. <br/>
+La passerelle **Balance** dans **CLIENTXCMS** correspond au **système de crédit boutique interne** qui permet à vos clients d'utiliser un solde prépayé pour régler leurs commandes.
 L'objectif est clair : **simplifier les paiements récurrents, fidéliser votre clientèle et offrir une expérience de paiement instantanée**. Un système de balance bien configuré permet à vos clients de **régler leurs achats en un clic** tout en vous garantissant un paiement sécurisé.
 
 La passerelle Balance peut être entièrement personnalisée : nom d'affichage, montant minimum, conditions d'utilisation, etc.
@@ -46,35 +46,36 @@ Le paiement par Balance suit un processus simplifié :
 
 ### Avantages pour les clients
 
-| Avantage              | Description                                        |
-|-----------------------|----------------------------------------------------|
-| **Paiement instantané** | Pas d'attente de validation bancaire            |
+| Avantage                       | Description                                         |
+| ------------------------------ | --------------------------------------------------- |
+| **Paiement instantané** | Pas d'attente de validation bancaire                |
 | **Sécurité maximale**  | Pas de saisie de données bancaires à chaque achat |
-| **Contrôle du budget** | Gestion claire des dépenses prépayées           |
-| **Simplicité d'usage** | Paiement en un clic                             |
+| **Contrôle du budget**  | Gestion claire des dépenses prépayées            |
+| **Simplicité d'usage**  | Paiement en un clic                                 |
 
 ## Configuration de la passerelle
 
 ### Paramètres recommandés
 
-**Nom de la passerelle** | (texte)<br />
+**Nom de la passerelle** | (texte)
 
 Nous recommandons d'utiliser un nom explicite comme "Crédit boutique" ou "Solde compte" pour que vos clients comprennent immédiatement de quoi il s'agit.
 
-**Montant minimal** | (montant)<br />
+**Montant minimal** | (montant)
 
 Il est **fortement conseillé de configurer le montant minimal à 0€** pour permettre l'utilisation du solde sur tous les montants, même les plus petits.
 
-**Statut** | (menu déroulant)<br />
+**Statut** | (menu déroulant)
 
 Gardez la passerelle en statut **"Actif"** pour que tous vos clients puissent l'utiliser.
 
 :::info Configuration optimale
 La configuration idéale pour la Balance est :
+
 - **Nom** : "Crédit boutique" ou "Solde compte"
 - **Montant minimal** : 0€
 - **Statut** : Actif
-:::
+  :::
 
 ### Interface de configuration
 
@@ -97,59 +98,21 @@ Pour ajouter du crédit au solde d'un client :
 
 Le solde client peut être alimenté de plusieurs façons :
 
-| Méthode                 | Description                                        |
-|------------------------|----------------------------------------------------|
-| **Ajout manuel**       | L'administrateur crédite directement le compte    |
-| **Addon Ajout de fond** | Les clients peuvent recharger leur solde eux-mêmes |
-| **Remboursements**     | Créditer le solde lors d'un remboursement        |
-| **Promotions**         | Offrir du crédit dans le cadre d'opérations marketing |
+| Méthode                      | Description                                             |
+| ----------------------------- | ------------------------------------------------------- |
+| **Ajout manuel**        | L'administrateur crédite directement le compte         |
+| **Addon Ajout de fond** | Les clients peuvent recharger leur solde eux-mêmes     |
+| **Addon carte cadeaux**      | Permet aux clients d'utiliser des cartes cadeaux pour créditer leur solde              |
 
 :::tip Conseil
 Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leur solde de manière autonome. Cela réduit votre charge administrative.
 :::
 
-## Avantages business
-
-### Pour votre trésorerie
-
-* **Paiements anticipés** : Amélioration de votre cash-flow
-* **Réduction des impayés** : Le solde est déjà encaissé
-* **Diminution des frais bancaires** : Moins de transactions par carte
-
-### Pour votre relation client
-
-* **Fidélisation** : Les clients avec du solde sont plus enclins à commander
-* **Simplicité** : Expérience de paiement optimisée
-* **Confiance** : Système transparent et sécurisé
-
-## Bonnes pratiques
-
-### Configuration recommandée
-
-* **Activez toujours** la passerelle Balance
-* **Montant minimum à 0€** pour maximiser l'usage
-* **Nom explicite** pour éviter la confusion
-* **Statut disponible** pour tous les clients
-
-### Gestion du solde
-
-* **Surveillez régulièrement** les soldes clients
-* **Proposez des bonus** de rechargement pour encourager l'usage
-* **Communiquez clairement** sur le fonctionnement du système
-* **Offrez plusieurs moyens** de recharger le solde
-
-### Intégration avec d'autres systèmes
-
-La passerelle Balance s'intègre parfaitement avec :
-- Les **coupons de réduction** (combinable)
-- Les **factures automatiques** pour les services récurrents
-- Les **remboursements** en cas d'annulation
-- Les **programmes de fidélité** via des crédits offerts
-- 
 :::warning Important
-Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
-:::
 
+Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
+
+:::
 :::tip À retenir
 La passerelle Balance est un **outil de fidélisation et d'optimisation** majeur. Elle simplifie l'expérience client tout en améliorant votre gestion financière. Encouragez son utilisation !
 :::

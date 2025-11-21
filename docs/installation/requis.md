@@ -54,4 +54,4 @@ ClientXCMS supporte nativement MySQL. Il est recommandé d'utiliser la **version
 ### Serveur web
 ClientXCMS est compatible avec la plupart des serveurs web. Il est recommandé d'utiliser [Apache ou Nginx](./selfhosted) ou un [hébergement Plesk](./plesk). 
 ### Docker
-ClientXCMS pourra bientôt être installé via Docker. Pour cela, vous aurez besoin de Docker et Docker Compose installés sur votre serveur.
+Vous pouvez également installer ClientXCMS via Docker. Pour cela, vous devez disposer de Docker et Docker Compose installés sur votre serveur. Vous pouvez suivre les instructions d'installation via Docker [ici](./docker).

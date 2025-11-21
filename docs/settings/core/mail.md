@@ -1,12 +1,11 @@
 ---
 sidebar_position: 2
 ---
-
 import ThemedImage from '@theme/ThemedImage';
 
 # Messagerie
 
-Dans **CLIENTXCMS**, la configuration de la **messagerie** est essentielle pour maintenir une **communication fluide avec vos clients**. <br/>
+Dans **CLIENTXCMS**, la configuration de la **messagerie** est essentielle pour maintenir une **communication fluide avec vos clients**.
 L'objectif est simple : **configurer correctement l'envoi des e-mails pour garantir leur délivrabilité** et offrir une **expérience professionnelle** à vos utilisateurs. Une bonne configuration améliore la fiabilité de vos communications, renforce la confiance et assure que vos messages importants arrivent bien à destination.
 
 La messagerie est utilisée pour toutes les communications automatiques : inscriptions, réinitialisations de mot de passe, notifications de commandes, factures, etc.
@@ -47,31 +46,31 @@ C'est un peu comme avoir un assistant personnel qui envoie automatiquement tous 
 
 Ces paramètres définissent comment vos e-mails apparaîtront dans la boîte de réception de vos clients :
 
-**Adresse d'envoi** | (adresse e-mail)<br />
+**Adresse d'envoi** | (adresse e-mail)
 L'adresse e-mail qui apparaîtra comme expéditeur de tous vos messages automatiques.
 Utilisez une adresse professionnelle du type `noreply@votredomaine.com` ou `support@votredomaine.com`.
 
-**Nom d'envoi** | (texte)<br />
+**Nom d'envoi** | (texte)
 Le nom qui s'affichera à côté de l'adresse d'envoi dans les clients mail.
 Généralement le nom de votre entreprise ou de votre service.
 
-**Domaine de l'espace client** | (URL)<br />
+**Domaine de l'espace client** | (URL)
 L'URL complète de votre installation CLIENTXCMS (ex: `https://demo.clientxcms.com`).
 Utilisé pour générer les liens dans les e-mails.
 
 ### Personnalisation des messages
 
-**Salutation de début** | (texte)<br />
+**Salutation de début** | (texte)
 Le message d'accueil qui apparaîtra au début de chaque e-mail.
 Par exemple : "Bonjour" ou "Cher client".
 
-**Salutation de fin** | (texte)<br />
+**Salutation de fin** | (texte)
 La signature qui apparaîtra à la fin de chaque e-mail.
 Par exemple : "Cordialement, L'équipe ClientXCMS" ou "Merci de votre confiance".
 
 ### Options avancées
 
-**Désactiver les e-mails** | (case à cocher)<br />
+**Désactiver les e-mails** | (case à cocher)
 Empêche l'envoi de tous les e-mails depuis le système.
 ⚠️ À utiliser uniquement en développement ou en maintenance.
 
@@ -79,33 +78,45 @@ Empêche l'envoi de tous les e-mails depuis le système.
 
 SMTP (Simple Mail Transfer Protocol) est le protocole standard pour l'envoi d'e-mails. Une configuration SMTP correcte garantit la délivrabilité de vos messages.
 
+### CTXMailer - service mail professionnel
+
+CLIENTXCMS propose également **CTXMailer**, une offre d'hébergement de boîtes mail entièrement intégrée :
+
+- **Inclus** dans les plans **Premium** et **Enterprise** (support + hébergement cloud)
+- **Caractéristiques** : jusqu'à 20 boîtes mail incluses, 15 Go de stockage, interface sécurisée
+- **Option** : disponible pour les autres licences à **3 € / mois**
+
+En savoir plus : https://clientxcms.com/ctxmailer
+
+:::tip
+Si vous utilisez CTXMailer, les paramètres SMTP sont fournis automatiquement et la configuration de délivrabilité (SPF/DKIM) est facilitée depuis l'espace client.
+:::
+
 ### Paramètres de connexion
 
-**Hôte SMTP** | (adresse serveur)<br />
+**Hôte SMTP** | (adresse serveur)
 L'adresse du serveur SMTP de votre fournisseur de messagerie.
-Exemples courants :
-- Gmail : `smtp.gmail.com`
-- Office 365 : `smtp.office365.com`
-- OVH : `ssl0.ovh.net`
 
-**Port SMTP** | (numéro)<br />
+**Port SMTP** | (numéro)
 Le port utilisé pour la connexion SMTP. Les ports standards sont :
+
 - `587` : Pour TLS/STARTTLS (recommandé)
 - `465` : Pour SSL
 - `25` : Port standard (souvent bloqué par les FAI)
 
-**Chiffrement SMTP** | (menu déroulant)<br />
+**Chiffrement SMTP** | (menu déroulant)
 Le type de sécurisation de la connexion :
+
 - **TLS** : Recommandé, utilise le port 587
 - **SSL** : Alternative sécurisée, utilise le port 465
 - **Aucun** : Non recommandé sauf en environnement local
 
 ### Authentification
 
-**Nom d'utilisateur SMTP** | (texte)<br />
+**Nom d'utilisateur SMTP** | (texte)
 Généralement votre adresse e-mail complète ou un identifiant fourni par votre hébergeur.
 
-**Mot de passe SMTP** | (mot de passe)<br />
+**Mot de passe SMTP** | (mot de passe)
 Le mot de passe associé à votre compte SMTP.
 Pour certains services (Gmail, Office 365), vous devrez utiliser un mot de passe d'application spécifique.
 
@@ -127,29 +138,30 @@ Après avoir configuré vos paramètres SMTP, il est **essentiel** de tester la 
   alt="Test réussi de la connexion SMTP"
   sources={{
     light: '/img/next_gen/settings/core/mail/mail_success.png',
-    dark: '/img/next_gen/settings/core/mail/mail_success_dark.png'
+    dark: '/img/next_gen/settings/core/mail/mail_success.png'
   }}
 />
 
 ### Indicateurs de succès
 
-✅ **Connexion réussie** : Message de confirmation affiché
-✅ **E-mail reçu** : Vérifiez votre boîte de réception
-✅ **Bon formatage** : L'e-mail s'affiche correctement
+- ✅ **Connexion réussie** : Message de confirmation affiché
+- ✅ **E-mail reçu** : Vérifiez votre boîte de réception
+- ✅ **Bon formatage** : L'e-mail s'affiche correctement
+
 
 ## Résolution des problèmes
 
 ### Erreurs fréquentes
 
-**"scheme is not supported"**<br />
+**"scheme is not supported"**
 Le protocole de chiffrement sélectionné n'est pas compatible avec votre serveur.
 → **Solution** : Essayez de basculer entre TLS et SSL.
 
-**"Authentication failed"**<br />
+**"Authentication failed"**
 Les identifiants fournis sont incorrects.
 → **Solution** : Vérifiez votre nom d'utilisateur et mot de passe. Pour Gmail/Office 365, utilisez un mot de passe d'application.
 
-**"Connection timeout"**<br />
+**"Connection timeout"**
 Le serveur SMTP ne répond pas.
 → **Solution** : Vérifiez l'hôte et le port. Assurez-vous que votre firewall autorise les connexions sortantes.
 

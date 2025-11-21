@@ -20,6 +20,7 @@ Deux options disponibles :
 
 * **Essai gratuit** : Le client accède gratuitement au service pendant un nombre défini de jours. À l’issue de cette période, il peut payer pour un mois d'utilisation.
 * **Amélioration** : Le client reçoit un service de base pendant l’essai. Il peut ensuite l’améliorer avec des services supplémentaires.
+* **Essaie simple** : Le client peut tester le service gratuitement pendant une période définie. À la fin de cette période, le service est automatiquement supprimé s'il n'est pas converti en achat payant.
 
   ⚠️ **Important** : Si les upgrades n’apparaissent pas sur le service, il faut sauvegarder les produits dans le groupe correspondant.
 

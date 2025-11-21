@@ -1,10 +1,9 @@
 ---
 sidebar_position: 3
 ---
-
 # Historique
 
-Dans **CLIENTXCMS**, l'**historique** et la **surveillance des logs** constituent un pilier essentiel de la sécurité et du diagnostic de votre plateforme. <br/>
+Dans **CLIENTXCMS**, l'**historique** et la **surveillance des logs** constituent un pilier essentiel de la sécurité et du diagnostic de votre plateforme.
 L'objectif est crucial : **tracer toutes les activités critiques**, **détecter les anomalies rapidement** et **faciliter le diagnostic des problèmes**. Un système de logging robuste vous permet de maintenir la sécurité, optimiser les performances et résoudre efficacement les incidents.
 
 Cette section centralise tous les fichiers de logs système, des tâches planifiées et des erreurs pour une surveillance complète.
@@ -14,7 +13,7 @@ Vous pouvez consulter l'historique depuis :
 `Paramètres` > `Sécurité` > `Historique`
 
 :::tip Astuce
-Les logs sont votre **boîte noire** système. 
+Les logs sont votre **boîte noire** système.
 Consultez-les régulièrement pour anticiper les problèmes avant qu'ils n'impactent vos utilisateurs.
 :::
 
@@ -38,16 +37,16 @@ C'est comme avoir un système de vidéosurveillance pour votre plateforme 📹 �
 
 Les tâches automatiques génèrent leurs propres fichiers de logs pour tracer leur exécution :
 
-| Fichier de log | Commande associée | Description |
-|----------------|-------------------|-------------|
-| `services-delivery.log` | `services:delivery` | Livraison automatique des services |
-| `services-expire.log` | `services:expire` | Expiration des services |
-| `services-renewals.log` | `services:renewals` | Renouvellements automatiques |
-| `helpdesk-close.log` | `clientxcms:helpdesk-close` | Fermeture automatique des tickets |
-| `notify-expiration.log` | `services:notify-expiration` | Notifications d'expiration |
-| `invoice-delete.log` | `clientxcms:invoice-delete` | Suppression automatique des factures |
-| `purge-metadata.log` | `clientxcms:purge-metadata` | Nettoyage des métadonnées |
-| `purge-basket.log` | `clientxcms:purge-basket` | Vidage des paniers abandonnés |
+| Fichier de log            | Commande associée             | Description                          |
+| ------------------------- | ------------------------------ | ------------------------------------ |
+| `services-delivery.log` | `services:delivery`          | Livraison automatique des services   |
+| `services-expire.log`   | `services:expire`            | Expiration des services              |
+| `services-renewals.log` | `services:renewals`          | Renouvellements automatiques         |
+| `helpdesk-close.log`    | `clientxcms:helpdesk-close`  | Fermeture automatique des tickets    |
+| `notify-expiration.log` | `services:notify-expiration` | Notifications d'expiration           |
+| `invoice-delete.log`    | `clientxcms:invoice-delete`  | Suppression automatique des factures |
+| `purge-metadata.log`    | `clientxcms:purge-metadata`  | Nettoyage des métadonnées          |
+| `purge-basket.log`      | `clientxcms:purge-basket`    | Vidage des paniers abandonnés       |
 
 #### Contenu des logs de tâches
 
@@ -88,21 +87,14 @@ Exemples :
 
 Pour chaque fichier de log, trois actions sont possibles :
 
-**🔽 Télécharger** | (bouton gris)<br />
+**🔽 Télécharger** | (bouton gris)
 Télécharge le fichier de log sur votre ordinateur pour analyse hors ligne.
 Utile pour archivage ou analyse avec des outils externes.
-
-**🗑️ Vider** | (bouton vert)<br />
-Efface le contenu du fichier sans le supprimer.
-Le fichier reste disponible pour les nouvelles entrées.
-
-**❌ Supprimer** | (bouton rouge)<br />
-Supprime définitivement le fichier de log.
-Attention : cette action est irréversible.
 
 ### Cas d'usage des actions
 
 #### Téléchargement
+
 - **Analyse approfondie** avec des outils externes
 - **Archivage** pour audit ou conformité
 - **Partage** avec le support technique
@@ -145,29 +137,7 @@ Attention : cette action est irréversible.
 [2024-08-15 14:24:01] INFO: Database connection restored
 ```
 
-### Signaux d'alarme
-
-🚨 **Surveillez particulièrement** :
-- Augmentation soudaine des erreurs
-- Échecs répétés de tâches planifiées
-- Tentatives de connexion administrative suspectes
-- Erreurs de base de données récurrentes
-- Timeouts et lenteurs anormales
-
-## Outils d'analyse recommandés
-
-### Analyse locale
-- **Grep/Awk** : Filtrage et recherche dans les logs
-- **Excel/LibreOffice** : Analyse statistique des tendances
-- **Notepad++** : Visualisation et recherche avancée
-
-### Outils professionnels
-- **ELK Stack** (Elasticsearch, Logstash, Kibana)
-- **Splunk** : Plateforme d'analyse de logs
-- **Graylog** : Gestion centralisée des logs
-- **Fluentd** : Collecte et traitement des logs
-
-## Dépannage courant
+### Dépannage courant
 
 ### Logs trop volumineux
 
@@ -201,8 +171,9 @@ Attention : cette action est irréversible.
 ### Réglementations
 
 Selon votre secteur d'activité :
+
 - **RGPD** : Logs d'accès aux données personnelles
-- **Comptabilité** : Logs des opérations financières  
+- **Comptabilité** : Logs des opérations financières
 - **Sécurité** : Logs d'authentification et d'accès
 
 ### Politique de rétention
