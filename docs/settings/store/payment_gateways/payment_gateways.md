@@ -2,7 +2,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Passerelles de paiement
 
-Dans **CLIENTXCMS**, une **passerelle de paiement** correspond à un **système de traitement des transactions financières** que vous proposez à vos clients dans votre boutique. `<br/>`
+Dans **CLIENTXCMS**, une **passerelle de paiement** correspond à un **système de traitement des transactions financières** que vous proposez à vos clients dans votre boutique.
 L'objectif est clair : **offrir des méthodes de paiement sécurisées, diversifiées et adaptées à votre clientèle**. Une bonne configuration des passerelles de paiement permet à vos clients de **régler leurs commandes facilement** tout en vous garantissant la sécurité des transactions.
 
 Chaque passerelle peut être entièrement personnalisée : nom d'affichage, montant minimum, statut de visibilité, paramètres de connexion, etc.

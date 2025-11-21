@@ -1,6 +1,6 @@
 # Balance (Crédit boutique)
 
-La passerelle **Balance** dans **CLIENTXCMS** correspond au **système de crédit boutique interne** qui permet à vos clients d'utiliser un solde prépayé pour régler leurs commandes. `<br/>`
+La passerelle **Balance** dans **CLIENTXCMS** correspond au **système de crédit boutique interne** qui permet à vos clients d'utiliser un solde prépayé pour régler leurs commandes.
 L'objectif est clair : **simplifier les paiements récurrents, fidéliser votre clientèle et offrir une expérience de paiement instantanée**. Un système de balance bien configuré permet à vos clients de **régler leurs achats en un clic** tout en vous garantissant un paiement sécurisé.
 
 La passerelle Balance peut être entièrement personnalisée : nom d'affichage, montant minimum, conditions d'utilisation, etc.
@@ -112,6 +112,7 @@ Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leu
 
 Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
 
+:::
 :::tip À retenir
 La passerelle Balance est un **outil de fidélisation et d'optimisation** majeur. Elle simplifie l'expérience client tout en améliorant votre gestion financière. Encouragez son utilisation !
 :::

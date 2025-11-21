@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Départements
 
-Dans **CLIENTXCMS**, les **départements** constituent l'épine dorsale de l'organisation de votre centre d'aide. `<br/>`
+Dans **CLIENTXCMS**, les **départements** constituent l'épine dorsale de l'organisation de votre centre d'aide.
 L'objectif est organisationnel : **structurer le support par spécialités**, **orienter efficacement les demandes** et **optimiser l'expertise de chaque équipe**. Une organisation départementale bien pensée accélère les résolutions, améliore la qualité des réponses et permet une montée en compétences ciblée.
 
 Les départements permettent de catégoriser automatiquement les tickets selon leur nature et de les diriger vers les bonnes équipes.

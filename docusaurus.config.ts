@@ -15,10 +15,6 @@ const config: Config = {
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
   projectName: 'docs.clientxcms.com', // Usually your repo name.
 
-    future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".

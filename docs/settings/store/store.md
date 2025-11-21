@@ -3,7 +3,7 @@ sidebar_position: 0
 ---
 # Boutique
 
-La **boutique** est le cœur commercial de **CLIENTXCMS**. C'est ici que vos clients découvrent vos services, comparent vos offres et passent commande. `<br/>`
+La **boutique** est le cœur commercial de **CLIENTXCMS**. C'est ici que vos clients découvrent vos services, comparent vos offres et passent commande.
 L'objectif est clair : **créer une expérience d'achat fluide et professionnelle** qui transforme vos visiteurs en clients satisfaits.
 
 La boutique est un écosystème complet qui regroupe plusieurs éléments essentiels : les produits, les groupes, les coupons, les moyens de paiement et la facturation.

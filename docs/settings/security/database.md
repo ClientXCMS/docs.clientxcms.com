@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Base de données
 
-Dans **CLIENTXCMS**, la gestion de la **base de données** est un aspect critique de la maintenance et de la sécurité de votre plateforme. `<br/>`
+Dans **CLIENTXCMS**, la gestion de la **base de données** est un aspect critique de la maintenance et de la sécurité de votre plateforme.
 L'objectif est essentiel : **fournir un accès sécurisé aux données système** et **permettre les opérations de maintenance avancées** tout en **préservant l'intégrité des informations**. Cette section donne aux administrateurs expérimentés les outils nécessaires pour maintenir et mettre à jour leur installation.
 
 Cette page requiert une authentification renforcée et offre des outils de gestion de base de données pour les utilisateurs avancés.

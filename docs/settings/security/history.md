@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # Historique
 
-Dans **CLIENTXCMS**, l'**historique** et la **surveillance des logs** constituent un pilier essentiel de la sécurité et du diagnostic de votre plateforme. `<br/>`
+Dans **CLIENTXCMS**, l'**historique** et la **surveillance des logs** constituent un pilier essentiel de la sécurité et du diagnostic de votre plateforme.
 L'objectif est crucial : **tracer toutes les activités critiques**, **détecter les anomalies rapidement** et **faciliter le diagnostic des problèmes**. Un système de logging robuste vous permet de maintenir la sécurité, optimiser les performances et résoudre efficacement les incidents.
 
 Cette section centralise tous les fichiers de logs système, des tâches planifiées et des erreurs pour une surveillance complète.

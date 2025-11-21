@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 # Personnels
 
-Dans **CLIENTXCMS**, la gestion des **comptes personnel** constitue le cœur de la sécurité administrative de votre plateforme. `<br/>`
+Dans **CLIENTXCMS**, la gestion des **comptes personnel** constitue le cœur de la sécurité administrative de votre plateforme.
 L'objectif est stratégique : **contrôler précisément qui peut accéder à l'administration**, **définir les niveaux d'autorisation appropriés** et **tracer toutes les activités administratives**. Une gestion rigoureuse des comptes administrateurs protège votre système contre les accès non autorisés et garantit une responsabilité claire des actions.
 
 Cette section permet de créer, gérer et surveiller tous les comptes ayant accès à l'interface d'administration.
