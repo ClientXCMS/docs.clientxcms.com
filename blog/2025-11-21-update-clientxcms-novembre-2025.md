@@ -1,6 +1,6 @@
 ---
-slug: update-clientxcms-octobre-2025
-title: Mise à jour du site CLIENTXCMS 10/2025
+slug: update-clientxcms-novembre-2025
+title: Mise à jour du site CLIENTXCMS 11/2025
 authors: [martindev]
 tags: [update, clientxcms, features, marketplace, releases]
 ---
@@ -11,7 +11,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Nous sommes heureux de vous présenter les dernières améliorations du site **clientxcms.com**, incluant de nouvelles fonctionnalités, un meilleur workflow pour la communauté, et plusieurs nouveautés côté addons & services.
 Découvrez tout ce qui a changé ces derniers jours 👇
 
-![Header mise à jour CLIENTXCMS](/img/blog/update-octobre-2025/header.png)
+![Header mise à jour CLIENTXCMS](/img/blog/update-novembre-2025/header.png)
+
 <!-- truncate -->
 
 ## CTXMailer
@@ -34,8 +35,7 @@ Pour les utilisateurs ayant une licence Community, CTXMailer est disponible en o
 
 **Aperçu CTXMailer :**
 
-![CTXMailer screenshot](/img/blog/update-octobre-2025/ctxmailer.png)
-
+![CTXMailer screenshot](/img/blog/update-novembre-2025/ctxmailer.png)
 
 ## Support des redirections multiples
 
@@ -47,8 +47,7 @@ Il est désormais possible d’ajouter **plusieurs URLs de redirection**  dans l
 
 Ces redirections facilitent la gestion de domaines, de sous-domaines et d'environsments miroir.
 
-![Capture](/img/blog/update-octobre-2025/redirects.png)
-
+![Capture](/img/blog/update-novembre-2025/redirects.png)
 
 ## Synchronisation Discord intégrée
 
@@ -68,11 +67,9 @@ Vous pouvez maintenant **lier votre compte CLIENTXCMS à Discord** afin de recev
 
 **Aperçu :**
 
-![Capture connexion Discord](/img/blog/update-octobre-2025/discord_sync.png)
-
+![Capture connexion Discord](/img/blog/update-novembre-2025/discord_sync.png)
 
 Ces rôles permettent de faciliter la gestion des accès aux salons privés, aux ressources exclusives et aux discussions réservées aux membres de la communauté CLIENTXCMS.
-
 
 ## Nouvel addon gratuit : Announcement Bar
 
@@ -91,19 +88,17 @@ Idéal pour afficher :
 
 **Aperçu :**
 
-![Preview Announcement Bar](/img/blog/update-octobre-2025/announcement_bar.png)
+![Preview Announcement Bar](/img/blog/update-novembre-2025/announcement_bar.png)
 
-
-## Contribution de la communauté : merci @Ikiae 
+## Contribution de la communauté : merci @Ikiae
 
 Un énorme merci à **@Ikiae**, qui a contribué à deux améliorations majeures :
 
 ### Nouvelle extension **Particles.js**
 
-Une extension permettant d’ajouter de magnifiques effets visuels avec `particles.js`. ✨ 
+Une extension permettant d’ajouter de magnifiques effets visuels avec `particles.js`. ✨
 
 ➡️ Disponible ici : https://clientxcms.com/resources/particules
-
 
 ![Particles.js](https://i.postimg.cc/YC5sW0bs/default.gif)
 
@@ -111,7 +106,6 @@ Une extension permettant d’ajouter de magnifiques effets visuels avec `particl
 
 Un ajout qui permet d’automatiser les étapes post-install, rendant possible la configuration avancée de vos services Proxmox.
 ➡️ Documentation : https://docs.clientxcms.com/extensions/modules/proxmox
-
 
 ## Releases GitHub automatiques
 
@@ -121,7 +115,6 @@ Le versionning a été amélioré : chaque mise à jour de CLIENTXCMS déclenche
 - un changelog clair
 - des téléchargements plus fiables
 - une meilleure organisation du projet open-source
-
 
 ## Thème Nexus & Addon Avis Client
 
