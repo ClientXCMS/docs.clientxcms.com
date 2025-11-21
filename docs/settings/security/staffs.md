@@ -48,17 +48,17 @@ Pour ajouter un nouveau membre à votre équipe administrative :
 
 ### Informations du compte
 
-**Nom d'utilisateur** | (texte unique)`<br />`
+**Nom d'utilisateur** | (texte unique)
 Identifiant unique pour ce compte administrateur.
 Utilisez une convention claire (prénom.nom, initiales, etc.).
 
-**Prénom** | (texte)`<br />`
+**Prénom** | (texte)
 Prénom de la personne pour identification et personnalisation.
 
-**Nom de famille** | (texte)`<br />`
+**Nom de famille** | (texte)
 Nom de famille pour identification complète.
 
-**Adresse e-mail** | (e-mail unique)`<br />`
+**Adresse e-mail** | (e-mail unique)
 Adresse e-mail professionnelle utilisée pour :
 
 - L'authentification au système
@@ -67,13 +67,13 @@ Adresse e-mail professionnelle utilisée pour :
 
 ### Configuration d'accès
 
-**Mot de passe** | (optionnel)`<br />`
+**Mot de passe** | (optionnel)
 Définissez un mot de passe initial ou laissez vide pour envoyer un e-mail d'activation.
 
 - **Mot de passe défini** : L'utilisateur peut se connecter immédiatement
 - **Champ vide** : Un e-mail d'activation sera envoyé
 
-**Date d'expiration** | (optionnel)`<br />`
+**Date d'expiration** | (optionnel)
 Définit une date limite d'utilisation du compte.
 
 - **Vide** : Compte permanent
@@ -88,17 +88,17 @@ Définit une date limite d'utilisation du compte.
 
 ### Personnalisation
 
-**Langue** | (menu déroulant)`<br />`
+**Langue** | (menu déroulant)
 Langue d'affichage de l'interface d'administration pour cet utilisateur.
 
-**Signature** | (texte)`<br />`
+**Signature** | (texte)
 Signature personnalisée utilisée dans :
 
 - Les réponses aux tickets de support
 - Les communications officielles
 - Les rapports générés
 
-**Rôle** | (menu déroulant)`<br />`
+**Rôle** | (menu déroulant)
 Définit les permissions et l'accès de l'utilisateur aux différentes sections.
 
 ## Modification d'un compte

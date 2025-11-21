@@ -5,7 +5,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 # Paramètres généraux
 
-Les **paramètres généraux** constituent le socle de configuration de votre **CLIENTXCMS**. C'est ici que vous définissez l'identité de votre hébergement, configurez les fonctionnalités essentielles et personnalisez l'expérience utilisateur. `<br/>`
+Les **paramètres généraux** constituent le socle de configuration de votre **CLIENTXCMS**. C'est ici que vous définissez l'identité de votre hébergement, configurez les fonctionnalités essentielles et personnalisez l'expérience utilisateur. 
 L'objectif est simple : **adapter le CMS à vos besoins spécifiques** pour offrir une plateforme professionnelle et cohérente à vos clients.
 
 Les paramètres généraux regroupent plusieurs aspects fondamentaux : les informations de l'application, la licence, les langues, les emails et la maintenance.

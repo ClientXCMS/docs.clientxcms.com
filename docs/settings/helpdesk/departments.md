@@ -85,7 +85,7 @@ Pour ajouter un nouveau département :
 
 ### Configuration du département
 
-**Nom** | (texte)`<br />`
+**Nom** | (texte)
 Le nom affiché dans l'interface client et administrateur.
 Utilisez un terme clair et immédiatement compréhensible.
 
@@ -95,10 +95,10 @@ Utilisez un terme clair et immédiatement compréhensible.
 - ✅ "Facturation & Paiements" plutôt que "Compta"
 - ✅ "Assistance Commerciale" plutôt que "Ventes"
 
-**Icône** | (sélecteur d'icône)`<br />`
+**Icône** | (sélecteur d'icône)
 Représentation visuelle du département pour une identification rapide.
 
-**Description** | (texte long)`<br />`
+**Description** | (texte long)
 Explication détaillée du type de demandes traitées par ce département.
 Aide les clients à choisir le bon département.
 
@@ -139,30 +139,42 @@ Vous pouvez diriger automatiquement les clients vers un département via des par
 
 #### Exemples d'URLs pré-configurées
 
-**Support technique avec contexte** :
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```
-https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Serveur+inaccessible
-```
+<Tabs>
+	<TabItem value="support_technique_with_contexte" label="Support technique avec contexte">
+	```
+	https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Serveur+inaccessible
+	```
+    </TabItem>
+    <TabItem value="billing_question" label="Question de facturation">
+	```
+	https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Question+facture
+	```
+    </TabItem>
+    <TabItem value="commercial_request" label="Demande commerciale">
+	```
+	https://demo.clientxcms.com/client/support/create?department=4&content=Je+souhaiterais+un+devis+pour...
+	```
+	</TabItem>
+</Tabs>
 
-**Facturation avec service lié** :
+	Utilisez ces URLs pré-configurées pour :
 
-```
-https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Question+facture
-```
+	- **Dans vos e-mails** : insérer un lien direct contextuel vers la création d'un ticket pré-rempli.
+	- **Sur votre site** : boutons d'aide qui ouvrent la création de ticket avec le bon département/priorité.
+	- **Dans les signatures** : proposer un accès rapide au support adapté selon la nature du message.
+	- **Automatisation** : appels depuis des scripts ou des notifications pour ouvrir un ticket lié à un service précis.
 
-**Demande commerciale** :
-
-```
-https://demo.clientxcms.com/client/support/create?department=4&content=Je+souhaiterais+un+devis+pour...
-```
+	Astuce : encodez correctement les paramètres (espaces, caractères spéciaux) pour garantir le bon remplissage des champs.
 
 ### Utilisation des URLs pré-configurées
 
-**Dans vos e-mails** : Liens directs selon le contexte
-**Sur votre site** : Boutons d'aide contextuelle
-**En signature** : Accès rapide au support
-**Dans vos FAQ** : Création de ticket ciblée
+- **Dans vos e-mails** : Liens directs selon le contexte
+- **Sur votre site** : Boutons d'aide contextuelle
+- **En signature** : Accès rapide au support
+- **Dans vos FAQ** : Création de ticket ciblée
 
 ## Gestion des départements
 

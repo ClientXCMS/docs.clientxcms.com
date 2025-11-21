@@ -173,6 +173,10 @@ Exemple de description en HTML
 Prenez le temps de rédiger un **nom clair** et une **description engageante**. C’est souvent le premier contact qu’a un client avec votre service. Une bonne présentation peut faire toute la différence – et améliorer votre référencement naturel.
 :::
 
+:::tip Astuce
+Certain thème supporte les descriptions personnalisées dans les mêtadata du produit. Plus d'informations dans la documentation du thème utilisé. Vous pouvez générer les descriptions avec ce [outil en ligne](https://cdn.clientxcms.com/ressources/simulator).
+:::
+
 ## Configuration des prix
 
 Chaque cycle de facturation peut avoir :
@@ -201,7 +205,7 @@ Si vous souhaitez configurer des cycles de facturation additionnels avant d’ou
 Cela permettra d’afficher tous les cycles disponibles.
 Sans cette étape, la calculatrice appliquera votre réduction uniquement sur les cycles visibles à l’écran.
 :::
-
+w
 ### Affichage des cycles de facturation
 
 Les cycles de facturation configuré pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.

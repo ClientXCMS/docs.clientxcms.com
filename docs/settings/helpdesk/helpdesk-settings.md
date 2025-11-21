@@ -1,15 +1,13 @@
 ---
 sidebar_position: 1
 ---
-
 # Paramètres du centre d'aide
 
-Dans **CLIENTXCMS**, les **paramètres du centre d'aide** définissent le comportement et les règles de fonctionnement de votre système de support. <br/>
+Dans **CLIENTXCMS**, les **paramètres du centre d'aide** définissent le comportement et les règles de fonctionnement de votre système de support.
 L'objectif est stratégique : **optimiser l'efficacité du support**, **automatiser les processus répétitifs** et **garantir une expérience cohérente** pour vos clients et votre équipe. Une configuration appropriée améliore la productivité, réduit la charge de travail manuelle et maintient un niveau de service élevé.
 
-
 :::tip Astuce
-Des paramètres bien configurés transforment votre centre d'aide en **machine bien huilée**. 
+Des paramètres bien configurés transforment votre centre d'aide en **machine bien huilée**.
 Chaque automatisation vous fait gagner du temps pour vous concentrer sur les cas complexes.
 :::
 
@@ -31,33 +29,37 @@ C'est comme régler les paramètres d'une machine industrielle ⚙️ — plus c
 
 ### Fermeture automatique
 
-**Fermeture automatique après inactivité** | (nombre de jours)<br />
+**Fermeture automatique après inactivité** | (nombre de jours)
 Définit après combien de jours un ticket sans activité sera automatiquement fermé.
 
 **Valeurs recommandées** :
+
 - **7 jours** : Standard pour la plupart des cas
 - **3 jours** : Support haute réactivité
 - **14 jours** : Projets complexes nécessitant plus de temps
 - **0** : Désactive la fermeture automatique
 
 :::tip Avantages de la fermeture automatique
+
 - **Nettoie automatiquement** les tickets abandonnés
 - **Maintient des statistiques** précises
 - **Libère la charge** de travail des équipes
 - **Encourage la réactivité** des clients
-:::
+  :::
 
 ### Ré-ouverture contrôlée
 
-**Autorisation de ré-ouverture** | (nombre de jours)<br />
+**Autorisation de ré-ouverture** | (nombre de jours)
 Permet aux clients de rouvrir leurs tickets fermés pendant une période limitée.
 
 **Options disponibles** :
+
 - **7 jours** : Délai standard recommandé
 - **0** : Désactive la ré-ouverture
 - **-1** : Ré-ouverture illimitée dans le temps
 
 **Cas d'usage** :
+
 - **7 jours** : Pour les problèmes techniques standards
 - **14 jours** : Pour les migrations ou projets complexes
 - **0** : Pour forcer de nouveaux tickets et éviter la confusion
@@ -66,12 +68,13 @@ Permet aux clients de rouvrir leurs tickets fermés pendant une période limité
 :::warning Attention
 Une ré-ouverture illimitée peut créer des tickets très anciens difficiles à gérer. Privilégiez un délai raisonnable.
 :::
+
 ## Webhooks
+
 **URL du webhook** : URL de votre endpoint pour recevoir les notifications de tickets (POST JSON). Utilisez une URL en HTTPS si possible.
 
 - Si l'URL fournie est un webhook Discord (ex. https://discord.com/api/webhooks/xxxxx), les notifications apparaîtront automatiquement sous forme d'embed (capture ci‑dessous).
   ![image](https://cdn.clientxcms.com/ressources/docs/ticket.png)
-
 - Si vous utilisez un webhook personnalisé, CLIENTXCMS enverra une requête HTTP POST avec un payload JSON structuré. Exemple :
 
 import Tabs from '@theme/Tabs';
@@ -79,7 +82,6 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
 	<TabItem value="ticket_create" label="Création d'un ticket">
-
 
 ```json
 {
@@ -99,9 +101,10 @@ import TabItem from '@theme/TabItem';
   }
 }
 ```
-	</TabItem>
 
-	<TabItem value="ticket_close" label="Fermeture d'un ticket">
+    </TabItem>
+
+    <TabItem value="ticket_close" label="Fermeture d'un ticket">
 
 ```json
 {
@@ -121,9 +124,10 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-	</TabItem>
+    </TabItem>
 
     <TabItem value="ticket_answer_staff" label="Réponse du staff">
+
 ```json
 {
     "payload": {
@@ -142,8 +146,10 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+
     </TabItem>
     <TabItem value="ticket_answer_customer" label="Réponse du client">
+
 ```json
 {
     "payload": {
@@ -162,24 +168,26 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+
     </TabItem>
 
 </Tabs>
 
 Notes utiles :
 
-- `action` : indique l'événement (ex. `create`, `answered_staff`, `answered_customer`).
-- `_url` : lien interne vers l'édition du ticket 
+- `action` : indique l'événement (ex. `helpdesk_create`, `helpdesk_answered_staff`, `helpdesk_answered_customer`).
+- `_url` : lien interne vers l'édition du ticket
 - Les valeurs sont au format chaîne. Adaptez votre traitement côté serveur selon vos besoins.
 
 ## Gestion des pièces jointes
 
 ### Activation des fichiers
 
-**Autoriser les pièces jointes** | (interrupteur)<br />
+**Autoriser les pièces jointes** | (interrupteur)
 Active ou désactive la possibilité pour les clients de joindre des fichiers à leurs tickets.
 
 **Avantages des pièces jointes** :
+
 - **Captures d'écran** pour les problèmes visuels
 - **Logs d'erreur** pour le diagnostic technique
 - **Documents** pour les demandes administratives
@@ -187,21 +195,21 @@ Active ou désactive la possibilité pour les clients de joindre des fichiers à
 
 ### Sécurité et limitations
 
-**Taille maximale** | (Mo)<br />
+**Taille maximale** | (Mo)
 Limite la taille des fichiers que les clients peuvent joindre.
 
 **Recommandations par type d'usage** :
 
-| Type de support | Taille recommandée | Justification |
-|-----------------|-------------------|---------------|
-| **Support général** | 5 Mo | Screenshots et documents légers |
-| **Support technique** | 10 Mo | Logs et fichiers de configuration |
-| **Support développeur** | 25 Mo | Archives de code et dumps |
-| **Serveur limité** | 2 Mo | Économie d'espace disque |
+| Type de support                | Taille recommandée | Justification                     |
+| ------------------------------ | ------------------- | --------------------------------- |
+| **Support général**    | 5 Mo                | Screenshots et documents légers  |
+| **Support technique**    | 10 Mo               | Logs et fichiers de configuration |
+| **Support développeur** | 25 Mo               | Archives de code et dumps         |
+| **Serveur limité**      | 2 Mo                | Économie d'espace disque         |
 
 ### Types de fichiers autorisés
 
-**Extensions acceptées** | (liste séparée par virgules)<br />
+**Extensions acceptées** | (liste séparée par virgules)
 Définit quels types de fichiers sont acceptés dans les tickets.
 
 **Configuration par défaut** : `jpg,jpeg,png,doc,docx,xls,xlsx`
@@ -209,34 +217,39 @@ Définit quels types de fichiers sont acceptés dans les tickets.
 **Configurations recommandées** :
 
 #### Support standard
+
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log
 ```
 
 #### Support technique avancé
+
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
 ```
 
 #### Support sécurisé (restrictif)
+
 ```
 jpg,jpeg,png,pdf,txt
 ```
 
 :::warning Sécurité des fichiers
 **Types à éviter absolument** :
+
 - `.exe, .bat, .cmd` : Fichiers exécutables
 - `.php, .js, .html` : Scripts potentiellement malveillants
 - `.scr, .pif` : Extensions souvent utilisées par les malwares
 
 **Bonnes pratiques** :
+
 - Limitez aux types strictement nécessaires
 - Scannez les fichiers avec un antivirus
 - Vérifiez régulièrement les uploads suspects
-:::
-
+  :::
 
 ### Entreprise établie
+
 ```
 Fermeture automatique : 7 jours
 Ré-ouverture : 14 jours
@@ -246,6 +259,7 @@ Webhook : Système CRM
 ```
 
 ### Support technique spécialisé
+
 ```
 Fermeture automatique : 14 jours
 Ré-ouverture : -1 (illimitée)
@@ -255,6 +269,7 @@ Webhook : Slack + monitoring
 ```
 
 ### Organisation sécurisée
+
 ```
 Fermeture automatique : 5 jours
 Ré-ouverture : 0 (désactivée)
@@ -268,6 +283,7 @@ Webhook : Système audit interne
 ### Surveillance des métriques
 
 Analysez régulièrement :
+
 - **Taux de ré-ouverture** : Indicateur de qualité des résolutions
 - **Temps de fermeture** : Efficacité des automatisations
 - **Volume de pièces jointes** : Impact sur l'espace disque

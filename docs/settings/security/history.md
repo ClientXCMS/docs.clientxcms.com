@@ -89,7 +89,7 @@ Exemples :
 
 Pour chaque fichier de log, trois actions sont possibles :
 
-**🔽 Télécharger** | (bouton gris)`<br />`
+**🔽 Télécharger** | (bouton gris)
 Télécharge le fichier de log sur votre ordinateur pour analyse hors ligne.
 Utile pour archivage ou analyse avec des outils externes.
 

@@ -57,15 +57,15 @@ Le paiement par Balance suit un processus simplifié :
 
 ### Paramètres recommandés
 
-**Nom de la passerelle** | (texte)`<br />`
+**Nom de la passerelle** | (texte)
 
 Nous recommandons d'utiliser un nom explicite comme "Crédit boutique" ou "Solde compte" pour que vos clients comprennent immédiatement de quoi il s'agit.
 
-**Montant minimal** | (montant)`<br />`
+**Montant minimal** | (montant)
 
 Il est **fortement conseillé de configurer le montant minimal à 0€** pour permettre l'utilisation du solde sur tous les montants, même les plus petits.
 
-**Statut** | (menu déroulant)`<br />`
+**Statut** | (menu déroulant)
 
 Gardez la passerelle en statut **"Actif"** pour que tous vos clients puissent l'utiliser.
 
@@ -102,8 +102,7 @@ Le solde client peut être alimenté de plusieurs façons :
 | ----------------------------- | ------------------------------------------------------- |
 | **Ajout manuel**        | L'administrateur crédite directement le compte         |
 | **Addon Ajout de fond** | Les clients peuvent recharger leur solde eux-mêmes     |
-| **Remboursements**      | Créditer le solde lors d'un remboursement              |
-| **Promotions**          | Offrir du crédit dans le cadre d'opérations marketing |
+| **Addon carte cadeaux**      | Permet aux clients d'utiliser des cartes cadeaux pour créditer leur solde              |
 
 :::tip Conseil
 Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leur solde de manière autonome. Cela réduit votre charge administrative.

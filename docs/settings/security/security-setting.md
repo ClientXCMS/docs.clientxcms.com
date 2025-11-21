@@ -52,23 +52,6 @@ Pour les utilisateurs migrant depuis CLIENTXCMS v1, conservez `argon` pour maint
 Changer l'algorithme de hashage rendra **tous les mots de passe existants invalides**. Les utilisateurs devront réinitialiser leur mot de passe pour se reconnecter.
 :::
 
-### Sécurité administrative
-
-Pour plus d'informations sur la configuration des captchas, consultez la documentation [ici](/developpers/software/captcha).
-
-### Problème de connection avec un captcha mal configuré
-Si vous avez un problème de connexion à cause d'un captcha mal configuré, vous pouvez désactiver temporairement le captcha vous connectant à votre base de données et en modifiant la valeur `captcha_driver` dans la table `settings` à `none`. Cela désactivera le captcha et vous permettra de vous connecter à votre espace client pour corriger la configuration du captcha.
-Commande SQL à exécuter :
-```sql
-UPDATE settings SET value = 'none' WHERE `key` = 'captcha_driver';
-```
-
-**Cas d'usage courants** :
-- Services d'emails temporaires
-- Domaines connus pour le spam
-- Adresses de test spécifiques
-- Concurrents (usage avancé)
-
 ## Sécurisation de l'administration
 
 ### URL d'administration personnalisée

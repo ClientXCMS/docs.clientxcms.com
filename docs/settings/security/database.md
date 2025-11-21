@@ -37,22 +37,22 @@ C'est comme avoir accès au moteur de votre voiture 🔧 — puissant, mais néc
 
 Cette section affiche les informations de connexion à votre base de données MySQL/MariaDB :
 
-**Serveur de base de données** | (adresse)`<br />`
+**Serveur de base de données** | (adresse)
 L'adresse du serveur hébergeant votre base de données (localhost, IP, ou nom d'hôte).
 
-**Nom de la base** | (nom)`<br />`
+**Nom de la base** | (nom)
 Le nom de la base de données contenant toutes les tables de CLIENTXCMS.
 
-**Nom d'utilisateur** | (utilisateur)`<br />`
+**Nom d'utilisateur** | (utilisateur)
 L'identifiant utilisé pour se connecter à la base de données.
 
-**Mot de passe** | (masqué par défaut)`<br />`
+**Mot de passe** | (masqué par défaut)
 Le mot de passe de connexion, masqué par défaut pour des raisons de sécurité.
 Survolez le champ avec votre souris pour révéler temporairement le mot de passe.
 
 ### Accès PHPMyAdmin
 
-**Interface web de gestion** | (bouton d'accès)`<br />`
+**Interface web de gestion** | (bouton d'accès)
 Accès direct à PHPMyAdmin pour une gestion visuelle de votre base de données.
 
 :::info Disponibilité PHPMyAdmin
@@ -79,7 +79,7 @@ Les migrations sont des scripts qui modifient la structure de votre base de donn
 
 ### Exécution des migrations
 
-**Sélection du module** | (menu déroulant)`<br />`
+**Sélection du module** | (menu déroulant)
 Choisissez le module ou l'extension pour lequel exécuter les migrations :
 
 - **Core** : Migrations du système principal ClientXCMS
@@ -148,7 +148,6 @@ Les seeders peuvent **écraser ou dupliquer** des données existantes. Utilisez 
 - **Développement** : Pour créer un environnement de test
 - **Démonstration** : Pour générer des données d'exemple
 
-## :::tip À retenir
-
+:::tip À retenir
 La gestion de base de données nécessite expertise et précaution. Ces outils sont puissants mais peuvent endommager votre installation si mal utilisés. En cas de doute, consultez un administrateur expérimenté ou le support technique.
 :::
