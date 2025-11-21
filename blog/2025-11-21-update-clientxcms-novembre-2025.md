@@ -84,6 +84,7 @@ Idéal pour afficher :
 - actualités importantes
 
 ➡️ Documentation : https://docs.clientxcms.com/extensions/addons/announcement_bar
+
 ➡️ Ressource : https://clientxcms.com/resources/announcement_bar
 
 **Aperçu :**
@@ -98,7 +99,7 @@ Un énorme merci à **@Ikiae**, qui a contribué à deux améliorations majeures
 
 Une extension permettant d’ajouter de magnifiques effets visuels avec `particles.js`. ✨
 
-➡️ Disponible ici : https://clientxcms.com/resources/particules
+➡️ Disponible ici : https://clientxcms.com/resources/particles
 
 ![Particles.js](https://i.postimg.cc/YC5sW0bs/default.gif)
 
