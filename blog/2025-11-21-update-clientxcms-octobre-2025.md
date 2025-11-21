@@ -19,7 +19,7 @@ Découvrez tout ce qui a changé ces derniers jours 👇
 Les offres **Premium** et **Entreprise** incluent désormais **CTXMailer**, un service de mails professionnels :
 
 - 📬 jusqu’à **20 boîtes mail incluses**
-- 📧 jusqu'à **25 alias par boîte mail**
+- 📧 jusqu'à **25 alias de boîtes**
 - 💾 **15 Go de stockage**
 - 🔐 interface simple & sécurisée
 

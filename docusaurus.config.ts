@@ -102,6 +102,9 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: 'https://clientxcms.com/resources', label: 'Ressources', position: 'left'},
+        {to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left'},
+        {to: 'https://ideas.clientxcms.com', label: 'Soumettre une idée', position: 'left'},
         {
           href: 'https://clientxcms.com',
           label: 'Retour au site',
@@ -120,7 +123,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcementBar',
-      content: `Bienvenue sur la documentation officiel de ClientXCMS.com ! La documentation NEXT GEN est en cours de rédaction !`,
+      content: `Bienvenue sur la documentation officiel de ClientXCMS.com !  Explorez nos guides et ressources pour maîtriser pleinement notre CMS.`,
       backgroundColor: '#2c46ba',
       textColor: '#fff',
       isCloseable: false,
@@ -165,6 +168,23 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Développeurs',
+          items: [
+            {
+              label: 'Extensions',
+              href: 'https://docs.clientxcms.com/extensions',
+            },
+            {
+              label: 'Soumettre une idée',
+              href: 'https://ideas.clientxcms.com',
+            },
+            {
+              label: 'Soumettre une extension',
+              href: 'https://clientxcms.com/client/resources/submit',
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'Logo CLIENTXCMS',
