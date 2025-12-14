@@ -36,3 +36,28 @@ Vous pouvez visualiser une IP spécifique pour la modification de son état (Dis
 :::info
 Cette extension à été développée pour des utilisations spécifiques. N'hésitez pas à nous contacter pour toute demande de fonctionnalité ou d'amélioration.
 :::
+
+### Intégration
+
+L'addon à été fait initialement pour s'intégrer avec le module Proxmox mais vous pouvez l'adapter pour d'autres modules si nécessaire. Les fonctions exposées dans `App\Addons\Netbox\NetboxIPAM` peuvent être utilisées directement dans vos modules d'approvisionnement pour récupérer, réserver ou libérer des adresses IP. La classe implémente l'`IPAMInterface` de CLIENTXCMS, vous pouvez donc vous appuyer sur cette interface pour intégrer NetBox à n'importe quel provider compatible.
+
+Méthodes clés disponibles :
+- `findByIP(string $ip): ?AddressIPAM` : retourne les informations d'une IP NetBox si elle existe.
+- `findById(int $id): ?AddressIPAM` : retourne l'objet IPAM pour un ID NetBox.
+- `fetchAdresses(int $nb = 1): array` : récupère un lot d'IPs actives.
+- `useAddress(AddressIPAM $address, Service $service): AddressIPAM` : réserve l'IP pour un service (status `reserved` et association au tenant).
+- `releaseAddress(AddressIPAM $address): AddressIPAM` : libère l'IP et la remet en `active`.
+
+Exemple d'utilisation dans un module d'approvisionnement (provider) qui implémente déjà l'`IPAMInterface` :
+
+```php
+use App\Addons\Netbox\NetboxIPAM;
+
+$addresses = NetboxIPAM::fetchAdresses(1);
+$ip = $addresses[0] ?? null;
+
+if ($ip) {
+    NetboxIPAM::useAddress($ip, $service);
+    NetboxIPAM::releaseAddress($ip);
+}
+```
