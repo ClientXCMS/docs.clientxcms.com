@@ -136,6 +136,69 @@ Pour un environnement de production, nous recommandons fortement **MariaDB** pou
 :::
 
 ### Serveur web
-ClientXCMS est compatible avec la plupart des serveurs web. Il est recommandé d'utiliser [Apache ou Nginx](./selfhosted) ou un [hébergement Plesk](./plesk). 
-### Docker
-Vous pouvez également installer ClientXCMS via Docker. Pour cela, vous devez disposer de Docker et Docker Compose installés sur votre serveur. Vous pouvez suivre les instructions d'installation via Docker [ici](./docker).
+
+Le choix du serveur web impacte directement les performances de ClientXCMS.
+
+#### Nginx (Recommandé)
+**Nginx** est le serveur web recommandé pour ClientXCMS grâce à :
+- **Performant** pour les fichiers statiques
+- **Gestion optimisée** des connexions simultanées
+- **Consommation mémoire réduite**
+- **Configuration flexible** et moderne
+
+#### Apache HTTP Server
+**Apache 2.4+** reste une alternative viable avec :
+- Configuration via fichiers `.htaccess`
+- Large compatibilité avec les hébergements partagés
+- Modules étendus disponibles
+
+#### Serveurs d'applications PHP
+- **PHP-FPM** (recommandé avec Nginx)
+- **mod_php** (avec Apache)
+
+:::tip Conseil performance
+L'association **Nginx + PHP-FPM** offre les meilleures performances pour ClientXCMS en production.
+:::
+
+### Solutions d'installation
+
+#### Installation manuelle
+Guides détaillés par environnement :
+- **[Serveur dédié/VPS](./selfhosted)** - Installation complète sur Linux
+- **[Hébergement Plesk](./plesk)** - Déploiement via panneau Plesk
+
+#### Conteneurisation Docker
+**Docker** offre un déploiement rapide et isolé :
+- **Environnement standardisé** (Nginx, PHP-FPM, MariaDB)
+- **Déploiement en quelques minutes**
+- **Isolation des dépendances**
+- **Facilité de mise à jour**
+
+👉 [Guide d'installation Docker](./docker)
+
+### Déploiement automatisé avec Ansible
+
+**Ansible** offre une solution d'automatisation complète pour le déploiement de ClientXCMS :
+
+#### Avantages d'Ansible
+- **Déploiement en une commande** - Installation complète automatisée
+- **Configuration standardisée** - Environnement optimisé et sécurisé
+- **Reproductibilité** - Déploiement identique sur tous vos serveurs
+- **Gestion des mises à jour** - Automatisation des upgrades
+- **Multi-serveurs** - Déploiement simultané sur plusieurs machines
+
+#### Composants automatisés
+- Installation et configuration de **PHP 8.3** avec toutes les extensions
+- Configuration de **Nginx + PHP-FPM** optimisée
+- Installation et sécurisation de **MariaDB**
+- Configuration des **certificats SSL** (Let's Encrypt)
+- Mise en place des **tâches cron** et **queues Laravel**
+- Configuration des **permissions** et de la **sécurité**
+
+#### Ressources disponibles
+**[Guide de déploiement automatisé](./ansible)**
+**[Playbook Ansible officiel sur GitHub](https://github.com/ClientXCMS/ansible)**
+
+:::tip Recommandation
+Pour les déploiements en production ou multi-serveurs, Ansible est la méthode recommandée pour sa fiabilité et sa rapidité.
+:::
