@@ -2,9 +2,6 @@
 sidebar_position: 5
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Autohébergement
 
 Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions autohébergées. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. L'installation est disponible [ici](./cloud).
@@ -27,13 +24,16 @@ mkdir /var/www/clientxcms
 ```
 ## Téléchargement du code source
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs>
-  <TabItem value="archive" label="Archive ZIP">
+  <TabItem value="archive" label="Archive (release)">
 Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub :
 ```bash
-curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/archive/refs/heads/master.zip
+curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/releases/latest
 ```
-
+  
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
 unzip clientxcms.zip -d /var/www/clientxcms
@@ -58,8 +58,13 @@ cd /var/www/clientxcms
 
 Vous pourrez ensuite mettre à jour votre instance très simplement :
 ```bash
+git fetch --all --prune
+git checkout master
 git pull origin master
-``` 
+```
+:::info
+Cela téléchargera la branche principale et non une release spécifique. Pour une utilisation en production, il est recommandé d'utiliser les releases stables via l'archive ZIP.
+:::
   </TabItem>
 </Tabs>
 
