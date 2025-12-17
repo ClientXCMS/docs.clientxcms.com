@@ -31,9 +31,9 @@ mkdir /var/www/clientxcms
   <TabItem value="archive" label="Archive ZIP">
 Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub :
 ```bash
-curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/archive/refs/heads/master.zip
+curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/releases/latest
 ```
-
+  
 Puis extrayez l'archive dans le dossier d'installation :
 ```bash
 unzip clientxcms.zip -d /var/www/clientxcms
@@ -70,15 +70,99 @@ Créez un fichier `.env` en utilisant la commande suivante :
 ```
 Puis copiez le contenu disponible [dans ce fichier d'exemple](https://cdn.clientxcms.com/ressources/docs/environment.example.txt) dans le fichier `.env`.
 
-## Mise en place de PHP & Composer
-Pour installer PHP, vous pouvez utiliser la commande suivante :
+## Installation de PHP 8.3
+
+### Ajout du dépôt Ondrej (Ubuntu/Debian)
+
+<Tabs>
+  <TabItem value="ubuntu-debian" label="Ubuntu/Debian">
+
+Pour installer PHP 8.3 sur Ubuntu/Debian, ajoutez d'abord le dépôt Ondrej :
+
 ```bash
-sudo apt-get update
-sudo apt-get install ca-certificates apt-transport-https software-properties-common wget curl lsb-release
-curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
-sudo apt-get update
-sudo apt-get install php8.3-common php8.3-curl php8.3-bcmath php8.3-intl php8.3-mbstring php8.3-xmlrpc php8.3-mcrypt php8.3-mysql php8.3-gd php8.3-xml php8.3-cli php8.3-zip
+# Mise à jour du système et installation des prérequis
+sudo apt update
+sudo apt install -y software-properties-common ca-certificates apt-transport-https wget curl lsb-release
+
+# Ajout du dépôt Ondrej pour PHP 8.3
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt update
 ```
+
+### Installation de PHP 8.3 et extensions
+
+Installez PHP 8.3 avec toutes les extensions requises par ClientXCMS :
+
+```bash
+# Installation de PHP 8.3 et des extensions essentielles
+sudo apt install -y php8.3 php8.3-fpm php8.3-cli php8.3-common \
+    php8.3-bcmath php8.3-curl php8.3-dom php8.3-gd php8.3-intl \
+    php8.3-libxml php8.3-mbstring php8.3-openssl php8.3-pdo \
+    php8.3-pdo-mysql php8.3-simplexml php8.3-xml php8.3-zip \
+    php8.3-opcache
+```
+
+  </TabItem>
+  <TabItem value="centos-rhel" label="CentOS/RHEL/Rocky">
+
+Pour CentOS, RHEL ou Rocky Linux, utilisez le dépôt Remi :
+
+```bash
+# Installation des prérequis et du dépôt Remi
+sudo dnf install -y epel-release
+sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+
+# Activation du module PHP 8.3
+sudo dnf module reset php -y
+sudo dnf module enable php:remi-8.3 -y
+
+# Installation de PHP 8.3 et des extensions
+sudo dnf install -y php php-fpm php-common php-bcmath php-curl \
+    php-dom php-gd php-intl php-libxml php-mbstring php-openssl \
+    php-pdo php-pdo-mysql php-simplexml php-xml php-zip php-opcache
+```
+
+  </TabItem>
+</Tabs>
+
+### Vérification de l'installation
+
+Vérifiez que PHP 8.3 est correctement installé :
+
+```bash
+php --version
+```
+
+Vous devriez voir une sortie similaire à :
+```
+PHP 8.3.x (cli) (built: ...)
+```
+
+### Configuration PHP recommandée
+
+Modifiez le fichier de configuration PHP pour optimiser les performances :
+
+```bash
+# Pour PHP-FPM
+sudo nano /etc/php/8.3/fpm/php.ini
+
+# Pour PHP-CLI
+sudo nano /etc/php/8.3/cli/php.ini
+```
+
+Paramètres recommandés :
+```ini
+memory_limit = 512M
+upload_max_filesize = 64M
+post_max_size = 64M
+max_execution_time = 300
+max_input_vars = 3000
+opcache.enable = 1
+opcache.memory_consumption = 128
+opcache.max_accelerated_files = 10000
+```
+
+## Installation de Composer
 Pour installer Composer, vous pouvez utiliser la commande suivante :
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -182,7 +266,7 @@ Ici, nous ne présentons pas comment installer un certificat SSL.
 :::
   Pour installer Nginx, vous pouvez utiliser la commande suivante :
 ```bash
-sudo apt-get install nginx php8.2-fpm
+sudo apt-get install nginx php8.3-fpm
 ```
 Pour ajouter un hôte virtuel, vous pouvez utiliser la commande suivante :
 ```bash
@@ -202,7 +286,7 @@ server {
     }
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
