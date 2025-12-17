@@ -55,4 +55,12 @@ curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Auth
 }
 ```
   
-Vous pouvez réinitialiser la clé d'API en appuyant sur le bouton "Réinitaliser la clé" dans la section de configuration de l'extension.
+Vous pouvez réinitialiser la clé d'API en appuyant sur le bouton "Réinitialiser la clé" dans la section de configuration de l'extension.
+
+## Rendu sur le site
+![img](/img/next_gen/extensions/addons/supportid/image.png)
+## Support des thèmes
+Pour afficher le Support ID sur votre thème, ajoutez ce code dans le fichier `/views/front/client/index.blade.php` : 
+```blade
+@includeWhen(app('extension')->extensionIsEnabled('supportid'), 'supportid::card')
+```

@@ -27,9 +27,6 @@ mkdir /var/www/clientxcms
 ```
 ## Téléchargement du code source
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs>
   <TabItem value="archive" label="Archive (release)">
 Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub :

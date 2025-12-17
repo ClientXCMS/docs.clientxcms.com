@@ -48,7 +48,7 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ### Support des thèmes
-Pour supporter l'affichage des FAQ sur votre thèmes, votre thème doit inclure ce code dans le fichier `views/front/store/group.blade.ph` : 
+Pour supporter l'affichage des FAQ sur votre thème, votre thème doit inclure ce code dans le fichier `views/front/store/group.blade.php` : 
 ```blade
 @includeWhen(app('extension')->extensionIsEnabled('faq'), 'faq::widget', ['group' => $group ?? null])
 ```
