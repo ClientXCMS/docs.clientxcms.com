@@ -28,7 +28,7 @@ mkdir /var/www/clientxcms
 ## Téléchargement du code source
 
 <Tabs>
-  <TabItem value="archive" label="Archive (release)">
+  <TabItem value="archive" label="Archive ZIP">
 Téléchargez la dernière version de ClientXCMS NextGen directement depuis GitHub :
 ```bash
 curl -L -o clientxcms.zip https://github.com/ClientXCMS/ClientXCMS/releases/latest
@@ -58,13 +58,8 @@ cd /var/www/clientxcms
 
 Vous pourrez ensuite mettre à jour votre instance très simplement :
 ```bash
-git fetch --all --prune
-git checkout master
 git pull origin master
-```
-:::info
-Cela téléchargera la branche principale et non une release spécifique. Pour une utilisation en production, il est recommandé d'utiliser les releases stables via l'archive ZIP.
-:::
+``` 
   </TabItem>
 </Tabs>
 
