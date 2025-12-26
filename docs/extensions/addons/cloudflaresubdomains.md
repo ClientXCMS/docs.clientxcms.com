@@ -7,11 +7,12 @@ Cette extension permet de gérer les sous-domaines avec Cloudflare. Elle est uti
 - Pterodactyl
 - Plesk
 
-::info Modules
+:::info Modules
 Pour utiliser la fonctionnalité de sous-domaines avec Pterodactyl, veuillez installer le package `clientxcms/sso-pterodactyl` via Composer. Vous pouvez le faire en exécutant la commande suivante dans votre terminal :
 ```bash
 composer require clientxcms/sso-pterodactyl
 ```
+:::
 Celui ci rajoutera les endpoints nécessaires pour la gestion des sous-domaines dans Pterodactyl
 ## Installation
 Vous pouvez l’activer depuis la section **Extensions**, puis le configurer via les **paramètres d’extension** disponible dans la section **Approvisionnement**.
