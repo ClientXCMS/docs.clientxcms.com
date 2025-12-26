@@ -123,13 +123,68 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
 :::
 
 ### Obtention des identifiants Google Drive
-1. Allez sur la [Google Cloud Console](https://console.cloud.google.com/).
-2. Créez un nouveau projet.
-3. Activez l'API Google Drive pour ce projet.
-4. Allez dans "Identifiants" et créez des identifiants OAuth 2.0.
-5. Configurez l'écran de consentement OAuth (type "Externe").
-6. Créez des identifiants OAuth 2.0 pour une application web.
-7. Ajoutez `http://localhost` comme URI de redirection autorisé.
-8. Utilisez un outil comme [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) pour obtenir le Refresh Token en utilisant votre Client ID et Client Secret.
+
+#### Étape 1 — Créer un projet Google Cloud
+
+1. Accédez à la **Google Cloud Console** [https://console.cloud.google.com/](https://console.cloud.google.com/)
+2. Cliquez sur **Sélectionner un projet** → **Nouveau projet**
+3. Donnez-lui un nom explicite (ex. `backup-drive-prod`)
+4. Validez la création
+
+
+#### Étape 2 — Activer l’API Google Drive
+
+1. Dans le menu **API et services** → **Bibliothèque**
+2. Recherchez **Google Drive API**
+3. Cliquez sur **Activer**
+
+#### Étape 3 — Configurer l’écran de consentement OAuth
+
+1. Menu **API et services** → **Écran de consentement OAuth**
+2. Type d’utilisateur : **Externe**
+3. Renseignez au minimum :
+
+   * Nom de l’application
+   * Adresse email de support
+4. **Scopes** :
+   * Ajoutez uniquement :`https://www.googleapis.com/auth/drive.file`
+5. Enregistrez
+
+#### Étape 4 — Créer les identifiants OAuth 2.0
+
+1. Menu **Identifiants** → **Créer des identifiants**
+2. Type : **ID client OAuth**
+3. Type d’application : **Application Web**
+4. URI de redirection autorisé :
+
+   ```
+   http://localhost
+   ```
+5. Validez et **copiez** :
+
+   * Client ID
+   * Client Secret
+
+#### Étape 5 — Obtenir le Refresh Token avec OAuth 2.0 Playground
+
+1. Ouvrez :
+   👉 [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
+2. Cliquez sur **Settings**
+3. Cochez : *Use your own OAuth credentials*
+4. Renseignez :
+
+   * Client ID
+   * Client Secret
+5. Dans la liste des scopes, sélectionnez :
+
+   ```
+   https://www.googleapis.com/auth/drive.file
+   ```
+6. Cliquez sur **Authorize APIs**
+7. Autorisez l’accès à votre compte Google
+8. Cliquez sur **Exchange authorization code for tokens**
+9. Copiez le **Refresh Token**
+
+
 </TabItem>
 </Tabs>
