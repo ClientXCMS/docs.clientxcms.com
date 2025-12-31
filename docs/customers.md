@@ -83,6 +83,7 @@ Les actions sont les suivantes :
 - Confirmation du compte
 - Activation de la 2FA
 - Désactivation de la 2FA
+- Désactiver la question de sécurité
 
 </TabItem>
 </Tabs>
@@ -114,6 +115,8 @@ Vous pouvez bannir le client si celui-ci ne respecte pas les conditions d'utilis
 
 #### Retirer la double authentification
 Vous pouvez retirer la double authentification du client si celle-ci est activée.
+### Désactiver la question de sécurité
+Vous pouvez désactiver la question de sécurité du client si celle-ci est activée.
 #### Supprimer le client
 Vous pouvez supprimer le client. Cela supprimera de manière douce le client en basculant son statut en "Supprimé".
 ## Sécurité

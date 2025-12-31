@@ -293,5 +293,7 @@ Si aucune IP n'est trouvée. Cette erreur est renvoyée.
 | `proxmox:installation-vps` | Gère l'installation des VPS qui doivent être installés.          | -          |
 | `proxmox:migrate-config`   | Migre la configuration de Proxmox.                               | -          |
 | `proxmox:process-post-install`     | Gère les actions post-installation des VPS.       | -          |
+| `proxmox:cleanup-console-users`       | Nettoie les utilisateurs de la console Proxmox.                             | -          |
 
-### 
+### Support NoVNC
+Pour supporter le noVNC, vous devez créer un rôle personnalisé dans Proxmox avec la permission `VM.Console` avec le nom "CustomerPanel".

@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 // console.log('Tracking ID:', process.env.GTAG_TRACKING_ID); // Vérification de la variable
 
@@ -54,8 +54,23 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
 
-        },             
+        },
       } satisfies Preset.Options,
+    ],
+    [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            id: 'clientxcms-api',
+            spec: 'static/api-docs.json',
+            route: '/api',
+          },
+        ],
+        theme: {
+          primaryColor: '#2c46ba',
+        },
+      },
     ],
   ],
   plugins: [
@@ -79,11 +94,11 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 4,
-      },
-    metadata: [{name: 'keywords', content: 'CMS,CLIENTX,Clientx,docs,doc,blog'}],
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
+    metadata: [{ name: 'keywords', content: 'CMS,CLIENTX,Clientx,docs,doc,blog' }],
     navbar: {
       title: 'CLIENTXCMS Docs',
       logo: {
@@ -97,10 +112,11 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: 'https://clientxcms.com/resources', label: 'Ressources', position: 'left'},
-        {to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left'},
-        {to: 'https://ideas.clientxcms.com', label: 'Soumettre une idée', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/api', label: 'API', position: 'left' },
+        { to: 'https://clientxcms.com/resources', label: 'Ressources', position: 'left' },
+        { to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left' },
+        { to: 'https://ideas.clientxcms.com', label: 'Soumettre une idée', position: 'left' },
         {
           href: 'https://clientxcms.com',
           label: 'Retour au site',
@@ -124,7 +140,7 @@ const config: Config = {
       textColor: '#fff',
       isCloseable: false,
     },
-    
+
     footer: {
       style: 'dark',
       links: [
@@ -167,6 +183,10 @@ const config: Config = {
         {
           title: 'Développeurs',
           items: [
+            {
+              label: 'Documentation API',
+              to: '/api',
+            },
             {
               label: 'Extensions',
               href: 'https://docs.clientxcms.com/extensions',

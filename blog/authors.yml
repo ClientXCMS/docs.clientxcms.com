@@ -1,6 +1,6 @@
 martindev:
   name: MartinDev
-  title: ClientXCMS Team
+  title: Mainteneur - Président
   url: https://github.com/DarkIncognito85
   image_url: https://github.com/DarkIncognito85.png
   
@@ -9,3 +9,9 @@ cicou02:
   title: ClientXCMS Team
   url: https://clientxcms.com
   image_url: https://github.com/cicou02.png
+
+freezmod:
+  name: FreezMod
+  title: Développeur - Conseiller retour à la communauté
+  url: https://github.com/TomLeDev
+  image_url: https://github.com/TomLeDev.png
