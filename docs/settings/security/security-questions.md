@@ -8,7 +8,7 @@ Dans **CLIENTXCMS**, les **questions de sécurité** offrent une couche supplém
 Vous pouvez configurer les questions de sécurité dans le panneau d'administration sous **Paramètres > Sécurité > Questions de sécurité**.
 
 ## Création et gestion des questions
-Vous pouvez créer des questions de sécurité personnalisées pour vos clients. Dans le panneau de configuration, cliquez sur **Créer** et entrez la question ainsi que l'odre d'affichage et si vous souhaitez qu'elle soit active ou non.
+Vous pouvez créer des questions de sécurité personnalisées pour vos clients. Dans le panneau de configuration, cliquez sur **Créer** et entrez la question ainsi que l'ordre d'affichage et si vous souhaitez qu'elle soit active ou non.
 
 Vous pouvez également modifier ou supprimer des questions existantes en cliquant sur l'icône d'édition ou de suppression à côté de chaque question.
 
