@@ -28,7 +28,8 @@
     "docusaurus-plugin-dotenv": "^1.0.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "redocusaurus": "^2.5.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.5.2",
