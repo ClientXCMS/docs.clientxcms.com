@@ -29,7 +29,7 @@ Puis récupérez votre clé live et clé test
 
 Le paiement via Mollie suit un processus en plusieurs étapes :
 1. **Sélection du moyen de paiement** : Le client choisit "Mollie" lors du checkout
-2. **Redirection vers Mollie** : Le client est dirigé vers les serveurs
+2. **Redirection vers Mollie** : Le client est dirigé vers les serveurs de paiement Mollie
 3. **Validation du paiement** : Le client confirme la transaction sur Mollie
 4. **Retour automatique** : Redirection vers votre boutique
 5. **Notification** : Mollie confirme le paiement à votre système
