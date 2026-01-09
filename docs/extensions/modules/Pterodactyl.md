@@ -112,7 +112,7 @@ Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis 
 1. Sur votre VPS, placez-vous dans le dossier du panel :
    ```bash
    cd /var/www/pterodactyl
-   composer require "clientxcms/pterodactyl-sso"
+   composer require "clientxcms/sso-pterodactyl"
    ```
 2. Videz le cache :
    ```bash
