@@ -1,17 +1,21 @@
+---
+translated: true
+---
+
 # Sitemap
 
-L'add-on **Sitemap** permet de générer un plan du site pour améliorer le référencement naturel (SEO) de votre site web. Il est accessible depuis la section **Extensions** et peut être configuré via les **paramètres des personnalisation**.
+The **Sitemap** add-on allows you to generate a sitemap to improve the natural search engine optimization (SEO) of your website. It is accessible from the **Extensions** section and can be configured via **customization settings**.
 
-# Configuration du Sitemap
+# Sitemap Configuration
 ![img](/img/next_gen/extensions/addons/sitemap/config.png)
-CLIENTXCMS génère automatiquement un plan du site pour votre site web. Vous pouvez le personnaliser en modifiant le XML généré. Pour cela, allez dans les paramètres de l'extension et modifiez le contenu du champ **Contenu**.
+CLIENTXCMS automatically generates a sitemap for your website. You can customize it by modifying the generated XML. To do this, go to the extension settings and modify the content of the **Content** field.
 
-Vous pouvez réinitialiser le contenu du plan du site en cliquant sur le bouton **Réinitialiser**. Cela remplacera le contenu actuel par le contenu par défaut.
+You can reset the sitemap content by clicking the **Reset** button. This will replace the current content with the default content.
 
-## Pages incluses dans le Sitemap
-Le plan du site inclut par défaut les pages suivantes :
-* **Accueil** : La page d'accueil de votre site.
-* **Pages de boutique** : Toutes les pages de votre boutique en ligne.
-* **Addons pages** : Toutes les pages de votre blog.
+## Pages Included in the Sitemap
+The sitemap includes the following pages by default:
+* **Home**: Your site's home page.
+* **Store Pages**: All pages from your online store.
+* **Addon Pages**: All pages from your blog.
 
-Si vous pensez qu'une page devrait être incluse dans le plan du site mais ne l'est pas, vous pouvez la signaler dans le [discord](https://clientxcms.com/ref/discord).
+If you think a page should be included in the sitemap but isn't, you can report it on the [discord](https://clientxcms.com/ref/discord).

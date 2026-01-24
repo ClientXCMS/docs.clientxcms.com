@@ -1,95 +1,99 @@
+---
+translated: true
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Synchronisation Discord
+# Discord Synchronization
 
-Il est possible de synchroniser votre espace client avec votre serveur Discord grâce à un bot.
+You can synchronize your client area with your Discord server using a bot.
 
 :::tip
-La synchronisation fonctionne avec l'addon SocialAuth+ est requis avec la connexion avec discord pour utiliser cette fonctionnalité. Vous pouvez retrouver la documentation sur l'addon [ici](./socialauthplus.md).
+Synchronization works with the SocialAuth+ addon which is required with Discord login to use this feature. You can find the addon documentation [here](./socialauthplus.md).
 :::
 
-## Processus
-1. Le client se connecte via Discord ou synchronise son compte à l'espace client
-2. Le client peut rejoindre le serveur Discord via l'espace client
-3. Si l'option "Compte synchronisé" le rôle discord est ajouté
-4. Si l'option "Client synchronisé ayant un service actif" le rôle discord est ajouté si le client a un service actif
-5. Si l'option "Client synchronisé ayant déjà eu un service actif" le rôle discord est ajouté si le client a déjà eu un service actif
+## Process
+1. The customer logs in via Discord or synchronizes their account with the client area
+2. The customer can join the Discord server via the client area
+3. If the "Synchronized account" option is enabled, the Discord role is added
+4. If the "Synchronized customer with an active service" option is enabled, the Discord role is added if the customer has an active service
+5. If the "Synchronized customer who has had an active service" option is enabled, the Discord role is added if the customer has ever had an active service
 
 ## Configuration
 
-Une fois l'extension activée, vous pouvez accéder à la configuration de l'addon dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `DiscordLink`
+Once the extension is activated, you can access the addon configuration in `Admin Panel` > `Settings` > `Extension Settings` > `DiscordLink`
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 
-Ici vous retrouverez sur cette page les clients détectés par le système. ainsi que les paramètres de l'addon.
+Here you will find on this page the customers detected by the system as well as the addon settings.
 
-**Lien d'invitation** : Lien d'invitation de votre serveur discord. (pour inviter les clients à le rejoindre sur l'espace client)
+**Invitation link**: Invitation link to your Discord server. (to invite customers to join it from the client area)
 
-**ID du serveur** : ID de votre serveur discord.
+**Server ID**: ID of your Discord server.
 
-**Type de détection** : Type de détection des clients. (Compte synchronisé, Client synchronisé ayant un service actif, Client synchronisé ayant déjà eu un service actif)
+**Detection type**: Type of customer detection. (Synchronized account, Synchronized customer with an active service, Synchronized customer who has had an active service)
 
-Vous pouvez également réinitialiser la clé si vous l'avez perdue.
+You can also reset the key if you have lost it.
 
 :::warning
-Si votre nom de domaine est protégé par un anti-DDoS ou un pare-feu, assurez-vous de désactiver ces protections sur les routes spécifiées dans l'API afin d'éviter toute interruption de service.
+If your domain is protected by anti-DDoS or a firewall, make sure to disable these protections on the routes specified in the API to avoid any service interruption.
 :::
-### Installation du bot
+### Bot Installation
 
 
 <Tabs>
 
-<TabItem value="community" label="Installation du bot communautaire">
+<TabItem value="community" label="Community Bot Installation">
 
-Intervalle : 15 secondes
-#### Étape 1  
-Ajoutez le bot à votre serveur Discord en cliquant sur [ce lien d'invitation](https://clientxcms.com/ref/discordbot).  
-Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.
+Interval: 15 seconds
+#### Step 1
+Add the bot to your Discord server by clicking [this invitation link](https://clientxcms.com/ref/discordbot).
+It will link your Discord server with your hosting service.
 
-#### Étape 2
-Copiez la commande suivante dans votre serveur. **⚠ Attention, la clé sera affichée une seule fois !**  
-En cas de perte, il faudra la réinitialiser.
+#### Step 2
+Copy the following command to your server. **⚠ Warning, the key will only be displayed once!**
+If lost, it will need to be reset.
 
 
-#### Étape 3
-Exécutez la commande suivante dans votre serveur Discord en y ajoutant le rôle client.  
-Si l'opération réussit, le bot répondra avec un message de succès.
+#### Step 3
+Execute the following command on your Discord server while adding the customer role.
+If the operation succeeds, the bot will reply with a success message.
 
-#### Étape 4
-Assurez-vous que le bot dispose des permissions nécessaires pour ajouter le rôle.  
-*(Le bot doit être au-dessus du rôle à ajouter dans la hiérarchie des rôles.)*
+#### Step 4
+Make sure the bot has the necessary permissions to add the role.
+*(The bot must be above the role to add in the role hierarchy.)*
 
 </TabItem>
-<TabItem value="personnalise" label="Installation du bot personnalisé">
+<TabItem value="personnalise" label="Custom Bot Installation">
 
-Intervalle : Personnalisable
+Interval: Customizable
 
-#### Étape 1  
-Téléchargez le bot personnalisé acheté au préalable en cliquant sur [ce lien](https://clientxcms.com/client/download).  
-Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.
-
-
-#### Étape 2
-Copiez le jeton suivant en lieu sûr. **⚠ Attention, il ne sera affiché qu'une seule fois !**  
-En cas de perte, il faudra le réinitialiser.
+#### Step 1
+Download the custom bot purchased beforehand by clicking [this link](https://clientxcms.com/client/download).
+It will link your Discord server with your hosting service.
 
 
-#### Étape 3
-Décompressez le fichier téléchargé et suivez le fichier `README` pour installer et ajouter le bot à votre serveur.
+#### Step 2
+Copy the following token to a safe place. **⚠ Warning, it will only be displayed once!**
+If lost, it will need to be reset.
 
 
-#### Étape 4
-Assurez-vous que le bot dispose des permissions nécessaires pour ajouter le rôle.  
-*(Le bot doit être au-dessus du rôle à ajouter dans la hiérarchie des rôles.)*
+#### Step 3
+Extract the downloaded file and follow the `README` file to install and add the bot to your server.
+
+
+#### Step 4
+Make sure the bot has the necessary permissions to add the role.
+*(The bot must be above the role to add in the role hierarchy.)*
 
 </TabItem>
 
 </Tabs>
 
-## API DiscordLink
+## DiscordLink API
 
-L'API **DiscordLink** permet d'interagir avec les comptes Discord liés aux clients, de vérifier l'authenticité des clés API et de récupérer des informations associées.
+The **DiscordLink** API allows interacting with Discord accounts linked to customers, verifying API key authenticity, and retrieving associated information.
 
 ### Base URL
 
@@ -99,93 +103,93 @@ https://clientxcms.app/api
 
 ### Endpoints
 
-#### Rechercher un client via son ID Discord
+#### Search for a customer via their Discord ID
 
 ```http
 GET /application/discordlink/search/{discord_id}
 ```
 
 ##### Description
-Récupère les informations d'un client en fonction de son ID Discord.
+Retrieves customer information based on their Discord ID.
 
-##### Paramètres
+##### Parameters
 
-| Nom          | Type     | Requis | Description                    |
+| Name         | Type      | Required | Description                        |
 |-------------|---------|--------|--------------------------------|
-| `discord_id` | `integer` | ✅      | L'identifiant de l'utilisateur Discord |
+| `discord_id` | `integer` | ✅      | The Discord user identifier |
 
-##### Réponses
+##### Responses
 
 | Code  | Description                            |
 |-------|----------------------------------------|
-| `200` | Retourne les données du client Discord |
-| `403` | Clé API invalide                       |
-| `404` | Client non trouvé                      |
+| `200` | Returns Discord customer data |
+| `403` | Invalid API key                       |
+| `404` | Customer not found                      |
 
 
 
-#### 📌 Récupérer la liste des clients devant avoir un rôle Discord
+#### 📌 Get the list of customers who should have a Discord role
 
 ```http
 GET /application/discordlink/getlinkedcustomers
 ```
 
 ##### Description
-Renvoie la liste des clients qui devraient avoir un rôle sur le serveur Discord.
+Returns the list of customers who should have a role on the Discord server.
 
-##### Réponses
+##### Responses
 
 | Code  | Description                        |
 |-------|------------------------------------|
-| `200` | Retourne la liste des clients liés |
-| `403` | Clé API invalide                   |
+| `200` | Returns the list of linked customers |
+| `403` | Invalid API key                   |
 
 ---
 
-#### ✅ Vérifier la validité de la clé API
+#### ✅ Verify API key validity
 
 ```http
 GET /application/discordlink/check
 ```
 
 ##### Description
-Vérifie si la clé API est valide et si les clients doivent avoir un rôle Discord.
+Checks if the API key is valid and if customers should have a Discord role.
 
-##### Réponses
+##### Responses
 
 | Code  | Description                        |
 |-------|------------------------------------|
-| `200` | Retourne `ok` si la clé est valide |
-| `403` | Clé API invalide                   |
+| `200` | Returns `ok` if the key is valid |
+| `403` | Invalid API key                   |
 
-### Sécurité
+### Security
 
-L'API nécessite une authentification via un **token** API.  
-Ajoutez l'en-tête suivant dans vos requêtes :
+The API requires authentication via an API **token**.
+Add the following header to your requests:
 
 ```http
-Authorization: Bearer <votre_token>
+Authorization: Bearer <your_token>
 ```
 
-### Exemples d'utilisation
+### Usage Examples
 
-#### 🔍 Rechercher un client par ID Discord avec `cURL`
+#### 🔍 Search for a customer by Discord ID with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/search/123456789"
-  -H "Authorization: Bearer VOTRE_CLE_API"
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### 📌 Récupérer la liste des clients liés avec `cURL`
+#### 📌 Get the list of linked customers with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/getlinkedcustomers"
-  -H "Authorization: Bearer VOTRE_CLE_API"
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### ✅ Vérifier la clé API avec `cURL`
+#### ✅ Verify API key with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/check"
-  -H "Authorization: Bearer VOTRE_CLE_API"
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```

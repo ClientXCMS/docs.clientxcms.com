@@ -1,133 +1,137 @@
-# Cartes-cadeaux
+---
+translated: true
+---
 
-> Cette page détaille la mise en place, la gestion et l’utilisation de l’addon **Cartes-cadeaux / Gift cards** pour ClientXCMS.
-> Objectif : permettre la création, la vente et l’utilisation de cartes-cadeaux (montant fixe ou aléatoire) avec suivi complet côté administration et côté client.
+# Gift Cards
+
+> This page details the setup, management, and usage of the **Gift Cards** addon for ClientXCMS.
+> Objective: enable the creation, sale, and use of gift cards (fixed or random amount) with complete tracking on both admin and client sides.
 
 ---
 
-## 1. Principe général
+## 1. General Principle
 
-1. **Paramétrage global**
+1. **Global Settings**
 
-   * Vous définissez les montants autorisés, le préfixe des codes et la durée de validité par défaut.
-2. **Création & Gestion**
+   * You define allowed amounts, code prefix, and default validity period.
+2. **Creation & Management**
 
-   * Depuis l’administration : générer une carte-cadeau manuellement (montant fixe ou aléatoire, nombre d’utilisations, destinataire optionnel) ou consulter les statistiques globales.
-3. **Vente en boutique**
+   * From administration: manually generate a gift card (fixed or random amount, number of uses, optional recipient) or view global statistics.
+3. **Store Sales**
 
-   * Les clients peuvent acheter une carte-cadeau (montants prédéfinis) via la passerelle de paiement de leur choix ; le code est envoyé par e-mail.
-4. **Utilisation**
+   * Customers can purchase a gift card (predefined amounts) via their chosen payment gateway; the code is sent by email.
+4. **Usage**
 
-   * Le bénéficiaire saisit le code dans son espace client → le solde est crédité immédiatement.
-5. **Suivi**
+   * The recipient enters the code in their client area → the balance is credited immediately.
+5. **Tracking**
 
-   * Tableaux de bord (admin + client) listent cartes commandées, utilisées, taux d’usage, total reversé, etc.
+   * Dashboards (admin + client) list ordered cards, used cards, usage rate, total credited, etc.
 
 ---
 
-## 2. Prérequis
+## 2. Prerequisites
 
-Une fois L'addon activé :
+Once the addon is activated:
 
-* **Administration → Paramètres → Paramètres des extensions → Paramètres des cartes-cadeaux**
-* Interface de gestion : **Administration → Paramètres → Paramètres de la boutique → Cartes-cadeaux**
+* **Administration → Settings → Extension Settings → Gift Card Settings**
+* Management interface: **Administration → Settings → Store Settings → Gift Cards**
 
-| Élément     | Version / Détail                                                |
+| Element      | Version / Detail                                                |
 | ----------- | --------------------------------------------------------------- |
-| Add-on      | **Cartes-cadeaux** (Marketplace)                                    |
-| Dépendances | Aucune, fonctionne en natif avec les moyens de paiement actifs |                                                    |
-| Rôle client | Autorisation « Utiliser une carte-cadeau » (activée par défaut) |
+| Add-on      | **Gift Cards** (Marketplace)                                    |
+| Dependencies | None, works natively with active payment methods               |
+| Client Role | "Use a gift card" authorization (enabled by default)            |
 
 ---
 
-## 3. Paramètres globaux (extension)
+## 3. Global Settings (extension)
 
-| Champ                          | Description                                               | Exemple                      |
+| Field                          | Description                                               | Example                      |
 | ------------------------------ | --------------------------------------------------------- | ---------------------------- |
-| **Montants autorisés**         | Valeurs proposées à l’achat, séparées par virgule         | `10,20,50,100,200`           |
-| **Expiration (jours)**         | Durée de validité par défaut des cartes créées ou vendues | `365`                        |
-| **Autoriser l’achat**          | Active/désactive la vente dans l’espace client            | ✅                            |
-| **Préfixe des cartes-cadeaux** | Ajouté automatiquement devant chaque code généré          | `CC` (donnera `CC-6MCP9IC8`) |
+| **Allowed amounts**            | Values offered for purchase, comma-separated              | `10,20,50,100,200`           |
+| **Expiration (days)**          | Default validity period for created or sold cards         | `365`                        |
+| **Allow purchase**             | Enables/disables sales in client area                     | ✅                            |
+| **Gift card prefix**           | Automatically added before each generated code            | `CC` (will give `CC-6MCP9IC8`) |
 
-> Les montants sont exprimés dans la devise principale de votre boutique.
+> Amounts are expressed in your store's main currency.
 
 ---
 
-## 4. Interface d’administration
+## 4. Administration Interface
 
-### 4.1 Tableau de bord
+### 4.1 Dashboard
 ![img](/img/next_gen/extensions/addons/giftcards/giftcards_admin_view.png)
 
-* **Cartes-cadeaux créées** : compteur total.
-* **Montant total reversé** : somme créditée aux clients.
-* **Taux d’utilisation** : pourcentage de cartes totalement consommées.
+* **Gift cards created**: total counter.
+* **Total amount credited**: sum credited to customers.
+* **Usage rate**: percentage of fully consumed cards.
 
-### 4.2 Liste & actions
+### 4.2 List & Actions
 
-| Colonne         | Description                                  |
+| Column          | Description                                  |
 | --------------- | -------------------------------------------- |
-| `#`             | Identifiant interne                          |
-| **Code**        | Code de la carte-cadeau                      |
-| **Utilisation** | `x / y` (utilisations réalisées / maximales) |
-| **Montant**     | Valeur fixe ou plage aléatoire               |
-| **Créé**        | Date de génération                           |
-| **Actions**     | **Afficher** (détails) / **Supprimer**       |
+| `#`             | Internal identifier                          |
+| **Code**        | Gift card code                               |
+| **Usage**       | `x / y` (uses made / maximum)                |
+| **Amount**      | Fixed value or random range                  |
+| **Created**     | Generation date                              |
+| **Actions**     | **View** (details) / **Delete**              |
 
-### 4.3 Filtres disponibles
+### 4.3 Available Filters
 
-* Code de la carte
-* Montant
-* Type (fixe / aléatoire)
-* Identifiant interne
-* Client (destinataire)
+* Card code
+* Amount
+* Type (fixed / random)
+* Internal identifier
+* Customer (recipient)
 
 ---
 
-## 5. Création manuelle
+## 5. Manual Creation
 
 ![img](/img/next_gen/extensions/addons/giftcards/giftcards_creer_admin.png)
 
-**Administration → Cartes-cadeaux → Créer**
+**Administration → Gift Cards → Create**
 
-| Champ                      | Type *Montant fixe*                  | Type *Montant aléatoire*   |
+| Field                      | Type *Fixed Amount*                  | Type *Random Amount*       |
 | -------------------------- | ------------------------------------ | -------------------------- |
-| **Code de la carte**       | Pré-rempli (`CC-XXXXXXX`) modifiable | Pré-rempli modifiable      |
-| **Montant**                | Valeur unique (ex. `25,00`)          | —                          |
-| **Montant min / max**      | —                                    | Plage ex. `5,00` – `50,00` |
-| **Utilisations maximales** | `-1` = illimité, sinon 1, 2 …        | Idem                       |
-| **Expiration**             | Date/heure facultative               | Idem                       |
-| **Client autorisé**        | Restreindre la carte à un client     | Idem                       |
+| **Card code**              | Pre-filled (`CC-XXXXXXX`) editable   | Pre-filled editable        |
+| **Amount**                 | Single value (e.g., `25.00`)         | —                          |
+| **Min / Max amount**       | —                                    | Range e.g., `5.00` – `50.00` |
+| **Maximum uses**           | `-1` = unlimited, otherwise 1, 2 …   | Same                       |
+| **Expiration**             | Optional date/time                   | Same                       |
+| **Authorized customer**    | Restrict card to one customer        | Same                       |
 
-Cliquez **Créer** : la carte apparaît dans la liste et peut être envoyée manuellement ou communiquée au bénéficiaire.
+Click **Create**: the card appears in the list and can be sent manually or communicated to the recipient.
 
 ---
 
-## 6. Expérience côté client
+## 6. Client-Side Experience
 
 ![img](/img/next_gen/extensions/addons/giftcards/giftcards_client_view.png)
 
-> Menu **Mon compte → Moyens de paiement → Cartes-cadeaux**
+> Menu **My Account → Payment Methods → Gift Cards**
 
-1. **Ajouter une carte-cadeau**
+1. **Add a gift card**
 
-   * Champ code + bouton **Ajouter**  ⇒ le crédit est transféré instantanément sur le solde.
-2. **Offrir une carte-cadeau**
+   * Code field + **Add** button ⇒ credit is transferred instantly to the balance.
+2. **Give a gift card**
 
-   * Sélection du montant (parmi ceux autorisés) + passerelle de paiement.
-   * Option « Cette carte-cadeau est pour un ami » : envoie le code par e-mail au destinataire.
-3. **Cartes commandées**
+   * Amount selection (from allowed ones) + payment gateway.
+   * Option "This gift card is for a friend": sends the code by email to the recipient.
+3. **Ordered cards**
 
-   * Liste des codes achetés, état *utilisé / non* et date.
-4. **Cartes utilisées**
+   * List of purchased codes, *used / unused* status and date.
+4. **Used cards**
 
-   * Historique des codes appliqués, montants et dates.
+   * History of applied codes, amounts and dates.
 
 ---
 
-## 7. Bonnes pratiques
+## 7. Best Practices
 
-1. **Montants prédéfinis** : proposez des valeurs rondes (10 €, 20 €…) pour simplifier l’achat.
-2. **Préfixe distinctif** : ex. `CC` pour « ClientXCMS » afin d’éviter la confusion avec les coupons.
-3. **Expiration raisonnable** : 6 – 12 mois suffisent tout en respectant les obligations légales locales.
-4. **Limitez les utilisations** : 1 par défaut ; illimité seulement pour des besoins précis (ex. programme fidélité).
-5. **Support** : conservez l’ID interne (#) pour toute demande de traçabilité.
+1. **Predefined amounts**: offer round values (€10, €20…) to simplify purchasing.
+2. **Distinctive prefix**: e.g., `CC` for "ClientXCMS" to avoid confusion with coupons.
+3. **Reasonable expiration**: 6 – 12 months is sufficient while respecting local legal obligations.
+4. **Limit uses**: 1 by default; unlimited only for specific needs (e.g., loyalty program).
+5. **Support**: keep the internal ID (#) for any traceability request.

@@ -1,26 +1,30 @@
+---
+translated: true
+---
+
 # Support ID
-L’addon Support ID pour CLIENTXCMS introduit un système d’identification simple, fiable et universel permettant d’associer à chaque client un code unique de support.
-Ce code devient la référence centrale pour reconnaître instantanément un utilisateur, qu’il contacte votre support via ticket, Discord, e-mail, téléphone ou tout autre canal.
+The Support ID addon for CLIENTXCMS introduces a simple, reliable, and universal identification system that associates each customer with a unique support code.
+This code becomes the central reference for instantly recognizing a user, whether they contact your support via ticket, Discord, email, phone, or any other channel.
 
 :::info
-L'addon Support ID demande la version 2.14.9 ou supérieure de CLIENTXCMS.
+The Support ID addon requires CLIENTXCMS version 2.14.9 or higher.
 :::
 
-## Configuration de l'extension
-Vous pouvez configurer l'extension en accédant à `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Support ID`.
+## Extension Configuration
+You can configure the extension by going to `Admin Panel` > `Settings` > `Extension Settings` > `Support ID`.
 ![img](/img/next_gen/extensions/addons/supportid/config.png)
-- **Préfixe du Support ID** : Définit le préfixe utilisé pour générer les Support IDs (par défaut : CTX-).
-- **Format du code** : Choisissez entre un code alphanumérique ou uniquement numérique pour le Support ID.
+- **Support ID Prefix**: Defines the prefix used to generate Support IDs (default: CTX-).
+- **Code Format**: Choose between alphanumeric or numeric-only code for the Support ID.
 
 ## API
 ![img](/img/next_gen/extensions/addons/supportid/api.png)
-Vous pouvez accéder aux informations de Support ID via l'API REST de CLIENTXCMS. Voici le point de terminaison disponible :
-- `GET /api/v1/addons/supportid/{client_id}` : Récupère le Support ID pour un client spécifique en utilisant son ID client.
-### Exemple de requête
+You can access Support ID information via the CLIENTXCMS REST API. Here is the available endpoint:
+- `GET /api/v1/addons/supportid/{client_id}`: Retrieves the Support ID for a specific customer using their customer ID.
+### Request Example
 ```bash
-curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Authorization: Bearer VOTRE_TOKEN_API"
+curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Authorization: Bearer YOUR_API_TOKEN"
 ```
-### Exemple de réponse
+### Response Example
 ```json
 {
   data: {
@@ -54,13 +58,13 @@ curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Auth
   }
 }
 ```
-  
-Vous pouvez réinitialiser la clé d'API en appuyant sur le bouton "Réinitialiser la clé" dans la section de configuration de l'extension.
 
-## Rendu sur le site
+You can reset the API key by clicking the "Reset Key" button in the extension configuration section.
+
+## Site Display
 ![img](/img/next_gen/extensions/addons/supportid/image.png)
-## Support des thèmes
-Pour afficher le Support ID sur votre thème, ajoutez ce code dans le fichier `/views/front/client/index.blade.php` : 
+## Theme Support
+To display the Support ID on your theme, add this code in the `/views/front/client/index.blade.php` file:
 ```blade
 @includeWhen(app('extension')->extensionIsEnabled('supportid'), 'supportid::card')
 ```
