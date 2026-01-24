@@ -54,6 +54,7 @@ APP_URL=https://your-domain.com
 OAUTH_CLIENT_ID="XX"
 OAUTH_CLIENT_SECRET="XX"
 ```
+
 As well as your API keys, database connection, etc.
 
 Docker will generate the SSL certificate via Let's Encrypt automatically by adding the email in the docker-compose.yml file:

@@ -62,7 +62,7 @@ development_status:
   2-3-traduire-cloud-md: done
   2-4-traduire-selfhosted-md: done
   2-5-traduire-plesk-md: done
-  2-6-traduire-docker-md: review
+  2-6-traduire-docker-md: done
   2-7-traduire-ansible-md: in-progress
   2-8-traduire-upgrade-md: ready-for-dev
   epic-2-retrospective: optional
