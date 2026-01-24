@@ -1,6 +1,6 @@
 # Story 1.1: Relecture introduction.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -40,33 +40,33 @@ so that international users get a great first impression of ClientXCMS.
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Review EN translation quality (AC: #1)
-  - [ ] 1.1 Read through entire page for grammar/spelling
-  - [ ] 1.2 Check for awkward literal translations
-  - [ ] 1.3 Verify natural English flow
+- [x] Task 1: Review EN translation quality (AC: #1)
+  - [x] 1.1 Read through entire page for grammar/spelling
+  - [x] 1.2 Check for awkward literal translations
+  - [x] 1.3 Verify natural English flow
 
-- [ ] Task 2: Validate terminology (AC: #2)
-  - [ ] 2.1 Check "Overview" section terminology
-  - [ ] 2.2 Check "Next Gen" section terminology
-  - [ ] 2.3 Check "Features" list terminology
-  - [ ] 2.4 Check "Contributing" section
+- [x] Task 2: Validate terminology (AC: #2)
+  - [x] 2.1 Check "Overview" section terminology
+  - [x] 2.2 Check "Next Gen" section terminology
+  - [x] 2.3 Check "Features" list terminology
+  - [x] 2.4 Check "Contributing" section
 
-- [ ] Task 3: Verify links (AC: #3)
-  - [ ] 3.1 Test Laravel link (https://laravel.com)
-  - [ ] 3.2 Test GitHub link (https://github.com/ClientXCMS/docs.clientxcms.com)
+- [x] Task 3: Verify links (AC: #3)
+  - [x] 3.1 Test Laravel link (https://laravel.com)
+  - [x] 3.2 Test GitHub link (https://github.com/ClientXCMS/docs.clientxcms.com)
 
-- [ ] Task 4: Verify image (AC: #4)
-  - [ ] 4.1 Check image loads from external URL
-  - [ ] 4.2 Consider adding alt text for accessibility
+- [x] Task 4: Verify image (AC: #4)
+  - [x] 4.1 Check image loads from external URL
+  - [x] 4.2 Consider adding alt text for accessibility
 
-- [ ] Task 5: Validate frontmatter (AC: #5)
-  - [ ] 5.1 Confirm `translated: true` present
-  - [ ] 5.2 Confirm other frontmatter values
+- [x] Task 5: Validate frontmatter (AC: #5)
+  - [x] 5.1 Confirm `translated: true` present
+  - [x] 5.2 Confirm other frontmatter values
 
-- [ ] Task 6: Build and test (AC: #6)
-  - [ ] 6.1 Run `npm run build`
-  - [ ] 6.2 Run `npm run serve` and test `/` URL
-  - [ ] 6.3 Test `/fr/` URL for FR version
+- [x] Task 6: Build and test (AC: #6)
+  - [x] 6.1 Run `npm run build`
+  - [x] 6.2 Run `npm run serve` and test `/` URL
+  - [x] 6.3 Test `/fr/` URL for FR version
 
 ## Dev Notes
 
@@ -156,17 +156,26 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-(to be filled by dev agent)
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
-(to be filled by dev agent)
+- Build output verified: SUCCESS with 0 errors on EN introduction page
+- Broken links detected are in other FR pages (pre-existing issues, not related to this story)
 
 ### Completion Notes List
 
-(to be filled by dev agent)
+- Task 1: EN translation quality verified - grammar, spelling, and natural English flow confirmed
+- Task 2: Terminology validated against reference table - all terms consistent
+- Task 3: External links verified - Laravel (laravel.com) and GitHub repo both return HTTP 200
+- Task 4: Image verified (HTTP 200, image/png, 115KB) - Added alt text for accessibility: "ClientXCMS Next Gen dashboard preview"
+- Task 5: Frontmatter confirmed: translated: true, sidebar_position: 1, slug: /
+- Task 6: Build successful, pages render correctly at / (EN) and /fr/ (FR)
 
 ### File List
 
-- `docs/introductions/introduction.md` - EN target file to review
-- `i18n/fr/docusaurus-plugin-content-docs/current/introductions/introduction.md` - FR source for reference
+- `docs/introductions/introduction.md` - EN target file (modified: added alt text to image)
+
+## Change Log
+
+- 2026-01-24: Completed proofreading and validation of EN introduction page. Added accessibility alt text to hero image. All acceptance criteria verified and build successful.
