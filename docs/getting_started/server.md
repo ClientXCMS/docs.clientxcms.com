@@ -27,7 +27,6 @@ import TabItem from '@theme/TabItem';
 **Application API**: Application key.
 
 :::info Additional Information
-
 More information about API keys is available [here](/extensions/modules/Pterodactyl).
 :::
 </TabItem>
@@ -46,7 +45,6 @@ The following port must be open to connect CLIENTXCMS to your Plesk: 8443
 You can test the connection to the server and verify that it returns *"Success"* in response.
 
 :::info Additional Information
-
 More information about Plesk configuration is available [here](/extensions/modules/Plesk).
 :::
 </TabItem>
