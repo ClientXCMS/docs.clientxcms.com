@@ -1,43 +1,44 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 # API
-CLIENTXCMS met à disposition une API RESTful pour permettre aux développeurs de créer des applications qui interagissent avec les données de CLIENTXCMS. Cette API est basée sur les standards RESTful et utilise des codes d'état HTTP pour indiquer les erreurs. Les réponses peuvent être retournées en JSON ou en XML selon l'entête demandé.
+CLIENTXCMS provides a RESTful API that allows developers to create applications that interact with CLIENTXCMS data. This API is based on RESTful standards and uses HTTP status codes to indicate errors. Responses can be returned in JSON or XML format depending on the requested header.
 
 ![image](/img/next_gen/developpers/api.png)
-## Authentification
-Pour utiliser l'API, vous devez fournir une clé d'API dans l'en-tête de chaque requête.
+## Authentication
+To use the API, you must provide an API key in the header of each request.
 
-### Créer une clé d'API via l'interface
-1. Rendez-vous dans **Paramètres > Sécurité > API Keys**
-2. Cliquez sur **Créer**
-3. Renseignez les champs suivants :
-   - **Nom** : Un nom descriptif pour identifier la clé (ex: "Integration WHMCS", "Bot Discord")
-   - **Expiration** *(facultatif)* : Date d'expiration de la clé. Laissez vide pour une clé sans expiration.
-4. Sélectionnez les permissions :
-   - **Administrateur** : Donne accès à toutes les ressources et opérations
-   - **Permissions personnalisées** : Sélectionnez uniquement les permissions nécessaires (Produits, Clients, Tickets, Services, etc.)
-5. Cliquez sur **Créer**
+### Create an API key via the interface
+1. Go to **Settings > Security > API Keys**
+2. Click **Create**
+3. Fill in the following fields:
+   - **Name**: A descriptive name to identify the key (e.g., "WHMCS Integration", "Discord Bot")
+   - **Expiration** *(optional)*: Expiration date for the key. Leave empty for a key without expiration.
+4. Select the permissions:
+   - **Administrator**: Grants access to all resources and operations
+   - **Custom permissions**: Select only the necessary permissions (Products, Customers, Tickets, Services, etc.)
+5. Click **Create**
 
 :::warning
-La clé d'API ne sera affichée qu'une seule fois lors de sa création. Conservez-la précieusement !
+The API key will only be displayed once during creation. Keep it safe!
 :::
 
-### Créer une clé d'API via la ligne de commande
-Vous pouvez également créer une clé d'API avec la commande suivante :
+### Create an API key via command line
+You can also create an API key with the following command:
 
 ```bash
 php artisan clientxcms:create-api-key {name} {email} {--permissions=*}
 ```
 
-Le premier argument est le nom de la clé d'API, le second est le compte administrateur associé à la clé d'API, et le troisième est la liste des permissions.
+The first argument is the API key name, the second is the administrator account associated with the API key, and the third is the list of permissions.
 
 
-### Régénération d'une clé d'API
+### Regenerating an API key
 
-Vous pouvez régénérer une clé d'API dans l'interface **Paramètres > Sécurité > API Keys**. Cliquez sur **Regénérer**.
+You can regenerate an API key in the **Settings > Security > API Keys** interface. Click **Regenerate**.
 
-## Exemple
+## Example
 
 ### PHP
 ```php
@@ -68,16 +69,16 @@ axios.get('https://clientxcms.app/api/application/products', {
 });
 ```
 :::info
-N'hésitez pas à utiliser ?pricing=1 pour obtenir les prix des produits en plus des produits.
+Feel free to use ?pricing=1 to get product prices in addition to the products.
 :::
 
-## Spécifications
+## Specifications
 
-Deux ressources sont disponibles pour explorer l'API :
+Two resources are available to explore the API:
 
-- **[Documentation complète](/api)** : Consultez l'ensemble des endpoints, paramètres et schémas de réponse sur cette documentation.
-- **Interface Swagger sur votre instance** : Testez l'API directement depuis votre espace client via l'URL `/api/documentation` (exemple : `https://votre-domaine.com/api/documentation`).
+- **[Full documentation](/api)**: View all endpoints, parameters, and response schemas in this documentation.
+- **Swagger interface on your instance**: Test the API directly from your client area via the URL `/api/documentation` (example: `https://your-domain.com/api/documentation`).
 
 :::tip
-L'interface Swagger sur votre instance vous permet de tester les requêtes en temps réel avec votre propre clé d'API. N'oubliez pas d'indiquer "Bearer " avant votre clé d'API dans le champ "Authorization".
+The Swagger interface on your instance allows you to test requests in real-time with your own API key. Don't forget to add "Bearer " before your API key in the "Authorization" field.
 :::

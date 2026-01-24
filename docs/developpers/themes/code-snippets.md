@@ -1,10 +1,11 @@
 ---
 sidebar_position: 4
+translated: true
 ---
-# Code d'exemple
-Voici quelques exemples de code pour vous aider à personnaliser votre thème.
+# Code Examples
+Here are some code examples to help you customize your theme.
 ### Head
-Fichier `resources/themes/theme_name/includes/head.blade.php`
+File `resources/themes/theme_name/includes/head.blade.php`
 ```blade
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
@@ -21,7 +22,7 @@ Fichier `resources/themes/theme_name/includes/head.blade.php`
 </head>
 ```
 ### Header
-Fichier `resources/themes/theme_name/includes/header.blade.php`
+File `resources/themes/theme_name/includes/header.blade.php`
 
 ```blade
 <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full py-2.5 sm:py-4 bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700 print:hidden">
@@ -38,9 +39,9 @@ Fichier `resources/themes/theme_name/includes/header.blade.php`
     </nav>
 </header>
 ```
-### Affichage d'un bouton de panier
+### Displaying a Cart Button
 
-Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
+File `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
 ```blade
 <a href="{{ route('front.store.basket.show') }}" class="btn-icon2" >
     <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg>
@@ -50,8 +51,8 @@ Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
     <svg class="hs-collapse-open:block hidden flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
 </a>
 ```
-### Switch de mode sombre
-Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
+### Dark Mode Switch
+File `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
 ```blade
 
 @if (setting('theme_switch_mode') == 'both')
@@ -61,8 +62,8 @@ Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
 </button>
 @endif
 ```
-### Afficher le menu de navigation client
-Fichier `resources/themes/theme_name/views/layouts/client.blade.php`
+### Displaying the Client Navigation Menu
+File `resources/themes/theme_name/views/layouts/client.blade.php`
 ```blade
 @foreach(\App\Http\Navigation\ClientNavigationMenu::getItems() as $item)
     <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="{{ route($item['route']) }}">
@@ -72,10 +73,10 @@ Fichier `resources/themes/theme_name/views/layouts/client.blade.php`
     </a>
 @endforeach
 ```
-### Afficher les réseaux sociaux
-Ce menu est configurable depuis la page "Paramètres" > "Thèmes" > "Réseaux sociaux"
+### Displaying Social Networks
+This menu is configurable from the "Settings" > "Themes" > "Social Networks" page
 
-Fichier `resources/themes/theme_name/views/layouts/footer.blade.php`
+File `resources/themes/theme_name/views/layouts/footer.blade.php`
 ```blade
 @foreach (app('theme')->getSocialsNetworks() as $network)
     <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:text-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:hover:text-indigo-700" href="{{ $network->url }}">
@@ -83,9 +84,9 @@ Fichier `resources/themes/theme_name/views/layouts/footer.blade.php`
     </a>
 @endforeach
 ```
-### Afficher le menu de bas de page
-Ce menu est configurable depuis la page "Paramètres" > "Thèmes" > "Menu de bas de page"
-Fichier `resources/themes/theme_name/views/layouts/footer.blade.php`
+### Displaying the Footer Menu
+This menu is configurable from the "Settings" > "Themes" > "Footer Menu" page
+File `resources/themes/theme_name/views/layouts/footer.blade.php`
 ```blade
 @foreach (app('theme')->getBottomLinks() as $link => $name)
     <li class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
@@ -95,9 +96,9 @@ Fichier `resources/themes/theme_name/views/layouts/footer.blade.php`
     </li>
 @endforeach
 ```
-### Afficher le menu de navigation
-Fichier `resources/themes/theme_name/views/layouts/client.blade.php`
-Fichier `resources/themes/theme_name/views/layouts/front.blade.php`
+### Displaying the Navigation Menu
+File `resources/themes/theme_name/views/layouts/client.blade.php`
+File `resources/themes/theme_name/views/layouts/front.blade.php`
 ```blade
 @foreach (app('theme')->getFrontLinks() as $link => $data)
     <a class="font-medium sm:px-2 mr-3 {{ is_subroute($link) ? 'text-indigo-500 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-500' : 'text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500' }}" href="{{ $link }}">
@@ -106,8 +107,8 @@ Fichier `resources/themes/theme_name/views/layouts/front.blade.php`
 @endforeach
 ```
 
-### Afficher les groupes de produits
-Fichier `resources/themes/theme_name/views/front/store/group.blade.php`
+### Displaying Product Groups
+File `resources/themes/theme_name/views/front/store/group.blade.php`
 ```blade
 
 @foreach($groups->chunk(3) as $row)
@@ -152,8 +153,8 @@ Fichier `resources/themes/theme_name/views/front/store/group.blade.php`
         @endforeach
 ```
 
-### Afficher les produits
-Fichier `resources/themes/theme_name/views/front/store/group.blade.php`
+### Displaying Products
+File `resources/themes/theme_name/views/front/store/group.blade.php`
 ```blade
 
 @foreach($products->chunk(3) as $row)

@@ -1,21 +1,18 @@
 ---
 sidebar_position: 1
+translated: true
 ---
-# Thèmes
-CLIENTXCMS propose un système de thèmes pour personnaliser l'apparence de votre site web. Les thèmes sont des dossiers contenant des fichiers de configuration et des fichiers de templates. Les thèmes sont disponible partir de l'interface d'administration depuis `Paramètres`> `Themes`> `Paramètre du thème`.
+# Themes
+CLIENTXCMS offers a theme system to customize the appearance of your website. Themes are folders containing configuration files and template files. Themes are available from the administration interface via `Settings` > `Themes` > `Theme Settings`.
 
-Vous pouvez activer ou désactiver un thème en cliquant sur le bouton `Activer` ou `Désactiver` correspondant au thème.
-![Thèmes](/img/next_gen/developpers/themes/themes.png)
+You can enable or disable a theme by clicking the `Enable` or `Disable` button corresponding to the theme.
+![Themes](/img/next_gen/developpers/themes/themes.png)
 
-## Installation d'un thème
+## Installing a Theme
 :::info Information
-Pour les offres cloud, vous ne pouvez pas installer de thème personnalisé. Vous pouvez seulement activer un thème parmi les thèmes disponibles. Nous travaillons sur une solution pour permettre l'installation de thèmes personnalisés.
+For cloud offers, you cannot install custom themes. You can only activate a theme from the available themes. We are working on a solution to allow custom theme installation.
 :::
-Pour installer un thème, vous devez télécharger le thème depuis le site de CLIENTXCMS. Vous pouvez ensuite mettre dans le dossier `resources/themes` de votre installation. Il sera ensuite disponible dans la liste des thèmes. Vous devez ensuite relancer le build de npm pour que le thème soit pris en compte. Vous pouvez le faire en exécutant la commande suivante dans le terminal à la racine de votre installation :
+To install a theme, you must download the theme from the CLIENTXCMS website. You can then place it in the `resources/themes` folder of your installation. It will then be available in the theme list. You must then rerun the npm build for the theme to be taken into account. You can do this by running the following command in the terminal at the root of your installation:
 ```bash
 npm run build
 ```
-
-
-
-

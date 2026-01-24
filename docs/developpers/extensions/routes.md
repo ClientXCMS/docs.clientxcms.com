@@ -1,13 +1,14 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 # Routes
 
-La gestion des routes dans les extensions du CMS ClientXCMS suit le même principe que dans **Laravel**. Chaque extension peut définir ses propres routes dans des fichiers séparés, par exemple dans `routes/web.php` pour les routes publiques, et `routes/admin.php` pour les routes d'administration.
+Route management in ClientXCMS CMS extensions follows the same principle as in **Laravel**. Each extension can define its own routes in separate files, for example in `routes/web.php` for public routes, and `routes/admin.php` for administration routes.
 
-## Exemple de route
+## Route Example
 
-Voici un exemple simple de route définie dans le fichier `routes/web.php` d'une extension :
+Here is a simple example of a route defined in the `routes/web.php` file of an extension:
 
 ```php
 <?php
@@ -19,11 +20,11 @@ Route::get('/fund', function () {
 })->name('fund.index');
 ```
 
-Dans cet exemple, une route `GET` est définie pour l'URL `/fund`, qui retourne la vue `fund::index`. Le système va chercher dans le thème actuel `/resources/themes/{theme}/views/fund/index.blade.php` si celui-ci n’existe pas, il ira chercher dans votre dossier `/addons/fund/views/default/index.blade.php`.
-Nous conseillons par ailleurs l'utilisation des controllers de laravel. Plus d'informations sur leur propre documentation
-## Enregistrement des routes
+In this example, a `GET` route is defined for the URL `/fund`, which returns the `fund::index` view. The system will look in the current theme `/resources/themes/{theme}/views/fund/index.blade.php` if it doesn't exist, it will look in your folder `/addons/fund/views/default/index.blade.php`.
+We also recommend using Laravel controllers. More information in their own documentation.
+## Route Registration
 
-Pour que ces routes soient correctement chargées par **CLIENTXCMS**, il faut les enregistrer dans le `ServiceProvider` de l'extension. Voici un exemple de `FundServiceProvider` avec l'enregistrement des routes :
+For these routes to be correctly loaded by **CLIENTXCMS**, they must be registered in the extension's `ServiceProvider`. Here is an example of `FundServiceProvider` with route registration:
 
 ```php
 <?php
@@ -43,11 +44,11 @@ class FundServiceProvider extends BaseAddonServiceProvider
 
     public function boot()
     {
-        $this->loadViews(); // Permet de charger les vues (views/admin et views/default)
-        $this->loadTranslations(); // Permet de charger les traductions (lang/fr et lang/en)
-        $this->loadMigrations(); // Permet de charger les migrations
+        $this->loadViews(); // Loads views (views/admin and views/default)
+        $this->loadTranslations(); // Loads translations (lang/fr and lang/en)
+        $this->loadMigrations(); // Loads migrations
 
-        // Routes d'administration
+        // Administration routes
         \Route::middleware(['web', 'admin'])
             ->prefix(admin_prefix())
             ->name($this->uuid . '.')
@@ -55,7 +56,7 @@ class FundServiceProvider extends BaseAddonServiceProvider
                 require addon_path($this->uuid, 'routes/admin.php');
             });
 
-        // Routes publiques
+        // Public routes
         \Route::middleware(['web'])
             ->name($this->uuid . '.admin.')
             ->group(function () {
@@ -65,10 +66,10 @@ class FundServiceProvider extends BaseAddonServiceProvider
 }
 ```
 
-## Gestion des routes
+## Route Management
 
-Ceci est convention, elle n'est pas obligatoire, mais fortement recommandée.
+This is a convention, it is not mandatory, but strongly recommended.
 :::info Convention
-- Les **routes d'administration** sont chargées depuis `routes/admin.php`. Elles utilisent les middlewares `web` et `admin`, et sont préfixées avec le préfixe d'administration défini par la fonction `admin_prefix()`.
-- Les **routes publiques** sont chargées depuis `routes/web.php` et utilisent uniquement le middleware `web`. Elles sont accessibles sans restrictions particulières.
+- **Administration routes** are loaded from `routes/admin.php`. They use the `web` and `admin` middlewares, and are prefixed with the administration prefix defined by the `admin_prefix()` function.
+- **Public routes** are loaded from `routes/web.php` and only use the `web` middleware. They are accessible without particular restrictions.
 :::

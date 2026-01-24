@@ -1,63 +1,65 @@
+---
+translated: true
+---
+# Laravel Models
+ClientXCMS uses Laravel models to manage client area data. These models are divided into several categories, each corresponding to a specific domain.
 
-# Modèles Laravel
-ClientXCMS utilise les modèles Laravel pour gérer les données de l'espace client. Ces modèles sont répartis en plusieurs catégories, chacune correspondant à un domaine spécifique.
+## Customers
 
-## Clients
-
-| Modèle         | Namespace                           | Description                     | Exemple                                      |
+| Model          | Namespace                           | Description                     | Example                                      |
 |----------------|-------------------------------------|---------------------------------|----------------------------------------------|
-| Customer       | `App\Models\Account\Customer`       | Représente un client du système | `App\Models\Account\Customer::find($id)`     |
-| EmailMessage   | `App\Models\Account\EmailMessage`   | Gère les messages emails        | `App\Models\Account\EmailMessage::find($id)` |
+| Customer       | `App\Models\Account\Customer`       | Represents a system customer    | `App\Models\Account\Customer::find($id)`     |
+| EmailMessage   | `App\Models\Account\EmailMessage`   | Manages email messages          | `App\Models\Account\EmailMessage::find($id)` |
 
-## Facturations
+## Billing
 
-| Modèle          | Namespace                            | Description                                  | Exemple                                         |
+| Model           | Namespace                            | Description                                  | Example                                         |
 |-----------------|--------------------------------------|----------------------------------------------|-------------------------------------------------|
-| CustomItem      | `App\Models\Billing\CustomItem`      | Traite les éléments personnalisés            | `App\Models\Billing\CustomItem::find($id)`      |
-| Gateway         | `App\Models\Billing\Gateway`         | Gère les passerelles de paiement             | `App\Models\Billing\Gateway::find($id)`         |
-| Invoice         | `App\Models\Billing\Invoice`         | Représente une facture                       | `App\Models\Billing\Invoice::find($id)`         |
-| InvoiceItem     | `App\Models\Billing\InvoiceItem`     | Représente les éléments d'une facture        | `App\Models\Billing\InvoiceItem::find($id)`     |
-| InvoiceLog      | `App\Models\Billing\InvoiceLog`      | Journalise les actions liées aux factures    | `App\Models\Billing\InvoiceLog::find($id)`      |
-| Subscription    | `App\Models\Billing\Subscription`    | Gère les abonnements                         | `App\Models\Billing\Subscription::find($id)`    |
-| SubscriptionLog | `App\Models\Billing\SubscriptionLog` | Journalise les actions liées aux abonnements | `App\Models\Billing\SubscriptionLog::find($id)` |
-| ConfigOption    | `App\Models\Billing\ConfigOption`    | Gère les options de configuration            | `App\Models\Billing\ConfigOption::find($id)`    |
-| ConfigOptionOption | `App\Models\Billing\ConfigOptionOption` | Gère les options des options de configuration | `App\Models\Billing\ConfigOptionOption::find($id)` |
-| ConfigOptionProduct | `App\Models\Billing\ConfigOptionProduct` | Gère les produits associés aux options de configuration | `App\Models\Billing\ConfigOptionProduct::find($id)` |
-| Upgrade         | `App\Models\Billing\Upgrade`         | Gère les améliorations de service            | `App\Models\Billing\Upgrade::find($id)`         |
+| CustomItem      | `App\Models\Billing\CustomItem`      | Handles custom items                         | `App\Models\Billing\CustomItem::find($id)`      |
+| Gateway         | `App\Models\Billing\Gateway`         | Manages payment gateways                     | `App\Models\Billing\Gateway::find($id)`         |
+| Invoice         | `App\Models\Billing\Invoice`         | Represents an invoice                        | `App\Models\Billing\Invoice::find($id)`         |
+| InvoiceItem     | `App\Models\Billing\InvoiceItem`     | Represents invoice items                     | `App\Models\Billing\InvoiceItem::find($id)`     |
+| InvoiceLog      | `App\Models\Billing\InvoiceLog`      | Logs invoice-related actions                 | `App\Models\Billing\InvoiceLog::find($id)`      |
+| Subscription    | `App\Models\Billing\Subscription`    | Manages subscriptions                        | `App\Models\Billing\Subscription::find($id)`    |
+| SubscriptionLog | `App\Models\Billing\SubscriptionLog` | Logs subscription-related actions            | `App\Models\Billing\SubscriptionLog::find($id)` |
+| ConfigOption    | `App\Models\Billing\ConfigOption`    | Manages configuration options                | `App\Models\Billing\ConfigOption::find($id)`    |
+| ConfigOptionOption | `App\Models\Billing\ConfigOptionOption` | Manages configuration option options    | `App\Models\Billing\ConfigOptionOption::find($id)` |
+| ConfigOptionProduct | `App\Models\Billing\ConfigOptionProduct` | Manages products associated with configuration options | `App\Models\Billing\ConfigOptionProduct::find($id)` |
+| Upgrade         | `App\Models\Billing\Upgrade`         | Manages service upgrades                     | `App\Models\Billing\Upgrade::find($id)`         |
 
-## Centre d'aide
+## Help Center
 
-| Modèle            | Namespace                               | Description                              | Exemple                                            |
+| Model             | Namespace                               | Description                              | Example                                            |
 |-------------------|-----------------------------------------|------------------------------------------|----------------------------------------------------|
-| SupportAttachment | `App\Models\Helpdesk\SupportAttachment` | Gère les pièces jointes dans le helpdesk | `App\Models\Helpdesk\SupportAttachment::find($id)` |
-| SupportDepartment | `App\Models\Helpdesk\SupportDepartment` | Représente un département du support     | `App\Models\Helpdesk\SupportDepartment::find($id)` |
-| SupportMessage    | `App\Models\Helpdesk\SupportMessage`    | Gère les messages du helpdesk            | `App\Models\Helpdesk\SupportMessage::find($id)`    |
-| SupportTicket     | `App\Models\Helpdesk\SupportTicket`     | Gère les tickets du helpdesk             | `App\Models\Helpdesk\SupportTicket::find($id)`     |
+| SupportAttachment | `App\Models\Helpdesk\SupportAttachment` | Manages helpdesk attachments             | `App\Models\Helpdesk\SupportAttachment::find($id)` |
+| SupportDepartment | `App\Models\Helpdesk\SupportDepartment` | Represents a support department          | `App\Models\Helpdesk\SupportDepartment::find($id)` |
+| SupportMessage    | `App\Models\Helpdesk\SupportMessage`    | Manages helpdesk messages                | `App\Models\Helpdesk\SupportMessage::find($id)`    |
+| SupportTicket     | `App\Models\Helpdesk\SupportTicket`     | Manages helpdesk tickets                 | `App\Models\Helpdesk\SupportTicket::find($id)`     |
 
-## Approvisionnement
+## Provisioning
 
-| Modèle             | Namespace                                    | Description                          | Exemple                                                 |
+| Model              | Namespace                                    | Description                          | Example                                                 |
 |--------------------|----------------------------------------------|--------------------------------------|---------------------------------------------------------|
-| CancellationReason | `App\Models\Provisioning\CancellationReason` | Représente une raison d'annulation   | `App\Models\Provisioning\CancellationReason::find($id)` |
-| Server             | `App\Models\Provisioning\Server`             | Gère un serveur                      | `App\Models\Provisioning\Server::find($id)`             |
-| Service            | `App\Models\Provisioning\Service`            | Représente un service                | `App\Models\Provisioning\Service::find($id)`            |
-| ServiceRenewals    | `App\Models\Provisioning\ServiceRenewals`    | Gère les renouvellements de service  | `App\Models\Provisioning\ServiceRenewals::find($id)`    |
-| SubdomainHost      | `App\Models\Provisioning\SubdomainHost`      | Gère les sous-domaines d'hébergement | `App\Models\Provisioning\SubdomainHost::find($id)`      |
-| ConfigOptionService | `App\Models\Provisioning\ConfigOptionService` | Gère les options de configuration des services | `App\Models\Provisioning\ConfigOptionService::find($id)` |
-## Boutique
+| CancellationReason | `App\Models\Provisioning\CancellationReason` | Represents a cancellation reason     | `App\Models\Provisioning\CancellationReason::find($id)` |
+| Server             | `App\Models\Provisioning\Server`             | Manages a server                     | `App\Models\Provisioning\Server::find($id)`             |
+| Service            | `App\Models\Provisioning\Service`            | Represents a service                 | `App\Models\Provisioning\Service::find($id)`            |
+| ServiceRenewals    | `App\Models\Provisioning\ServiceRenewals`    | Manages service renewals             | `App\Models\Provisioning\ServiceRenewals::find($id)`    |
+| SubdomainHost      | `App\Models\Provisioning\SubdomainHost`      | Manages hosting subdomains           | `App\Models\Provisioning\SubdomainHost::find($id)`      |
+| ConfigOptionService | `App\Models\Provisioning\ConfigOptionService` | Manages service configuration options | `App\Models\Provisioning\ConfigOptionService::find($id)` |
+## Store
 
-### Panier
+### Cart
 
-| Modèle               | Namespace                                      | Description                                      | Exemple                                                   |
+| Model                | Namespace                                      | Description                                      | Example                                                   |
 |----------------------|------------------------------------------------|--------------------------------------------------|-----------------------------------------------------------|
-| Basket               | `App\Models\Store\Basket\Basket`               | Gère le panier d'achat                           | `App\Models\Store\Basket\Basket::find($id)`               |
-| BasketRow            | `App\Models\Store\Basket\BasketRow`            | Gère une ligne d'article dans le panier          | `App\Models\Store\Basket\BasketRow::find($id)`            |
+| Basket               | `App\Models\Store\Basket\Basket`               | Manages the shopping cart                        | `App\Models\Store\Basket\Basket::find($id)`               |
+| BasketRow            | `App\Models\Store\Basket\BasketRow`            | Manages a cart item row                          | `App\Models\Store\Basket\BasketRow::find($id)`            |
 
-| Modèle         | Namespace                         | Description                            | Exemple                                      |
+| Model          | Namespace                         | Description                            | Example                                      |
 |----------------|-----------------------------------|----------------------------------------|----------------------------------------------|
-| Coupon         | `App\Models\Store\Coupon`         | Représente un coupon                   | `App\Models\Store\Coupon::find($id)`         |
-| CouponProducts | `App\Models\Store\CouponProducts` | Gère les produits associés aux coupons | `App\Models\Store\CouponProducts::find($id)` |
-| CouponUsage    | `App\Models\Store\CouponUsage`    | Journalise l'utilisation des coupons   | `App\Models\Store\CouponUsage::find($id)`    |
-| Group          | `App\Models\Store\Group`          | Représente un groupe de produits       | `App\Models\Store\Group::find($id)`          |
-| Product        | `App\Models\Store\Product`        | Représente un produit                  | `App\Models\Store\Product::find($id)`        |
-| Pricing        | `App\Models\Store\Pricing`        | Représente un prix                     | `App\Models\Store\Pricing::find($id)`        |
+| Coupon         | `App\Models\Store\Coupon`         | Represents a coupon                    | `App\Models\Store\Coupon::find($id)`         |
+| CouponProducts | `App\Models\Store\CouponProducts` | Manages products associated with coupons | `App\Models\Store\CouponProducts::find($id)` |
+| CouponUsage    | `App\Models\Store\CouponUsage`    | Logs coupon usage                      | `App\Models\Store\CouponUsage::find($id)`    |
+| Group          | `App\Models\Store\Group`          | Represents a product group             | `App\Models\Store\Group::find($id)`          |
+| Product        | `App\Models\Store\Product`        | Represents a product                   | `App\Models\Store\Product::find($id)`        |
+| Pricing        | `App\Models\Store\Pricing`        | Represents a price                     | `App\Models\Store\Pricing::find($id)`        |
