@@ -1,95 +1,101 @@
-# Réseaux sociaux
+---
+translated: true
+---
 
-Dans **CLIENTXCMS**, l'**intégration des réseaux sociaux** constitue un pont essentiel entre votre plateforme et votre **écosystème digital étendu**. <br/>
-L'objectif est stratégique : **étendre votre présence en ligne**, **faciliter le partage et l'engagement** et **créer une communauté autour de votre marque**. Une présence sociale bien orchestrée peut augmenter votre trafic de 25% et renforcer significativement la confiance client grâce à la validation sociale.
+# Social Networks
 
-Cette page permet de configurer tous les liens vers vos réseaux sociaux pour une intégration harmonieuse sur votre plateforme.
+In **CLIENTXCMS**, **social network integration** is an essential bridge between your platform and your **extended digital ecosystem**. <br/>
+The objective is strategic: **extend your online presence**, **facilitate sharing and engagement** and **create a community around your brand**. A well-orchestrated social presence can increase your traffic by 25% and significantly strengthen customer trust through social validation.
 
-Vous pouvez gérer vos réseaux sociaux depuis :
+This page allows you to configure all links to your social networks for seamless integration on your platform.
 
-`Paramètres` > `Personnalisation` > `Réseaux sociaux`
+You can manage your social networks from:
 
-![Configuration des réseaux sociaux](/img/next_gen/settings/personalization/socials/admin.png)
+`Settings` > `Personalization` > `Social Networks`
 
-:::tip Astuce
-Vos réseaux sociaux sont vos **ambassadeurs numériques**. 
-Ils humanisent votre marque et créent une relation de proximité que votre site seul ne peut pas offrir.
+![Social networks configuration](/img/next_gen/settings/personalization/socials/admin.png)
+
+:::tip Tip
+Your social networks are your **digital ambassadors**.
+They humanize your brand and create a relationship of proximity that your website alone cannot offer.
 :::
 
-## Pourquoi intégrer les réseaux sociaux ?
+## Why Integrate Social Networks?
 
-L'intégration sociale permet de :
+Social integration allows you to:
 
-* **Étendre votre portée** vers de nouvelles audiences qualifiées
-* **Humaniser votre marque** avec du contenu authentique et personnel
-* **Créer de l'engagement** et fidéliser votre communauté
-* **Améliorer votre référencement** avec des signaux sociaux positifs
-* **Faciliter le partage** de votre contenu et de vos offres
+* **Extend your reach** to new qualified audiences
+* **Humanize your brand** with authentic and personal content
+* **Create engagement** and build customer loyalty
+* **Improve your SEO** with positive social signals
+* **Facilitate sharing** of your content and offers
 
-:::tip Astuce
-C'est comme ouvrir des succursales de votre magasin 🏪 dans différents quartiers digitaux — chaque réseau vous connecte à une communauté spécifique.
+:::tip Tip
+It's like opening branches of your store in different digital neighborhoods — each network connects you to a specific community.
 :::
 
-## Gestion des réseaux sociaux
+## Social Network Management
 
-### Interface d'administration
+### Administration Interface
 
-L'interface vous permet de visualiser, organiser et gérer tous vos liens de réseaux sociaux depuis un tableau de bord centralisé.
+The interface allows you to view, organize and manage all your social network links from a centralized dashboard.
 
-**Fonctionnalités disponibles** :
-- **Vue d'ensemble** : Liste complète de vos réseaux configurés
-- **Gestion rapide** : Ajout, modification, suppression en quelques clics
-- **Prévisualisation** : Aperçu de l'affichage final
-- **Réorganisation** : Ordre d'affichage personnalisable
+**Available Features**:
+- **Overview**: Complete list of your configured networks
+- **Quick Management**: Add, modify, delete in a few clicks
+- **Preview**: View of the final display
+- **Reorganization**: Customizable display order
 
-### Ajout d'un nouveau réseau
+### Adding a New Network
 
-Pour ajouter un réseau social, cliquez sur le bouton `Créer` en haut à droite de la page.
+To add a social network, click the `Create` button at the top right of the page.
 
-![Création d'un réseau social](/img/next_gen/settings/personalization/socials/create.png)
+![Creating a social network](/img/next_gen/settings/personalization/socials/create.png)
 
-## Configuration des réseaux
+## Network Configuration
 
-### Paramètres requis
+### Required Settings
 
-**Nom du réseau social** | (libellé affiché)<br />
-Nom visible par vos visiteurs, généralement le nom officiel du réseau.
+**Social Network Name** | (displayed label)<br />
+Name visible to your visitors, usually the official network name.
 
-**Recommandations** :
-- **Noms officiels** : "Facebook", "LinkedIn", "Instagram", "YouTube"
-- **Cohérence** : Respecter l'orthographe officielle
-- **Clarté** : Immédiatement reconnaissable
-- **Éviter** : Abréviations ou surnoms confus
+**Recommendations**:
+- **Official names**: "Facebook", "LinkedIn", "Instagram", "YouTube"
+- **Consistency**: Respect official spelling
+- **Clarity**: Immediately recognizable
+- **Avoid**: Confusing abbreviations or nicknames
 
-**URL du profil** | (lien de destination)<br />
-Lien complet vers votre profil ou page sur le réseau social.
+**Profile URL** | (destination link)<br />
+Full link to your profile or page on the social network.
 
-**Format requis** :
+**Required Format**:
 ```
-https://www.facebook.com/votrepage
-https://www.linkedin.com/company/votreentreprise
-https://www.instagram.com/votrecompte
-https://www.youtube.com/c/votrechaine
-https://twitter.com/votrecompte
+https://www.facebook.com/yourpage
+https://www.linkedin.com/company/yourcompany
+https://www.instagram.com/youraccount
+https://www.youtube.com/c/yourchannel
+https://twitter.com/youraccount
 ```
-## Modification et gestion
 
-### Édition d'un réseau existant
+## Modification and Management
 
-Vous pouvez éditer un réseau social en cliquant sur le bouton `Afficher` dans la colonne "Actions".
+### Editing an Existing Network
 
-![Édition d'un réseau social](/img/next_gen/settings/personalization/socials/edit.png)
+You can edit a social network by clicking the `View` button in the "Actions" column.
 
-**Modifications possibles** :
-- **Mise à jour URL** : Changement d'adresse de profil
-- **Changement d'icône** : Adaptation visuelle
-- **Modification du nom** : Ajustement du libellé
-## Affichage et intégration
+![Editing a social network](/img/next_gen/settings/personalization/socials/edit.png)
 
-### Position dans le site
+**Possible Modifications**:
+- **URL Update**: Profile address change
+- **Icon Change**: Visual adaptation
+- **Name Modification**: Label adjustment
 
-Les réseaux sociaux s'affichent automatiquement en bas de votre site dans le pied de page.
+## Display and Integration
 
-![Affichage des réseaux sociaux dans le footer](/img/next_gen/settings/personalization/socials/footer.png)
+### Position on the Site
 
-Une fois vos réseaux sociaux configurés, n'oubliez pas de cliquer sur `Enregistrer` pour appliquer les modifications.
+Social networks are automatically displayed at the bottom of your site in the footer.
+
+![Social networks display in footer](/img/next_gen/settings/personalization/socials/footer.png)
+
+Once your social networks are configured, don't forget to click `Save` to apply the changes.

@@ -181,56 +181,56 @@ stories:
     file: docs/settings/personalization/personalization.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/personalization.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: medium
 
   settings-personalization-home:
     file: docs/settings/personalization/home.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/home.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: medium
 
   settings-personalization-front-menu:
     file: docs/settings/personalization/front_menu.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/front_menu.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: low
 
   settings-personalization-bottom-menu:
     file: docs/settings/personalization/bottom_menu.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/bottom_menu.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: low
 
   settings-personalization-sections:
     file: docs/settings/personalization/sections.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/sections.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: low
 
   settings-personalization-seo:
     file: docs/settings/personalization/seo.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/seo.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: medium
 
   settings-personalization-socials:
     file: docs/settings/personalization/socials.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/socials.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: low
 
   # Provisioning (5 files)
@@ -238,40 +238,40 @@ stories:
     file: docs/settings/provisioning/provisioning.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/provisioning.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: high
 
   settings-provisioning-servers:
     file: docs/settings/provisioning/servers.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/servers.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: high
 
   settings-provisioning-services:
     file: docs/settings/provisioning/services.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/services.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: high
 
   settings-provisioning-configoptions:
     file: docs/settings/provisioning/configoptions.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/configoptions.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: medium
 
   settings-provisioning-cancellation:
     file: docs/settings/provisioning/cancellation_reasons.md
     i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/cancellation_reasons.md
     epic: 4
-    status: ready-for-dev
-    owner: null
+    status: done
+    owner: worker-2
     priority: low
 
   # Security (6 files)
@@ -1337,8 +1337,8 @@ stories:
 
 stats:
   total_stories: 132
-  completed: 18
-  remaining: 114
+  completed: 30
+  remaining: 102
   by_epic:
     epic-4-settings: 44
     epic-5-extensions: 32

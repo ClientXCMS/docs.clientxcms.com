@@ -1,5 +1,9 @@
+---
+translated: true
+---
+
 import DocCardList from '@theme/DocCardList';
 
-# Approvisionement
+# Provisioning
 
 <DocCardList />
