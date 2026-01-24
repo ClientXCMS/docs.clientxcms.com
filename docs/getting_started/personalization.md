@@ -2,56 +2,67 @@
 sidebar_position: 5
 ---
 
-# Personnalisation de l'espace client
-Vous pouvez personnaliser l'apparence de votre espace client en modifiant les paramètres.
-### Configuration des logos
+# Client Area Customization
 
-Vous pouvez modifier le nom de votre espace client ainsi que le logo qui apparaît sur l'espace client. Pour cela, rendez-vous dans les `Paramètres` puis dans `Paramètres généraux` puis `Paramètres globaux`.
+You can customize the appearance of your client area by changing the settings.
 
-Plus d'informations sur la configuration des logos sont disponibles [ici](/settings/core/app).
+### Logo Configuration
 
-:::info 
-Pour les licences en auto-hébergement, vérifiez bien que vous avez mis les bonnes permissions sur le dossier `storage` et `public` pour que les images soient bien enregistrées.
-:::
-### Accueil
-Vous pouvez modifier le texte d'accueil de votre espace client en modifiant le contenu de la page d'accueil. Pour cela, rendez-vous dans les `Paramètres` puis dans `Personnalisation` puis `Page Accueil`.
+You can change the name of your client area as well as the logo that appears on the client area. To do this, go to `Settings` then `General Settings` then `Global Settings`.
 
-Vous pourrez modifier le titre et sous-titre de la page d'accueil ainsi que l'image d'accueil.
-
-### Configuration des menus
-#### Menu du haut de la page
-Vous pouvez modifier les éléments du menu du haut de la page en allant dans les `Paramètres` puis dans `Personnalisation` puis `Menu du haut de la page`.
-![image](/img/next_gen/settings/personalization/front_menu/admin.png)
-
-Ici, vous pouvez ajouter, modifier ou supprimer des éléments du menu du haut de la page.
-
-Vous pouvez également choisir d'afficher ou non le logo dans le menu du haut de la page. ou choisir le thème autorisés pour l'espace client.
-
-Plus d'informations sur la configuration des menus sont disponibles [ici](/settings/personalization/front_menu).
-#### Menu du pied de la page
-Vous pouvez modifier les élements du menu du pied de la page en allant dans les `Paramètres` puis dans `Personnalisation` puis `Menu du pied de la page`.
-
-![image](/img/next_gen/settings/personalization/bottom_menu/admin.png)
-
-Ici, vous pouvez ajouter, modifier ou supprimer des éléments du menu du pied de la page.
-
-Vous pouvez également modifier le texte du pied de page ainsi que ajouter votre badge TopHeberg.
-Vous pouvez également ajouter des liens vers vos [réseaux sociaux](/settings/personalization/socials). Plus d'informations sur la configuration des menus sont disponibles [ici](/settings/personalization/bottom_menu).
-### Configuration des mails
-
-Pour envoyer des mails à vos clients, vous pouvez configurer les paramètres de vos mails. Cela permet d'accélérer l'envoi des mails. Pour cela, rendez-vous dans les `Paramètres` puis dans `Paramètre généraux` puis `Paramètres de messagerie`.
-![Paramètres de messagerie](/img/next_gen/settings/core/mail/mail.png)
-
-Vous pouvez configurer l'adresse d'envoi, le nom d'envoi, la salutation de début et de fin, le domaine de l'espace client, etc.
+More information on logo configuration is available [here](/settings/core/app).
 
 :::info
-Il est important de modifier le domaine de l'espace client avec votre propre domaine pour que les liens dans les mails soient corrects.
+For self-hosted licenses, make sure you have set the correct permissions on the `storage` and `public` folders so that images are saved properly.
 :::
 
-Plus d'informations sur la configuration des mails sont disponibles [ici](/settings/core/mail).
+### Homepage
 
-### Autres personnalisations
+You can change the welcome text of your client area by editing the homepage content. To do this, go to `Settings` then `Customization` then `Homepage`.
 
-Vous pouvez modifier le SEO de votre espace client en modifiant les paramètres SEO. Pour cela, rendez-vous dans les `Paramètres` puis dans `Personnalisation` puis `SEO`.
+You can modify the title and subtitle of the homepage as well as the homepage image.
 
-Plus d'informations sur la configuration du SEO sont disponibles [ici](/settings/personalization/seo).
+### Menu Configuration
+
+#### Top Navigation Menu
+
+You can modify the top navigation menu items by going to `Settings` then `Customization` then `Top Navigation Menu`.
+
+![Top Navigation Menu](/img/next_gen/settings/personalization/front_menu/admin.png)
+
+Here, you can add, edit, or delete items from the top navigation menu.
+
+You can also choose whether to display the logo in the top navigation menu, or select the allowed themes for the client area.
+
+More information on menu configuration is available [here](/settings/personalization/front_menu).
+
+#### Footer Menu
+
+You can modify the footer menu items by going to `Settings` then `Customization` then `Footer Menu`.
+
+![Footer Menu](/img/next_gen/settings/personalization/bottom_menu/admin.png)
+
+Here, you can add, edit, or delete items from the footer menu.
+
+You can also modify the footer text and add your TopHeberg badge.
+You can also add links to your [social networks](/settings/personalization/socials). More information on menu configuration is available [here](/settings/personalization/bottom_menu).
+
+### Email Configuration
+
+To send emails to your customers, you can configure your email settings. This speeds up email delivery. To do this, go to `Settings` then `General Settings` then `Email Settings`.
+
+![Email Settings](/img/next_gen/settings/core/mail/mail.png)
+
+You can configure the sender address, sender name, greeting and sign-off, client area domain, etc.
+
+:::info
+It is important to change the client area domain with your own domain so that links in emails are correct.
+:::
+
+More information on email configuration is available [here](/settings/core/mail).
+
+### Other Customizations
+
+You can modify the SEO of your client area by changing the SEO settings. To do this, go to `Settings` then `Customization` then `SEO`.
+
+More information on SEO configuration is available [here](/settings/personalization/seo).
