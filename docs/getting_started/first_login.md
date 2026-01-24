@@ -1,27 +1,30 @@
 ---
 sidebar_position: 1
 ---
-# Première connexion
-Une fois que vous avez reçu vos identifiants de connexion, vous pouvez vous connecter à l'administration de votre espace client en utilisant les informations envoyées par e-mail.
+# First Login
+
+Once you have received your login credentials, you can connect to your client area administration using the information sent by email.
 
 ![Email](/img/next_gen/Installation/Cloud/email.png)
 
-Vous vous retrouvez sur la page "Dashboard" de votre espace client. Cette page vous permet de voir un aperçu de votre espace client et de naviguer vers les différentes sections de l'administration.
+You will land on the "Dashboard" page of your client area. This page allows you to see an overview of your client area and navigate to the different sections of the administration.
 
 :::info TIPS
-Vous pouvez rechercher facilement une page ou une information en utilisant la barre de recherche en haut à droite de la page ou en utilisant les raccourcis clavier `Ctrl + /`.
+You can easily search for a page or information using the search bar at the top right of the page or by using the keyboard shortcuts `Ctrl + /`.
 :::
 
-# Activer les premières extensions
-Pour commencer, vous devez activer les premières extensions de votre espace client. Pour cela, rendez-vous dans les `Paramètres` puis dans `Extensions`.
+# Activate Your First Extensions
 
-Vous pouvez activer les extensions que vous souhaitez utiliser en cliquant sur le bouton `Activer`.
+To get started, you need to activate the first extensions of your client area. To do this, go to `Settings` then `Extensions`.
 
-Si vous avez des extensions supplémentaires avec votre licence, vous pouvez les activer par la même occasion.
+You can activate the extensions you want to use by clicking the `Activate` button.
 
-Par exemple, si vous souhaitez livrer des produits Pterodactyl, vous devez activer l'extension Pterodactyl.
-![img](/img/next_gen/extensions/image_1.png)
+If you have additional extensions with your license, you can activate them at the same time.
 
-Plus d'informations sur les extensions sont disponibles [ici](/extensions/).
+For example, if you want to deliver Pterodactyl products, you need to activate the Pterodactyl extension.
 
-Vous pouvez passer à la configuration de vos premiers serveurs en suivant les instructions [ici](/getting_started/server).
+![Extensions](/img/next_gen/extensions/image_1.png)
+
+More information on extensions is available [here](/extensions/).
+
+You can proceed to configure your first servers by following the instructions [here](/getting_started/server).

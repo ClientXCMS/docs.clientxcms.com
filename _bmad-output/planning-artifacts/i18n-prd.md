@@ -164,6 +164,32 @@ Articles recents d'abord, changelogs anciens = skip.
 
 ## 5. Decisions techniques
 
+### CRITICAL: Structure des fichiers i18n
+
+**ATTENTION - REGLE ABSOLUE POUR TOUS LES AGENTS:**
+
+| Locale | Emplacement des fichiers | Exemple |
+|--------|--------------------------|---------|
+| **EN (default)** | `/docs/` | `docs/getting_started/personalization.md` |
+| **FR** | `/i18n/fr/docusaurus-plugin-content-docs/current/` | `i18n/fr/.../getting_started/personalization.md` |
+
+**ERREURS A EVITER:**
+- NE JAMAIS creer de fichiers dans `/docs/i18n/en/...` - ce chemin est INVALIDE
+- NE JAMAIS creer de fichiers dans `/i18n/en/...` - EN est la locale par defaut, pas une locale i18n
+- Les fichiers EN vont DIRECTEMENT dans `/docs/`, PAS dans un sous-dossier i18n
+
+**Workflow de traduction correct:**
+1. Lire le contenu FR depuis `/i18n/fr/.../current/<path>/<file>.md`
+2. Modifier le fichier `/docs/<path>/<file>.md` avec le contenu EN traduit
+3. Le fichier FR dans `/i18n/fr/` reste inchange
+
+**Pourquoi cette structure?**
+- Docusaurus utilise `defaultLocale: 'en'` dans la config
+- Les fichiers dans `/docs/` SONT les fichiers de la locale par defaut (EN)
+- Seules les locales NON-default ont un dossier dans `/i18n/`
+
+---
+
 ### Architecture i18n
 
 ```

@@ -1,6 +1,6 @@
 # Story 3.2: Traduire first_login.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -42,10 +42,10 @@ so that international users can understand how to access the admin panel and act
 
 ## Tasks / Subtasks
 
-- [x] Task 1: Create EN file with frontmatter (AC: #2)
-  - [x] 1.1 Create file at `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md`
-  - [x] 1.2 Add `translated: true`
-  - [x] 1.3 Preserve `sidebar_position: 1`
+- [x] Task 1: Translate EN file in /docs/ (AC: #2)
+  - [x] 1.1 Modify `docs/getting_started/first_login.md` with EN content (default locale)
+  - [x] 1.2 Preserve `sidebar_position: 1`
+  - [x] 1.3 FR version already exists in `i18n/fr/.../getting_started/first_login.md`
 
 - [x] Task 2: Translate header and intro section (AC: #1, #3)
   - [x] 2.1 Translate title "Premiere connexion" to "First Login"
@@ -77,8 +77,8 @@ so that international users can understand how to access the admin panel and act
 
 | Purpose | Path |
 |---------|------|
-| FR Source file | `docs/getting_started/first_login.md` |
-| EN Target file | `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md` |
+| EN file (default locale) | `docs/getting_started/first_login.md` |
+| FR file (i18n) | `i18n/fr/docusaurus-plugin-content-docs/current/getting_started/first_login.md` |
 
 ### Current State Analysis
 
@@ -251,8 +251,8 @@ npm run serve -- --port 3001
 - **Docusaurus version**: 3.9
 - **Default locale**: `en`
 - **Route base path**: `/` (docs served at root)
-- **EN files location**: `i18n/en/docusaurus-plugin-content-docs/current/`
-- **FR files location**: `docs/` (source) with translations in `i18n/fr/`
+- **EN files location**: `/docs/` (default locale - NO i18n/en/ folder!)
+- **FR files location**: `/i18n/fr/docusaurus-plugin-content-docs/current/`
 
 ### Architecture Compliance
 
@@ -315,23 +315,23 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
-None - implementation was straightforward.
+- Code review fix: Corrected file structure (EN in /docs/, not /i18n/en/)
+- Removed invalid i18n/en/ directory that caused build errors
 
 ### Completion Notes List
 
-- Created EN translation file with proper frontmatter (`translated: true`, `sidebar_position: 1`)
-- Translated all French content to natural English
+- Translated first_login.md from FR to EN with natural phrasing
+- Corrected file structure approach (EN in /docs/, not in /i18n/en/)
 - Preserved both screenshot paths unchanged (FR interface acceptable for MVP)
 - Translated :::info TIPS admonition with keyboard shortcut preserved
 - Maintained internal links to `/extensions/` and `/getting_started/server`
 - Build successful for both EN and FR locales
-- No "Not yet translated" banner on EN page
 
 ### Change Log
 
 - 2026-01-24: Story 3-2 completed - First Login page translated to English
+- 2026-01-24: Code review fix - Corrected file structure (EN content in /docs/, removed invalid i18n/en/ directory)
 
 ### File List
 
-**New Files:**
-- `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md`
+- docs/getting_started/first_login.md (MODIFIED - FR to EN)

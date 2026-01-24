@@ -198,6 +198,27 @@ Traduire la page de conclusion/felicitations.
 
 ## Notes techniques
 
+### CRITICAL: Structure des fichiers i18n
+
+**ATTENTION - REGLE ABSOLUE:**
+
+| Locale | Emplacement | Action |
+|--------|-------------|--------|
+| **EN (default)** | `/docs/getting_started/` | MODIFIER le fichier existant avec contenu EN |
+| **FR** | `/i18n/fr/.../getting_started/` | Fichier FR deja present, NE PAS TOUCHER |
+
+**ERREURS A EVITER:**
+- NE JAMAIS creer `/docs/i18n/en/...` - chemin INVALIDE
+- NE JAMAIS creer `/i18n/en/...` - EN est la locale par defaut
+- Les fichiers EN vont dans `/docs/`, PAS dans un sous-dossier i18n
+
+**Workflow correct pour chaque story:**
+1. Lire le contenu FR depuis `/i18n/fr/.../current/getting_started/<fichier>.md`
+2. Modifier `/docs/getting_started/<fichier>.md` avec le contenu EN traduit
+3. Le fichier FR reste inchange
+
+---
+
 ### Ordre recommande (parcours utilisateur)
 
 1. getting_started.md (index)
