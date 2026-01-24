@@ -1,16 +1,17 @@
 ---
 sidebar_position: 2
+translated: true
 ---
 
-# Licence
+# License
 
-La **licence** est l'élément qui authentifie et active votre installation **CLIENTXCMS**. C'est elle qui débloque les fonctionnalités, synchronise vos extensions et garantit l'accès aux mises à jour. <br/>
-L'objectif est clair : **valider votre installation et débloquer tout le potentiel** de votre CMS selon l'offre souscrite.
+The **license** is the element that authenticates and activates your **CLIENTXCMS** installation. It unlocks features, synchronizes your extensions, and ensures access to updates. <br/>
+The goal is clear: **validate your installation and unlock the full potential** of your CMS according to your subscribed plan.
 
-La licence permet la synchronisation avec les serveurs ClientXCMS, l'activation des modules achetés et le respect des limites de votre forfait.
+The license enables synchronization with ClientXCMS servers, activation of purchased modules, and compliance with your plan limits.
 
-Vous pouvez gérer votre licence depuis :
+You can manage your license from:
 
-`Paramètres` > `Paramètres généraux` > `Licence`
+`Settings` > `General Settings` > `License`
 
-![Interface de gestion de la licence](/img/next_gen/settings/core/license/license.png)
+![License management interface](/img/next_gen/settings/core/license/license.png)
