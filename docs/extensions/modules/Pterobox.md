@@ -11,7 +11,7 @@ Pour utiliser les fonctionnalités suivantes, il faut que le module PteroBox et 
 :::
 
 ## Authentification
-Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS, soit [Pterodactyl](https://docs.clientxcms.com/extensions/modules/Pterodactyl#authentification), soit [Wisp](https://docs.clientxcms.com/extensions/modules/Wisp#authentification), en fonction du panneau de jeux que vous utilisez.
+Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS, soit [Pterodactyl](/extensions/modules/Pterodactyl#authentification), soit [Wisp](/extensions/modules/Wisp#authentification), en fonction du panneau de jeux que vous utilisez.
 
 ### Configuration de l'offre  
 ![img](/img/next_gen/extensions/modules/pterobox/images_1.png)  

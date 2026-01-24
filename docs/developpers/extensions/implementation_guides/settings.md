@@ -159,6 +159,6 @@ Vous devez créer une vue pour l'item dans le répertoire de vues de votre exten
     </div>
 @endsection
 ```
-Vous pouvez avoir plus d'informations sur les options sur les [champs possibles des formulaires](https://docs.clientxcms.com/developpers/themes/forms) dans la documentation thème.
+Vous pouvez avoir plus d'informations sur les options sur les [champs possibles des formulaires](/developpers/themes/forms) dans la documentation thème.
 
 Vous pourrez ainsi récupérer le paramètre avec la fonction `setting('fund_key_1')` dans votre vue ou controller.

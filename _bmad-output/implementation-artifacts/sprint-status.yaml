@@ -46,7 +46,7 @@ development_status:
   0-5-composants-react-extraction-textes: done
   0-6-bandeau-not-yet-translated: done
   0-7-config-redirects-301: skipped
-  0-8-fix-broken-links: review
+  0-8-fix-broken-links: done
   epic-0-retrospective: optional
 
   # Epic 1: MVD - Introduction

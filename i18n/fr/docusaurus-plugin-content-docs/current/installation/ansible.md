@@ -357,6 +357,6 @@ ansible -i inventory/production.yml all -m ping
 
 Pour obtenir de l’aide supplémentaire, consultez :
 
-* **[Documentation ClientXCMS](https://docs.clientxcms.com)**
+* **[Documentation ClientXCMS](/)**
 * **[GitHub Issues](https://github.com/ClientXCMS/ansible/issues)**
 * **[Discord communautaire](https://discord.gg/clientxcms)**
