@@ -1,6 +1,6 @@
 # Story 3.8: Traduire service.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -43,21 +43,21 @@ so that international users can understand how to create their first service in 
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Update EN file with translated frontmatter (AC: #2)
-  - [ ] 1.1 Edit file at `docs/getting_started/service.md`
-  - [ ] 1.2 Add `translated: true` to frontmatter
-  - [ ] 1.3 Preserve `sidebar_position: 7`
+- [x] Task 1: Update EN file with translated frontmatter (AC: #2)
+  - [x] 1.1 Edit file at `docs/getting_started/service.md`
+  - [x] 1.2 Add `translated: true` to frontmatter
+  - [x] 1.3 Preserve `sidebar_position: 7`
 
-- [ ] Task 2: Translate header and intro (AC: #1, #3)
-  - [ ] 2.1 Translate title "Creer son premier service" to "Creating Your First Service"
-  - [ ] 2.2 Translate intro paragraph about creating a service from client area
-  - [ ] 2.3 Keep navigation path format with backticks: `Admin Panel` > `Services` > `Create`
-  - [ ] 2.4 Translate step 1 instructions (select client, product, service type)
-  - [ ] 2.5 Preserve image path `/img/next_gen/services/create_step1.png`
+- [x] Task 2: Translate header and intro (AC: #1, #3)
+  - [x] 2.1 Translate title "Creer son premier service" to "Creating Your First Service"
+  - [x] 2.2 Translate intro paragraph about creating a service from client area
+  - [x] 2.3 Keep navigation path format with backticks: `Admin Panel` > `Services` > `Create`
+  - [x] 2.4 Translate step 1 instructions (select client, product, service type)
+  - [x] 2.5 Preserve image path `/img/next_gen/services/create_step1.png`
 
-- [ ] Task 3: Translate form fields list (AC: #1)
-  - [ ] 3.1 Translate step 2 introduction paragraph
-  - [ ] 3.2 Translate all 9 field definitions:
+- [x] Task 3: Translate form fields list (AC: #1)
+  - [x] 3.1 Translate step 2 introduction paragraph
+  - [x] 3.2 Translate all 9 field definitions:
     - "Nom du service" -> "Service Name"
     - "Expiration" -> "Expiration"
     - "Description" -> "Description"
@@ -67,34 +67,34 @@ so that international users can understand how to create their first service in 
     - "Recurrence" -> "Billing Cycle"
     - "Notes" -> "Notes"
     - "Renouvellement maximum" -> "Maximum Renewals"
-  - [ ] 3.3 Translate field descriptions accurately
-  - [ ] 3.4 Preserve image path `/img/next_gen/services/create_service.png`
+  - [x] 3.3 Translate field descriptions accurately
+  - [x] 3.4 Preserve image path `/img/next_gen/services/create_service.png`
 
-- [ ] Task 4: Translate info admonition (AC: #5)
-  - [ ] 4.1 Translate :::info block about invoice creation
-  - [ ] 4.2 Explain that service creation doesn't create invoice - requires order
+- [x] Task 4: Translate info admonition (AC: #5)
+  - [x] 4.1 Translate :::info block about invoice creation
+  - [x] 4.2 Explain that service creation doesn't create invoice - requires order
 
-- [ ] Task 5: Translate Delivery Problem section (AC: #1, #3, #4)
-  - [ ] 5.1 Translate heading "Probleme de livraison" to "Delivery Issues"
-  - [ ] 5.2 Translate troubleshooting instructions
-  - [ ] 5.3 Keep navigation path: `Admin Panel` > `Settings` > `History`
-  - [ ] 5.4 Keep log file name 'services-delivery.log' unchanged
-  - [ ] 5.5 Preserve image path `/img/next_gen/services/delivery_log.png`
-  - [ ] 5.6 Translate Pterodactyl example
-  - [ ] 5.7 Keep link to Pterodactyl module page (verify anchor)
+- [x] Task 5: Translate Delivery Problem section (AC: #1, #3, #4)
+  - [x] 5.1 Translate heading "Probleme de livraison" to "Delivery Issues"
+  - [x] 5.2 Translate troubleshooting instructions
+  - [x] 5.3 Keep navigation path: `Admin Panel` > `Settings` > `History`
+  - [x] 5.4 Keep log file name 'services-delivery.log' unchanged
+  - [x] 5.5 Preserve image path `/img/next_gen/services/delivery_log.png`
+  - [x] 5.6 Translate Pterodactyl example
+  - [x] 5.7 Keep link to Pterodactyl module page (verify anchor)
 
-- [ ] Task 6: Translate Service Overview section (AC: #1, #3)
-  - [ ] 6.1 Translate heading "Apercu d'un service" to "Service Overview"
-  - [ ] 6.2 Translate brief intro text
-  - [ ] 6.3 Preserve image path `/img/next_gen/services/show_service.png`
+- [x] Task 6: Translate Service Overview section (AC: #1, #3)
+  - [x] 6.1 Translate heading "Apercu d'un service" to "Service Overview"
+  - [x] 6.2 Translate brief intro text
+  - [x] 6.3 Preserve image path `/img/next_gen/services/show_service.png`
 
-- [ ] Task 7: Build and test (AC: #6)
-  - [ ] 7.1 Run `npm run build`
-  - [ ] 7.2 Run `npm run serve` and test EN URL
-  - [ ] 7.3 Verify all 3 images render correctly
-  - [ ] 7.4 Verify no "Not translated" banner
-  - [ ] 7.5 Verify FR page still works
-  - [ ] 7.6 Test internal link to Pterodactyl page
+- [x] Task 7: Build and test (AC: #6)
+  - [x] 7.1 Run `npm run build`
+  - [x] 7.2 Run `npm run serve` and test EN URL
+  - [x] 7.3 Verify all 3 images render correctly
+  - [x] 7.4 Verify no "Not translated" banner
+  - [x] 7.5 Verify FR page still works
+  - [x] 7.6 Test internal link to Pterodactyl page
 
 ## Dev Notes
 
@@ -388,10 +388,33 @@ This is story 3.8 (eighth of 9). The complete Getting Started section:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+- Build cache issue resolved by running `npm run clear && rm -rf build` before rebuild
+
 ### Completion Notes List
 
+- Translated complete service.md page from French to English
+- Added `translated: true` to frontmatter, preserved `sidebar_position: 7`
+- Title: "Creating Your First Service"
+- All 9 form fields translated with natural English phrasing
+- Billing Cycle used for "Recurrence" (better UX term)
+- Info admonition explaining invoice creation via order translated
+- Delivery Issues section with troubleshooting steps translated
+- Service Overview section translated
+- All 3 image paths preserved unchanged
+- Internal link to Pterodactyl module page kept (anchor #erreurs-courantes retained as Epic 5 not yet translated)
+- Build successful for EN and FR locales
+- Navigation paths use consistent terminology: Admin Panel, Services, Settings, History
+
 ### File List
+
+| Action | File |
+|--------|------|
+| Modified | `docs/getting_started/service.md` |
+
+### Change Log
+
+- 2026-01-24: Translated service.md (Service Creation page) from French to English - Story 3-8
