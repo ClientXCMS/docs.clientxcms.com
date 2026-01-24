@@ -1,59 +1,62 @@
+---
+translated: true
+---
 # Captcha
 
-Cette page vous explique comment configurer les captchas reCAPTCHA, hCaptcha et Cloudflare Turnstile dans votre espace client.
+This page explains how to configure reCAPTCHA, hCaptcha, and Cloudflare Turnstile captchas in your client area.
 
 ## reCAPTCHA (Google)
 
-### Étape 1 : Créer un projet reCAPTCHA
-1. Rendez-vous sur le site [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/create).
-2. Connectez-vous avec votre compte Google.
-3. Cliquez sur le bouton **+** pour créer un nouveau projet reCAPTCHA.
+### Step 1: Create a reCAPTCHA project
+1. Go to the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/create).
+2. Sign in with your Google account.
+3. Click the **+** button to create a new reCAPTCHA project.
 
-### Étape 2 : Configurer le projet
-1. Donnez un **nom** à votre projet.
-2. Sélectionnez le type de reCAPTCHA que vous souhaitez utiliser :
-   - **reCAPTCHA v2** : cochez "Je ne suis pas un robot" ou "Invisible reCAPTCHA badge".
-   - **reCAPTCHA v3** : aucune interaction directe avec l'utilisateur.
-3. Entrez les **domaines** où vous utiliserez reCAPTCHA.
-4. Acceptez les **Conditions d'utilisation**.
+### Step 2: Configure the project
+1. Give your project a **name**.
+2. Select the type of reCAPTCHA you want to use:
+   - **reCAPTCHA v2**: check "I'm not a robot" or "Invisible reCAPTCHA badge".
+   - **reCAPTCHA v3**: no direct user interaction.
+3. Enter the **domains** where you will use reCAPTCHA.
+4. Accept the **Terms of Service**.
 
-### Étape 3 : Récupérer les clés
-1. Une fois le projet créé, vous recevrez deux clés :
-   - **Clé site** : à intégrer sur vos pages HTML.
-   - **Clé secrète** : utilisée côté serveur pour la validation des réponses reCAPTCHA.
-   
+### Step 3: Retrieve the keys
+1. Once the project is created, you will receive two keys:
+   - **Site key**: to integrate on your HTML pages.
+   - **Secret key**: used server-side to validate reCAPTCHA responses.
+
 ## hCaptcha
 
-### Étape 1 : Créer un compte hCaptcha
-1. Allez sur [hCaptcha](https://www.hcaptcha.com/).
-2. Créez un compte ou connectez-vous si vous en avez déjà un.
+### Step 1: Create an hCaptcha account
+1. Go to [hCaptcha](https://www.hcaptcha.com/).
+2. Create an account or sign in if you already have one.
 
-### Étape 2 : Ajouter un nouveau site
-1. Accédez à votre **tableau de bord hCaptcha**.
-2. Cliquez sur **Nouveau site**.
-3. Remplissez les détails du site (nom du site, domaine, etc.).
+### Step 2: Add a new site
+1. Access your **hCaptcha dashboard**.
+2. Click **New site**.
+3. Fill in the site details (site name, domain, etc.).
 
-### Étape 3 : Récupérer les clés
-1. Après avoir ajouté votre site, hCaptcha vous fournira :
-   - **Clé site** (Sitekey) : pour intégrer hCaptcha à vos pages web.
-   - **Clé secrète** (Secret key) : pour la vérification côté serveur des réponses hCaptcha.
+### Step 3: Retrieve the keys
+1. After adding your site, hCaptcha will provide you with:
+   - **Site key** (Sitekey): to integrate hCaptcha on your web pages.
+   - **Secret key**: for server-side verification of hCaptcha responses.
 
 ## Cloudflare Turnstile
 
-### Étape 1 : Créer un compte Cloudflare
-1. Rendez-vous sur [Cloudflare](https://www.cloudflare.com/) et créez un compte (ou connectez-vous à un compte existant).
+### Step 1: Create a Cloudflare account
+1. Go to [Cloudflare](https://www.cloudflare.com/) and create an account (or sign in to an existing account).
 
-### Étape 2 : Ajouter Turnstile à votre domaine
-1. Allez dans le tableau de bord Cloudflare.
-2. Sélectionnez votre site sous **Sites**.
-3. Naviguez vers **Security** > **Bots** > **Turnstile**.
-4. Cliquez sur **Créer un nouveau widget Turnstile**.
+### Step 2: Add Turnstile to your domain
+1. Go to the Cloudflare dashboard.
+2. Select your site under **Sites**.
+3. Navigate to **Security** > **Bots** > **Turnstile**.
+4. Click **Create a new Turnstile widget**.
 
-### Étape 3 : Récupérer les clés
-1. Cloudflare générera deux clés pour votre widget Turnstile :
-   - **Clé site** (Site key) : pour ajouter Turnstile à vos formulaires.
-   - **Clé secrète** (Secret key) : pour la validation des réponses sur votre serveur.
+### Step 3: Retrieve the keys
+1. Cloudflare will generate two keys for your Turnstile widget:
+   - **Site key**: to add Turnstile to your forms.
+   - **Secret key**: for validating responses on your server.
 
 ## Conclusion
 
-Vous pourrez désormais ajouter ces clés à votre espace client pour activer le captcha de votre choix.
+You can now add these keys to your client area to activate the captcha of your choice.

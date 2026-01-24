@@ -1,90 +1,93 @@
-# Migrer cloud vers self-hosted
+---
+translated: true
+---
+# Migrate Cloud to Self-Hosted
 :::info
-CLIENTXCMS devient un logiciel open source, auto-hébergé et gratuit à partir du 1er septembre 2025. Pour les clients actuels, nous offrons une période de transition pour migrer vers la version auto-hébergée. Cette page vous guide à travers le processus de migration depuis CLIENTXCMS Cloud vers une instance auto-hébergée. Plus d'informations sur la transition [ici](/blog/mise-en-opensource).
+CLIENTXCMS is becoming an open source, self-hosted, and free software starting September 1, 2025. For current customers, we offer a transition period to migrate to the self-hosted version. This page guides you through the migration process from CLIENTXCMS Cloud to a self-hosted instance. More information about the transition [here](/blog/mise-en-opensource).
 :::
 
-1. **Récupérer une sauvegarde de l’instance CLIENTXCMS Cloud**
+1. **Retrieve a backup of the CLIENTXCMS Cloud instance**
 
-   * Connectez-vous à l’interface CLIENTXCMS Cloud et allez dans la section **Base de données** (par exemple, via `https://mondomain.fr/admin/database`).
-   * Notez les informations suivantes (exemple) :
+   * Log in to the CLIENTXCMS Cloud interface and go to the **Database** section (for example, via `https://mydomain.com/admin/database`).
+   * Note the following information (example):
 
-     * **Hôte (DB\_HOST)** : `ctx-01-pma.clientxcms.com`
-     * **Nom de la base (DB\_DATABASE)** : `123456789_DB`
-     * **Utilisateur (DB\_USERNAME)** : `123456789_User`
-     * **Mot de passe (DB\_PASSWORD)** : `P@ssw0rdExemple`
-   * Pour exporter la base de données, vous pouvez utiliser phpMyAdmin  :
-        * Ouvrez phpMyAdmin à l’adresse fournie (ex. `https://ctx-01-pma.clientxcms.com/`).
-        * Sélectionnez la base `123456789_DB`.
-        * Cliquez sur **Exporter**, choisissez le format « SQL » et cliquez sur **OK** pour télécharger `123456789_DB.sql`.
+     * **Host (DB\_HOST)**: `ctx-01-pma.clientxcms.com`
+     * **Database name (DB\_DATABASE)**: `123456789_DB`
+     * **Username (DB\_USERNAME)**: `123456789_User`
+     * **Password (DB\_PASSWORD)**: `P@ssw0rdExample`
+   * To export the database, you can use phpMyAdmin:
+        * Open phpMyAdmin at the provided address (e.g., `https://ctx-01-pma.clientxcms.com/`).
+        * Select the database `123456789_DB`.
+        * Click **Export**, choose the "SQL" format and click **OK** to download `123456789_DB.sql`.
 
-2. **Récupérer la clé d’application Laravel (APP\_KEY) de l’instance Cloud**
+2. **Retrieve the Laravel application key (APP\_KEY) from the Cloud instance**
 
-   * Ouvrez une demande auprès de notre support technique pour obtenir la clé d’application Laravel (APP\_KEY) de votre instance Cloud.
-   * Cette clé est essentielle pour assurer la compatibilité des sessions, des cookies chiffrés et des données sensibles entre votre instance Cloud et l’instance auto-hébergée.
-    * La clé ressemble à ceci : `base64:8fGtY7Qk3hlV6uJd5zR2wT1xYpB9aZfS3eHlCk7mNo=`.
-    * Conservez cette clé en lieu sûr, car elle sera utilisée lors de la configuration de votre instance auto-hébergée.
+   * Open a request with our technical support to obtain the Laravel application key (APP\_KEY) from your Cloud instance.
+   * This key is essential to ensure session compatibility, encrypted cookies, and sensitive data between your Cloud instance and the self-hosted instance.
+    * The key looks like this: `base64:8fGtY7Qk3hlV6uJd5zR2wT1xYpB9aZfS3eHlCk7mNo=`.
+    * Keep this key safe, as it will be used when configuring your self-hosted instance.
 
-3. **Installer CLIENTXCMS v2 sur votre serveur local**
+3. **Install CLIENTXCMS v2 on your local server**
 
-   * Suivez les instructions d’installation de CLIENTXCMS v2 sur votre serveur local, comme décrit dans la documentation [Installation self-hosted](/installation/selfhosted).
-   * Assurez-vous que votre serveur répond aux prérequis (PHP, MySQL, etc.).
-4. **Importer votre base de données** :
+   * Follow the CLIENTXCMS v2 installation instructions on your local server, as described in the [Self-hosted Installation](/installation/selfhosted) documentation.
+   * Make sure your server meets the prerequisites (PHP, MySQL, etc.).
+4. **Import your database**:
 
-    __Via phpMyAdmin__ :
-     1. Connectez-vous à phpMyAdmin de votre serveur local (par exemple `https://votre-serveur/phpmyadmin`).
-     2. Sélectionnez la base `clientxcms_local`.
-     3. Cliquez sur **Importer** → **Choisir un fichier** → sélectionnez `sauvegarde_clientxcms_12345.sql` → cliquez sur **Exécuter**.
-    1. Attendez que l’importation soit terminée (cela peut prendre quelques minutes selon la taille de la base).
-    2. Vérifiez que toutes les tables sont présentes (ex. `customers`, etc.).
+    __Via phpMyAdmin__:
+     1. Log in to phpMyAdmin on your local server (for example `https://your-server/phpmyadmin`).
+     2. Select the database `clientxcms_local`.
+     3. Click **Import** → **Choose a file** → select `clientxcms_backup_12345.sql` → click **Execute**.
+    1. Wait for the import to complete (this may take a few minutes depending on the database size).
+    2. Verify that all tables are present (e.g., `customers`, etc.).
 
-    __Via la ligne de commande__ :
-    3. Connectez-vous à votre serveur via SSH.
-    4. Exécutez les commandes suivantes pour créer la base de données et importer la sauvegarde :
+    __Via command line__:
+    3. Connect to your server via SSH.
+    4. Execute the following commands to create the database and import the backup:
      ```bash
-     mysql -u root -p clientxcms_local < /chemin/vers/sauvegarde_clientxcms_12345.sql
-     # Saisissez MotDePasseLocal quand demandé
+     mysql -u root -p clientxcms_local < /path/to/clientxcms_backup_12345.sql
+     # Enter LocalPassword when prompted
      ```
-     5. Vérifiez que l’importation s’est bien déroulée en listant les tables :
+     5. Verify that the import was successful by listing the tables:
      ```bash
      mysql -u root -p -e "USE clientxcms_local; SHOW TABLES;"
-     # Vous devriez voir toutes les tables de CLIENTXCMS Cloud (ex. customers, settings.)
+     # You should see all CLIENTXCMS Cloud tables (e.g., customers, settings.)
 
-5. **Remplacer la clé Laravel dans `.env` par celle du Cloud**
+5. **Replace the Laravel key in `.env` with the Cloud key**
 
-   * Éditez votre fichier `.env` (situé par exemple dans `/var/www/clientxcms/.env`) et remplacez la valeur de `APP_KEY` (clé temporaire) par celle fournie par le support. Exemple :
+   * Edit your `.env` file (located for example in `/var/www/clientxcms/.env`) and replace the `APP_KEY` value (temporary key) with the one provided by support. Example:
 
      ```diff
      - APP_KEY=base64:ABC123ExampleTmpKeyGeneratedByArtisan=
      + APP_KEY=base64:8fGtY7Qk3hlV6uJd5zR2wT1xYpB9aZfS3eHlCk7mNo=
      ```
-   * Enregistrez le fichier. Laravel utilisera désormais la même clé que votre instance Cloud, garantissant la compatibilité des sessions, des cookies chiffrés et des données sensibles (par exemple, les mots de passe hashing).
+   * Save the file. Laravel will now use the same key as your Cloud instance, ensuring session compatibility, encrypted cookies, and sensitive data (for example, password hashing).
 
-6. **Vérifier la configuration supplémentaire (cache, stockage, etc.)**
+6. **Verify additional configuration (cache, storage, etc.)**
 
-   * **Permissions sur les dossiers** :
+   * **Folder permissions**:
 
      ```bash
-     # S’assurer que l’utilisateur web (www-data ou apache) a les droits
+     # Ensure the web user (www-data or apache) has the rights
      sudo chown -R www-data:www-data /var/www/clientxcms/storage
      sudo chown -R www-data:www-data /var/www/clientxcms/bootstrap/cache
      sudo chmod -R 775 /var/www/clientxcms/storage
      sudo chmod -R 775 /var/www/clientxcms/bootstrap/cache
      ```
-   * **Réinstaller / rafraîchir le cache Laravel** :
+   * **Reinstall / refresh Laravel cache**:
 
      ```bash
      cd /var/www/clientxcms
-     # Recrée les caches de configuration, de routes et de vues
+     # Recreate configuration, route, and view caches
      php artisan config:cache
      php artisan route:cache
      php artisan view:cache
      ```
-7. **Tester l’accès à l’instance auto-hébergée**
+7. **Test access to the self-hosted instance**
 
-   * Ouvrez votre navigateur à l’adresse `https://clientxcms.votredomaine.com` (ou `http://` si SSL non configuré).
-   * La page de connexion CLIENTXCMS devrait apparaître.
-   * **Connexion** : utilisez vos identifiants exacts de l’instance Cloud (exemple) :
+   * Open your browser to the address `https://clientxcms.yourdomain.com` (or `http://` if SSL is not configured).
+   * The CLIENTXCMS login page should appear.
+   * **Login**: use your exact credentials from the Cloud instance (example):
 
-     * **Email** : `jean.dupont@example.com`
-     * **Mot de passe** : celui que vous aviez défini sur Cloud.
-   * Si vous êtes connecté·e avec succès, la migration a fonctionné.
+     * **Email**: `john.doe@example.com`
+     * **Password**: the one you defined on Cloud.
+   * If you successfully log in, the migration worked.

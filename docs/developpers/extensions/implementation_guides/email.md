@@ -1,19 +1,22 @@
-# Envoie d'email & Notifications
+---
+translated: true
+---
+# Sending Emails & Notifications
 
-ClientXCMS utilise le système de notification de Laravel pour envoyer des emails aux utilisateurs et aux administrateurs. Les notifications permettent de personnaliser les messages envoyés par email en utilisant des **modèles CLIENTXCMS**. 
-Pour plus de détails sur la configuration des mails dans Laravel, consultez la documentation officielle [ici](https://laravel.com/docs/11.x/mail#introduction)
+ClientXCMS uses Laravel's notification system to send emails to users and administrators. Notifications allow you to customize messages sent via email using **CLIENTXCMS templates**.
+For more details on configuring mail in Laravel, see the official documentation [here](https://laravel.com/docs/11.x/mail#introduction)
 
 ## Configuration
 
-Avant d'envoyer des mails, il est essentiel de configurer les services de messagerie. 
-Vous pouvez configurer les paramètres de mail dans la [section mail](/settings/core/mail) de l'administration.
+Before sending emails, it's essential to configure the mail services.
+You can configure mail settings in the [mail section](/settings/core/mail) of the administration.
 
 
-## Création d'une notification avec un modèle d'email
+## Creating a Notification with an Email Template
 
-Pour envoyer des emails avec un modèle personnalisé, nous pouvons utiliser une **Notification** dans Laravel. Voici un exemple d'implémentation de la classe **`FundMail`**, qui utilise un modèle pour envoyer un email.
+To send emails with a custom template, we can use a **Notification** in Laravel. Here's an example implementation of the **`FundMail`** class, which uses a template to send an email.
 
-Voici un exemple de classe de notification :
+Here's an example notification class:
 
 ```php
 <?php
@@ -45,7 +48,7 @@ class FundMail extends Notification implements ShouldQueue
 
     public function toMail($notifiable)
     {
-        // Contexte utilisé dans le modèle de mail
+        // Context used in the email template
         $context = [
             'invoice' => $this->invoice,
         ];
@@ -55,10 +58,10 @@ class FundMail extends Notification implements ShouldQueue
 }
 ```
 
-### Désactiver la sauvegarde de l'email
+### Disabling Email Saving
 
-Par défaut, les emails envoyés sont enregistrés dans la base de données. Pour désactiver cette fonctionnalité, vous pouvez ajouter la métadata **`disabled_save`** au mail.
-Par exemple : 
+By default, sent emails are saved in the database. To disable this feature, you can add the **`disabled_save`** metadata to the email.
+For example:
 
 ```php
         $context = [
@@ -70,21 +73,21 @@ Par exemple :
         return $mail;
 ```
 
-Cela permet d'éviter de stocker les emails dans la base de données ou pour toutes personnes qui n'ont pas de compte client (ex: Personnel, Non client).
+This prevents storing emails in the database for anyone without a customer account (e.g., Staff, Non-customer).
 
-Dans cet exemple, nous utilisons **`EmailTemplate::getMailMessage()`** pour envoyer l'email en fonction d'un modèle spécifique nommé **"fund"**. Le contexte personnalisé est passé au modèle via un tableau **`$context`** qui contient des informations comme une facture.
+In this example, we use **`EmailTemplate::getMailMessage()`** to send the email based on a specific template named **"fund"**. The custom context is passed to the template via a **`$context`** array that contains information like an invoice.
 
-## Envoie d'une notification 
+## Sending a Notification
 
-Pour envoyer cette notification, il suffit d'utiliser la méthode **`notify()`** sur une instance de modèle, tel qu'un client ou un administrateur.
-Voici un exemple d'envoi de notification :
+To send this notification, simply use the **`notify()`** method on a model instance, such as a customer or administrator.
+Here's an example of sending a notification:
 ```php
 $service->customer->notify(new FundMail($invoice));
 ```
-Dans cet exemple, un email est envoyé au client lorsque le service est livré, en utilisant la notification **`FundMail`**.
+In this example, an email is sent to the customer when the service is delivered, using the **`FundMail`** notification.
 
-## Création d'un modèle d'email
-Pour créer un modèle d'email, vous devez ajouter une nouvelle entrée dans le fichier `emails.json` de votre extension. Voici un exemple de fichier `emails.json` :
+## Creating an Email Template
+To create an email template, you need to add a new entry in your extension's `emails.json` file. Here's an example `emails.json` file:
 
 ```json
 {
@@ -102,7 +105,7 @@ Pour créer un modèle d'email, vous devez ajouter une nouvelle entrée dans le 
   }
 }
 ```
-Puis vous pouvez l'importer avec la commande suivante : 
+Then you can import it with the following command:
 ```bash
 php artisan db:seed --class=EmailTemplateSeeder
 ```
