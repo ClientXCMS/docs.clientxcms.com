@@ -1,0 +1,15 @@
+.docItemContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.docItemCol {
+  max-width: 75%;
+}
+
+@media (max-width: 996px) {
+  .docItemCol {
+    max-width: 100%;
+  }
+}

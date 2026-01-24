@@ -362,79 +362,68 @@
     "description": "The title of the tag list page"
   },
   "homepage.features.revenue.title": {
-    "message": "Gestion des revenus",
-    "description": "Homepage feature card title for revenue management"
+    "message": "Gestion des revenus"
   },
   "homepage.features.revenue.description": {
-    "message": "Acceptez les paiements de votre clientèle via les passerelles de paiements pré-installées. Gérez des {quotes}, {taxes}, {delivery}, et {invoices} de vos clients.",
-    "description": "Homepage feature card description for revenue management"
+    "message": "Acceptez les paiements de votre clientèle via les passerelles de paiements pré-installées. Gérez des {quotes}, {taxes}, {delivery}, et {invoices} de vos clients."
   },
   "homepage.features.revenue.quotes": {
-    "message": "Devis",
-    "description": "Bold term in revenue feature description"
+    "message": "Devis"
   },
   "homepage.features.revenue.taxes": {
-    "message": "Taxes",
-    "description": "Bold term in revenue feature description"
+    "message": "Taxes"
   },
   "homepage.features.revenue.delivery": {
-    "message": "Livraison de service/gestion de service",
-    "description": "Bold term in revenue feature description"
+    "message": "Livraison de service/gestion de service"
   },
   "homepage.features.revenue.invoices": {
-    "message": "Factures",
-    "description": "Bold term in revenue feature description"
+    "message": "Factures"
   },
   "homepage.features.installation.title": {
-    "message": "Installation & Configuration",
-    "description": "Homepage feature card title for installation"
+    "message": "Installation & Configuration"
   },
   "homepage.features.installation.description": {
-    "message": "Installez et configurez votre espace client aussi rapidement que possible. Reliez votre Panel externe à {clientxcms} puis créez des {offers} en les ajoutant dans un {group} et {sell}.",
-    "description": "Homepage feature card description for installation"
+    "message": "Installez et configurez votre espace client aussi rapidement que possible. Reliez votre Panel externe à {clientxcms} puis créez des {offers} en les ajoutant dans un {group} et {sell}."
   },
   "homepage.features.installation.offers": {
-    "message": "offres",
-    "description": "Bold term in installation feature description"
+    "message": "offres"
   },
   "homepage.features.installation.group": {
-    "message": "groupe",
-    "description": "Bold term in installation feature description"
+    "message": "groupe"
   },
   "homepage.features.installation.sell": {
-    "message": "vendez-les",
-    "description": "Bold term in installation feature description"
+    "message": "vendez-les"
   },
   "homepage.features.customization.title": {
-    "message": "Personnalisation de l'espace client",
-    "description": "Homepage feature card title for customization"
+    "message": "Personnalisation de l'espace client"
   },
   "homepage.features.customization.description": {
-    "message": "Faites de votre {clientArea} un {privilegedSpace} pour vos clients. Il est important que vos clients se repèrent grâce à votre {logo}, {favicon}, {theme} ou {primaryColor}.",
-    "description": "Homepage feature card description for customization"
+    "message": "Faites de votre {clientArea} un {privilegedSpace} pour vos clients. Il est important que vos clients se repèrent grâce à votre {logo}, {favicon}, {theme} ou {primaryColor}."
   },
   "homepage.features.customization.clientArea": {
-    "message": "espace client",
-    "description": "Bold term in customization feature description"
+    "message": "espace client"
   },
   "homepage.features.customization.privilegedSpace": {
-    "message": "espace privilégié",
-    "description": "Bold term in customization feature description"
+    "message": "espace privilégié"
   },
   "homepage.features.customization.logo": {
-    "message": "Logo",
-    "description": "Bold term in customization feature description"
+    "message": "Logo"
   },
   "homepage.features.customization.favicon": {
-    "message": "Favicon",
-    "description": "Bold term in customization feature description"
+    "message": "Favicon"
   },
   "homepage.features.customization.theme": {
-    "message": "Thème",
-    "description": "Bold term in customization feature description"
+    "message": "Thème"
   },
   "homepage.features.customization.primaryColor": {
-    "message": "Couleur primaire",
-    "description": "Bold term in customization feature description"
+    "message": "Couleur primaire"
+  },
+  "notTranslated.message": {
+    "message": "Cette page est disponible uniquement en anglais. Aidez-nous à la traduire ou utilisez la fonction de traduction de votre navigateur.",
+    "description": "Message shown on pages not yet translated to current locale"
+  },
+  "notTranslated.viewInFrench": {
+    "message": "Voir en anglais",
+    "description": "Link text to view page in original language"
   }
 }

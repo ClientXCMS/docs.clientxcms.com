@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
+translated: true
 ---
 # Introduction
 Welcome to the **CLIENTXCMS** documentation. Here you will find all the information you need to install, configure, and use our CMS.
