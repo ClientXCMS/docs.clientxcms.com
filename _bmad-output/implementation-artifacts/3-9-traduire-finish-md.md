@@ -1,6 +1,6 @@
 # Story 3.9: Traduire finish.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -231,12 +231,12 @@ This is story 3.9 (ninth of 9, LAST story). The complete Getting Started section
 1. getting_started.md (index) - Story 3.1 (done)
 2. first_login.md - Story 3.2 (done)
 3. personalization.md - Story 3.3 (done)
-4. server.md - Story 3.4 (review)
-5. products.md - Story 3.5 (review)
-6. payments.md - Story 3.6 (review)
-7. accounts.md - Story 3.7 (backlog)
-8. service.md - Story 3.8 (backlog)
-9. finish.md - THIS STORY (last in epic)
+4. server.md - Story 3.4 (done)
+5. products.md - Story 3.5 (done)
+6. payments.md - Story 3.6 (done)
+7. accounts.md - Story 3.7 (review)
+8. service.md - Story 3.8 (review)
+9. finish.md - THIS STORY (done)
 
 ### Epic Completion Note
 
@@ -274,6 +274,7 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 ### Change Log
 
 - 2026-01-24: Translated finish.md to English, all tasks completed
+- 2026-01-24: Code review - Fixed formatting (blank line after frontmatter), improved phrasing ("Learn more on" instead of "More information on")
 
 ### File List
 
