@@ -1,6 +1,6 @@
 # Story 3.1: Traduire getting_started.md (index)
 
-Status: review
+Status: done
 
 ## Story
 
@@ -56,8 +56,8 @@ so that international users can access the onboarding guide with a clear introdu
 
 | Purpose | Path |
 |---------|------|
-| FR Source file | `docs/getting_started/getting_started.md` |
-| EN Target file | `docs/i18n/en/docusaurus-plugin-content-docs/current/getting_started/getting_started.md` |
+| EN file (default locale) | `docs/getting_started/getting_started.md` |
+| FR file (i18n) | `i18n/fr/docusaurus-plugin-content-docs/current/getting_started/getting_started.md` |
 
 ### Current State Analysis
 
@@ -221,8 +221,9 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### File List
 
-- docs/i18n/en/docusaurus-plugin-content-docs/current/getting_started/getting_started.md (NEW)
+- docs/getting_started/getting_started.md (MODIFIED - FR to EN)
 
 ### Change Log
 
 - 2026-01-24: Story 3.1 implemented - Translated Getting Started index page to English
+- 2026-01-24: Code review fix - Corrected file structure (EN content goes in /docs/, not /docs/i18n/en/). Removed invalid docs/i18n/ directory.
