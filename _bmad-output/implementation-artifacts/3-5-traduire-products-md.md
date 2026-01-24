@@ -1,6 +1,6 @@
 # Story 3.5: Traduire products.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -35,36 +35,36 @@ so that international users can understand how to create their first product and
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Update EN file with translated frontmatter (AC: #2)
-  - [ ] 1.1 Edit file at `docs/getting_started/products.md`
-  - [ ] 1.2 Add `translated: true` to frontmatter
-  - [ ] 1.3 Preserve `sidebar_position: 4`
+- [x] Task 1: Update EN file with translated frontmatter (AC: #2)
+  - [x] 1.1 Edit file at `docs/getting_started/products.md`
+  - [x] 1.2 Add `translated: true` to frontmatter
+  - [x] 1.3 Preserve `sidebar_position: 4`
 
-- [ ] Task 2: Translate title and product group section (AC: #1, #3)
-  - [ ] 2.1 Translate title "Creation du premier produit" to "Creating Your First Product"
-  - [ ] 2.2 Translate intro paragraph about creating first product group
-  - [ ] 2.3 Keep navigation path format: Settings > Store > Groups > Create
-  - [ ] 2.4 Keep first image path unchanged
+- [x] Task 2: Translate title and product group section (AC: #1, #3)
+  - [x] 2.1 Translate title "Creation du premier produit" to "Creating Your First Product"
+  - [x] 2.2 Translate intro paragraph about creating first product group
+  - [x] 2.3 Keep navigation path format: Settings > Store > Groups > Create
+  - [x] 2.4 Keep first image path unchanged
 
-- [ ] Task 3: Translate product creation section (AC: #1, #3)
-  - [ ] 3.1 Translate paragraph about adding products to group
-  - [ ] 3.2 Keep navigation path format: Settings > Store > Products > Create
-  - [ ] 3.3 Keep second image path unchanged
+- [x] Task 3: Translate product creation section (AC: #1, #3)
+  - [x] 3.1 Translate paragraph about adding products to group
+  - [x] 3.2 Keep navigation path format: Settings > Store > Products > Create
+  - [x] 3.3 Keep second image path unchanged
 
-- [ ] Task 4: Translate product configuration paragraph (AC: #1)
-  - [ ] 4.1 Translate paragraph about configuring product based on needs
-  - [ ] 4.2 Mention product type matching server type
-  - [ ] 4.3 Translate pricing and installation fee instructions
+- [x] Task 4: Translate product configuration paragraph (AC: #1)
+  - [x] 4.1 Translate paragraph about configuring product based on needs
+  - [x] 4.2 Mention product type matching server type
+  - [x] 4.3 Translate pricing and installation fee instructions
 
-- [ ] Task 5: Translate final paragraph (AC: #1)
-  - [ ] 5.1 Translate "Votre produit est maintenant cree et disponible a la vente"
+- [x] Task 5: Translate final paragraph (AC: #1)
+  - [x] 5.1 Translate "Votre produit est maintenant cree et disponible a la vente"
 
-- [ ] Task 6: Build and test (AC: #4)
-  - [ ] 6.1 Run `npm run build`
-  - [ ] 6.2 Run `npm run serve` and test EN URL
-  - [ ] 6.3 Verify no "Not translated" banner
-  - [ ] 6.4 Verify FR page still works
-  - [ ] 6.5 Verify both images render correctly
+- [x] Task 6: Build and test (AC: #4)
+  - [x] 6.1 Run `npm run build`
+  - [x] 6.2 Run `npm run serve` and test EN URL
+  - [x] 6.3 Verify no "Not translated" banner
+  - [x] 6.4 Verify FR page still works
+  - [x] 6.5 Verify both images render correctly
 
 ## Dev Notes
 
@@ -281,10 +281,33 @@ This is story 3.5 (fifth of 9). The complete Getting Started section:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+N/A - Content translation story, no debugging required.
+
 ### Completion Notes List
 
+- Translated `docs/getting_started/products.md` from French to English
+- Added `translated: true` frontmatter to disable "Not yet translated" banner
+- Preserved `sidebar_position: 4` for correct navigation order
+- Title translated: "Creation du premier produit" -> "Creating Your First Product"
+- All content translated with natural English phrasing
+- Navigation paths maintained with backticks: `Settings` > `Store` > `Groups` > `Create`
+- Both image paths preserved unchanged
+- Fixed grammatical error from source ("vous pourrais" -> "you can")
+- Parenthetical note integrated naturally into sentence
+- Build successful for both EN and FR locales
+- No "Not yet translated" banner on EN page
+- FR page continues to work correctly
+
 ### File List
+
+| Action | File |
+|--------|------|
+| Modified | `docs/getting_started/products.md` |
+
+### Change Log
+
+- 2026-01-24: Translated Products page to English (Story 3-5)
