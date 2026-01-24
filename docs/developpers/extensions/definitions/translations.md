@@ -1,10 +1,12 @@
-# Traductions
-Un système de traduction est disponible dans **ClientXCMS** pour gérer les traductions des différentes parties de l'application. Ce système est basé sur des fichiers de langue qui contiennent les traductions pour chaque langue supportée. Chaque fichier de langue est un fichier PHP qui retourne un tableau associatif contenant les clés de traduction et
-leur valeur traduite.
-## Fichiers de langue
-Les fichiers de langue sont situés dans le répertoire `addons/<nom_de_votre_extension>/lang/` de l'extension.
-Chaque langue est représentée par un sous-répertoire nommé avec le code de la langue (par exemple, `en` pour l'anglais, `fr` pour le français, etc.). Dans chaque sous-répertoire, vous trouverez des fichiers PHP qui contiennent les traductions pour cette langue.
-Par exemple, pour une extension nommée `my_extension`, les fichiers de langue pourraient être organisés comme suit :
+---
+translated: true
+---
+# Translations
+A translation system is available in **ClientXCMS** to manage translations for different parts of the application. This system is based on language files that contain translations for each supported language. Each language file is a PHP file that returns an associative array containing translation keys and their translated values.
+## Language Files
+Language files are located in the `addons/<your_extension_name>/lang/` directory of the extension.
+Each language is represented by a subdirectory named with the language code (for example, `en` for English, `fr` for French, etc.). In each subdirectory, you will find PHP files containing translations for that language.
+For example, for an extension named `my_extension`, the language files could be organized as follows:
 ```
 addons/my_extension/lang/
 ├── en
@@ -17,35 +19,35 @@ addons/my_extension/lang/
     ├── messages.php
     └── errors.php
 ```
-Chaque fichier PHP retourne un tableau associatif contenant les clés de traduction et leur valeur traduite.
-Par exemple, le fichier `messages.php` pour la langue anglaise pourrait ressembler à ceci
+Each PHP file returns an associative array containing translation keys and their translated values.
+For example, the `messages.php` file for the English language might look like this:
 ```php
 <?php
 return [
     'test' => 'This is a test message.',
 ];
+```
 
-Pour enregister le dossier de langue dans votre extension, vous devez ajouter le code suivant dans le fichier `ServiceProvider` de votre extension :
+To register the language folder in your extension, you need to add the following code in your extension's `ServiceProvider` file:
 ```php
 public function boot(): void
 {
     $this->loadTranslations();
 }
 ```
-Avec `my_extension` qui est le nom de votre extension.
-### Utilisation des traductions
-Pour utiliser les traductions dans votre code PHP, vous pouvez utiliser la fonction `trans()` ou
-la fonction `__()`. Par exemple :
+Where `my_extension` is the name of your extension.
+### Using Translations
+To use translations in your PHP code, you can use the `trans()` function or the `__()` function. For example:
 ```
 $message = trans('my_extension::messages.test');
 ```
-ou
+or
 ```
 $message = __('my_extension::messages.test');
 ```
-Avec `my_extension` qui est le nom de votre extension, `messages` qui est le nom du fichier de langue (sans l'extension `.php`) et `test` qui est la clé de traduction.
-## Traductions dans des modèles Laravel
-CLIENTXCMS supporte également l'utilisation des traductions dans des modèles Laravel. Pour cela, vous devez rajouter sur le modèle le trait et définir les clés traduisibles dans une propriété `$translatableKeys`. Voici un exemple :
+Where `my_extension` is your extension name, `messages` is the language file name (without the `.php` extension), and `test` is the translation key.
+## Translations in Laravel Models
+CLIENTXCMS also supports using translations in Laravel models. To do this, you need to add the trait to the model and define the translatable keys in a `$translatableKeys` property. Here is an example:
 ```php
 use App\Models\Traits\Translatable;
 class YourModel extends Model
@@ -59,35 +61,35 @@ class YourModel extends Model
 }
 ```
 
-Avec `name` et `description` qui sont les noms des colonnes de la base de données à traduire et `text` ou `editor` qui sont le type de champ (champ texte simple ou champ éditeur WYSIWYG).
-Vous pouvez ensuite utiliser les méthodes `trans` pour obtenir la traduction d'une clé pour une langue spécifique. Par exemple :
+Where `name` and `description` are the database column names to translate and `text` or `editor` are the field types (simple text field or WYSIWYG editor field).
+You can then use the `trans` methods to get the translation of a key for a specific language. For example:
 ```php
 $model = YourModel::find(1);
 $nameInFrench = $model->trans('name', 'default', 'fr');
 $nameInEnglish = $model->trans('name', 'default', 'en');
 ```
 
-Avec `name` qui est le nom de la colonne à traduire, `default` qui est la valeur par défaut si la traduction n'existe pas et `fr` ou `en` qui sont les codes des langues.
+Where `name` is the column name to translate, `default` is the default value if the translation doesn't exist, and `fr` or `en` are the language codes.
 
 
-Vous pouvez également utiliser les méthodes `translations` pour récupérer la relation des traductions. Par exemple :
+You can also use the `translations` methods to retrieve the translations relationship. For example:
 ```php
 $model = YourModel::find(1);
-$allTranslations = $model->translations; // Récupère toutes les traductions
-$frenchTranslation = $model->translations()->where('locale', 'fr')->first(); //
-$englishTranslation = $model->translations()->where('locale', 'en')->first(); //
+$allTranslations = $model->translations; // Gets all translations
+$frenchTranslation = $model->translations()->where('locale', 'fr')->first();
+$englishTranslation = $model->translations()->where('locale', 'en')->first();
 ```
 
-## Administration des traductions
-Pour gérer les traductions dans l'administration de CLIENTXCMS rien de plus simple. rajoutez simplement ce include en bas de votre vue d'édition: 
+## Translation Administration
+To manage translations in the CLIENTXCMS administration, it's very simple. Just add this include at the bottom of your edit view:
 ```php
         @include('admin/translations/overlay', ['item' => $item])
 ```
-Et rajouter dans votre @include de votre input la clé `translatable` à true:
+And add the `translatable` key set to true in your input @include:
 ```php
     @include('admin/shared/input', ['name' => 'name', 'label' => __('global.name'), 'value' => old('name', $item->name), 'translatable' => true])
 
 ```
 :::warning
-`$item` doit être une instance du modèle que vous éditez. Les traductions sont disponibles uniquement lors de l'édition d'un élément existant.
+`$item` must be an instance of the model you are editing. Translations are only available when editing an existing item.
 :::
