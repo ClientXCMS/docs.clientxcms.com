@@ -1,6 +1,6 @@
 # Story 3.6: Traduire payments.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -45,63 +45,63 @@ so that international users can understand how to configure payment gateways and
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Update EN file with translated frontmatter (AC: #2)
-  - [ ] 1.1 Edit file at `docs/getting_started/payments.md`
-  - [ ] 1.2 Add `translated: true` to frontmatter
-  - [ ] 1.3 Preserve `sidebar_position: 6`
+- [x] Task 1: Update EN file with translated frontmatter (AC: #2)
+  - [x] 1.1 Edit file at `docs/getting_started/payments.md`
+  - [x] 1.2 Add `translated: true` to frontmatter
+  - [x] 1.3 Preserve `sidebar_position: 6`
 
-- [ ] Task 2: Translate header and intro (AC: #1, #4)
-  - [ ] 2.1 Translate title "Configuration des paiements" to "Payment Configuration"
-  - [ ] 2.2 Translate intro paragraph about configuring payment methods
-  - [ ] 2.3 Keep internal link to `../settings/store/payment_gateways/`
-  - [ ] 2.4 Keep navigation path format: `Settings` then `Store Settings`
+- [x] Task 2: Translate header and intro (AC: #1, #4)
+  - [x] 2.1 Translate title "Configuration des paiements" to "Payment Configuration"
+  - [x] 2.2 Translate intro paragraph about configuring payment methods
+  - [x] 2.3 Keep internal link to `../settings/store/payment_gateways/`
+  - [x] 2.4 Keep navigation path format: `Settings` then `Store Settings`
 
-- [ ] Task 3: Preserve MDX imports and Tabs structure (AC: #3)
-  - [ ] 3.1 Keep import statements exactly as-is
-  - [ ] 3.2 Keep `<Tabs>` and `<TabItem>` structure unchanged
-  - [ ] 3.3 Keep tab value and label attributes unchanged (payment gateway names)
+- [x] Task 3: Preserve MDX imports and Tabs structure (AC: #3)
+  - [x] 3.1 Keep import statements exactly as-is
+  - [x] 3.2 Keep `<Tabs>` and `<TabItem>` structure unchanged
+  - [x] 3.3 Keep tab value and label attributes unchanged (payment gateway names)
 
-- [ ] Task 4: Translate PayPal Express Checkout tab (AC: #1, #4)
-  - [ ] 4.1 Translate tab content about PayPal Express Checkout configuration
-  - [ ] 4.2 Keep link to `/settings/store/payment_gateways/paypal_express_checkout`
+- [x] Task 4: Translate PayPal Express Checkout tab (AC: #1, #4)
+  - [x] 4.1 Translate tab content about PayPal Express Checkout configuration
+  - [x] 4.2 Keep link to `/settings/store/payment_gateways/paypal_express_checkout`
 
-- [ ] Task 5: Translate Stripe tab (AC: #1, #4)
-  - [ ] 5.1 Translate tab content about Stripe configuration
-  - [ ] 5.2 Keep link to `/settings/store/payment_gateways/stripe`
+- [x] Task 5: Translate Stripe tab (AC: #1, #4)
+  - [x] 5.1 Translate tab content about Stripe configuration
+  - [x] 5.2 Keep link to `/settings/store/payment_gateways/stripe`
 
-- [ ] Task 6: Translate Balance tab (AC: #1)
-  - [ ] 6.1 Translate tab content about adding balance to customer account
+- [x] Task 6: Translate Balance tab (AC: #1)
+  - [x] 6.1 Translate tab content about adding balance to customer account
 
-- [ ] Task 7: Translate PayPal tab (AC: #1, #4)
-  - [ ] 7.1 Translate tab content about PayPal configuration
-  - [ ] 7.2 Keep link to `/settings/store/payment_gateways/paypal`
+- [x] Task 7: Translate PayPal tab (AC: #1, #4)
+  - [x] 7.1 Translate tab content about PayPal configuration
+  - [x] 7.2 Keep link to `/settings/store/payment_gateways/paypal`
 
-- [ ] Task 8: Translate Stancer tab (AC: #1, #4)
-  - [ ] 8.1 Translate tab content about Stancer configuration
-  - [ ] 8.2 Keep link to `/settings/store/payment_gateways/stancer`
+- [x] Task 8: Translate Stancer tab (AC: #1, #4)
+  - [x] 8.1 Translate tab content about Stancer configuration
+  - [x] 8.2 Keep link to `/settings/store/payment_gateways/stancer`
 
-- [ ] Task 9: Translate Invoice Customization section (AC: #1)
-  - [ ] 9.1 Translate section title "Personalisation de la facture" to "Invoice Customization"
-  - [ ] 9.2 Translate billing address and terms & conditions instructions
-  - [ ] 9.3 Keep navigation path format: `Settings` > `Billing` > `Billing`
-  - [ ] 9.4 Translate invoice prefix explanation with example `INV-2024-01-001`
+- [x] Task 9: Translate Invoice Customization section (AC: #1)
+  - [x] 9.1 Translate section title "Personalisation de la facture" to "Invoice Customization"
+  - [x] 9.2 Translate billing address and terms & conditions instructions
+  - [x] 9.3 Keep navigation path format: `Settings` > `Billing` > `Billing`
+  - [x] 9.4 Translate invoice prefix explanation with example `INV-2024-01-001`
 
-- [ ] Task 10: Translate VAT/Tax section (AC: #1, #5)
-  - [ ] 10.1 Translate section title "Desactiver la TVA" to "Disable VAT"
-  - [ ] 10.2 Translate VAT settings instructions
-  - [ ] 10.3 Translate :::info admonition about tax-exclusive pricing
+- [x] Task 10: Translate VAT/Tax section (AC: #1, #5)
+  - [x] 10.1 Translate section title "Desactiver la TVA" to "Disable VAT"
+  - [x] 10.2 Translate VAT settings instructions
+  - [x] 10.3 Translate :::info admonition about tax-exclusive pricing
 
-- [ ] Task 11: Translate Terms and Conditions section (AC: #1)
-  - [ ] 11.1 Translate section title "Conditions generales de vente" to "Terms and Conditions"
-  - [ ] 11.2 Translate instructions about setting terms and conditions
+- [x] Task 11: Translate Terms and Conditions section (AC: #1)
+  - [x] 11.1 Translate section title "Conditions generales de vente" to "Terms and Conditions"
+  - [x] 11.2 Translate instructions about setting terms and conditions
 
-- [ ] Task 12: Build and test (AC: #6)
-  - [ ] 12.1 Run `npm run build`
-  - [ ] 12.2 Run `npm run serve` and test EN URL
-  - [ ] 12.3 Verify all 5 tabs render correctly
-  - [ ] 12.4 Verify no "Not translated" banner
-  - [ ] 12.5 Verify FR page still works
-  - [ ] 12.6 Test all 5 internal links
+- [x] Task 12: Build and test (AC: #6)
+  - [x] 12.1 Run `npm run build`
+  - [x] 12.2 Run `npm run serve` and test EN URL
+  - [x] 12.3 Verify all 5 tabs render correctly
+  - [x] 12.4 Verify no "Not translated" banner
+  - [x] 12.5 Verify FR page still works
+  - [x] 12.6 Test all 5 internal links
 
 ## Dev Notes
 
@@ -420,10 +420,32 @@ This is story 3.6 (sixth of 9). The complete Getting Started section:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+- Build initially failed due to cache issues (ENOTEMPTY, ENOENT errors)
+- Resolved by running `npm run clear` to clean Docusaurus cache
+- Second build succeeded for both EN and FR locales
+
 ### Completion Notes List
 
+- Translated complete payments.md from French to English
+- Added `translated: true` to frontmatter (removes "Not yet translated" banner)
+- Preserved all 5 MDX Tabs/TabItem components with correct payment gateway names
+- Preserved all 5 internal links to payment gateway configuration pages
+- Translated :::info admonition about tax-exclusive pricing
+- Used consistent terminology: VAT, tax-exclusive, tax-inclusive, billing, invoice
+- Fixed "Personalisation" typo from source -> "Customization" in English
+- Build passes for both EN and FR locales
+
 ### File List
+
+- `docs/getting_started/payments.md` (modified) - EN translation
+- `_bmad-output/implementation-artifacts/sprint-status.yaml` (modified) - status update
+
+### Change Log
+
+| Date | Change |
+|------|--------|
+| 2026-01-24 | Translated payments.md to English, all ACs satisfied |
