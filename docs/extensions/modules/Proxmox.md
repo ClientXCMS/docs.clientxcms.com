@@ -1,299 +1,300 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 # Proxmox
 
-Proxmox est une plateforme populaire permettant de gérer des serveurs virtuels et des conteneurs de manière rapide et intuitive. Ce module vous permet de créer et de gérer automatiquement des VPS pour vos clients, selon les ressources et les performances choisies. Vous pouvez ainsi vendre différents types de machines virtuelles ou de conteneurs, adaptés aux besoins de vos clients.
+Proxmox is a popular platform for managing virtual servers and containers quickly and intuitively. This module allows you to automatically create and manage VPS for your customers, according to the resources and performance chosen. You can sell different types of virtual machines or containers, adapted to your customers' needs.
 
 :::info Modules
-Pour utiliser les fonctionnalités décrites ci-dessous, vous devez activer le module Proxmox dans **ClientXCMS**.
+To use the features described below, you must enable the Proxmox module in **ClientXCMS**.
 :::
-### Fonctionnalités supportées 
-- Automatisez la création et l'approvisionnement des VPS
-- Gestion des VPS depuis l'espace client
-- Envoie des identifiants de connexion par E-mail
-- Gestions de comptes proxmox par client
-- Automatisez les suspensions et les résiliations
-- Amélioration de service
+### Supported Features
+- Automate VPS creation and provisioning
+- VPS management from the client area
+- Send login credentials by email
+- Proxmox account management per customer
+- Automate suspensions and terminations
+- Service upgrade
 
-## Authentification
+## Authentication
 
-ClientXCMS utilise le système d'API de PVE (Proxmox Virtual Environment) pour garantir une connexion sécurisée et fiable avec votre cluster Proxmox.
+ClientXCMS uses the PVE (Proxmox Virtual Environment) API system to ensure a secure and reliable connection with your Proxmox cluster.
 
-### Étapes de configuration du serveur
+### Server Configuration Steps
 
-Pour connecter ClientXCMS à votre serveur Proxmox, suivez ces étapes :
+To connect ClientXCMS to your Proxmox server, follow these steps:
 
-#### 1. Activer le module Proxmox
+#### 1. Enable the Proxmox Module
 
-Assurez-vous que le module Proxmox est activé dans **ClientXCMS**.
+Make sure the Proxmox module is enabled in **ClientXCMS**.
 
-#### 2. Configurer un serveur Proxmox dans ClientXCMS
+#### 2. Configure a Proxmox Server in ClientXCMS
 
-1. Connectez-vous à votre espace d'administration ClientXCMS.
-2. Allez dans **Paramètres** > **Paramètres généraux** > **Serveurs**.
-3. Cliquez sur **Créer**, puis sélectionnez **Proxmox** comme type de serveur.
+1. Log in to your ClientXCMS administration area.
+2. Go to **Settings** > **General Settings** > **Servers**.
+3. Click **Create**, then select **Proxmox** as the server type.
 
-Remplissez les informations suivantes :
+Fill in the following information:
 
-- **Nom :** Le nom que vous souhaitez attribuer au serveur Proxmox.
-- **Type de serveur :** Proxmox.
-- **Nom d'hôte :** Le nom d'hôte du Proxmox VE.
-- **Adresse IP :** L'adresse IP du Proxmox VE.
-- **Port :** Le port par défaut est `8006`. Si vous avez configuré un proxy avec SSL, vous pouvez utiliser `443` ou `80`.
-- **Token ID :** L'ID du jeton Proxmox pour l'API.
-- **Secret :** Le secret associé au jeton Proxmox pour l'API.
+- **Name:** The name you want to assign to the Proxmox server.
+- **Server Type:** Proxmox.
+- **Hostname:** The Proxmox VE hostname.
+- **IP Address:** The Proxmox VE IP address.
+- **Port:** The default port is `8006`. If you have configured a proxy with SSL, you can use `443` or `80`.
+- **Token ID:** The Proxmox token ID for the API.
+- **Secret:** The secret associated with the Proxmox token for the API.
 
 ![img](/img/next_gen/extensions/modules/proxmox/image_1.png)
 
-#### 3. Générer un Token API dans Proxmox
+#### 3. Generate an API Token in Proxmox
 
-1. Connectez-vous à votre interface Proxmox VE.
-2. Accédez à **Datacenter (XXX)** > **Permissions** > **API Tokens**.
-3. Cliquez sur **Add** pour créer un nouveau jeton API.
+1. Log in to your Proxmox VE interface.
+2. Go to **Datacenter (XXX)** > **Permissions** > **API Tokens**.
+3. Click **Add** to create a new API token.
 
-   Remplissez les informations suivantes :
-   
-   - **User :** `root@pam`
-   - **Token ID :** Choisissez un nom pour votre jeton, par exemple `clientxcms`.
-   - **Privilege Separation :** Désactivez cette option en la décochant.
+   Fill in the following information:
+
+   - **User:** `root@pam`
+   - **Token ID:** Choose a name for your token, for example `clientxcms`.
+   - **Privilege Separation:** Disable this option by unchecking it.
 
 ![img](/img/next_gen/extensions/modules/proxmox/image_2.png)
 
-4. Cliquez sur **Add** pour finaliser la création du jeton.
+4. Click **Add** to finalize the token creation.
 
-#### 4. Récupérer le Token ID et le Secret
+#### 4. Retrieve the Token ID and Secret
 
-Dans le **modal** qui s'ouvre, copiez les valeurs **Token ID** et **Secret**. Ces informations seront nécessaires lors de la création du serveur dans ClientXCMS (étape 2).
+In the **modal** that opens, copy the **Token ID** and **Secret** values. This information will be needed when creating the server in ClientXCMS (step 2).
 
 ![img](/img/next_gen/extensions/modules/proxmox/image_3.png)
 
-#### 5. Tester la connexion
+#### 5. Test the Connection
 
-Une fois les informations d'authentification saisies dans la page de création du serveur, cliquez sur **Vérifier** pour tester la connexion. Si le statut renvoyé est `200` et que le message ``Connection successful`` apparaît, vous pouvez cliquer sur **Créer** pour ajouter votre serveur Proxmox à ClientXCMS.
+Once the authentication information is entered on the server creation page, click **Verify** to test the connection. If the returned status is `200` and the message ``Connection successful`` appears, you can click **Create** to add your Proxmox server to ClientXCMS.
 
-## Importation des adresses IP
+## IP Address Import
 
-Dans ClientXCMS, vous pouvez importer des adresses IP pour les assigner à vos VPS clients. Pour ce faire, suivez ces étapes :  
+In ClientXCMS, you can import IP addresses to assign to your customer VPS. To do this, follow these steps:
 
-1. Rendez-vous dans l'espace d'administration de ClientXCMS.  
+1. Go to the ClientXCMS administration area.
 
-2. Allez dans **Paramètres > Catégorie "Proxmox" > "IPAM"**. 
-Vous pouvez voir un tableau avec la liste des IPs que vous avez alloué pour vos clients VPS, et leur statut.
+2. Go to **Settings > "Proxmox" Category > "IPAM"**.
+You can see a table with the list of IPs you have allocated for your VPS customers, and their status.
 ![img](/img/next_gen/extensions/modules/proxmox/image_5.png)
 
-3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](/img/next_gen/extensions/modules/proxmox/image_4.png)  
+3. Click the **"Create"** button at the top right of the page.
+![img](/img/next_gen/extensions/modules/proxmox/image_4.png)
 
-Deux modes d'importation sont disponibles :  
-- **Créer une adresse IP** : Ajouter une seule adresse IP unique.  
-- **Ajout rapide d'adresses IP** : Importer une plage (pool) d'adresses IP successives.  
+Two import modes are available:
+- **Create an IP address**: Add a single unique IP address.
+- **Quick IP address addition**: Import a range (pool) of successive IP addresses.
 
-### Créer une adresse IP
+### Create an IP Address
 
-Remplissez les champs suivants :  
+Fill in the following fields:
 
-- **Adresse IP** : IPv4 à ajouter, au format `X.X.X.X`.  
-- **Masque de sous-réseau** : Généralement `24` (correspond au CIDR de votre réseau).  
-- **Pont (Bridge)** : Identifiant du bridge dans votre configuration réseau Proxmox.  
-- **Passerelle** : IPv4 de la passerelle, au format `X.X.X.Y` (souvent `1` ou `254`, selon la configuration de votre routeur ou transitaire réseau).  
-- **MTU** : Par défaut `1500`. Modifiez cette valeur uniquement si nécessaire.  
-- **Adresse MAC** :  
-  - Par défaut `auto` (générée automatiquement par Proxmox).  
-  - Optionnellement, définissez une adresse MAC statique si vos besoins l’exigent.  
-- **Adresse IPv6 et Passerelle IPv6** : Champs similaires pour IPv6.  
-- **Notes** : Ajoutez une annotation pour organiser vos adresses.  
-- **Statut** : Sélectionnez l’état de l’adresse : Disponible, Indisponible, ou Utilisée.  
-- **Serveur** : L'ID du serveur Proxmox associé à cette adresse IP.  
+- **IP Address**: IPv4 to add, in `X.X.X.X` format.
+- **Subnet Mask**: Usually `24` (corresponds to the CIDR of your network).
+- **Bridge**: Bridge identifier in your Proxmox network configuration.
+- **Gateway**: IPv4 of the gateway, in `X.X.X.Y` format (often `1` or `254`, depending on your router or network transit configuration).
+- **MTU**: Default `1500`. Modify this value only if necessary.
+- **MAC Address**:
+  - Default `auto` (automatically generated by Proxmox).
+  - Optionally, set a static MAC address if your needs require it.
+- **IPv6 Address and IPv6 Gateway**: Similar fields for IPv6.
+- **Notes**: Add an annotation to organize your addresses.
+- **Status**: Select the address status: Available, Unavailable, or Used.
+- **Server**: The Proxmox server ID associated with this IP address.
 
-Cliquez sur **"Créer"** pour enregistrer l'adresse IP. Un message de confirmation s'affichera si l'adresse a été importée avec succès.  
+Click **"Create"** to save the IP address. A confirmation message will appear if the address was imported successfully.
 
-### Ajout rapide d'adresses IP (range)
+### Quick IP Address Addition (range)
 
-Pour importer un bloc d'adresses IP, complétez les champs suivants :  
+To import a block of IP addresses, complete the following fields:
 
-- **Bloc** : Saisissez le bloc IP sous la forme `A.B.C.XX`. Le **`XX`** sera remplacé automatiquement par les numéros de la plage définie.  
-- **Masque de sous-réseau** : Généralement `24` (CIDR).  
-- **Serveur** : L'ID du serveur Proxmox où les adresses seront assignées.  
-- **Pont (Bridge)** : Identifiant du bridge dans votre réseau Proxmox.  
-- **Passerelle** : IPv4 de la passerelle du bloc, au format `X.X.X.Y` (souvent `1` ou `254`).  
-- **MTU** : Par défaut `1500`. Modifiez cette valeur uniquement si nécessaire.  
-- **Range** : La plage des adresses IP à ajouter, sous la forme `A-Z`.  
+- **Block**: Enter the IP block in the form `A.B.C.XX`. The **`XX`** will be automatically replaced by the numbers in the defined range.
+- **Subnet Mask**: Usually `24` (CIDR).
+- **Server**: The Proxmox server ID where the addresses will be assigned.
+- **Bridge**: Bridge identifier in your Proxmox network.
+- **Gateway**: IPv4 of the block's gateway, in `X.X.X.Y` format (often `1` or `254`).
+- **MTU**: Default `1500`. Modify this value only if necessary.
+- **Range**: The range of IP addresses to add, in the form `A-Z`.
 
-> **Exemple :**  
-> Pour importer les adresses de `192.168.1.10` à `192.168.1.199` :  
-> - **Bloc** : `192.168.1.XX`  
-> - **Range** : `10-199`  
+> **Example:**
+> To import addresses from `192.168.1.10` to `192.168.1.199`:
+> - **Block**: `192.168.1.XX`
+> - **Range**: `10-199`
 
-Cliquez sur **"Importer"** pour ajouter la plage d'adresses. 
+Click **"Import"** to add the address range.
 
 
 
-## Gestion système d'exploitation (pour LXC)
+## Operating System Management (for LXC)
 
-  
-:::info 
-Si vous gérez plusieurs serveurs (nœuds ou clusters), assurez-vous que le système d'exploitation ou le modèle est correctement configuré sur un disque appartenant au nœud Proxmox de chaque serveur concerné. 
+
+:::info
+If you manage multiple servers (nodes or clusters), make sure the operating system or template is correctly configured on a disk belonging to the Proxmox node of each concerned server.
 :::
 
-1. Accédez à l'espace d'administration de ClientXCMS.  
-2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Systèmes d'exploitation"**.  
-3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](/img/next_gen/extensions/modules/proxmox/image_6.png)  
+1. Access the ClientXCMS administration area.
+2. Navigate to **Settings > "Proxmox" Category > "Operating Systems"**.
+3. Click the **"Create"** button at the top right of the page.
+![img](/img/next_gen/extensions/modules/proxmox/image_6.png)
 
-Complétez les champs suivants :  
-- **Nom** : Nom du système d'exploitation visible lors de la configuration d’un VPS (exemple : *Debian 12*).  
-- **Systèmes d'exploitation** : Identifiant du modèle de conteneur (CT) situé sur les disques des serveurs.  
+Complete the following fields:
+- **Name**: Operating system name visible when configuring a VPS (example: *Debian 12*).
+- **Operating Systems**: Container template (CT) identifier located on the server disks.
 
-Une fois les informations remplies, cliquez sur le bouton **"Créer"**. Un message de confirmation s'affichera si l'opération a réussi.  
+Once the information is filled in, click the **"Create"** button. A confirmation message will appear if the operation was successful.
 
-## Gestion template CloudInit (pour KVM)
+## CloudInit Template Management (for KVM)
 
-1. Accédez à l'espace d'administration de ClientXCMS.  
-2. Naviguez vers **Paramètres > Catégorie "Proxmox" > "Modèles"**.  
-3. Cliquez sur le bouton **"Créer"** en haut à droite de la page.  
-![img](/img/next_gen/extensions/modules/proxmox/image_7.png)  
+1. Access the ClientXCMS administration area.
+2. Navigate to **Settings > "Proxmox" Category > "Templates"**.
+3. Click the **"Create"** button at the top right of the page.
+![img](/img/next_gen/extensions/modules/proxmox/image_7.png)
 
-Complétez les champs suivants :  
-- **Nom** : Nom du modèle qui apparaîtra lors de la configuration d’un VPS (exemple : *Windows Server 2025*).  
-- **ID de la machine virtuelle** : Identifiant de la VM utilisée comme modèle sur les différentes nodes Proxmox VE.  
+Complete the following fields:
+- **Name**: Template name that will appear when configuring a VPS (example: *Windows Server 2025*).
+- **Virtual Machine ID**: VM identifier used as a template on the different Proxmox VE nodes.
 
-Cliquez ensuite sur **"Créer"**. Vous recevrez une confirmation si le modèle a été ajouté avec succès.  
+Then click **"Create"**. You will receive a confirmation if the template was added successfully.
 
-:::tip  
-N’oubliez pas d’intégrer les systèmes d’exploitation et modèles dans la configuration de vos produits Proxmox. Cela garantit qu’ils seront disponibles pour vos clients lors de leurs commandes.  
+:::tip
+Don't forget to integrate the operating systems and templates into your Proxmox product configuration. This ensures they will be available to your customers when ordering.
 :::
 
-## Configuration de l'offre
-En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant Proxmox.
+## Offer Configuration
+First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting Proxmox.
 
 ![img](/img/next_gen/extensions/modules/proxmox/image.png)
 
-Après avoir créé votre produit, cliquez sur le bouton **"Configurer l'offre"** pour accéder à la page de configuration de l'offre. Si les champs sont vides, assurez-vous que votre serveur ne soit pas caché.
+After creating your product, click the **"Configure Offer"** button to access the offer configuration page. If the fields are empty, make sure your server is not hidden.
 
-![img](/img/next_gen/extensions/modules/proxmox/config.png)  
-**Mémoire (Go)** : Quantité totale de mémoire RAM allouée.
+![img](/img/next_gen/extensions/modules/proxmox/config.png)
+**Memory (GB)**: Total amount of allocated RAM memory.
 
-**Disque (Go)** : Espace disque total alloué.
+**Disk (GB)**: Total allocated disk space.
 
-**Type de virtualisation** : Type de virtualisation utilisé pour les VPS. (QUEMU (KVM) ou LXC)
+**Virtualization Type**: Type of virtualization used for VPS. (QEMU (KVM) or LXC)
 
-**Système d'exploitation** : Sélectionnez le système d'exploitation à utiliser pour les VPS pour LXC.
+**Operating System**: Select the operating system to use for VPS for LXC.
 
-**Modèle KVM** : Sélectionnez le modèle CloudInit à utiliser pour les VPS pour KVM.
+**KVM Template**: Select the CloudInit template to use for VPS for KVM.
 
-**Disque** : Stockage alloué pour le VPS.
+**Disk**: Storage allocated for the VPS.
 
-**Serveur**: Serveur Proxmox configuré sur ClientXCMS où les VPS seront hébergés.
+**Server**: Proxmox server configured on ClientXCMS where VPS will be hosted.
 
-**Noeud** : Noeud Proxmox sur lequel le VPS sera créé.
+**Node**: Proxmox node on which the VPS will be created.
 
-**Débit** : Débit de la connexion réseau allouée au VPS.
+**Bandwidth**: Network connection bandwidth allocated to the VPS.
 
-**Stockage du disque** : Stockage alloué pour le disque du VPS. (souvent le même que le disque)
+**Disk Storage**: Storage allocated for the VPS disk. (often the same as disk)
 
-**Coeurs** : Nombre de coeurs CPU alloués.
+**Cores**: Number of allocated CPU cores.
 
-**Socket** : Nombre de sockets CPU alloués.
+**Socket**: Number of allocated CPU sockets.
 
-**Bridge** : Pont réseau utilisé pour connecter le VPS au réseau.
+**Bridge**: Network bridge used to connect the VPS to the network.
 
-**Features** : Fonctionnalités supplémentaires activées pour le VPS. (LXC seulement)
+**Features**: Additional features enabled for the VPS. (LXC only)
 
-**Nombre de réinstallations** : Nombre de réinstallations autorisées pour le VPS.
+**Number of Reinstallations**: Number of reinstallations allowed for the VPS.
 
-**Nombre de sauvegardes** : Nombre de sauvegardes autorisées pour le VPS.
+**Number of Backups**: Number of backups allowed for the VPS.
 
-**Nombre de snapshots** : Nombre de snapshots autorisés pour le VPS.
+**Number of Snapshots**: Number of snapshots allowed for the VPS.
 
-## Panel de gestion
+## Management Panel
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Overview" label="Gestion VPS">
+<TabItem value="Overview" label="VPS Management">
 ![img](/img/next_gen/extensions/modules/proxmox/overview.png)
 </TabItem>
-<TabItem value="Data" label="Nouvelle commande">
+<TabItem value="Data" label="New Order">
 ![img](/img/next_gen/extensions/modules/proxmox/new_order.png)
 </TabItem>
 
-<TabItem value="Graph" label="Graphique">
+<TabItem value="Graph" label="Graph">
 ![img](/img/next_gen/extensions/modules/proxmox/graph.png)
 </TabItem>
-<TabItem value="Logs" label="Historique">
+<TabItem value="Logs" label="History">
 ![img](/img/next_gen/extensions/modules/proxmox/logs.png)
 </TabItem>
 </Tabs>
 
 
-## Options supportées
-- Espace disque supplémentaires (curseurs ou menu déroulant)
-- Adresses IP supplémentaires (curseurs ou menu déroulant)
-- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
-- Coeurs CPU supplémentaires (curseurs ou menu déroulant)
-- Socket CPU supplémentaires (curseurs ou menu déroulant)
-- Débit réseau personnalisé (menu déroulant)
-- Noeud Proxmox personnalisé (menu déroulant)
+## Supported Options
+- Additional disk space (sliders or dropdown menu)
+- Additional IP addresses (sliders or dropdown menu)
+- Additional RAM memory (sliders or dropdown menu)
+- Additional CPU cores (sliders or dropdown menu)
+- Additional CPU sockets (sliders or dropdown menu)
+- Custom network bandwidth (dropdown menu)
+- Custom Proxmox node (dropdown menu)
 
-Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](/settings/provisioning/configoptions).
+Dropdown menus allow you to define predefined values for resources with a price for each value, while sliders allow you to define custom values based on a unit price. More information on option configuration is available in the [additional options documentation](/settings/provisioning/configoptions).
 
-### Exemple de configuration
-#### Espace disque supplémentaire
+### Configuration Example
+#### Additional Disk Space
 ![img](/img/next_gen/settings/provisioning/configoptions/example_disk.png)
-#### Node Proxmox personnalisé
+#### Custom Proxmox Node
 ![img](/img/next_gen/settings/provisioning/configoptions/example_node.png)
 
-Cette configuration permet de sélectionner un nœud Proxmox spécifique si par exemple vous avez un noeud dans un autre datacenter ou un autre pays.
-Chaque option peut avoir un prix différent selon l'option sélectionnée.
-#### Coeurs CPU supplémentaires
+This configuration allows selecting a specific Proxmox node if, for example, you have a node in another datacenter or another country.
+Each option can have a different price depending on the selected option.
+#### Additional CPU Cores
 ![img](/img/next_gen/settings/provisioning/configoptions/example_core.png)
 
-Cette configuration permet de sélectionner le nombre de coeurs CPU supplémentaires pour le VPS.
+This configuration allows selecting the number of additional CPU cores for the VPS.
 
-### Metadonnées utilisées
-| Clé                        | Valeur      | Description                                    |
+### Metadata Used
+| Key                        | Value       | Description                                    |
 |----------------------------|-------------|------------------------------------------------|
-| `vmid`                     | int         | ID de la VM sur proxmox                        |
-| `node`                     | string      | Nom du noeud proxmox                           |
-| `config`                   | json        | Configuration du VPS lors d'une réinstallation |
-| `proxmox_reinstall`        | bool        | Indique si il faut réinstaller le VPS          |
-| `type`                     | qemu ou lxc | Type de VPS                                    |
-| `proxmox_need_resize_disk` | int         | Taille à rajouter lors d'une amélioration      |
-| `proxmox_need_restart`     | bool        | Affiche au client qui faut redémarrer son VPS  | 
+| `vmid`                     | int         | VM ID on Proxmox                               |
+| `node`                     | string      | Proxmox node name                              |
+| `config`                   | json        | VPS configuration during reinstallation        |
+| `proxmox_reinstall`        | bool        | Indicates if the VPS needs reinstallation      |
+| `type`                     | qemu or lxc | VPS type                                       |
+| `proxmox_need_resize_disk` | int         | Size to add during an upgrade                  |
+| `proxmox_need_restart`     | bool        | Shows customer that VPS needs restart          |
 --------------------------------
 
-### Erreurs courantes
+### Common Errors
 
 
-**Installation d'un VPS trop long** : Vérifiez dans [l'historique](../../settings/security/history.md) dans le fichier proxmox-installation-vps.log. Il devrait avoir une erreur à remonter au support.
+**VPS installation taking too long**: Check in [history](../../settings/security/history.md) in the proxmox-installation-vps.log file. There should be an error to report to support.
 
-**Modèles ou systèmes d'exploitations vides** : Cela peut venir d'un problème de permission sur votre clé d'API. Assurez-vous que vous avez désactivé la **Privilege Separation** sur votre jeton API.
+**Empty templates or operating systems**: This may come from a permission issue with your API key. Make sure you have disabled **Privilege Separation** on your API token.
 
-**No available IPs** : Cette erreur signifie que vous n'avez pas d'adresses IP disponibles pour allouer à un VPS.
-Le système recherche : 
-- Des IPs est associées à un serveur ou un nœud spécifique, elle ne sera disponible que pour ce même serveur/nœud.
-- Des IPs n'est associées à aucun serveur ou aucun nœud (Aucun), elle est accessible pour tout le monde.
+**No available IPs**: This error means you don't have available IP addresses to allocate to a VPS.
+The system searches for:
+- IPs associated with a specific server or node, it will only be available for that same server/node.
+- IPs not associated with any server or node (None), it is accessible to everyone.
 
-Si aucune IP n'est trouvée. Cette erreur est renvoyée.
+If no IP is found, this error is returned.
 
-**VPS non trouvé (tags)** : CLIENTXCMS utilise un système de tag proxmox (kvm, service-123 par exemple) pour s'assurer que la VM utilisée soit bien pour le bon service. Vérifiez donc sur votre Proxmox que la VM ai bien les bons tags
+**VPS not found (tags)**: CLIENTXCMS uses a Proxmox tag system (kvm, service-123 for example) to ensure that the VM used is for the correct service. So check on your Proxmox that the VM has the correct tags.
 
-**VPS non trouvé (metadata)** : Vérifiez les metadonnées de votre service (vmid, node, config)
+**VPS not found (metadata)**: Check the metadata of your service (vmid, node, config)
 
-**VPS non trouvé (resources)** : CLIENTXCMS n'arrive pas à récupérer les resources du VPS.
+**VPS not found (resources)**: CLIENTXCMS cannot retrieve the VPS resources.
 
-### Commande Artisan
+### Artisan Commands
 
-| Commande                   | Description                                                      | Paramètres |
-|:---------------------------|:-----------------------------------------------------------------|:-----------|
-| `proxmox:delete-vps`       | Supprime les VPS marqués comme "deleted" sur le serveur Proxmox. | -          |
-| `proxmox:disk-vps`         | Gère le disque pour l'installation d'un VPS.                     | -          |
-| `proxmox:installation-vps` | Gère l'installation des VPS qui doivent être installés.          | -          |
-| `proxmox:migrate-config`   | Migre la configuration de Proxmox.                               | -          |
-| `proxmox:process-post-install`     | Gère les actions post-installation des VPS.       | -          |
-| `proxmox:cleanup-console-users`       | Nettoie les utilisateurs de la console Proxmox.                             | -          |
+| Command                          | Description                                                      | Parameters |
+|:---------------------------------|:-----------------------------------------------------------------|:-----------|
+| `proxmox:delete-vps`             | Deletes VPS marked as "deleted" on the Proxmox server.           | -          |
+| `proxmox:disk-vps`               | Manages disk for VPS installation.                               | -          |
+| `proxmox:installation-vps`       | Manages installation of VPS that need to be installed.           | -          |
+| `proxmox:migrate-config`         | Migrates Proxmox configuration.                                  | -          |
+| `proxmox:process-post-install`   | Manages post-installation actions for VPS.                       | -          |
+| `proxmox:cleanup-console-users`  | Cleans up Proxmox console users.                                 | -          |
 
-### Support NoVNC
-Pour supporter le noVNC, vous devez créer un rôle personnalisé dans Proxmox avec la permission `VM.Console` avec le nom "CustomerPanel".
+### NoVNC Support
+To support noVNC, you must create a custom role in Proxmox with the `VM.Console` permission named "CustomerPanel".
