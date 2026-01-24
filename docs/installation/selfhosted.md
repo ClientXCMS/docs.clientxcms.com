@@ -16,7 +16,7 @@ This page will guide you through the installation of ClientXCMS Next Gen for sel
 You can download the latest version of ClientXCMS NextGen from the [Download area](https://clientxcms.com/client/downloads) or directly from GitHub: [https://github.com/ClientXCMS/ClientXCMS](https://github.com/ClientXCMS/ClientXCMS)
 Remember to check the [technical requirements](./requis) before starting the installation and to have a valid license. (see [here](https://clientxcms.com/pricing) to order a license)
 
-![Download page - NextGen](/img/next_gen/Installation/Selfhosting/download_nextgen.png)
+![ClientXCMS NextGen download page showing available versions](/img/next_gen/Installation/Selfhosting/download_nextgen.png)
 
 :::info
 The example below is based on Debian 12, but commands may vary depending on your distribution.
@@ -450,12 +450,12 @@ sudo supervisorctl start clientxcms-worker:*
 ## ClientXCMS Configuration
 
 1. Go to your customer area address. You should see an installation page similar to this one:
-   ![Installation page - ClientXCMS](/img/next_gen/Installation/ClientX_Install_page.png)
+   ![ClientXCMS installation wizard welcome page](/img/next_gen/Installation/ClientX_Install_page.png)
 
 2. Replace "CLIENTXCMS" with your hosting company trade name.
 
 3. To find the **Client ID** and **Client Secret**, go to the ClientXCMS customer area: [https://clientxcms.com/client/services/](https://clientxcms.com/client/services/), in the management of the relevant NextGen license.
-   ![License management - Plesk](/img/next_gen/Installation/ClientX_panel_gestion_licence.png)
+   ![ClientXCMS customer panel showing OAuth credentials for license activation](/img/next_gen/Installation/ClientX_panel_gestion_licence.png)
    The "**OAuth Client ID**" and "**OAuth Secret**" credentials are required to connect the ClientXCMS license to your site. Then click the "Login" button on your instance.
 
 
@@ -465,7 +465,7 @@ If you purchase extensions in the meantime and get the following error message w
 > **"The composer.json file was not found."**
 
 You can download the extension archive from the download page of the customer area. You can then extract it to your ClientXCMS instance.
-![Download page - Extensions](/img/next_gen/Installation/Selfhosting/download_extension.png)
+![ClientXCMS extensions download page in customer area](/img/next_gen/Installation/Selfhosting/download_extension.png)
 
 :::info
 For themes, you need to run the `npm run build` command again to activate them.
