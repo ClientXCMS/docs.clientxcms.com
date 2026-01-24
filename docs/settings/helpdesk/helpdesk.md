@@ -1,35 +1,38 @@
+---
+translated: true
+---
 import DocCardList from '@theme/DocCardList';
 
-# Centre d'aide
+# Help Center
 
-Dans **CLIENTXCMS**, le **centre d'aide** est votre solution complète pour **gérer le support client** et **maintenir la satisfaction de vos utilisateurs**.
-L'objectif est fondamental : **centraliser toutes les demandes d'assistance**, **organiser le support de manière efficace** et **garantir un suivi optimal de chaque interaction**. Un centre d'aide bien configuré améliore l'expérience client, optimise le temps de résolution et renforce la relation de confiance avec vos utilisateurs.
+In **CLIENTXCMS**, the **help center** is your complete solution for **managing customer support** and **maintaining user satisfaction**.
+The goal is fundamental: **centralize all support requests**, **organize support efficiently**, and **ensure optimal tracking of each interaction**. A well-configured help center improves customer experience, optimizes resolution time, and strengthens the trust relationship with your users.
 
-Cette section couvre tous les aspects du support : configuration générale, organisation des départements, et gestion des paramètres avancés.
+This section covers all aspects of support: general configuration, department organization, and advanced settings management.
 
-Vous pouvez accéder aux paramètres du centre d'aide depuis :
+You can access help center settings from:
 
-`Paramètres` > `Centre d'aide`
+`Settings` > `Help Center`
 
-:::tip Astuce
-Un support client efficace est la **clé de la fidélisation**.
-Chaque ticket résolu rapidement et professionnellement renforce la confiance de vos clients.
+:::tip Tip
+Efficient customer support is the **key to retention**.
+Every ticket resolved quickly and professionally strengthens your clients' trust.
 :::
 
-## Pourquoi optimiser votre centre d'aide ?
+## Why Optimize Your Help Center?
 
-Un système de support structuré vous permet de :
+A structured support system allows you to:
 
-* **Centraliser toutes les demandes** en un seul endroit
-* **Organiser le travail d'équipe** avec des départements spécialisés
-* **Suivre les métriques** de performance et satisfaction
-* **Automatiser les processus** pour plus d'efficacité
-* **Maintenir un historique complet** des interactions client
+* **Centralize all requests** in one place
+* **Organize teamwork** with specialized departments
+* **Track metrics** for performance and satisfaction
+* **Automate processes** for more efficiency
+* **Maintain a complete history** of customer interactions
 
-:::tip Astuce
-C'est comme avoir un centre d'appel virtuel 📞 — organisé, traçable et disponible 24h/24 pour vos clients.
+:::tip Tip
+It's like having a virtual call center 📞 — organized, traceable, and available 24/7 for your clients.
 :::
 
-## Navigation dans cette section
+## Navigation in This Section
 
 <DocCardList />
