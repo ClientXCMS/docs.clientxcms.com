@@ -79,7 +79,7 @@ Domain modification is possible every 60 days. For subdomain changes, this is no
 
 If you want to reinstall your client area, you can do so from your client area. To do this, go to the "Cloud" page and click on the "Reinstall" button. You will be asked to confirm the reinstallation. Once confirmed, the system will reinstall the client area on your domain.
 
-![Reinstallation](/img/next_gen/Installation/Cloud/reinstall.png)
+![Instance Reinstallation Interface](/img/next_gen/Installation/Cloud/reinstall.png)
 
 The login credentials will be sent to you by email once the installation is complete.
 
