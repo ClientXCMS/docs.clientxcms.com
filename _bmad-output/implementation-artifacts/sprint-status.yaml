@@ -51,7 +51,7 @@ development_status:
   # Epic 1: MVD - Introduction
   epic-1: in-progress
   1-1-relecture-introduction-md: done
-  1-2-validation-finale: backlog
+  1-2-validation-finale: ready-for-dev
   epic-1-retrospective: optional
 
   # Epic 2: MVD - Installation
