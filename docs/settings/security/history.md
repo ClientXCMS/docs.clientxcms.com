@@ -1,127 +1,128 @@
 ---
+translated: true
 sidebar_position: 3
 ---
-# Historique
+# History
 
-Dans **CLIENTXCMS**, l'**historique** et la **surveillance des logs** constituent un pilier essentiel de la sécurité et du diagnostic de votre plateforme.
-L'objectif est crucial : **tracer toutes les activités critiques**, **détecter les anomalies rapidement** et **faciliter le diagnostic des problèmes**. Un système de logging robuste vous permet de maintenir la sécurité, optimiser les performances et résoudre efficacement les incidents.
+In **CLIENTXCMS**, **history** and **log monitoring** constitute an essential pillar of your platform's security and diagnostics.
+The objective is crucial: **trace all critical activities**, **detect anomalies quickly** and **facilitate problem diagnosis**. A robust logging system allows you to maintain security, optimize performance, and effectively resolve incidents.
 
-Cette section centralise tous les fichiers de logs système, des tâches planifiées et des erreurs pour une surveillance complète.
+This section centralizes all system log files, scheduled tasks, and errors for comprehensive monitoring.
 
-Vous pouvez consulter l'historique depuis :
+You can view history from:
 
-`Paramètres` > `Sécurité` > `Historique`
+`Settings` > `Security` > `History`
 
-:::tip Astuce
-Les logs sont votre **boîte noire** système.
-Consultez-les régulièrement pour anticiper les problèmes avant qu'ils n'impactent vos utilisateurs.
+:::tip Tip
+Logs are your system's **black box**.
+Check them regularly to anticipate problems before they impact your users.
 :::
 
-## Pourquoi surveiller l'historique ?
+## Why monitor history?
 
-La surveillance des logs est essentielle pour :
+Log monitoring is essential for:
 
-* **Détecter les tentatives d'intrusion** et activités suspectes
-* **Diagnostiquer les pannes** et dysfonctionnements système
-* **Optimiser les performances** en identifiant les goulots d'étranglement
-* **Auditer les actions** des administrateurs et utilisateurs
-* **Planifier la maintenance** en anticipant les problèmes récurrents
+* **Detecting intrusion attempts** and suspicious activities
+* **Diagnosing failures** and system malfunctions
+* **Optimizing performance** by identifying bottlenecks
+* **Auditing actions** of administrators and users
+* **Planning maintenance** by anticipating recurring problems
 
-:::tip Astuce
-C'est comme avoir un système de vidéosurveillance pour votre plateforme 📹 — vous voyez tout ce qui se passe, même quand vous n'êtes pas là.
+:::tip Tip
+It's like having a video surveillance system for your platform 📹 — you see everything that happens, even when you're not there.
 :::
 
-## Types de logs
+## Types of Logs
 
-### 📋 Logs des tâches planifiées
+### 📋 Scheduled Task Logs
 
-Les tâches automatiques génèrent leurs propres fichiers de logs pour tracer leur exécution :
+Automatic tasks generate their own log files to trace their execution:
 
-| Fichier de log            | Commande associée             | Description                          |
-| ------------------------- | ------------------------------ | ------------------------------------ |
-| `services-delivery.log` | `services:delivery`          | Livraison automatique des services   |
-| `services-expire.log`   | `services:expire`            | Expiration des services              |
-| `services-renewals.log` | `services:renewals`          | Renouvellements automatiques         |
-| `helpdesk-close.log`    | `clientxcms:helpdesk-close`  | Fermeture automatique des tickets    |
-| `notify-expiration.log` | `services:notify-expiration` | Notifications d'expiration           |
-| `invoice-delete.log`    | `clientxcms:invoice-delete`  | Suppression automatique des factures |
-| `purge-metadata.log`    | `clientxcms:purge-metadata`  | Nettoyage des métadonnées          |
-| `purge-basket.log`      | `clientxcms:purge-basket`    | Vidage des paniers abandonnés       |
+| Log File              | Associated Command          | Description                          |
+| --------------------- | --------------------------- | ------------------------------------ |
+| `services-delivery.log` | `services:delivery`        | Automatic service delivery           |
+| `services-expire.log`   | `services:expire`          | Service expiration                   |
+| `services-renewals.log` | `services:renewals`        | Automatic renewals                   |
+| `helpdesk-close.log`    | `clientxcms:helpdesk-close`| Automatic ticket closure             |
+| `notify-expiration.log` | `services:notify-expiration`| Expiration notifications            |
+| `invoice-delete.log`    | `clientxcms:invoice-delete`| Automatic invoice deletion           |
+| `purge-metadata.log`    | `clientxcms:purge-metadata`| Metadata cleanup                     |
+| `purge-basket.log`      | `clientxcms:purge-basket`  | Abandoned cart cleanup               |
 
-#### Contenu des logs de tâches
+#### Task Log Content
 
-Chaque fichier contient :
-- **Horodatage** précis de l'exécution
-- **Statut** de la tâche (succès/échec)
-- **Nombre d'éléments traités** (services, factures, etc.)
-- **Erreurs rencontrées** et leurs détails
-- **Durée d'exécution** de la tâche
+Each file contains:
+- **Precise timestamp** of execution
+- **Task status** (success/failure)
+- **Number of items processed** (services, invoices, etc.)
+- **Errors encountered** and their details
+- **Execution duration** of the task
 
-### 🚨 Logs d'erreurs système
+### 🚨 System Error Logs
 
-Les erreurs applicatives sont enregistrées quotidiennement :
+Application errors are recorded daily:
 
-**Format des fichiers** : `laravel-{année}-{mois}-{jour}.log`
+**File format**: `laravel-{year}-{month}-{day}.log`
 
-Exemples :
+Examples:
 - `laravel-2024-08-15.log`
 - `laravel-2024-08-16.log`
 
-#### Rétention des logs
+#### Log Retention
 
-- **Durée de conservation** : 15 jours automatiquement
-- **Rotation quotidienne** : Un nouveau fichier chaque jour
-- **Suppression automatique** : Les logs de plus de 15 jours sont effacés
+- **Retention period**: 15 days automatically
+- **Daily rotation**: A new file each day
+- **Automatic deletion**: Logs older than 15 days are deleted
 
-#### Contenu des logs d'erreurs
+#### Error Log Content
 
-- **Erreurs PHP** : Exceptions non gérées, erreurs fatales
-- **Erreurs SQL** : Problèmes de base de données
-- **Erreurs d'authentification** : Tentatives de connexion échouées
-- **Erreurs de modules** : Dysfonctionnements des extensions
-- **Erreurs de configuration** : Paramètres invalides
+- **PHP errors**: Unhandled exceptions, fatal errors
+- **SQL errors**: Database problems
+- **Authentication errors**: Failed login attempts
+- **Module errors**: Extension malfunctions
+- **Configuration errors**: Invalid settings
 
-## Gestion des fichiers de logs
+## Log File Management
 
-### Actions disponibles
+### Available Actions
 
-Pour chaque fichier de log, trois actions sont possibles :
+For each log file, three actions are available:
 
-**🔽 Télécharger** | (bouton gris)
-Télécharge le fichier de log sur votre ordinateur pour analyse hors ligne.
-Utile pour archivage ou analyse avec des outils externes.
+**🔽 Download** | (gray button)
+Download the log file to your computer for offline analysis.
+Useful for archiving or analysis with external tools.
 
-### Cas d'usage des actions
+### Action Use Cases
 
-#### Téléchargement
+#### Download
 
-- **Analyse approfondie** avec des outils externes
-- **Archivage** pour audit ou conformité
-- **Partage** avec le support technique
-- **Surveillance** des tendances long terme
+- **In-depth analysis** with external tools
+- **Archiving** for audit or compliance
+- **Sharing** with technical support
+- **Long-term** trend monitoring
 
-#### Vidage
-- **Nettoyage** d'un fichier devenu trop volumineux
-- **Reset** après résolution d'un problème récurrent
-- **Optimisation** de l'espace disque
+#### Clearing
+- **Cleanup** of a file that has become too large
+- **Reset** after resolving a recurring problem
+- **Disk space** optimization
 
-#### Suppression
-- **Maintenance** de l'espace disque
-- **Conformité** aux politiques de rétention
-- **Nettoyage** de logs non pertinents
+#### Deletion
+- **Disk space** maintenance
+- **Compliance** with retention policies
+- **Cleanup** of irrelevant logs
 
-## Bonnes pratiques de surveillance
+## Monitoring Best Practices
 
-### Monitoring régulier
+### Regular Monitoring
 
-1. **Consultation quotidienne** : Vérifiez les logs récents chaque jour
-2. **Alertes critiques** : Surveillez les erreurs récurrentes
-3. **Tendances** : Analysez l'évolution des erreurs dans le temps
-4. **Corrélations** : Reliez les erreurs aux événements système
+1. **Daily check**: Review recent logs every day
+2. **Critical alerts**: Monitor recurring errors
+3. **Trends**: Analyze error evolution over time
+4. **Correlations**: Link errors to system events
 
-### Analyse des logs
+### Log Analysis
 
-#### Logs de tâches planifiées
+#### Scheduled Task Logs
 ```
 [2024-08-15 02:00:01] INFO: services:delivery started
 [2024-08-15 02:00:05] INFO: Processing 15 pending services
@@ -130,60 +131,60 @@ Utile pour archivage ou analyse avec des outils externes.
 [2024-08-15 02:00:12] INFO: services:delivery completed in 11.2s
 ```
 
-#### Logs d'erreurs système
+#### System Error Logs
 ```
 [2024-08-15 14:23:45] ERROR: PDOException: Connection refused
 [2024-08-15 14:23:45] ERROR: Stack trace: /var/www/app/Database.php:42
 [2024-08-15 14:24:01] INFO: Database connection restored
 ```
 
-### Dépannage courant
+### Common Troubleshooting
 
-### Logs trop volumineux
+### Logs Too Large
 
-**Symptômes** : Fichiers de plusieurs Mo, lenteurs interface
-**Solutions** :
-1. Videz les logs anciens
-2. Identifiez la source des erreurs répétitives
-3. Corrigez les problèmes à l'origine
-4. Augmentez la fréquence de rotation
+**Symptoms**: Files of several MB, interface slowdowns
+**Solutions**:
+1. Clear old logs
+2. Identify the source of repetitive errors
+3. Fix the root problems
+4. Increase rotation frequency
 
-### Logs manquants
+### Missing Logs
 
-**Symptômes** : Aucun fichier récent, tâches silencieuses
-**Solutions** :
-1. Vérifiez les permissions d'écriture
-2. Contrôlez l'espace disque disponible
-3. Redémarrez les services si nécessaire
-4. Vérifiez la configuration du logging
+**Symptoms**: No recent files, silent tasks
+**Solutions**:
+1. Check write permissions
+2. Verify available disk space
+3. Restart services if necessary
+4. Check logging configuration
 
-### Erreurs récurrentes
+### Recurring Errors
 
-**Symptômes** : Mêmes erreurs répétées, instabilité
-**Solutions** :
-1. Analysez le pattern des erreurs
-2. Identifiez la cause racine
-3. Appliquez un correctif permanent
-4. Surveillez la résolution
+**Symptoms**: Same errors repeated, instability
+**Solutions**:
+1. Analyze the error pattern
+2. Identify the root cause
+3. Apply a permanent fix
+4. Monitor the resolution
 
-## Conformité et archivage
+## Compliance and Archiving
 
-### Réglementations
+### Regulations
 
-Selon votre secteur d'activité :
+Depending on your industry:
 
-- **RGPD** : Logs d'accès aux données personnelles
-- **Comptabilité** : Logs des opérations financières
-- **Sécurité** : Logs d'authentification et d'accès
+- **GDPR**: Access logs for personal data
+- **Accounting**: Financial operation logs
+- **Security**: Authentication and access logs
 
-### Politique de rétention
+### Retention Policy
 
-Définissez une politique claire :
-1. **Durée de conservation** selon les besoins légaux
-2. **Format d'archivage** (compression, chiffrement)
-3. **Accès contrôlé** aux logs archivés
-4. **Destruction sécurisée** en fin de cycle
+Define a clear policy:
+1. **Retention period** according to legal requirements
+2. **Archiving format** (compression, encryption)
+3. **Controlled access** to archived logs
+4. **Secure destruction** at end of lifecycle
 
-:::tip À retenir
-Les logs sont vos alliés pour maintenir une plateforme stable et sécurisée. Une surveillance proactive vous fait gagner du temps et évite les crises. Prenez l'habitude de les consulter régulièrement.
+:::tip Remember
+Logs are your allies for maintaining a stable and secure platform. Proactive monitoring saves you time and avoids crises. Make it a habit to check them regularly.
 :::
