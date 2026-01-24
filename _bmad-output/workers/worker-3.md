@@ -46,9 +46,7 @@ git pull --rebase alexwrite feat/i18n
 
 ## Workflow pour chaque story
 
-```bash
 git pull --rebase alexwrite feat/i18n
-```
 
 1. Lire le fichier source (FR)
 2. Traduire FR -> EN :
@@ -58,10 +56,8 @@ git pull --rebase alexwrite feat/i18n
 3. Ecrire dans docs/<path>.md
 4. Verifier que i18n/fr/.../path.md garde le FR original
 5. Commit: `git commit -m "docs(i18n): translate <filename>"`
-6. Mettre a jour sprint-status.yaml: status: done, owner: worker-3
-7. Commit: `git commit -m "done: <story-id>"`
-8. Push: `git pull --rebase alexwrite feat/i18n && git push alexwrite feat/i18n`
-9. Passer a la story suivante
+6. Push: `git pull --rebase alexwrite feat/i18n && git push alexwrite feat/i18n`
+7. Passer a la story suivante
 
 ## Regles de traduction
 
