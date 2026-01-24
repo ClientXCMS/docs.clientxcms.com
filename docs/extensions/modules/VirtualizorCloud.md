@@ -45,7 +45,7 @@ The following port must be open to connect CLIENTXCMS to your Virtualizor Cloud:
 You can test the server connection and verify that the server returns *"Success"* as a response.
 
 ## Offer Configuration
-First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting Virtualizor Cloud.
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting Virtualizor Cloud.
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image5.png)
 

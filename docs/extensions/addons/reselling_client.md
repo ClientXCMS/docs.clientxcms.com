@@ -58,7 +58,7 @@ These are not your CLIENTXCMS credentials, but the API key.
 You can test the server connection and verify that the server returns *"Success"* in response.
 
 ## Offer Configuration
-First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting "Reselling".
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting "Reselling".
 ![img](/img/next_gen/extensions/addons/reselling_client/image_2.png)
 After pressing the "Create" button, it creates your product, then click the "Configure Offer" button which will direct you to the offer configuration page. If the fields are empty, make sure your server is not hidden, in which case it will not be considered by the system to retrieve reselling offers.
 

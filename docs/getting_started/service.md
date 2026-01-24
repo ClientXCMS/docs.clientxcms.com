@@ -32,7 +32,7 @@ Creating a service does not create an invoice. You will need to place an order t
 If you have a service delivery issue, go to `Admin Panel` > `Settings` > `History` and look for the file 'services-delivery.log'. You can also check the provisioning module page for more information.
 ![img](/img/next_gen/services/delivery_log.png)
 
-For example, in this case, the service could not be delivered because Pterodactyl has no more available allocations. More information about configuring the Pterodactyl module is available [here](../extensions/modules/Pterodactyl.md#erreurs-courantes).
+For example, in this case, the service could not be delivered because Pterodactyl has no more available allocations. More information about configuring the Pterodactyl module is available [here](../extensions/modules/Pterodactyl.md#common-errors).
 
 ## Service Overview
 

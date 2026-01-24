@@ -167,7 +167,7 @@ Don't forget to integrate the operating systems and templates into your Proxmox 
 :::
 
 ## Offer Configuration
-First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting Proxmox.
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting Proxmox.
 
 ![img](/img/next_gen/extensions/modules/proxmox/image.png)
 

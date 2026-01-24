@@ -46,7 +46,7 @@ The following port must be open to connect CLIENTXCMS to your Plesk: 8443
 You can test the server connection and verify that the server returns *"Success"* as a response.
 
 ## Offer Configuration
-First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting Plesk.
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting Plesk.
 
 ![img](/img/next_gen/extensions/modules/plesk/image_2.png)
 
