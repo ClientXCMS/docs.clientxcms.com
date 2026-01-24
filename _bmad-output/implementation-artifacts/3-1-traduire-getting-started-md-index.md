@@ -1,6 +1,6 @@
 # Story 3.1: Traduire getting_started.md (index)
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -32,23 +32,23 @@ so that international users can access the onboarding guide with a clear introdu
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Create EN file with frontmatter (AC: #2)
-  - [ ] 1.1 Create directory if not exists: `docs/i18n/en/docusaurus-plugin-content-docs/current/getting_started/`
-  - [ ] 1.2 Create file `getting_started.md` with frontmatter
-  - [ ] 1.3 Add `translated: true`
-  - [ ] 1.4 Add `sidebar_position: 3`
+- [x] Task 1: Create EN file with frontmatter (AC: #2)
+  - [x] 1.1 Create directory if not exists: `docs/i18n/en/docusaurus-plugin-content-docs/current/getting_started/`
+  - [x] 1.2 Create file `getting_started.md` with frontmatter
+  - [x] 1.3 Add `translated: true`
+  - [x] 1.4 Add `sidebar_position: 3`
 
-- [ ] Task 2: Translate content (AC: #1)
-  - [ ] 2.1 Translate title "Comment bien demarrer" to "Getting Started"
-  - [ ] 2.2 Translate "Introduction" heading
-  - [ ] 2.3 Translate welcome paragraph with natural English phrasing
-  - [ ] 2.4 Ensure terminology consistency with Epic 2 translations
+- [x] Task 2: Translate content (AC: #1)
+  - [x] 2.1 Translate title "Comment bien demarrer" to "Getting Started"
+  - [x] 2.2 Translate "Introduction" heading
+  - [x] 2.3 Translate welcome paragraph with natural English phrasing
+  - [x] 2.4 Ensure terminology consistency with Epic 2 translations
 
-- [ ] Task 3: Build and test (AC: #4)
-  - [ ] 3.1 Run `npm run build`
-  - [ ] 3.2 Run `npm run serve` and test EN URL
-  - [ ] 3.3 Verify no "Not translated" banner
-  - [ ] 3.4 Verify FR page still works
+- [x] Task 3: Build and test (AC: #4)
+  - [x] 3.1 Run `npm run build`
+  - [x] 3.2 Run `npm run serve` and test EN URL
+  - [x] 3.3 Verify no "Not translated" banner
+  - [x] 3.4 Verify FR page still works
 
 ## Dev Notes
 
@@ -199,10 +199,30 @@ Welcome to the setup process for your client area. We will guide you through the
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+- Build output: EN and FR locales compiled successfully
+- Build verification: /build/getting_started/index.html exists (24493 bytes)
+- Build verification: /build/fr/getting_started/index.html exists (24330 bytes)
+- Banner check: No "not translated" banner found in EN build
+
 ### Completion Notes List
 
+- Created EN getting_started directory structure
+- Created getting_started.md with proper frontmatter (sidebar_position: 3, translated: true)
+- Translated title "Comment bien demarrer" to "Getting Started"
+- Translated introduction paragraph with natural English phrasing
+- Maintained terminology consistency with Epic 2 (client area, platform's services)
+- Build successful for both EN and FR locales
+- No "Not yet translated" banner on EN page
+- FR page continues to work correctly
+
 ### File List
+
+- docs/i18n/en/docusaurus-plugin-content-docs/current/getting_started/getting_started.md (NEW)
+
+### Change Log
+
+- 2026-01-24: Story 3.1 implemented - Translated Getting Started index page to English

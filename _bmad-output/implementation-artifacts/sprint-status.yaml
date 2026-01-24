@@ -69,7 +69,7 @@ development_status:
 
   # Epic 3: MVD - Getting Started
   epic-3: in-progress
-  3-1-traduire-getting-started-md-index: in-progress
+  3-1-traduire-getting-started-md-index: review
   3-2-traduire-first-login-md: ready-for-dev
   3-3-traduire-personalization-md: ready-for-dev
   3-4-traduire-server-md: ready-for-dev
