@@ -1,6 +1,6 @@
 # Story 2.2: Traduire installation.md (index)
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -39,36 +39,36 @@ so that international users can navigate to the appropriate installation method 
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #3)
-  - [ ] 1.1 Add `---` block at top of file
-  - [ ] 1.2 Add `translated: true`
+- [x] Task 1: Add frontmatter with translated flag (AC: #3)
+  - [x] 1.1 Add `---` block at top of file
+  - [x] 1.2 Add `translated: true`
 
-- [ ] Task 2: Translate introduction paragraph (AC: #1)
-  - [ ] 2.1 Translate "L'espace client peut etre installe..." to English
-  - [ ] 2.2 Use "Cloud" vs "Self-hosted" terminology
+- [x] Task 2: Translate introduction paragraph (AC: #1)
+  - [x] 2.1 Translate "L'espace client peut etre installe..." to English
+  - [x] 2.2 Use "Cloud" vs "Self-hosted" terminology
 
-- [ ] Task 3: Translate Cloud section (AC: #1, #4)
-  - [ ] 3.1 Translate "L'installation la plus simple..." paragraph
-  - [ ] 3.2 Translate ":::success Remarque" to ":::success Note"
-  - [ ] 3.3 Translate success admonition content
-  - [ ] 3.4 Translate "L'offre cloud est disponible..." paragraph
+- [x] Task 3: Translate Cloud section (AC: #1, #4)
+  - [x] 3.1 Translate "L'installation la plus simple..." paragraph
+  - [x] 3.2 Translate ":::success Remarque" to ":::success Note"
+  - [x] 3.3 Translate success admonition content
+  - [x] 3.4 Translate "L'offre cloud est disponible..." paragraph
 
-- [ ] Task 4: Translate Self-hosted section (AC: #1, #4)
-  - [ ] 4.1 Translate "Autohebergement" heading to "Self-hosted"
-  - [ ] 4.2 Translate "L'installation en autohebergement..." paragraph
-  - [ ] 4.3 Translate ":::warning" admonition content
-  - [ ] 4.4 Preserve ./selfhosted link
+- [x] Task 4: Translate Self-hosted section (AC: #1, #4)
+  - [x] 4.1 Translate "Autohebergement" heading to "Self-hosted"
+  - [x] 4.2 Translate "L'installation en autohebergement..." paragraph
+  - [x] 4.3 Translate ":::warning" admonition content
+  - [x] 4.4 Preserve ./selfhosted link
 
-- [ ] Task 5: Verify links (AC: #2)
-  - [ ] 5.1 Verify https://clientxcms.com/cloud link
-  - [ ] 5.2 Verify https://clientxcms.com/pricing link
-  - [ ] 5.3 Verify ./selfhosted internal link
+- [x] Task 5: Verify links (AC: #2)
+  - [x] 5.1 Verify https://clientxcms.com/cloud link
+  - [x] 5.2 Verify https://clientxcms.com/pricing link
+  - [x] 5.3 Verify ./selfhosted internal link
 
-- [ ] Task 6: Build and test (AC: #5)
-  - [ ] 6.1 Run `npm run build`
-  - [ ] 6.2 Run `npm run serve` and test EN URL
-  - [ ] 6.3 Verify DocCardList renders correctly
-  - [ ] 6.4 Verify no "Not translated" banner
+- [x] Task 6: Build and test (AC: #5)
+  - [x] 6.1 Run `npm run build`
+  - [x] 6.2 Run `npm run serve` and test EN URL
+  - [x] 6.3 Verify DocCardList renders correctly
+  - [x] 6.4 Verify no "Not translated" banner
 
 ## Dev Notes
 
@@ -221,10 +221,29 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+N/A - Content translation story, no debugging required.
+
 ### Completion Notes List
 
+- Added frontmatter with `translated: true` to remove "Not translated" banner
+- Translated all French content to natural English:
+  - Introduction paragraph describing Cloud vs Self-hosted options
+  - Cloud section with :::success Note admonition
+  - Self-hosted section with :::warning admonition
+- Preserved DocCardList component import
+- Verified all links work (external clientxcms.com links, internal ./selfhosted link)
+- Build successful for both EN and FR locales
+- Page renders correctly at /installation (EN) and /fr/installation (FR)
+- No "Not translated" banner displayed on EN version
+
+### Change Log
+
+- 2026-01-24: Completed EN translation of installation index page (Story 2-2)
+
 ### File List
+
+- docs/installation/installation.md (modified - added frontmatter, translated content)
