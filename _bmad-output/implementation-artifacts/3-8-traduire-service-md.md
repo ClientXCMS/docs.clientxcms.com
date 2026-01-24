@@ -1,6 +1,6 @@
 # Story 3.8: Traduire service.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -21,10 +21,11 @@ so that international users can understand how to create their first service in 
    - `sidebar_position: 7` preserved
 
 3. **AC3**: Images preserved
-   - 3 image paths unchanged:
+   - 4 image paths unchanged:
      - `/img/next_gen/services/create_step1.png`
      - `/img/next_gen/services/create_service.png`
      - `/img/next_gen/services/delivery_log.png`
+     - `/img/next_gen/services/show_service.png`
    - Alt text remains as `img`
 
 4. **AC4**: Links functional
@@ -418,3 +419,4 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 ### Change Log
 
 - 2026-01-24: Translated service.md (Service Creation page) from French to English - Story 3-8
+- 2026-01-24: Code review fixes - Improved redundant field descriptions (Service Name, Billing Cycle), fixed AC3 to list all 4 images

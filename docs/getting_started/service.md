@@ -11,13 +11,13 @@ In this step, please select the client, the product you created, and the service
 
 In this second step, you can fill out the form and choose, based on the module type, the existing VPS or game servers that you have on your server. Then click import.
 
-- **Service Name**: Name of the service
+- **Service Name**: The display name for this service
 - **Expiration**: Service expiration date
 - **Description**: Service description - visible to the customer, not editable by the customer
 - **Price**: Service price
 - **Initial Price**: Initial service price
 - **Server**: Server where the service is hosted
-- **Billing Cycle**: Billing cycle
+- **Billing Cycle**: How often the service is billed (monthly, yearly, etc.)
 - **Notes**: Notes about the service
 - **Maximum Renewals**: Maximum number of renewals (empty for unlimited)
 
