@@ -1,6 +1,6 @@
 # Story 2.3: Traduire cloud.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -49,67 +49,67 @@ so that international users can understand how to set up ClientXCMS using the Cl
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #5)
-  - [ ] 1.1 Ensure `---` block at top of file
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Verify `sidebar_position: 3` present
+- [x] Task 1: Add frontmatter with translated flag (AC: #5)
+  - [x] 1.1 Ensure `---` block at top of file
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Verify `sidebar_position: 3` present
 
-- [ ] Task 2: Translate introduction section (AC: #1)
-  - [ ] 2.1 Translate page title description paragraph
-  - [ ] 2.2 Translate "Cette page vous guidera..." to English
+- [x] Task 2: Translate introduction section (AC: #1)
+  - [x] 2.1 Translate page title description paragraph
+  - [x] 2.2 Translate "Cette page vous guidera..." to English
 
-- [ ] Task 3: Translate Domain section (AC: #1)
-  - [ ] 3.1 Translate "Domaine" heading to "Domain"
-  - [ ] 3.2 Translate domain configuration paragraph
-  - [ ] 3.3 Translate subdomain explanation paragraph
+- [x] Task 3: Translate Domain section (AC: #1)
+  - [x] 3.1 Translate "Domaine" heading to "Domain"
+  - [x] 3.2 Translate domain configuration paragraph
+  - [x] 3.3 Translate subdomain explanation paragraph
 
-- [ ] Task 4: Translate Installation section (AC: #1, #3)
-  - [ ] 4.1 Translate "Installation" heading (keep as-is)
-  - [ ] 4.2 Translate cloud activation steps
-  - [ ] 4.3 Translate CNAME configuration paragraph
-  - [ ] 4.4 Translate CheckHost verification paragraph
-  - [ ] 4.5 Translate installation completion paragraph
-  - [ ] 4.6 Translate license validation paragraph
+- [x] Task 4: Translate Installation section (AC: #1, #3)
+  - [x] 4.1 Translate "Installation" heading (keep as-is)
+  - [x] 4.2 Translate cloud activation steps
+  - [x] 4.3 Translate CNAME configuration paragraph
+  - [x] 4.4 Translate CheckHost verification paragraph
+  - [x] 4.5 Translate installation completion paragraph
+  - [x] 4.6 Translate license validation paragraph
 
-- [ ] Task 5: Translate Cloudflare subsection (AC: #1, #3, #6)
-  - [ ] 5.1 Translate heading (keep "Cloudflare")
-  - [ ] 5.2 Translate CNAME addition steps (1-3)
-  - [ ] 5.3 Translate `:::info Cloudflare` admonition
+- [x] Task 5: Translate Cloudflare subsection (AC: #1, #3, #6)
+  - [x] 5.1 Translate heading (keep "Cloudflare")
+  - [x] 5.2 Translate CNAME addition steps (1-3)
+  - [x] 5.3 Translate `:::info Cloudflare` admonition
 
-- [ ] Task 6: Translate OVH subsection (AC: #1, #3)
-  - [ ] 6.1 Translate heading (keep "OVH")
-  - [ ] 6.2 Translate all 8 numbered steps
+- [x] Task 6: Translate OVH subsection (AC: #1, #3)
+  - [x] 6.1 Translate heading (keep "OVH")
+  - [x] 6.2 Translate all 8 numbered steps
 
-- [ ] Task 7: Translate Domain modification section (AC: #1, #6)
-  - [ ] 7.1 Translate "Modification du domaine" to "Domain Modification"
-  - [ ] 7.2 Translate domain change instructions
-  - [ ] 7.3 Translate `:::info TIPS` admonition (60 days limit)
+- [x] Task 7: Translate Domain modification section (AC: #1, #6)
+  - [x] 7.1 Translate "Modification du domaine" to "Domain Modification"
+  - [x] 7.2 Translate domain change instructions
+  - [x] 7.3 Translate `:::info TIPS` admonition (60 days limit)
 
-- [ ] Task 8: Translate Reinstallation section (AC: #1, #6)
-  - [ ] 8.1 Translate "Reinstallation de l'instance" to "Instance Reinstallation"
-  - [ ] 8.2 Translate reinstallation instructions
-  - [ ] 8.3 Translate `:::info TIPS` admonition (order of operations)
+- [x] Task 8: Translate Reinstallation section (AC: #1, #6)
+  - [x] 8.1 Translate "Reinstallation de l'instance" to "Instance Reinstallation"
+  - [x] 8.2 Translate reinstallation instructions
+  - [x] 8.3 Translate `:::info TIPS` admonition (order of operations)
 
-- [ ] Task 9: Update image alt text (AC: #2)
-  - [ ] 9.1 Update alt text for activation.png
-  - [ ] 9.2 Update alt text for cname.png
-  - [ ] 9.3 Update alt text for checkhost.png
-  - [ ] 9.4 Update alt text for email.png
-  - [ ] 9.5 Update alt text for cloudflare.png
-  - [ ] 9.6 Update alt text for ovh.png
-  - [ ] 9.7 Update alt text for change_domain.png
-  - [ ] 9.8 Update alt text for reinstall.png
+- [x] Task 9: Update image alt text (AC: #2)
+  - [x] 9.1 Update alt text for activation.png
+  - [x] 9.2 Update alt text for cname.png
+  - [x] 9.3 Update alt text for checkhost.png
+  - [x] 9.4 Update alt text for email.png
+  - [x] 9.5 Update alt text for cloudflare.png
+  - [x] 9.6 Update alt text for ovh.png
+  - [x] 9.7 Update alt text for change_domain.png
+  - [x] 9.8 Update alt text for reinstall.png
 
-- [ ] Task 10: Verify links (AC: #4)
-  - [ ] 10.1 Verify https://clientxcms.com/pricing link
-  - [ ] 10.2 Verify https://check-host.net link
-  - [ ] 10.3 Verify ../developpers/software/relier-domain-cname.md link
+- [x] Task 10: Verify links (AC: #4)
+  - [x] 10.1 Verify https://clientxcms.com/pricing link
+  - [x] 10.2 Verify https://check-host.net link
+  - [x] 10.3 Verify ../developpers/software/relier-domain-cname.md link
 
-- [ ] Task 11: Build and test (AC: #7)
-  - [ ] 11.1 Run `npm run build`
-  - [ ] 11.2 Run `npm run serve` and test EN URL
-  - [ ] 11.3 Verify no "Not translated" banner
-  - [ ] 11.4 Verify locale switcher works
+- [x] Task 11: Build and test (AC: #7)
+  - [x] 11.1 Run `npm run build`
+  - [x] 11.2 Run `npm run serve` and test EN URL
+  - [x] 11.3 Verify no "Not translated" banner
+  - [x] 11.4 Verify locale switcher works
 
 ## Dev Notes
 
@@ -329,10 +329,33 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+N/A - Content translation story, no debugging required.
+
 ### Completion Notes List
 
+- Added `translated: true` to frontmatter (sidebar_position: 3 preserved)
+- Translated all French content to natural English:
+  - Introduction explaining Cloud installation on CLIENTXCMS servers
+  - Domain section with licensing and subdomain configuration
+  - Installation section with CNAME setup and CheckHost verification
+  - Cloudflare subsection with proxy warning admonition
+  - OVH subsection with 8 step-by-step instructions
+  - Domain Modification section with 60-day limit TIP
+  - Instance Reinstallation section with order-of-operations TIP
+- Updated all 8 image alt texts to English
+- Preserved all links (2 external, 1 internal)
+- Build successful for both EN and FR locales
+- Page renders correctly at /installation/cloud (EN) and /fr/installation/cloud (FR)
+- No "Not translated" banner displayed on EN version
+
+### Change Log
+
+- 2026-01-24: Completed EN translation of cloud.md (Story 2-3)
+
 ### File List
+
+- docs/installation/cloud.md (modified - added translated flag, full EN translation)
