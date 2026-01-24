@@ -46,7 +46,7 @@ This page will guide you through the installation of ClientXCMS Next Gen for sel
    ![.env.example file (rename) - Plesk](/img/next_gen/Installation/Plesk/Plesk_envexample_rename.png)
 
 5. Click on the `.env` file and modify the values:
-    - `APP_ENV=production` -> `APP_ENV=dev`
+    - `APP_ENV=production` -> `APP_ENV=production` (keep as production for security)
     - `APP_URL=http://localhost` -> `APP_URL=https://your.domain.com` (enter your client area domain)
     - `DB_DATABASE=laravel` -> Your database name
     - `DB_USERNAME=root` -> Database username
@@ -60,8 +60,8 @@ This page will guide you through the installation of ClientXCMS Next Gen for sel
    ![Laravel environment (management) - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_env_manage.png)
 3. Execute the following commands in this order:
     - `key:generate`
-    - `db:seed --force`
     - `migrate --force`
+    - `db:seed --force`
     - `storage:link`
       ![Laravel environment (Artisan commands)](/img/next_gen/Installation/Plesk/Plesk_Laravel_ArtisanCMD.png)
 4. Click on the "Node.js" section.
@@ -79,12 +79,16 @@ This page will guide you through the installation of ClientXCMS Next Gen for sel
 2. Replace "CLIENTXCMS" with your hosting company name.
 
 3. To find the **Client ID** and **Client Secret**, go to the ClientXCMS client area: [https://clientxcms.com/client/services/](https://clientxcms.com/client/services/), in the relevant NextGen license management.
-   ![License management - Plesk](/img/next_gen/Installation/ClientX_panel_gestion_licence.png)
+   ![License management - ClientXCMS](/img/next_gen/Installation/ClientX_panel_gestion_licence.png)
    The "**OAuth Client ID**" and "**OAuth Secret**" identifiers are needed to connect the ClientXCMS license to your site. Then click the "Connect" button on your instance.
 
 ## Cron Tasks Configuration
 
 1. In the domain management dashboard, click "Scheduled Tasks" under "Tools & Settings".
 2. Click "Add a scheduled task".
-3. Configure the following cron tasks.
+3. Configure the following cron task to run every minute:
+   ```
+   * * * * * php /path/to/your/site/artisan schedule:run >> /dev/null 2>&1
+   ```
+   Replace `/path/to/your/site/` with your actual Laravel project path (e.g., `/var/www/vhosts/yourdomain.com/httpdocs/`).
    ![Scheduled tasks - Plesk](/img/next_gen/Installation/Plesk/Plesk_cron.png)
