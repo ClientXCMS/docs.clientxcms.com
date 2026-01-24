@@ -38,18 +38,18 @@ story_location: _bmad-output/implementation-artifacts
 
 development_status:
   # Epic 0: Setup & Infrastructure i18n
-  epic-0: done
+  epic-0: in-progress
   0-1-poc-migration-defaultlocale: done
   0-2-config-i18n-complete: done
   0-3-structure-dossiers-i18n-fr: done
   0-4-test-plugin-search-local: skipped
   0-5-composants-react-extraction-textes: done
   0-6-bandeau-not-yet-translated: done
-  0-7-config-redirects-301: backlog
+  0-7-config-redirects-301: ready-for-dev
   epic-0-retrospective: optional
 
   # Epic 1: MVD - Introduction
-  epic-1: in-progress
+  epic-1: backlog
   1-1-relecture-introduction-md: backlog
   1-2-validation-finale: backlog
   epic-1-retrospective: optional
@@ -123,7 +123,7 @@ development_status:
   epic-7-retrospective: optional
 
   # Epic 8: Lancement & Communication
-  epic-8: in-progress
+  epic-8: backlog
   8-1-setup-build-in-public: done
   8-2-premier-post-linkedin: backlog
   8-3-post-reddit-r-selfhosted: backlog
