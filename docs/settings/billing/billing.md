@@ -1,98 +1,99 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 
-# Facturation
+# Billing
 
-Dans **CLIENTXCMS**, la configuration de la **facturation** est le pilier de votre activité commerciale. <br/>
-L'objectif est essentiel : **maîtriser tous les aspects financiers de votre boutique** pour garantir une **conformité légale parfaite** et une **gestion optimale de vos revenus**. Une configuration de facturation bien pensée simplifie la comptabilité, améliore la relation client et vous protège juridiquement.
+In **CLIENTXCMS**, **billing** configuration is the pillar of your commercial activity. <br/>
+The goal is essential: **master all financial aspects of your store** to ensure **perfect legal compliance** and **optimal revenue management**. A well-thought-out billing configuration simplifies accounting, improves customer relationships, and protects you legally.
 
-La facturation gère automatiquement tous les aspects financiers : génération des factures, calcul des taxes, gestion des devises, et respect des réglementations.
+Billing automatically manages all financial aspects: invoice generation, tax calculation, currency management, and regulatory compliance.
 
-Vous pouvez gérer la facturation depuis :
+You can manage billing from:
 
-`Paramètres` > `Facturation` > `Facturation`
+`Settings` > `Billing` > `Billing`
 
-:::tip Astuce
-Une facturation bien configurée est **la base de la confiance** avec vos clients et de votre conformité légale.
-Prenez le temps de bien paramétrer chaque option selon votre contexte juridique et commercial.
+:::tip Tip
+Well-configured billing is **the foundation of trust** with your clients and your legal compliance.
+Take the time to properly configure each option according to your legal and commercial context.
 :::
 
-## Pourquoi bien configurer la facturation ?
+## Why Properly Configure Billing?
 
-La facturation automatisée est cruciale pour :
+Automated billing is crucial for:
 
-* **Respecter les obligations légales** en matière de TVA et de facturation
-* **Automatiser la génération** des factures et la gestion comptable
-* **Améliorer l'expérience client** avec des factures claires et professionnelles
-* **Simplifier votre comptabilité** et faciliter les déclarations fiscales
+* **Meeting legal obligations** regarding VAT and invoicing
+* **Automating generation** of invoices and accounting management
+* **Improving customer experience** with clear and professional invoices
+* **Simplifying your accounting** and facilitating tax declarations
 
-:::tip Astuce
-C'est comme avoir un comptable intégré qui travaille 24h/24 📊 — précis, fiable et toujours conforme aux réglementations.
+:::tip Tip
+It's like having a built-in accountant working 24/7 📊 — precise, reliable, and always compliant with regulations.
 :::
 
-## Configuration de base
+## Basic Configuration
 
-### Devise principale
+### Primary Currency
 
-**Devise** | (menu déroulant)<br />
-La devise principale de votre boutique, utilisée par défaut pour tous les prix et factures.
-Choisissez parmi une liste de devises internationales (EUR, USD, GBP, etc.).
+**Currency** | (dropdown menu)<br />
+The primary currency of your store, used by default for all prices and invoices.
+Choose from a list of international currencies (EUR, USD, GBP, etc.).
 
 :::info Note
-Vous pourrez définir des devises spécifiques par produit ultérieurement pour une boutique internationale.
+You can define specific currencies per product later for an international store.
 :::
 
-### Adresse commerciale
+### Business Address
 
-**Adresse de l'espace client** | (zone de texte)<br />
-L'adresse légale de votre entreprise qui apparaîtra sur toutes les factures.
-Cette information est obligatoire pour la conformité légale.
+**Client area address** | (text area)<br />
+Your company's legal address that will appear on all invoices.
+This information is mandatory for legal compliance.
 
-![Affichage de l'adresse sur les factures](/img/next_gen/settings/store/billing/address.png)
+![Address display on invoices](/img/next_gen/settings/store/billing/address.png)
 
-Incluez :
-- Nom de l'entreprise
-- Adresse complète
-- Code postal et ville
-- Pays
-- Numéro SIRET/TVA si applicable
+Include:
+- Company name
+- Full address
+- Postal code and city
+- Country
+- SIRET/VAT number if applicable
 
-## Configuration des taxes
+## Tax Configuration
 
-### Mode de taxe
+### Tax Mode
 
-CLIENTXCMS propose deux modes de gestion des prix :
+CLIENTXCMS offers two price management modes:
 
-**Exclusif** | Mode hors taxes<br />
-Les prix affichés dans la boutique **n'incluent pas** la TVA.
-La taxe est ajoutée lors du calcul final au panier.
+**Exclusive** | Tax-exclusive mode<br />
+Prices displayed in the store **do not include** VAT.
+Tax is added during final cart calculation.
 
-**Inclusif** | Mode toutes taxes comprises<br />
-Les prix affichés incluent déjà la TVA.
-Le prix affiché est le prix final payé par le client.
+**Inclusive** | Tax-inclusive mode<br />
+Displayed prices already include VAT.
+The displayed price is the final price paid by the customer.
 
-:::tip Conseil
-Le mode **inclusif** est généralement préféré pour le B2C car il évite les surprises au client, tandis que le mode **exclusif** est courant en B2B.
+:::tip Advice
+**Inclusive** mode is generally preferred for B2C as it avoids surprises for customers, while **exclusive** mode is common in B2B.
 :::
 
-### Gestion de la TVA
+### VAT Management
 
-**Activation de la TVA** | (interrupteur)<br />
-Active ou désactive la gestion de la TVA sur votre boutique.
+**Enable VAT** | (switch)<br />
+Enables or disables VAT management on your store.
 
-**URL du webhook** : URL de votre endpoint pour recevoir les notifications de paiement (POST JSON). Utilisez une URL en HTTPS si possible.
+**Webhook URL**: URL of your endpoint to receive payment notifications (POST JSON). Use an HTTPS URL if possible.
 
-- Si l'URL fournie est un webhook Discord (ex. https://discord.com/api/webhooks/xxxxx), les notifications apparaîtront automatiquement sous forme d'embed (capture ci‑dessus).
-- Si vous utilisez un webhook personnalisé, CLIENTXCMS enverra une requête HTTP POST avec un payload JSON structuré. Exemple :
+- If the provided URL is a Discord webhook (e.g., https://discord.com/api/webhooks/xxxxx), notifications will automatically appear as embeds (screenshot above).
+- If you use a custom webhook, CLIENTXCMS will send an HTTP POST request with a structured JSON payload. Example:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-	<TabItem value="checkout_completed" label="Commande payée">
+	<TabItem value="checkout_completed" label="Order paid">
 
-    
+
 ```json
 {
     "payload": {
@@ -106,7 +107,7 @@ import TabItem from '@theme/TabItem';
         "total": "199.99",
         "currency": "€",
         "gatewayname": "Stripe",
-        "productnames": "VPS Pro, Sauvegarde avancée"
+        "productnames": "VPS Pro, Advanced Backup"
     }
 }
 ```
@@ -115,13 +116,13 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-Notes utiles :
+Useful notes:
 
-- `action` : identifie l'événement envoyé (`checkout_completed`, `service_upgraded`, etc.).
-- `_url`, `invoiceurl` ou `service_url` : liens internes vers la facture ou le service concerné.
-- Les valeurs sont envoyées en tant que chaînes. Adaptez la conversion (montant, devise…) selon votre intégration.
+- `action`: identifies the event sent (`checkout_completed`, `service_upgraded`, etc.).
+- `_url`, `invoiceurl` or `service_url`: internal links to the relevant invoice or service.
+- Values are sent as strings. Adapt conversion (amount, currency...) according to your integration.
 
-**Taux de TVA par défaut** | (pourcentage)<br />
-Le taux appliqué par défaut si aucun taux spécifique n'est défini.
+**Default VAT rate** | (percentage)<br />
+The rate applied by default if no specific rate is defined.
 
-**Délais minimum en jours pour forcer le renouvellement avec une amélioration** : Cela permet de forcer le renouvellement d'un service avec une amélioration si le nombre de jours restant est inférieur à ce nombre de jours.
+**Minimum days to force renewal with an upgrade**: This forces service renewal with an upgrade if the remaining days are less than this number of days.
