@@ -1,6 +1,6 @@
 # Story 2.8: Traduire upgrade.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -328,8 +328,40 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 - `docs/installation/upgrade.md` - Modified (full translation FR to EN)
 
+## Senior Developer Review (AI)
+
+**Reviewer:** Claude Opus 4.5
+**Date:** 2026-01-24
+**Outcome:** APPROVED with fixes applied
+
+### Issues Found and Fixed
+
+| Severity | Issue | Resolution |
+|----------|-------|------------|
+| HIGH | Erroneous step reference "steps 4 to 13" in Plesk section (only 5-6 steps exist) | Fixed: Changed to "steps 3 to 5 of the Git update method" |
+| MEDIUM | Missing `sidebar_position` in frontmatter | Fixed: Added `sidebar_position: 6` |
+| MEDIUM | Inconsistent indentation on Git tab closing `</TabItem>` tag | Fixed: Removed extra leading spaces |
+| MEDIUM | Story documentation incomplete | Fixed: Added this review section |
+| LOW | Missing explicit test evidence | Documented in review notes below |
+| LOW | French source inconsistency not flagged | Note: FR source file also has wrong step reference - should be fixed separately |
+
+### Review Notes
+
+- Build verified: PASS (npm run build successful)
+- All 13 Acceptance Criteria validated against implementation
+- Translation quality: Natural English, no literal translations
+- Code blocks: All preserved exactly as source
+- Tabs component: Working correctly
+- Image reference: Path unchanged, alt text translated
+- Warning admonition: Translated appropriately
+
+### Recommendation for FR Source
+
+The French source file (`i18n/fr/.../installation/upgrade.md`) line 120 also has the incorrect step reference "etapes 4 a 13". This should be corrected to "etapes 3 a 5 de la methode Git" in a future cleanup task.
+
 ## Change Log
 
 | Date | Change |
 |------|--------|
 | 2026-01-24 | Story implementation complete - Full translation of upgrade.md from French to English |
+| 2026-01-24 | Code review completed - 3 fixes applied (step reference, sidebar_position, indentation) |

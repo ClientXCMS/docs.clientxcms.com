@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 translated: true
 ---
 
@@ -110,7 +111,7 @@ php artisan up
 php artisan clientxcms:on-update
 ```
 
-    </TabItem>
+</TabItem>
 </Tabs>
 
 ### Plesk
@@ -121,4 +122,4 @@ If you use Plesk and installed the application via the Laravel Toolkit, you can 
 2. Go to the Git repository manager.
 3. Update the Git repository with the new version by clicking the "Deploy Now" button.
    ![Git Deployment - Plesk](/img/next_gen/Installation/Plesk/Plesk_Git_deploy.png)
-4. Follow steps 4 to 13 of the self-hosted update above using the Laravel Toolkit interface.
+4. Follow steps 3 to 5 of the Git update method above using the Laravel Toolkit interface.

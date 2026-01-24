@@ -56,7 +56,7 @@ development_status:
   epic-1-retrospective: optional
 
   # Epic 2: MVD - Installation
-  epic-2: in-progress
+  epic-2: done
   2-1-relecture-requis-md: done
   2-2-traduire-installation-md-index: done
   2-3-traduire-cloud-md: done
@@ -64,13 +64,13 @@ development_status:
   2-5-traduire-plesk-md: done
   2-6-traduire-docker-md: done
   2-7-traduire-ansible-md: done
-  2-8-traduire-upgrade-md: review
+  2-8-traduire-upgrade-md: done
   epic-2-retrospective: optional
 
   # Epic 3: MVD - Getting Started
   epic-3: in-progress
   3-1-traduire-getting-started-md-index: review
-  3-2-traduire-first-login-md: ready-for-dev
+  3-2-traduire-first-login-md: in-progress
   3-3-traduire-personalization-md: ready-for-dev
   3-4-traduire-server-md: ready-for-dev
   3-5-traduire-products-md: ready-for-dev
