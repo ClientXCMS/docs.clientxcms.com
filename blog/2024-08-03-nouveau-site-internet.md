@@ -1,84 +1,85 @@
 ---
 slug: nouvelle-site-internet
-title: Nouveau site internet
+title: New Website
 authors: [martindev]
 tags: [nouveau site internet, news, mise à jour]
+translated: true
 ---
-Bonjour à tous,
+Hello everyone,
 
-Près d'un an après notre dernière annonce, nous sommes fiers de vous retrouver pour vous annoncer la sortie de notre nouveau site internet et faire le point sur le développement de CLIENTXCMS ainsi que sur les nouveautés à venir au cours de l'année.
- 
+Nearly a year after our last announcement, we are proud to reconnect with you to announce the launch of our new website and provide an update on CLIENTXCMS development as well as upcoming new features throughout the year.
+
 <!-- truncate -->
 
-## Nouveau site internet
+## New Website
 ![img](/img/blog/nouveau-site/home.png)
-Nous avons le plaisir de vous annoncer la sortie de notre nouveau site internet. Nous avons travaillé dur pour vous offrir une expérience de navigation plus fluide et agréable. Le site inclut un espace [marketplace](https://clientxcms.com/marketplace) pour afficher chaque extension facilement, ainsi qu'une page de [changelog](https://clientxcms.com/changelog) pour suivre les mises à jour (nous avons encore besoin de temps pour remettre en place les anciennes versions).
+We are pleased to announce the launch of our new website. We have worked hard to provide you with a smoother and more enjoyable browsing experience. The site includes a [marketplace](https://clientxcms.com/marketplace) area to easily display each extension, as well as a [changelog](https://clientxcms.com/changelog) page to track updates (we still need time to restore the older versions).
 
 
-Nous avons également prévu d'autres pages qui arriveront dans les prochaines semaines, avec la possibilité de demander une version d'essai automatisée ou de consulter d'autres pages d'information sur le projet.
+We have also planned other pages that will arrive in the coming weeks, with the ability to request an automated trial version or view other information pages about the project.
 ![img](/img/blog/nouveau-site/license.png)
 
-Vous avez également droit à une toute nouvelle interface de gestion de licences, plus simple et plus rapide, avec trois grandes fonctionnalités...
-### Changement de nom de domaine
-Plus besoin de nous contacter pour changer de nom de domaine : vous pouvez maintenant le faire directement depuis votre espace client, dans la section "Licences", puis "Modifier le nom de domaine". Il vous suffira simplement de saisir le nouveau nom de domaine et de cliquer sur "Modifier", après avoir préalablement ajouté l'enregistrement CNAME de votre domaine actuel.
+You also get a brand new license management interface, simpler and faster, with three major features...
+### Domain Name Change
+No need to contact us to change your domain name anymore: you can now do it directly from your client area, in the "Licenses" section, then "Change domain name". Simply enter the new domain name and click "Change", after having previously added the CNAME record from your current domain.
 
-![Changer le domaine](/img/next_gen/Installation/Cloud/change_domain.png)
+![Change domain](/img/next_gen/Installation/Cloud/change_domain.png)
 :::info TIPS
-La modification du domaine est possible tous les 60 jours. Pour les changements de sous-domaine, cela n'est pas considéré comme un changement de domaine.
+Domain modification is possible every 60 days. For subdomain changes, this is not considered a domain change.
 :::
-### Réinstallation de la licence
+### License Reinstallation
 
-Nous avons mis en place une fonctionnalité de réinstallation de licence. Vous pouvez désormais réinstaller votre licence sur un autre serveur sans passer par le support technique. Cette fonctionnalité est disponible dans votre espace client, dans la section "Licences", puis "Réinstaller la licence". **Disponible pour les licences de type "Cloud".**
-![Réinstallation](/img/next_gen/Installation/Cloud/reinstall.png)
+We have implemented a license reinstallation feature. You can now reinstall your license on another server without going through technical support. This feature is available in your client area, in the "Licenses" section, then "Reinstall license". **Available for "Cloud" type licenses.**
+![Reinstallation](/img/next_gen/Installation/Cloud/reinstall.png)
 
-Les identifiants de connexion vous seront envoyés par e-mail une fois l'installation terminée.
-### Modification des extensions
+Login credentials will be sent to you by email once the installation is complete.
+### Extension Modification
 
-Nous avons également automatisé la gestion des extensions. Vous pouvez maintenant les interchanger selon vos besoins sans passer par le support technique.
-Cette fonctionnalité est disponible dans votre espace client, dans la section "Licences", puis "Modifier des extensions". **Disponible pour les licences de type "Cloud".**
+We have also automated extension management. You can now swap them according to your needs without going through technical support.
+This feature is available in your client area, in the "Licenses" section, then "Modify extensions". **Available for "Cloud" type licenses.**
 ![img](/img/next_gen/Installation/Cloud/change_extensions.png)
-### Début de l'auto-hébergement
-Nous avons lancé il y a quelques jours l'auto-hébergement : vous pouvez maintenant héberger vous-même votre site internet. Pour cela, il vous suffit de faire la demande dans votre espace client, dans la section "Licences", puis "Téléchargement".
+### Self-Hosting Launch
+A few days ago, we launched self-hosting: you can now host your own website. To do this, simply make a request in your client area, in the "Licenses" section, then "Download".
 
 ![img](/img/next_gen/Installation/formulaire_download.png)
 
 :::info TIPS
-Prenez en compte que l'accès à l'auto-hébergement est limité à un certain nombre de personnes ayant des compétences en Linux et en serveur. Nous vous conseillons de rester sur l'hébergement Cloud si vous n'avez pas les compétences nécessaires.
+Please note that self-hosting access is limited to a certain number of people with Linux and server skills. We recommend staying on Cloud hosting if you don't have the necessary skills.
 :::
 
-Également, si vous avez fait une demande d'auto-hébergement pour créer des extensions ou des thèmes, nous attendons de sortir la mise à jour avec le système de thèmes et d'extensions avant de vous autoriser le téléchargement. No worries, cela arrive bientôt.
-## Roadmap deuxième semestre 2024
-Nous avons déjà réussi l'exploit de sortir en moins de 6 mois une version stable de NextGen, avec plus de 800 commits et une refonte complète du projet avec [Laravel](https://laravel.com). Depuis la sortie de NextGen, nous avons également traité plus de 550 tickets. Le but du deuxième semestre est de continuer sur cette lancée et de vous proposer des extensions et des thèmes pour votre espace client. Notre mot d'ordre est de vous offrir des extensions visant à améliorer et personnaliser l'espace client de chaque hébergeur avec notre système de sections et de thèmes, tout en continuant à ajouter des fonctionnalités à notre CMS pour le rendre plus complet et plus simple d'utilisation. Faisons un point sur les grands chantiers à venir.
+Also, if you have requested self-hosting to create extensions or themes, we are waiting to release the update with the theme and extension system before authorizing your download. No worries, it's coming soon.
+## Second Half 2024 Roadmap
+We have already achieved the feat of releasing a stable version of NextGen in less than 6 months, with more than 800 commits and a complete project overhaul with [Laravel](https://laravel.com). Since the NextGen release, we have also processed more than 550 tickets. The goal for the second half is to continue this momentum and offer you extensions and themes for your client area. Our motto is to provide extensions aimed at improving and customizing each host's client area with our section and theme system, while continuing to add features to our CMS to make it more complete and easier to use. Let's review the major projects to come.
 
-- Système de **devis** pour vos services
-- Système d'**abonnement automatisé** avec Stripe/PayPal
-- Système d'**amélioration** de vos services
-- Système d'**options additionnelles** récurrentes ou ponctuelles lors de la commande
-- Système de **configuration totale d'un service** à partir du prix de base
-- **Programme d'affiliation** pour vos clients et vos partenaires (ou nous avons prévu un système sympa :D)
-- Possibilité de proposer des noms de domaine
+- **Quote** system for your services
+- **Automated subscription** system with Stripe/PayPal
+- **Upgrade** system for your services
+- **Additional options** system, recurring or one-time during ordering
+- **Complete service configuration** system from the base price
+- **Affiliate program** for your clients and partners (we have planned something nice :D)
+- Ability to offer domain names
 
-Et plus de 170 tickets Jira d'idées d'extensions, de modifications et d'améliorations à traiter, nous avons de quoi nous occuper.
+And more than 170 Jira tickets with extension ideas, modifications, and improvements to process, we have plenty to keep us busy.
 
-Également, nous avons déjà commencé à travailler sur la documentation développeur, avec une section dédiée au développement de thèmes. Une autre section arrivera pour les extensions.
+Also, we have already started working on developer documentation, with a section dedicated to theme development. Another section will arrive for extensions.
 
-![Thèmes](/img/next_gen/developpers/themes/themes.png)
+![Themes](/img/next_gen/developpers/themes/themes.png)
 
-Avec le système de thème, il sera accompagné d'un système de section pour personnaliser le contenu avec une partie inclus dans le CMS et une autre via une extensions payante comme : 
+With the theme system, it will be accompanied by a section system to customize content with a part included in the CMS and another via a paid extension such as:
 
-- Sections de présentation (qualité, support, etc.).
-- Sections dynamiques (section FAQ dynamique avec les questions de l'extension FAQ, par exemple).
-- Méga menu (menu déroulant en haut de page).
-- Différents styles de hero banner (bannière d'accueil) ou de disposition de produits.
-- Bannière de cookie ou d'information en haut de page.
+- Presentation sections (quality, support, etc.).
+- Dynamic sections (dynamic FAQ section with questions from the FAQ extension, for example).
+- Mega menu (dropdown menu at the top of the page).
+- Different hero banner styles or product layouts.
+- Cookie or information banner at the top of the page.
 
 
-### Téléchargement du bot discord & Modèles e-mail
-Pour les plus affûtés d'entre vous, vous avez peut-être remarqué que le téléchargement et l'achat de la source du bot Discord ne sont pas encore implémentés sur le site internet. Nous travaillons actuellement sur le **module de téléchargement** pour vous permettre de télécharger la source du bot Discord directement depuis votre espace client. Nous avons également prévu de mettre en place **les nouveaux modèles d'e-mails compatibles v2** et la personnalisation du contenu des e-mails avec une section dans l'espace administration.
-### Fin de support de l'ancienne version
-Nous avons décidé de définir une date de fin de support pour les anciennes versions de CLIENTXCMS. À partir du 1er octobre 2024, aucune version ne pourra être téléchargée ou mise à jour, avec une fin de support prévue pour le 1er janvier 2025. Nous vous conseillons de migrer vers la V2 le plus rapidement possible. Si vous avez des questions ou des problèmes, n'hésitez pas à contacter notre support technique.
+### Discord Bot Download & Email Templates
+For the most astute among you, you may have noticed that downloading and purchasing the Discord bot source is not yet implemented on the website. We are currently working on the **download module** to allow you to download the Discord bot source directly from your client area. We have also planned to implement **new v2-compatible email templates** and email content customization with a section in the administration area.
+### End of Support for the Old Version
+We have decided to set an end-of-support date for older versions of CLIENTXCMS. Starting October 1, 2024, no version can be downloaded or updated, with end of support scheduled for January 1, 2025. We recommend migrating to V2 as soon as possible. If you have questions or problems, don't hesitate to contact our technical support.
 
-### Un peu de repos
-Nous avons prévu de prendre une semaine de vacances pour nous ressourcer et revenir en pleine forme pour la suite du développement. Nous serons donc en vacances du 17 au 24 août 2024. Le support sera restreint mais toujours disponible en cas d'urgence. Également, une maintenance de nos services est prévue le week-end du 14 septembre 2024. Nous vous en reparlerons le plus rapidement possible. Nous vous remercions pour votre compréhension.
+### Some Rest
+We have planned to take a week off to recharge and come back in full form for the rest of development. We will therefore be on vacation from August 17 to 24, 2024. Support will be limited but still available in case of emergency. Also, maintenance of our services is planned for the weekend of September 14, 2024. We will tell you more about it as soon as possible. Thank you for your understanding.
 
-Nous vous remercions jamais assez pour votre soutien et votre confiance. Nous espérons que vous apprécierez les nouveautés et les améliorations que nous avons apportées à notre site internet et à notre CMS. Nous avons hâte de vous retrouver pour vous présenter les prochaines nouveautés.
+We can never thank you enough for your support and trust. We hope you will enjoy the new features and improvements we have made to our website and CMS. We look forward to seeing you again to present the next new features.

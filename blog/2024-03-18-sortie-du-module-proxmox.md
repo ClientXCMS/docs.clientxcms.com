@@ -1,32 +1,33 @@
 ---
 slug: sortie-module-proxmox
-title: Sortie du Module Proxmox  
+title: Proxmox Module Release
 authors: [martindev]
-tags: [proxmox, module, clientxcms, release]  
+tags: [proxmox, module, clientxcms, release]
+translated: true
 ---
-# Annonce de la sortie du module Proxmox 🚀✨
+# Proxmox Module Release Announcement 🚀✨
 
 
-Nous sommes ravis de vous présenter la sortie officielle du tout nouveau module Proxmox de **CLIENTXCMS**. Redécouvrez notre module dans sa toute nouvelle version, entièrement opérationnelle et repensée pour une expérience optimale.
+We are pleased to present the official release of the brand new Proxmox module for **CLIENTXCMS**. Rediscover our module in its all-new version, fully operational and redesigned for an optimal experience.
 
-![Lancement de la bêta de ClientXCMS NextGen](/img/blog/sortie-module-proxmox/image.png)
+![ClientXCMS NextGen Beta Launch](/img/blog/sortie-module-proxmox/image.png)
 
-Avec ce module, découvrez une interface pleinement fonctionnelle et intuitive qui simplifie la gestion de vos serveurs Proxmox.
+With this module, discover a fully functional and intuitive interface that simplifies the management of your Proxmox servers.
 <!-- truncate -->
 
-Avec notre modules, profité d'une:
+With our module, enjoy:
 
-- `🔒` ***Connexion sécurisée via une clé d'API Proxmox :*** Votre sécurité est notre priorité. Bénéficiez d'une connexion sécurisée et sans tracas grâce à l'intégration de la clé d'API Proxmox.
+- `🔒` ***Secure connection via Proxmox API key:*** Your security is our priority. Benefit from a secure and hassle-free connection through Proxmox API key integration.
 
-- `💻` ***Gestion des adresses IP :*** Contrôlez facilement les adresses IP associées à vos serveurs Proxmox, simplifiant ainsi la gestion des ressources réseau.
+- `💻` ***IP address management:*** Easily control IP addresses associated with your Proxmox servers, simplifying network resource management.
 
-- `📋` **Gestion des modèles :** Créez, sauvegardez et gérez des modèles de machines virtuelles pour accélérer le déploiement et la configuration.
+- `📋` **Template management:** Create, save, and manage virtual machine templates to accelerate deployment and configuration.
 
-- `🖥️` ***Gestion des systèmes d'exploitation :*** Choisissez parmi une variété de systèmes d'exploitation pris en charge et gérez-les efficacement à partir de notre interface.
+- `🖥️` ***Operating system management:*** Choose from a variety of supported operating systems and manage them efficiently from our interface.
 
-- `📦` **Livraison automatique et panel client :** Automatisez le processus de livraison des serveurs et offrez à vos clients un panel intuitif pour gérer leurs ressources.
+- `📦` **Automatic delivery and client panel:** Automate the server delivery process and provide your clients with an intuitive panel to manage their resources.
 
-**Joignez-vous** à nous pour cette nouvelle aventure avec ***ClientXCMS NextGen*** et découvrez comment cette version repensée peut transformer votre expérience d'hébergement.
+**Join** us for this new adventure with ***ClientXCMS NextGen*** and discover how this redesigned version can transform your hosting experience.
 
-*Restez à l'écoute pour plus d'informations sur cette nouvelle version*
+*Stay tuned for more information on this new version*
 
