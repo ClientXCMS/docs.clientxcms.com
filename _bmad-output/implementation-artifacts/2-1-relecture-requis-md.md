@@ -1,6 +1,6 @@
 # Story 2.1: Relecture requis.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -50,45 +50,45 @@ so that international users understand the technical prerequisites for installin
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Review EN translation quality (AC: #1)
-  - [ ] 1.1 Read through entire page for grammar/spelling
-  - [ ] 1.2 Check for awkward literal translations
-  - [ ] 1.3 Verify natural English flow in technical sections
-  - [ ] 1.4 Verify PHP extensions descriptions are accurate
+- [x] Task 1: Review EN translation quality (AC: #1)
+  - [x] 1.1 Read through entire page for grammar/spelling
+  - [x] 1.2 Check for awkward literal translations
+  - [x] 1.3 Verify natural English flow in technical sections
+  - [x] 1.4 Verify PHP extensions descriptions are accurate
 
-- [ ] Task 2: Validate terminology (AC: #2)
-  - [ ] 2.1 Check "SaaS Installation" section terminology
-  - [ ] 2.2 Check "On-Premise Installation" section terminology
-  - [ ] 2.3 Verify PHP version references (8.1, 8.3)
-  - [ ] 2.4 Verify database section terminology (MariaDB, MySQL, PostgreSQL)
-  - [ ] 2.5 Ensure units are in English format (GB, not Go)
+- [x] Task 2: Validate terminology (AC: #2)
+  - [x] 2.1 Check "SaaS Installation" section terminology
+  - [x] 2.2 Check "On-Premise Installation" section terminology
+  - [x] 2.3 Verify PHP version references (8.1, 8.3)
+  - [x] 2.4 Verify database section terminology (MariaDB, MySQL, PostgreSQL)
+  - [x] 2.5 Ensure units are in English format (GB, not Go)
 
-- [ ] Task 3: Verify internal links (AC: #3)
-  - [ ] 3.1 Test link to `./selfhosted` page
-  - [ ] 3.2 Test link to `./plesk` page
-  - [ ] 3.3 Test link to `./docker` page
-  - [ ] 3.4 Verify all links use relative paths
+- [x] Task 3: Verify internal links (AC: #3)
+  - [x] 3.1 Test link to `./selfhosted` page
+  - [x] 3.2 Test link to `./plesk` page
+  - [x] 3.3 Test link to `./docker` page
+  - [x] 3.4 Verify all links use relative paths
 
-- [ ] Task 4: Verify external links (AC: #4)
-  - [ ] 4.1 Test CTXHosting link (https://ctxhosting.fr)
-  - [ ] 4.2 Test ClientXCMS pricing link
-  - [ ] 4.3 Test PHP supported versions link
+- [x] Task 4: Verify external links (AC: #4)
+  - [x] 4.1 Test CTXHosting link (https://ctxhosting.fr)
+  - [x] 4.2 Test ClientXCMS pricing link
+  - [x] 4.3 Test PHP supported versions link
 
-- [ ] Task 5: Validate frontmatter (AC: #5)
-  - [ ] 5.1 Confirm `translated: true` present
-  - [ ] 5.2 Confirm `sidebar_position: 1` correct
-  - [ ] 5.3 Verify no extra/unnecessary frontmatter
+- [x] Task 5: Validate frontmatter (AC: #5)
+  - [x] 5.1 Confirm `translated: true` present
+  - [x] 5.2 Confirm `sidebar_position: 1` correct
+  - [x] 5.3 Verify no extra/unnecessary frontmatter
 
-- [ ] Task 6: Verify admonitions (AC: #6)
-  - [ ] 6.1 Check CTXHosting info block renders correctly
-  - [ ] 6.2 Check PHP EOL warning block renders correctly
-  - [ ] 6.3 Check production recommendation info block renders correctly
+- [x] Task 6: Verify admonitions (AC: #6)
+  - [x] 6.1 Check CTXHosting info block renders correctly
+  - [x] 6.2 Check PHP EOL warning block renders correctly
+  - [x] 6.3 Check production recommendation info block renders correctly
 
-- [ ] Task 7: Build and test (AC: #7)
-  - [ ] 7.1 Run `npm run build`
-  - [ ] 7.2 Run `npm run serve` and test EN URL
-  - [ ] 7.3 Test FR URL for comparison
-  - [ ] 7.4 Verify no "Not translated" banner
+- [x] Task 7: Build and test (AC: #7)
+  - [x] 7.1 Run `npm run build`
+  - [x] 7.2 Run `npm run serve` and test EN URL
+  - [x] 7.3 Test FR URL for comparison
+  - [x] 7.4 Verify no "Not translated" banner
 
 ## Dev Notes
 
@@ -222,11 +222,30 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+None - content review story with no code changes.
+
 ### Completion Notes List
 
+- 2026-01-24: Completed full proofreading of docs/installation/requis.md
+- Translation quality verified: grammar, spelling, natural English phrasing all correct
+- Terminology validated: SaaS/On-Premise consistent, PHP extensions accurate, units in GB format
+- All internal links verified: ./selfhosted, ./plesk, ./docker all use relative paths and target files exist
+- All external links verified accessible: ctxhosting.fr, clientxcms.com/pricing, php.net/supported-versions.php
+- Frontmatter validated: `translated: true` and `sidebar_position: 1` present
+- All 3 admonitions render correctly (CTXHosting info, PHP 8.1 EOL warning, Production Recommendation info)
+- Build successful for both EN and FR locales
+- Pages render correctly at /installation/requis (EN) and /fr/installation/requis (FR)
+- No "Not yet translated" banner appears on either locale
+
 ### File List
+
+- docs/installation/requis.md (reviewed, no changes needed)
+
+### Change Log
+
+- 2026-01-24: Story 2-1 completed - EN translation of requis.md verified and validated
 
