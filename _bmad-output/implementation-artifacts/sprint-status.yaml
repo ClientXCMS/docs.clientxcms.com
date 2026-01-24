@@ -38,7 +38,7 @@ story_location: _bmad-output/implementation-artifacts
 
 development_status:
   # Epic 0: Setup & Infrastructure i18n
-  epic-0: in-progress
+  epic-0: done
   0-1-poc-migration-defaultlocale: done
   0-2-config-i18n-complete: done
   0-3-structure-dossiers-i18n-fr: done
@@ -124,7 +124,7 @@ development_status:
   epic-7-retrospective: optional
 
   # Epic 8: Lancement & Communication
-  epic-8: backlog
+  epic-8: in-progress
   8-1-setup-build-in-public: done
   8-2-premier-post-linkedin: backlog
   8-3-post-reddit-r-selfhosted: backlog
