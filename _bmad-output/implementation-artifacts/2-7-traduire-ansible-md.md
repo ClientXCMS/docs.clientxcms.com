@@ -1,6 +1,6 @@
 # Story 2.7: Traduire ansible.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -543,7 +543,36 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 ### Change Log
 
 - 2026-01-24: Complete English translation of ansible.md (Story 2-7)
+- 2026-01-24: Code review fixes applied (4 issues corrected)
 
 ### File List
 
 - `docs/installation/ansible.md` (modified - full translation from French to English)
+
+## Senior Developer Review (AI)
+
+**Reviewer:** Claude Opus 4.5
+**Date:** 2026-01-24
+**Outcome:** APPROVED (after fixes)
+
+### Issues Found and Fixed
+
+| # | Severity | Issue | File:Line | Fix Applied |
+|---|----------|-------|-----------|-------------|
+| 1 | LOW | Discord link format preference | ansible.md:363 | Kept `gg.clientxcms.com` (project redirect) |
+| 2 | MEDIUM | 4 backticks instead of 3 in code fence | ansible.md:344 | Fixed to 3 backticks |
+| 3 | MEDIUM | "autre-domaine.com" not translated | ansible.md:246 | Changed to "another-domain.com" |
+| 4 | MEDIUM | "serveur1/serveur2" not translated | ansible.md:39-40 | Changed to "server1/server2" |
+
+### AC Validation Summary
+
+All 19 Acceptance Criteria validated as PASS after fixes.
+
+### Review Notes
+
+- Translation quality is high with natural English phrasing
+- Technical terminology correctly preserved (Ansible, playbook, inventory, SSH, etc.)
+- Support disclaimer accurately translated to preserve meaning
+- All code blocks unchanged except French comments which were properly translated
+- Frontmatter correctly includes `translated: true`
+- Build passes for both EN and FR locales

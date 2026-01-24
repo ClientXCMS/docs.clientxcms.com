@@ -36,8 +36,8 @@ Edit the inventory file according to your environment:
 ```bash
 # inventory/production.yml
 [clientxcms]
-serveur1.example.com ansible_host=192.168.1.100 ansible_user=root
-serveur2.example.com ansible_host=192.168.1.101 ansible_user=root
+server1.example.com ansible_host=192.168.1.100 ansible_user=root
+server2.example.com ansible_host=192.168.1.101 ansible_user=root
 
 [clientxcms:vars]
 environment_name=production
@@ -243,7 +243,7 @@ Run only certain parts of the playbook:
 │   │   └── metadata.json         # Metadata (date, commit, etc.)
 │   └── 1709234567/
 │       └── ...
-└── autre-domaine.com/
+└── another-domain.com/
     └── ...
 ```
 
@@ -341,7 +341,7 @@ We remain available on **community channels** however, but this assistance is **
 ```bash
 # Check connectivity
 ansible -i inventory/production.yml all -m ping
-````
+```
 
 #### OAuth Authentication Error
 
