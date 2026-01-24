@@ -68,14 +68,14 @@ development_status:
   epic-2-retrospective: optional
 
   # Epic 3: MVD - Getting Started
-  epic-3: in-progress
+  epic-3: done
   3-1-traduire-getting-started-md-index: done
   3-2-traduire-first-login-md: done
   3-3-traduire-personalization-md: done
   3-4-traduire-server-md: done
   3-5-traduire-products-md: done
   3-6-traduire-payments-md: done
-  3-7-traduire-accounts-md: review
+  3-7-traduire-accounts-md: done
   3-8-traduire-service-md: done
   3-9-traduire-finish-md: done
   epic-3-retrospective: optional

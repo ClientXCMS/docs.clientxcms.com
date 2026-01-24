@@ -12,7 +12,7 @@ You can fill in the required information to create your customer account. You ca
 
 You can then log in to the client area with the credentials you created on the login page or via auto-login from the customer profile.
 
-### Creating Additional Staff Accounts
+## Creating Additional Staff Accounts
 
 You can also create additional staff accounts for your staff. To do this, go to `Settings` then `Security` then `Staff` and `Create`.
 

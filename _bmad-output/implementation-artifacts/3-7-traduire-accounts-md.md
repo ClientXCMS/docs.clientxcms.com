@@ -1,6 +1,6 @@
 # Story 3.7: Traduire accounts.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -311,3 +311,30 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 | Date | Change |
 |------|--------|
 | 2026-01-24 | Translated accounts.md to English with frontmatter update |
+| 2026-01-24 | Code review: Fixed heading level (h3 -> h2) for proper semantic structure |
+
+## Senior Developer Review (AI)
+
+**Reviewer:** Claude Opus 4.5
+**Date:** 2026-01-24
+**Outcome:** APPROVED with fixes applied
+
+### Issues Found and Fixed
+
+| Severity | Issue | File:Line | Action |
+|----------|-------|-----------|--------|
+| MEDIUM | Heading level skip (h1 to h3, missing h2) | accounts.md:16 | FIXED - Changed `###` to `##` |
+| LOW | Generic alt text (`image`, `img`) | accounts.md:9,19 | DEFERRED - Out of scope for translation |
+| LOW | Repetitive "You can" phrasing | accounts.md | ACCEPTED - Standard for technical docs |
+
+### Verification
+
+- Build: PASS (`npm run build` successful)
+- Translation quality: PASS (natural English, consistent terminology)
+- Frontmatter: PASS (`translated: true` present)
+- Image paths: PASS (preserved correctly)
+- AC compliance: 4/4 PASS
+
+### Notes
+
+Fixed semantic heading structure for better accessibility and SEO. The source FR file has the same h3 issue but this is the correct opportunity to fix it in EN.
