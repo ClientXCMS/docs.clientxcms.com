@@ -1,6 +1,6 @@
 # Story 1.2: Validation finale
 
-Status: review
+Status: done
 
 ## Story
 
@@ -229,10 +229,31 @@ All 6 acceptance criteria verified and PASSED:
 - No code changes required - all validation-only
 - Pre-existing broken link warnings in other FR pages are expected and documented in Dev Notes
 
+### Senior Developer Review (AI)
+
+**Review Date:** 2026-01-24
+**Reviewer:** Claude Opus 4.5
+
+**Critical Bug Found and Fixed:**
+- **Issue:** "View in French" button in NotTranslatedBanner caused 404 error
+- **Root Cause:** Component used `<Link>` (SPA navigation) which failed when switching locales because JS bundle differs between EN and FR
+- **Fix:** Changed from `<Link to={frenchUrl}>` to `<a href={frenchUrl}>` to force full page reload
+- **File Modified:** `src/components/NotTranslatedBanner/index.tsx`
+- **Verification:** Tested click on "View in French" button - now correctly navigates to FR page
+
+**Other Observations (Out of Scope - for future epics):**
+- Sidebar labels in EN pages show French text (e.g., "Parametres", "Developpeurs") - to be fixed in Epic 2+
+- Site announcement banner shows English text on FR pages - minor UX inconsistency
+
+**Verdict:** APPROVED - All ACs pass, critical navigation bug fixed.
+
 ### File List
 
-No files modified (validation-only story).
+| File | Action | Description |
+|------|--------|-------------|
+| `src/components/NotTranslatedBanner/index.tsx` | Modified | Fixed locale switch navigation - use native `<a>` instead of `<Link>` for full page reload |
 
 ### Change Log
 
 - 2026-01-24: Story 1-2 validation complete. All acceptance criteria verified and passed. Status updated to "review".
+- 2026-01-24: Code review identified critical bug - "View in French" button caused 404. Fixed NotTranslatedBanner component. Status updated to "done".

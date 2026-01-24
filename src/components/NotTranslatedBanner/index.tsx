@@ -1,12 +1,13 @@
 import React from 'react';
 import Translate from '@docusaurus/Translate';
-import Link from '@docusaurus/Link';
 import {useLocation} from '@docusaurus/router';
 import styles from './styles.module.css';
 
 /**
  * Banner displayed on pages that haven't been translated yet.
  * Shows a message explaining the page is in French only with a link to the FR version.
+ * Uses native <a> tag instead of Link to force full page reload when switching locales,
+ * as the JS bundle differs between locales and SPA navigation would fail.
  */
 export default function NotTranslatedBanner(): JSX.Element {
   const location = useLocation();
@@ -27,11 +28,11 @@ export default function NotTranslatedBanner(): JSX.Element {
             This page is available in French only. Help us translate it or use your browser's translation feature.
           </Translate>
         </span>
-        <Link to={frenchUrl} className={styles.link}>
+        <a href={frenchUrl} className={styles.link}>
           <Translate id="notTranslated.viewInFrench">
             View in French
           </Translate>
-        </Link>
+        </a>
       </div>
     </div>
   );
