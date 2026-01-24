@@ -25,7 +25,7 @@ import TabItem from '@theme/TabItem';
 **Application API** : Clé application.
 :::info Complément d'information
 
-Plus d'informations sur les clés API sont disponibles [ici](/docs/extensions/modules/Pterodactyl.md).
+Plus d'informations sur les clés API sont disponibles [ici](/extensions/modules/Pterodactyl).
 :::
 </TabItem>
 <TabItem value="Plesk" label="Plesk">
@@ -43,7 +43,7 @@ Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Plesk : 844
 Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
 :::info Complément d'information
 
-Plus d'informations sur la configuration de Plesk sont disponibles [ici](/docs/extensions/modules/Plesk.md).
+Plus d'informations sur la configuration de Plesk sont disponibles [ici](/extensions/modules/Plesk).
 :::
 </TabItem>
 <TabItem value="Proxmox" label="Proxmox">
@@ -58,7 +58,7 @@ Plus d'informations sur la configuration de Plesk sont disponibles [ici](/docs/e
 - **Secret :** Le secret associé au jeton Proxmox pour l'API.
 
 :::info Complément d'information
-Plus d'informations sur la configuration de Proxmox sont disponibles [ici](/docs/extensions/modules/Proxmox.md).
+Plus d'informations sur la configuration de Proxmox sont disponibles [ici](/extensions/modules/Proxmox).
 :::
 </TabItem>
 <TabItem value="Wisp" label="Wisp">
@@ -76,7 +76,7 @@ Plus d'informations sur la configuration de Proxmox sont disponibles [ici](/docs
 **Application API** : Clé application.
 
 :::info Complément d'information
-Plus d'informations sur les clés API sont disponibles [ici](/docs/extensions/modules/Wisp.md).
+Plus d'informations sur les clés API sont disponibles [ici](/extensions/modules/Wisp).
 :::
 </TabItem>
 <TabItem value="VirtualizorCloud" label="Virtualizor pour revendeurs">

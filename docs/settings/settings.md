@@ -183,7 +183,7 @@ Configuration des modules et extensions installés sur votre plateforme. Cette s
 * **[Extensions](../extensions/extensions.md)** : Gestion des extensions du Marketplace
 * **[Discord Link](../extensions/addons/discordlink.md)** : Discord OAuth2 et rôles automatiques
 * **[Discord Gift](../extensions/addons/discordgift.md)** : Distribution automatique de cartes-cadeaux Discord
-* **[Double comptes](../extensions/addons/antidoublecompt.md)** : Détection des comptes multiples
+* **[Double comptes](../extensions/addons/antidoublecompte.md)** : Détection des comptes multiples
 * **Sentry** : Service de surveillance des erreurs
 * **Contacts** : Gestion des demandes de contact
 * **Paramètres des cartes cadeaux** : Configuration avancée des cartes-cadeaux

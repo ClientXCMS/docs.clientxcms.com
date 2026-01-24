@@ -22,6 +22,6 @@ Si vous avez des extensions supplémentaires avec votre licence, vous pouvez les
 Par exemple, si vous souhaitez livrer des produits Pterodactyl, vous devez activer l'extension Pterodactyl.
 ![img](/img/next_gen/extensions/image_1.png)
 
-Plus d'informations sur les extensions sont disponibles [ici](/docs/extensions/extensions.md).
+Plus d'informations sur les extensions sont disponibles [ici](/extensions/).
 
-Vous pouvez passer à la configuration de vos premiers serveurs en suivant les instructions [ici](/docs/getting_started/server.md).
+Vous pouvez passer à la configuration de vos premiers serveurs en suivant les instructions [ici](/getting_started/server).

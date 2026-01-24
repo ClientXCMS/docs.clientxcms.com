@@ -26,7 +26,7 @@ CLIENTXCMS devient un logiciel open source, auto-hébergé et gratuit à partir 
 
 3. **Installer CLIENTXCMS v2 sur votre serveur local**
 
-   * Suivez les instructions d’installation de CLIENTXCMS v2 sur votre serveur local, comme décrit dans la documentation [Installation self-hosted](/docs/installation/selfhosted.md).
+   * Suivez les instructions d’installation de CLIENTXCMS v2 sur votre serveur local, comme décrit dans la documentation [Installation self-hosted](/installation/selfhosted).
    * Assurez-vous que votre serveur répond aux prérequis (PHP, MySQL, etc.).
 4. **Importer votre base de données** :
 

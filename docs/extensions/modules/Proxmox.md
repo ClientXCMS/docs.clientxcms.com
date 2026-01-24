@@ -237,7 +237,7 @@ import TabItem from '@theme/TabItem';
 - Débit réseau personnalisé (menu déroulant)
 - Noeud Proxmox personnalisé (menu déroulant)
 
-Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](../../../settings/provisioning/configoptions).
+Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](/settings/provisioning/configoptions).
 
 ### Exemple de configuration
 #### Espace disque supplémentaire

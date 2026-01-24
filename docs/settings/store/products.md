@@ -85,7 +85,7 @@ Les types sont fournis par les **modules d’approvisionnement** (comme *Pteroda
 
 Ces types permettent à CLIENTXCMS de synchroniser automatiquement vos produits avec les modules de gestion (facturation, création de service, configuration, etc.).
 
-Merci de vous reporter directement à la section des [modules](../../../extensions) pour plus d'information à ce sujet.
+Merci de vous reporter directement à la section des [modules](/extensions/) pour plus d'information à ce sujet.
 
 ### Cycles de facturation disponibles
 
