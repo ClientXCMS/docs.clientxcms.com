@@ -360,5 +360,81 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.features.revenue.title": {
+    "message": "Gestion des revenus",
+    "description": "Homepage feature card title for revenue management"
+  },
+  "homepage.features.revenue.description": {
+    "message": "Acceptez les paiements de votre clientèle via les passerelles de paiements pré-installées. Gérez des {quotes}, {taxes}, {delivery}, et {invoices} de vos clients.",
+    "description": "Homepage feature card description for revenue management"
+  },
+  "homepage.features.revenue.quotes": {
+    "message": "Devis",
+    "description": "Bold term in revenue feature description"
+  },
+  "homepage.features.revenue.taxes": {
+    "message": "Taxes",
+    "description": "Bold term in revenue feature description"
+  },
+  "homepage.features.revenue.delivery": {
+    "message": "Livraison de service/gestion de service",
+    "description": "Bold term in revenue feature description"
+  },
+  "homepage.features.revenue.invoices": {
+    "message": "Factures",
+    "description": "Bold term in revenue feature description"
+  },
+  "homepage.features.installation.title": {
+    "message": "Installation & Configuration",
+    "description": "Homepage feature card title for installation"
+  },
+  "homepage.features.installation.description": {
+    "message": "Installez et configurez votre espace client aussi rapidement que possible. Reliez votre Panel externe à {clientxcms} puis créez des {offers} en les ajoutant dans un {group} et {sell}.",
+    "description": "Homepage feature card description for installation"
+  },
+  "homepage.features.installation.offers": {
+    "message": "offres",
+    "description": "Bold term in installation feature description"
+  },
+  "homepage.features.installation.group": {
+    "message": "groupe",
+    "description": "Bold term in installation feature description"
+  },
+  "homepage.features.installation.sell": {
+    "message": "vendez-les",
+    "description": "Bold term in installation feature description"
+  },
+  "homepage.features.customization.title": {
+    "message": "Personnalisation de l'espace client",
+    "description": "Homepage feature card title for customization"
+  },
+  "homepage.features.customization.description": {
+    "message": "Faites de votre {clientArea} un {privilegedSpace} pour vos clients. Il est important que vos clients se repèrent grâce à votre {logo}, {favicon}, {theme} ou {primaryColor}.",
+    "description": "Homepage feature card description for customization"
+  },
+  "homepage.features.customization.clientArea": {
+    "message": "espace client",
+    "description": "Bold term in customization feature description"
+  },
+  "homepage.features.customization.privilegedSpace": {
+    "message": "espace privilégié",
+    "description": "Bold term in customization feature description"
+  },
+  "homepage.features.customization.logo": {
+    "message": "Logo",
+    "description": "Bold term in customization feature description"
+  },
+  "homepage.features.customization.favicon": {
+    "message": "Favicon",
+    "description": "Bold term in customization feature description"
+  },
+  "homepage.features.customization.theme": {
+    "message": "Thème",
+    "description": "Bold term in customization feature description"
+  },
+  "homepage.features.customization.primaryColor": {
+    "message": "Couleur primaire",
+    "description": "Bold term in customization feature description"
   }
 }
