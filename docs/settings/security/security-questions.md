@@ -1,19 +1,20 @@
 ---
+translated: true
 sidebar_position: 5
 ---
-# Questions de sécurité
-Dans **CLIENTXCMS**, les **questions de sécurité** offrent une couche supplémentaire de protection pour les comptes clients. Elles permettent de vérifier l'identité des utilisateurs lors de certaines actions sensibles, comme la réinitialisation du mot de passe ou la modification des informations personnelles.
+# Security Questions
+In **CLIENTXCMS**, **security questions** provide an additional layer of protection for customer accounts. They allow you to verify user identity during certain sensitive actions, such as password reset or personal information changes.
 
-## Configuration des questions de sécurité
-Vous pouvez configurer les questions de sécurité dans le panneau d'administration sous **Paramètres > Sécurité > Questions de sécurité**.
+## Configuring Security Questions
+You can configure security questions in the administration panel under **Settings > Security > Security Questions**.
 
-## Création et gestion des questions
-Vous pouvez créer des questions de sécurité personnalisées pour vos clients. Dans le panneau de configuration, cliquez sur **Créer** et entrez la question ainsi que l'ordre d'affichage et si vous souhaitez qu'elle soit active ou non.
+## Creating and Managing Questions
+You can create custom security questions for your customers. In the configuration panel, click **Create** and enter the question along with the display order and whether you want it to be active or not.
 
-Vous pouvez également modifier ou supprimer des questions existantes en cliquant sur l'icône d'édition ou de suppression à côté de chaque question.
+You can also edit or delete existing questions by clicking the edit or delete icon next to each question.
 
-## Désactivation des questions de sécurité
-Si un client rencontre des difficultés avec sa question de sécurité, vous pouvez la désactiver temporairement depuis la fiche client dans l'administration. Cela permettra au client de continuer à utiliser son compte sans la question de sécurité jusqu'à ce qu'il soit prêt à la réactiver.
+## Disabling Security Questions
+If a customer has difficulties with their security question, you can temporarily disable it from the customer's profile in the administration. This will allow the customer to continue using their account without the security question until they are ready to reactivate it.
 
-## Désactivation globale
-Si vous souhaitez désactiver les questions de sécurité pour tous les clients, vous pouvez le faire en supprimant toutes les questions de sécurité dans le panneau de configuration. Notez que cela réduira le niveau de sécurité pour tous les comptes clients.
+## Global Deactivation
+If you want to disable security questions for all customers, you can do so by deleting all security questions in the configuration panel. Note that this will reduce the security level for all customer accounts.

@@ -1,36 +1,39 @@
+---
+translated: true
+---
 import DocCardList from '@theme/DocCardList';
 
-# Sécurité
+# Security
 
-Dans **CLIENTXCMS**, la **sécurité** est le fondement de la protection de votre plateforme et des données de vos clients. <br/>
-L'objectif est crucial : **sécuriser l'accès à votre système**, **protéger les informations sensibles** et **maintenir l'intégrité de votre infrastructure**. Une sécurité bien configurée vous protège contre les intrusions, garantit la confidentialité des données et renforce la confiance de vos utilisateurs.
+In **CLIENTXCMS**, **security** is the foundation for protecting your platform and your customers' data. <br/>
+The objective is crucial: **secure access to your system**, **protect sensitive information** and **maintain the integrity of your infrastructure**. Properly configured security protects you against intrusions, ensures data confidentiality, and strengthens your users' trust.
 
-Cette section couvre tous les aspects de la sécurité : authentification, gestion des accès, surveillance, et protection des données.
+This section covers all aspects of security: authentication, access management, monitoring, and data protection.
 
-Vous pouvez accéder aux paramètres de sécurité depuis :
+You can access the security settings from:
 
-`Paramètres` > `Sécurité`
+`Settings` > `Security`
 
-:::tip Astuce
-La sécurité n'est jamais un luxe, c'est une **nécessité absolue**. 
-Prenez le temps de bien configurer chaque aspect pour protéger votre activité et vos clients.
+:::tip Tip
+Security is never a luxury, it's an **absolute necessity**.
+Take the time to properly configure every aspect to protect your business and your customers.
 :::
 
-## Pourquoi la sécurité est-elle essentielle ?
+## Why is security essential?
 
-Une sécurité robuste vous permet de :
+Robust security allows you to:
 
-* **Protéger les données clients** et respecter le RGPD
-* **Prévenir les intrusions** et les tentatives de piratage
-* **Maintenir la disponibilité** de vos services
-* **Conserver la confiance** de vos utilisateurs
-* **Éviter les pertes financières** liées aux incidents de sécurité
+* **Protect customer data** and comply with GDPR
+* **Prevent intrusions** and hacking attempts
+* **Maintain availability** of your services
+* **Keep the trust** of your users
+* **Avoid financial losses** related to security incidents
 
-:::tip Astuce
-C'est comme avoir plusieurs verrous sur votre maison 🔒 — chaque couche de sécurité renforce la protection globale.
+:::tip Tip
+It's like having multiple locks on your house 🔒 — each security layer strengthens the overall protection.
 :::
 
 
-## Navigation dans cette section
+## Navigation in this section
 
 <DocCardList />

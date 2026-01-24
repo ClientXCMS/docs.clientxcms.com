@@ -1,198 +1,201 @@
-# Virement bancaire
+---
+translated: true
+---
+# Bank Transfer
 
-La passerelle **Virement bancaire** dans **CLIENTXCMS** correspond au **système de paiement traditionnel par transfert bancaire** qui permet à vos clients de régler leurs commandes en transférant directement des fonds depuis leur compte bancaire vers le vôtre. <br/>
-L'objectif est clair : **offrir une alternative de paiement sécurisée pour les clients préférant les virements traditionnels, particulièrement pour les montants élevés**. Un système de virement bien configuré permet à vos clients de **payer en toute confiance** tout en vous garantissant la réception des fonds.
+The **Bank Transfer** gateway in **CLIENTXCMS** corresponds to the **traditional bank transfer payment system** that allows your customers to pay for their orders by directly transferring funds from their bank account to yours. <br/>
+The objective is clear: **offer a secure payment alternative for customers who prefer traditional transfers, particularly for large amounts**. A well-configured transfer system allows your customers to **pay with confidence** while guaranteeing you receipt of funds.
 
-La passerelle Virement bancaire peut être entièrement personnalisée : nom d'affichage, montant minimum, instructions détaillées, coordonnées bancaires, etc.
+The Bank Transfer gateway can be fully customized: display name, minimum amount, detailed instructions, bank details, etc.
 
-Vous pouvez configurer la passerelle Virement bancaire depuis :
+You can configure the Bank Transfer gateway from:
 
-`Paramètres` > `Paramètres de la boutique` > `Virement bancaire`
+`Settings` > `Store Settings` > `Bank Transfer`
 
-![Instructions de virement sur une facture](/img/next_gen/settings/store/payment_gateways/bank_transfert/bank_transfert.png)
+![Transfer instructions on an invoice](/img/next_gen/settings/store/payment_gateways/bank_transfert/bank_transfert.png)
 
-:::tip Astuce
-Le **virement bancaire** est particulièrement apprécié par les entreprises et pour les montants importants, car il offre une **traçabilité maximale** et évite les frais de carte bancaire.
+:::tip Tip
+**Bank transfer** is particularly appreciated by businesses and for large amounts, as it offers **maximum traceability** and avoids credit card fees.
 :::
 
-## Pourquoi proposer le virement bancaire ?
+## Why offer bank transfer?
 
-La passerelle Virement bancaire est un moyen de paiement traditionnel mais essentiel pour votre boutique. Elle représente concrètement une méthode de paiement directe et sécurisée, sans intermédiaire de paiement.
+The Bank Transfer gateway is a traditional but essential payment method for your store. It concretely represents a direct and secure payment method, without a payment intermediary.
 
-Proposer le virement bancaire vous permet de :
+Offering bank transfer allows you to:
 
-* Attirer les clients préférant les paiements bancaires traditionnels
-* Éviter les frais de transaction des passerelles en ligne
-* Sécuriser les paiements de montants élevés
-* Répondre aux besoins des entreprises et administrations
-* Offrir une alternative en cas de problème avec d'autres passerelles
+* Attract customers who prefer traditional bank payments
+* Avoid transaction fees from online gateways
+* Secure payments for large amounts
+* Meet the needs of businesses and administrations
+* Offer an alternative in case of problems with other gateways
 
-:::tip Astuce
-Le virement bancaire est comme un **chèque numérique** 🏛️ — il rassure par sa simplicité et sa sécurité, particulièrement pour les clients corporate ou les achats importants.
+:::tip Tip
+Bank transfer is like a **digital check** 🏛️ — it reassures by its simplicity and security, particularly for corporate clients or large purchases.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement
+### Payment Process
 
-Le paiement par virement bancaire suit un processus manuel en plusieurs étapes :
+Payment by bank transfer follows a manual multi-step process:
 
-1. **Sélection du moyen de paiement** : Le client choisit "Virement bancaire" lors du checkout
-2. **Génération de la facture** : Une facture avec les coordonnées bancaires est créée
-3. **Affichage des instructions** : Le client reçoit toutes les informations nécessaires
-4. **Exécution du virement** : Le client effectue le virement depuis sa banque
-5. **Envoi de la preuve** : Le client transmet sa preuve de virement (optionnel)
-6. **Validation manuelle** : Vous confirmez la réception du paiement
-7. **Activation du service** : La commande est traitée et livrée
+1. **Payment Method Selection**: The customer chooses "Bank Transfer" during checkout
+2. **Invoice Generation**: An invoice with bank details is created
+3. **Instructions Display**: The customer receives all necessary information
+4. **Transfer Execution**: The customer makes the transfer from their bank
+5. **Proof Sending**: The customer sends their transfer proof (optional)
+6. **Manual Validation**: You confirm receipt of payment
+7. **Service Activation**: The order is processed and delivered
 
-### Caractéristiques du virement
+### Transfer Characteristics
 
-| Caractéristique        | Description                                        |
-|------------------------|----------------------------------------------------|
-| **Délai de traitement** | 1 à 3 jours ouvrés selon les banques            |
-| **Sécurité maximale**   | Transfert direct entre comptes bancaires        |
-| **Traçabilité complète** | Référence unique pour chaque transaction       |
-| **Pas de limite**       | Montants élevés acceptés                         |
+| Characteristic        | Description                                        |
+|-----------------------|----------------------------------------------------|
+| **Processing Time**   | 1 to 3 business days depending on banks            |
+| **Maximum Security**  | Direct transfer between bank accounts              |
+| **Complete Traceability** | Unique reference for each transaction         |
+| **No Limit**          | Large amounts accepted                             |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres essentiels
+### Essential Parameters
 
-**Nom de la passerelle** | (texte)<br />
+**Gateway Name** | (text)<br />
 
-Utilisez un nom clair comme "Virement bancaire" ou "Paiement par virement" pour une identification immédiate.
+Use a clear name like "Bank Transfer" or "Wire Transfer" for immediate identification.
 
-**Montant minimal** | (montant)<br />
+**Minimum Amount** | (amount)<br />
 
-Définissez un montant minimal approprié. Beaucoup d'hébergeurs configurent un minimum de 50€ ou 100€ pour rentabiliser cette méthode.
+Set an appropriate minimum amount. Many hosts configure a minimum of €50 or €100 to make this method cost-effective.
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Gardez la passerelle en statut **"Actif"** si vous souhaitez proposer cette option à tous vos clients.
+Keep the gateway on **"Active"** status if you wish to offer this option to all your customers.
 
-**Instructions de paiement** | (texte riche)<br />
+**Payment Instructions** | (rich text)<br />
 
-Rédigez des instructions claires et complètes qui apparaîtront sur la facture. Incluez :
-- Vos coordonnées bancaires complètes (IBAN, BIC)
-- La référence à mentionner (numéro de facture)
-- Le délai de traitement attendu
-- Vos coordonnées pour questions
+Write clear and complete instructions that will appear on the invoice. Include:
+- Your complete bank details (IBAN, BIC)
+- The reference to mention (invoice number)
+- Expected processing time
+- Your contact details for questions
 
-:::info Configuration recommandée
-Pour optimiser l'usage du virement bancaire :
-- **Nom** : "Virement bancaire"
-- **Montant minimal** : 50€ ou plus selon votre activité
-- **Statut** : Actif
-- **Instructions** : Complètes et détaillées
+:::info Recommended Configuration
+To optimize bank transfer use:
+- **Name**: "Bank Transfer"
+- **Minimum Amount**: €50 or more depending on your activity
+- **Status**: Active
+- **Instructions**: Complete and detailed
 :::
 
-### Exemple d'instructions de paiement
+### Payment Instructions Example
 
 ```
-Coordonnées bancaires :
-IBAN : FR76 1234 5678 9012 3456 7890 123
-BIC : ABCDFRPP
-Titulaire : Votre Société
+Bank Details:
+IBAN: FR76 1234 5678 9012 3456 7890 123
+BIC: ABCDFRPP
+Account Holder: Your Company
 
-Instructions :
-1. Effectuez le virement pour le montant exact de la facture
-2. Mentionnez impérativement la référence : [NUMERO_FACTURE]
-3. Le traitement prend 1-3 jours ouvrés
-4. Votre service sera activé dès réception du paiement
+Instructions:
+1. Make the transfer for the exact invoice amount
+2. Imperatively mention the reference: [INVOICE_NUMBER]
+3. Processing takes 1-3 business days
+4. Your service will be activated upon payment receipt
 
-Questions ? Contactez-nous à comptabilite@votre-domaine.com
+Questions? Contact us at accounting@your-domain.com
 ```
 
-## Interface client
+## Customer Interface
 
-### Affichage sur la facture
+### Display on Invoice
 
-Lorsqu'un client choisit le virement bancaire, toutes les informations nécessaires s'affichent clairement sur sa facture :
+When a customer chooses bank transfer, all necessary information is clearly displayed on their invoice:
 
-![Affichage des instructions de virement](/img/next_gen/settings/store/payment_gateways/bank_transfert/bank_transfert.png)
+![Transfer instructions display](/img/next_gen/settings/store/payment_gateways/bank_transfert/bank_transfert.png)
 
-Cette présentation claire guide le client dans sa démarche de paiement.
+This clear presentation guides the customer through their payment process.
 
-### Informations affichées
+### Displayed Information
 
-La facture contient automatiquement :
-- **Coordonnées bancaires complètes**
-- **Montant exact à virer**
-- **Référence unique à mentionner**
-- **Instructions détaillées**
-- **Délais de traitement**
+The invoice automatically contains:
+- **Complete bank details**
+- **Exact amount to transfer**
+- **Unique reference to mention**
+- **Detailed instructions**
+- **Processing times**
 
-## Gestion administrative
+## Administrative Management
 
-### Suivi des paiements
+### Payment Tracking
 
-En tant qu'administrateur, vous devez :
+As an administrator, you must:
 
-1. **Surveiller régulièrement** vos comptes bancaires
-2. **Rapprocher** les virements reçus avec les factures en attente
-3. **Valider manuellement** chaque paiement dans le système
-4. **Activer** les services correspondants
+1. **Regularly monitor** your bank accounts
+2. **Match** received transfers with pending invoices
+3. **Manually validate** each payment in the system
+4. **Activate** corresponding services
 
-### Processus de validation
+### Validation Process
 
-Pour valider un paiement par virement :
+To validate a transfer payment:
 
-1. Identifiez le virement reçu sur votre compte
-2. Retrouvez la facture correspondante grâce à la référence
-3. Marquez la facture comme **"Payée"** dans l'administration
-4. Le système active automatiquement les services
+1. Identify the transfer received in your account
+2. Find the corresponding invoice using the reference
+3. Mark the invoice as **"Paid"** in administration
+4. The system automatically activates services
 
-:::tip Conseil
-Mettez en place une **routine quotidienne** de vérification des virements reçus pour minimiser les délais d'activation des services.
+:::tip Advice
+Implement a **daily routine** for checking received transfers to minimize service activation delays.
 :::
 
-## Avantages et inconvénients
+## Advantages and Disadvantages
 
-### Avantages
+### Advantages
 
-| Avantage                | Description                                        |
+| Advantage                | Description                                        |
 |-------------------------|----------------------------------------------------|
-| **Pas de frais de transaction** | Économies sur les commissions           |
-| **Sécurité maximale**   | Transfert direct entre banques                   |
-| **Montants élevés**     | Pas de limite de paiement                        |
-| **Traçabilité**         | Preuve bancaire officielle                       |
+| **No Transaction Fees** | Savings on commissions                             |
+| **Maximum Security**    | Direct transfer between banks                      |
+| **Large Amounts**       | No payment limit                                   |
+| **Traceability**        | Official bank proof                                |
 
-### Inconvénients
+### Disadvantages
 
-| Inconvénient            | Description                                        |
+| Disadvantage            | Description                                        |
 |-------------------------|----------------------------------------------------|
-| **Délai de traitement** | 1 à 3 jours ouvrés                               |
-| **Gestion manuelle**    | Nécessite un suivi administratif                 |
-| **Pas d'automatisation** | Validation manuelle requise                     |
-| **Risque d'abandon**    | Processus plus long que les paiements instantanés |
+| **Processing Time**     | 1 to 3 business days                               |
+| **Manual Management**   | Requires administrative monitoring                 |
+| **No Automation**       | Manual validation required                         |
+| **Abandonment Risk**    | Longer process than instant payments               |
 
-## Bonnes pratiques
+## Best Practices
 
-### Configuration optimale
+### Optimal Configuration
 
-* **Instructions complètes** : Ne laissez aucune ambiguïté
-* **Coordonnées à jour** : Vérifiez régulièrement vos informations bancaires
-* **Référence unique** : Utilisez le numéro de facture comme référence
-* **Délais clairs** : Informez sur les temps de traitement
+* **Complete Instructions**: Leave no ambiguity
+* **Up-to-date Details**: Regularly check your bank information
+* **Unique Reference**: Use the invoice number as reference
+* **Clear Deadlines**: Inform about processing times
 
-### Gestion quotidienne
+### Daily Management
 
-* **Vérification régulière** des virements reçus
-* **Traitement rapide** des validations de paiement
-* **Communication proactive** avec les clients en cas de retard
-* **Archivage** des preuves de virement reçues
+* **Regular verification** of received transfers
+* **Quick processing** of payment validations
+* **Proactive communication** with customers in case of delay
+* **Archiving** of received transfer proofs
 
-### Communication client
+### Customer Communication
 
-* **Email de confirmation** lors de la réception du virement
-* **Notifications** d'activation du service
-* **Support réactif** pour toute question sur le processus
-* **FAQ dédiée** aux paiements par virement
+* **Confirmation email** upon transfer receipt
+* **Notifications** of service activation
+* **Responsive support** for any questions about the process
+* **Dedicated FAQ** for transfer payments
 
 :::warning Important
-Assurez-vous que vos **coordonnées bancaires sont toujours exactes** dans la configuration. Une erreur peut causer des retards importants ou des virements perdus.
+Make sure your **bank details are always accurate** in the configuration. An error can cause significant delays or lost transfers.
 :::
 
-:::tip À retenir
-Le virement bancaire est un **moyen de paiement complémentaire essentiel**, particulièrement pour les montants élevés et la clientèle professionnelle. Sa gestion manuelle est compensée par l'absence de frais et la sécurité maximale.
+:::tip Remember
+Bank transfer is an **essential complementary payment method**, particularly for large amounts and professional clientele. Its manual management is offset by the absence of fees and maximum security.
 :::

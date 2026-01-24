@@ -1,153 +1,154 @@
 ---
+translated: true
 sidebar_position: 2
 ---
-# Base de données
+# Database
 
-Dans **CLIENTXCMS**, la gestion de la **base de données** est un aspect critique de la maintenance et de la sécurité de votre plateforme.
-L'objectif est essentiel : **fournir un accès sécurisé aux données système** et **permettre les opérations de maintenance avancées** tout en **préservant l'intégrité des informations**. Cette section donne aux administrateurs expérimentés les outils nécessaires pour maintenir et mettre à jour leur installation.
+In **CLIENTXCMS**, **database** management is a critical aspect of your platform's maintenance and security.
+The objective is essential: **provide secure access to system data** and **enable advanced maintenance operations** while **preserving data integrity**. This section gives experienced administrators the tools needed to maintain and update their installation.
 
-Cette page requiert une authentification renforcée et offre des outils de gestion de base de données pour les utilisateurs avancés.
+This page requires enhanced authentication and offers database management tools for advanced users.
 
-Vous pouvez accéder à la gestion de base de données depuis :
+You can access database management from:
 
-`Paramètres` > `Sécurité` > `Base de données`
+`Settings` > `Security` > `Database`
 
-![Interface de gestion de la base de données](/img/next_gen/settings/security/database/database.png)
+![Database management interface](/img/next_gen/settings/security/database/database.png)
 
-:::warning Accès sécurisé requis
-Cette page nécessite une **re-authentification** avec votre mot de passe administrateur pour accéder aux informations sensibles de la base de données.
+:::warning Secure Access Required
+This page requires **re-authentication** with your administrator password to access sensitive database information.
 :::
 
-## Pourquoi gérer la base de données ?
+## Why manage the database?
 
-La gestion directe de la base de données est utile pour :
+Direct database management is useful for:
 
-* **Consulter les paramètres de connexion** en cas de problème technique
-* **Effectuer des migrations** lors de mises à jour ou d'installations d'extensions
-* **Initialiser des données** avec les seeders système
-* **Diagnostiquer les problèmes** de structure ou de données
+* **Checking connection settings** in case of technical problems
+* **Performing migrations** during updates or extension installations
+* **Initializing data** with system seeders
+* **Diagnosing problems** with structure or data
 
-:::tip Astuce
-C'est comme avoir accès au moteur de votre voiture 🔧 — puissant, mais nécessite de l'expertise pour éviter les dommages.
+:::tip Tip
+It's like having access to your car's engine 🔧 — powerful, but requires expertise to avoid damage.
 :::
 
-## Informations de connexion
+## Connection Information
 
-### Paramètres d'accès
+### Access Settings
 
-Cette section affiche les informations de connexion à votre base de données MySQL/MariaDB :
+This section displays the connection information for your MySQL/MariaDB database:
 
-**Serveur de base de données** | (adresse)
-L'adresse du serveur hébergeant votre base de données (localhost, IP, ou nom d'hôte).
+**Database Server** | (address)
+The address of the server hosting your database (localhost, IP, or hostname).
 
-**Nom de la base** | (nom)
-Le nom de la base de données contenant toutes les tables de CLIENTXCMS.
+**Database Name** | (name)
+The name of the database containing all CLIENTXCMS tables.
 
-**Nom d'utilisateur** | (utilisateur)
-L'identifiant utilisé pour se connecter à la base de données.
+**Username** | (user)
+The identifier used to connect to the database.
 
-**Mot de passe** | (masqué par défaut)
-Le mot de passe de connexion, masqué par défaut pour des raisons de sécurité.
-Survolez le champ avec votre souris pour révéler temporairement le mot de passe.
+**Password** | (hidden by default)
+The connection password, hidden by default for security reasons.
+Hover over the field with your mouse to temporarily reveal the password.
 
-### Accès PHPMyAdmin
+### PHPMyAdmin Access
 
-**Interface web de gestion** | (bouton d'accès)
-Accès direct à PHPMyAdmin pour une gestion visuelle de votre base de données.
+**Web management interface** | (access button)
+Direct access to PHPMyAdmin for visual management of your database.
 
-:::info Disponibilité PHPMyAdmin
-L'accès PHPMyAdmin est **uniquement disponible pour les instances cloud** hébergées par ClientXCMS. Pour les installations auto-hébergées, utilisez votre propre interface de gestion.
+:::info PHPMyAdmin Availability
+PHPMyAdmin access is **only available for cloud instances** hosted by ClientXCMS. For self-hosted installations, use your own management interface.
 :::
 
-### Utilisation sécurisée
+### Secure Usage
 
-- **Ne partagez jamais** ces informations de connexion
-- **Utilisez un VPN** si vous devez accéder à distance
-- **Effectuez des sauvegardes** avant toute opération critique
-- **Limitez l'accès** aux seuls administrateurs expérimentés
+- **Never share** this connection information
+- **Use a VPN** if you need remote access
+- **Make backups** before any critical operation
+- **Limit access** to experienced administrators only
 
-## Migrations de base de données
+## Database Migrations
 
-### Qu'est-ce qu'une migration ?
+### What is a migration?
 
-Les migrations sont des scripts qui modifient la structure de votre base de données :
+Migrations are scripts that modify your database structure:
 
-- Ajout de nouvelles tables
-- Modification de colonnes existantes
-- Création d'index pour les performances
-- Mise à jour du schéma pour les nouvelles fonctionnalités
+- Adding new tables
+- Modifying existing columns
+- Creating indexes for performance
+- Updating the schema for new features
 
-### Exécution des migrations
+### Running Migrations
 
-**Sélection du module** | (menu déroulant)
-Choisissez le module ou l'extension pour lequel exécuter les migrations :
+**Module Selection** | (dropdown menu)
+Choose the module or extension for which to run migrations:
 
-- **Core** : Migrations du système principal ClientXCMS
-- **Extensions** : Migrations spécifiques aux modules installés
+- **Core**: Main ClientXCMS system migrations
+- **Extensions**: Migrations specific to installed modules
 
-**Processus de migration** :
+**Migration Process**:
 
-1. Sélectionnez le module approprié
-2. Cliquez sur **"Migrer"** pour lancer l'opération
-3. Surveillez la sortie pour détecter d'éventuelles erreurs
-4. Vérifiez le bon fonctionnement de votre système
+1. Select the appropriate module
+2. Click **"Migrate"** to start the operation
+3. Monitor the output for any errors
+4. Verify your system is working properly
 
-![Résultat d'une migration](/img/next_gen/settings/security/database/migrate.png)
+![Migration result](/img/next_gen/settings/security/database/migrate.png)
 
-:::warning Attention - Opération critique
-Les migrations modifient la structure de votre base de données. Cette opération est **irréversible** et peut causer des dysfonctionnements si mal exécutée.
+:::warning Attention - Critical Operation
+Migrations modify your database structure. This operation is **irreversible** and can cause malfunctions if improperly executed.
 
-**Prérequis obligatoires** :
+**Mandatory prerequisites**:
 
-- Sauvegarde complète de la base de données
-- Environnement de test validé
-- Connaissance en administration de base de données
-  :::
+- Complete database backup
+- Validated test environment
+- Database administration knowledge
+:::
 
-### Quand utiliser les migrations
+### When to Use Migrations
 
-- **Mise à jour système** : Après une montée de version de ClientXCMS
-- **Installation d'extension** : Pour préparer la base aux nouvelles fonctionnalités
-- **Correction de structure** : Pour résoudre des problèmes de schéma
-- **Optimisation** : Pour ajouter des index de performance
+- **System update**: After a ClientXCMS version upgrade
+- **Extension installation**: To prepare the database for new features
+- **Structure correction**: To resolve schema problems
+- **Optimization**: To add performance indexes
 
-## Seeders de base de données
+## Database Seeders
 
-### Principe des seeders
+### Seeder Principle
 
-Les seeders initialisent votre base de données avec des données par défaut :
+Seeders initialize your database with default data:
 
-- Paramètres système standards
-- Données de démonstration
-- Valeurs de configuration par défaut
-- Données de référence (pays, devises, etc.)
+- Standard system settings
+- Demonstration data
+- Default configuration values
+- Reference data (countries, currencies, etc.)
 
-### Exécution des seeders
+### Running Seeders
 
-**Processus de seeding** :
+**Seeding Process**:
 
-1. Cliquez sur le bouton **"Seeder"**
-2. L'opération lance tous les seeders disponibles
-3. Les données par défaut sont insérées dans les tables appropriées
-4. Vérifiez les logs pour confirmer le succès
+1. Click the **"Seed"** button
+2. The operation runs all available seeders
+3. Default data is inserted into the appropriate tables
+4. Check the logs to confirm success
 
-![Résultat d'un seeding](/img/next_gen/settings/security/database/seed.png)
+![Seeding result](/img/next_gen/settings/security/database/seed.png)
 
-:::warning Attention - Données existantes
-Les seeders peuvent **écraser ou dupliquer** des données existantes. Utilisez cette fonctionnalité uniquement :
+:::warning Attention - Existing Data
+Seeders can **overwrite or duplicate** existing data. Use this feature only:
 
-- Sur une installation fraîche
-- Après avoir sauvegardé vos données
-- Si vous comprenez l'impact sur vos données actuelles
-  :::
+- On a fresh installation
+- After backing up your data
+- If you understand the impact on your current data
+:::
 
-### Cas d'usage des seeders
+### Seeder Use Cases
 
-- **Installation initiale** : Pour peupler une base vide
-- **Réinitialisation** : Pour restaurer les paramètres par défaut
-- **Développement** : Pour créer un environnement de test
-- **Démonstration** : Pour générer des données d'exemple
+- **Initial installation**: To populate an empty database
+- **Reset**: To restore default settings
+- **Development**: To create a test environment
+- **Demonstration**: To generate example data
 
-:::tip À retenir
-La gestion de base de données nécessite expertise et précaution. Ces outils sont puissants mais peuvent endommager votre installation si mal utilisés. En cas de doute, consultez un administrateur expérimenté ou le support technique.
+:::tip Remember
+Database management requires expertise and caution. These tools are powerful but can damage your installation if misused. If in doubt, consult an experienced administrator or technical support.
 :::

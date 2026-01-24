@@ -1,57 +1,58 @@
 ---
+translated: true
 sidebar_position: 5
 ---
 
-# Mollie (Paiement par carte)
+# Mollie (Card Payment)
 
-La passerelle de paiement Mollie permet d'accepter les paiements via Cartes bleues.
+The Mollie payment gateway allows you to accept payments via credit cards.
 
-Vous pouvez gérer les passerelles de paiement depuis :
+You can manage payment gateways from:
 
-`Paramètres` > `Paramètres de la boutique` > `Mollie`
-    
-![Configuration d'une passerelle de paiement](/img/next_gen/settings/store/payment_gateways/mollie/config.png)
+`Settings` > `Store Settings` > `Mollie`
 
-## Mode live vs Mode Test
-Le mode live de mollie permet d'accepter de vrais paiements (Utilisé en production).
-Le mode test permet d'émettre des paiements de tests sans dépenser de l'argent réel (Utilisé en développement ou pour tester)
-## Récupérer ses clés
-1. Connectez-vous à votre **tableau de bord Mollie**.
-2. Rendez-vous dans **Développeurs > Clés API**.
-3. Cliquez sur Copier pour utiliser les clés API.
+![Payment gateway configuration](/img/next_gen/settings/store/payment_gateways/mollie/config.png)
 
-Puis récupérez votre clé live et clé test
+## Live Mode vs Test Mode
+Mollie's live mode allows you to accept real payments (used in production).
+Test mode allows you to issue test payments without spending real money (used in development or for testing).
+
+## Retrieving Your Keys
+1. Log in to your **Mollie dashboard**.
+2. Go to **Developers > API Keys**.
+3. Click Copy to use the API keys.
+
+Then retrieve your live key and test key
 ![img](/img/next_gen/settings/store/payment_gateways/mollie/keys.png)
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement
+### Payment Process
 
-Le paiement via Mollie suit un processus en plusieurs étapes :
-1. **Sélection du moyen de paiement** : Le client choisit "Mollie" lors du checkout
-2. **Redirection vers Mollie** : Le client est dirigé vers les serveurs de paiement Mollie
-3. **Validation du paiement** : Le client confirme la transaction sur Mollie
-4. **Retour automatique** : Redirection vers votre boutique
-5. **Notification** : Mollie confirme le paiement à votre système
-6. **Validation automatique** : La commande est immédiatement traitée
-7. **Confirmation client** : Email de confirmation et activation du service
+Payment via Mollie follows a multi-step process:
+1. **Payment Method Selection**: The customer chooses "Mollie" during checkout
+2. **Redirect to Mollie**: The customer is directed to Mollie payment servers
+3. **Payment Validation**: The customer confirms the transaction on Mollie
+4. **Automatic Return**: Redirect to your store
+5. **Notification**: Mollie confirms the payment to your system
+6. **Automatic Validation**: The order is immediately processed
+7. **Customer Confirmation**: Confirmation email and service activation
 
-## Configuration de la passerelle
-### Paramètres essentiels
-**Nom de la passerelle** | (texte)<br />
-Utilisez simplement "Mollie" pour une reconnaissance immédiate par vos clients.
+## Gateway Configuration
+### Essential Parameters
+**Gateway Name** | (text)<br />
+Simply use "Mollie" for immediate recognition by your customers.
 
-**Montant minimal** | (montant)<br />
-Mollie n'impose pas de montant minimal. Vous pouvez configurer 0.50€ pour accepter tous les montants.
+**Minimum Amount** | (amount)<br />
+Mollie imposes no minimum amount. You can configure €0.50 to accept all amounts.
 
 
-**Clé API Mollie** | (texte)<br />
-La clé API secrète que Mollie fournit pour authentifier les transactions.
+**Mollie API Key** | (text)<br />
+The secret API key that Mollie provides to authenticate transactions.
 
-**Statut** | (menu déroulant)<br />
-Maintenez la passerelle en statut **"Actif"** pour maximiser les conversions.
+**Status** | (dropdown menu)<br />
+Keep the gateway on **"Active"** status to maximize conversions.
 
-**Mode de fonctionnement** | (test/live)<br />
-- **Mode test** : Pour vos tests avec des transactions fictives
-- **Mode live** : Pour les vraies transactions avec vos clients
-
+**Operating Mode** | (test/live)<br />
+- **Test mode**: For your tests with fictitious transactions
+- **Live mode**: For real transactions with your customers
