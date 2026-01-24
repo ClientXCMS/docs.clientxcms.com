@@ -1,22 +1,25 @@
+---
+translated: true
+---
 # Configuration
 
-Les produits peuvent avoir des configurations permettant de contrôler les performances comme la mémoire ou la RAM. Ils permettent par la suite de livrer des services à partir de cette configuration.
+Products can have configurations that control performance parameters like memory or RAM. They subsequently allow delivering services based on this configuration.
 
-Interface : `App/Contracts/Store/ProductConfigInterface`
+Interface: `App/Contracts/Store/ProductConfigInterface`
 
-Classe abstraite : `App/Abstracts/AbstractConfig`
+Abstract Class: `App/Abstracts/AbstractConfig`
 
-## Création de la classe
+## Creating the Class
 
-L'interface `App/Contracts/Store/ProductConfigInterface` définit les méthodes que chaque classe de configuration doit implémenter pour gérer la configuration des produits. Les méthodes principales sont :
+The `App/Contracts/Store/ProductConfigInterface` interface defines the methods each configuration class must implement to manage product configuration. The main methods are:
 
-- `validate()`: Définit les règles de validation pour la configuration.
-- `render()`: Retourne le formulaire HTML pour afficher et modifier la configuration du produit.
-- `storeConfig()`: Permet de sauvegarder les configurations dans la base de données.
-- `updateConfig()`: Met à jour les configurations existantes dans la base de données.
-- `deleteConfig()`: Supprime la configuration associée à un produit.
-- `getConfig()`: Récupère la configuration d'un produit.
-- `cloneConfig()`: Permet de cloner une configuration d'un produit vers un autre.
+- `validate()`: Defines validation rules for the configuration.
+- `render()`: Returns the HTML form to display and modify the product configuration.
+- `storeConfig()`: Saves configurations to the database.
+- `updateConfig()`: Updates existing configurations in the database.
+- `deleteConfig()`: Deletes the configuration associated with a product.
+- `getConfig()`: Retrieves a product's configuration.
+- `cloneConfig()`: Clones a configuration from one product to another.
 
 ```php
 <?php
@@ -33,20 +36,20 @@ class CustomProductConfig extends AbstractConfig
     protected string $model = \App\Addons\Fund\Models\GameserverConfigModel::class;
 
     /**
-     * Rendre le formulaire de configuration pour un produit spécifique
+     * Render the configuration form for a specific product
      */
     public function render(Product $product)
     {
         $context = [
-            'servers' => $this->servers, // Les serveurs disponibles
-            'config' => $this->getConfig($product->id, new $this->model), // La configuration existante ou une nouvelle instance
+            'servers' => $this->servers, // Available servers
+            'config' => $this->getConfig($product->id, new $this->model), // Existing configuration or new instance
         ];
 
         return view('fund_admin::product-config', $context);
     }
 
     /**
-     * Valider les données de la configuration
+     * Validate configuration data
      */
     public function validate(): array
     {
@@ -59,7 +62,7 @@ class CustomProductConfig extends AbstractConfig
     }
 
     /**
-     * Sauvegarder la configuration pour un produit
+     * Save configuration for a product
      */
     public function storeConfig(Product $product, array $parameters)
     {
@@ -67,7 +70,7 @@ class CustomProductConfig extends AbstractConfig
     }
 
     /**
-     * Mettre à jour la configuration pour un produit
+     * Update configuration for a product
      */
     public function updateConfig(Product $product, array $parameters)
     {
@@ -76,21 +79,21 @@ class CustomProductConfig extends AbstractConfig
 }
 ```
 
-## Création de la migration
+## Creating the Migration
 
-Utilisez la commande artisan suivante pour créer une migration pour la table de configuration du serveur de jeu :
+Use the following artisan command to create a migration for the game server configuration table:
 
 ```bash
 php artisan clientxcms:create-migration-extension
 ```
 
-Lorsque la commande demande le nom de la migration, entrez :
+When the command asks for the migration name, enter:
 
 ```
 CreateGameserverConfigTable
 ```
 
-Ensuite, dans le fichier de migration généré, définissez la structure de la table en ajoutant un champ **`product_id`** pour faire la liaison avec les produits :
+Then, in the generated migration file, define the table structure by adding a **`product_id`** field to link with products:
 
 ```php
 // database/migrations/2022_01_01_000000_create_gameserver_config_table.php
@@ -105,11 +108,11 @@ class CreateGameserverConfigTable extends Migration
     {
         Schema::create('gameserver_configs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_id')->constrained('products')->onDelete('cascade'); // Lien avec la table des produits
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade'); // Link to products table
             $table->integer('memory');
             $table->integer('cpu');
             $table->integer('disk');
-            $table->foreignId('server_id')->constrained('servers')->onDelete('cascade'); // Lien avec la table des serveurs
+            $table->foreignId('server_id')->constrained('servers')->onDelete('cascade'); // Link to servers table
             $table->timestamps();
         });
     }
@@ -120,8 +123,8 @@ class CreateGameserverConfigTable extends Migration
     }
 }
 ```
-## Vue du formulaire de configuration
-Vous pouvez créer une vue dans le dossier `addons/fund/views/admin/product-config.blade.php` pour afficher le formulaire de configuration :
+## Configuration Form View
+You can create a view in the `addons/fund/views/admin/product-config.blade.php` folder to display the configuration form:
 
 ```blade
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -135,10 +138,10 @@ Vous pouvez créer une vue dans le dossier `addons/fund/views/admin/product-conf
         @include("admin/shared/input", ['name' => 'cpu', 'label' => __('provisioning.cpu'), 'value' => $config->cpu, 'type' => 'number'])
     </div>
 </div>
-``` 
-## Création du modèle associé
+```
+## Creating the Associated Model
 
-Créez un modèle pour représenter la configuration du serveur de jeu. Nous recommandons de nommer ce modèle **`GameserverConfigModel`** pour plus de clarté :
+Create a model to represent the game server configuration. We recommend naming this model **`GameserverConfigModel`** for clarity:
 
 ```php
 namespace App\Addons\Fund\Models;
@@ -147,7 +150,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class GameserverConfigModel extends Model
 {
-    protected $table = 'gameserver_configs'; // Nom de la table
+    protected $table = 'gameserver_configs'; // Table name
 
     protected $fillable = [
         'product_id',
@@ -169,15 +172,15 @@ class GameserverConfigModel extends Model
 }
 ```
 
-## Enregistrement de la classe dans le produit
+## Registering the Class in the Product
 
-Une fois la classe de configuration et le modèle créé, vous devez associer cette configuration au produit en l'enregistrant dans la méthode **`config()`** de la classe produit. Voici un exemple :
+Once the configuration class and model are created, you must associate this configuration with the product by registering it in the **`config()`** method of the product class. Here's an example:
 
 ```php
 public function config(): ?\App\Contracts\Store\ProductConfigInterface
 {
-    return new \App\Addons\Fund\GameserverConfig(); // Retourne la classe de configuration pour ce produit
+    return new \App\Addons\Fund\GameserverConfig(); // Returns the configuration class for this product
 }
 ```
 
-Cela permet au CMS d'utiliser la configuration lors de la gestion des produits, en affichant le formulaire de configuration et en validant les données lors de la création ou modification d'un produit.
+This allows the CMS to use the configuration when managing products, displaying the configuration form and validating data when creating or modifying a product.

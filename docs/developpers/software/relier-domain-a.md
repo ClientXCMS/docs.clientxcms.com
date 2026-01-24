@@ -1,45 +1,46 @@
 ---
+translated: true
 sidebar_position: 5
 ---
-# Relier son domaine en A
+# Link Your Domain with an A Record
 
 
-Lorsque vous possédez un nom de domaine, il est essentiel de le relier à un hébergeur afin de rendre votre CLIENTXCMS accessible en ligne. Dans cet article, nous allons vous guider à travers le processus de liaison d'un domaine en A (adresse IP) avec les services OVH, LWS et Cloudflare.
+When you own a domain name, it's essential to link it to a host to make your CLIENTXCMS accessible online. In this article, we will guide you through the process of linking a domain with an A record (IP address) using OVH, LWS, and Cloudflare services.
 
 ## 1. OVH
 
-1. Connectez-vous à votre compte OVH et accédez à la section "Domaines".
-2. Sélectionnez le domaine que vous souhaitez relier et cliquez sur "Zone DNS".
-3. Ajoutez un nouvel enregistrement de type "A".
-4. Dans le champ "Nom", entrez "@" pour représenter votre domaine principal.
-5. Dans le champ "cible", entrez l'adresse IP de votre hébergement OVH.
-6. Enregistrez les modifications et attendez la propagation DNS, qui peut prendre jusqu'à 24 heures.
+1. Log in to your OVH account and access the "Domains" section.
+2. Select the domain you want to link and click on "DNS Zone".
+3. Add a new "A" type record.
+4. In the "Name" field, enter "@" to represent your main domain.
+5. In the "Target" field, enter your OVH hosting IP address.
+6. Save the changes and wait for DNS propagation, which can take up to 24 hours.
 
-Une fois la propagation DNS terminée, votre domaine sera relié à votre hébergement OVH.
+Once DNS propagation is complete, your domain will be linked to your OVH hosting.
 
 ## 2. LWS
 
-1. Connectez-vous à votre compte LWS et accédez à votre panneau de contrôle.
-2. Recherchez l'option "Gestion de domaines" ou "Domaines".
-3. Sélectionnez le domaine que vous souhaitez relier.
-4. Accédez à la section "Gestion des DNS" ou "Zone DNS".
-5. Ajoutez un nouvel enregistrement de type "A".
-6. Dans le champ "Nom", entrez "@" ou laissez-le vide pour représenter votre domaine principal.
-7. Dans le champ "Adresse IP", saisissez l'adresse IP de votre hébergement LWS.
-8. Enregistrez les modifications et attendez la propagation DNS.
+1. Log in to your LWS account and access your control panel.
+2. Look for the "Domain Management" or "Domains" option.
+3. Select the domain you want to link.
+4. Access the "DNS Management" or "DNS Zone" section.
+5. Add a new "A" type record.
+6. In the "Name" field, enter "@" or leave it empty to represent your main domain.
+7. In the "IP Address" field, enter your LWS hosting IP address.
+8. Save the changes and wait for DNS propagation.
 
-Après la propagation DNS, votre domaine sera lié à votre hébergement LWS.
+After DNS propagation, your domain will be linked to your LWS hosting.
 
 ## 3. Cloudflare
 
 
-1. Créez un compte sur Cloudflare et ajoutez votre domaine à votre tableau de bord.
-2. Cloudflare vous fournira deux serveurs de noms (name servers) à utiliser pour votre domaine.
-3. Accédez à votre registraire de domaine (OVH ou LWS) et mettez à jour les serveurs de noms pour votre domaine avec les serveurs de noms fournis par Cloudflare.
-4. Une fois les serveurs de noms mis à jour, retournez sur votre tableau de bord Cloudflare.
-5. Dans la section "DNS", ajoutez un nouvel enregistrement de type "A".
-6. Dans le champ "Nom", entrez "@" pour représenter votre domaine principal.
-7. Dans le champ "Adresse IP", saisissez l'adresse IP de votre hébergement.
-8. Enregistrez les modifications.
+1. Create an account on Cloudflare and add your domain to your dashboard.
+2. Cloudflare will provide you with two name servers to use for your domain.
+3. Access your domain registrar (OVH or LWS) and update the name servers for your domain with the name servers provided by Cloudflare.
+4. Once the name servers are updated, return to your Cloudflare dashboard.
+5. In the "DNS" section, add a new "A" type record.
+6. In the "Name" field, enter "@" to represent your main domain.
+7. In the "IP Address" field, enter your hosting IP address.
+8. Save the changes.
 
-Après la propagation DNS, votre domaine sera relié à Cloudflare, qui agira comme un proxy entre vos visiteurs
+After DNS propagation, your domain will be linked to Cloudflare, which will act as a proxy between your visitors

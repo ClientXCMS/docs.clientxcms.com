@@ -1,37 +1,38 @@
 ---
+translated: true
 sidebar_position: 6
 ---
-# Changer la clé FiveM par défault
+# Change the Default FiveM Key
 
-Cette documentation vous guidera à travers les étapes pour modifier un Egg Pterodactyl existant et y ajouter une clé FiveM par défaut. L'objectif est de permettre aux utilisateurs de sélectionner l'option FiveM lorsqu'ils créent un serveur de jeu, tout en ayant une clé préconfigurée par défaut pour une meilleure expérience utilisateur.
+This documentation will guide you through the steps to modify an existing Pterodactyl Egg and add a default FiveM key. The goal is to allow users to select the FiveM option when creating a game server, while having a preconfigured default key for a better user experience.
 
-**Étape 1: Accéder au panneau de contrôle Pterodactyl**
+**Step 1: Access the Pterodactyl control panel**
 
-Connectez-vous à votre panneau de contrôle Pterodactyl en utilisant vos informations d'identification d'administrateur.
+Log in to your Pterodactyl control panel using your administrator credentials.
 
-**Étape 2: Sélectionner l'Egg à modifier**
+**Step 2: Select the Egg to modify**
 
-Naviguez vers la section "Eggs" dans le menu de gauche et sélectionnez l'Egg que vous souhaitez modifier pour ajouter la clé FiveM par défaut.
+Navigate to the "Eggs" section in the left menu and select the Egg you want to modify to add the default FiveM key.
 
-![Etape 1](/img/tutorial/step.png)
+![Step 1](/img/tutorial/step.png)
 
-**Étape 3: Modifier les variables**
+**Step 3: Modify the variables**
 
-Dans la page de configuration de l'Egg, recherchez la section "Variables" qui contient les options configurables pour cet Egg.
+On the Egg configuration page, look for the "Variables" section which contains the configurable options for this Egg.
 
-**Étape 4: Modifier la variable de la clé FiveM**
-Vous retrouvez la variable d'environement FiveM Licence ou vous pourrez modifier la valeur par default comme ceci
+**Step 4: Modify the FiveM key variable**
+Find the FiveM Licence environment variable where you can modify the default value like this
 
-![Etape 4](/img/tutorial/step2.png)
+![Step 4](/img/tutorial/step2.png)
 
-**Étape 5: Enregistrer les modifications**
+**Step 5: Save the changes**
 
-Une fois que vous avez ajouté la variable de la clé FiveM, cliquez sur le bouton "Save Egg" pour enregistrer les modifications apportées à l'Egg.
+Once you have added the FiveM key variable, click the "Save Egg" button to save the changes made to the Egg.
 
-**Étape 6: Vérification**
+**Step 6: Verification**
 
-Après avoir enregistré les modifications, assurez-vous de vérifier si la clé FiveM est correctement ajoutée par défaut lors de la création d'un nouveau serveur avec cet Egg. Lorsque les utilisateurs sélectionnent l'Egg, la variable de la clé FiveM doit être préremplie avec la valeur par défaut que vous avez spécifiée.
+After saving the changes, make sure to verify if the FiveM key is correctly added by default when creating a new server with this Egg. When users select the Egg, the FiveM key variable should be pre-filled with the default value you specified.
 
-Assurez-vous également que la clé fonctionne correctement avec le serveur FiveM lorsqu'il est utilisé.
+Also make sure the key works correctly with the FiveM server when in use.
 
-C'est tout ! Vous avez maintenant ajouté avec succès une clé FiveM par défaut à votre Egg Pterodactyl, offrant une meilleure expérience aux utilisateurs lors de la création de serveurs de jeu FiveM avec CLIENTXCMS.
+That's it! You have now successfully added a default FiveM key to your Pterodactyl Egg, providing a better experience for users when creating FiveM game servers with CLIENTXCMS.
