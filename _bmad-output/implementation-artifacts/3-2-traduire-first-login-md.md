@@ -1,6 +1,6 @@
 # Story 3.2: Traduire first_login.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -42,34 +42,34 @@ so that international users can understand how to access the admin panel and act
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Create EN file with frontmatter (AC: #2)
-  - [ ] 1.1 Create file at `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md`
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Preserve `sidebar_position: 1`
+- [x] Task 1: Create EN file with frontmatter (AC: #2)
+  - [x] 1.1 Create file at `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md`
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Preserve `sidebar_position: 1`
 
-- [ ] Task 2: Translate header and intro section (AC: #1, #3)
-  - [ ] 2.1 Translate title "Premiere connexion" to "First Login"
-  - [ ] 2.2 Translate intro paragraph about login credentials
-  - [ ] 2.3 Keep image path unchanged
+- [x] Task 2: Translate header and intro section (AC: #1, #3)
+  - [x] 2.1 Translate title "Premiere connexion" to "First Login"
+  - [x] 2.2 Translate intro paragraph about login credentials
+  - [x] 2.3 Keep image path unchanged
 
-- [ ] Task 3: Translate Dashboard paragraph (AC: #1, #4)
-  - [ ] 3.1 Translate Dashboard description paragraph
-  - [ ] 3.2 Translate :::info TIPS admonition
-  - [ ] 3.3 Preserve keyboard shortcut `Ctrl + /`
+- [x] Task 3: Translate Dashboard paragraph (AC: #1, #4)
+  - [x] 3.1 Translate Dashboard description paragraph
+  - [x] 3.2 Translate :::info TIPS admonition
+  - [x] 3.3 Preserve keyboard shortcut `Ctrl + /`
 
-- [ ] Task 4: Translate extensions section (AC: #1, #3, #5)
-  - [ ] 4.1 Translate "Activer les premieres extensions" heading to "Activate your first extensions"
-  - [ ] 4.2 Translate extension activation instructions
-  - [ ] 4.3 Translate Pterodactyl example
-  - [ ] 4.4 Keep image path unchanged
-  - [ ] 4.5 Verify links to `/extensions/` and `/getting_started/server`
+- [x] Task 4: Translate extensions section (AC: #1, #3, #5)
+  - [x] 4.1 Translate "Activer les premieres extensions" heading to "Activate your first extensions"
+  - [x] 4.2 Translate extension activation instructions
+  - [x] 4.3 Translate Pterodactyl example
+  - [x] 4.4 Keep image path unchanged
+  - [x] 4.5 Verify links to `/extensions/` and `/getting_started/server`
 
-- [ ] Task 5: Build and test (AC: #6)
-  - [ ] 5.1 Run `npm run build`
-  - [ ] 5.2 Run `npm run serve` and test EN URL
-  - [ ] 5.3 Verify no "Not translated" banner
-  - [ ] 5.4 Verify FR page still works
-  - [ ] 5.5 Test both internal links
+- [x] Task 5: Build and test (AC: #6)
+  - [x] 5.1 Run `npm run build`
+  - [x] 5.2 Run `npm run serve` and test EN URL
+  - [x] 5.3 Verify no "Not translated" banner
+  - [x] 5.4 Verify FR page still works
+  - [x] 5.5 Test both internal links
 
 ## Dev Notes
 
@@ -311,10 +311,27 @@ This is story 3.2 (second of 9). The complete Getting Started section:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+None - implementation was straightforward.
+
 ### Completion Notes List
 
+- Created EN translation file with proper frontmatter (`translated: true`, `sidebar_position: 1`)
+- Translated all French content to natural English
+- Preserved both screenshot paths unchanged (FR interface acceptable for MVP)
+- Translated :::info TIPS admonition with keyboard shortcut preserved
+- Maintained internal links to `/extensions/` and `/getting_started/server`
+- Build successful for both EN and FR locales
+- No "Not yet translated" banner on EN page
+
+### Change Log
+
+- 2026-01-24: Story 3-2 completed - First Login page translated to English
+
 ### File List
+
+**New Files:**
+- `i18n/en/docusaurus-plugin-content-docs/current/getting_started/first_login.md`
