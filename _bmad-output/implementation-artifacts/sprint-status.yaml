@@ -76,8 +76,8 @@ development_status:
   3-5-traduire-products-md: review
   3-6-traduire-payments-md: review
   3-7-traduire-accounts-md: ready-for-dev
-  3-8-traduire-service-md: backlog
-  3-9-traduire-finish-md: backlog
+  3-8-traduire-service-md: ready-for-dev
+  3-9-traduire-finish-md: ready-for-dev
   epic-3-retrospective: optional
 
   # Epic 4: MVD - Settings Core
