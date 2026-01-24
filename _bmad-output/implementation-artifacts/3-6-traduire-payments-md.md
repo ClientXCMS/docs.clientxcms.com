@@ -1,6 +1,6 @@
 # Story 3.6: Traduire payments.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -449,3 +449,29 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 | Date | Change |
 |------|--------|
 | 2026-01-24 | Translated payments.md to English, all ACs satisfied |
+| 2026-01-24 | Code review: fixed 6 issues (terminology, navigation paths, imports placement) |
+
+## Senior Developer Review (AI)
+
+**Review Date:** 2026-01-24
+**Reviewer:** Claude Opus 4.5
+**Outcome:** APPROVED (with fixes applied)
+
+### Issues Found and Fixed
+
+| Severity | Issue | Resolution |
+|----------|-------|------------|
+| MEDIUM | "client area" terminology inconsistent | Changed to "customer portal" |
+| MEDIUM | Navigation path repeated 3x with redundant "Billing > Billing" | Simplified to `Settings` > `Billing` |
+| MEDIUM | Sprint-status tracking note | Status updated to "done" |
+| LOW | Import statements after intro text | Moved imports to top after frontmatter |
+| LOW | Missing blank line after frontmatter | Added blank line |
+| LOW | Inconsistent navigation format | Standardized to `>` separator |
+
+### Verification
+
+- [x] Build passes (`npm run build`)
+- [x] All ACs verified implemented
+- [x] All tasks marked [x] confirmed done
+- [x] Terminology consistent with project standards
+- [x] Navigation paths simplified and consistent

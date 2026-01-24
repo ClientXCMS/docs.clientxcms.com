@@ -2,14 +2,15 @@
 sidebar_position: 6
 translated: true
 ---
-# Payment Configuration
-
-You can configure multiple payment methods for your client area. The list is available [here](../settings/store/payment_gateways/).
-
-You can configure your payment methods by going to the `Settings` menu, then the `Store Settings` section, and selecting the payment method you want to configure.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+# Payment Configuration
+
+You can configure multiple payment methods for your customer portal. The list is available [here](../settings/store/payment_gateways/).
+
+You can configure your payment methods by going to `Settings` > `Store Settings`, then selecting the payment method you want to configure.
 
 <Tabs>
 <TabItem value="PayPalExpressCheckout" label="PayPal Express Checkout">
@@ -31,13 +32,13 @@ The configuration process for Stancer is available [here](/settings/store/paymen
 
 ## Invoice Customization
 
-You can modify the billing address or invoice terms and conditions by going to the billing settings in `Settings` > `Billing` > `Billing`.
+You can modify the billing address or invoice terms and conditions in `Settings` > `Billing`.
 
 You can also change the invoice prefix by setting a prefix specific to your business. We recommend using a short prefix of 3 to 5 characters. The prefix is used to generate the unique invoice identifier. For example: `INV-2024-01-001` for the first invoice of 2024. This makes it easier to keep track of invoices.
 
 ## Disable VAT
 
-You can disable VAT for your business by going to the billing settings in `Settings` > `Billing` > `Billing`. You can also change the default VAT rate according to your country or toggle price display with or without VAT.
+You can disable VAT for your business in `Settings` > `Billing`. You can also change the default VAT rate according to your country or toggle price display with or without VAT.
 
 :::info
 Please note that all prices configured in your store must be tax-exclusive. VAT will be added to the price at checkout. If you want to display prices including VAT, you can set the display price as tax-inclusive.
@@ -45,4 +46,4 @@ Please note that all prices configured in your store must be tax-exclusive. VAT 
 
 ## Terms and Conditions
 
-You can set terms and conditions for your store by going to the billing settings in `Settings` > `Billing` > `Billing`. The terms and conditions will be displayed on the payment page for users to accept before confirming their order.
+You can set terms and conditions for your store in `Settings` > `Billing`. The terms and conditions will be displayed on the payment page for users to accept before confirming their order.
