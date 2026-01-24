@@ -1,16 +1,17 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
-# Page d'accueil
+# Home Page
 
-Dans **CLIENTXCMS**, la **page d'accueil** constitue la vitrine de votre entreprise et le premier point de contact avec vos clients. <br/>
-L'objectif est crucial : **créer une première impression mémorable**, **communiquer votre valeur ajoutée** et **guider naturellement les visiteurs vers l'action**. Une page d'accueil bien conçue augmente la confiance, améliore l'engagement et booste les conversions.
+In **CLIENTXCMS**, the **home page** serves as your company's showcase and the first point of contact with your customers. <br/>
+The objective is crucial: **create a memorable first impression**, **communicate your value proposition** and **naturally guide visitors toward action**. A well-designed home page increases trust, improves engagement and boosts conversions.
 
-Cette page permet de configurer les éléments fondamentaux de votre page d'accueil pour créer une expérience d'arrivée optimale.
+This page allows you to configure the fundamental elements of your home page to create an optimal arrival experience.
 
-Vous pouvez personnaliser la page d'accueil depuis :
+You can customize the home page from:
 
-`Paramètres` > `Personnalisation` > `Page d'accueil`
+`Settings` > `Personalization` > `Home Page`
 
-![Configuration de la page d'accueil](/img/next_gen/settings/personalization/home/index.png)
+![Home page configuration](/img/next_gen/settings/personalization/home/index.png)
