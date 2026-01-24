@@ -1,147 +1,148 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 # Pterodactyl
-Pterodactyl est un panel très répandu pour gérer des serveurs de jeux très rapidement et simplement. Ce module permet de créer les services de vos clients avec les performances choisis.
-Il permet de proposer tous les types d'œuf Pterodactyl possible à la vente.
+Pterodactyl is a widely used panel for managing game servers quickly and easily. This module allows you to create services for your customers with their chosen performance settings.
+It allows you to offer all types of Pterodactyl eggs for sale.
 
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Pterodactyl soit activé sur votre CLIENTXCMS . [cliquez ici pour l'activer](../)
+To use the following features, the Pterodactyl module must be enabled on your CLIENTXCMS. [click here to enable it](../)
 :::
 
-## Authentification
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Pterodactyl". 
+## Authentication
+Create a CLIENTXCMS server in `Administration Area` > `Settings` > `Provisioning` > `Servers` > `New` by selecting the server type as "Pterodactyl".
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_1.png)
 
-**Adresse IP** : Adresse IP du Pterodactyl.
+**IP Address**: Pterodactyl IP address.
 
-**Nom d'hôte** : Nom d'hôte du Pterodactyl.
+**Hostname**: Pterodactyl hostname.
 
-**Port** : 443 avec un domaine ou 80 avec une IP.
+**Port**: 443 with a domain or 80 with an IP.
 
-**Client API** : Clé client.
+**Client API**: Client key.
 
-**Application API** : Clé application.
+**Application API**: Application key.
 
-### Clé client 
+### Client Key
 
-Clé d'api client disponible sur votre Pterodactyl `/account/api`
+Client API key available on your Pterodactyl at `/account/api`
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_2.png)
 
-**Description** : CLIENTXCMS API
+**Description**: CLIENTXCMS API
 
-**Allowed ips** : Laissez vide ou mettez l'IP de votre CLIENTXCMS pour plus de sécurité.
+**Allowed IPs**: Leave empty or enter your CLIENTXCMS IP for more security.
 
-Votre clé d'api client vous sera donnée qu'une seule fois, après elle sera tronquée.
-### Clé application
-Clé d'api client (Account) disponible sur votre Pterodactyl `/admin/api/new`
+Your client API key will only be given once, after that it will be truncated.
+### Application Key
+Application API key available on your Pterodactyl at `/admin/api/new`
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_3.png)
-**Permissions** : Comme dans la capture
+**Permissions**: As shown in the screenshot
 
-**Description** : CLIENTXCMS API
+**Description**: CLIENTXCMS API
 
-## Configuration de l'offre
+## Offer Configuration
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
-- **Mémoire (MB)**: Mémoire du serveur
-- **Espace Disque (MB)** : Espace disque du serveur
-- **Block IO** : poids IO du serveur.
-- **Swap**: Swap du serveur
-- **ID Egg Pterodactyl**: Eggs disponible
-- **ID Location Pterodactyl**: Location Pterodactyl
-- **Serveur**: Serveur Pterodactyl où le service va être livrer
-- **Port à attribuer au serveur** : Ports spécifiques (Exemple FIVEM)
-- **Nom du serveur** : Nom du serveur**
-- **Bases de données à attribuer au serveur** : Nombre de bases de données
-- **Sauvegardes de données à attribuer au serveur** : Nombre de sauvegardes
-- **Allocation à attribuer au serveur** : Nombre d'allocations (port à donner)
+- **Memory (MB)**: Server memory
+- **Disk Space (MB)**: Server disk space
+- **Block IO**: Server IO weight
+- **Swap**: Server swap
+- **Pterodactyl Egg ID**: Available eggs
+- **Pterodactyl Location ID**: Pterodactyl location
+- **Server**: Pterodactyl server where the service will be delivered
+- **Ports to assign to server**: Specific ports (Example: FiveM)
+- **Server name**: Server name**
+- **Databases to assign to server**: Number of databases
+- **Backups to assign to server**: Number of backups
+- **Allocations to assign to server**: Number of allocations (ports to give)
 
-:::success Conseil de pro
-Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf pterodactyl qui veulent parmi la liste
+:::success Pro Tip
+You can select multiple eggs and your customers can choose the Pterodactyl egg they want from the list
 :::
 
-** Vous pouvez utiliser des variables pour personnaliser le nom du serveur.
+** You can use variables to customize the server name.
 
-### Variables disponibles 
+### Available Variables
 
 | Variables         | Description                   |
 |-------------------|-------------------------------|
-| %owner_email%     | Email de l'utilisateur        |
-| %owner_username%  | Nom + Prénom de l'utilisateur |
-| %owner_firstname% | Prénom de l'utilisateur       |
-| %owner_lastname%  | Nom de l'utilisateur          |
-| %product_name%    | Nom du produit                |
-| %order_id%        | Id de la commande             |
-| %service_id%      | Id du service                 |
+| %owner_email%     | User email                    |
+| %owner_username%  | User First + Last Name        |
+| %owner_firstname% | User first name               |
+| %owner_lastname%  | User last name                |
+| %product_name%    | Product name                  |
+| %order_id%        | Order ID                      |
+| %service_id%      | Service ID                    |
 
-## Panel de gestion
+## Management Panel
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_5.png)
 
-## Options supportées
-- Espace disque supplémentaires (curseurs ou menu déroulant)
-- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
-- Swap supplémentaire (curseurs ou menu déroulant)
-- IO supplémentaire (curseurs ou menu déroulant)
-- CPU supplémentaire (curseurs ou menu déroulant)
-- Bases de données supplémentaires (curseurs ou menu déroulant)
-- Allocations supplémentaires (curseurs ou menu déroulant)
-- Sauvegardes supplémentaires (curseurs ou menu déroulant)
-- Emplacement (location_id) (menu déroulant)
-- IP dédiée (case à cocher)
+## Supported Options
+- Additional disk space (sliders or dropdown menu)
+- Additional RAM memory (sliders or dropdown menu)
+- Additional swap (sliders or dropdown menu)
+- Additional IO (sliders or dropdown menu)
+- Additional CPU (sliders or dropdown menu)
+- Additional databases (sliders or dropdown menu)
+- Additional allocations (sliders or dropdown menu)
+- Additional backups (sliders or dropdown menu)
+- Location (location_id) (dropdown menu)
+- Dedicated IP (checkbox)
 
-### Environnement personnalisé
-Vous pouvez également ajouter des options supplémentaires avec les variables d'enviroennement du serveur. Pour cela, rendez-vous dans `Paramètres` > `Approvisionnement` > `Options supplémentaires` et sélectionnez le type texte avec une clé personnalisée ayant le nom de la variable d'environnement du serveur préfixé par `pterodactyl_custom_` par exemple `pterodactyl_custom_fivem_license` pour demander une licence FiveM à votre client.
+### Custom Environment
+You can also add additional options with server environment variables. To do this, go to `Settings` > `Provisioning` > `Additional Options` and select the text type with a custom key having the name of the server environment variable prefixed by `pterodactyl_custom_`, for example `pterodactyl_custom_fivem_license` to request a FiveM license from your customer.
 
-Voici un exemple de configuration d'une option supplémentaire pour demander une licence FiveM à votre client.
+Here is an example configuration of an additional option to request a FiveM license from your customer.
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/image.png)
 
-Lors d'une commande, le client pourra renseigner la valeur de cette variable d'environnement.
+When ordering, the customer can enter the value of this environment variable.
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/image_fivem.png)
 
 
 
-## Connexion automatique (SSO) Pterodactyl
+## Automatic Login (SSO) Pterodactyl
 
-Permettez à vos clients d'accéder à leur panel Pterodactyl en un clic depuis CLIENTXCMS, sans avoir à ressaisir leur mot de passe.
+Allow your customers to access their Pterodactyl panel in one click from CLIENTXCMS, without having to re-enter their password.
 
-### Mise en place rapide
-1. Sur votre VPS, placez-vous dans le dossier du panel :
+### Quick Setup
+1. On your VPS, navigate to the panel folder:
    ```bash
    cd /var/www/pterodactyl
    composer require "clientxcms/pterodactyl-sso"
    ```
-2. Videz le cache :
+2. Clear the cache:
    ```bash
    php artisan cache:clear
    ```
-3. Générez la clé SSO :
+3. Generate the SSO key:
    ```bash
    php artisan clientxcms:generate
    ```
-   > Un jeton SSO est généré et ajouté dans votre `.env`. Gardez-le secret !
+   > An SSO token is generated and added to your `.env`. Keep it secret!
 ![img](/img/next_gen/extensions/modules/pterodactyl/image_sso_generate.png)
 
-4. Dans CLIENTXCMS, sur la page de configuration de votre serveur Pterodactyl (`/admin/servers`), ajoutez une meta donnée :
-   - **Clé** : `sso_key`
-   - **Valeur** : le jeton SSO généré
+4. In CLIENTXCMS, on your Pterodactyl server configuration page (`/admin/servers`), add a metadata:
+   - **Key**: `sso_key`
+   - **Value**: the generated SSO token
 
-**Alternative avancée** :
-Vous pouvez aussi placer le jeton dans le `.env` de CLIENTXCMS avec la variable `SSO_CLIENTXCMS_KEY{SERVER_ID}` (remplacez `{SERVER_ID}` par l'ID du serveur). Dans ce cas, la meta donnée n'est pas nécessaire.
+**Advanced Alternative**:
+You can also place the token in the CLIENTXCMS `.env` with the variable `SSO_CLIENTXCMS_KEY{SERVER_ID}` (replace `{SERVER_ID}` with the server ID). In this case, the metadata is not necessary.
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/image_sso_metadata.png)
 
-Vos clients profiteront alors d'une connexion directe à leur panel Pterodactyl depuis CLIENTXCMS.
+Your customers will then enjoy direct connection to their Pterodactyl panel from CLIENTXCMS.
 
 :::info
-L'autoconnexion ne fonctionne pas si l'authentification à deux facteurs est activée sur Pterodactyl ou pour les comptes administrateurs.
+Auto-login does not work if two-factor authentication is enabled on Pterodactyl or for administrator accounts.
 :::
 
-## Erreurs courantes
+## Common Errors
 
-Oeuf non trouvé dans la configuration de l'offre : Il faut vider le cache de CLIENTXCMS dans `Paramètres` > `Extensions`.
+Egg not found in offer configuration: You need to clear the CLIENTXCMS cache in `Settings` > `Extensions`.
 
-**No allocations satisfying the requirements for automatic deployment were found.** : Vérifiez que vous avez bien des allocations disponibles sur votre node Pterodactyl ou que la création automatique d'allocation est activée dans les paramètres avancés de votre pterodactyl.
+**No allocations satisfying the requirements for automatic deployment were found.**: Check that you have available allocations on your Pterodactyl node or that automatic allocation creation is enabled in your pterodactyl's advanced settings.

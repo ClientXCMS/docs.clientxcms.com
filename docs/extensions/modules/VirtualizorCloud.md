@@ -1,60 +1,61 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 
-# Virtualizor pour revendeur
+# Virtualizor for Resellers
 
-Le module Virtualizor Cloud permet de fournir des offres VPS à vos clients. Le module supporte les hébergement VPS. Ce module est fait pour les revendeurs qui veulent proposer des offres VPS à leurs clients.
+The Virtualizor Cloud module allows you to provide VPS offers to your customers. The module supports VPS hosting. This module is made for resellers who want to offer VPS plans to their customers.
 
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Virtualizor Cloud soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
+To use the following features, the Virtualizor Cloud module must be enabled on your CLIENTXCMS. [click here to enable it](../)
 :::
 
-### Fonctionnalités supportées 
-- Automatisez la création et l'approvisionnement des comptes
-- Gestion des vps depuis l'espace client
-- Envoie des identifiants de connexion par E-mail
-- Automatisez les suspensions et les résiliations
+### Supported Features
+- Automate account creation and provisioning
+- VPS management from the client area
+- Send login credentials by email
+- Automate suspensions and terminations
 
-## Création API Virtualizor Cloud 
-Créez un API dans `Votre Virtualizor Cloud` > `Clef d'api` > `Menu de profil en haut à droite` > `API credentials` > `ajouter L'IP a autoriser`
+## Virtualizor Cloud API Creation
+Create an API in `Your Virtualizor Cloud` > `API Key` > `Profile menu at the top right` > `API credentials` > `add the IP to authorize`
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image2.png)
 
-Appuyer sur "Create API Key Pair"
+Click on "Create API Key Pair"
 
-Ensuite, vous allez avoir la clef API pour relier votre vitualizor cloud sur votre espace client
+Then, you will have the API key to link your Virtualizor Cloud to your client area
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image3.png)
 
-## Création du serveur
+## Server Creation
 
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Virtualizor Cloud".
+Create a CLIENTXCMS server in `Administration Area` > `Settings` > `Provisioning` > `Servers` > `New` by selecting the server type as "Virtualizor Cloud".
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image.png)
 
-**Adresse IP** : Sous domaine ou adresse IP du Virtualizor Cloud
+**IP Address**: Subdomain or Virtualizor Cloud IP address
 
-**Key** : API KEY
+**Key**: API KEY
 
-**Password** : API PASSWORD
+**Password**: API PASSWORD
 
-Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Virtualizor Cloud : 4083
+The following port must be open to connect CLIENTXCMS to your Virtualizor Cloud: 4083
 
-Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
+You can test the server connection and verify that the server returns *"Success"* as a response.
 
-## Configuration de l'offre
-En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant Virtualizor Cloud.
+## Offer Configuration
+First, [create your product](../../settings/store/products.md#créer-un-nouveau-produit) by selecting Virtualizor Cloud.
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image5.png)
 
-Après appuyer sur le bouton "Créer" il vous crée votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigera vers la page de configuration de l'offre. Si les champs est vide, assurez-vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système créer vos offres vps.
+After pressing the "Create" button, it creates your product and then click on the "Configure Offer" button which will direct you to the offer configuration page. If the fields are empty, make sure your server is not hidden, otherwise it will not be taken into account in the system to create your VPS offers.
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image4.png)
 
-Dans cette page, vous pourrez sélectionner le plan qui faudra livrer à vos clients puis sauvegarder.
+On this page, you can select the plan to deliver to your customers and then save.
 
-### Panel de gestion
+### Management Panel
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -66,19 +67,19 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 
-<TabItem value="Reinstallation" label="Réinstallation">
+<TabItem value="Reinstallation" label="Reinstallation">
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image7.png)
 
 </TabItem>
 
-<TabItem value="Nomhote" label="Nom d'hôte">
+<TabItem value="Nomhote" label="Hostname">
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image8.png)
 
 </TabItem>
 
-<TabItem value="password" label="Mot de passe">
+<TabItem value="password" label="Password">
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image9.png)
 
@@ -86,8 +87,8 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-## Metadonnées utilisées
+## Metadata Used
 
-| Clé     | Valeur | Description        |
-|---------|--------|--------------------|
-| `vpsid` | int    | Identifiant du VPS |
+| Key     | Value | Description    |
+|---------|-------|----------------|
+| `vpsid` | int   | VPS identifier |

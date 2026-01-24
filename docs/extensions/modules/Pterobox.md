@@ -1,64 +1,65 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 # PteroBox
 
-PteroBox est une solution innovante, idéale pour les hébergeurs utilisant **Pterodactyl** ou **Wisp**. Ce module permet à vos clients de créer, modifier et supprimer leurs propres serveurs de jeu facilement, tout en garantissant une allocation précise des ressources dédiées. Proposez une expérience flexible et optimisée pour tous les types de jeux et besoins.
+PteroBox is an innovative solution, ideal for hosting providers using **Pterodactyl** or **Wisp**. This module allows your customers to easily create, modify, and delete their own game servers while ensuring precise allocation of dedicated resources. Offer a flexible and optimized experience for all types of games and needs.
 
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module PteroBox et Pterodactyl/Wisp soit activés sur votre CLIENTXCMS.
+To use the following features, both the PteroBox and Pterodactyl/Wisp modules must be enabled on your CLIENTXCMS.
 :::
 
-## Authentification
-Si ce n'est pas déjà fait, il suffit d'ajouter un serveur sur votre ClientXCMS, soit [Pterodactyl](/extensions/modules/Pterodactyl#authentification), soit [Wisp](/extensions/modules/Wisp#authentification), en fonction du panneau de jeux que vous utilisez.
+## Authentication
+If not already done, simply add a server to your ClientXCMS, either [Pterodactyl](/extensions/modules/Pterodactyl#authentication) or [Wisp](/extensions/modules/Wisp#authentication), depending on which game panel you use.
 
-### Configuration de l'offre  
-![img](/img/next_gen/extensions/modules/pterobox/images_1.png)  
+### Offer Configuration
+![img](/img/next_gen/extensions/modules/pterobox/images_1.png)
 
-- **Mémoire (Go)** : Quantité totale de mémoire RAM allouée.  
-- **Disque (Go)** : Espace disque total alloué.  
-- **Serveurs autorisés** : Nombre maximal de serveurs que le client peut créer.  
-- **I/O** : Poids des entrées/sorties (IO) alloué par serveur.  
-- **Œufs de jeux** : Types d’œufs (Eggs) disponibles pour les serveurs.  
-- **Emplacement** : Localisation des instances Pterodactyl ou Wisp.  
-- **Serveur** : Serveur Pterodactyl ou Wisp configuré sur ClientXCMS où les serveurs de la Pterobox sont hébergés.  
-- **Processeur** : Nombre total de cœurs CPU alloués (1 = 100 %, 3 = 300 %, etc.).  
-- **Swap** : Quantité de mémoire virtuelle (swap) allouée par serveur.  
-- **Bases de données** : Nombre total de bases de données allouées.  
-- **Allocations** : Nombre total de ports réseau alloués.  
-- **Sauvegardes** : Nombre total de sauvegardes autorisées.  
-- **Plage de ports (optionnel)** : Plage spécifique de ports réseau alloués pour chaque serveur.  
-- **Nom du serveur (optionnel)** : Nom par défaut attribué à chaque serveur créé dans la Pterobox.  
-- **Description du serveur** : Description par défaut attribuée à chaque serveur créé dans la Pterobox.
+- **Memory (GB)**: Total amount of allocated RAM memory.
+- **Disk (GB)**: Total allocated disk space.
+- **Allowed Servers**: Maximum number of servers the customer can create.
+- **I/O**: Input/output (IO) weight allocated per server.
+- **Game Eggs**: Types of eggs available for servers.
+- **Location**: Location of Pterodactyl or Wisp instances.
+- **Server**: Pterodactyl or Wisp server configured on ClientXCMS where Pterobox servers are hosted.
+- **CPU**: Total number of allocated CPU cores (1 = 100%, 3 = 300%, etc.).
+- **Swap**: Amount of virtual memory (swap) allocated per server.
+- **Databases**: Total number of allocated databases.
+- **Allocations**: Total number of allocated network ports.
+- **Backups**: Total number of allowed backups.
+- **Port Range (optional)**: Specific range of network ports allocated for each server.
+- **Server Name (optional)**: Default name assigned to each server created in the Pterobox.
+- **Server Description**: Default description assigned to each server created in the Pterobox.
 
-:::success Conseil de pro
-Vous pouvez sélectionner plusieurs eggs et vos clients pourront choisir l'œuf qui veulent pour chacun de leurs serveurs créés, parmi la liste.
+:::success Pro Tip
+You can select multiple eggs and your customers can choose the egg they want for each of their created servers from the list.
 :::
 
-**Vous pouvez utiliser des variables pour personnaliser le nom du serveur.**
+**You can use variables to customize the server name.**
 
-### Variables disponibles 
+### Available Variables
 | Variables            | Description                   |
 |----------------------|-------------------------------|
-| %service_expiration% | Date d'expiration du service  |
-| %service_id%         | ID du service                 |
-| %product_name%       | Nom du produit                |
-| %owner_email%        | Email de l'utilisateur        |
-| %owner_username%     | Nom + Prénom de l'utilisateur |
-| %owner_firstname%    | Prénom de l'utilisateur       |
-| %owner_lastname%     | Nom de l'utilisateur          |
+| %service_expiration% | Service expiration date       |
+| %service_id%         | Service ID                    |
+| %product_name%       | Product name                  |
+| %owner_email%        | User email                    |
+| %owner_username%     | User First + Last Name        |
+| %owner_firstname%    | User first name               |
+| %owner_lastname%     | User last name                |
 
 
-## Panel de gestion
+## Management Panel
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Overview" label="Gestion serveurs">
+<TabItem value="Overview" label="Server Management">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_overview.png)
 </TabItem>
-<TabItem value="Create" label="Création de serveur">
+<TabItem value="Create" label="Server Creation">
 ![img](/img/next_gen/extensions/modules/pterobox/pov_client_create-server.png)
 </TabItem>
 <TabItem value="Admin" label="Administration">
@@ -66,25 +67,25 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
-## Options supportées
-- Espace disque supplémentaires (curseurs ou menu déroulant)
-- Mémoire RAM supplémentaires (curseurs ou menu déroulant)
-- Swap supplémentaire (curseurs ou menu déroulant)
-- Bases de données supplémentaires (curseurs ou menu déroulant)
-- Allocations supplémentaires (curseurs ou menu déroulant)
-- Sauvegardes supplémentaires (curseurs ou menu déroulant)
-- IO supplémentaires (curseurs ou menu déroulant)
-- CPU supplémentaires (curseurs ou menu déroulant)
-- Serveurs supplémentaires (curseurs ou menu déroulant)
+## Supported Options
+- Additional disk space (sliders or dropdown menu)
+- Additional RAM memory (sliders or dropdown menu)
+- Additional swap (sliders or dropdown menu)
+- Additional databases (sliders or dropdown menu)
+- Additional allocations (sliders or dropdown menu)
+- Additional backups (sliders or dropdown menu)
+- Additional IO (sliders or dropdown menu)
+- Additional CPU (sliders or dropdown menu)
+- Additional servers (sliders or dropdown menu)
 
-Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](/settings/provisioning/configoptions).
+Dropdown menus allow you to define predefined values for resources with a price for each value, while sliders allow you to define custom values based on a unit price. More information on option configuration is available in the [additional options documentation](/settings/provisioning/configoptions).
 
-## Metadonnées utilisées
+## Metadata Used
 
-| Clé              | Valeur | Description                        |
-|------------------|--------|------------------------------------|
-| `config`         | JSON   | Configuration de la box            |
-| `config_used`    | JSON   | Performances utilisées de la box   |
-| `linked_servers` | CSV    | Liste des serveurs reliés à la box |
+| Key              | Value | Description                        |
+|------------------|-------|------------------------------------|
+| `config`         | JSON  | Box configuration                  |
+| `config_used`    | JSON  | Box used performance               |
+| `linked_servers` | CSV   | List of servers linked to the box  |
 ----
 

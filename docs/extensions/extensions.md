@@ -1,31 +1,32 @@
 ---
 sidebar_position: 5
+translated: true
 ---
 
 # Extensions
 
-Les extensions sont des fonctionnalités développées appart de CLIENTXCMS qui peuvent-être ajouter en un clic. Elles permettent d'ajouter des méthodes de paiement ou des fournisseurs de service (Plesk, Pterodactyl, Virtualizor) ou permet d'ajouter de nouvelles pages ou fonctionnalités.
-Ceci une page de documentation globale sur la gestion des modules.
+Extensions are features developed separately from CLIENTXCMS that can be added in one click. They allow you to add payment methods or service providers (Plesk, Pterodactyl, Virtualizor) or add new pages or features.
+This is a global documentation page on module management.
 
-## Types d'extensions
+## Types of Extensions
 
-- **Modules** : Ensemble des plateformes pour fournir des services d'hébergement, compatible avec la livraison de service automatique, et d'autres fonctionnalités. (ex: Pterodactyl, Plesk, Proxmox, etc.)
-- **Addons** : Ensemble de fonctionnalités divers qui peuvent être ajoutées.
-- **Thèmes** : Ensemble de fichiers de style pour personnaliser l'apparence du CMS.
+- **Modules**: Set of platforms to provide hosting services, compatible with automatic service delivery, and other features. (e.g.: Pterodactyl, Plesk, Proxmox, etc.)
+- **Addons**: Set of various features that can be added.
+- **Themes**: Set of style files to customize the CMS appearance.
 
-### Extensions officielles
+### Official Extensions
 ![img](/img/next_gen/extensions/image_1.png)
 
-*Note* : Les extensions autorisées sont récupérées automatiquement depuis l'API CLIENTXCMS de l'utilisateur de la licence de l'installation. En cas d'achat depuis un autre utilisateur, il faudra demander à notre support de modifier.
+*Note*: Authorized extensions are automatically retrieved from the CLIENTXCMS API of the installation's license user. In case of purchase from another user, you will need to contact our support to modify.
 
-## Installation d'une extension
-Pour installer une extension officielle, il suffit de vous rendre dans votre `Espace d'administration` > `Extensions` puis cliquez sur "Activer" en dessous du nom de l'extension.
+## Installing an Extension
+To install an official extension, simply go to your `Administration Area` > `Extensions` then click on "Enable" below the extension name.
 :::info Information
-Si aucun bouton n'apparaît, il suffit de forcer l'actualisation du cache en cliquant sur le bouton "Forcer la vérification" qui se trouve dans `Espace d'administration` > `Licence`.
-Si le problème persiste, veuillez contacter notre support.
-Pour un achat récent, veuillez attendre un peu ou forcer également l'actualisation du cache.
+If no button appears, simply force the cache refresh by clicking the "Force Check" button found in `Administration Area` > `License`.
+If the problem persists, please contact our support.
+For a recent purchase, please wait a bit or also force the cache refresh.
 :::
 ![img](/img/next_gen/extensions/image_2.png)
 
-## Activation / Désactivation d'une extension
-L'activation se fait en 1 clic, sur la page `Espace d'administration` > `Extensions` en cliquant sur le bouton `Activer` ou `Désactiver` (selon l'action que vous souhaitez réaliser), en bas de la boîte d'informations de l'extension.
+## Enabling / Disabling an Extension
+Enabling is done in 1 click, on the `Administration Area` > `Extensions` page by clicking the `Enable` or `Disable` button (depending on the action you want to perform), at the bottom of the extension information box.
