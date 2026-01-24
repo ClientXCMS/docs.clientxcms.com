@@ -64,7 +64,7 @@ development_status:
   2-5-traduire-plesk-md: done
   2-6-traduire-docker-md: done
   2-7-traduire-ansible-md: done
-  2-8-traduire-upgrade-md: in-progress
+  2-8-traduire-upgrade-md: review
   epic-2-retrospective: optional
 
   # Epic 3: MVD - Getting Started
