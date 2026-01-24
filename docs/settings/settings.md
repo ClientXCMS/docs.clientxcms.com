@@ -1,12 +1,15 @@
+---
+translated: true
+---
 import ThemedImage from '@theme/ThemedImage';
 
-# Paramètres
+# Settings
 
-Le panneau de paramètres de ClientXCMS vous permet de configurer tous les aspects de votre plateforme. Les paramètres sont organisés en 9 catégories principales pour une gestion optimale de votre espace client.
+The ClientXCMS settings panel allows you to configure all aspects of your platform. Settings are organized into 9 main categories for optimal management of your client area.
 
-## Configuration détaillée par catégorie
+## Detailed Configuration by Category
 
-Accédez directement aux différentes sections de configuration :
+Access the different configuration sections directly:
 
 <style>
 {`
@@ -45,157 +48,157 @@ Accédez directement aux différentes sections de configuration :
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginBottom: '2rem'}}>
 
-<a href="#paramètres-généraux" className="settings-card">
-  <h3>🏢 Paramètres généraux</h3>
-  <p>Configuration de base (nom, logo, mail, maintenance, langues, licence)</p>
+<a href="#general-settings" className="settings-card">
+  <h3>🏢 General Settings</h3>
+  <p>Basic configuration (name, logo, email, maintenance, languages, license)</p>
 </a>
 
-<a href="#approvisionnement" className="settings-card">
-  <h3>⚙️ Approvisionnement</h3>
-  <p>Gestion des services et serveurs</p>
+<a href="#provisioning" className="settings-card">
+  <h3>⚙️ Provisioning</h3>
+  <p>Service and server management</p>
 </a>
 
-<a href="#paramètres-de-la-boutique" className="settings-card">
-  <h3>🛒 Paramètres de la boutique</h3>
-  <p>Produits, paiements, coupons, facturation</p>
+<a href="#store-settings" className="settings-card">
+  <h3>🛒 Store Settings</h3>
+  <p>Products, payments, coupons, invoicing</p>
 </a>
 
-<a href="#paramètres-des-extensions" className="settings-card">
-  <h3>🧩 Paramètres des extensions</h3>
-  <p>Modules et addons installés</p>
+<a href="#extension-settings" className="settings-card">
+  <h3>🧩 Extension Settings</h3>
+  <p>Installed modules and addons</p>
 </a>
 
 <a href="#proxmox" className="settings-card">
   <h3>🖥️ Proxmox</h3>
-  <p>IPAM, modèles KVM, systèmes LXC</p>
+  <p>IPAM, KVM templates, LXC systems</p>
 </a>
 
-<a href="#sécurité" className="settings-card">
-  <h3>🔒 Sécurité</h3>
-  <p>Personnels, API, base de données, logs</p>
+<a href="#security" className="settings-card">
+  <h3>🔒 Security</h3>
+  <p>Staff, API, database, logs</p>
 </a>
 
-<a href="#facturation" className="settings-card">
-  <h3>💰 Facturation</h3>
-  <p>Abonnements, factures, transferts</p>
+<a href="#billing" className="settings-card">
+  <h3>💰 Billing</h3>
+  <p>Subscriptions, invoices, transfers</p>
 </a>
 
-<a href="#centre-daide" className="settings-card">
-  <h3>🎧 Centre d'aide</h3>
-  <p>Helpdesk et support client</p>
+<a href="#help-center" className="settings-card">
+  <h3>🎧 Help Center</h3>
+  <p>Helpdesk and customer support</p>
 </a>
 
-<a href="#personnalisation" className="settings-card">
-  <h3>🎨 Personnalisation</h3>
-  <p>Interface, thème, SEO, menus</p>
+<a href="#customization" className="settings-card">
+  <h3>🎨 Customization</h3>
+  <p>Interface, theme, SEO, menus</p>
 </a>
 
 </div>
 
 
-## Vue d'ensemble des catégories
+## Category Overview
 
-### Paramètres généraux
-**Paramètres généraux de CLIENTXCMS (nom, adresse, logo, favicon, mail)**
+### General Settings
+**General CLIENTXCMS settings (name, address, logo, favicon, email)**
 
 <ThemedImage
-  alt="Paramètres généraux"
+  alt="General Settings"
   sources={{
     light: '/img/next_gen/settings/settings_0.png',
     dark: '/img/next_gen/settings/settings_0_dark.png'
   }}
 />
 
-Configuration de base de votre plateforme incluant l'identité visuelle, les paramètres de communication, la gestion des langues et la validation de licence. Ces éléments forment le socle de votre espace client.
+Basic configuration of your platform including visual identity, communication settings, language management, and license validation. These elements form the foundation of your client area.
 
-**Configuration disponible :**
-* **[Paramètres globaux](./core/app)** : Nom, adresse, logo, favicon de l'espace client
-* **[Paramètres de messagerie](./core/mail)** : Notifications par e-mail et serveur SMTP  
-* **[Mode maintenance](./core/maintenance)** : Activation/désactivation temporaire de l'accès client
-* **[Langues](./core/locales)** : Gestion des langues disponibles
-* **[Licence](./core/license)** : Validation de votre licence ClientXCMS
+**Available Configuration:**
+* **[Global Settings](./core/app)**: Name, address, logo, favicon of the client area
+* **[Email Settings](./core/mail)**: Email notifications and SMTP server
+* **[Maintenance Mode](./core/maintenance)**: Temporary enable/disable of client access
+* **[Languages](./core/locales)**: Management of available languages
+* **[License](./core/license)**: Validation of your ClientXCMS license
 
-**[→ Configurer les paramètres généraux](./core)**
+**[→ Configure General Settings](./core)**
 
-### Approvisionnement
-**Gérez l'approvisionnement des services pour les clients**
+### Provisioning
+**Manage service provisioning for clients**
 
 <ThemedImage
-  alt="Approvisionnement"
+  alt="Provisioning"
   sources={{
     light: '/img/next_gen/settings/settings_1.png',
     dark: '/img/next_gen/settings/settings_1_dark.png'
   }}
 />
 
-Gestion complète de votre infrastructure de services. Cette section centralise la configuration des serveurs, des options de services et des paramètres d'approvisionnement automatique pour vos clients.
+Complete management of your service infrastructure. This section centralizes server configuration, service options, and automatic provisioning settings for your clients.
 
-**Configuration disponible :**
-* **[Paramètres des services](./provisioning/services)** : Configuration des options de services
-* **[Serveurs](./provisioning/servers)** : Liste et état des serveurs configurés
-* **Sous-domaines** : Gestion des sous-domaines autorisés
-* **[Options de configuration](./provisioning/provisioning.md)** : Personnalisation des services
-* **[Configuration](./provisioning/provisioning.md)** : Options générales d'approvisionnement
+**Available Configuration:**
+* **[Service Settings](./provisioning/services)**: Service options configuration
+* **[Servers](./provisioning/servers)**: List and status of configured servers
+* **Subdomains**: Management of authorized subdomains
+* **[Configuration Options](./provisioning/provisioning.md)**: Service customization
+* **[Configuration](./provisioning/provisioning.md)**: General provisioning options
 
-**[→ Configurer l'approvisionnement](./provisioning)**
+**[→ Configure Provisioning](./provisioning)**
 
-### Paramètres de la boutique
-**Paramètres de la boutique (PayPal, TVA, etc.)**
+### Store Settings
+**Store settings (PayPal, VAT, etc.)**
 
 <ThemedImage
-  alt="Paramètres de la boutique"
+  alt="Store Settings"
   sources={{
     light: '/img/next_gen/settings/settings_2.png',
     dark: '/img/next_gen/settings/settings_2_dark.png'
   }}
 />
 
-Configuration complète de votre boutique en ligne. Gérez vos produits, moyens de paiement, promotions et tous les aspects commerciaux de votre plateforme pour offrir une expérience d'achat optimale à vos clients.
+Complete configuration of your online store. Manage your products, payment methods, promotions, and all commercial aspects of your platform to provide an optimal shopping experience for your clients.
 
-**Configuration disponible :**
-* **[Produits](./store/products)** : Gestion du catalogue et des offres
-* **[Groupes](./store/groupes)** : Organisation des produits par catégories
-* **[Coupons](./store/coupon)** : Système de réductions et promotions
-* **[PayPal Express Checkout](./store/payment_gateways/paypal_express_checkout)** : Configuration du paiement PayPal Express
-* **[PayPal](./store/payment_gateways/paypal)** : Configuration PayPal standard
-* **[Balance](./store/payment_gateways/balance)** : Système de portefeuille client
-* **[Stripe](./store/payment_gateways/stripe)** : Configuration du processeur de paiement Stripe
-* **[Virement Bancaire](./store/payment_gateways/bank_transfert)** : Paramètres des virements bancaires
-* **[Stancer](./store/payment_gateways/stancer)** : Configuration du processeur Stancer
-* **[Paramètres Fonds](../extensions/addons/fund.md)** : Gestion des transferts de fonds
+**Available Configuration:**
+* **[Products](./store/products)**: Catalog and offer management
+* **[Groups](./store/groupes)**: Product organization by categories
+* **[Coupons](./store/coupon)**: Discount and promotion system
+* **[PayPal Express Checkout](./store/payment_gateways/paypal_express_checkout)**: PayPal Express payment configuration
+* **[PayPal](./store/payment_gateways/paypal)**: Standard PayPal configuration
+* **[Balance](./store/payment_gateways/balance)**: Client wallet system
+* **[Stripe](./store/payment_gateways/stripe)**: Stripe payment processor configuration
+* **[Bank Transfer](./store/payment_gateways/bank_transfert)**: Bank transfer settings
+* **[Stancer](./store/payment_gateways/stancer)**: Stancer processor configuration
+* **[Fund Settings](../extensions/addons/fund.md)**: Fund transfer management
 
-**[→ Configurer la boutique](./store)**
+**[→ Configure Store](./store)**
 
-### Paramètres des extensions
-**Gérez les paramètres des extensions installées**
+### Extension Settings
+**Manage installed extension settings**
 
 <ThemedImage
-  alt="Paramètres des extensions"
+  alt="Extension Settings"
   sources={{
     light: '/img/next_gen/settings/settings_3.png',
     dark: '/img/next_gen/settings/settings_3_dark.png'
   }}
 />
 
-Configuration des modules et extensions installés sur votre plateforme. Cette section permet de gérer les paramètres spécifiques à chaque extension pour étendre les fonctionnalités de ClientXCMS.
+Configuration of modules and extensions installed on your platform. This section allows you to manage settings specific to each extension to extend ClientXCMS functionality.
 
-**Configuration disponible :**
-* **[Extensions](../extensions/extensions.md)** : Gestion des extensions du Marketplace
-* **[Discord Link](../extensions/addons/discordlink.md)** : Discord OAuth2 et rôles automatiques
-* **[Discord Gift](../extensions/addons/discordgift.md)** : Distribution automatique de cartes-cadeaux Discord
-* **[Double comptes](../extensions/addons/antidoublecompte.md)** : Détection des comptes multiples
-* **Sentry** : Service de surveillance des erreurs
-* **Contacts** : Gestion des demandes de contact
-* **Paramètres des cartes cadeaux** : Configuration avancée des cartes-cadeaux
+**Available Configuration:**
+* **[Extensions](../extensions/extensions.md)**: Marketplace extension management
+* **[Discord Link](../extensions/addons/discordlink.md)**: Discord OAuth2 and automatic roles
+* **[Discord Gift](../extensions/addons/discordgift.md)**: Automatic Discord gift card distribution
+* **[Duplicate Accounts](../extensions/addons/antidoublecompte.md)**: Multiple account detection
+* **Sentry**: Error monitoring service
+* **Contacts**: Contact request management
+* **Gift Card Settings**: Advanced gift card configuration
 
-**[→ Gérer les extensions](../extensions)**
+**[→ Manage Extensions](../extensions)**
 
 :::info
-Consultez la section [Extensions](../extensions) pour plus d'informations sur l'installation et la configuration des modules.
+See the [Extensions](../extensions) section for more information on module installation and configuration.
 :::
 
 ### Proxmox
-**Gérez les différentes options du module Proxmox (IPAM, Modèles, Oses)**
+**Manage various Proxmox module options (IPAM, Templates, OSes)**
 
 <ThemedImage
   alt="Proxmox"
@@ -205,110 +208,110 @@ Consultez la section [Extensions](../extensions) pour plus d'informations sur l'
   }}
 />
 
-Configuration spécifique à l'intégration Proxmox pour la gestion de machines virtuelles et conteneurs. Cette section permet de configurer les templates, la gestion des adresses IP et le suivi des opérations.
+Proxmox-specific configuration for virtual machine and container management. This section allows you to configure templates, IP address management, and operation tracking.
 
-**Configuration disponible :**
-* **IPAM** : Gestionnaire d'adresses IPv4 et IPv6
-* **Modèles KVM** : Templates de machines virtuelles
-* **Systèmes d'exploitation LXC** : Templates de conteneurs
-* **Historique** : Suivi des actions sur les machines virtuelles
+**Available Configuration:**
+* **IPAM**: IPv4 and IPv6 address manager
+* **KVM Templates**: Virtual machine templates
+* **LXC Operating Systems**: Container templates
+* **History**: Virtual machine action tracking
 
-**[→ Configurer Proxmox](../extensions/modules/Proxmox.md)**
+**[→ Configure Proxmox](../extensions/modules/Proxmox.md)**
 
 :::note
-Cette section n'est disponible que si le module Proxmox est installé et activé.
+This section is only available if the Proxmox module is installed and activated.
 :::
 
-### Sécurité
-**Paramètres de sécurité de l'espace client**
+### Security
+**Client area security settings**
 
 <ThemedImage
-  alt="Sécurité"
+  alt="Security"
   sources={{
     light: '/img/next_gen/settings/settings_5.png',
     dark: '/img/next_gen/settings/settings_5_dark.png'
   }}
 />
 
-Gestion complète de la sécurité de votre plateforme. Configurez les accès administrateurs, les politiques de sécurité, surveillez les activités et gérez les permissions pour maintenir un environnement sécurisé.
+Complete security management of your platform. Configure administrator access, security policies, monitor activities, and manage permissions to maintain a secure environment.
 
-**Configuration disponible :**
-* **[Personnels](./security/staffs)** : Gestion des accès administrateurs
-* **Clés API** : Gestion des clés d'accès API
-* **[Base de données](./security/database)** : Accès et migration de la base
-* **[Paramètres de sécurité](./security/security-setting)** : Politiques de sécurité globales
-* **[Historique](./security/history)** : Logs système et diagnostics
-* **Journaux des actions** : Suivi détaillé des activités
-* **Rôles** : Gestion des permissions personnalisées
+**Available Configuration:**
+* **[Staff](./security/staffs)**: Administrator access management
+* **API Keys**: API access key management
+* **[Database](./security/database)**: Database access and migration
+* **[Security Settings](./security/security-setting)**: Global security policies
+* **[History](./security/history)**: System logs and diagnostics
+* **Action Logs**: Detailed activity tracking
+* **Roles**: Custom permission management
 
-**[→ Configurer la sécurité](./security)**
+**[→ Configure Security](./security)**
 
-### Facturation
-**Gestion des abonnements et des paiements**
+### Billing
+**Subscription and payment management**
 
 <ThemedImage
-  alt="Facturation"
+  alt="Billing"
   sources={{
     light: '/img/next_gen/settings/settings_6.png',
     dark: '/img/next_gen/settings/settings_6_dark.png'
   }}
 />
 
-Système de facturation avancé pour gérer les abonnements, renouvellements et transactions. Configurez les paramètres de facturation, taxes et suivez l'historique des paiements de vos clients.
+Advanced billing system to manage subscriptions, renewals, and transactions. Configure billing settings, taxes, and track your clients' payment history.
 
-**Configuration disponible :**
-* **Abonnements** : Gestion des renouvellements automatiques
-* **[Facturation](./billing/billing.md)** : Configuration des factures et taxes
-* **Améliorations des services** : Upgrades et downgrades
-* **Transferts de fonds** : Historique des transactions
+**Available Configuration:**
+* **Subscriptions**: Automatic renewal management
+* **[Billing](./billing/billing.md)**: Invoice and tax configuration
+* **Service Upgrades**: Upgrades and downgrades
+* **Fund Transfers**: Transaction history
 
-**[→ Configurer la facturation](./billing)**
+**[→ Configure Billing](./billing)**
 
-### Centre d'aide
-**Paramétrez le centre d'aide et gérez les tickets de support**
+### Help Center
+**Set up the help center and manage support tickets**
 
 <ThemedImage
-  alt="Centre d'aide"
+  alt="Help Center"
   sources={{
     light: '/img/next_gen/settings/settings_7.png',
     dark: '/img/next_gen/settings/settings_7_dark.png'
   }}
 />
 
-Support client intégré pour gérer les demandes d'assistance. Configurez les départements de support, organisez vos équipes et paramétrez le système de tickets pour offrir un support efficace.
+Integrated customer support to manage assistance requests. Configure support departments, organize your teams, and set up the ticket system to provide efficient support.
 
-**Configuration disponible :**
-* **[Paramètres du centre d'aide](./helpdesk/helpdesk-settings)** : Configuration générale du helpdesk
-* **[Départements de support](./helpdesk/departments)** : Organisation des équipes de support
+**Available Configuration:**
+* **[Help Center Settings](./helpdesk/helpdesk-settings)**: General helpdesk configuration
+* **[Support Departments](./helpdesk/departments)**: Support team organization
 
-**[→ Configurer le centre d'aide](./helpdesk)**
+**[→ Configure Help Center](./helpdesk)**
 
-### Personnalisation
-**Personnalisez les menus de l'espaces client et les réseaux sociaux de l'entreprise**
+### Customization
+**Customize client area menus and company social networks**
 
 <ThemedImage
-  alt="Personnalisation"
+  alt="Customization"
   sources={{
     light: '/img/next_gen/settings/settings_8.png',
     dark: '/img/next_gen/settings/settings_8_dark.png'
   }}
 />
 
-Customisation complète de l'interface et de l'expérience utilisateur. Personnalisez l'apparence, les menus, les pages et optimisez votre espace client selon votre identité de marque et vos besoins spécifiques.
+Complete customization of the interface and user experience. Customize the appearance, menus, pages, and optimize your client area according to your brand identity and specific needs.
 
-**Configuration disponible :**
-* **Paramètres du thème** : Configuration visuelle et esthétique
-* **[Page d'accueil](./personalization/home)** : Personnalisation de la page principale
-* **[Réseaux sociaux](./personalization/socials)** : Liens et intégrations sociales
-* **[Menu de haut de page](./personalization/front_menu)** : Navigation principale
-* **[Menu de bas de page](./personalization/bottom_menu)** : Pied de page et liens rapides
-* **Couleurs principales** : Charte graphique et thème
-* **[Paramètres SEO](./personalization/seo)** : Optimisation pour les moteurs de recherche
-* **[Sections](./personalization/sections)** : Personnalisation des sections client
-* **Modèles d'email** : Templates de notification
-* **Social Auth+** : Connexion via fournisseurs tiers
-* **Pages** : Gestion des pages dynamiques
-* **Préférences de la page de contact** : Configuration du formulaire de contact
+**Available Configuration:**
+* **Theme Settings**: Visual and aesthetic configuration
+* **[Home Page](./personalization/home)**: Main page customization
+* **[Social Networks](./personalization/socials)**: Social links and integrations
+* **[Header Menu](./personalization/front_menu)**: Main navigation
+* **[Footer Menu](./personalization/bottom_menu)**: Footer and quick links
+* **Primary Colors**: Brand guidelines and theme
+* **[SEO Settings](./personalization/seo)**: Search engine optimization
+* **[Sections](./personalization/sections)**: Client section customization
+* **Email Templates**: Notification templates
+* **Social Auth+**: Third-party provider login
+* **Pages**: Dynamic page management
+* **Contact Page Preferences**: Contact form configuration
 
-**[→ Personnaliser l'interface](./personalization)**
+**[→ Customize Interface](./personalization)**
 
