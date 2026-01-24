@@ -49,8 +49,8 @@ development_status:
   epic-0-retrospective: optional
 
   # Epic 1: MVD - Introduction
-  epic-1: backlog
-  1-1-relecture-introduction-md: backlog
+  epic-1: in-progress
+  1-1-relecture-introduction-md: ready-for-dev
   1-2-validation-finale: backlog
   epic-1-retrospective: optional
 
