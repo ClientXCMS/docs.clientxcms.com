@@ -1,0 +1,133 @@
+# Sprint Status - ClientXCMS i18n Documentation
+# generated: 2026-01-24
+# project: docs.clientxcms.com
+# project_key: i18n
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review
+#   - done: Story completed
+#   - skipped: Story intentionally skipped
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' when first story starts
+# - SM creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review workflow
+
+generated: 2026-01-24
+project: docs.clientxcms.com
+project_key: i18n
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # Epic 0: Setup & Infrastructure i18n
+  epic-0: done
+  0-1-poc-migration-defaultlocale: done
+  0-2-config-i18n-complete: done
+  0-3-structure-dossiers-i18n-fr: done
+  0-4-test-plugin-search-local: skipped
+  0-5-composants-react-extraction-textes: done
+  0-6-bandeau-not-yet-translated: done
+  0-7-config-redirects-301: backlog
+  epic-0-retrospective: optional
+
+  # Epic 1: MVD - Introduction
+  epic-1: in-progress
+  1-1-relecture-introduction-md: backlog
+  1-2-validation-finale: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: MVD - Installation
+  epic-2: backlog
+  2-1-relecture-requis-md: backlog
+  2-2-traduire-installation-md-index: backlog
+  2-3-traduire-cloud-md: backlog
+  2-4-traduire-selfhosted-md: backlog
+  2-5-traduire-plesk-md: backlog
+  2-6-traduire-docker-md: backlog
+  2-7-traduire-ansible-md: backlog
+  2-8-traduire-upgrade-md: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: MVD - Getting Started
+  epic-3: backlog
+  3-1-traduire-getting-started-md-index: backlog
+  3-2-traduire-first-login-md: backlog
+  3-3-traduire-personalization-md: backlog
+  3-4-traduire-server-md: backlog
+  3-5-traduire-products-md: backlog
+  3-6-traduire-payments-md: backlog
+  3-7-traduire-accounts-md: backlog
+  3-8-traduire-service-md: backlog
+  3-9-traduire-finish-md: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: MVD - Settings Core
+  epic-4: backlog
+  4-1-traduire-core-md-index: backlog
+  4-2-traduire-app-md: backlog
+  4-3-traduire-mail-md: backlog
+  4-4-traduire-maintenance-md: backlog
+  4-5-traduire-license-md: backlog
+  4-6-traduire-locales-md: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Post-MVD - Extensions
+  epic-5: backlog
+  5-1-traduire-index-extensions: backlog
+  5-2-traduire-modules-game-hosting: backlog
+  5-3-traduire-module-proxmox: backlog
+  5-4-traduire-modules-web-hosting: backlog
+  5-5-traduire-addon-socialauthplus: backlog
+  5-6-traduire-addons-discord: backlog
+  5-7-traduire-addons-business: backlog
+  5-8-traduire-addons-restants: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Post-MVD - Developers
+  epic-6: backlog
+  6-1-traduire-api-reference: backlog
+  6-2-traduire-commands-reference: backlog
+  6-3-traduire-guide-creation-extensions: backlog
+  6-4-traduire-guide-creation-themes: backlog
+  6-5-traduire-definitions: backlog
+  6-6-traduire-implementation-guides: backlog
+  6-7-traduire-themes-avances: backlog
+  6-8-traduire-software-guides: backlog
+  epic-6-retrospective: optional
+
+  # Epic 7: Post-MVD - Blog
+  epic-7: backlog
+  7-1-traduire-articles-2025-features: backlog
+  7-2-traduire-changelogs-majeurs-2025: backlog
+  7-3-traduire-articles-strategiques-2024: backlog
+  7-4-traduire-articles-modules-2024: backlog
+  7-5-traduire-changelogs-2024-optionnel: backlog
+  epic-7-retrospective: optional
+
+  # Epic 8: Lancement & Communication
+  epic-8: in-progress
+  8-1-setup-build-in-public: done
+  8-2-premier-post-linkedin: backlog
+  8-3-post-reddit-r-selfhosted: backlog
+  8-4-show-hn: backlog
+  8-5-soumission-awesome-lists: backlog
+  8-6-article-devto-hashnode: backlog
+  epic-8-retrospective: optional
