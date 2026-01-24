@@ -1,14 +1,15 @@
 ---
 slug: nouvelle-version-2.14.6
-title: Nouvelle version 2.14.6
+title: New Version 2.14.6
 authors: [martindev]
+translated: true
 ---
 # v2.14.6
 
-Nous sommes ravis de vous annoncer la sortie de la version **2.14.6** de ClientXCMS !
+We are pleased to announce the release of version **2.14.6** of ClientXCMS!
 ![version 2.14.6](/img/blog/versions/v2.14.6.png)
 
 <!-- truncate -->
-## ➕ Ajouts
+## ➕ Additions
 
-- ➕ Ajout de la **télémetrie**
+- ➕ Added **telemetry**

@@ -1,18 +1,19 @@
 ---
 slug: nouvelle-version-2.14.4
-title: Nouvelle version v2.14.4
+title: New Version v2.14.4
 authors: [martindev]
 tags: [version, release, clientxcms]
+translated: true
 ---
 # v2.14.4
 
-Nous sommes ravis de vous annoncer la sortie de la version **v2.14.4** de ClientXCMS, qui apporte de nombreuses améliorations et nouvelles fonctionnalités pour enrichir votre expérience utilisateur.
+We are pleased to announce the release of version **v2.14.4** of ClientXCMS, which brings many improvements and new features to enrich your user experience.
 ![version v2.14.4](/img/blog/versions/v2.14.4.png)
 
 <!-- truncate -->
 
-- 🔄 L'icône des menus est désormais facultative
-- 🔄 Modification du haut de page
-- 🔧 Modification d'un montant de frais de transaction d'une facture via l'administration
-- 🔧 Localisation et traduction des menus
-- 🔧 Envoi d'un sujet vide lors d'un e-mail personnalisé
+- 🔄 Menu icon is now optional
+- 🔄 Page header modification
+- 🔧 Modification of invoice transaction fee amount via administration
+- 🔧 Menu localization and translation
+- 🔧 Sending empty subject in custom email

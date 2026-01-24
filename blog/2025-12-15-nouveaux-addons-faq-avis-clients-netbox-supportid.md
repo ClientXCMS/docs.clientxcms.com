@@ -1,61 +1,62 @@
 ---
 slug: nouveaux-addons-faq-avis-clients-netbox-supportid
-title: "4 nouveaux addons : Avis clients, FAQ, NetBox & Support ID"
+title: "4 New Addons: Customer Reviews, FAQ, NetBox & Support ID"
 authors: [martindev]
 tags: [addons, marketplace, release, clientxcms]
+translated: true
 ---
-# Quatre extensions clés disponibles dès la 2.14.10
+# Four Key Extensions Available with 2.14.10
 
-Nous lançons quatre nouveaux addons pour enrichir vos instances CLIENTXCMS, déjà disponibles à partir de la version **2.14.10** et directement accessibles sur le **marketplace**.
+We are launching four new addons to enrich your CLIENTXCMS instances, already available starting with version **2.14.10** and directly accessible on the **marketplace**.
 <!-- truncate -->
 
-## Avis clients — à vie 15€ (12€ lancement)
+## Customer Reviews — lifetime €15 (€12 launch price)
 
-![avis clients](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
+![customer reviews](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
 
-L’addon **Avis clients** centralise la collecte, la modération et l’affichage des témoignages. Notes, badges “Top Rated”, relances automatiques, récompenses et intégrations Discord sont réunis pour augmenter la confiance autour de vos offres.
+The **Customer Reviews** addon centralizes the collection, moderation, and display of testimonials. Ratings, "Top Rated" badges, automatic reminders, rewards, and Discord integrations are combined to increase trust around your offerings.
 
-- Interface d’admin complète pour modérer, masquer ou créditer automatiquement
-- Widgets produits et badges pour mettre en avant vos meilleures notes
-- Webhooks Discord pour suivre chaque nouveau retour
-- Marketplace : https://clientxcms.com/resources/customers-reviews
+- Complete admin interface to moderate, hide, or automatically credit
+- Product widgets and badges to highlight your best ratings
+- Discord webhooks to track each new review
+- Marketplace: https://clientxcms.com/resources/customers-reviews
 
-![admin avis](/img/next_gen/extensions/addons/customers_reviews/reviews_admin.png)
+![admin reviews](/img/next_gen/extensions/addons/customers_reviews/reviews_admin.png)
 
-## FAQ — gratuit
+## FAQ — free
 
 ![faq](/img/next_gen/extensions/addons/faq/image.png)
 
-Avec l’addon **FAQ**, créez des FAQs globales, produit ou groupe pour réduire les tickets et guider vos clients au bon endroit.
+With the **FAQ** addon, create global, product, or group FAQs to reduce tickets and guide your clients to the right place.
 
-- Votes d’utilité et tri par groupe/produit
-- Affichage prêt pour vos thèmes et widgets produits
-- Marketplace : https://clientxcms.com/resources/faq
+- Usefulness votes and sorting by group/product
+- Display ready for your themes and product widgets
+- Marketplace: https://clientxcms.com/resources/faq
 
 ![faq admin](/img/next_gen/extensions/addons/faq/admin.png)
 
-## Support ID — à vie 10€ (7,50€ lancement)
+## Support ID — lifetime €10 (€7.50 launch price)
 
 ![support id](/img/next_gen/extensions/addons/supportid/config.png)
 
-**Support ID** attribue un identifiant unique à chaque client pour un suivi omnicanal (tickets, Discord, e-mail, téléphone). API REST incluse pour vos intégrations internes.
+**Support ID** assigns a unique identifier to each client for omnichannel tracking (tickets, Discord, email, phone). REST API included for your internal integrations.
 
-- Préfixe personnalisable et format alphanumérique ou numérique
-- Endpoint public pour récupérer un Support ID par client
-- Marketplace : https://clientxcms.com/resources/supportid
+- Customizable prefix and alphanumeric or numeric format
+- Public endpoint to retrieve a Support ID by client
+- Marketplace: https://clientxcms.com/resources/supportid
 
-## NetBox — à vie 15€ (12€ lancement)
+## NetBox — lifetime €15 (€12 launch price)
 
 ![netbox](/img/next_gen/extensions/addons/netbox/netbox.png)
 
-L’addon **NetBox** remplace l’IPAM par défaut pour Proxmox et s’appuie sur votre NetBox comme source de vérité IP. Réservez, libérez et auditez vos adresses IP directement depuis CLIENTXCMS.
+The **NetBox** addon replaces the default IPAM for Proxmox and relies on your NetBox as the IP source of truth. Reserve, release, and audit your IP addresses directly from CLIENTXCMS.
 
-- Synchronisation des statuts d’IP et gestion fine (active, réservée, indisponible)
-- Méthodes prêtes à l’emploi pour vos providers compatibles IPAMInterface
-- Marketplace : https://clientxcms.com/resources/netbox
+- IP status synchronization and fine management (active, reserved, unavailable)
+- Ready-to-use methods for your IPAMInterface-compatible providers
+- Marketplace: https://clientxcms.com/resources/netbox
 
-![détails netbox](/img/next_gen/extensions/addons/netbox/details.png)
+![netbox details](/img/next_gen/extensions/addons/netbox/details.png)
 
-### Déjà prêts pour la 2.14.10
+### Already Ready for 2.14.10
 
-Ces quatre addons sont disponibles dès maintenant sur vos instances **CLIENTXCMS 2.14.10** et sur le marketplace. Profitez des tarifs de lancement pour Avis clients, NetBox et Support ID, et déployez la FAQ gratuitement pour réduire vos tickets dès aujourd’hui.
+These four addons are available now on your **CLIENTXCMS 2.14.10** instances and on the marketplace. Take advantage of launch pricing for Customer Reviews, NetBox, and Support ID, and deploy the FAQ for free to reduce your tickets today.
