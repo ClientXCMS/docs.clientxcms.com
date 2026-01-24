@@ -1,6 +1,6 @@
 # Story 2.4: Traduire selfhosted.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -59,124 +59,124 @@ so that international users can install ClientXCMS on their own servers with cle
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #5)
-  - [ ] 1.1 Ensure `---` block at top of file
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Verify `sidebar_position: 5` present
-  - [ ] 1.4 Verify Tabs/TabItem imports preserved
+- [x] Task 1: Add frontmatter with translated flag (AC: #5)
+  - [x] 1.1 Ensure `---` block at top of file
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Verify `sidebar_position: 5` present
+  - [x] 1.4 Verify Tabs/TabItem imports preserved
 
-- [ ] Task 2: Translate introduction and download section (AC: #1)
-  - [ ] 2.1 Translate title "Autohebergement" to "Self-hosted"
-  - [ ] 2.2 Translate intro paragraph
-  - [ ] 2.3 Translate "Telechargement" section
-  - [ ] 2.4 Translate :::info admonition (Debian 12 note)
-  - [ ] 2.5 Update alt text for download_nextgen.png
+- [x] Task 2: Translate introduction and download section (AC: #1)
+  - [x] 2.1 Translate title "Autohebergement" to "Self-hosted"
+  - [x] 2.2 Translate intro paragraph
+  - [x] 2.3 Translate "Telechargement" section
+  - [x] 2.4 Translate :::info admonition (Debian 12 note)
+  - [x] 2.5 Update alt text for download_nextgen.png
 
-- [ ] Task 3: Translate installation folder section (AC: #1, #2)
-  - [ ] 3.1 Translate "Dossier d'installation" heading
-  - [ ] 3.2 Translate instructions (keep bash commands unchanged)
+- [x] Task 3: Translate installation folder section (AC: #1, #2)
+  - [x] 3.1 Translate "Dossier d'installation" heading
+  - [x] 3.2 Translate instructions (keep bash commands unchanged)
 
-- [ ] Task 4: Translate source code download section (AC: #1, #2)
-  - [ ] 4.1 Translate "Telechargement du code source" heading
-  - [ ] 4.2 Translate Archive ZIP tab content
-  - [ ] 4.3 Translate Git tab content
-  - [ ] 4.4 Translate :::info admonition (zip installation)
+- [x] Task 4: Translate source code download section (AC: #1, #2)
+  - [x] 4.1 Translate "Telechargement du code source" heading
+  - [x] 4.2 Translate Archive ZIP tab content
+  - [x] 4.3 Translate Git tab content
+  - [x] 4.4 Translate :::info admonition (zip installation)
 
-- [ ] Task 5: Translate environment setup section (AC: #1)
-  - [ ] 5.1 Translate "Mise en place de l'environnement" heading
-  - [ ] 5.2 Translate .env creation instructions
+- [x] Task 5: Translate environment setup section (AC: #1)
+  - [x] 5.1 Translate "Mise en place de l'environnement" heading
+  - [x] 5.2 Translate .env creation instructions
 
-- [ ] Task 6: Translate PHP 8.3 installation section (AC: #1, #2)
-  - [ ] 6.1 Translate "Installation de PHP 8.3" heading
-  - [ ] 6.2 Translate "Ajout du depot Ondrej" heading
-  - [ ] 6.3 Translate Ubuntu/Debian tab content
-  - [ ] 6.4 Translate CentOS/RHEL/Rocky tab content
-  - [ ] 6.5 Translate "Verification de l'installation" section
-  - [ ] 6.6 Translate "Configuration PHP recommandee" section
-  - [ ] 6.7 Keep all bash/ini code blocks unchanged
+- [x] Task 6: Translate PHP 8.3 installation section (AC: #1, #2)
+  - [x] 6.1 Translate "Installation de PHP 8.3" heading
+  - [x] 6.2 Translate "Ajout du depot Ondrej" heading
+  - [x] 6.3 Translate Ubuntu/Debian tab content
+  - [x] 6.4 Translate CentOS/RHEL/Rocky tab content
+  - [x] 6.5 Translate "Verification de l'installation" section
+  - [x] 6.6 Translate "Configuration PHP recommandee" section
+  - [x] 6.7 Keep all bash/ini code blocks unchanged
 
-- [ ] Task 7: Translate Composer installation section (AC: #1, #2)
-  - [ ] 7.1 Translate "Installation de Composer" heading
-  - [ ] 7.2 Translate instructions (keep commands unchanged)
+- [x] Task 7: Translate Composer installation section (AC: #1, #2)
+  - [x] 7.1 Translate "Installation de Composer" heading
+  - [x] 7.2 Translate instructions (keep commands unchanged)
 
-- [ ] Task 8: Translate MySQL setup section (AC: #1, #2)
-  - [ ] 8.1 Translate "Mise en place de MySQL" heading
-  - [ ] 8.2 Translate :::info admonition (MariaDB note)
-  - [ ] 8.3 Translate mysql_secure_installation steps
-  - [ ] 8.4 Keep all bash/sql commands unchanged
+- [x] Task 8: Translate MySQL setup section (AC: #1, #2)
+  - [x] 8.1 Translate "Mise en place de MySQL" heading
+  - [x] 8.2 Translate :::info admonition (MariaDB note)
+  - [x] 8.3 Translate mysql_secure_installation steps
+  - [x] 8.4 Keep all bash/sql commands unchanged
 
-- [ ] Task 9: Translate web server setup section (AC: #1, #2, #4)
-  - [ ] 9.1 Translate "Mise en place du serveur web" heading
-  - [ ] 9.2 Translate Apache tab content
-  - [ ] 9.3 Translate Apache :::info admonition (SSL note)
-  - [ ] 9.4 Translate Nginx tab content
-  - [ ] 9.5 Translate Nginx :::info admonition (SSL note)
-  - [ ] 9.6 Keep all configuration examples unchanged
+- [x] Task 9: Translate web server setup section (AC: #1, #2, #4)
+  - [x] 9.1 Translate "Mise en place du serveur web" heading
+  - [x] 9.2 Translate Apache tab content
+  - [x] 9.3 Translate Apache :::info admonition (SSL note)
+  - [x] 9.4 Translate Nginx tab content
+  - [x] 9.5 Translate Nginx :::info admonition (SSL note)
+  - [x] 9.6 Keep all configuration examples unchanged
 
-- [ ] Task 10: Translate database configuration section (AC: #1, #2)
-  - [ ] 10.1 Translate "Configuration de la base de donnees" heading
-  - [ ] 10.2 Translate instructions
-  - [ ] 10.3 Keep SQL and .env examples unchanged
+- [x] Task 10: Translate database configuration section (AC: #1, #2)
+  - [x] 10.1 Translate "Configuration de la base de donnees" heading
+  - [x] 10.2 Translate instructions
+  - [x] 10.3 Keep SQL and .env examples unchanged
 
-- [ ] Task 11: Translate other configurations section (AC: #1, #2)
-  - [ ] 11.1 Translate "Autres configurations" heading
-  - [ ] 11.2 Translate artisan commands explanations
+- [x] Task 11: Translate other configurations section (AC: #1, #2)
+  - [x] 11.1 Translate "Autres configurations" heading
+  - [x] 11.2 Translate artisan commands explanations
 
-- [ ] Task 12: Translate assets section (AC: #1, #2)
-  - [ ] 12.1 Translate "Assets" heading
-  - [ ] 12.2 Translate :::info admonition (Node.js note)
-  - [ ] 12.3 Translate NVM/Node.js installation instructions
-  - [ ] 12.4 Keep all bash commands unchanged
+- [x] Task 12: Translate assets section (AC: #1, #2)
+  - [x] 12.1 Translate "Assets" heading
+  - [x] 12.2 Translate :::info admonition (Node.js note)
+  - [x] 12.3 Translate NVM/Node.js installation instructions
+  - [x] 12.4 Keep all bash commands unchanged
 
-- [ ] Task 13: Translate scheduled tasks section (AC: #1, #2)
-  - [ ] 13.1 Translate "Taches planifiees" heading
-  - [ ] 13.2 Translate crontab instructions
+- [x] Task 13: Translate scheduled tasks section (AC: #1, #2)
+  - [x] 13.1 Translate "Taches planifiees" heading
+  - [x] 13.2 Translate crontab instructions
 
-- [ ] Task 14: Translate Laravel queues section (AC: #1, #2)
-  - [ ] 14.1 Translate "Configuration des Queues Laravel" heading
-  - [ ] 14.2 Translate queue driver explanations
-  - [ ] 14.3 Translate Supervisor setup instructions
-  - [ ] 14.4 Keep all configuration files unchanged
+- [x] Task 14: Translate Laravel queues section (AC: #1, #2)
+  - [x] 14.1 Translate "Configuration des Queues Laravel" heading
+  - [x] 14.2 Translate queue driver explanations
+  - [x] 14.3 Translate Supervisor setup instructions
+  - [x] 14.4 Keep all configuration files unchanged
 
-- [ ] Task 15: Translate ClientXCMS configuration section (AC: #1, #8)
-  - [ ] 15.1 Translate "Configuration de ClientXCMS" heading
-  - [ ] 15.2 Translate numbered steps
-  - [ ] 15.3 Update alt text for images
+- [x] Task 15: Translate ClientXCMS configuration section (AC: #1, #8)
+  - [x] 15.1 Translate "Configuration de ClientXCMS" heading
+  - [x] 15.2 Translate numbered steps
+  - [x] 15.3 Update alt text for images
 
-- [ ] Task 16: Translate extension purchase section (AC: #1, #6)
-  - [ ] 16.1 Translate "Achat d'extension" heading
-  - [ ] 16.2 Translate error message and instructions
-  - [ ] 16.3 Translate :::info admonition (themes note)
-  - [ ] 16.4 Update alt text for download_extension.png
+- [x] Task 16: Translate extension purchase section (AC: #1, #6)
+  - [x] 16.1 Translate "Achat d'extension" heading
+  - [x] 16.2 Translate error message and instructions
+  - [x] 16.3 Translate :::info admonition (themes note)
+  - [x] 16.4 Update alt text for download_extension.png
 
-- [ ] Task 17: Translate cloud migration section (AC: #1)
-  - [ ] 17.1 Translate "Migration depuis une version cloud" heading
-  - [ ] 17.2 Translate all 8 numbered steps
+- [x] Task 17: Translate cloud migration section (AC: #1)
+  - [x] 17.1 Translate "Migration depuis une version cloud" heading
+  - [x] 17.2 Translate all 8 numbered steps
 
-- [ ] Task 18: Translate common problems section (AC: #1, #2)
-  - [ ] 18.1 Translate "Problemes courants" heading
-  - [ ] 18.2 Translate "Interface introuvable Jsonable" subsection
-  - [ ] 18.3 Translate "Theme active mais non affiche" subsection
-  - [ ] 18.4 Translate "Logo non affichage" subsection
-  - [ ] 18.5 Translate "Probleme de permissions sur le dossier de logs" subsection
-  - [ ] 18.6 Keep all bash commands unchanged
+- [x] Task 18: Translate common problems section (AC: #1, #2)
+  - [x] 18.1 Translate "Problemes courants" heading
+  - [x] 18.2 Translate "Interface introuvable Jsonable" subsection
+  - [x] 18.3 Translate "Theme active mais non affiche" subsection
+  - [x] 18.4 Translate "Logo non affichage" subsection
+  - [x] 18.5 Translate "Probleme de permissions sur le dossier de logs" subsection
+  - [x] 18.6 Keep all bash commands unchanged
 
-- [ ] Task 19: Verify links (AC: #7)
-  - [ ] 19.1 Verify ./cloud internal link
-  - [ ] 19.2 Verify ./requis internal link
-  - [ ] 19.3 Verify https://clientxcms.com/client/downloads
-  - [ ] 19.4 Verify https://github.com/ClientXCMS/ClientXCMS
-  - [ ] 19.5 Verify https://clientxcms.com/pricing
-  - [ ] 19.6 Verify https://cdn.clientxcms.com/ressources/docs/environment.example.txt
-  - [ ] 19.7 Verify https://clientxcms.com/client/services/
+- [x] Task 19: Verify links (AC: #7)
+  - [x] 19.1 Verify ./cloud internal link
+  - [x] 19.2 Verify ./requis internal link
+  - [x] 19.3 Verify https://clientxcms.com/client/downloads
+  - [x] 19.4 Verify https://github.com/ClientXCMS/ClientXCMS
+  - [x] 19.5 Verify https://clientxcms.com/pricing
+  - [x] 19.6 Verify https://cdn.clientxcms.com/ressources/docs/environment.example.txt
+  - [x] 19.7 Verify https://clientxcms.com/client/services/
 
-- [ ] Task 20: Build and test (AC: #9)
-  - [ ] 20.1 Run `npm run build`
-  - [ ] 20.2 Run `npm run serve` and test EN URL
-  - [ ] 20.3 Verify Tabs component renders (Archive ZIP / Git tabs)
-  - [ ] 20.4 Verify Tabs component renders (Ubuntu/Debian / CentOS tabs)
-  - [ ] 20.5 Verify Tabs component renders (Apache / Nginx tabs)
-  - [ ] 20.6 Verify no "Not translated" banner
+- [x] Task 20: Build and test (AC: #9)
+  - [x] 20.1 Run `npm run build`
+  - [x] 20.2 Run `npm run serve` and test EN URL
+  - [x] 20.3 Verify Tabs component renders (Archive ZIP / Git tabs)
+  - [x] 20.4 Verify Tabs component renders (Ubuntu/Debian / CentOS tabs)
+  - [x] 20.5 Verify Tabs component renders (Apache / Nginx tabs)
+  - [x] 20.6 Verify no "Not translated" banner
 
 ## Dev Notes
 
@@ -353,10 +353,31 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+None - clean implementation.
+
 ### Completion Notes List
 
+- Translated complete selfhosted.md documentation (~525 lines) from French to English
+- Added `translated: true` to frontmatter to remove "Not yet translated" banner
+- Preserved all code blocks unchanged (bash, sql, ini, env configurations)
+- Translated all 6+ admonitions (:::info blocks)
+- Translated all 3 tab groups (ZIP/Git, Ubuntu/CentOS, Apache/Nginx)
+- Updated all 4 image alt texts to English
+- Preserved all internal links (./cloud, ./requis) and external links
+- Translated code comments within bash blocks from French to English
+- Build passes successfully for both EN and FR locales
+- All acceptance criteria satisfied
+
+### Change Log
+
+- 2026-01-24: Complete English translation of selfhosted.md installation guide
+
 ### File List
+
+| File | Action |
+|------|--------|
+| docs/installation/selfhosted.md | Modified - Full English translation |
