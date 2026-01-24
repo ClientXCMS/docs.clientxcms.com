@@ -63,14 +63,14 @@ development_status:
   2-4-traduire-selfhosted-md: done
   2-5-traduire-plesk-md: done
   2-6-traduire-docker-md: review
-  2-7-traduire-ansible-md: ready-for-dev
+  2-7-traduire-ansible-md: in-progress
   2-8-traduire-upgrade-md: ready-for-dev
   epic-2-retrospective: optional
 
   # Epic 3: MVD - Getting Started
   epic-3: in-progress
   3-1-traduire-getting-started-md-index: ready-for-dev
-  3-2-traduire-first-login-md: backlog
+  3-2-traduire-first-login-md: ready-for-dev
   3-3-traduire-personalization-md: backlog
   3-4-traduire-server-md: backlog
   3-5-traduire-products-md: backlog
