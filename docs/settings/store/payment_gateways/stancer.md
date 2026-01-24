@@ -1,249 +1,252 @@
-# Stancer (Paiements par carte)
+---
+translated: true
+---
+# Stancer (Card Payments)
 
-La passerelle **Stancer** dans **CLIENTXCMS** correspond à une **solution de paiement par carte bancaire moderne et française** qui permet à vos clients de régler leurs commandes de manière sécurisée avec leur carte Visa, Mastercard ou autres. <br/>
-L'objectif est clair : **offrir une alternative européenne performante aux géants américains avec des tarifs compétitifs et une conformité RGPD native**. Un système Stancer bien configuré permet à vos clients de **payer rapidement par carte** tout en vous garantissant des frais réduits et un service client français.
+The **Stancer** gateway in **CLIENTXCMS** corresponds to a **modern French card payment solution** that allows your customers to securely pay for their orders with their Visa, Mastercard, or other cards. <br/>
+The objective is clear: **offer a high-performing European alternative to American giants with competitive rates and native GDPR compliance**. A well-configured Stancer system allows your customers to **pay quickly by card** while guaranteeing you reduced fees and French customer support.
 
-La passerelle Stancer peut être entièrement personnalisée : nom d'affichage, montant minimum, mode test/live, clés d'API, etc.
+The Stancer gateway can be fully customized: display name, minimum amount, test/live mode, API keys, etc.
 
-Vous pouvez configurer Stancer depuis :
+You can configure Stancer from:
 
-`Paramètres` > `Paramètres de la boutique` > `Stancer`
+`Settings` > `Store Settings` > `Stancer`
 
-![Configuration de la passerelle Stancer](/img/next_gen/settings/store/payment_gateways/stancer/config.png)
+![Stancer gateway configuration](/img/next_gen/settings/store/payment_gateways/stancer/config.png)
 
-:::tip Astuce
-**Stancer** est une solution **française et européenne** qui offre des tarifs souvent plus attractifs que les solutions américaines, avec un support client réactif et une conformité RGPD exemplaire.
+:::tip Tip
+**Stancer** is a **French and European solution** that often offers more attractive rates than American solutions, with responsive customer support and exemplary GDPR compliance.
 :::
 
-## Pourquoi choisir Stancer ?
+## Why choose Stancer?
 
-Stancer représente la nouvelle génération des passerelles de paiement européennes, conçue spécifiquement pour répondre aux besoins des entreprises françaises et européennes avec une approche moderne et transparente.
+Stancer represents the new generation of European payment gateways, specifically designed to meet the needs of French and European businesses with a modern and transparent approach.
 
-Adopter Stancer vous permet de :
+Adopting Stancer allows you to:
 
-* Bénéficier de tarifs compétitifs et transparents
-* Profiter d'un support client français et réactif
-* Respecter nativement la réglementation RGPD
-* Accéder à une technologie de pointe développée en Europe
-* Réduire vos coûts de transaction comparé aux géants américains
-* Soutenir l'écosystème technologique européen
+* Benefit from competitive and transparent rates
+* Enjoy responsive French customer support
+* Natively respect GDPR regulations
+* Access cutting-edge technology developed in Europe
+* Reduce your transaction costs compared to American giants
+* Support the European technology ecosystem
 
-:::tip Astuce
-Stancer est comme le **champion européen** du paiement par carte 🇫🇷 — performance internationale avec des valeurs et un service à la française, idéal pour les entreprises soucieuses de leurs données et coûts.
+:::tip Tip
+Stancer is like the **European champion** of card payments 🇫🇷 — international performance with French values and service, ideal for businesses concerned about their data and costs.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement optimisé
+### Optimized Payment Process
 
-Le paiement via Stancer suit un processus sécurisé et fluide :
+Payment via Stancer follows a secure and smooth process:
 
-1. **Sélection Stancer** : Le client choisit "Paiement par carte" (Stancer)
-2. **Redirection sécurisée** : Le client est dirigé vers l'interface Stancer
-3. **Saisie des données** : Formulaire de carte bancaire sécurisé et optimisé
-4. **Validation 3D Secure** : Authentification forte selon les exigences DSP2
-5. **Confirmation instantanée** : Validation du paiement en temps réel
-6. **Retour automatique** : Redirection immédiate vers votre boutique
-7. **Notification webhook** : Confirmation sécurisée via l'API Stancer
-8. **Traitement automatique** : Validation et activation des services
+1. **Stancer Selection**: The customer chooses "Card Payment" (Stancer)
+2. **Secure Redirect**: The customer is directed to Stancer interface
+3. **Data Entry**: Secure and optimized credit card form
+4. **3D Secure Validation**: Strong authentication according to PSD2 requirements
+5. **Instant Confirmation**: Real-time payment validation
+6. **Automatic Return**: Immediate redirect to your store
+7. **Webhook Notification**: Secure confirmation via Stancer API
+8. **Automatic Processing**: Service validation and activation
 
-### Avantages de la solution Stancer
+### Stancer Solution Advantages
 
-| Avantage                | Description                                        |
+| Advantage                | Description                                        |
 |-------------------------|----------------------------------------------------|
-| **Tarifs transparents** | Pas de frais cachés, tarification claire         |
-| **Support français**    | Équipe support basée en France et réactive       |
-| **Conformité RGPD**     | Respect natif de la réglementation européenne    |
-| **Technologies modernes** | API REST, webhooks, interface mobile-first     |
+| **Transparent Rates**   | No hidden fees, clear pricing                      |
+| **French Support**      | Support team based in France and responsive        |
+| **GDPR Compliance**     | Native respect of European regulations             |
+| **Modern Technologies** | REST API, webhooks, mobile-first interface         |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres essentiels
+### Essential Parameters
 
-**Nom de la passerelle** | (texte)<br />
+**Gateway Name** | (text)<br />
 
-Utilisez "Paiement par carte" ou "Carte bancaire" pour une identification claire par vos clients.
+Use "Card Payment" or "Credit Card" for clear identification by your customers.
 
-**Montant minimal** | (montant)<br />
+**Minimum Amount** | (amount)<br />
 
-Stancer n'impose pas de minimum. Configurez selon vos besoins (souvent 1€ pour éviter les micro-paiements).
+Stancer imposes no minimum. Configure according to your needs (often €1 to avoid micropayments).
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Maintenez en **"Actif"** pour offrir cette alternative de paiement européenne.
+Keep on **"Active"** to offer this European payment alternative.
 
-**Mode de fonctionnement** | (Test/Live)<br />
+**Operating Mode** | (Test/Live)<br />
 
-- **Mode Test** : Tests avec des cartes fictives
-- **Mode Live** : Production avec de vraies transactions
+- **Test Mode**: Tests with fictitious cards
+- **Live Mode**: Production with real transactions
 
-:::info Configuration recommandée
-Pour Stancer :
-- **Nom** : "Paiement par carte" ou "Carte bancaire"
-- **Montant minimal** : 1€ (ou selon vos besoins)
-- **Statut** : Actif
-- **Mode** : Live (après tests)
+:::info Recommended Configuration
+For Stancer:
+- **Name**: "Card Payment" or "Credit Card"
+- **Minimum Amount**: €1 (or according to your needs)
+- **Status**: Active
+- **Mode**: Live (after testing)
 :::
 
-## Récupération des clés API
+## API Key Retrieval
 
-### Accès au dashboard Stancer
+### Stancer Dashboard Access
 
-Pour configurer Stancer, vous devez récupérer vos clés d'API depuis votre compte :
+To configure Stancer, you need to retrieve your API keys from your account:
 
-1. **Connectez-vous** à votre compte Stancer
-2. Accédez à votre **dashboard de gestion**
-3. Rendez-vous dans la section **« Développeur »**
-4. Consultez la page des **clés d'API**
+1. **Log in** to your Stancer account
+2. Go to your **management dashboard**
+3. Navigate to the **"Developer"** section
+4. View the **API keys** page
 
-![Dashboard Stancer - Section développeur](/img/next_gen/settings/store/payment_gateways/stancer/dashboard.png)
+![Stancer Dashboard - Developer section](/img/next_gen/settings/store/payment_gateways/stancer/dashboard.png)
 
-### Types de clés
+### Key Types
 
-Stancer utilise deux types de clés pour sécuriser les transactions :
+Stancer uses two types of keys to secure transactions:
 
-**Clé publique** | (pk_...)<br />
-- Utilisée côté client pour initialiser les paiements
-- Peut être exposée publiquement sans risque
-- Nécessaire pour l'affichage du formulaire de paiement
+**Public Key** | (pk_...)<br />
+- Used client-side to initiate payments
+- Can be publicly exposed without risk
+- Necessary for payment form display
 
-**Clé privée** | (sk_...)<br />
-- Utilisée côté serveur pour les opérations sensibles
-- Doit rester confidentielle et sécurisée
-- Permet la validation des paiements et webhooks
+**Private Key** | (sk_...)<br />
+- Used server-side for sensitive operations
+- Must remain confidential and secure
+- Allows payment validation and webhooks
 
-### Configuration dans CLIENTXCMS
+### Configuration in CLIENTXCMS
 
-3. **Copiez la clé publique** dans le champ correspondant
-4. **Copiez la clé privée** dans le champ secret
-5. **Sélectionnez le mode** (Test/Live) approprié
-6. **Sauvegardez** la configuration
+3. **Copy the public key** into the corresponding field
+4. **Copy the private key** into the secret field
+5. **Select the mode** (Test/Live) appropriate
+6. **Save** the configuration
 
-:::warning Sécurité
-La **clé privée** doit rester absolument confidentielle. Ne la partagez jamais et stockez-la de manière sécurisée. Renouvelez-la en cas de suspicion de compromission.
+:::warning Security
+The **private key** must remain absolutely confidential. Never share it and store it securely. Renew it if you suspect compromise.
 :::
 
-## Modes de fonctionnement
+## Operating Modes
 
-### Mode Test
+### Test Mode
 
-Le mode test Stancer permet de :
-- **Tester l'intégration** avec des cartes de test
-- **Valider les webhooks** et notifications
-- **Simuler différents scénarios** (succès, échec, fraude)
-- **Former votre équipe** sans impact financier
+Stancer test mode allows you to:
+- **Test the integration** with test cards
+- **Validate webhooks** and notifications
+- **Simulate different scenarios** (success, failure, fraud)
+- **Train your team** without financial impact
 
-**Cartes de test disponibles** :
-- `4000000000000002` : Carte valide pour tests de succès
-- `4000000000000069` : Carte pour simuler des échecs
-- Autres cartes spécialisées selon les scénarios
+**Available Test Cards**:
+- `4000000000000002`: Valid card for success tests
+- `4000000000000069`: Card to simulate failures
+- Other specialized cards according to scenarios
 
-### Mode Live
+### Live Mode
 
-Le mode live active :
-- **Vrais paiements** avec de l'argent réel
-- **Accès complet** aux outils de gestion Stancer
-- **Rapports détaillés** et analytics
-- **Support client** français dédié
+Live mode activates:
+- **Real payments** with real money
+- **Full access** to Stancer management tools
+- **Detailed reports** and analytics
+- **Dedicated French customer support**
 
-:::tip Conseil
-Utilisez les **cartes de test Stancer** pour valider tous vos scénarios avant le passage en production. Testez particulièrement les cas d'échec et les remboursements.
+:::tip Advice
+Use **Stancer test cards** to validate all your scenarios before going to production. Test particularly failure cases and refunds.
 :::
 
-## Avantages techniques
+## Technical Advantages
 
-### API moderne et performante
+### Modern and Performant API
 
-Stancer propose une intégration technique de qualité :
+Stancer offers quality technical integration:
 
-| Fonctionnalité          | Avantage                                           |
+| Feature                  | Advantage                                           |
 |-------------------------|-----------------------------------------------------|
-| **API REST moderne**    | Intégration simple et standard                     |
-| **Webhooks fiables**    | Notifications temps réel sécurisées               |
-| **Documentation claire** | Guides détaillés et exemples de code             |
-| **SDKs multiples**      | Librairies pour tous les langages populaires      |
+| **Modern REST API**     | Simple and standard integration                     |
+| **Reliable Webhooks**   | Secure real-time notifications                      |
+| **Clear Documentation** | Detailed guides and code examples                   |
+| **Multiple SDKs**       | Libraries for all popular languages                 |
 
-### Sécurité et conformité
+### Security and Compliance
 
-Stancer respecte tous les standards de sécurité :
-- **Certification PCI-DSS Niveau 1**
-- **Conformité DSP2** et 3D Secure 2.0
-- **Chiffrement AES-256** pour toutes les données
-- **Tokenisation** des cartes bancaires
-- **Détection de fraude** en temps réel
+Stancer meets all security standards:
+- **PCI-DSS Level 1 Certification**
+- **PSD2 Compliance** and 3D Secure 2.0
+- **AES-256 Encryption** for all data
+- **Tokenization** of credit cards
+- **Real-time fraud detection**
 
-## Tarification Stancer
+## Stancer Pricing
 
-### Structure tarifaire
+### Pricing Structure
 
-Stancer propose une tarification simple et transparente :
-- **Cartes européennes** : Tarifs préférentiels
-- **Cartes internationales** : Tarifs standard
-- **Pas de frais cachés** : Transparence totale
-- **Volume élevé** : Tarifs dégressifs négociables
+Stancer offers simple and transparent pricing:
+- **European cards**: Preferential rates
+- **International cards**: Standard rates
+- **No hidden fees**: Total transparency
+- **High volume**: Negotiable degressive rates
 
-### Comparaison coûts
+### Cost Comparison
 
-| Aspect                    | Stancer      | Concurrents US |
+| Aspect                    | Stancer      | US Competitors |
 |---------------------------|--------------|----------------|
-| **Transparence**          | Totale       | Variable       |
-| **Support**               | Français     | International  |
-| **Conformité RGPD**       | Native       | Adaptée        |
-| **Tarifs européens**      | Optimisés    | Standard       |
+| **Transparency**          | Total        | Variable       |
+| **Support**               | French       | International  |
+| **GDPR Compliance**       | Native       | Adapted        |
+| **European Rates**        | Optimized    | Standard       |
 
-## Fonctionnalités avancées
+## Advanced Features
 
-### Gestion des paiements
+### Payment Management
 
-Depuis votre dashboard Stancer :
-- **Suivi en temps réel** de toutes les transactions
-- **Gestion des remboursements** en un clic
-- **Rapports détaillés** et exports
-- **Détection de fraude** avec scoring
+From your Stancer dashboard:
+- **Real-time tracking** of all transactions
+- **One-click refund management**
+- **Detailed reports** and exports
+- **Fraud detection** with scoring
 
-### Outils de réconciliation
+### Reconciliation Tools
 
-* **Exports automatiques** vers vos outils comptables
-* **Webhooks détaillés** pour l'intégration système
-* **API de réconciliation** pour les grands volumes
-* **Rapports personnalisés** selon vos besoins
+* **Automatic exports** to your accounting tools
+* **Detailed webhooks** for system integration
+* **Reconciliation API** for large volumes
+* **Custom reports** according to your needs
 
-## Support et assistance
+## Support and Assistance
 
-### Support client français
+### French Customer Support
 
-Stancer propose :
-- **Équipe support** basée en France
-- **Temps de réponse** optimisés
-- **Documentation** en français
-- **Accompagnement** à l'intégration
+Stancer offers:
+- **Support team** based in France
+- **Optimized response times**
+- **Documentation** in French
+- **Integration support**
 
-### Ressources disponibles
+### Available Resources
 
-* **Centre d'aide** complet en ligne
-* **Documentation technique** détaillée
-* **Exemples de code** prêts à l'emploi
-* **Communauté développeurs** active
+* **Complete online help center**
+* **Detailed technical documentation**
+* **Ready-to-use code examples**
+* **Active developer community**
 
-## Résolution des problèmes
+## Troubleshooting
 
-### Problèmes courants
+### Common Problems
 
-| Problème                     | Solution                                    |
-|------------------------------|---------------------------------------------|
-| **Clés invalides**           | Vérifier la correspondance test/live        |
-| **Webhooks non reçus**       | Contrôler l'URL et la configuration        |
-| **Paiements rejetés**        | Vérifier les limites et paramètres compte  |
-| **3D Secure échoue**         | Valider la configuration DSP2              |
+| Problem                     | Solution                                    |
+|-----------------------------|---------------------------------------------|
+| **Invalid keys**            | Check test/live correspondence              |
+| **Webhooks not received**   | Check URL and configuration                 |
+| **Rejected payments**       | Check account limits and settings           |
+| **3D Secure fails**         | Validate PSD2 configuration                 |
 
-### Diagnostic et logs
+### Diagnosis and Logs
 
-Pour résoudre un problème :
-1. **Consultez les logs** CLIENTXCMS
-2. **Vérifiez le dashboard** Stancer
-3. **Testez en mode sandbox** si nécessaire
-4. **Contactez le support** Stancer
+To resolve a problem:
+1. **Check logs** CLIENTXCMS
+2. **Check dashboard** Stancer
+3. **Test in sandbox mode** if necessary
+4. **Contact support** Stancer
 
-:::tip À retenir
-Stancer représente l'**excellence française** dans le paiement par carte avec des tarifs compétitifs, un support réactif et une conformité RGPD native. C'est le choix idéal pour les entreprises européennes soucieuses de leurs coûts et de leurs données.
+:::tip Remember
+Stancer represents **French excellence** in card payments with competitive rates, responsive support, and native GDPR compliance. It's the ideal choice for European businesses concerned about their costs and data.
 :::

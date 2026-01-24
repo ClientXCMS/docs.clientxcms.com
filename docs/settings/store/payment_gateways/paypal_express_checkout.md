@@ -1,241 +1,243 @@
+---
+translated: true
+---
 # PayPal Express Checkout
 
-La passerelle **PayPal Express Checkout** dans **CLIENTXCMS** correspond à la **version moderne et optimisée de l'intégration PayPal** utilisant l'API REST pour offrir une expérience de paiement fluide et sécurisée à vos clients. <br/>
-L'objectif est clair : **proposer la solution PayPal la plus avancée avec une interface utilisateur optimisée et des fonctionnalités étendues**. Un système PayPal Express Checkout bien configuré permet à vos clients de **payer en quelques clics avec une expérience premium** tout en vous offrant plus de contrôle et de flexibilité.
+The **PayPal Express Checkout** gateway in **CLIENTXCMS** corresponds to the **modern and optimized version of PayPal integration** using the REST API to offer a smooth and secure payment experience to your customers. <br/>
+The objective is clear: **offer the most advanced PayPal solution with an optimized user interface and extended features**. A well-configured PayPal Express Checkout system allows your customers to **pay in a few clicks with a premium experience** while giving you more control and flexibility.
 
-La passerelle PayPal Express Checkout peut être entièrement personnalisée : nom d'affichage, montant minimum, mode sandbox/live, identifiants API, etc.
+The PayPal Express Checkout gateway can be fully customized: display name, minimum amount, sandbox/live mode, API credentials, etc.
 
-Vous pouvez configurer PayPal Express Checkout depuis :
+You can configure PayPal Express Checkout from:
 
-`Paramètres` > `Paramètres de la boutique` > `PayPal Express Checkout`
+`Settings` > `Store Settings` > `PayPal Express Checkout`
 
-![Configuration de PayPal Express Checkout](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/config.png)
+![PayPal Express Checkout configuration](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/config.png)
 
-:::tip Astuce
-**PayPal Express Checkout** offre une expérience utilisateur **supérieure à PayPal standard** avec des temps de chargement réduits et une interface plus moderne qui améliore les conversions.
+:::tip Tip
+**PayPal Express Checkout** offers a **superior user experience to standard PayPal** with reduced loading times and a more modern interface that improves conversions.
 :::
 
-## Pourquoi choisir PayPal Express Checkout ?
+## Why choose PayPal Express Checkout?
 
-PayPal Express Checkout représente l'évolution moderne de PayPal, utilisant les dernières technologies REST API pour une intégration plus performante et flexible que PayPal classique.
+PayPal Express Checkout represents the modern evolution of PayPal, using the latest REST API technologies for a more performant and flexible integration than classic PayPal.
 
-Adopter PayPal Express Checkout vous permet de :
+Adopting PayPal Express Checkout allows you to:
 
-* Offrir l'expérience PayPal la plus moderne et rapide
-* Bénéficier d'une interface utilisateur optimisée
-* Accéder aux dernières fonctionnalités PayPal
-* Profiter d'une intégration plus stable et sécurisée
-* Réduire les abandons de panier grâce à un processus plus fluide
-* Obtenir des rapports et analytics plus détaillés
+* Offer the most modern and fast PayPal experience
+* Benefit from an optimized user interface
+* Access the latest PayPal features
+* Enjoy a more stable and secure integration
+* Reduce cart abandonment thanks to a smoother process
+* Get more detailed reports and analytics
 
-:::tip Astuce
-PayPal Express Checkout est comme la **version premium** de PayPal 🚀 — même confiance, mais avec une technologie de pointe qui booste vos performances de conversion.
+:::tip Tip
+PayPal Express Checkout is like the **premium version** of PayPal 🚀 — same trust, but with cutting-edge technology that boosts your conversion performance.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement optimisé
+### Optimized Payment Process
 
-Le paiement via PayPal Express Checkout suit un processus moderne et rapide :
+Payment via PayPal Express Checkout follows a modern and fast process:
 
-1. **Sélection Express Checkout** : Le client choisit "PayPal Express Checkout"
-2. **Redirection ultra-rapide** : Interface PayPal optimisée qui se charge instantanément
-3. **Authentification fluide** : Connexion PayPal ou saisie carte simplifiée
-4. **Validation express** : Confirmation en un clic avec aperçu détaillé
-5. **Retour instantané** : Redirection immédiate vers votre boutique
-6. **Notification API** : Confirmation sécurisée via l'API REST
-7. **Traitement automatique** : Validation et activation instantanées
-8. **Confirmation premium** : Notifications client enrichies
+1. **Express Checkout Selection**: The customer chooses "PayPal Express Checkout"
+2. **Ultra-Fast Redirect**: Optimized PayPal interface that loads instantly
+3. **Smooth Authentication**: PayPal login or simplified card entry
+4. **Express Validation**: One-click confirmation with detailed preview
+5. **Instant Return**: Immediate redirect to your store
+6. **API Notification**: Secure confirmation via REST API
+7. **Automatic Processing**: Instant validation and activation
+8. **Premium Confirmation**: Enhanced customer notifications
 
-### Avantages techniques de l'Express Checkout
+### Technical Advantages of Express Checkout
 
-| Avantage                  | Description                                        |
+| Advantage                  | Description                                        |
 |---------------------------|----------------------------------------------------|
-| **Performance supérieure** | API REST plus rapide que l'ancien système        |
-| **Interface moderne**     | Design PayPal optimisé pour mobile et desktop    |
-| **Sécurité renforcée**    | Protocoles de sécurité dernière génération       |
-| **Fiabilité maximale**    | Système de failover et haute disponibilité       |
+| **Superior Performance**   | REST API faster than the old system               |
+| **Modern Interface**       | PayPal design optimized for mobile and desktop    |
+| **Enhanced Security**      | Latest generation security protocols              |
+| **Maximum Reliability**    | Failover system and high availability             |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres essentiels
+### Essential Parameters
 
-**Nom de la passerelle** | (texte)<br />
+**Gateway Name** | (text)<br />
 
-Utilisez "PayPal Express" ou "PayPal" pour une identification claire de cette version premium.
+Use "PayPal Express" or "PayPal" for clear identification of this premium version.
 
-**Montant minimal** | (montant)<br />
+**Minimum Amount** | (amount)<br />
 
-Aucune restriction PayPal. Configurez 0.50€ pour accepter tous les montants.
+No PayPal restriction. Configure €0.50 to accept all amounts.
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Maintenez en **"Actif"** pour offrir la meilleure expérience PayPal à vos clients.
+Keep on **"Active"** to offer the best PayPal experience to your customers.
 
-**Mode de fonctionnement** | (Sandbox/Live)<br />
+**Operating Mode** | (Sandbox/Live)<br />
 
-- **Sandbox** : Tests avec identifiants de développement
-- **Live** : Production avec identifiants réels
+- **Sandbox**: Tests with development credentials
+- **Live**: Production with real credentials
 
-:::info Configuration recommandée
-Pour PayPal Express Checkout :
-- **Nom** : "PayPal Express" ou "PayPal"
-- **Montant minimal** : 0.50€
-- **Statut** : Actif
-- **Mode** : Live (après tests complets)
+:::info Recommended Configuration
+For PayPal Express Checkout:
+- **Name**: "PayPal Express" or "PayPal"
+- **Minimum Amount**: €0.50
+- **Status**: Active
+- **Mode**: Live (after complete testing)
 :::
 
-## Récupération des identifiants API
+## API Credentials Retrieval
 
-### Accès à l'espace développeur PayPal
+### Access to PayPal Developer Space
 
-Pour configurer PayPal Express Checkout, vous devez récupérer vos identifiants API REST :
+To configure PayPal Express Checkout, you need to retrieve your REST API credentials:
 
-1. **Connectez-vous** à votre compte PayPal Business
-2. Accédez à **l'espace développeur** PayPal
-3. Sélectionnez **« Mes applications et identifiants »**
-4. Choisissez **Live** ou **Sandbox** selon vos besoins
+1. **Log in** to your PayPal Business account
+2. Go to the PayPal **developer space**
+3. Select **"My applications and credentials"**
+4. Choose **Live** or **Sandbox** according to your needs
 
-![Accès aux applications REST](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/app_rest.png)
+![Access to REST applications](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/app_rest.png)
 
-### Création d'une application REST
+### Creating a REST Application
 
-5. Cliquez sur **« Créer une application »**
-6. Configurez votre application :
-   - **Nom** : Nom de votre boutique
-   - **Type** : Marchand
-   - **Fonctionnalités** : Express Checkout
+5. Click **"Create an application"**
+6. Configure your application:
+   - **Name**: Your store name
+   - **Type**: Merchant
+   - **Features**: Express Checkout
 
-![Création d'application REST](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/create_app.png)
+![REST application creation](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/create_app.png)
 
-### Récupération des clés
+### Retrieving Keys
 
-7. Une fois créée, récupérez vos identifiants :
-   - **Client ID** : Identifiant public de votre application
-   - **Client Secret** : Clé secrète (à garder confidentielle)
+7. Once created, retrieve your credentials:
+   - **Client ID**: Public identifier of your application
+   - **Client Secret**: Secret key (keep confidential)
 
-![Récupération des identifiants](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/keys.png)
+![Credentials retrieval](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/keys.png)
 
-### Configuration dans CLIENTXCMS
+### Configuration in CLIENTXCMS
 
-8. Copiez ces identifiants dans les champs correspondants :
+8. Copy these credentials into the corresponding fields:
 
-![Configuration des clés dans CLIENTXCMS](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/keys2.png)
+![Key configuration in CLIENTXCMS](/img/next_gen/settings/store/payment_gateways/paypal_express_checkout/keys2.png)
 
-9. **Sélectionnez le mode** (Sandbox/Live) correspondant
-10. **Sauvegardez** la configuration
+9. **Select the mode** (Sandbox/Live) accordingly
+10. **Save** the configuration
 
-:::warning Sécurité
-Gardez votre **Client Secret** confidentiel. Ne le partagez jamais et stockez-le de manière sécurisée. Renouvelez-le régulièrement pour maintenir la sécurité.
+:::warning Security
+Keep your **Client Secret** confidential. Never share it and store it securely. Renew it regularly to maintain security.
 :::
 
-## Modes de fonctionnement
+## Operating Modes
 
-### Mode Sandbox (Test)
+### Sandbox Mode (Test)
 
-Le mode Sandbox vous permet de :
-- **Tester l'intégration** sans transactions réelles
-- **Valider le processus** complet de paiement
-- **Simuler différents scénarios** (succès, échec, remboursements)
-- **Former votre équipe** sans risque financier
+Sandbox mode allows you to:
+- **Test the integration** without real transactions
+- **Validate the complete process** of payment
+- **Simulate different scenarios** (success, failure, refunds)
+- **Train your team** without financial risk
 
-**Configuration requise** :
-- Compte développeur PayPal
-- Identifiants Sandbox (Client ID et Secret de test)
+**Required Configuration**:
+- PayPal developer account
+- Sandbox credentials (test Client ID and Secret)
 
-### Mode Live (Production)
+### Live Mode (Production)
 
-Le mode Live active :
-- **Vrais paiements** avec transactions réelles
-- **Accès complet** aux outils PayPal
-- **Rapports détaillés** et analytics
-- **Protection vendeur** PayPal
+Live mode activates:
+- **Real payments** with real transactions
+- **Full access** to PayPal tools
+- **Detailed reports** and analytics
+- **PayPal seller protection**
 
-**Configuration requise** :
-- Compte PayPal Business vérifié
-- Identifiants Live (Client ID et Secret de production)
+**Required Configuration**:
+- Verified PayPal Business account
+- Live credentials (production Client ID and Secret)
 
-:::tip Conseil
-Testez **exhaustivement en mode Sandbox** avant le passage en Live. Vérifiez tous les scénarios : paiements réussis, échoués, remboursements.
+:::tip Advice
+Test **exhaustively in Sandbox mode** before going Live. Check all scenarios: successful payments, failed, refunds.
 :::
 
-## Gestion avancée
+## Advanced Management
 
-### Avantages de l'API REST
+### REST API Advantages
 
-L'intégration Express Checkout via API REST offre :
+Express Checkout integration via REST API offers:
 
-| Fonctionnalité            | Avantage                                           |
+| Feature                   | Advantage                                           |
 |---------------------------|-----------------------------------------------------|
-| **Webhooks avancés**      | Notifications en temps réel plus fiables          |
-| **Gestion des erreurs**   | Messages d'erreur détaillés et exploitables       |
-| **Rapports enrichis**     | Analytics et métriques avancées                   |
-| **Personnalisation**      | Plus d'options de customisation de l'expérience   |
+| **Advanced Webhooks**     | More reliable real-time notifications               |
+| **Error Management**      | Detailed and exploitable error messages             |
+| **Enhanced Reports**      | Advanced analytics and metrics                      |
+| **Customization**         | More experience customization options               |
 
-### Monitoring et analytics
+### Monitoring and Analytics
 
-Avec PayPal Express Checkout, vous bénéficiez de :
-- **Tableaux de bord enrichis** dans votre compte PayPal
-- **Rapports de conversion** détaillés
-- **Analyse des abandons** de panier
-- **Métriques de performance** en temps réel
+With PayPal Express Checkout, you benefit from:
+- **Enhanced dashboards** in your PayPal account
+- **Detailed conversion reports**
+- **Cart abandonment analysis**
+- **Real-time performance metrics**
 
-## Différences avec PayPal Standard
+## Differences with Standard PayPal
 
-### Comparaison technique
+### Technical Comparison
 
 | Aspect                    | PayPal Standard | PayPal Express Checkout |
 |---------------------------|----------------|-------------------------|
-| **Technologie**           | IPN classique  | API REST moderne        |
-| **Performance**           | Standard       | Optimisée               |
-| **Interface utilisateur** | Basique        | Premium                 |
-| **Fonctionnalités**       | Limitées       | Étendues                |
-| **Maintenance**           | Manuelle       | Automatisée             |
+| **Technology**            | Classic IPN    | Modern REST API         |
+| **Performance**           | Standard       | Optimized               |
+| **User Interface**        | Basic          | Premium                 |
+| **Features**              | Limited        | Extended                |
+| **Maintenance**           | Manual         | Automated               |
 
-### Quand choisir Express Checkout ?
+### When to Choose Express Checkout?
 
-Privilégiez Express Checkout si :
-- Vous voulez la **meilleure expérience utilisateur**
-- Vous recherchez des **performances optimales**
-- Vous souhaitez accéder aux **dernières fonctionnalités**
-- Vous voulez des **rapports détaillés**
+Prefer Express Checkout if:
+- You want the **best user experience**
+- You're looking for **optimal performance**
+- You want access to the **latest features**
+- You want **detailed reports**
 
-## Résolution des problèmes
+## Troubleshooting
 
-### Problèmes courants
+### Common Problems
 
-| Problème                        | Solution                                    |
+| Problem                        | Solution                                    |
 |---------------------------------|---------------------------------------------|
-| **Identifiants invalides**     | Vérifier Client ID et Secret               |
-| **Mode incorrect**              | Vérifier correspondance Sandbox/Live       |
-| **Webhooks non reçus**         | Contrôler la configuration des notifications |
-| **Paiements non validés**      | Vérifier les logs d'API                    |
+| **Invalid credentials**        | Verify Client ID and Secret                |
+| **Incorrect mode**             | Verify Sandbox/Live correspondence         |
+| **Webhooks not received**      | Check notification configuration           |
+| **Unvalidated payments**       | Check API logs                             |
 
-### Diagnostic
+### Diagnosis
 
-Pour diagnostiquer un problème :
-1. **Vérifiez les logs** CLIENTXCMS
-2. **Consultez les rapports** PayPal
-3. **Testez en mode Sandbox** si nécessaire
-4. **Contactez le support** PayPal développeurs
+To diagnose a problem:
+1. **Check logs** CLIENTXCMS
+2. **Consult PayPal reports**
+3. **Test in Sandbox mode** if necessary
+4. **Contact PayPal developer support**
 
-## Sécurité et bonnes pratiques
+## Security and Best Practices
 
-### Sécurisation de l'intégration
+### Integration Security
 
-* **Stockage sécurisé** des identifiants API
-* **Validation systématique** des webhooks
-* **Monitoring** des transactions suspectes
-* **Mise à jour régulière** des identifiants
+* **Secure storage** of API credentials
+* **Systematic validation** of webhooks
+* **Monitoring** of suspicious transactions
+* **Regular update** of credentials
 
-### Optimisation des performances
+### Performance Optimization
 
-* **Cache intelligent** des tokens d'authentification
-* **Gestion des erreurs** proactive
-* **Monitoring** des temps de réponse
+* **Smart caching** of authentication tokens
+* **Proactive error management**
+* **Response time monitoring**
+* **Regular integration testing**
 
-* **Tests réguliers** de l'intégration
-
-:::tip À retenir
-PayPal Express Checkout représente le **futur de l'intégration PayPal** avec des performances supérieures et une expérience utilisateur premium. C'est l'option recommandée pour maximiser vos conversions PayPal.
+:::tip Remember
+PayPal Express Checkout represents the **future of PayPal integration** with superior performance and a premium user experience. It's the recommended option to maximize your PayPal conversions.
 :::
