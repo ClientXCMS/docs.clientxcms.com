@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 # Getting Started
 ## Introduction

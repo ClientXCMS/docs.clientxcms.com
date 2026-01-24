@@ -72,12 +72,12 @@ development_status:
   3-1-traduire-getting-started-md-index: done
   3-2-traduire-first-login-md: done
   3-3-traduire-personalization-md: done
-  3-4-traduire-server-md: review
-  3-5-traduire-products-md: review
-  3-6-traduire-payments-md: review
-  3-7-traduire-accounts-md: ready-for-dev
-  3-8-traduire-service-md: ready-for-dev
-  3-9-traduire-finish-md: ready-for-dev
+  3-4-traduire-server-md: done
+  3-5-traduire-products-md: done
+  3-6-traduire-payments-md: done
+  3-7-traduire-accounts-md: review
+  3-8-traduire-service-md: review
+  3-9-traduire-finish-md: review
   epic-3-retrospective: optional
 
   # Epic 4: MVD - Settings Core

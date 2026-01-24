@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+translated: true
 ---
 
 # Client Area Customization

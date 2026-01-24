@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 # First Login
 
