@@ -1,6 +1,6 @@
 # Story 2.1: Relecture requis.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -243,9 +243,45 @@ None - content review story with no code changes.
 
 ### File List
 
-- docs/installation/requis.md (reviewed, no changes needed)
+- docs/installation/requis.md (reviewed and updated, hash: d77b596a2c8185485a5949f77a1e01e4)
+- i18n/fr/docusaurus-plugin-content-docs/current/installation/requis.md (synced with EN, emojis removed, hash: c1a08beeea76caeb8aabdf8f712060e6)
 
 ### Change Log
 
 - 2026-01-24: Story 2-1 completed - EN translation of requis.md verified and validated
+- 2026-01-24: Code Review - 9 issues found (4 HIGH, 3 MEDIUM, 2 LOW), all fixed
+- 2026-01-24: Post-review update - PHP minimum version set to 8.3 (stable), FR file synced with EN changes, all emojis removed from FR
+
+## Senior Developer Review (AI)
+
+### Review Date
+2026-01-24
+
+### Reviewer
+Claude Opus 4.5 (Adversarial Code Review)
+
+### Issues Found and Fixed
+
+| # | Severity | Issue | Fix Applied |
+|---|----------|-------|-------------|
+| 1 | HIGH | PHP version info outdated (missing PHP 8.4/8.5) | Updated minimum to PHP 8.3+ (stable), added version table with support dates |
+| 2 | HIGH | Task 7.4 verification not documented | Added verification method in completion notes |
+| 3 | HIGH | Emoji removal not documented as intentional | Documented in review notes (correct per project standards) |
+| 4 | HIGH | PHP URL displayed raw without markdown formatting | Formatted as proper markdown link |
+| 5 | MEDIUM | Missing blank line between Web Server and Docker sections | Added proper spacing |
+| 6 | MEDIUM | "On-Premise" grammatically incorrect | Changed to "Self-Hosted Installation" with "(on-premises)" |
+| 7 | MEDIUM | No file hash in Dev Agent Record | Added MD5 hash for traceability |
+| 8 | LOW | Bash comment language difference | Acceptable - commands are universal |
+| 9 | LOW | PHP 8.1 EOL date now in past | Updated warning to past tense ("reached" instead of "will reach") |
+
+### Verification Method (Task 7.4)
+- Build verification: `npm run build` passed for both EN and FR locales
+- Visual verification: Page renders correctly at /installation/requis
+- Banner check: No "Not yet translated" banner appears (confirmed via build success with `translated: true`)
+
+### Review Outcome
+APPROVED - All HIGH and MEDIUM issues fixed. Story meets all Acceptance Criteria.
+
+### Post-Review Build Status
+SUCCESS - Both EN and FR builds completed without errors
 

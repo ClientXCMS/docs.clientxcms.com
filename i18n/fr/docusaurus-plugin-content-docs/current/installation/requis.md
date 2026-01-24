@@ -13,7 +13,7 @@ Les prérequis sont les suivants :
 - souscrire à un **plan actif**.
 
 Les plans sont disponibles à la commande à l’adresse suivante :  
-👉 [https://clientxcms.com/pricing](https://clientxcms.com/pricing)
+[https://clientxcms.com/pricing](https://clientxcms.com/pricing)
 
 ## Installation on-premise
 ClientXCMS peut également être installé en **autohébergement (on-premise)**, à condition de disposer :
@@ -25,7 +25,7 @@ Cette option requiert :
 - un **plan Community actif sur la plateforme ClientXCMS**.
 
 Les plans correspondants sont disponibles sur la page suivante :  
-👉 [https://clientxcms.com/pricing](https://clientxcms.com/pricing)
+[https://clientxcms.com/pricing](https://clientxcms.com/pricing)
 
 ### Prérequis techniques
 - **Système d’exploitation** : Linux (Ubuntu 22.04+, Debian 11+, CentOS 8+) ou Windows Server
@@ -40,14 +40,16 @@ Nous vous recommandons de vous tourner vers notre projet [CTXHosting](https://ct
 
 ### PHP
 
-ClientXCMS nécessite **PHP 8.1 ou supérieur** pour fonctionner.  
-Toutefois, il est **fortement recommandé d’utiliser PHP 8.3 ou supérieur** afin de bénéficier des dernières améliorations en matière de **performances**, de **sécurité** et de **compatibilité**.
+ClientXCMS nécessite **PHP 8.3 ou supérieur** pour fonctionner.
+PHP 8.4 est également entièrement supporté et offre les dernières améliorations en matière de **performances**, **sécurité** et **compatibilité**.
 
-PHP 8.3 bénéficie de **correctifs de sécurité jusqu’au 31 décembre 2027**.  
-Au-delà de cette date, il sera préférable de migrer vers **une autre version de PHP** afin de continuer à recevoir les mises à jour de sécurité.
+| Version | Statut | Correctifs de sécurité jusqu'au |
+|---------|--------|--------------------------------|
+| **PHP 8.3** | Stable (recommandé) | 31 décembre 2027 |
+| **PHP 8.4** | Actif | 31 décembre 2028 |
 
-Pour connaître les versions de PHP actuellement supportées et recommandées, veuillez consulter le site officiel :  
-👉 https://www.php.net/supported-versions.php
+Pour connaître les versions de PHP actuellement supportées et recommandées, veuillez consulter le site officiel :
+[https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php)
 
 #### Vérifier la version de PHP installée
 
@@ -58,10 +60,10 @@ php -v
 ```
 
 :::warning Fin de vie de PHP 8.1
-PHP 8.1 arrivera à sa fin de vie (EOL – End Of Life) à partir de janvier 2026.
-Cela signifie qu’il ne recevra plus de mises à jour de sécurité ni de correctifs officiels.
+PHP 8.1 a atteint sa fin de vie (EOL) en janvier 2026.
+Cela signifie qu'il ne reçoit plus de mises à jour de sécurité ni de correctifs officiels.
 
-👉 Il est fortement conseillé de mettre à jour votre environnement PHP afin de garantir la sécurité et la stabilité de votre application.
+Il est fortement conseillé de mettre à jour votre environnement vers PHP 8.3 ou supérieur afin de garantir la sécurité et la stabilité de votre application.
 :::
 
 #### Extensions PHP

@@ -16,8 +16,8 @@ The requirements are as follows:
 Plans are available for order at the following address:
 [https://clientxcms.com/pricing](https://clientxcms.com/pricing)
 
-## On-Premise Installation
-ClientXCMS can also be installed **on-premise (self-hosted)**, provided you have:
+## Self-Hosted Installation
+ClientXCMS can also be installed **self-hosted (on-premises)**, provided you have:
 - a **database**;
 - a **compatible PHP version**.
 
@@ -41,14 +41,16 @@ We recommend checking out our [CTXHosting](https://ctxhosting.fr) project.
 
 ### PHP
 
-ClientXCMS requires **PHP 8.1 or higher** to run.
-However, it is **strongly recommended to use PHP 8.3 or higher** to benefit from the latest improvements in **performance**, **security**, and **compatibility**.
+ClientXCMS requires **PHP 8.3 or higher** to run.
+PHP 8.4 is also fully supported and offers the latest improvements in **performance**, **security**, and **compatibility**.
 
-PHP 8.3 receives **security fixes until December 31, 2027**.
-After this date, it is recommended to migrate to **another PHP version** to continue receiving security updates.
+| Version | Support Status | Security Fixes Until |
+|---------|----------------|----------------------|
+| **PHP 8.3** | Stable (recommended) | December 31, 2027 |
+| **PHP 8.4** | Active | December 31, 2028 |
 
 To check currently supported and recommended PHP versions, please visit the official website:
-https://www.php.net/supported-versions.php
+[https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php)
 
 #### Checking the Installed PHP Version
 
@@ -59,10 +61,10 @@ php -v
 ```
 
 :::warning End of Life for PHP 8.1
-PHP 8.1 will reach its end of life (EOL) starting January 2026.
-This means it will no longer receive security updates or official patches.
+PHP 8.1 reached its end of life (EOL) in January 2026.
+This means it no longer receives security updates or official patches.
 
-It is strongly advised to update your PHP environment to ensure the security and stability of your application.
+It is strongly advised to update your PHP environment to PHP 8.3 or higher to ensure the security and stability of your application.
 :::
 
 #### PHP Extensions
@@ -137,6 +139,8 @@ For a production environment, we strongly recommend **MariaDB** for its proven p
 :::
 
 ### Web Server
+
 ClientXCMS is compatible with most web servers. It is recommended to use [Apache or Nginx](./selfhosted) or a [Plesk hosting](./plesk).
+
 ### Docker
 You can also install ClientXCMS via Docker. To do this, you must have Docker and Docker Compose installed on your server. You can follow the Docker installation instructions [here](./docker).
