@@ -1,6 +1,6 @@
 # Story 1.1: Relecture introduction.md
 
-Status: review
+Status: done
 
 ## Story
 
@@ -26,13 +26,14 @@ so that international users get a great first impression of ClientXCMS.
    - No broken internal links
 
 4. **AC4**: Image verified
-   - External image loads correctly
-   - Alt text appropriate (currently empty)
+   - Image hosted locally per project standards (moved from external URL)
+   - Alt text descriptive for accessibility
 
 5. **AC5**: Frontmatter complete
    - `translated: true` present
    - `sidebar_position: 1` correct
    - `slug: /` correct
+   - `description` meta added for SEO
 
 6. **AC6**: Build successful
    - `npm run build` passes without errors
@@ -174,8 +175,21 @@ Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### File List
 
-- `docs/introductions/introduction.md` - EN target file (modified: added alt text to image)
+- `docs/introductions/introduction.md` - EN target file (comprehensive review fixes applied)
+- `i18n/fr/docusaurus-plugin-content-docs/current/introductions/introduction.md` - FR source file (consistency fixes)
+- `static/img/next_gen/introductions/dashboard-preview.png` - Local image asset (moved from external URL)
 
 ## Change Log
 
 - 2026-01-24: Completed proofreading and validation of EN introduction page. Added accessibility alt text to hero image. All acceptance criteria verified and build successful.
+- 2026-01-24: Code Review - 9 issues fixed (2 HIGH, 4 MEDIUM, 3 LOW):
+  - HIGH: Moved image from external URL to local repository per project standards
+  - HIGH: Enhanced alt text for maximum accessibility
+  - MEDIUM: Added meta description to frontmatter for SEO
+  - MEDIUM: Fixed markdown formatting (spacing after frontmatter, headings)
+  - MEDIUM: Enriched Contributing section with actionable guidance
+  - MEDIUM: Fixed grammatical inconsistencies
+  - LOW: Corrected "unsuspension" to "reactivation" (standard English)
+  - LOW: Capitalized "Client Management System" as product term
+  - LOW: Removed emoji from FR Contributing section (project standards)
+  - FR file also updated for consistency (image, formatting, emoji removal)

@@ -38,8 +38,28 @@ npm run start
 
 > Cette commande démarre le serveur en mode développement. Accédez à votre documentation localement via [http://localhost:3000](http://localhost:3000). Toute modification dans vos fichiers sera rechargée automatiquement !
 
+#### Developpement multilingue (i18n)
 
-### 2. Créez une branche pour vos modifications
+La documentation est disponible en anglais (EN) et francais (FR). En mode developpement, Docusaurus ne sert qu'une seule locale a la fois.
+
+```bash
+# Serveur de dev en anglais (defaut)
+npm run start
+
+# Serveur de dev en francais
+npm run start -- --locale fr
+
+# Pour tester les deux locales simultanement, utilisez le build complet
+npm run build && npm run serve
+```
+
+| Mode | Commande | Locales disponibles | Hot-reload |
+|------|----------|---------------------|------------|
+| Dev EN | `npm run start` | EN uniquement | Oui |
+| Dev FR | `npm run start -- --locale fr` | FR uniquement | Oui |
+| Production | `npm run build && npm run serve` | EN + FR | Non |
+
+### 3. Creez une branche pour vos modifications
 Travaillez sur une branche dédiée selon le type de modification :
 #### Convention à lire
 
