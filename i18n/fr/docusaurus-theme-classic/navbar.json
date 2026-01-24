@@ -4,7 +4,7 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "CLIENTXCMS Logo",
+    "message": "Logo CLIENTXCMS",
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
@@ -19,25 +19,13 @@
     "message": "API",
     "description": "Navbar item with label API"
   },
-  "item.label.Ressources": {
+  "item.label.Resources": {
     "message": "Ressources",
-    "description": "Navbar item with label Ressources"
+    "description": "Navbar item with label Resources"
   },
   "item.label.Changelog": {
     "message": "Changelog",
     "description": "Navbar item with label Changelog"
-  },
-  "item.label.Soumettre une idée": {
-    "message": "Soumettre une idée",
-    "description": "Navbar item with label Soumettre une idée"
-  },
-  "item.label.Retour au site": {
-    "message": "Retour au site",
-    "description": "Navbar item with label Retour au site"
-  },
-  "item.label.Resources": {
-    "message": "Ressources",
-    "description": "Navbar item with label Resources"
   },
   "item.label.Submit an idea": {
     "message": "Soumettre une idée",

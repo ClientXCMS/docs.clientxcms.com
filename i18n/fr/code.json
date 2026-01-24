@@ -425,5 +425,9 @@
   "notTranslated.viewInFrench": {
     "message": "Voir en anglais",
     "description": "Link text to view page in original language"
+  },
+  "theme.announcementBar.content": {
+    "message": "Bienvenue sur la documentation officielle de ClientXCMS.com ! Explorez nos guides et ressources pour maîtriser pleinement notre CMS.",
+    "description": "The content of the announcement bar"
   }
 }
