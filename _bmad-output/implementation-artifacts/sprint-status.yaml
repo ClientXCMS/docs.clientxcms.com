@@ -45,7 +45,7 @@ development_status:
   0-4-test-plugin-search-local: skipped
   0-5-composants-react-extraction-textes: done
   0-6-bandeau-not-yet-translated: done
-  0-7-config-redirects-301: ready-for-dev
+  0-7-config-redirects-301: skipped
   epic-0-retrospective: optional
 
   # Epic 1: MVD - Introduction

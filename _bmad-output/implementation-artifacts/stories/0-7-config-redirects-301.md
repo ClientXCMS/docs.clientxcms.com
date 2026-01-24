@@ -1,6 +1,6 @@
 # Story 0.7: Config redirects 301
 
-Status: ready-for-dev
+Status: skipped
 
 ## Story
 
@@ -82,16 +82,19 @@ Les utilisateurs avec des bookmarks ou des liens externes vers les anciennes URL
 
 ### Agent Model Used
 
-(a remplir lors du dev)
+Claude Opus 4.5
 
 ### Debug Log References
 
-(a remplir lors du dev)
+N/A
 
 ### Completion Notes List
 
-(a remplir lors du dev)
+- Story abandonnee apres analyse
+- Raison: L'AC1 mentionnait des redirects `/docs/*` mais le site utilise `routeBasePath: '/'` donc pas de prefix `/docs/`
+- La vraie intention (redirect automatique FR basee sur langue navigateur) necessite une approche differente (JS ou Nginx)
+- Decision utilisateur: Skip cette story, a revoir plus tard si necessaire
 
 ### File List
 
-(a remplir lors du dev)
+Aucun fichier modifie (story skipped)
