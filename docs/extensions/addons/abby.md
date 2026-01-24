@@ -1,28 +1,32 @@
+---
+translated: true
+---
+
 # Abby
-Abby automatise l’enregistrement des recettes dans votre livre comptable. Chaque vente, paiement ou facture réglée dans CLIENTXCMS est synchronisée automatiquement dans le bon compte de recettes, sans saisie manuelle. Configurez vos produits, laissez Abby générer les écritures et gardez un historique complet : date, montant, client, facture et lien direct.
+Abby automates the recording of revenue in your accounting book. Each sale, payment, or settled invoice in CLIENTXCMS is automatically synchronized to the correct revenue account, without manual entry. Configure your products, let Abby generate the entries, and keep a complete history: date, amount, customer, invoice, and direct link.
 
 
 :::info
-Pour utiliser les fonctionnalités suivantes, il faut que l'addon Abby soit activé sur votre CLIENTXCMS . [cliquez ici pour l'activer](../)
+To use the following features, the Abby addon must be enabled on your CLIENTXCMS. [click here to enable it](../)
 :::
 
-:::info Comptabilité
-L'addon Abby importe uniquement les factures une fois qu'elles sont payées. Les factures impayées, annulées ou autres ne seront pas importées dans Abby. Cela n'importe pas les paiements manuels effectués par les crédits clients considérant qu'ils sont déjà comptabilisés en tant que recettes lors de l'ajout du crédit.
+:::info Accounting
+The Abby addon only imports invoices once they are paid. Unpaid, cancelled, or other invoices will not be imported into Abby. It does not import manual payments made with customer credits since they are already recorded as revenue when the credit is added.
 :::
 ## Configuration
-Vous pouvez configurer votre environement Abby dans votre fichier `.env` en ajoutant les lignes suivantes :
+You can configure your Abby environment in your `.env` file by adding the following lines:
 
 ```env
 ABBY_API_KEY=your_api_key
 ```
-Remplacez `your_api_key` par votre clé API Abby.
-Vous pouvez retrouver votre clé API dans votre compte Abby sous `Paramètres` > `Intégration` > `Clé d'API` > `Ajouter une clé`.
+Replace `your_api_key` with your Abby API key.
+You can find your API key in your Abby account under `Settings` > `Integration` > `API Key` > `Add a key`.
 
-## Migration des données existantes
-Si vous avez déjà des factures payées dans CLIENTXCMS avant l'installation d'Abby, vous pouvez migrer ces données vers Abby en utilisant la commande artisan suivante :
+## Migrating Existing Data
+If you already have paid invoices in CLIENTXCMS before installing Abby, you can migrate this data to Abby using the following artisan command:
 ```bash
 php artisan abby:process-invoices --start-date=YYYY-MM-DD --end-date=YYYY-MM-DD
 ```
-Remplacez `YYYY-MM-DD` par les dates de début et de fin de la période que vous souhaitez migrer. Cette commande va traiter toutes les factures payées entre ces deux dates et les enregistrer dans Abby.
+Replace `YYYY-MM-DD` with the start and end dates of the period you want to migrate. This command will process all paid invoices between these two dates and record them in Abby.
 
-Cela importera uniquement les factures payées. Les factures impayées, annulées ou autres ne seront pas migrées.
+This will only import paid invoices. Unpaid, cancelled, or other invoices will not be migrated.

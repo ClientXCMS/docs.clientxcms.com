@@ -1,68 +1,72 @@
-# Essai Gratuit
+---
+translated: true
+---
 
-L'add-on **Essai Gratuit** permet de proposer des périodes d’essai gratuites pour vos services ou produits. Vous pouvez l’activer depuis la section **Extensions**, puis le configurer via les **paramètres d’extension**.
+# Free Trial
+
+The **Free Trial** add-on allows you to offer free trial periods for your services or products. You can enable it from the **Extensions** section, then configure it via **extension settings**.
 
 ![img](/img/next_gen/extensions/addons/free_trial/image.png)
 
 ---
 
-## Configuration de l'essai gratuit
+## Free Trial Configuration
 
-Pour configurer un produit à tester, allez dans les paramètres de l’extension et ajoutez un produit avec les paramètres suivants :
+To configure a product for trial, go to the extension settings and add a product with the following parameters:
 
-### Produit
+### Product
 
-Sélectionnez le produit ou service à proposer en essai.
+Select the product or service to offer as a trial.
 
 ### Type
 
-Deux options disponibles :
+Two options available:
 
-* **Essai gratuit** : Le client accède gratuitement au service pendant un nombre défini de jours. À l’issue de cette période, il peut payer pour un mois d'utilisation.
-* **Amélioration** : Le client reçoit un service de base pendant l’essai. Il peut ensuite l’améliorer avec des services supplémentaires.
-* **Essaie simple** : Le client peut tester le service gratuitement pendant une période définie. À la fin de cette période, le service est automatiquement supprimé s'il n'est pas converti en achat payant.
+* **Free Trial**: The customer accesses the service for free for a defined number of days. At the end of this period, they can pay for a month of use.
+* **Upgrade**: The customer receives a basic service during the trial. They can then upgrade it with additional services.
+* **Simple Trial**: The customer can test the service for free for a defined period. At the end of this period, the service is automatically deleted if not converted to a paid purchase.
 
-  ⚠️ **Important** : Si les upgrades n’apparaissent pas sur le service, il faut sauvegarder les produits dans le groupe correspondant.
+  ⚠️ **Important**: If upgrades don't appear on the service, you need to save the products in the corresponding group.
 
-### Type d'essai
+### Trial Type
 
-Détermine le comportement d'accès à l'essai :
+Determines the trial access behavior:
 
-* **Les clients seront forcés à l'essai** :
+* **Customers will be forced to trial**:
 
-  * Le bouton d'ajout change pour refléter l’essai obligatoire.
-  * L'ajout au panier est désactivé.
+  * The add button changes to reflect the mandatory trial.
+  * Adding to cart is disabled.
 
-* **Les clients pourront commander ou demander un essai** :
+* **Customers can order or request a trial**:
 
-  * Les clients peuvent ajouter le produit au panier normalement.
-  * Un bouton d’appel à l’action (CTA) propose de tester le produit.
+  * Customers can add the product to cart normally.
+  * A call-to-action (CTA) button offers to test the product.
 
 ![img](/img/next_gen/extensions/addons/free_trial/image2.png)
-### 🔹 Nombre d’essais maximum par client
+### Maximum trials per customer
 
-Indique combien de fois un client peut bénéficier de l’essai.
-`0` pour désactiver la limite.
+Indicates how many times a customer can benefit from the trial.
+`0` to disable the limit.
 
-### Nombre de jours de l’essai
+### Number of trial days
 
-Durée de l’essai en jours.
+Trial duration in days.
 
-### Nombre actuel d’essais en cours
+### Current number of active trials
 
-Affiche le nombre d’essais actifs à l’instant T (champ non modifiable).
+Displays the number of active trials at the moment (non-editable field).
 
 ---
 
-## Liste des services d'essai
+## Trial Services List
 
-Une table affiche les services actuellement configurés pour l’essai avec les colonnes suivantes :
+A table displays the services currently configured for trial with the following columns:
 
 * **Service**
-* **Test concluant**
-* **Créé**
+* **Successful test**
+* **Created**
 * **Actions**
 
-Cela permet de visualiser et d'avoir des informations sur vos services d'essai.
+This allows you to view and get information about your trial services.
 
 ![img](/img/next_gen/extensions/addons/free_trial/image1.png)

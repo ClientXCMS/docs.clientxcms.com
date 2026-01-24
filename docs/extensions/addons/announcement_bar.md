@@ -1,42 +1,43 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 # Announcement Bar
-L'addon Announcement Bar permet d'afficher une barre de notification en haut de votre site web pour informer vos utilisateurs des nouveautés, promotions ou alertes importantes.
+The Announcement Bar addon allows you to display a notification bar at the top of your website to inform your users about news, promotions, or important alerts.
 
 :::warning
-Cet addon nécessite une version v2.14.9 ou supérieure de ClientXCMS.
+This addon requires ClientXCMS version v2.14.9 or higher.
 :::
 
 ## Configuration
-Vous pouvez gérer la configuration de l'announcement bar dans `Espace d'administration ` > `Paramètres` > `Personalisations ` > `Bandeau d'annonce`
+You can manage the announcement bar configuration in `Admin Panel` > `Settings` > `Customizations` > `Announcement Banner`
 
-**HTML du bandeau** : Vous pouvez mettre du HTML dans le champ de texte pour personnaliser le contenu de la barre d'annonce.
-**Début d'affichage** : Vous pouvez définir la date et l'heure de début d'affichage de la barre d'annonce.
-**Fin d'affichage** : Vous pouvez définir la date et l'heure de fin d'affichage de la barre d'annonce.
-**Activer le bandeau** : Vous pouvez activer ou désactiver l'announcement bar.
+**Banner HTML**: You can add HTML in the text field to customize the announcement bar content.
+**Display Start**: You can set the start date and time for the announcement bar display.
+**Display End**: You can set the end date and time for the announcement bar display.
+**Enable Banner**: You can enable or disable the announcement bar.
 :::info
-Vérifiez que le thème que vous utilisez supporte l'affichage de l'announcement bar. Certains thèmes personnalisés peuvent ne pas afficher cette fonctionnalité.
+Make sure the theme you are using supports the announcement bar display. Some custom themes may not display this feature.
 :::
 
-## Comment supporter l'addon sur un thème ?
-Pour que l'announcement bar s'affiche correctement, votre thème doit inclure le code suivant dans votre fichier `layouts/client.blade.php` ou `layouts/front.blade.php` ou équivalent, juste après la balise `<body>` :
+## How to support the addon on a theme?
+For the announcement bar to display correctly, your theme must include the following code in your `layouts/client.blade.php` or `layouts/front.blade.php` file or equivalent, right after the `<body>` tag:
 
 ```php
     {!! app('seo')->header() !!}
 ```
 
-## Exemple d'affichage de l'announcement bar :
+## Announcement bar display examples:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-	<TabItem value="example1" label="Exemple 1">
-### Preview : 
+	<TabItem value="example1" label="Example 1">
+### Preview:
     ![img](/img/next_gen/extensions/addons/announcement_bar/example1.png)
-### Code source : 
+### Source code:
 ```html
 <div class="bg-gray-400 backdrop-blur-lg dark:bg-neutral-900/60">
     <div class="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
@@ -45,19 +46,19 @@ import TabItem from '@theme/TabItem';
             <div class="flex items-center gap-x-3 md:gap-x-5">
                 <div class="grow">
                     <p class="md:text-xl text-gray-800 font-semibold dark:text-neutral-200">
-                        Démarrez dès aujourd'hui. 
+                        Get started today.
                     </p>
                     <p class="text-sm md:text-base text-gray-800 dark:text-neutral-200">
-                        Profitez du code promo <span class="font-semibold text-primary">"TEST"</span> pour une remise de 5% sur votre première commande.
+                        Use promo code <span class="font-semibold text-primary">"TEST"</span> for a 5% discount on your first order.
                     </p>
                 </div>
             </div>
             <div class="text-center sm:text-start flex sm:justify-end sm:items-center gap-x-3 md:gap-x-4">
                 <a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="/store">
-                    Commencer
+                    Get Started
                 </a>
                 <a class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-800 text-gray-800 hover:border-gray-500 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-white dark:text-white dark:hover:text-neutral-300 dark:hover:border-neutral-300" href="/client/support/submit">
-                    Nous contacter
+                    Contact Us
                 </a>
             </div>
         </div>
@@ -66,7 +67,7 @@ import TabItem from '@theme/TabItem';
 ```
 </TabItem>
 
-    <TabItem value="example2" label="Exemple 2">
+    <TabItem value="example2" label="Example 2">
 ```html
 <div class="bg-emerald-500 rounded-lg">
     <div class="max-w-7xl px-4 py-4 sm:px-6 lg:px-8 mx-auto">
@@ -77,16 +78,16 @@ import TabItem from '@theme/TabItem';
                 </svg>
                 <div>
                     <p class="text-white font-semibold text-lg">
-                        Frais d'installation offert dès 50€ d'achat
+                        Free setup fee on orders over €50
                     </p>
                     <p class="text-emerald-100 text-sm">
-                        Profitez-en avant la fin du mois
+                        Take advantage before the end of the month
                     </p>
                 </div>
             </div>
             <div class="flex gap-3">
                 <a href="#" class="px-6 py-2 bg-white text-emerald-600 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
-                    Découvrir
+                    Discover
                 </a>
                 <button data-announcement-dismiss class="px-3 py-2 text-white hover:bg-emerald-600 rounded-lg transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,11 +100,11 @@ import TabItem from '@theme/TabItem';
     </div>
 ```
     </TabItem>
-    <TabItem value="example3" label="Exemple 3">
-### Preview : 
+    <TabItem value="example3" label="Example 3">
+### Preview:
     ![img](/img/next_gen/extensions/addons/announcement_bar/example3.png)
 
-### Code source : 
+### Source code:
 ```html
 <div class="relative bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
     <div class="max-w-7xl px-4 py-3 sm:px-6 lg:px-8 mx-auto">
@@ -113,7 +114,7 @@ import TabItem from '@theme/TabItem';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
                 </svg>
                 <p class="text-sm md:text-base text-white font-medium">
-                    <span class="font-bold">Offre Spéciale:</span> -30% sur toute la collection Été avec le code <span class="px-2 py-1 bg-white/20 rounded font-mono">ETE30</span>
+                    <span class="font-bold">Special Offer:</span> -30% on the entire Summer collection with code <span class="px-2 py-1 bg-white/20 rounded font-mono">ETE30</span>
                 </p>
             </div>
             <button data-announcement-dismiss class="text-white hover:text-gray-200 transition-colors">
@@ -126,10 +127,10 @@ import TabItem from '@theme/TabItem';
 </div>
 ```
 </TabItem>
-<TabItem value="example4" label="Exemple 4">
-### Preview :
+<TabItem value="example4" label="Example 4">
+### Preview:
     ![img](/img/next_gen/extensions/addons/announcement_bar/example4.png)
-### Code source :
+### Source code:
 ```html
 <div id="bar5" class="bg-gradient-to-r from-orange-500 to-red-500 rounded-lg">
                 <div class="max-w-7xl px-4 py-4 sm:px-6 lg:px-8 mx-auto">
@@ -140,24 +141,24 @@ import TabItem from '@theme/TabItem';
                             </svg>
                             <div>
                                 <p class="text-white font-bold text-xl">
-                                    Offres exclusives du moment
+                                    Exclusive offers of the moment
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-2 justify-center lg:justify-start">
                                     <span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold">
                                         WELCOME10 → -10%
                                     </span>
                                     <span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold">
-                                        FIRST20 → -20€
+                                        FIRST20 → -€20
                                     </span>
                                     <span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold">
-                                        FREE50 → Livraison offerte
+                                        FREE50 → Free shipping
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div class="flex gap-3">
                             <a href="#" class="px-6 py-3 bg-white text-orange-600 rounded-full font-bold hover:bg-orange-50 transition-colors shadow-lg">
-                                Commander maintenant
+                                Order now
                             </a>
                             <button data-announcement-dismiss class="p-3 text-white hover:bg-white/10 rounded-full transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -170,12 +171,12 @@ import TabItem from '@theme/TabItem';
 </div>
 ```
 </TabItem>
-    
+
     </Tabs>
 
-    ### Comment ajouter un bouton de fermeture ?
-    Vous pouvez ajouter un bouton de fermeture à l'announcement bar en utilisant le code HTML et
-    JavaScript suivant :
+    ### How to add a close button?
+    You can add a close button to the announcement bar using the following HTML and
+    JavaScript code:
 ```html
 <button  type="button" data-announcement-dismiss><i class="bi bi-x-lg"></i></button>
 <!-- or -->

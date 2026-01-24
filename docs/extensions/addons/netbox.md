@@ -1,54 +1,58 @@
-# Netbox
-Utilisez NetBox comme source de vérité (Source of Truth) pour la gestion de vos adresses IP dans CLIENTXCMS. Cette extension remplace l'IPAM par défaut du module Proxmox pour vous permettre d'attribuer et de gérer vos adresses IP directement depuis votre instance NetBox, garantissant une meilleure organisation et évitant les conflits d'IP.
+---
+translated: true
+---
 
-:::info Prérequis
-- Avoir une instance NetBox opérationnelle.
-- Avoir l'API de NetBox accessible depuis votre instance CLIENTXCMS.
+# Netbox
+Use NetBox as a Source of Truth for managing your IP addresses in CLIENTXCMS. This extension replaces the default IPAM from the Proxmox module to allow you to assign and manage your IP addresses directly from your NetBox instance, ensuring better organization and avoiding IP conflicts.
+
+:::info Prerequisites
+- Have an operational NetBox instance.
+- Have the NetBox API accessible from your CLIENTXCMS instance.
 :::
 
 :::info
-Cette extension nécessite que le module Proxmox soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../modules/Proxmox.md)
+This extension requires the Proxmox module to be enabled on your CLIENTXCMS. [click here to enable it](../modules/Proxmox.md)
 :::
 
-## Configuration de l'extension
-Pour configurer l'extension, rendez-vous dans votre fichier d'environnement `.env` et ajoutez les variables suivantes :
+## Extension Configuration
+To configure the extension, go to your `.env` environment file and add the following variables:
 
 ```env
-NETBOX_URL=https://votre-instance-netbox/
-NETBOX_TOKEN=votre_token_api_netbox
+NETBOX_URL=https://your-netbox-instance/
+NETBOX_TOKEN=your_netbox_api_token
 ```
-- **NETBOX_URL** : L'URL de votre instance NetBox.
-- **NETBOX_TOKEN** : Le token API pour accéder à l'API de NetBox
+- **NETBOX_URL**: The URL of your NetBox instance.
+- **NETBOX_TOKEN**: The API token to access the NetBox API
 
-## Panel d'administration
-Une fois l'extension installée, vous pouvez configurer les paramètres de NetBox dans `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Netbox`.
+## Admin Panel
+Once the extension is installed, you can configure NetBox settings in `Admin Panel` > `Settings` > `Extension Settings` > `Netbox`.
 ![img](/img/next_gen/extensions/addons/netbox/netbox.png)
 
-Vous retrouverez l'ensemble des IPs disponibles dans NetBox avec leur état. Le module Proxmox utilisera ces IPs pour l'attribution automatique lors de la création de machines virtuelles ou de conteneurs.
-### Gestion des IPs
+You will find all available IPs in NetBox with their status. The Proxmox module will use these IPs for automatic assignment when creating virtual machines or containers.
+### IP Management
 
-Vous pouvez visualiser une IP spécifique pour la modification de son état (Disponible, Attribuée, Réservée).
+You can view a specific IP to modify its status (Available, Assigned, Reserved).
 ![img](/img/next_gen/extensions/addons/netbox/details.png)
-- **Active** : L'IP est disponible pour l'attribution.
-- **Reserved** : L'IP est actuellement attribuée à une machine virtuelle ou un conteneur.
-- **Indisponible** : L'IP n'est pas disponible pour l'attribution.
+- **Active**: The IP is available for assignment.
+- **Reserved**: The IP is currently assigned to a virtual machine or container.
+- **Unavailable**: The IP is not available for assignment.
 
 :::info
-Cette extension à été développée pour des utilisations spécifiques. N'hésitez pas à nous contacter pour toute demande de fonctionnalité ou d'amélioration.
+This extension was developed for specific uses. Feel free to contact us for any feature request or improvement.
 :::
 
-### Intégration
+### Integration
 
-L'addon à été fait initialement pour s'intégrer avec le module Proxmox mais vous pouvez l'adapter pour d'autres modules si nécessaire. Les fonctions exposées dans `App\Addons\Netbox\NetboxIPAM` peuvent être utilisées directement dans vos modules d'approvisionnement pour récupérer, réserver ou libérer des adresses IP. La classe implémente l'`IPAMInterface` de CLIENTXCMS, vous pouvez donc vous appuyer sur cette interface pour intégrer NetBox à n'importe quel provider compatible.
+The addon was initially made to integrate with the Proxmox module but you can adapt it for other modules if needed. The functions exposed in `App\Addons\Netbox\NetboxIPAM` can be used directly in your provisioning modules to retrieve, reserve, or release IP addresses. The class implements the `IPAMInterface` from CLIENTXCMS, so you can rely on this interface to integrate NetBox with any compatible provider.
 
-Méthodes clés disponibles :
-- `findByIP(string $ip): ?AddressIPAM` : retourne les informations d'une IP NetBox si elle existe.
-- `findById(int $id): ?AddressIPAM` : retourne l'objet IPAM pour un ID NetBox.
-- `fetchAdresses(int $nb = 1): array` : récupère un lot d'IPs actives.
-- `useAddress(AddressIPAM $address, Service $service): AddressIPAM` : réserve l'IP pour un service (status `reserved` et association au tenant).
-- `releaseAddress(AddressIPAM $address): AddressIPAM` : libère l'IP et la remet en `active`.
+Key methods available:
+- `findByIP(string $ip): ?AddressIPAM`: returns information for a NetBox IP if it exists.
+- `findById(int $id): ?AddressIPAM`: returns the IPAM object for a NetBox ID.
+- `fetchAdresses(int $nb = 1): array`: retrieves a batch of active IPs.
+- `useAddress(AddressIPAM $address, Service $service): AddressIPAM`: reserves the IP for a service (`reserved` status and tenant association).
+- `releaseAddress(AddressIPAM $address): AddressIPAM`: releases the IP and sets it back to `active`.
 
-Exemple d'utilisation dans un module d'approvisionnement (provider) qui implémente déjà l'`IPAMInterface` :
+Example usage in a provisioning module (provider) that already implements `IPAMInterface`:
 
 ```php
 use App\Addons\Netbox\NetboxIPAM;

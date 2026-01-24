@@ -1,5 +1,9 @@
-# Avis clients
-L'extension **Avis clients** permet de collecter et d'afficher les avis de vos clients sur votre espace client. Les avis clients sont essentiels pour renforcer la confiance des acheteurs potentiels et améliorer la crédibilité de votre hébergeur en ligne.
+---
+translated: true
+---
+
+# Customer Reviews
+The **Customer Reviews** extension allows you to collect and display customer reviews on your client area. Customer reviews are essential for building trust with potential buyers and improving your online hosting service's credibility.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
 
@@ -7,223 +11,223 @@ L'extension **Avis clients** permet de collecter et d'afficher les avis de vos c
 
 ## Configuration
 
-Pour configurer l’extension **Avis clients**, rendez-vous dans :
-`Espace d’administration` → `Paramètres` → `Avis clients` → `Configuration`
+To configure the **Customer Reviews** extension, go to:
+`Admin Panel` → `Settings` → `Customer Reviews` → `Configuration`
 
-L’onglet **Configuration** est découpé en plusieurs sections accessibles via les sous-onglets :
+The **Configuration** tab is divided into several sections accessible via sub-tabs:
 
-* Collecte & Envoi
-* Modération
-* Récompenses
-* Affichage
-* Intégrations
-
-
-## Collecte & Envoi
-
-Cette section permet de gérer l’envoi automatique des demandes d’avis par email.
-
-* **Email immédiat à la livraison**
-  Envoie automatiquement un email de demande d’avis dès qu’un service est livré au client.
-
-* **Délai avant relance automatique**
-  Nombre de jours après la livraison avant l’envoi d’un email de relance si aucun avis n’a été soumis.
-  `0` permet de désactiver totalement la relance automatique.
+* Collection & Sending
+* Moderation
+* Rewards
+* Display
+* Integrations
 
 
-## Modération
+## Collection & Sending
 
-Cette section définit les règles de validation et de publication des avis.
+This section manages the automatic sending of review request emails.
 
-### Règles de modération
+* **Immediate email upon delivery**
+  Automatically sends a review request email as soon as a service is delivered to the customer.
 
-* **Validation manuelle obligatoire**
-  Tous les avis doivent être approuvés manuellement avant d’être publiés.
-
-* **Activer la modération intelligente par note**
-  Active la publication automatique des avis atteignant un seuil de note défini.
-  Si désactivée, tous les avis nécessitent une validation manuelle.
-
-* **Seuil d’auto-publication**
-  Note minimale (en étoiles) requise pour qu’un avis soit publié automatiquement.
-  Exemple : 4 étoiles ou plus.
-
-### Clients de confiance
-
-Permet d’accorder des privilèges de publication automatique aux clients fidèles.
-
-* **Activer le système de confiance**
-  Autorise certains clients à publier leurs avis sans validation manuelle.
-
-* **Ancienneté minimum requise**
-  Nombre minimum de mois de fidélité requis pour être considéré comme client de confiance.
-
-* **Services actifs minimum**
-  Nombre minimum de services actifs requis pour accéder au statut de client de confiance.
-
-* **Note minimum pour auto-publication**
-  Note minimale requise pour qu’un avis d’un client de confiance soit publié automatiquement.
+* **Delay before automatic reminder**
+  Number of days after delivery before sending a reminder email if no review has been submitted.
+  `0` completely disables the automatic reminder.
 
 
-## Récompenses
+## Moderation
 
-Cette section permet d’inciter les clients à laisser un avis via un système de crédit.
+This section defines the validation and publication rules for reviews.
 
-* **Activer les récompenses**
-  Active le crédit automatique du compte client lorsqu’un avis est publié.
+### Moderation Rules
 
-* **Montant de la récompense**
-  Montant du crédit (en euros) ajouté au compte client après validation et publication de l’avis.
+* **Manual validation required**
+  All reviews must be manually approved before being published.
 
-* **Retirer la récompense en cas de suppression**
-  Retire le crédit accordé si l’avis est supprimé définitivement.
+* **Enable smart moderation by rating**
+  Enables automatic publication of reviews reaching a defined rating threshold.
+  If disabled, all reviews require manual validation.
 
+* **Auto-publication threshold**
+  Minimum rating (in stars) required for a review to be automatically published.
+  Example: 4 stars or more.
 
-## Affichage
+### Trusted Customers
 
-Cette section contrôle la manière dont les avis sont affichés sur le site public et les fiches produits.
+Allows granting automatic publication privileges to loyal customers.
 
-### Widgets sur les produits
+* **Enable trust system**
+  Allows certain customers to publish their reviews without manual validation.
 
-* **Afficher les étoiles**
-  Affiche la note moyenne et le nombre d’avis sur les cartes produits.
+* **Minimum required seniority**
+  Minimum number of months of loyalty required to be considered a trusted customer.
 
-* **Badge “Top Rated”**
-  Affiche un badge spécial sur les produits les mieux notés.
+* **Minimum active services**
+  Minimum number of active services required to access trusted customer status.
 
-* **Note minimum “Top Rated”**
-  Note minimale requise pour qu’un produit obtienne le badge “Top Rated”.
-
-* **Avis minimum pour le badge**
-  Nombre minimum d’avis publiés requis pour afficher le badge.
-
-### Affichage public
-
-* **Avis par page**
-  Nombre d’avis affichés par page sur l’espace public.
-
-* **Afficher le nom du client**
-  Affiche le nom du client sous chaque avis publié.
-
-* **Restreindre aux services livrés**
-  Seuls les clients ayant un service actif ou livré peuvent laisser un avis.
+* **Minimum rating for auto-publication**
+  Minimum rating required for a trusted customer's review to be automatically published.
 
 
-## Intégrations
+## Rewards
 
-Cette section permet d’intégrer le système d’avis avec des services externes.
+This section allows encouraging customers to leave a review through a credit system.
 
-### Webhook Discord
+* **Enable rewards**
+  Enables automatic credit to the customer account when a review is published.
 
-* **URL du Webhook**
-  URL du webhook Discord utilisé pour recevoir des notifications lorsqu’un avis est :
+* **Reward amount**
+  Credit amount (in euros) added to the customer account after validation and publication of the review.
 
-  * soumis
-  * approuvé
-  * rejeté
+* **Remove reward on deletion**
+  Removes the granted credit if the review is permanently deleted.
+
+
+## Display
+
+This section controls how reviews are displayed on the public site and product pages.
+
+### Widgets on Products
+
+* **Show stars**
+  Displays the average rating and number of reviews on product cards.
+
+* **"Top Rated" badge**
+  Displays a special badge on the highest-rated products.
+
+* **Minimum "Top Rated" rating**
+  Minimum rating required for a product to get the "Top Rated" badge.
+
+* **Minimum reviews for badge**
+  Minimum number of published reviews required to display the badge.
+
+### Public Display
+
+* **Reviews per page**
+  Number of reviews displayed per page in the public area.
+
+* **Show customer name**
+  Displays the customer name under each published review.
+
+* **Restrict to delivered services**
+  Only customers with an active or delivered service can leave a review.
+
+
+## Integrations
+
+This section allows integrating the review system with external services.
+
+### Discord Webhook
+
+* **Webhook URL**
+  Discord webhook URL used to receive notifications when a review is:
+
+  * submitted
+  * approved
+  * rejected
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/discord_webhook.png)
 
-### Produits désactivés
+### Disabled Products
 
-* **Produits sans avis**
-  Liste des produits pour lesquels les avis clients sont désactivés.
-  Les clients ne pourront pas soumettre d’avis sur ces produits.
-## Avis
+* **Products without reviews**
+  List of products for which customer reviews are disabled.
+  Customers will not be able to submit reviews on these products.
+## Reviews
 ![img](/img/next_gen/extensions/addons/customers_reviews/reviews_admin.png)
-L’onglet **Avis** permet de gérer l’ensemble des avis clients soumis via le formulaire. Vous pouvez y approuver, rejeter ou supprimer des avis.
-Si l’option de modération intelligente est activée, les avis atteignant le seuil de note défini seront publiés automatiquement.
-### Affichage de l'avis 
+The **Reviews** tab allows you to manage all customer reviews submitted through the form. You can approve, reject, or delete reviews here.
+If the smart moderation option is enabled, reviews reaching the defined rating threshold will be published automatically.
+### Review Display
 ![img](/img/next_gen/extensions/addons/customers_reviews/review_detail.png)
-Vous pouvez cliquer sur un avis pour afficher ses détails complets, y compris les réponses aux questions personnalisées si elles ont été configurées.
+You can click on a review to display its complete details, including answers to custom questions if they have been configured.
 
-### Actions sur les avis
-* **Approuver**
-  Publie l’avis sur le site public.
-* **Rejeter**
-  Marque l’avis comme rejeté, il ne sera pas publié.
-* **Supprimer**
-  Supprime définitivement l’avis de la base de données.
-* **Masquer**
-  Cache l’avis de l’affichage public sans le supprimer. (Le client peut toujours le voir dans son espace, ainsi que la raison du masquage.)
+### Review Actions
+* **Approve**
+  Publishes the review on the public site.
+* **Reject**
+  Marks the review as rejected, it will not be published.
+* **Delete**
+  Permanently deletes the review from the database.
+* **Hide**
+  Hides the review from public display without deleting it. (The customer can still see it in their area, along with the reason for hiding.)
 
-Selon la configuration, l’approbation d’un avis peut également créditer automatiquement le compte client ou envoyer une notification via webhook Discord. Cela retirera également le crédit si l’avis est supprimé ou masqué.
+Depending on the configuration, approving a review can also automatically credit the customer account or send a notification via Discord webhook. This will also remove the credit if the review is deleted or hidden.
 
 
-## Configuration des questions
+## Question Configuration
 
-Pour gérer les questions posées aux clients lors de la soumission d’un avis :
-`Espace d’administration` → `Paramètres` → `Avis clients` → `Questionnaires`
+To manage the questions asked to customers when submitting a review:
+`Admin Panel` → `Settings` → `Customer Reviews` → `Questionnaires`
 
-* **Identifiant unique**
-  Identifiant interne unique de la question.
+* **Unique identifier**
+  Unique internal identifier for the question.
 
-* **Type de question**
-  Type de réponse attendu : notation par étoiles, texte libre, choix multiple, etc.
+* **Question type**
+  Type of expected response: star rating, free text, multiple choice, etc.
 
-* **Ordre d’affichage**
-  Position de la question dans le formulaire.
+* **Display order**
+  Position of the question in the form.
 
 * **Question**
-  Texte affiché au client.
+  Text displayed to the customer.
 
-* **Question facultative**
-  Définit si la question est obligatoire ou non.
+* **Optional question**
+  Defines whether the question is required or not.
 
-* **Question principale**
-  Met en avant la question dans le formulaire.
+* **Main question**
+  Highlights the question in the form.
 
-* **Question globale**
-  Applique la question à tous les produits.
+* **Global question**
+  Applies the question to all products.
 
-### Configuration des questions
-Pour configurer les questions d'avis, accédez à `Espace d'administration` > `Paramètres` > `Avis clients` > `Questionnaires`. Vous pouvez ajouter, modifier ou supprimer des questions que vos clients devront répondre lors de la soumission de leur avis.
+### Question Configuration
+To configure review questions, go to `Admin Panel` > `Settings` > `Customer Reviews` > `Questionnaires`. You can add, edit, or delete questions that your customers will need to answer when submitting their review.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/questions.png)
 
-#### Création d'une question
-Pour créer une nouvelle question, cliquez sur le bouton `Créer`. Vous pouvez définir le type de question (texte, évaluation par étoiles, choix multiple, etc.) et les options associées.
+#### Creating a Question
+To create a new question, click the `Create` button. You can define the question type (text, star rating, multiple choice, etc.) and associated options.
 
-**Identifiant unique** : Chaque question doit avoir un identifiant unique pour faciliter la gestion des réponses.
+**Unique identifier**: Each question must have a unique identifier to facilitate response management.
 
-**Type de question** : Choisissez le type de question en fonction des informations que vous souhaitez recueillir (Notation, texte libre, choix multiple, etc.).
+**Question type**: Choose the question type based on the information you want to collect (Rating, free text, multiple choice, etc.).
 
-**Ordre d'affichage** : Définissez l'ordre dans lequel les questions apparaîtront dans le formulaire d'avis.
+**Display order**: Define the order in which questions will appear in the review form.
 
-**Question** : Saisissez le texte de la question qui sera affiché aux clients.
+**Question**: Enter the question text that will be displayed to customers.
 
-**Question facultative** : Cochez cette option si la question n'est pas obligatoire.
+**Optional question**: Check this option if the question is not required.
 
-**Question principale** : Cochez cette option si la question doit être mise en avant dans le formulaire.
+**Main question**: Check this option if the question should be highlighted in the form.
 
-**Questions globales** : Cochez cette option si la question doit s'appliquer à tous les produits.
+**Global questions**: Check this option if the question should apply to all products.
 
-**Produits** : Sélectionnez les produits spécifiques auxquels la question s'applique si elle n'est pas globale.
+**Products**: Select the specific products to which the question applies if it is not global.
 
-**Options de la question** : Pour les questions à choix multiple, ajoutez les différentes options que les clients pourront sélectionner.
+**Question options**: For multiple choice questions, add the different options that customers can select.
 
-**Produits associés** : Affiche les produits liés à cette question.
+**Associated products**: Displays the products related to this question.
 
-#### Edition d'une question
+#### Editing a Question
 
-Pour modifier une question existante, cliquez sur l'icône d'édition à côté de la question dans la liste. Apportez les modifications nécessaires et enregistrez.
+To edit an existing question, click the edit icon next to the question in the list. Make the necessary changes and save.
 
-## Rendu sur les produits
+## Product Display
 
-L'extension permet d'afficher les avis clients directement sur les pages produits de votre boutique. Cela affiche la note moyenne, le nombre d'avis.
+The extension allows displaying customer reviews directly on your store's product pages. This shows the average rating and number of reviews.
 ![img](/img/next_gen/extensions/addons/customers_reviews/products.png)
 
-### Support des thèmes
-Pour supporter l'affichage des avis clients sur les produits, votre thème doit inclure les hooks suivants dans le fichier de template des produits :
+### Theme Support
+To support customer reviews display on products, your theme must include the following hooks in the product template file:
 
 ```blade
     @includeWhen(app('extension')->extensionIsEnabled('customers_reviews'), 'customers_reviews::partials.product_widgets', ['product' => $product])
 ```
 
-## Inviter des clients à laisser un avis
-Pour inviter vos clients à laisser un avis, vous pouvez utiliser la fonctionnalité d'envoi automatique d'emails de demande d'avis. Cette fonctionnalité est disponible dans les `paramètres` > `Avis clients` > `Inviter des clients à laisser un avis`.
+## Inviting Customers to Leave a Review
+To invite your customers to leave a review, you can use the automatic review request email sending feature. This feature is available in `Settings` > `Customer Reviews` > `Invite customers to leave a review`.
 
-Vous pourrez selectionner les services auprès desquels envoyer une demande d'avis pour recevoir vos premiers retours clients de clients enregistrés.
+You can select the services to which to send a review request to receive your first customer feedback from registered customers.
 
-## Statistiques des avis
-Vous pouvez consulter les statistiques des avis clients dans `Espace d'administration` > `Avis client` > `Statistiques des clients`. Vous y trouverez meilleures produits, les produits à améliorer, ainsi que des statistiques globales sur les avis reçus.
+## Review Statistics
+You can view customer review statistics in `Admin Panel` > `Customer Reviews` > `Customer Statistics`. You will find the best products, products to improve, as well as global statistics on reviews received.
