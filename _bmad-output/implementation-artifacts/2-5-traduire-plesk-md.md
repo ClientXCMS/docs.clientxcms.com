@@ -1,6 +1,6 @@
 # Story 2.5: Traduire plesk.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -58,78 +58,78 @@ so that international users can install ClientXCMS on their Plesk-managed server
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #6)
-  - [ ] 1.1 Ensure `---` block at top of file
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Verify `sidebar_position: 4` present
+- [x] Task 1: Add frontmatter with translated flag (AC: #6)
+  - [x] 1.1 Ensure `---` block at top of file
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Verify `sidebar_position: 4` present
 
-- [ ] Task 2: Translate introduction paragraph (AC: #1)
-  - [ ] 2.1 Translate intro sentence about Plesk installation
-  - [ ] 2.2 Translate Cloud reference sentence
-  - [ ] 2.3 Verify internal link to ./cloud
+- [x] Task 2: Translate introduction paragraph (AC: #1)
+  - [x] 2.1 Translate intro sentence about Plesk installation
+  - [x] 2.2 Translate Cloud reference sentence
+  - [x] 2.3 Verify internal link to ./cloud
 
-- [ ] Task 3: Translate subscription and domain section (AC: #1, #3, #7)
-  - [ ] 3.1 Translate "Mise en place de l'abonnement et du domaine" heading
-  - [ ] 3.2 Translate step 1 (domain creation)
-  - [ ] 3.3 Translate step 2 (migration backup)
-  - [ ] 3.4 Translate :::warning admonition (database preservation)
-  - [ ] 3.5 Translate step 3 (Plesk Admin extensions menu)
-  - [ ] 3.6 Translate step 4 (Laravel Toolkit extension)
-  - [ ] 3.7 Translate step 5 (SSL certificate)
-  - [ ] 3.8 Translate step 6 (PHP version)
-  - [ ] 3.9 Update all image alt texts in this section
+- [x] Task 3: Translate subscription and domain section (AC: #1, #3, #7)
+  - [x] 3.1 Translate "Mise en place de l'abonnement et du domaine" heading
+  - [x] 3.2 Translate step 1 (domain creation)
+  - [x] 3.3 Translate step 2 (migration backup)
+  - [x] 3.4 Translate :::warning admonition (database preservation)
+  - [x] 3.5 Translate step 3 (Plesk Admin extensions menu)
+  - [x] 3.6 Translate step 4 (Laravel Toolkit extension)
+  - [x] 3.7 Translate step 5 (SSL certificate)
+  - [x] 3.8 Translate step 6 (PHP version)
+  - [x] 3.9 Update all image alt texts in this section
 
-- [ ] Task 4: Translate Laravel environment section (AC: #1, #4)
-  - [ ] 4.1 Translate "Installation de l'environnement Laravel" heading
-  - [ ] 4.2 Translate step 1 (Laravel menu)
-  - [ ] 4.3 Translate step 2 (remote repository installation)
-  - [ ] 4.4 Translate step 3 (deployment wait)
-  - [ ] 4.5 Update all image alt texts in this section
+- [x] Task 4: Translate Laravel environment section (AC: #1, #4)
+  - [x] 4.1 Translate "Installation de l'environnement Laravel" heading
+  - [x] 4.2 Translate step 1 (Laravel menu)
+  - [x] 4.3 Translate step 2 (remote repository installation)
+  - [x] 4.4 Translate step 3 (deployment wait)
+  - [x] 4.5 Update all image alt texts in this section
 
-- [ ] Task 5: Translate database configuration section (AC: #1, #5)
-  - [ ] 5.1 Translate "Configuration de la base de donnees" heading
-  - [ ] 5.2 Translate step 1 (database creation)
-  - [ ] 5.3 Translate step 2 (secure password)
-  - [ ] 5.4 Translate step 3 (file manager navigation)
-  - [ ] 5.5 Translate step 4 (.env.example rename)
-  - [ ] 5.6 Translate step 5 (.env configuration values)
-  - [ ] 5.7 Update all image alt texts in this section
+- [x] Task 5: Translate database configuration section (AC: #1, #5)
+  - [x] 5.1 Translate "Configuration de la base de donnees" heading
+  - [x] 5.2 Translate step 1 (database creation)
+  - [x] 5.3 Translate step 2 (secure password)
+  - [x] 5.4 Translate step 3 (file manager navigation)
+  - [x] 5.5 Translate step 4 (.env.example rename)
+  - [x] 5.6 Translate step 5 (.env configuration values)
+  - [x] 5.7 Update all image alt texts in this section
 
-- [ ] Task 6: Translate environment init commands section (AC: #1, #4)
-  - [ ] 6.1 Translate "Commandes d'initialisation de l'environnement" heading
-  - [ ] 6.2 Translate step 1 (Laravel tab)
-  - [ ] 6.3 Translate step 2 (Artisan section)
-  - [ ] 6.4 Translate step 3 (Artisan commands list)
-  - [ ] 6.5 Translate step 4 (Node.js section)
-  - [ ] 6.6 Translate step 5 (Node.js version)
-  - [ ] 6.7 Translate step 6 (npm commands)
-  - [ ] 6.8 Update all image alt texts in this section
+- [x] Task 6: Translate environment init commands section (AC: #1, #4)
+  - [x] 6.1 Translate "Commandes d'initialisation de l'environnement" heading
+  - [x] 6.2 Translate step 1 (Laravel tab)
+  - [x] 6.3 Translate step 2 (Artisan section)
+  - [x] 6.4 Translate step 3 (Artisan commands list)
+  - [x] 6.5 Translate step 4 (Node.js section)
+  - [x] 6.6 Translate step 5 (Node.js version)
+  - [x] 6.7 Translate step 6 (npm commands)
+  - [x] 6.8 Update all image alt texts in this section
 
-- [ ] Task 7: Translate ClientXCMS configuration section (AC: #1)
-  - [ ] 7.1 Translate "Configuration de ClientXCMS" heading
-  - [ ] 7.2 Translate step 1 (installation page)
-  - [ ] 7.3 Translate step 2 (hosting name)
-  - [ ] 7.4 Translate step 3 (OAuth credentials)
-  - [ ] 7.5 Update all image alt texts in this section
+- [x] Task 7: Translate ClientXCMS configuration section (AC: #1)
+  - [x] 7.1 Translate "Configuration de ClientXCMS" heading
+  - [x] 7.2 Translate step 1 (installation page)
+  - [x] 7.3 Translate step 2 (hosting name)
+  - [x] 7.4 Translate step 3 (OAuth credentials)
+  - [x] 7.5 Update all image alt texts in this section
 
-- [ ] Task 8: Translate cron tasks section (AC: #1)
-  - [ ] 8.1 Translate "Configuration des taches cron" heading
-  - [ ] 8.2 Translate step 1 (scheduled tasks menu)
-  - [ ] 8.3 Translate step 2 (add scheduled task)
-  - [ ] 8.4 Translate step 3 (configure tasks)
-  - [ ] 8.5 Update image alt text
+- [x] Task 8: Translate cron tasks section (AC: #1)
+  - [x] 8.1 Translate "Configuration des taches cron" heading
+  - [x] 8.2 Translate step 1 (scheduled tasks menu)
+  - [x] 8.3 Translate step 2 (add scheduled task)
+  - [x] 8.4 Translate step 3 (configure tasks)
+  - [x] 8.5 Update image alt text
 
-- [ ] Task 9: Verify links (AC: #8)
-  - [ ] 9.1 Verify ./cloud internal link
-  - [ ] 9.2 Verify https://github.com/ClientXCMS/ClientXCMS external link
-  - [ ] 9.3 Verify https://clientxcms.com/client/services/ external link
+- [x] Task 9: Verify links (AC: #8)
+  - [x] 9.1 Verify ./cloud internal link
+  - [x] 9.2 Verify https://github.com/ClientXCMS/ClientXCMS external link
+  - [x] 9.3 Verify https://clientxcms.com/client/services/ external link
 
-- [ ] Task 10: Build and test (AC: #9)
-  - [ ] 10.1 Run `npm run build`
-  - [ ] 10.2 Run `npm run serve` and test EN URL
-  - [ ] 10.3 Verify no "Not translated" banner
-  - [ ] 10.4 Verify locale switcher works
-  - [ ] 10.5 Verify all 17 images render correctly
+- [x] Task 10: Build and test (AC: #9)
+  - [x] 10.1 Run `npm run build`
+  - [x] 10.2 Run `npm run serve` and test EN URL
+  - [x] 10.3 Verify no "Not translated" banner
+  - [x] 10.4 Verify locale switcher works
+  - [x] 10.5 Verify all 17 images render correctly
 
 ## Dev Notes
 
@@ -389,11 +389,35 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+N/A - Content translation story, no debugging required
+
 ### Completion Notes List
+
+- Translated complete plesk.md file from French to English (90 lines, 17 images)
+- Added `translated: true` to frontmatter
+- Preserved `sidebar_position: 4`
+- Translated all 7 sections: Introduction, Subscription/Domain Setup, Laravel Environment, Database Configuration, Environment Init Commands, ClientXCMS Configuration, Cron Tasks
+- Updated all 17 image alt texts to English
+- Preserved all technical terms (Plesk, Laravel Toolkit, Artisan, Node.js, PHP 8.3)
+- Preserved all code blocks and configuration values unchanged
+- Translated :::warning admonition about database preservation
+- Verified all links: ./cloud (internal), github.com/ClientXCMS, clientxcms.com/client/services
+- Build successful for both EN and FR locales
+- No "Not yet translated" banner appears on EN page
+- All acceptance criteria satisfied
 
 ### File List
 
+| Action | File |
+|--------|------|
+| Modified | `docs/installation/plesk.md` |
+
+## Change Log
+
+| Date | Change |
+|------|--------|
+| 2026-01-24 | Translated plesk.md from French to English - all 10 tasks completed |
