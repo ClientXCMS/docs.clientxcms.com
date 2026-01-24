@@ -1,6 +1,6 @@
 # Story 2.6: Traduire docker.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -51,49 +51,49 @@ so that international users can install ClientXCMS using Docker containers with 
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #5)
-  - [ ] 1.1 Add `---` block at top of file
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Add `sidebar_position: 5` (after plesk.md)
+- [x] Task 1: Add frontmatter with translated flag (AC: #5)
+  - [x] 1.1 Add `---` block at top of file
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Add `sidebar_position: 5` (after plesk.md)
 
-- [ ] Task 2: Translate introduction paragraph (AC: #1)
-  - [ ] 2.1 Translate "Vous pouvez installer ClientXCMS via Docker..."
-  - [ ] 2.2 Natural English phrasing
+- [x] Task 2: Translate introduction paragraph (AC: #1)
+  - [x] 2.1 Translate "Vous pouvez installer ClientXCMS via Docker..."
+  - [x] 2.2 Natural English phrasing
 
-- [ ] Task 3: Translate prerequisites section (AC: #1, #3)
-  - [ ] 3.1 Translate "Prerequis" heading to "Prerequisites"
-  - [ ] 3.2 Translate "Avant de commencer..." paragraph
-  - [ ] 3.3 Translate server requirements list item
-  - [ ] 3.4 Translate domain requirements list item
-  - [ ] 3.5 Translate "Lancer les commandes suivantes..." paragraph
-  - [ ] 3.6 Keep code blocks unchanged (docker compose build, docker compose up -d)
+- [x] Task 3: Translate prerequisites section (AC: #1, #3)
+  - [x] 3.1 Translate "Prerequis" heading to "Prerequisites"
+  - [x] 3.2 Translate "Avant de commencer..." paragraph
+  - [x] 3.3 Translate server requirements list item
+  - [x] 3.4 Translate domain requirements list item
+  - [x] 3.5 Translate "Lancer les commandes suivantes..." paragraph
+  - [x] 3.6 Keep code blocks unchanged (docker compose build, docker compose up -d)
 
-- [ ] Task 4: Translate installation section (AC: #1, #4)
-  - [ ] 4.1 Translate "Installation" heading (keep as-is in EN)
-  - [ ] 4.2 Translate step 1 (directory creation)
-  - [ ] 4.3 Translate step 2 (git clone repository)
-  - [ ] 4.4 Translate step 3 (copy docker-compose example)
-  - [ ] 4.5 Translate step 4 (environment file configuration)
-  - [ ] 4.6 Translate "Vous pouvez modifier les variables..." explanation
-  - [ ] 4.7 Translate "Le docker se chargera de generer..." (SSL via Let's Encrypt)
-  - [ ] 4.8 Translate step 5 (launch containers)
-  - [ ] 4.9 Translate step 6 (add admin account)
-  - [ ] 4.10 Translate step 7 (access domain for license confirmation)
+- [x] Task 4: Translate installation section (AC: #1, #4)
+  - [x] 4.1 Translate "Installation" heading (keep as-is in EN)
+  - [x] 4.2 Translate step 1 (directory creation)
+  - [x] 4.3 Translate step 2 (git clone repository)
+  - [x] 4.4 Translate step 3 (copy docker-compose example)
+  - [x] 4.5 Translate step 4 (environment file configuration)
+  - [x] 4.6 Translate "Vous pouvez modifier les variables..." explanation
+  - [x] 4.7 Translate "Le docker se chargera de generer..." (SSL via Let's Encrypt)
+  - [x] 4.8 Translate step 5 (launch containers)
+  - [x] 4.9 Translate step 6 (add admin account)
+  - [x] 4.10 Translate step 7 (access domain for license confirmation)
 
-- [ ] Task 5: Keep all code blocks unchanged (AC: #2)
-  - [ ] 5.1 Verify bash blocks unchanged (6 blocks)
-  - [ ] 5.2 Verify env block unchanged
-  - [ ] 5.3 Verify yaml block unchanged
+- [x] Task 5: Keep all code blocks unchanged (AC: #2)
+  - [x] 5.1 Verify bash blocks unchanged (6 blocks)
+  - [x] 5.2 Verify env block unchanged
+  - [x] 5.3 Verify yaml block unchanged
 
-- [ ] Task 6: Verify links (AC: #6)
-  - [ ] 6.1 Verify https://docs.docker.com/get-docker/ link
-  - [ ] 6.2 Verify https://docs.docker.com/compose/install/ link
+- [x] Task 6: Verify links (AC: #6)
+  - [x] 6.1 Verify https://docs.docker.com/get-docker/ link
+  - [x] 6.2 Verify https://docs.docker.com/compose/install/ link
 
-- [ ] Task 7: Build and test (AC: #7)
-  - [ ] 7.1 Run `npm run build`
-  - [ ] 7.2 Run `npm run serve` and test EN URL
-  - [ ] 7.3 Verify no "Not translated" banner
-  - [ ] 7.4 Verify locale switcher works
+- [x] Task 7: Build and test (AC: #7)
+  - [x] 7.1 Run `npm run build`
+  - [x] 7.2 Run `npm run serve` and test EN URL
+  - [x] 7.3 Verify no "Not translated" banner
+  - [x] 7.4 Verify locale switcher works
 
 ## Dev Notes
 
@@ -346,11 +346,31 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+- Build completed successfully for both EN and FR locales
+- No "Not yet translated" banner on EN page
+- External links verified (HTTP 301/200 responses)
+- All code blocks preserved exactly as FR source
+
 ### Completion Notes List
+
+- Translated all French text to natural English
+- Added frontmatter with `translated: true` and `sidebar_position: 5`
+- Preserved all 8 code blocks (6 bash, 1 env, 1 yaml) exactly as-is
+- Changed only `APP_URL` example from `votre-domaine.com` to `your-domain.com`
+- Build passed without errors
+- Both EN and FR pages render correctly
 
 ### File List
 
+- docs/installation/docker.md (modified - full translation with frontmatter added)
+
+## Change Log
+
+| Date | Change | Author |
+|------|--------|--------|
+| 2026-01-24 | Story created | BMAD |
+| 2026-01-24 | Full EN translation completed - all tasks done, build verified | Claude Opus 4.5 |
