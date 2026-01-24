@@ -1,6 +1,6 @@
 # Story 2.8: Traduire upgrade.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -74,57 +74,57 @@ so that international users can update their ClientXCMS installation with clear 
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Add frontmatter with translated flag (AC: #11)
-  - [ ] 1.1 Add `---` block at top of file if not present
-  - [ ] 1.2 Add `translated: true`
-  - [ ] 1.3 Verify/add `sidebar_position` if needed
+- [x] Task 1: Add frontmatter with translated flag (AC: #11)
+  - [x] 1.1 Add `---` block at top of file if not present
+  - [x] 1.2 Add `translated: true`
+  - [x] 1.3 Verify/add `sidebar_position` if needed
 
-- [ ] Task 2: Translate page title and introduction (AC: #1, #3)
-  - [ ] 2.1 Translate "Mise a jour" to "Upgrade"
-  - [ ] 2.2 Translate introduction paragraph about regular updates
+- [x] Task 2: Translate page title and introduction (AC: #1, #3)
+  - [x] 2.1 Translate "Mise a jour" to "Upgrade"
+  - [x] 2.2 Translate introduction paragraph about regular updates
 
-- [ ] Task 3: Translate Cloud section (AC: #1, #4)
-  - [ ] 3.1 Translate "Cloud" heading (keep as "Cloud")
-  - [ ] 3.2 Translate automatic update explanation paragraph
+- [x] Task 3: Translate Cloud section (AC: #1, #4)
+  - [x] 3.1 Translate "Cloud" heading (keep as "Cloud")
+  - [x] 3.2 Translate automatic update explanation paragraph
 
-- [ ] Task 4: Translate Self-hosted section (AC: #1, #5)
-  - [ ] 4.1 Translate "Autohebergement" to "Self-hosted"
-  - [ ] 4.2 Translate manual update explanation
-  - [ ] 4.3 Translate :::warning admonition (backup recommendation)
-  - [ ] 4.4 Translate method choice paragraph (Archive or Git)
+- [x] Task 4: Translate Self-hosted section (AC: #1, #5)
+  - [x] 4.1 Translate "Autohebergement" to "Self-hosted"
+  - [x] 4.2 Translate manual update explanation
+  - [x] 4.3 Translate :::warning admonition (backup recommendation)
+  - [x] 4.4 Translate method choice paragraph (Archive or Git)
 
-- [ ] Task 5: Translate Archive tab (AC: #1, #6, #9)
-  - [ ] 5.1 Translate tab label "Archive (release)" (may keep as-is or adjust)
-  - [ ] 5.2 Translate step 1: Download release
-  - [ ] 5.3 Translate step 2: Put in maintenance
-  - [ ] 5.4 Translate step 3: Extract and replace files
-  - [ ] 5.5 Translate step 4: Install dependencies and run migrations
-  - [ ] 5.6 Translate step 5: Clear caches and rebuild assets
-  - [ ] 5.7 Translate step 6: Exit maintenance and run post-update hooks
-  - [ ] 5.8 Keep all code blocks unchanged
+- [x] Task 5: Translate Archive tab (AC: #1, #6, #9)
+  - [x] 5.1 Translate tab label "Archive (release)" (may keep as-is or adjust)
+  - [x] 5.2 Translate step 1: Download release
+  - [x] 5.3 Translate step 2: Put in maintenance
+  - [x] 5.4 Translate step 3: Extract and replace files
+  - [x] 5.5 Translate step 4: Install dependencies and run migrations
+  - [x] 5.6 Translate step 5: Clear caches and rebuild assets
+  - [x] 5.7 Translate step 6: Exit maintenance and run post-update hooks
+  - [x] 5.8 Keep all code blocks unchanged
 
-- [ ] Task 6: Translate Git tab (AC: #1, #7, #9)
-  - [ ] 6.1 Translate tab label "Git" (keep as "Git")
-  - [ ] 6.2 Translate step 1: Fetch and pull from remote
-  - [ ] 6.3 Translate step 2: Put in maintenance
-  - [ ] 6.4 Translate step 3: Install dependencies and run migrations
-  - [ ] 6.5 Translate step 4: Clear caches and rebuild assets
-  - [ ] 6.6 Translate step 5: Exit maintenance and run post-update hooks
-  - [ ] 6.7 Keep all code blocks unchanged
+- [x] Task 6: Translate Git tab (AC: #1, #7, #9)
+  - [x] 6.1 Translate tab label "Git" (keep as "Git")
+  - [x] 6.2 Translate step 1: Fetch and pull from remote
+  - [x] 6.3 Translate step 2: Put in maintenance
+  - [x] 6.4 Translate step 3: Install dependencies and run migrations
+  - [x] 6.5 Translate step 4: Clear caches and rebuild assets
+  - [x] 6.6 Translate step 5: Exit maintenance and run post-update hooks
+  - [x] 6.7 Keep all code blocks unchanged
 
-- [ ] Task 7: Translate Plesk section (AC: #1, #8, #12)
-  - [ ] 7.1 Translate "Plesk" heading (keep as "Plesk")
-  - [ ] 7.2 Translate introduction paragraph about Laravel Toolkit
-  - [ ] 7.3 Translate steps 1-4
-  - [ ] 7.4 Translate image alt text
-  - [ ] 7.5 Keep image path unchanged
+- [x] Task 7: Translate Plesk section (AC: #1, #8, #12)
+  - [x] 7.1 Translate "Plesk" heading (keep as "Plesk")
+  - [x] 7.2 Translate introduction paragraph about Laravel Toolkit
+  - [x] 7.3 Translate steps 1-4
+  - [x] 7.4 Translate image alt text
+  - [x] 7.5 Keep image path unchanged
 
-- [ ] Task 8: Build and test (AC: #13)
-  - [ ] 8.1 Run `npm run build`
-  - [ ] 8.2 Run `npm run serve` and test EN URL
-  - [ ] 8.3 Verify no "Not translated" banner
-  - [ ] 8.4 Verify Tabs component works (both tabs clickable)
-  - [ ] 8.5 Verify image loads correctly
+- [x] Task 8: Build and test (AC: #13)
+  - [x] 8.1 Run `npm run build`
+  - [x] 8.2 Run `npm run serve` and test EN URL
+  - [x] 8.3 Verify no "Not translated" banner
+  - [x] 8.4 Verify Tabs component works (both tabs clickable)
+  - [x] 8.5 Verify image loads correctly
 
 ## Dev Notes
 
@@ -305,11 +305,31 @@ npm run serve -- --port 3001
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
 ### Completion Notes List
 
+- Translated complete upgrade.md page from French to English
+- Added frontmatter with `translated: true`
+- Translated all sections: Introduction, Cloud, Self-hosted (with Archive and Git tabs), Plesk
+- All code blocks preserved exactly as-is (bash commands, file paths, flags)
+- Tabs component imports and syntax unchanged
+- Warning admonition translated with appropriate sentiment
+- Image path unchanged, alt text translated to "Git Deployment - Plesk"
+- Build successful with no errors
+- Page renders correctly at `/installation/upgrade` (EN)
+- Page renders correctly at `/fr/installation/upgrade` (FR)
+- No "Not yet translated" banner on EN page
+- Tabs component works correctly (both Archive and Git tabs clickable)
+
 ### File List
 
+- `docs/installation/upgrade.md` - Modified (full translation FR to EN)
+
+## Change Log
+
+| Date | Change |
+|------|--------|
+| 2026-01-24 | Story implementation complete - Full translation of upgrade.md from French to English |
