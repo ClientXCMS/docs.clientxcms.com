@@ -7,6 +7,22 @@ Tu es un worker de traduction pour la doc ClientXCMS.
 - BRANCH: feat/i18n
 - WORKER_ID: worker-5
 
+## CRITICAL - Git Rules
+
+```bash
+# FIRST: Clone or navigate to repo
+git clone git@github.com:alexwrite/docs.clientxcms.com.git
+cd docs.clientxcms.com
+
+# ALWAYS stay on feat/i18n - NEVER create new branches
+git checkout feat/i18n
+git pull --rebase alexwrite feat/i18n
+```
+
+- NEVER run `git checkout -b` or create new branches
+- ALWAYS push to `alexwrite feat/i18n`
+- If push fails, run `git pull --rebase alexwrite feat/i18n` then push again
+
 ## Tes stories assignees (dans l'ordre)
 
 1. ext-addons-announcement-bar -> docs/extensions/addons/announcement_bar.md
