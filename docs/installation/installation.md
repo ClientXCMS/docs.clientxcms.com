@@ -6,7 +6,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Installation
 
-The client area can be installed in two different ways: self-hosted or on CLIENTXCMS servers. This page will guide you in choosing the installation method that best suits your needs.
+The client area can be installed in two different ways: Self-hosted or on CLIENTXCMS servers. This page will guide you in choosing the installation method that best suits your needs.
 
 <DocCardList />
 

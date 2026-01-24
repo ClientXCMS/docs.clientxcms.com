@@ -25,7 +25,7 @@ Traduire la section Installation complete pour permettre aux utilisateurs intern
 | Fichier | Taille | Priorite | Status |
 |---------|--------|----------|--------|
 | requis.md | 5.2 KB | CRITIQUE | DONE (POC) |
-| installation.md | 1.3 KB | HAUTE | TODO |
+| installation.md | 1.3 KB | HAUTE | DONE |
 | cloud.md | 5.4 KB | HAUTE | TODO |
 | selfhosted.md | 17.5 KB | HAUTE | TODO |
 | plesk.md | 5.5 KB | MOYENNE | TODO |
@@ -58,7 +58,7 @@ Relire et finaliser la traduction EN de requis.md (Requirements) faite pendant l
 
 ### Story 2.2: Traduire installation.md (index)
 
-**Status:** TODO
+**Status:** DONE
 **Priorite:** HAUTE
 
 **Description:**
