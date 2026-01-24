@@ -1,6 +1,6 @@
 # Story 1.2: Validation finale
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -42,39 +42,39 @@ so that I can access ClientXCMS documentation in my preferred language.
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Verify EN navigation (AC: #1)
-  - [ ] 1.1 Start dev server with `npm run serve`
-  - [ ] 1.2 Navigate to `http://localhost:3000/`
-  - [ ] 1.3 Verify page displays in English
-  - [ ] 1.4 Take screenshot for validation
+- [x] Task 1: Verify EN navigation (AC: #1)
+  - [x] 1.1 Start dev server with `npm run serve`
+  - [x] 1.2 Navigate to `http://localhost:3001/`
+  - [x] 1.3 Verify page displays in English
+  - [x] 1.4 Take screenshot for validation
 
-- [ ] Task 2: Verify FR navigation (AC: #2)
-  - [ ] 2.1 Navigate to `http://localhost:3000/fr/`
-  - [ ] 2.2 Verify page displays in French
-  - [ ] 2.3 Take screenshot for validation
+- [x] Task 2: Verify FR navigation (AC: #2)
+  - [x] 2.1 Navigate to `http://localhost:3001/fr/`
+  - [x] 2.2 Verify page displays in French
+  - [x] 2.3 Take screenshot for validation
 
-- [ ] Task 3: Verify banner absence (AC: #3)
-  - [ ] 3.1 Confirm no "Not yet translated" banner on EN page
-  - [ ] 3.2 Verify `translated: true` in frontmatter
-  - [ ] 3.3 Document verification
+- [x] Task 3: Verify banner absence (AC: #3)
+  - [x] 3.1 Confirm no "Not yet translated" banner on EN page
+  - [x] 3.2 Verify `translated: true` in frontmatter
+  - [x] 3.3 Document verification
 
-- [ ] Task 4: Test language switcher (AC: #4)
-  - [ ] 4.1 On EN page, click language switcher to FR
-  - [ ] 4.2 Verify redirect to `/fr/`
-  - [ ] 4.3 On FR page, click language switcher to EN
-  - [ ] 4.4 Verify redirect to `/`
-  - [ ] 4.5 Confirm no 404 errors
+- [x] Task 4: Test language switcher (AC: #4)
+  - [x] 4.1 On EN page, click language switcher to FR
+  - [x] 4.2 Verify redirect to `/fr/`
+  - [x] 4.3 On FR page, click language switcher to EN
+  - [x] 4.4 Verify redirect to `/`
+  - [x] 4.5 Confirm no 404 errors
 
-- [ ] Task 5: Test "Next" navigation links (AC: #5)
-  - [ ] 5.1 On EN page, click "Next" link at bottom
-  - [ ] 5.2 Verify it leads to EN Installation page
-  - [ ] 5.3 On FR page, click "Suivant" link at bottom
-  - [ ] 5.4 Verify it leads to FR Installation page
+- [x] Task 5: Test "Next" navigation links (AC: #5)
+  - [x] 5.1 On EN page, click "Next" link at bottom
+  - [x] 5.2 Verify it leads to EN Installation page
+  - [x] 5.3 On FR page, click "Suivant" link at bottom
+  - [x] 5.4 Verify it leads to FR Installation page
 
-- [ ] Task 6: Final build verification (AC: #6)
-  - [ ] 6.1 Run `npm run build`
-  - [ ] 6.2 Verify build completes without errors
-  - [ ] 6.3 Check for broken link warnings
+- [x] Task 6: Final build verification (AC: #6)
+  - [x] 6.1 Run `npm run build`
+  - [x] 6.2 Verify build completes without errors
+  - [x] 6.3 Check for broken link warnings
 
 ## Dev Notes
 
@@ -204,11 +204,35 @@ No code changes should be needed. If issues are found:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
+- MCP Chrome DevTools used for visual validation
+- Screenshots saved to `_bmad-output/implementation-artifacts/screenshots/`
+
 ### Completion Notes List
+
+**Validation Results - 2026-01-24**
+
+All 6 acceptance criteria verified and PASSED:
+
+1. **AC1 - EN Navigation**: URL `/` displays English introduction page with title "Introduction | ClientXCMS Docs" and full English content. PASS
+2. **AC2 - FR Navigation**: URL `/fr/` displays French introduction page with title "Introduction | ClientXCMS Docs" and full French content ("Bienvenue sur la documentation..."). PASS
+3. **AC3 - No Banner**: No "Not yet translated" banner on EN introduction page. Frontmatter `translated: true` confirmed in `docs/introductions/introduction.md`. PASS
+4. **AC4 - Language Switcher**: EN->FR redirects to `/fr/`, FR->EN redirects to `/`. No 404 errors. PASS
+5. **AC5 - Next Links**: EN "Next" -> `/installation/` (EN Installation). FR "Suivant" -> `/fr/installation/` (FR Installation). Both functional. PASS
+6. **AC6 - Build**: `npm run build` completed successfully for both locales. Broken link warnings exist but are pre-existing (other FR pages not yet translated) and do not affect introduction pages. PASS
+
+**Notes:**
+- Validation performed using MCP Chrome DevTools on production build (port 3001)
+- No code changes required - all validation-only
+- Pre-existing broken link warnings in other FR pages are expected and documented in Dev Notes
 
 ### File List
 
+No files modified (validation-only story).
+
+### Change Log
+
+- 2026-01-24: Story 1-2 validation complete. All acceptance criteria verified and passed. Status updated to "review".
