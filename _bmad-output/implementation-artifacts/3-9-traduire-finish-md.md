@@ -1,6 +1,6 @@
 # Story 3.9: Traduire finish.md
 
-Status: ready-for-dev
+Status: review
 
 ## Story
 
@@ -36,36 +36,36 @@ so that international users receive a proper conclusion to the Getting Started g
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Update EN file with translated frontmatter (AC: #2)
-  - [ ] 1.1 Edit file at `docs/getting_started/finish.md`
-  - [ ] 1.2 Add `translated: true` to frontmatter
-  - [ ] 1.3 Preserve `sidebar_position: 8`
+- [x] Task 1: Update EN file with translated frontmatter (AC: #2)
+  - [x] 1.1 Edit file at `docs/getting_started/finish.md`
+  - [x] 1.2 Add `translated: true` to frontmatter
+  - [x] 1.3 Preserve `sidebar_position: 8`
 
-- [ ] Task 2: Translate title (AC: #1)
-  - [ ] 2.1 Translate title "Etape final" to "Final Step" or "Congratulations"
-  - [ ] 2.2 Consider using "Congratulations" for better celebratory tone
+- [x] Task 2: Translate title (AC: #1)
+  - [x] 2.1 Translate title "Etape final" to "Final Step" or "Congratulations"
+  - [x] 2.2 Consider using "Congratulations" for better celebratory tone
 
-- [ ] Task 3: Translate main paragraph (AC: #1, #4)
-  - [ ] 3.1 Translate "Vous avez maintenant termine la configuration de votre CLIENTXCMS"
-  - [ ] 3.2 Translate "Vous pouvez maintenant commencer a creer vos groupes et produits"
-  - [ ] 3.3 Translate "et a les vendre a vos clients"
+- [x] Task 3: Translate main paragraph (AC: #1, #4)
+  - [x] 3.1 Translate "Vous avez maintenant termine la configuration de votre CLIENTXCMS"
+  - [x] 3.2 Translate "Vous pouvez maintenant commencer a creer vos groupes et produits"
+  - [x] 3.3 Translate "et a les vendre a vos clients"
 
-- [ ] Task 4: Translate contribution paragraph (AC: #1, #3)
-  - [ ] 4.1 Translate "Si vous avez des idees pour ameliorer ce guide"
-  - [ ] 4.2 Translate "n'hesitez pas"
-  - [ ] 4.3 Translate "Plus d'informations sur" and link text "le depot github"
-  - [ ] 4.4 Keep GitHub URL unchanged
+- [x] Task 4: Translate contribution paragraph (AC: #1, #3)
+  - [x] 4.1 Translate "Si vous avez des idees pour ameliorer ce guide"
+  - [x] 4.2 Translate "n'hesitez pas"
+  - [x] 4.3 Translate "Plus d'informations sur" and link text "le depot github"
+  - [x] 4.4 Keep GitHub URL unchanged
 
-- [ ] Task 5: Translate thank you message (AC: #1, #4)
-  - [ ] 5.1 Translate "Merci d'avoir choisi CLIENTXCMS !"
-  - [ ] 5.2 REMOVE emoji from EN version (per project standards)
+- [x] Task 5: Translate thank you message (AC: #1, #4)
+  - [x] 5.1 Translate "Merci d'avoir choisi CLIENTXCMS !"
+  - [x] 5.2 REMOVE emoji from EN version (per project standards)
 
-- [ ] Task 6: Build and test (AC: #5)
-  - [ ] 6.1 Run `npm run build`
-  - [ ] 6.2 Run `npm run serve` and test EN URL
-  - [ ] 6.3 Verify no "Not translated" banner
-  - [ ] 6.4 Verify FR page still works (with emoji preserved)
-  - [ ] 6.5 Verify GitHub link works
+- [x] Task 6: Build and test (AC: #5)
+  - [x] 6.1 Run `npm run build`
+  - [x] 6.2 Run `npm run serve` and test EN URL
+  - [x] 6.3 Verify no "Not translated" banner
+  - [x] 6.4 Verify FR page still works (with emoji preserved)
+  - [x] 6.5 Verify GitHub link works
 
 ## Dev Notes
 
@@ -256,10 +256,25 @@ When this story and stories 3-7, 3-8 are completed, Epic 3 will be DONE:
 
 ### Agent Model Used
 
-{{agent_model_name_version}}
+Claude Opus 4.5 (claude-opus-4-5-20251101)
 
 ### Debug Log References
 
 ### Completion Notes List
 
+- Translated finish.md from French to English
+- Used "Congratulations" as title for celebratory tone (per AC1)
+- Added `translated: true` to frontmatter (per AC2)
+- Preserved `sidebar_position: 8` (per AC2)
+- Translated GitHub link text to "the GitHub repository" (per AC3)
+- Removed emoji from EN version per project standards (per AC4)
+- Fixed double space before GitHub link
+- Build passes without errors (per AC5)
+
+### Change Log
+
+- 2026-01-24: Translated finish.md to English, all tasks completed
+
 ### File List
+
+- docs/getting_started/finish.md (modified)
