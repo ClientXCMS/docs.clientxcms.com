@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'ClientXCMS Docs',
-  tagline: 'Bienvenue sur notre espace de documentation dédié à CLIENTXCMS',
+  tagline: 'Welcome to the official CLIENTXCMS documentation',
   url: 'https://docs.clientxcms.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -19,8 +19,18 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr'],
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+      fr: {
+        label: 'Francais',
+        htmlLang: 'fr-FR',
+      },
+    },
   },
   presets: [
     [
@@ -127,15 +137,15 @@ const config: Config = {
           position: 'right',
           dropdownActiveClassDisabled: true,
         },
-        /*{
+        {
           type: 'localeDropdown',
           position: 'right',
-        },*/
+        },
       ],
     },
     announcementBar: {
       id: 'announcementBar',
-      content: `Bienvenue sur la documentation officiel de ClientXCMS.com !  Explorez nos guides et ressources pour maîtriser pleinement notre CMS.`,
+      content: `Welcome to the official ClientXCMS.com documentation! Explore our guides and resources to fully master our CMS.`,
       backgroundColor: '#2c46ba',
       textColor: '#fff',
       isCloseable: false,
