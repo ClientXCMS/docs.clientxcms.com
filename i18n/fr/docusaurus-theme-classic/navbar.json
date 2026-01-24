@@ -1,0 +1,50 @@
+{
+  "title": {
+    "message": "CLIENTXCMS Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "CLIENTXCMS Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.Ressources": {
+    "message": "Ressources",
+    "description": "Navbar item with label Ressources"
+  },
+  "item.label.Changelog": {
+    "message": "Changelog",
+    "description": "Navbar item with label Changelog"
+  },
+  "item.label.Soumettre une idée": {
+    "message": "Soumettre une idée",
+    "description": "Navbar item with label Soumettre une idée"
+  },
+  "item.label.Retour au site": {
+    "message": "Retour au site",
+    "description": "Navbar item with label Retour au site"
+  },
+  "item.label.Resources": {
+    "message": "Ressources",
+    "description": "Navbar item with label Resources"
+  },
+  "item.label.Submit an idea": {
+    "message": "Soumettre une idée",
+    "description": "Navbar item with label Submit an idea"
+  },
+  "item.label.Back to website": {
+    "message": "Retour au site",
+    "description": "Navbar item with label Back to website"
+  }
+}

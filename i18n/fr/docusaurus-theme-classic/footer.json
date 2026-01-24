@@ -1,0 +1,98 @@
+{
+  "link.title.Communautés": {
+    "message": "Communautés",
+    "description": "The title of the footer links column with title=Communautés in the footer"
+  },
+  "link.title.Liens utiles": {
+    "message": "Liens utiles",
+    "description": "The title of the footer links column with title=Liens utiles in the footer"
+  },
+  "link.title.Développeurs": {
+    "message": "Développeurs",
+    "description": "The title of the footer links column with title=Développeurs in the footer"
+  },
+  "link.item.label.Retour au site": {
+    "message": "Retour au site",
+    "description": "The label of footer link with label=Retour au site linking to https://clientxcms.com"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://clientxcms.com/ref/discord"
+  },
+  "link.item.label.𝕏": {
+    "message": "𝕏",
+    "description": "The label of footer link with label=𝕏 linking to https://twitter.com/ClientXCMS"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ClientXCMS/docs.clientxcms.com"
+  },
+  "link.item.label.Ouvrir un ticket": {
+    "message": "Ouvrir un ticket",
+    "description": "The label of footer link with label=Ouvrir un ticket linking to https://clientxcms.com/client/support"
+  },
+  "link.item.label.Documentation API": {
+    "message": "Documentation API",
+    "description": "The label of footer link with label=Documentation API linking to /api"
+  },
+  "link.item.label.Extensions": {
+    "message": "Extensions",
+    "description": "The label of footer link with label=Extensions linking to https://docs.clientxcms.com/extensions"
+  },
+  "link.item.label.Soumettre une idée": {
+    "message": "Soumettre une idée",
+    "description": "The label of footer link with label=Soumettre une idée linking to https://ideas.clientxcms.com"
+  },
+  "link.item.label.Soumettre une extension": {
+    "message": "Soumettre une extension",
+    "description": "The label of footer link with label=Soumettre une extension linking to https://clientxcms.com/client/resources/submit"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Association CLIENTXCMS",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Logo CLIENTXCMS",
+    "description": "The alt text of footer logo"
+  },
+  "link.title.Communities": {
+    "message": "Communautés",
+    "description": "The title of the footer links column with title=Communities in the footer"
+  },
+  "link.title.Useful links": {
+    "message": "Liens utiles",
+    "description": "The title of the footer links column with title=Useful links in the footer"
+  },
+  "link.title.Developers": {
+    "message": "Développeurs",
+    "description": "The title of the footer links column with title=Developers in the footer"
+  },
+  "link.item.label.Back to website": {
+    "message": "Retour au site",
+    "description": "The label of footer link with label=Back to website linking to https://clientxcms.com"
+  },
+  "link.item.label.X": {
+    "message": "𝕏",
+    "description": "The label of footer link with label=X linking to https://twitter.com/ClientXCMS"
+  },
+  "link.item.label.Open a ticket": {
+    "message": "Ouvrir un ticket",
+    "description": "The label of footer link with label=Open a ticket linking to https://clientxcms.com/client/support"
+  },
+  "link.item.label.API Documentation": {
+    "message": "Documentation API",
+    "description": "The label of footer link with label=API Documentation linking to /api"
+  },
+  "link.item.label.Submit an idea": {
+    "message": "Soumettre une idée",
+    "description": "The label of footer link with label=Submit an idea linking to https://ideas.clientxcms.com"
+  },
+  "link.item.label.Submit an extension": {
+    "message": "Soumettre une extension",
+    "description": "The label of footer link with label=Submit an extension linking to https://clientxcms.com/client/resources/submit"
+  }
+}

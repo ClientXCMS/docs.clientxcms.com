@@ -124,12 +124,12 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/api', label: 'API', position: 'left' },
-        { to: 'https://clientxcms.com/resources', label: 'Ressources', position: 'left' },
+        { to: 'https://clientxcms.com/resources', label: 'Resources', position: 'left' },
         { to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left' },
-        { to: 'https://ideas.clientxcms.com', label: 'Soumettre une idée', position: 'left' },
+        { to: 'https://ideas.clientxcms.com', label: 'Submit an idea', position: 'left' },
         {
           href: 'https://clientxcms.com',
-          label: 'Retour au site',
+          label: 'Back to website',
           position: 'right',
         },
         {
@@ -154,12 +154,11 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-
         {
-          title: 'Communautés',
+          title: 'Communities',
           items: [
             {
-              label: 'Retour au site',
+              label: 'Back to website',
               href: 'https://clientxcms.com',
             },
             {
@@ -167,13 +166,13 @@ const config: Config = {
               href: 'https://clientxcms.com/ref/discord',
             },
             {
-              label: '𝕏',
+              label: 'X',
               href: 'https://twitter.com/ClientXCMS',
             },
           ],
         },
         {
-          title: 'Liens utiles',
+          title: 'Useful links',
           items: [
             {
               label: 'Blog',
@@ -183,18 +182,17 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/ClientXCMS/docs.clientxcms.com',
             },
-
             {
-              label: 'Ouvrir un ticket',
+              label: 'Open a ticket',
               href: 'https://clientxcms.com/client/support',
             },
           ],
         },
         {
-          title: 'Développeurs',
+          title: 'Developers',
           items: [
             {
-              label: 'Documentation API',
+              label: 'API Documentation',
               to: '/api',
             },
             {
@@ -202,22 +200,22 @@ const config: Config = {
               href: 'https://docs.clientxcms.com/extensions',
             },
             {
-              label: 'Soumettre une idée',
+              label: 'Submit an idea',
               href: 'https://ideas.clientxcms.com',
             },
             {
-              label: 'Soumettre une extension',
+              label: 'Submit an extension',
               href: 'https://clientxcms.com/client/resources/submit',
             }
           ]
         }
       ],
       logo: {
-        alt: 'Logo CLIENTXCMS',
+        alt: 'CLIENTXCMS Logo',
         src: 'https://clientxcms.com/assets/images/logo/LogoBlueText.png',
         href: 'https://clientxcms.com/',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Association CLIENTXCMS`,
+      copyright: `Copyright © ${new Date().getFullYear()} CLIENTXCMS Association`,
     },
     prism: {
       theme: prismThemes.github,
