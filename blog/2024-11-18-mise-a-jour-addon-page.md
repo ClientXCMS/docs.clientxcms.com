@@ -1,23 +1,24 @@
 ---
 slug: mise-a-jour-addon-page
-title: Mise à jour de l'addon Page
+title: Page Addon Update
 authors: [martindev]
 tags: [addon, page, clientxcms]
+translated: true
 ---
-# Mise à jour de l'addon Page 
+# Page Addon Update
 
-Nous sommes ravis de vous annoncer une mise à jour majeure de l'addon Page qui ouvre encore plus de possibilités pour la création et la gestion de vos pages web ! 🌐🎨 
+We are pleased to announce a major update to the Page addon that opens even more possibilities for creating and managing your web pages! 🌐🎨
 
-![Mise à jour de l'addon Page](/img/blog/mise-a-jour-addon-page/image.png)
+![Page Addon Update](/img/blog/mise-a-jour-addon-page/image.png)
 <!-- truncate -->
-Nouveautés de l'addon Page:
-- `➕` Traduction des pages : Offrez une expérience multilingue avec la possibilité de traduire vos pages facilement.
-- `➕` Redirections d'URL : Configurez des redirections pour améliorer la navigation sur votre site.
-- `➕` Suivi des vues : Suivez le nombre de vues de vos pages pour optimiser leur impact.
-- `➕` Personnalisation avancée : Utilisez JavaScript et CSS pour personnaliser vos pages classiques selon vos besoins.
-- `➕` Support complet pour HTML : Créez et intégrez des pages HTML sur-mesure pour encore plus de flexibilité.
-- `➕` Création illimitée de pages : Explorez une gamme de fonctionnalités pour créer des pages variées et adaptées à vos projets.
+Page Addon New Features:
+- `➕` Page Translation: Offer a multilingual experience with the ability to translate your pages easily.
+- `➕` URL Redirects: Configure redirects to improve navigation on your site.
+- `➕` View Tracking: Track the number of views on your pages to optimize their impact.
+- `➕` Advanced Customization: Use JavaScript and CSS to customize your classic pages according to your needs.
+- `➕` Full HTML Support: Create and integrate custom HTML pages for even more flexibility.
+- `➕` Unlimited Page Creation: Explore a range of features to create varied pages tailored to your projects.
 
-## Quelques captures d'écran de l'addon Page
-![Page d'édition HTML](/img/blog/mise-a-jour-addon-page/image1.png)
-![Page d'édition Editeur](/img/blog/mise-a-jour-addon-page/image2.png)
+## Some Screenshots of the Page Addon
+![HTML Editing Page](/img/blog/mise-a-jour-addon-page/image1.png)
+![Editor Editing Page](/img/blog/mise-a-jour-addon-page/image2.png)

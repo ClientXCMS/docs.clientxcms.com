@@ -1,29 +1,30 @@
 ---
 slug: fonctionalites-cadeau-discord
-title: Fonctionnalités Cadeau webhook Discord
+title: Discord Webhook Gift Features
 authors: [martindev]
 tags: [nouvelle fonctionnalités, news, mise à jour, discord, cadeau, webhook]
+translated: true
 ---
-Nous sommes heureux de vous présenter notre toute nouvelle fonctionnalité avec le module [DiscordGift](https://clientxcms.com/store/DiscordGift) : l'envoi de codes cadeaux aléatoires donnant des crédits via une webhook sur votre serveur Discord !
+We are happy to present our brand new feature with the [DiscordGift](https://clientxcms.com/store/DiscordGift) module: sending random gift codes that give credits via a webhook on your Discord server!
 
 <!-- truncate -->
 
-Désormais, vous pouvez configurer votre compte pour envoyer des codes cadeaux à vos utilisateurs de manière aléatoire, avec un certain nombre d'utilisations. Lorsqu'un utilisateur utilise le code, une webhook sera envoyée sur votre serveur Discord pour vous informer les autres utilisateurs que le code vient d'être utilisé et qu'il faut vite profiter du code également.
+You can now configure your account to send gift codes to your users randomly, with a certain number of uses. When a user uses the code, a webhook will be sent to your Discord server to inform other users that the code has just been used and they should quickly take advantage of the code as well.
 
-Nous avons également ajouté de multiples configurations. Vous pouvez modifier les messages envoyés à la Webhook, ainsi que le temps entre chaque Drop. De plus, vos utilisateurs peuvent visualiser la date du prochain Drop directement sur leur espace client.
+We have also added multiple configurations. You can modify the messages sent to the Webhook, as well as the time between each Drop. Additionally, your users can view the date of the next Drop directly on their client area.
 
-Nous sommes convaincus que cette nouvelle fonctionnalité améliorera considérablement l'activité de vos membres sur votre Discord et renforcera la relation entre votre entreprise et votre communauté. N'hésitez pas à nous contacter pour toute question ou suggestion.
-## Captures d'écrans
+We are convinced that this new feature will significantly improve your members' activity on your Discord and strengthen the relationship between your company and your community. Don't hesitate to contact us for any questions or suggestions.
+## Screenshots
 ![img](https://media.discordapp.net/attachments/794698865253154826/1077973012369920031/image.png)
 ![img](https://media.discordapp.net/attachments/829844680539111486/1078137368676139029/image.png)
 
 ![img](https://media.discordapp.net/attachments/829844680539111486/1078137587757228205/image.png)
 
-## Protocole
--  Le système disposera d'une plage de 30 heures après les 3 jours pour faire son largage, il pourra donc apparaître 3h comme 30h après les jours choisis.
-- L'espace client affichera dans combien de jours, heures et minutes le largage arrive,
-- 1 minute avant, il envoie un premier message sur le Discord pour prévenir l'arrivé du largage
-- L'heure prévu il envoie un second message avec le code utilisable pendant 10 minutes où les utilisateurs pourront l'ajouter dans la page "Fond" et gagner une somme aléatoire entre les valeurs déifinis.
-- Après 10 minutes Un dernier message est envoyé sur le discord pour prévenir que le code est plus valide et qu'il faut attendre un autre Largage.
+## Protocol
+- The system will have a range of 30 hours after the 3 days to make its drop, so it may appear 3h to 30h after the chosen days.
+- The client area will display how many days, hours and minutes until the drop arrives,
+- 1 minute before, it sends a first message on Discord to announce the arrival of the drop
+- At the scheduled time it sends a second message with the code usable for 10 minutes where users can add it in the "Balance" page and win a random amount between the defined values.
+- After 10 minutes A final message is sent on Discord to announce that the code is no longer valid and they must wait for another Drop.
 
-A bientôt sur les services [clientxcms.com](https://clientxcms.com) ! 
+See you soon on [clientxcms.com](https://clientxcms.com) services!

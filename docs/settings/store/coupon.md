@@ -1,243 +1,244 @@
 ---
+translated: true
 sidebar_position: 4
 ---
 
 # Coupons
 
-Dans **CLIENTXCMS**, un **coupon** correspond à un **code de réduction que vous proposez à vos clients** dans votre boutique. <br/>
-L'objectif est clair : **fidéliser votre clientèle, booster vos ventes et proposer des offres promotionnelles ciblées**. Une bonne gestion des coupons permet à vos clients de **bénéficier d'avantages exclusifs** tout en vous donnant un contrôle total sur vos campagnes marketing.
+In **CLIENTXCMS**, a **coupon** corresponds to a **discount code that you offer to your customers** in your store. <br/>
+The objective is clear: **build customer loyalty, boost your sales and offer targeted promotional offers**. Good coupon management allows your customers to **benefit from exclusive advantages** while giving you full control over your marketing campaigns.
 
-Chaque coupon peut être entièrement personnalisé : code, type de réduction, validité, conditions d'utilisation, produits concernés, etc.
+Each coupon can be fully customized: code, discount type, validity, usage conditions, applicable products, etc.
 
-Vous pouvez gérer les coupons depuis :
+You can manage coupons from:
 
-`Paramètres` > `Paramètres de la boutique` > `Coupons`
+`Settings` > `Store Settings` > `Coupons`
 
-![Accès à la configuration des coupons](/img/next_gen/settings/store/coupons/admin_list.png)
+![Coupon configuration access](/img/next_gen/settings/store/coupons/admin_list.png)
 
-:::tip Astuce
-Un coupon bien configuré peut considérablement **améliorer votre taux de conversion** et encourager les clients à finaliser leur commande.
-Pensez à définir des conditions claires pour éviter les abus.
+:::tip Tip
+A well-configured coupon can significantly **improve your conversion rate** and encourage customers to complete their order.
+Think about defining clear conditions to avoid abuse.
 :::
 
-## Pourquoi utiliser des coupons ?
+## Why use coupons?
 
-Les coupons sont un outil marketing puissant pour votre boutique. Ils représentent concrètement des avantages que vous offrez à vos clients — que ce soit une réduction sur un service spécifique, des frais d'installation offerts ou une remise globale.
+Coupons are a powerful marketing tool for your store. They concretely represent advantages you offer to your customers — whether it's a discount on a specific service, free setup fees, or an overall discount.
 
-Créer des coupons efficaces vous permet de :
+Creating effective coupons allows you to:
 
-* Fidéliser vos clients existants avec des offres exclusives
-* Attirer de nouveaux clients avec des réductions attractives
-* Écouler des stocks ou promouvoir des services spécifiques
-* Récompenser les clients fidèles ou les premiers acheteurs
+* Build loyalty with existing customers through exclusive offers
+* Attract new customers with attractive discounts
+* Clear stock or promote specific services
+* Reward loyal customers or first-time buyers
 
-:::tip Astuce
-Les coupons sont comme des **tickets d'entrée privilégiés** pour vos services 🎫 — vos clients se sentent valorisés, et vous gardez le contrôle sur vos marges et votre stratégie commerciale.
+:::tip Tip
+Coupons are like **privileged entry tickets** to your services 🎫 — your customers feel valued, and you keep control over your margins and commercial strategy.
 :::
 
-## Interfaces utilisateur
+## User Interfaces
 
-### Vue côté boutique
+### Store-side View
 
-Les coupons sont appliqués par les clients directement dans le **panier de commande**.  
-Ils saisissent le code du coupon dans un champ dédié lors de la finalisation de leur commande.
+Coupons are applied by customers directly in the **shopping cart**.
+They enter the coupon code in a dedicated field when finalizing their order.
 
-![Ajout d'un coupon dans le panier](/img/next_gen/settings/store/coupons/add_coupon.png)
+![Adding a coupon in the cart](/img/next_gen/settings/store/coupons/add_coupon.png)
 
-Une fois le coupon validé, la réduction s'applique automatiquement et le client peut voir :
-- Le montant de la réduction
-- Le nouveau total après réduction
-- Les conditions du coupon appliqué
+Once the coupon is validated, the discount is automatically applied and the customer can see:
+- The discount amount
+- The new total after discount
+- The conditions of the applied coupon
 
-![Coupon appliqué avec succès](/img/next_gen/settings/store/coupons/applied_coupon.png)
+![Successfully applied coupon](/img/next_gen/settings/store/coupons/applied_coupon.png)
 
-## Vue administrateur
+## Administrator View
 
-Dans l'interface d'administration, vous disposez d'une liste complète des coupons créés. Vous pouvez :
-- **Rechercher** un coupon par son code
-- **Filtrer** par statut ou période de validité
-- **Effectuer des actions** comme modifier, consulter les utilisations ou supprimer un coupon
+In the administration interface, you have a complete list of created coupons. You can:
+- **Search** for a coupon by its code
+- **Filter** by status or validity period
+- **Perform actions** like edit, view usage, or delete a coupon
 
-![Vue de la liste des coupons en administration](/img/next_gen/settings/store/coupons/admin_list.png)
+![Coupon list view in administration](/img/next_gen/settings/store/coupons/admin_list.png)
 
-### Actions disponibles
+### Available Actions
 
 | Action        | Description                                  |
 |---------------|----------------------------------------------|
-| **Afficher**  | Consulte et édite les détails du coupon     |
-| **Supprimer** | Supprime définitivement le coupon           |
+| **View**      | View and edit coupon details                 |
+| **Delete**    | Permanently delete the coupon                |
 
-:::danger Attention
-La suppression d'un coupon peut provoquer des erreurs si celui-ci est lié à des commandes existantes.  
-Procédez avec prudence, nous recommandons de désactiver le coupon plutôt que de le supprimer.
+:::danger Warning
+Deleting a coupon can cause errors if it is linked to existing orders.
+Proceed with caution; we recommend disabling the coupon rather than deleting it.
 :::
 
-### Types de réduction
+### Discount Types
 
-CLIENTXCMS propose deux types de réduction pour les coupons :
+CLIENTXCMS offers two types of discounts for coupons:
 
-- **Pourcentage** : Réduction calculée en pourcentage du montant de la commande
-- **Montant fixe** : Réduction d'un montant défini en devise
+- **Percentage**: Discount calculated as a percentage of the order amount
+- **Fixed Amount**: Discount of a defined amount in currency
 
-Ces types permettent une flexibilité totale dans vos stratégies de réduction.
+These types allow total flexibility in your discount strategies.
 
-## Créer un nouveau coupon
+## Creating a New Coupon
 
-Pour ajouter un coupon à votre boutique, cliquez sur le bouton **« Créer »** en haut à droite de la page.
+To add a coupon to your store, click the **"Create"** button in the top right of the page.
 
-![Création d'un coupon](/img/next_gen/settings/store/coupons/create_coupon.png)
+![Coupon creation](/img/next_gen/settings/store/coupons/create_coupon.png)
 
-### Paramètres essentiels à définir
+### Essential Parameters to Define
 
-Voici les champs principaux à compléter lors de la création d'un coupon :
+Here are the main fields to complete when creating a coupon:
 
-**Code** | (texte)<br />
+**Code** | (text)<br />
 
-Le code que les clients devront saisir pour bénéficier de la réduction. Choisissez un code mémorable et unique.
+The code customers will need to enter to benefit from the discount. Choose a memorable and unique code.
 
-**Type de réduction** | (menu déroulant)<br />
+**Discount Type** | (dropdown menu)<br />
 
-Sélectionnez entre "Pourcentage" ou "Montant fixe" selon le type de réduction souhaité.
+Select between "Percentage" or "Fixed Amount" depending on the desired discount type.
 
-**Date de début** | (date)<br />
+**Start Date** | (date)<br />
 
-Date à partir de laquelle le coupon devient utilisable par les clients.
+Date from which the coupon becomes usable by customers.
 
-**Date de fin** | (date)<br />
+**End Date** | (date)<br />
 
-Date limite d'utilisation du coupon. Laissez vide pour un coupon sans expiration.
+Deadline for coupon usage. Leave empty for a coupon without expiration.
 
-**Nombre maximum d'utilisations** | (champ numérique)<br />
+**Maximum Number of Uses** | (numeric field)<br />
 
-Limite globale du nombre de fois que le coupon peut être utilisé. Laissez vide pour un usage illimité.
+Global limit on the number of times the coupon can be used. Leave empty for unlimited use.
 
-**Nombre d'utilisations par client** | (champ numérique)<br />
+**Uses Per Customer** | (numeric field)<br />
 
-Limite le nombre de fois qu'un même client peut utiliser ce coupon.
+Limits the number of times the same customer can use this coupon.
 
-**Montant minimum de la commande** | (montant)<br />
+**Minimum Order Amount** | (amount)<br />
 
-Montant minimum que doit atteindre la commande pour pouvoir appliquer le coupon.
+Minimum amount the order must reach to apply the coupon.
 
-:::tip Astuce
-Définissez des **codes courts et mémorables** comme "BIENVENUE10" ou "NOEL2024". Évitez les codes trop complexes qui pourraient décourager vos clients.
+:::tip Tip
+Define **short and memorable codes** like "WELCOME10" or "XMAS2024". Avoid overly complex codes that could discourage your customers.
 :::
 
-## Configuration avancée
+## Advanced Configuration
 
-### Options de ciblage
+### Targeting Options
 
-Vous pouvez configurer des options avancées pour chaque coupon :
+You can configure advanced options for each coupon:
 
-**Produits autorisés** | (sélection multiple)<br />
-Restreint l'utilisation du coupon à des produits spécifiques.
+**Allowed Products** | (multiple selection)<br />
+Restricts coupon use to specific products.
 
-**Groupes autorisés** | (sélection multiple)<br />
-Limite le coupon à certains groupes de produits uniquement.
+**Allowed Groups** | (multiple selection)<br />
+Limits the coupon to certain product groups only.
 
-**Produits requis** | (sélection multiple)<br />
-Exige la présence de certains produits dans le panier pour utiliser le coupon.
+**Required Products** | (multiple selection)<br />
+Requires the presence of certain products in the cart to use the coupon.
 
-**Réduction globale** | (case à cocher)<br />
-Applique la réduction sur l'ensemble de la commande au lieu de produits spécifiques.
+**Global Discount** | (checkbox)<br />
+Applies the discount to the entire order instead of specific products.
 
-**Offrir les frais d'installation** | (case à cocher)<br />
-Annule les frais d'installation en plus de la réduction.
+**Free Setup Fees** | (checkbox)<br />
+Waives setup fees in addition to the discount.
 
-**Première commande uniquement** | (case à cocher)<br />
-Limite l'utilisation aux nouveaux clients pour leur première commande.
+**First Order Only** | (checkbox)<br />
+Limits use to new customers for their first order.
 
-**Récurrence de la réduction** | (champ numérique)<br />
-Définit sur combien de renouvellements la réduction s'applique. `-1` pour illimité, `0` pour le premier paiement uniquement.
+**Discount Recurrence** | (numeric field)<br />
+Defines how many renewals the discount applies to. `-1` for unlimited, `0` for first payment only.
 
-## Configuration des réductions
+## Discount Configuration
 
-### Utiliser la calculatrice intégrée
+### Using the Integrated Calculator
 
-![Interface de la calculatrice de réduction](/img/next_gen/settings/store/coupons/create_pricing2.png)
+![Discount calculator interface](/img/next_gen/settings/store/coupons/create_pricing2.png)
 
-CLIENTXCMS propose une **calculatrice de réduction intégrée**.  
-Elle vous aide à :
-- calculer rapidement des **réductions dégressives**
-- appliquer des **pourcentages variables** selon la durée
+CLIENTXCMS offers an **integrated discount calculator**.
+It helps you:
+- quickly calculate **degressive discounts**
+- apply **variable percentages** based on duration
 
-Cette fonction est idéale pour créer des coupons cohérents et attractifs.
+This feature is ideal for creating consistent and attractive coupons.
 
-:::tip Astuce
-Utilisez la calculatrice pour créer des **offres dégressives** : plus le client s'engage longtemps, plus la réduction est importante.
-Cela encourage les abonnements de longue durée.
+:::tip Tip
+Use the calculator to create **degressive offers**: the longer the customer commits, the greater the discount.
+This encourages long-term subscriptions.
 :::
 
-## Édition d'un coupon
+## Editing a Coupon
 
-L'édition d'un coupon vous permet de **modifier ses caractéristiques** tout en conservant son historique d'utilisation.
+Editing a coupon allows you to **modify its characteristics** while preserving its usage history.
 
-### Accéder à l'édition
+### Accessing Editing
 
-Pour éditer un coupon :
+To edit a coupon:
 
-1. Rendez-vous dans la liste des coupons.
-2. Cliquez sur le bouton **« Afficher »** dans la colonne **Actions** du coupon concerné.
+1. Go to the coupon list.
+2. Click the **"View"** button in the **Actions** column of the relevant coupon.
 
-### Modifier les informations
+### Modifying Information
 
-Une fois dans l'interface d'édition, vous pouvez modifier :
-- Le **code du coupon** (attention aux utilisations en cours)
-- Les **conditions d'utilisation**
-- Les **dates de validité**
-- Les **montants et pourcentages**
+Once in the editing interface, you can modify:
+- The **coupon code** (be careful with ongoing uses)
+- The **usage conditions**
+- The **validity dates**
+- The **amounts and percentages**
 
 :::warning Important
-Si le coupon est déjà utilisé dans des commandes actives, certaines modifications peuvent ne pas s'appliquer rétroactivement.
+If the coupon is already used in active orders, some modifications may not apply retroactively.
 :::
 
-## Suivi des utilisations
+## Usage Tracking
 
-### Affichage détaillé des utilisations
+### Detailed Usage Display
 
-Vous pouvez consulter l'historique complet d'utilisation de chaque coupon :
+You can view the complete usage history of each coupon:
 
-![Historique des utilisations](/img/next_gen/settings/store/coupons/show_usages.png)
+![Usage history](/img/next_gen/settings/store/coupons/show_usages.png)
 
-Le tableau affiche :
-- **Client** : Qui a utilisé le coupon
-- **Montant de la réduction** : Économies réalisées
-- **Date d'utilisation** : Quand le coupon a été appliqué
-- **Commande associée** : Référence de la commande
+The table displays:
+- **Customer**: Who used the coupon
+- **Discount Amount**: Savings realized
+- **Usage Date**: When the coupon was applied
+- **Associated Order**: Order reference
 
-### Gestion des utilisations
+### Usage Management
 
-Vous pouvez **annuler une utilisation** en cliquant sur le bouton **« Supprimer »** correspondant.  
-Cela permet au client de réutiliser le coupon si nécessaire.
+You can **cancel a usage** by clicking the corresponding **"Delete"** button.
+This allows the customer to reuse the coupon if necessary.
 
-## Supprimer un coupon
+## Deleting a Coupon
 
-:::danger Avertissement
-La suppression d'un coupon peut provoquer des dysfonctionnements dans le système, notamment si le coupon est lié à des commandes existantes. Nous recommandons de **désactiver** le coupon plutôt que de le supprimer définitivement.
+:::danger Warning
+Deleting a coupon can cause system malfunctions, especially if the coupon is linked to existing orders. We recommend **disabling** the coupon rather than permanently deleting it.
 :::
 
-Pour supprimer un coupon :
-1. Cliquez sur le bouton rouge **« Supprimer »** dans la colonne **Actions**.
-2. Confirmez l'opération.
+To delete a coupon:
+1. Click the red **"Delete"** button in the **Actions** column.
+2. Confirm the operation.
 
-## Stratégies de coupons efficaces
+## Effective Coupon Strategies
 
-### Types de coupons recommandés
+### Recommended Coupon Types
 
-| Type de coupon           | Usage recommandé                                    |
+| Coupon Type              | Recommended Use                                    |
 |--------------------------|-----------------------------------------------------|
-| **Bienvenue**            | Pour les nouveaux clients (première commande)      |
-| **Fidélité**             | Pour récompenser les clients réguliers             |
-| **Saisonnier**           | Pour les périodes promotionnelles                  |
-| **Produit spécifique**   | Pour écouler un stock ou promouvoir une nouveauté  |
+| **Welcome**              | For new customers (first order)                    |
+| **Loyalty**              | To reward regular customers                        |
+| **Seasonal**             | For promotional periods                            |
+| **Specific Product**     | To clear stock or promote a novelty                |
 
-### Bonnes pratiques
+### Best Practices
 
-* **Codes clairs** : Utilisez des codes explicites comme "BIENVENUE20" ou "PAQUES2024"
-* **Durée limitée** : Créez un sentiment d'urgence avec des dates d'expiration
-* **Conditions justes** : Évitez les conditions trop restrictives qui frustrent les clients
-* **Suivi régulier** : Analysez les utilisations pour optimiser vos futures campagnes
+* **Clear codes**: Use explicit codes like "WELCOME20" or "EASTER2024"
+* **Limited duration**: Create urgency with expiration dates
+* **Fair conditions**: Avoid overly restrictive conditions that frustrate customers
+* **Regular tracking**: Analyze usage to optimize your future campaigns
 
-:::tip À retenir
-Un coupon bien conçu est un **outil de fidélisation puissant**. Utilisez-les stratégiquement pour booster vos ventes tout en maintenant vos marges.
+:::tip Remember
+A well-designed coupon is a **powerful loyalty tool**. Use them strategically to boost your sales while maintaining your margins.
 :::

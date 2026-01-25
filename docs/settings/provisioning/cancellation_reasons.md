@@ -1,12 +1,17 @@
-# Raisons d'annulation
+---
+translated: true
+---
 
-Vous pouvez configurer les raisons d'annulation des services provisionnés dans le panneau d'administration sous **Paramètres > Approvisionnement > Raison d'annulation**.
-## Création et gestion des raisons d'annulation
-Vous pouvez créer des raisons d'annulation personnalisées pour vos services. Dans le panneau de configuration, cliquez sur **Créer** et entrez la raison ainsi que le statut (actif, non référencé ou caché).
-Vous pouvez également modifier ou supprimer des raisons existantes en cliquant sur l'icône d'édition ou de suppression à côté de chaque raison.
+# Cancellation Reasons
 
-## Statistique d'annulation
-Vous pouvez voir les statistiques des annulations de services en fonction des raisons d'annulation sous forme de graphique sur la même page. Cela vous permet d'analyser les motifs d'annulation les plus courants et d'ajuster vos offres ou services en conséquence.
-Vous pouvez filtrer les statistiques par période (jour, semaine, mois, année) pour obtenir des insights plus précis.
+You can configure cancellation reasons for provisioned services in the admin panel under **Settings > Provisioning > Cancellation Reasons**.
+
+## Creating and Managing Cancellation Reasons
+You can create custom cancellation reasons for your services. In the configuration panel, click **Create** and enter the reason along with the status (active, unlisted, or hidden).
+You can also modify or delete existing reasons by clicking the edit or delete icon next to each reason.
+
+## Cancellation Statistics
+You can view service cancellation statistics based on cancellation reasons as a chart on the same page. This allows you to analyze the most common cancellation reasons and adjust your offers or services accordingly.
+You can filter statistics by period (day, week, month, year) for more precise insights.
 
 ![img](/img/next_gen/settings/provisioning/cancellation_reasons/index_admin.png)

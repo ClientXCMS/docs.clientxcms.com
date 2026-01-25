@@ -1,13 +1,16 @@
+---
+translated: true
+---
 
-# Passerelle de paiement
-Les passerelles de paiement permettent d'ajouter de nouveau moyens de paiement à votre espace client. Pour une intégration réussie, il est nécessaire de suivre une structure cohérente et de respecter l'interface fournis par CLIENTXCMS. Nous allons voir étape par étape comment implémenter une nouvelle passerelle de paiement.
+# Payment Gateway
+Payment gateways allow you to add new payment methods to your client area. For successful integration, you need to follow a consistent structure and implement the interface provided by CLIENTXCMS. We will walk through step by step how to implement a new payment gateway.
 
-Interface : `App/Contracts/Store/GatewayTypeInterface`
+Interface: `App/Contracts/Store/GatewayTypeInterface`
 
-Class abstraite : `App/Abstracts/AbstractGatewayType`
-### Création de la classe
+Abstract Class: `App/Abstracts/AbstractGatewayType`
+### Creating the Class
 
-Nous avons besoin de créer une nouvelle classe qui étend `App/Abstracts/AbstractGatewayType` et implémente `App/Contracts/Store/GatewayTypeInterface`. Cette classe contiendra les méthodes nécessaires pour gérer les paiements, les configurations, et les validations.
+We need to create a new class that extends `App/Abstracts/AbstractGatewayType` and implements `App/Contracts/Store/GatewayTypeInterface`. This class will contain the methods needed to handle payments, configurations, and validations.
 
 ```php
 <?php
@@ -16,62 +19,62 @@ namespace App\Addons\Fund;
 
 class FundType extends AbstractGatewayType
 {
-    const UUID = 'fund'; // UUID unique de la passerelle
-    protected string $name = 'Fund'; // Nom de la passerelle
-    protected string $uuid = self::UUID; // UUID utilisé dans le CMS
-    protected string $image = 'fund.png'; // Chemin de l'image affichée dans l'interface
-    protected string $icon = 'bi bi-currency-dollar'; // Icône Bootstrap utilisée pour représenter la passerelle
-    
+    const UUID = 'fund'; // Unique gateway UUID
+    protected string $name = 'Fund'; // Gateway name
+    protected string $uuid = self::UUID; // UUID used in the CMS
+    protected string $image = 'fund.png'; // Image path displayed in the interface
+    protected string $icon = 'bi bi-currency-dollar'; // Bootstrap icon used to represent the gateway
+
 }
 ```
 
-### Implémentation des méthodes de paiement
+### Implementing Payment Methods
 
-La méthode `createPayment()` permet de créer un paiement et de rediriger l'utilisateur vers l'URL de retour ou d'annulation après la tentative de paiement. Elle prend comme paramètres une facture (`App\Models\Billing\Invoice`), une passerelle (`App\Models\Billing\Gateway`), la requête HTTP (`Illuminate\Http\Request`), et les **URI** de redirection (`App\DTO\Core\Gateway\GatewayUriDTO`).
+The `createPayment()` method creates a payment and redirects the user to the return or cancel URL after the payment attempt. It takes as parameters an invoice (`App\Models\Billing\Invoice`), a gateway (`App\Models\Billing\Gateway`), the HTTP request (`Illuminate\Http\Request`), and the redirect **URIs** (`App\DTO\Core\Gateway\GatewayUriDTO`).
 
 ```php
 
     public function createPayment(Invoice $invoice, Gateway $gateway, Request $request, GatewayUriDTO $dto)
     {
-        // Création du paiement via l'API de la passerelle de paiement
-        $transactionId = "ctx-" . \Str::uuid(); 
+        // Create payment via the payment gateway API
+        $transactionId = "ctx-" . \Str::uuid();
         $amount = $invoice->total;
         $array = [
           'return_url' => $dto->returnUri,
           'cancel_url' => $dto->cancelUri,
         ];
         $redirectUrl = $dto->returnUri;
-        // Renvoie vers l'URL de la passerelle
-        return redirect($redirectUrl); // Redirige vers l'URL de retour une fois le paiement initié
+        // Redirect to the gateway URL
+        return redirect($redirectUrl); // Redirects to the return URL once payment is initiated
     }
 ```
 
-Ici, l'UUID de la transaction est généré, et l'utilisateur est redirigé vers la page définie par `$dto->returnUri` après la création du paiement.
+Here, the transaction UUID is generated, and the user is redirected to the page defined by `$dto->returnUri` after payment creation.
 
-La méthode `processPayment()` traite le paiement une fois que l'utilisateur revient sur le site après avoir interagi avec la passerelle de paiement (par exemple, après avoir été redirigé depuis le prestataire de paiement externe).
+The `processPayment()` method processes the payment once the user returns to the site after interacting with the payment gateway (for example, after being redirected from the external payment provider).
 
 ```php
 public function processPayment(Invoice $invoice, Gateway $gateway, Request $request, GatewayUriDTO $dto)
 {
     if ($invoice->total > $invoice->customer->balance) {
-        $invoice->fail(); // Si le solde est insuffisant, la facture échoue
+        $invoice->fail(); // If balance is insufficient, the invoice fails
     } else {
-        $invoice->customer->balance -= $invoice->total; // Déduit le montant du solde du client
-        $invoice->customer->save(); // Sauvegarde les changements
-        $invoice->complete(); // Marque la facture comme payée
+        $invoice->customer->balance -= $invoice->total; // Deduct the amount from customer balance
+        $invoice->customer->save(); // Save changes
+        $invoice->complete(); // Mark invoice as paid
     }
-    return redirect()->route('front.invoices.show', $invoice->id); // Redirige vers l'interface client
+    return redirect()->route('front.invoices.show', $invoice->id); // Redirect to client interface
 }
 ```
 
-## Configuration et de validation
+## Configuration and Validation
 
-La méthode `configForm()` permet de générer le formulaire de configuration pour la passerelle, qui sera affiché dans la section **"Boutique"** des paramètres du CMS. Ce formulaire peut être personnalisé pour chaque passerelle afin de permettre la configuration des clés API ou autres paramètres.
+The `configForm()` method generates the configuration form for the gateway, which will be displayed in the **"Store"** section of the CMS settings. This form can be customized for each gateway to allow configuration of API keys or other parameters.
 
 ```php
 public function configForm(array $context = [])
 {
-    return view('fund_admin::gateway'); 
+    return view('fund_admin::gateway');
 }
 ```
 
@@ -86,12 +89,12 @@ public function configForm(array $context = [])
 </div>
 ```
 
-La méthode `saveConfig()` est utilisée pour sauvegarder les paramètres de configuration de la passerelle.
+The `saveConfig()` method is used to save the gateway configuration settings.
 
 ```php
 public function saveConfig(array $data)
 {
-    // Utiliser EnvEditor pour mettre à jour les variables d'environnement
+    // Use EnvEditor to update environment variables
     EnvEditor::updateEnv([
         'FUND_SECRET_KEY' => $data['secret_key'],
         'FUND_PUBLIC_KEY' => $data['public_key'],
@@ -99,7 +102,7 @@ public function saveConfig(array $data)
 }
 ```
 
-Enfin, la méthode `validate()` permet de valider les données de configuration avant leur sauvegarde. Par exemple, pour valider les clés API :
+Finally, the `validate()` method validates the configuration data before saving. For example, to validate API keys:
 
 ```php
 public function validate(): array
@@ -110,11 +113,11 @@ public function validate(): array
     ];
 }
 ```
-## Enregistrement de la passerelle dans le Service Provider
+## Registering the Gateway in the Service Provider
 
-Une fois que la passerelle de paiement est créée, il est nécessaire de l'enregistrer dans le **Service Provider** de votre extension pour que le CMS puisse la reconnaître et l'utiliser. Cela se fait dans la méthode `boot()` du **Service Provider**.
+Once the payment gateway is created, it needs to be registered in your extension's **Service Provider** so the CMS can recognize and use it. This is done in the `boot()` method of the **Service Provider**.
 
-Exemple d'enregistrement de la passerelle **FundType** dans le `FundServiceProvider` :
+Example of registering the **FundType** gateway in the `FundServiceProvider`:
 
 ```php
 <?php
@@ -127,7 +130,7 @@ use App\Services\Core\PaymentTypeService;
 class FundServiceProvider extends BaseAddonServiceProvider
 {
     protected string $uuid = 'fund';
-    
+
     public function register()
     {
         //
@@ -135,13 +138,13 @@ class FundServiceProvider extends BaseAddonServiceProvider
 
     public function boot()
     {
-        // Enregistrer la passerelle de paiement FundType
+        // Register the FundType payment gateway
         $this->app(PaymentTypeService::class)->add(FundType::UUID, FundType::class);
     }
 }
 ```
-Il vous faudra également créer un seeders pour ajouter la passerelle dans la base de données.
-Pour cela, créez un fichier `FundSeeder.php` dans le dossier `database/seeders` de votre extension :
+You will also need to create a seeder to add the gateway to the database.
+To do this, create a `FundSeeder.php` file in your extension's `database/seeders` folder:
 ```php
 <?php
 // addons/fund/database/seeders/FundSeeder.php
@@ -155,7 +158,7 @@ class FundSeeder extends Seeder
 {
     public function run()
     {
-        
+
         Gateway::updateOrCreate([
             'name' => 'Fund',
             'uuid' => FundType::UUID,
@@ -164,7 +167,7 @@ class FundSeeder extends Seeder
     }
 }
 ```
-Enfin, ajoutez le seeder dans votre **Service Provider** pour qu'il soit exécuté lors de l'installation de l'extension :
+Finally, add the seeder in your **Service Provider** so it runs during extension installation:
 ```php
 <?php
 // addons/fund/src/FundServiceProvider.php
@@ -175,7 +178,7 @@ use \App\Extensions\BaseAddonServiceProvider;
 class FundServiceProvider extends BaseAddonServiceProvider
 {
     protected string $uuid = 'fund';
-    
+
     public function register()
     {
         //
@@ -189,5 +192,5 @@ class FundServiceProvider extends BaseAddonServiceProvider
 }
 ```
 
-## Activation de la passerelle
-Vous devriez maintenant voir la passerelle de paiement **Fund** dans la section **"Boutique"** des paramètres du CMS. Vous pouvez activer la passerelle et la configurer en fonction de vos besoins.
+## Activating the Gateway
+You should now see the **Fund** payment gateway in the **"Store"** section of the CMS settings. You can activate the gateway and configure it according to your needs.

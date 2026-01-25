@@ -1,18 +1,19 @@
 ---
 sidebar_position: 2
+translated: true
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Importation
-L'importation sert à importer vos données de ClientXCMS V1 ou bien même WHMCS.
+# Import
+Import is used to import your data from ClientXCMS V1 or even WHMCS.
 
 ## Configuration
-Vous pouvez gérer la configuration de l'anti double compte dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions ` > `Importation`
+You can manage the import configuration in `Admin Panel` > `Settings` > `Extension Settings` > `Import`
 
 ![img](/img/next_gen/extensions/addons/importation/importation.png)
 
-Ici vous pouvez choisir si vous voulez transfèrer vos donnée d'un WHMCS ou de ClientXCMS.
+Here you can choose whether you want to transfer your data from WHMCS or ClientXCMS.
 
 <Tabs>
 
@@ -20,23 +21,23 @@ Ici vous pouvez choisir si vous voulez transfèrer vos donnée d'un WHMCS ou de 
 
 ![img](/img/next_gen/extensions/addons/importation/clientxcms.png)
 
-Vous pouvez selection les données que vous voulez transfèrer vers votre instance. 
+You can select the data you want to transfer to your instance.
 
-Ensuite nous allons configurer les accès à la basse de donnée ou ce trouve vos données : 
+Then we will configure access to the database where your data is located:
 
-**Hôte** : L'adresse ip
+**Host**: The IP address
 
-**Port** : Le port de votre serveur mysql (3306 par default)
+**Port**: Your MySQL server port (3306 by default)
 
-**Base de données** : Nom de la base de données 
+**Database**: Database name
 
-**Nom d'utilisateur** : Nom d'utilisateur de la base de données
+**Username**: Database username
 
-**Mot de passe** : Mot de passe de la base de donnée
+**Password**: Database password
 
-Vous pouvez choisir si vous voulez qu'il vide la base de données avant de l'importer.
+You can choose whether you want it to empty the database before importing.
 
-Vous pouvez cliquer sur Importer et l'importation vas ce lancer.
+You can click Import and the import will start.
 
 </TabItem>
 
@@ -44,25 +45,25 @@ Vous pouvez cliquer sur Importer et l'importation vas ce lancer.
 
 ![img](/img/next_gen/extensions/addons/importation/whmcs.png)
 
-Vous pouvez selection les données que vous voulez transfèrer vers votre instance. 
+You can select the data you want to transfer to your instance.
 
-Ensuite nous allons configurer les accès à la basse de donnée ou ce trouve vos données : 
+Then we will configure access to the database where your data is located:
 
-**Hôte** : L'adresse ip 
+**Host**: The IP address
 
-**Port** : Le port de votre serveur mysql (3306 par default)
+**Port**: Your MySQL server port (3306 by default)
 
-**Base de données** : Nom de la base de données 
+**Database**: Database name
 
-**Nom d'utilisateur** : Nom d'utilisateur de la base de données
+**Username**: Database username
 
-**Mot de passe** : Mot de passe de la base de donnée
+**Password**: Database password
 
-**Clé d'encodeur** : Vous la trouvez dans configuration.php de WHMCS
+**Encoder Key**: You can find it in WHMCS configuration.php
 
-Vous pouvez choisir si vous voulez qu'il vide la base de données avant de l'importer.
+You can choose whether you want it to empty the database before importing.
 
-Vous pouvez cliquer sur Importer et l'importation vas ce lancer.
+You can click Import and the import will start.
 
 </TabItem>
 

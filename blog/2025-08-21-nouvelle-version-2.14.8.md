@@ -1,36 +1,37 @@
 ---
 slug: nouvelle-version-2.14.8
-title: Nouvelle version 2.14.8
+title: New Version 2.14.8
 authors: [martindev]
+translated: true
 ---
 # v2.14.8 - Open-source update
 
 
-Nous sommes ravis de vous annoncer la sortie de la version **2.14.8** de ClientXCMS !
+We are pleased to announce the release of version **2.14.8** of ClientXCMS!
 ![version 2.14.8](/img/blog/versions/v2.14.8.png)
 <!-- truncate -->
-## ➕ Ajouts
+## ➕ Additions
 
-- ➕ Téléchargement via la page d’extensions
-- ➕ Abonnement via PayPal disponible
-- ➕ Paiement partiel d’une facture grâce au crédit
-- ➕ Indépendance des données de facturation
-- ➕ Création automatique de facture lors du paiement
-- ➕ Export des factures sous différents formats
-- ➕ Champ entreprise & informations fiscales sur factures
-- ➕ Date prédéfinie sur un abonnement
-- ➕ Historique amélioré des modifications de solde client
-- ➕ Ajout d’une bannière RGPD
+- ➕ Download via the extensions page
+- ➕ PayPal subscription available
+- ➕ Partial invoice payment using credit
+- ➕ Billing data independence
+- ➕ Automatic invoice creation upon payment
+- ➕ Invoice export in different formats
+- ➕ Company field & tax information on invoices
+- ➕ Predefined date on a subscription
+- ➕ Improved client balance modification history
+- ➕ Added GDPR banner
 
-## ❌ Suppressions
+## ❌ Removals
 
-- ❌ Effacement & suppression de fichiers dans l’historique
-- ❌ Suppression d’une facture interdite lorsqu'elle est payée
+- ❌ File clearing & deletion in history
+- ❌ Invoice deletion prohibited when paid
 
-## 🔄 Modifications
+## 🔄 Changes
 
-- 🔄 Format UUID réduit : **8 → 5 caractères**
+- 🔄 Reduced UUID format: **8 → 5 characters**
 
-## 🔧 Corrections
+## 🔧 Fixes
 
-- 🔧 Vérification améliorée des domaines lors d’un achat
+- 🔧 Improved domain verification during purchase

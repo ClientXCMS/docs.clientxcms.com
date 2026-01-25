@@ -1,110 +1,111 @@
 ---
 slug: bonne-annee-fin-clientxcms-v1
-title: Bonne année 2025 & Fin CLIENTXCMS v1
+title: Happy New Year 2025 & End of CLIENTXCMS v1
 authors: [martindev]
+translated: true
 ---
 
-Bonjour à tous,
+Hello everyone,
 
-En cette fin d'année 2024, nous marquons la fin du support et du téléchargement de la première version de CLIENTXCMS. Après plus de 3 ans de développement, près de 1200 commits, 40 modules, et des centaines d'heures de travail acharné, cette aventure s'achève aujourd'hui, le 31 décembre. Ces 3 années ont été enrichissantes, nous permettant d'acquérir des compétences que nous n'aurions jamais imaginé maîtriser. Ces acquis ont donné naissance à la nouvelle version **NextGen**, qui célèbre aujourd'hui sa première année.
+As 2024 comes to an end, we mark the conclusion of support and downloads for the first version of CLIENTXCMS. After more than 3 years of development, nearly 1200 commits, 40 modules, and hundreds of hours of hard work, this adventure ends today, December 31st. These 3 years have been enriching, allowing us to acquire skills we never imagined mastering. These achievements gave birth to the new **NextGen** version, which celebrates its first anniversary today.
 
-À partir de ce jour, il ne sera plus possible de télécharger ni de choisir une licence pour la version initiale. Pour les clients encore sur cette version, nous vous encourageons vivement à migrer vers la version **NextGen**.
+Starting today, it will no longer be possible to download or choose a license for the original version. For customers still on this version, we strongly encourage you to migrate to the **NextGen** version.
 
 <!-- truncate -->
 
-## Nouvelle version v2.14 : Les nouveautés
+## New version v2.14: What's New
 
-Cette mise à jour, bien qu’ayant pris du retard malgré nous, est le fruit d’un travail rigoureux de tests et de vérifications. Avec l'augmentation constante d'hébergeurs utilisant nos services, nous avons priorisé la stabilité et la qualité des fonctionnalités introduites.
+This update, although delayed despite our best efforts, is the result of rigorous testing and verification work. With the constant increase of hosting providers using our services, we have prioritized the stability and quality of the introduced features.
 
-Voici quelques-unes des principales nouveautés :
+Here are some of the main new features:
 
-### Options supplémentaires personnalisables
+### Customizable Additional Options
 
-Nous avons développé un système dédié à la personnalisation des offres avec des options supplémentaires. La configuration est simple et permet de proposer des offres entièrement personnalisables à vos clients. Les extensions incluront des options prédéfinies (RAM, IP supplémentaire, espace disque supplémentaire, etc.). Ces options seront automatiquement renouvelées avec le service principal, mais elles peuvent également avoir une date d'expiration distincte. Cela ouvre de vastes possibilités pour répondre aux besoins spécifiques de vos clients.
+We have developed a dedicated system for customizing offers with additional options. The configuration is simple and allows you to offer fully customizable packages to your clients. Extensions will include predefined options (RAM, additional IP, additional disk space, etc.). These options will be automatically renewed with the main service, but they can also have a separate expiration date. This opens vast possibilities to meet your clients' specific needs.
 
-![Options supplémentaires](/img/blog/fin-clientxcms-v1/options.png)
+![Additional Options](/img/blog/fin-clientxcms-v1/options.png)
 
-De plus, vous pourrez gérer la **multi-localisation** des services avec des tarifs variables en fonction des emplacements.
+Additionally, you will be able to manage **multi-location** services with variable pricing based on locations.
 
-![Multi-localisation](/img/blog/fin-clientxcms-v1/option_localization.png)
-
----
-
-### Amélioration des services
-
-Très demandée par la communauté, cette fonctionnalité permet d’améliorer un service en passant à un plan supérieur. Par choix technique, nous n’autorisons pas la diminution de plan, car cela peut poser des problèmes, notamment avec la gestion des systèmes de stockage. De plus, d’un point de vue commercial, cette option présente peu d’intérêt.
-
-![Amélioration des services](/img/blog/fin-clientxcms-v1/upgrade.png)
+![Multi-location](/img/blog/fin-clientxcms-v1/option_localization.png)
 
 ---
 
-### Thèmes supplémentaires
+### Service Upgrades
 
-Nous avons annoncé l’arrivée de **3 nouveaux thèmes**. Cette fonctionnalité, également très attendue, vise à améliorer la personnalisation de vos espaces. Deux des nouveaux thèmes ont déjà été dévoilés, et le troisième arrivera prochainement. 
+Highly requested by the community, this feature allows upgrading a service to a higher plan. For technical reasons, we do not allow plan downgrades, as this can cause problems, particularly with storage system management. Furthermore, from a commercial standpoint, this option offers little interest.
 
-De plus, nous avons décidé d’implémenter **Bootstrap** comme base, afin d'élargir les possibilités de création de thèmes. Qui sait, cela pourrait marquer le retour des thèmes de la version 1 ! 
-
----
-
-### Envoi d’emails en masse
-
-Nous avons conçu un système permettant d’envoyer des emails ciblés à un client ou à un groupe spécifique, par exemple en fonction du type de service ou de produit qu’ils possèdent. Il est également possible d’utiliser des variables dynamiques dans ces emails.
-
-![Envoi d’emails](/img/blog/fin-clientxcms-v1/send_email.png)
-
-Vous pourrez prévisualiser les emails avec des données de test avant leur envoi, et potentiellement personnaliser davantage les modèles d’email grâce aux retours que nous recevons.
+![Service Upgrades](/img/blog/fin-clientxcms-v1/upgrade.png)
 
 ---
 
-## Retour sur la version 1 : un brin de nostalgie
+### Additional Themes
 
-Pour les plus anciens d'entre vous qui ont connu la version 1, voici quelques captures d'écran pour raviver vos souvenirs.
+We announced the arrival of **3 new themes**. This feature, also highly anticipated, aims to improve the customization of your spaces. Two of the new themes have already been revealed, and the third will arrive soon.
+
+Additionally, we have decided to implement **Bootstrap** as a base, to expand theme creation possibilities. Who knows, this could mark the return of version 1 themes!
+
+---
+
+### Bulk Email Sending
+
+We have designed a system allowing you to send targeted emails to a client or a specific group, for example based on the type of service or product they own. It is also possible to use dynamic variables in these emails.
+
+![Email Sending](/img/blog/fin-clientxcms-v1/send_email.png)
+
+You will be able to preview emails with test data before sending them, and potentially customize email templates further based on the feedback we receive.
+
+---
+
+## Looking Back at Version 1: A Touch of Nostalgia
+
+For those of you who have been around since version 1, here are some screenshots to bring back memories.
 
 ### Administration
 
-Le tableau de bord administratif, avec son menu vertical, a beaucoup évolué dans la version NextGen. Cependant, certains éléments clés de la v1 ont été conservés dans la v2.
+The administrative dashboard, with its vertical menu, has evolved significantly in the NextGen version. However, some key elements from v1 have been retained in v2.
 
 ![Administration](/img/blog/fin-clientxcms-v1/admin.png)
 
 ---
 
-### Espace client
+### Client Area
 
-La page d'accueil de l’espace client avec le thème **Stisla** et ses 4 cartes donnait un aspect plus "tableau de bord" que "site vitrine". Avec la v2, nous avons adopté un design orienté site vitrine pour une meilleure expérience utilisateur.
+The client area homepage with the **Stisla** theme and its 4 cards gave more of a "dashboard" look than a "showcase site". With v2, we adopted a showcase-oriented design for a better user experience.
 
-![Espace client](/img/blog/fin-clientxcms-v1/front.png)
-
----
-
-### Page des services
-
-La page des services et les détails d’un service Plesk étaient déjà bien pensés et ergonomiques. Ces éléments ont donc peu changé.
-
-![Page des services](/img/blog/fin-clientxcms-v1/services.png)
-![Détails des services](/img/blog/fin-clientxcms-v1/webhosting.png)
+![Client Area](/img/blog/fin-clientxcms-v1/front.png)
 
 ---
 
-## Roadmap début 2025 : ce qui vous attend
+### Services Page
 
-Voici les grandes priorités pour le début de l’année 2025 :
+The services page and Plesk service details were already well thought out and ergonomic. These elements have therefore changed little.
 
-- 📝 **Système de devis**
-- 🎨 **Amélioration de la personnalisation**, avec la création de thèmes par l'équipe et la communauté
-- 🛠️ **Renforcement du centre d’aide**
-- 🌟 **Extensions supplémentaires** : affiliation, contacts, base de connaissances, avis
-- 🔐 **SSO Pterodactyl**
+![Services Page](/img/blog/fin-clientxcms-v1/services.png)
+![Service Details](/img/blog/fin-clientxcms-v1/webhosting.png)
+
+---
+
+## Early 2025 Roadmap: What to Expect
+
+Here are the major priorities for early 2025:
+
+- 📝 **Quote System**
+- 🎨 **Improved Customization**, with theme creation by the team and community
+- 🛠️ **Enhanced Help Center**
+- 🌟 **Additional Extensions**: affiliation, contacts, knowledge base, reviews
+- 🔐 **Pterodactyl SSO**
 - 🛒 **CTX Reselling**
-- 📡 **Amélioration de l’API interne**
-- 🔒 **Conformité RGPD renforcée et sécurité accrue**
-- 📊 **Exportation de factures, tableaux Excel et statistiques pertinentes pour les clients**
+- 📡 **Improved Internal API**
+- 🔒 **Enhanced GDPR Compliance and Increased Security**
+- 📊 **Invoice Export, Excel Spreadsheets, and Relevant Client Statistics**
 
-D'autres fonctionnalités viendront enrichir cette liste, mais celles-ci sont nos priorités.
+Other features will enrich this list, but these are our priorities.
 
 ---
 
-## Un mot pour finir
+## A Final Word
 
-Toute l’équipe de CLIENTXCMS – **Tom, Vincent, Florentin, Kyliane et moi même** – vous souhaite une excellente fin d’année et une merveilleuse année 2025. Nous sommes impatients de continuer cette aventure avec vous tout au long de l’année à venir. 🎉
+The entire CLIENTXCMS team – **Tom, Vincent, Florentin, Kyliane, and myself** – wishes you an excellent end of year and a wonderful 2025. We are eager to continue this adventure with you throughout the coming year. 🎉
 
-Merci pour votre confiance et à très bientôt !
+Thank you for your trust and see you soon!

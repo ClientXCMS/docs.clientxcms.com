@@ -7232,6 +7232,12 @@
                 "description": "Enter token in format (Bearer <token>)",
                 "name": "Authorization",
                 "in": "header"
+            },
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "description": "Enter your API token"
             }
         }
     },

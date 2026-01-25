@@ -1,33 +1,34 @@
 ---
 slug: nouveau-programme-partenaire
-title: Nouveau programme partenaire
+title: New Partner Program
 authors: [martindev]
 tags: [partenaire, programme, clientxcms]
+translated: true
 ---
-# Nouveau programme partenaire 🚀
+# New Partner Program 🚀
 
-Nous sommes ravis de vous présenter notre nouveau programme de partenariat destiné aux utilisateurs passionnés et aux entreprises souhaitant soutenir CLIENTXCMS tout en bénéficiant d’avantages exclusifs !
-Celui-ci est conçu pour vous permettre de profiter de tarifs avantageux sur nos licences pour vos clients.
+We are pleased to present our new partnership program for passionate users and businesses wishing to support CLIENTXCMS while benefiting from exclusive advantages!
+This program is designed to allow you to enjoy advantageous rates on our licenses for your clients.
 
-![Programme Partenaire](/img/blog/nouveau-programme-partenaire/image.png)
+![Partner Program](/img/blog/nouveau-programme-partenaire/image.png)
 <!-- truncate -->
-## 💡 Pourquoi devenir partenaire ?
-- ✅ Des tarifs avantageux sur nos licences
-- ✅ La possibilité de soutenir activement un projet associatif qui vous tient à cœur
-- ✅ Livraison sur le compte de votre client et accès sur votre espace partenaire
+## 💡 Why Become a Partner?
+- ✅ Advantageous rates on our licenses
+- ✅ The opportunity to actively support a nonprofit project you care about
+- ✅ Delivery to your client's account and access to your partner area
 
-## 📌 Comment ça marche ?
-1. **Inscription** : Rejoignez notre programme partenaire en soumettant le formulaire de candidature.
-2. **Validation** : Une fois votre candidature approuvée, vous recevrez un e-mail de confirmation avec les détails de votre compte partenaire.
-3. **Accès aux tarifs** : Vous aurez accès à des tarifs préférentiels sur nos licences via un code promo disponible sur la page partenaire que vous pourrez utiliser pour vos clients.
+## 📌 How Does It Work?
+1. **Registration**: Join our partner program by submitting the application form.
+2. **Validation**: Once your application is approved, you will receive a confirmation email with your partner account details.
+3. **Access to Rates**: You will have access to preferential rates on our licenses via a promo code available on the partner page that you can use for your clients.
 
 
-## 📌 Nos offres partenaires :
-- 🔹 Starter – 6,50€/mois
-- 🔹 Plus – 9,00€/mois 
-- 🔹 Professional – 48,00€/an
-- 🔹 Business – 101,91€/an
+## 📌 Our Partner Offers:
+- 🔹 Starter – €6.50/month
+- 🔹 Plus – €9.00/month
+- 🔹 Professional – €48.00/year
+- 🔹 Business – €101.91/year
 
-💼 Prêt à rejoindre le Programme partenaire ?
+💼 Ready to join the Partner Program?
 
-🔗 Plus d'infos ici : https://clientxcms.com/partners
+🔗 More info here: https://clientxcms.com/partners

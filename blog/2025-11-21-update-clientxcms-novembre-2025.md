@@ -1,142 +1,143 @@
 ---
 slug: update-clientxcms-novembre-2025
-title: Mise à jour du site CLIENTXCMS 11/2025
+title: CLIENTXCMS Website Update 11/2025
 authors: [martindev]
 tags: [update, clientxcms, features, marketplace, releases]
+translated: true
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# 🚀 Mise à jour du site CLIENTXCMS
+# 🚀 CLIENTXCMS Website Update
 
-Nous sommes heureux de vous présenter les dernières améliorations du site **clientxcms.com**, incluant de nouvelles fonctionnalités, un meilleur workflow pour la communauté, et plusieurs nouveautés côté addons & services.
-Découvrez tout ce qui a changé ces derniers jours 👇
+We are happy to present the latest improvements to the **clientxcms.com** website, including new features, a better workflow for the community, and several new addons & services.
+Discover everything that has changed in recent days 👇
 
-![Header mise à jour CLIENTXCMS](/img/blog/update-novembre-2025/header.png)
+![Header CLIENTXCMS update](/img/blog/update-novembre-2025/header.png)
 
 <!-- truncate -->
 
 ## CTXMailer
 
-Les offres **Premium** et **Entreprise** incluent désormais **CTXMailer**, un service de mails professionnels :
+**Premium** and **Enterprise** plans now include **CTXMailer**, a professional email service:
 
-- 📬 jusqu’à **20 boîtes mail incluses**
-- 📧 jusqu'à **25 alias de boîtes**
-- 💾 **15 Go de stockage**
-- 🔐 interface simple & sécurisée
+- 📬 up to **20 mailboxes included**
+- 📧 up to **25 mailbox aliases**
+- 💾 **15 GB of storage**
+- 🔐 simple & secure interface
 
-Pour les utilisateurs ayant une licence Community, CTXMailer est disponible en option pour **3 € / mois**.
+For users with a Community license, CTXMailer is available as an option for **€3/month**.
 
-**Idéal pour :**
+**Ideal for:**
 
-- avoir des adresses e-mail *pro* au nom de votre domaine
-- centraliser la gestion via CLIENTXCMS
-- maintenir une communication professionnelle avec vos clients
-- bénéficier de SMTP fiable et rapide
+- having *professional* email addresses under your domain name
+- centralizing management via CLIENTXCMS
+- maintaining professional communication with your clients
+- benefiting from reliable and fast SMTP
 
-**Aperçu CTXMailer :**
+**CTXMailer Preview:**
 
 ![CTXMailer screenshot](/img/blog/update-novembre-2025/ctxmailer.png)
 
-## Support des redirections multiples
+## Multiple Redirect Support
 
-Il est désormais possible d’ajouter **plusieurs URLs de redirection**  dans l'onglet **"Changer de domaine"** de votre espace client. Elle permet d'ajouter plusieurs redirections pour une même licence, par exemple :
+It is now possible to add **multiple redirect URLs** in the **"Change Domain"** tab of your client area. This allows adding multiple redirects for the same license, for example:
 
 - https://client.clientxcms.com
 - https://www.clientxcms.com
 - https://client.clientxcms.com
 
-Ces redirections facilitent la gestion de domaines, de sous-domaines et d'environsments miroir.
+These redirects facilitate the management of domains, subdomains, and mirror environments.
 
-![Capture](/img/blog/update-novembre-2025/redirects.png)
+![Screenshot](/img/blog/update-novembre-2025/redirects.png)
 
-## Synchronisation Discord intégrée
+## Integrated Discord Synchronization
 
-Vous pouvez maintenant **lier votre compte CLIENTXCMS à Discord** afin de recevoir automatiquement les rôles qui correspondent à votre statut :
+You can now **link your CLIENTXCMS account to Discord** to automatically receive roles that match your status:
 
-- **@Customers** : licence payante
-- **@Community** : licence gratuite
-- **@Développeur** : développeur enregistré
-- **@Développeur certifié** : développeur certifié
+- **@Customers**: paid license
+- **@Community**: free license
+- **@Developer**: registered developer
+- **@Certified Developer**: certified developer
 
-### Comment synchroniser ?
+### How to Synchronize?
 
-1. Rendez-vous sur : **https://clientxcms.com/client/profile**
-2. Cliquez sur **« Synchroniser avec Discord »** en bas de page
-3. Autorisez la connexion
-4. Les rôles sont automatiquement appliqués 🎉
+1. Go to: **https://clientxcms.com/client/profile**
+2. Click on **"Sync with Discord"** at the bottom of the page
+3. Authorize the connection
+4. Roles are automatically applied 🎉
 
-**Aperçu :**
+**Preview:**
 
-![Capture connexion Discord](/img/blog/update-novembre-2025/discord_sync.png)
+![Discord connection screenshot](/img/blog/update-novembre-2025/discord_sync.png)
 
-Ces rôles permettent de faciliter la gestion des accès aux salons privés, aux ressources exclusives et aux discussions réservées aux membres de la communauté CLIENTXCMS.
+These roles help facilitate access management to private channels, exclusive resources, and discussions reserved for CLIENTXCMS community members.
 
-## Nouvel addon gratuit : Announcement Bar
+## New Free Addon: Announcement Bar
 
-Nous publions un nouvel addon totalement **gratuit** :
-🎉 **Announcement Bar**, une barre d’annonce moderne, responsive et hautement personnalisable.
+We are releasing a completely **free** new addon:
+🎉 **Announcement Bar**, a modern, responsive, and highly customizable announcement bar.
 
-Idéal pour afficher :
+Ideal for displaying:
 
 - promotions
-- alertes
-- messages de maintenance
-- actualités importantes
+- alerts
+- maintenance messages
+- important news
 
-➡️ Documentation : https://docs.clientxcms.com/extensions/addons/announcement_bar
+➡️ Documentation: https://docs.clientxcms.com/extensions/addons/announcement_bar
 
-➡️ Ressource : https://clientxcms.com/resources/announcement_bar
+➡️ Resource: https://clientxcms.com/resources/announcement_bar
 
-**Aperçu :**
+**Preview:**
 
-![Preview Announcement Bar](/img/blog/update-novembre-2025/announcement_bar.png)
+![Announcement Bar Preview](/img/blog/update-novembre-2025/announcement_bar.png)
 
-## Contribution de la communauté : merci @Ikiae
+## Community Contribution: Thanks @Ikiae
 
-Un énorme merci à **@Ikiae**, qui a contribué à deux améliorations majeures :
+A huge thank you to **@Ikiae**, who contributed two major improvements:
 
-### Nouvelle extension **Particles.js**
+### New **Particles.js** Extension
 
-Une extension permettant d’ajouter de magnifiques effets visuels avec `particles.js`. ✨
+An extension allowing you to add beautiful visual effects with `particles.js`. ✨
 
-➡️ Disponible ici : https://clientxcms.com/resources/particles
+➡️ Available here: https://clientxcms.com/resources/particles
 
 ![Particles.js](https://i.postimg.cc/YC5sW0bs/default.gif)
 
-### Commandes post-installation sur le module Proxmox
+### Post-Installation Commands on the Proxmox Module
 
-Un ajout qui permet d’automatiser les étapes post-install, rendant possible la configuration avancée de vos services Proxmox.
-➡️ Documentation : https://docs.clientxcms.com/extensions/modules/proxmox
+An addition that allows automating post-install steps, making advanced configuration of your Proxmox services possible.
+➡️ Documentation: https://docs.clientxcms.com/extensions/modules/proxmox
 
-## Releases GitHub automatiques
+## Automatic GitHub Releases
 
-Le versionning a été amélioré : chaque mise à jour de CLIENTXCMS déclenche désormais une **release GitHub automatique**.Cela permet :
+Versioning has been improved: each CLIENTXCMS update now triggers an **automatic GitHub release**. This allows:
 
-- un suivi de versions propre
-- un changelog clair
-- des téléchargements plus fiables
-- une meilleure organisation du projet open-source
+- proper version tracking
+- clear changelog
+- more reliable downloads
+- better organization of the open-source project
 
-## Thème Nexus & Addon Avis Client
+## Nexus Theme & Customer Reviews Addon
 
-Le thème **Nexus** est en phase de développement 🎨Il sera publié d’ici **1 à 2 semaines**, en même temps que le nouveau **Addon Avis Client**, qui permettra :
+The **Nexus** theme is in development phase 🎨 It will be released within **1 to 2 weeks**, along with the new **Customer Reviews Addon**, which will allow:
 
-- l’envoi automatique d’e-mails pour demander un avis
-- validation manuelle ou auto
-- récompenses pour les utilisateurs
-- affichage public des avis
-- formulaire personnalisable par offre
-- espace utilisateur dédié
+- automatic email sending to request a review
+- manual or auto validation
+- user rewards
+- public display of reviews
+- customizable form per offer
+- dedicated user space
 
-## Un mot de fin
+## A Final Word
 
-Nous faisons en sorte de **bien faire les choses**, de prendre le temps nécessaire et de nous appuyer sur les bons outils, afin de vous proposer :
+We strive to **do things right**, take the necessary time, and rely on the right tools, in order to offer you:
 
-- un système plus propre
-- plus simple
-- plus fiable
-- et plus durable pour l’avenir
+- a cleaner system
+- simpler
+- more reliable
+- and more sustainable for the future
 
-Nous pourrons ainsi continuer à innover et vous offrir les meilleures fonctionnalités possibles pour gérer votre activité en ligne grâce à CLIENTXCMS.
+We will thus be able to continue innovating and offer you the best possible features to manage your online business with CLIENTXCMS.
 
-Merci pour votre soutien, vos retours et votre implication dans la communauté 🚀💙
+Thank you for your support, feedback, and involvement in the community 🚀💙

@@ -1,45 +1,49 @@
 ---
 sidebar_position: 6
+translated: true
 ---
-# Configuration des paiements
-Vous pouvez configurer plusieurs méthodes de paiement pour votre espace client. La liste est disponible [ici](../settings/store/payment_gateways/).
-
-Vous pouvez configurer vos méthodes de paiement en allant dans le menu `Paramètres` puis dans la section `Paramètres de boutique` et enfin sélectionnez la méthode de paiement que vous souhaitez configurer.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# Payment Configuration
+
+You can configure multiple payment methods for your customer portal. The list is available [here](../settings/store/payment_gateways/).
+
+You can configure your payment methods by going to `Settings` > `Store Settings`, then selecting the payment method you want to configure.
+
 <Tabs>
 <TabItem value="PayPalExpressCheckout" label="PayPal Express Checkout">
-Le processus de configuration de PayPal Express Checkout est disponible [ici](/settings/store/payment_gateways/paypal_express_checkout).
+The configuration process for PayPal Express Checkout is available [here](/settings/store/payment_gateways/paypal_express_checkout).
 </TabItem>
 <TabItem value="Stripe" label="Stripe">
-Le processus de configuration de Stripe est disponible [ici](/settings/store/payment_gateways/stripe).
+The configuration process for Stripe is available [here](/settings/store/payment_gateways/stripe).
 </TabItem>
 <TabItem value="Balance" label="Balance">
-Vous pouvez ajouter un solde à votre compte client depuis la fiche client.
+You can add balance to your customer account from the customer profile.
 </TabItem>
 <TabItem value="PayPal" label="PayPal">
-Le processus de configuration de PayPal est disponible [ici](/settings/store/payment_gateways/paypal).
+The configuration process for PayPal is available [here](/settings/store/payment_gateways/paypal).
 </TabItem>
 <TabItem value="Stancer" label="Stancer">
-Le processus de configuration de Stancer est disponible [ici](/settings/store/payment_gateways/stancer).
+The configuration process for Stancer is available [here](/settings/store/payment_gateways/stancer).
 </TabItem>
 </Tabs>
 
-## Personalisation de la facture
-Vous pouvez modifier l'adresse de facturation ou les termes et conditions de la facture en allant dans les paramètres de facturation dans `Paramètres` > `Facturation` > `Facturation`.
+## Invoice Customization
 
-Vous pouvez également modifier le préfixe de la facture en mettant un préfixe spécifique à votre entreprise. Nous vous recommandons d'utiliser un préfixe court de 3 à 5 caractères. Le prefixe est utilisé pour générer l'identifiant unique de la facture. Par exemple : `INV-2024-01-001` pour la première facture de l'année 2024. Cela permet de garder une trace des factures plus facilement.
+You can modify the billing address or invoice terms and conditions in `Settings` > `Billing`.
 
-## Désactiver la TVA
+You can also change the invoice prefix by setting a prefix specific to your business. We recommend using a short prefix of 3 to 5 characters. The prefix is used to generate the unique invoice identifier. For example: `INV-2024-01-001` for the first invoice of 2024. This makes it easier to keep track of invoices.
 
-Vous pouvez désactiver la TVA pour votre entreprise en allant dans les paramètres de facturation dans `Paramètres` > `Facturation` > `Facturation`. Vous pouvez également modifier le taux de TVA par défaut selon votre pays ou l'affichage des prix avec ou sans TVA.
+## Disable VAT
+
+You can disable VAT for your business in `Settings` > `Billing`. You can also change the default VAT rate according to your country or toggle price display with or without VAT.
 
 :::info
-Prenez en compte que tout les prix configurés dans votre boutique doivent être hors taxe. La TVA sera ajoutée au prix lors du paiement. Si vous souhaitez afficher les prix TTC, vous pouvez définir le prix d'affichage en TTC.
+Please note that all prices configured in your store must be tax-exclusive. VAT will be added to the price at checkout. If you want to display prices including VAT, you can set the display price as tax-inclusive.
 :::
 
-## Conditions générales de vente
+## Terms and Conditions
 
-Vous pouvez définir des conditions générales de vente pour votre boutique en allant dans les paramètres de facturation dans `Paramètres` > `Facturation` > `Facturation`. Les conditions générales de vente seront affichées sur la page de paiement pour que l'utilisateur les accepte avant de valider sa commande.
+You can set terms and conditions for your store in `Settings` > `Billing`. The terms and conditions will be displayed on the payment page for users to accept before confirming their order.

@@ -1,157 +1,158 @@
 ---
+translated: true
 sidebar_position: 0
 ---
-# Boutique
+# Store
 
-La **boutique** est le cœur commercial de **CLIENTXCMS**. C'est ici que vos clients découvrent vos services, comparent vos offres et passent commande.
-L'objectif est clair : **créer une expérience d'achat fluide et professionnelle** qui transforme vos visiteurs en clients satisfaits.
+The **store** is the commercial heart of **CLIENTXCMS**. This is where your customers discover your services, compare your offers, and place orders.
+The objective is clear: **create a smooth and professional purchasing experience** that transforms your visitors into satisfied customers.
 
-La boutique est un écosystème complet qui regroupe plusieurs éléments essentiels : les produits, les groupes, les coupons, les moyens de paiement et la facturation.
+The store is a complete ecosystem that brings together several essential elements: products, groups, coupons, payment methods, and billing.
 
-Vous pouvez gérer votre boutique depuis :
+You can manage your store from:
 
-`Paramètres` > `Paramètres de la boutique`
+`Settings` > `Store Settings`
 
-![Accès aux paramètres de la boutique](/img/next_gen/settings/store/products/settings.png)
+![Store settings access](/img/next_gen/settings/store/products/settings.png)
 
-:::tip Astuce
-Une boutique bien organisée est une boutique qui convertit. Prenez le temps de structurer vos offres, de rédiger des descriptions claires et de configurer des moyens de paiement adaptés à votre clientèle.
+:::tip Tip
+A well-organized store is a store that converts. Take the time to structure your offers, write clear descriptions, and configure payment methods adapted to your clientele.
 :::
 
-## Vue d'ensemble de la boutique
+## Store Overview
 
-### Architecture de la boutique
+### Store Architecture
 
-La boutique ClientXCMS s'articule autour de plusieurs composants clés :
+The ClientXCMS store is built around several key components:
 
-* **[Produits](./products)** : Les services que vous proposez à la vente (hébergement, VPS, licences, etc.)
-* **[Groupes](./groupes)** : Les catégories qui organisent vos produits de manière logique
-* **[Coupons](./coupon)** : Les codes promotionnels pour stimuler vos ventes
-* **[Moyens de paiement](./payment_gateways/payment_gateways.md)** : Les passerelles pour recevoir les paiements
-* **[Facturation](../billing/billing.md)**gestion des factures et des paramètres comptables
+* **[Products](./products)**: The services you offer for sale (hosting, VPS, licenses, etc.)
+* **[Groups](./groupes)**: The categories that organize your products logically
+* **[Coupons](./coupon)**: Promotional codes to boost your sales
+* **[Payment Methods](./payment_gateways/payment_gateways.md)**: Gateways to receive payments
+* **[Billing](../billing/billing.md)**: Invoice management and accounting settings
 
-### Parcours client type
+### Typical Customer Journey
 
-1. **Découverte** : Le client visite votre boutique à l'adresse `/store`
-2. **Navigation** : Il explore les différents groupes de produits
-3. **Sélection** : Il choisit un produit et configure ses options
-4. **Panier** : Il ajoute le produit au panier et applique éventuellement un coupon
-5. **Paiement** : Il règle sa commande via le moyen de paiement de son choix
-6. **Livraison** : Le service est automatiquement provisionné après validation du paiement
+1. **Discovery**: The customer visits your store at `/store`
+2. **Navigation**: They explore the different product groups
+3. **Selection**: They choose a product and configure its options
+4. **Cart**: They add the product to the cart and possibly apply a coupon
+5. **Payment**: They pay for their order via their chosen payment method
+6. **Delivery**: The service is automatically provisioned after payment validation
 
-## Interface utilisateur
+## User Interface
 
-### Vue côté client
+### Customer-Side View
 
-La boutique est accessible publiquement à l'adresse :
+The store is publicly accessible at:
 
-`https://votre-site.com/store`
+`https://your-site.com/store`
 
-L'interface présente :
-- Une vue d'ensemble des groupes de produits disponibles
-- Un système de navigation intuitif par catégories
-- Des fiches produits détaillées avec prix et options
-- Un panier persistent durant la session
-- Un processus de commande simplifié
+The interface presents:
+- An overview of available product groups
+- An intuitive category navigation system
+- Detailed product pages with prices and options
+- A persistent cart during the session
+- A simplified ordering process
 
-![Vue de la boutique côté client](/img/next_gen/settings/store/groups/view_group.png)
+![Customer-side store view](/img/next_gen/settings/store/groups/view_group.png)
 
-### Vue administrateur
+### Administrator View
 
-L'interface d'administration vous permet de :
-- Gérer l'ensemble des produits et groupes
-- Suivre les commandes et les paiements
-- Configurer les promotions et réductions
-- Analyser les performances commerciales
-- Personnaliser l'apparence de la boutique
+The administration interface allows you to:
+- Manage all products and groups
+- Track orders and payments
+- Configure promotions and discounts
+- Analyze commercial performance
+- Customize the store appearance
 
-## Configuration initiale
+## Initial Configuration
 
-### Étapes de mise en place
+### Setup Steps
 
-Pour configurer votre boutique, suivez ces étapes dans l'ordre :
+To configure your store, follow these steps in order:
 
-1. **Configurer la facturation**
+1. **Configure billing**
 
-   - Définir les informations légales
-   - Paramétrer le préfixe des factures
-   - Configurer les CGV
-2. **Créer les groupes de produits**
+   - Define legal information
+   - Set up the invoice prefix
+   - Configure terms and conditions
+2. **Create product groups**
 
-   - Organiser la structure de votre catalogue
-   - Définir les catégories principales
-   - Ajouter les descriptions et images
-3. **Ajouter les produits**
+   - Organize your catalog structure
+   - Define main categories
+   - Add descriptions and images
+3. **Add products**
 
-   - Créer vos offres de services
-   - Définir les prix et cycles de facturation
-   - Configurer les options techniques
-4. **Activer les moyens de paiement**
+   - Create your service offers
+   - Define prices and billing cycles
+   - Configure technical options
+4. **Activate payment methods**
 
-   - Configurer au minimum une passerelle
-   - Tester les transactions
-   - Vérifier les webhooks
-5. **Créer des promotions (optionnel)**
+   - Configure at least one gateway
+   - Test transactions
+   - Verify webhooks
+5. **Create promotions (optional)**
 
-   - Définir des coupons de réduction
-   - Planifier des campagnes commerciales
+   - Define discount coupons
+   - Plan marketing campaigns
 
 :::warning Important
-Assurez-vous d'avoir configuré au moins un moyen de paiement actif avant d'ouvrir votre boutique au public. Sans cela, vos clients ne pourront pas finaliser leurs commandes.
+Make sure you have configured at least one active payment method before opening your store to the public. Without this, your customers will not be able to complete their orders.
 :::
 
-## Gestion des commandes
+## Order Management
 
-### Cycle de vie d'une commande
+### Order Lifecycle
 
-Une commande passe par plusieurs états :
+An order goes through several states:
 
-| État                | Description                                     |
-| -------------------- | ----------------------------------------------- |
-| **En attente** | Commande créée, paiement non reçu            |
-| **Payée**     | Paiement validé, service en cours de livraison |
-| **Active**     | Service livré et opérationnel                 |
-| **Suspendue**  | Service temporairement désactivé              |
-| **Expirée**   | Service arrivé à échéance                   |
-| **Annulée**   | Commande annulée avant paiement                |
+| State              | Description                                     |
+| ------------------ | ----------------------------------------------- |
+| **Pending**        | Order created, payment not received             |
+| **Paid**           | Payment validated, service being delivered      |
+| **Active**         | Service delivered and operational               |
+| **Suspended**      | Service temporarily disabled                    |
+| **Expired**        | Service reached end of term                     |
+| **Cancelled**      | Order cancelled before payment                  |
 
-### Automatisation
+### Automation
 
-ClientXCMS automatise plusieurs processus :
-- Création des services après paiement
-- Envoi des emails de confirmation
-- Génération des factures
-- Rappels de renouvellement
-- Suspension en cas de non-paiement
+ClientXCMS automates several processes:
+- Service creation after payment
+- Sending confirmation emails
+- Invoice generation
+- Renewal reminders
+- Suspension in case of non-payment
 
-## Intégrations et extensions
+## Integrations and Extensions
 
-### Modules de provisioning
+### Provisioning Modules
 
-La boutique s'intègre avec de nombreux modules :
-- **Pterodactyl** : Hébergement de serveurs de jeux
-- **Proxmox** : Création de VPS
-- **Plesk** : Hébergement web managé
-- **ProxmoxVE** : Virtualisation avancée
-- Et bien d'autres...
+The store integrates with many modules:
+- **Pterodactyl**: Game server hosting
+- **Proxmox**: VPS creation
+- **Plesk**: Managed web hosting
+- **ProxmoxVE**: Advanced virtualization
+- And many more...
 
-### Passerelles de paiement
+### Payment Gateways
 
-Plusieurs options sont disponibles :
-- **PayPal** : Standard et Express Checkout
-- **Stripe** : Cartes bancaires et wallets
-- **Virement bancaire** : Paiements manuels
-- **Solde client** : Crédit prépayé
-- **Stancer** : Solution européenne
+Several options are available:
+- **PayPal**: Standard and Express Checkout
+- **Stripe**: Credit cards and wallets
+- **Bank Transfer**: Manual payments
+- **Customer Balance**: Prepaid credit
+- **Stancer**: European solution
 
-:::info À retenir
+:::info Remember
 
-La boutique ClientXCMS est conçue pour évoluer avec votre activité. Commencez simple, puis enrichissez progressivement votre catalogue et vos fonctionnalités selon les besoins de vos clients.
+The ClientXCMS store is designed to grow with your business. Start simple, then gradually enrich your catalog and features according to your customers' needs.
 :::
 
-## Ressources complémentaires
+## Additional Resources
 
-Pour approfondir la configuration de votre boutique, consultez :
+To learn more about configuring your store, see:
 
 import DocCardList from '@theme/DocCardList';
 

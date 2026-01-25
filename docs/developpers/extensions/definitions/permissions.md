@@ -1,82 +1,85 @@
+---
+translated: true
+---
 # Permissions
-Un système de permissions est disponible dans **ClientXCMS** pour gérer les accès des utilisateurs à certaines fonctionnalités. Ce système est basé sur des permissions qui sont attribuées à des rôles. Chaque rôle peut avoir plusieurs permissions.
-## Permissions par défaut
-Voici la liste des permissions par défaut de **ClientXCMS**.
-### Permissions Administratives
+A permission system is available in **ClientXCMS** to manage user access to certain features. This system is based on permissions that are assigned to roles. Each role can have multiple permissions.
+## Default Permissions
+Here is the list of default permissions in **ClientXCMS**.
+### Administrative Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_license | Gérer les licences |
-| admin.manage_gateways | Gérer les passerelles de paiement |
-| admin.manage_roles | Gérer les rôles |
-| admin.manage_staff_profile | Gérer les profils du personnel |
-| admin.manage_staff | Gérer le personnel |
+| admin.manage_license | Manage licenses |
+| admin.manage_gateways | Manage payment gateways |
+| admin.manage_roles | Manage roles |
+| admin.manage_staff_profile | Manage staff profiles |
+| admin.manage_staff | Manage staff |
 
-### Permissions de Facturation
+### Billing Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.show_invoices | Voir les factures |
-| admin.create_invoices | Créer des factures |
-| admin.manage_invoices | Gérer les factures |
-| admin.show_payment_methods | Voir les méthodes de paiement |
+| admin.show_invoices | View invoices |
+| admin.create_invoices | Create invoices |
+| admin.manage_invoices | Manage invoices |
+| admin.show_payment_methods | View payment methods |
 
-### Permissions des Clients
+### Customer Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_customers | Gérer les clients |
-| admin.show_emails | Afficher les messages électroniques |
-| admin.autologin_customer | Connexion automatique en tant que client |
-| admin.dashboard_last_login | Voir les dernières connexions dans le tableau de bord |
-| admin.show_customers | Voir les clients |
+| admin.manage_customers | Manage customers |
+| admin.show_emails | Display email messages |
+| admin.autologin_customer | Automatic login as customer |
+| admin.dashboard_last_login | View last logins in dashboard |
+| admin.show_customers | View customers |
 
-### Permissions du Support
+### Support Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_departments | Gérer les départements |
-| admin.manage_tickets | Gérer les tickets |
-| admin.close_tickets | Fermer les tickets |
-| admin.reply_tickets | Répondre aux tickets |
-| admin.create_tickets | Créer des tickets |
+| admin.manage_departments | Manage departments |
+| admin.manage_tickets | Manage tickets |
+| admin.close_tickets | Close tickets |
+| admin.reply_tickets | Reply to tickets |
+| admin.create_tickets | Create tickets |
 
-### Permissions des Métadonnées
+### Metadata Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_metadata | Gérer les métadonnées |
-| admin.show_metadata | Voir les métadonnées |
+| admin.manage_metadata | Manage metadata |
+| admin.show_metadata | View metadata |
 
-### Permissions des Services
+### Service Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_services | Gérer les services |
-| admin.show_services | Voir les services |
-| admin.deliver_services | Fournir des services |
+| admin.manage_services | Manage services |
+| admin.show_services | View services |
+| admin.deliver_services | Deliver services |
 
-### Permissions de la Boutique
+### Store Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_products | Gérer les produits |
-| admin.manage_groups | Gérer les groupes de produits |
-| admin.manage_coupons | Gérer les coupons |
-| admin.earn_page | Accéder à la page de gains |
+| admin.manage_products | Manage products |
+| admin.manage_groups | Manage product groups |
+| admin.manage_coupons | Manage coupons |
+| admin.earn_page | Access earnings page |
 
-### Permissions Techniques
+### Technical Permissions
 
-| Nom | Description |
+| Name | Description |
 |------|-------------|
-| admin.manage_extensions | Gérer les extensions |
-| admin.manage_database | Gérer la base de données |
-| admin.show_logs | Voir les journaux |
-| admin.manage_servers | Gérer les serveurs |
-| admin.manage_personalization | Gérer la personnalisation |
+| admin.manage_extensions | Manage extensions |
+| admin.manage_database | Manage database |
+| admin.show_logs | View logs |
+| admin.manage_servers | Manage servers |
+| admin.manage_personalization | Manage personalization |
 
-### Constantes de Permissions
-Vous pouvez également utiliser les permissions sous formes de constantes  :
+### Permission Constants
+You can also use permissions as constants:
 
 `MANAGE_EXTENSIONS = 'admin.manage_extensions';`
 
@@ -86,18 +89,18 @@ Vous pouvez également utiliser les permissions sous formes de constantes  :
 
 `ALLOWED = 'admin.allowed';`
 
-Exemple : 
+Example:
 ```php
 if (staff_has_permission(Permission::MANAGE_EXTENSIONS)) {
     // Code
 }
 ```
 :::info Information
-La permission `admin.manage_extensions` est conventionnellement utilisée pour toutes les pages extensions.
+The `admin.manage_extensions` permission is conventionally used for all extension pages.
 :::
 
-## Créer une permission
-Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fichier `permissions.json` de votre extension. Voici un exemple de fichier `permissions.json` :
+## Creating a Permission
+To create a permission, you must add a new entry in the `permissions.json` file of your extension. Here is an example `permissions.json` file:
 
 ```json
 [
@@ -108,29 +111,29 @@ Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fich
     },
 ],
 ```
-Avec `name` qui est le nom de la permission, `label` qui est la traduction de la permission dans le fichier de langue et `group` qui est le groupe de la permission.
+Where `name` is the permission name, `label` is the permission translation in the language file, and `group` is the permission group.
 
 
-Vous devez par la suite seedez la base de données avec la commande suivante :
+You must then seed the database with the following command:
 ```bash
 php artisan db:seed --class=PermissionsSeeder
 ```
 
-Puis vous pouvez utiliser la permission dans votre code comme ceci :
+Then you can use the permission in your code like this:
 ```php
 if (staff_has_permission('admin.fund')) {
     // Code
 }
 ```
-ou en blade :
+or in Blade:
 ```blade
 @if (staff_has_permission('admin.fund'))
     // Code
 @endif
 ```
 
-## Groupes disponibles
-Voici la liste des groupes de permissions disponibles :
+## Available Groups
+Here is the list of available permission groups:
 - permissions.store
 - permissions.technical
 - permissions.admin

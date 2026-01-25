@@ -1,30 +1,33 @@
-# Serveur
-Les serveurs permettent d'intéragir avec différentes API pour la **livraison**, la **suspension** ou l'**expiration** des services. 
+---
+translated: true
+---
+# Server
+Servers allow interacting with different APIs for **delivery**, **suspension**, or **expiration** of services.
 
 
-Interface : `\App\Contracts\Provisioning\ServerTypeInterface`
+Interface: `\App\Contracts\Provisioning\ServerTypeInterface`
 
-Class abstraite : `\App\Abstracts\AbstractServerType`
+Abstract Class: `\App\Abstracts\AbstractServerType`
 
-## Création de la classe
+## Creating the Class
 
-L'interface `App\Contracts\Provisioning\ServerTypeInterface` doit être implémentée pour créer une nouvelle classe de serveur. 
-Les principales méthodes à implémenter sont :
+The `App\Contracts\Provisioning\ServerTypeInterface` interface must be implemented to create a new server class.
+The main methods to implement are:
 
-- **`uuid()`** : Retourne l'UUID unique du type de serveur (le même que le produit).
-- **`title()`** : Retourne le titre du type de serveur.
-- **`findServer()`** : Trouve un serveur associé à un produit pour livrer le service.
-- **`createAccount()`** : Crée un compte sur le serveur pour un service.
-- **`suspendAccount()`** : Suspend le compte sur le serveur.
-- **`unsuspendAccount()`** : Réactive le compte.
-- **`expireAccount()`** : Expire le compte.
-- **`onRenew()`** : Action déclenchée lors du renouvellement d'un service.
-- **`upgradeService()`** : Permet de mettre à jour un service
-- **addOption()** : Ajoute une option à un service
-- **`getSupportedOptions()`** : Retourne les options supportées par le serveur.
+- **`uuid()`**: Returns the unique UUID of the server type (same as the product).
+- **`title()`**: Returns the title of the server type.
+- **`findServer()`**: Finds a server associated with a product to deliver the service.
+- **`createAccount()`**: Creates an account on the server for a service.
+- **`suspendAccount()`**: Suspends the account on the server.
+- **`unsuspendAccount()`**: Reactivates the account.
+- **`expireAccount()`**: Expires the account.
+- **`onRenew()`**: Action triggered when a service is renewed.
+- **`upgradeService()`**: Allows updating a service.
+- **addOption()**: Adds an option to a service.
+- **`getSupportedOptions()`**: Returns the options supported by the server.
 
 ```php
-<?php 
+<?php
 // App\Contracts\Provisioning\CustomGameServerType.php
 namespace App\Addons\Fund;
 
@@ -39,50 +42,50 @@ class CustomGameServerType extends AbstractServerType
     protected string $title = 'gameserver';
 
     /**
-     * Crée un compte sur le serveur
+     * Create an account on the server
      */
     public function createAccount(Service $service): ServiceStateChangeDTO
     {
-        // Logique pour créer le compte sur l'API distance
-        // Retourner l'état de changement de service
-        $data = $service->data; // Données lors de la commande
-        $config = \App\Addons\Fund\Models\GameServerConfig::where('product_id', $service->product_id)->first(); // Configuration du produit
+        // Logic to create account on remote API
+        // Return service state change
+        $data = $service->data; // Data from order
+        $config = \App\Addons\Fund\Models\GameServerConfig::where('product_id', $service->product_id)->first(); // Product configuration
         return new ServiceStateChangeDTO($service, true, 'Account created successfully');
     }
 
     /**
-     * Suspend un compte sur le serveur
+     * Suspend an account on the server
      */
     public function suspendAccount(Service $service): ServiceStateChangeDTO
     {
-        // Logique pour suspendre le compte
+        // Logic to suspend account
         return new ServiceStateChangeDTO($service, true, 'Account suspended');
     }
 
     /**
-     * Réactive un compte sur le serveur
+     * Reactivate an account on the server
      */
     public function unsuspendAccount(Service $service): ServiceStateChangeDTO
     {
-        // Logique pour réactiver le compte
+        // Logic to reactivate account
         return new ServiceStateChangeDTO($service, true, 'Account unsuspended');
     }
 
     /**
-     * Expire un compte sur le serveur
+     * Expire an account on the server
      */
     public function expireAccount(Service $service): ServiceStateChangeDTO
     {
-        // Logique pour expirer le compte
+        // Logic to expire account
         return new ServiceStateChangeDTO($service, true, 'Account expired');
     }
 
     /**
-     * Teste la connexion au serveur
+     * Test server connection
      */
     public function testConnection(array $params): \App\DTO\Provisioning\ConnectionResponse
     {
-        // Logique de test de connexion
+        // Connection test logic
         return new \App\DTO\Provisioning\ConnectionResponse(200, 'Connection successful');
     }
 
@@ -90,7 +93,7 @@ class CustomGameServerType extends AbstractServerType
     {
         return new ServiceStateChangeDTO($service, true, 'Service upgraded');
     }
-    
+
     public function addOption(Service $service, ConfigOption $configOption): ServiceStateChangeDTO
     {
         return new ServiceStateChangeDTO($service, true, 'Option added');
@@ -105,12 +108,13 @@ class CustomGameServerType extends AbstractServerType
     }
 }
 ```
-## Enregister de la classe dans le produit
+## Registering the Class in the Product
 
-Pour associer cette classe de gestion de serveurs à un produit, vous devez implémenter la méthode **`server()`** dans la classe du produit.
+To associate this server management class with a product, you must implement the **`server()`** method in the product class.
 
 ```php
 public function server(): ?\App\Contracts\Provisioning\ServerTypeInterface
 {
-    return new \App\Fund\CustomGameServerType(); // Associe le type de serveur CustomGameServerType au produit
+    return new \App\Fund\CustomGameServerType(); // Associates the CustomGameServerType server type with the product
 }
+```

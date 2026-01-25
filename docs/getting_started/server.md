@@ -1,8 +1,10 @@
 ---
 sidebar_position: 2
+translated: true
 ---
-# Configuration votre premier serveur
-Pour connecter votre Pterodactyl ou autre système de livraison de service, vous devez configurer le premier serveur. Pour cela, rendez-vous dans les `Paramètres` puis dans `Approvisonnement` puis `Serveurs` et `Créer`.
+# Configuring Your First Server
+
+To connect your Pterodactyl or other service delivery system, you need to configure your first server. To do this, go to `Settings` then `Provisioning` then `Servers` and `Create`.
 
 ![img](/img/next_gen/settings/provisioning/servers/create_server.png)
 
@@ -14,83 +16,84 @@ import TabItem from '@theme/TabItem';
 
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_1.png)
 
-**Adresse IP** : Adresse IP du Pterodactyl.
+**IP Address**: IP address of the Pterodactyl server.
 
-**Nom d'hôte** : Nom d'hôte du Pterodactyl.
+**Hostname**: Hostname of the Pterodactyl server.
 
-**Port** : 443 avec un domaine ou 80 avec une IP.
+**Port**: 443 with a domain or 80 with an IP.
 
-**Client API** : Clé client.
+**Client API**: Client key.
 
-**Application API** : Clé application.
-:::info Complément d'information
+**Application API**: Application key.
 
-Plus d'informations sur les clés API sont disponibles [ici](/docs/extensions/modules/Pterodactyl.md).
+:::info Additional Information
+More information about API keys is available [here](/extensions/modules/Pterodactyl).
 :::
 </TabItem>
 <TabItem value="Plesk" label="Plesk">
 
 ![img](/img/next_gen/extensions/modules/plesk/image.png)
 
-**Adresse IP** : Sous domaine ou adresse IP du Plesk
+**IP Address**: Subdomain or IP address of the Plesk server.
 
-**Username** : Nom d'utilisateur admin
+**Username**: Admin username.
 
-**Password** : Mot de passe admin
+**Password**: Admin password.
 
-Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Plesk : 8443
+The following port must be open to connect CLIENTXCMS to your Plesk: 8443
 
-Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
-:::info Complément d'information
+You can test the connection to the server and verify that it returns *"Success"* in response.
 
-Plus d'informations sur la configuration de Plesk sont disponibles [ici](/docs/extensions/modules/Plesk.md).
+:::info Additional Information
+More information about Plesk configuration is available [here](/extensions/modules/Plesk).
 :::
 </TabItem>
 <TabItem value="Proxmox" label="Proxmox">
+
 ![img](/img/next_gen/extensions/modules/proxmox/image_1.png)
 
-- **Nom :** Le nom que vous souhaitez attribuer au serveur Proxmox.
-- **Type de serveur :** Proxmox.
-- **Nom d'hôte :** Le nom d'hôte du Proxmox VE.
-- **Adresse IP :** L'adresse IP du Proxmox VE.
-- **Port :** Le port par défaut est `8006`. Si vous avez configuré un proxy avec SSL, vous pouvez utiliser `443` ou `80`.
-- **Token ID :** L'ID du jeton Proxmox pour l'API.
-- **Secret :** Le secret associé au jeton Proxmox pour l'API.
+- **Name:** The name you want to assign to the Proxmox server.
+- **Server Type:** Proxmox.
+- **Hostname:** The hostname of the Proxmox VE.
+- **IP Address:** The IP address of the Proxmox VE.
+- **Port:** The default port is `8006`. If you have configured a proxy with SSL, you can use `443` or `80`.
+- **Token ID:** The Proxmox API token ID.
+- **Secret:** The secret associated with the Proxmox API token.
 
-:::info Complément d'information
-Plus d'informations sur la configuration de Proxmox sont disponibles [ici](/docs/extensions/modules/Proxmox.md).
+:::info Additional Information
+More information about Proxmox configuration is available [here](/extensions/modules/Proxmox).
 :::
 </TabItem>
 <TabItem value="Wisp" label="Wisp">
 
 ![img](/img/next_gen/extensions/modules/wisp/images_1.png)
 
-**Adresse IP** : Adresse IP du Pterodactyl.
+**IP Address**: IP address of the Wisp server.
 
-**Nom d'hôte** : Nom d'hôte du Pterodactyl.
+**Hostname**: Hostname of the Wisp server.
 
-**Port** : 443 avec un domaine ou 80 avec une IP.
+**Port**: 443 with a domain or 80 with an IP.
 
-**Client API** : Clé client.
+**Client API**: Client key.
 
-**Application API** : Clé application.
+**Application API**: Application key.
 
-:::info Complément d'information
-Plus d'informations sur les clés API sont disponibles [ici](/docs/extensions/modules/Wisp.md).
+:::info Additional Information
+More information about API keys is available [here](/extensions/modules/Wisp).
 :::
 </TabItem>
-<TabItem value="VirtualizorCloud" label="Virtualizor pour revendeurs">
+<TabItem value="VirtualizorCloud" label="Virtualizor for Resellers">
 
 ![img](/img/next_gen/extensions/modules/virtualizorcloud/image.png)
 
-**Adresse IP** : Sous domaine ou adresse IP du Virtualizor Cloud
+**IP Address**: Subdomain or IP address of the Virtualizor Cloud server.
 
-**Key** : API KEY
+**Key**: API KEY
 
-**Password** : API PASSWORD
+**Password**: API PASSWORD
 
-Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Virtualizor Cloud : 4083
+The following port must be open to connect CLIENTXCMS to your Virtualizor Cloud: 4083
 
-Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
+You can test the connection to the server and verify that it returns *"Success"* in response.
 </TabItem>
 </Tabs>

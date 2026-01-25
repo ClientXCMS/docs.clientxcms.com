@@ -1,85 +1,86 @@
 ---
 sidebar_position: 2
+translated: true
 ---
 
 # Plesk
 
-Le module Plesk permet de fournir des offres Plesk à vos clients. Le module supporte les revendeurs web et hébergement simple. Il fonctionne avec les plans Plesk qui facilite grandement sa configuration puisqu'il suffit de lié un produit à un plan Plesk.
+The Plesk module allows you to provide Plesk offers to your customers. The module supports web resellers and simple hosting. It works with Plesk plans which greatly simplifies its configuration since you just need to link a product to a Plesk plan.
 
-:::success À savoir
-Ce module est compatible avec les versions 11, 11.5, 12, 12.5, Onyx, et Obsidian de Plesk.
+:::success Good to Know
+This module is compatible with Plesk versions 11, 11.5, 12, 12.5, Onyx, and Obsidian.
 :::
 :::info
-Pour utiliser les fonctionnalités du module, il faut que l'extension PHP **XML** soit activée sur votre hébergement. Pour l'installer : 
+To use the module features, the PHP **XML** extension must be enabled on your hosting. To install it:
 ```bash
 apt install php-xml
 ```
 :::
 
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
+To use the following features, the Plesk module must be enabled on your CLIENTXCMS. [click here to enable it](../)
 :::
-### Fonctionnalités supportées 
-- Automatisez la création et l'approvisionnement des comptes
-- Gestion des hébergements depuis l'espace client
-- Envoie des identifiants de connexion par E-mail
-- Connexion automatique au Plesk
-- Automatisez les suspensions et les résiliations
-- Amélioration de service
-- Importation des comptes Plesk existants
+### Supported Features
+- Automate account creation and provisioning
+- Hosting management from the client area
+- Send login credentials by email
+- Automatic login to Plesk
+- Automate suspensions and terminations
+- Service upgrade
+- Import existing Plesk accounts
 
-## Création du serveur
+## Server Creation
 
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Plesk".
+Create a CLIENTXCMS server in `Administration Area` > `Settings` > `Provisioning` > `Servers` > `New` by selecting the server type as "Plesk".
 
 ![img](/img/next_gen/extensions/modules/plesk/image.png)
 
-**Adresse IP** : Sous domaine ou adresse IP du Plesk
+**IP Address**: Subdomain or Plesk IP address
 
-**Username** : Nom d'utilisateur admin
+**Username**: Admin username
 
-**Password** : Mot de passe admin
+**Password**: Admin password
 
-Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre Plesk : 8443
+The following port must be open to connect CLIENTXCMS to your Plesk: 8443
 
-Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
+You can test the server connection and verify that the server returns *"Success"* as a response.
 
-## Configuration de l'offre
-En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant Plesk.
+## Offer Configuration
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting Plesk.
 
 ![img](/img/next_gen/extensions/modules/plesk/image_2.png)
 
-Après appuyer sur le bouton "Créer" il vous crée votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigera vers la page de configuration de l'offre. Si les champs est vide, assurez-vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système pour récupérer les plans Plesk.
+After pressing the "Create" button, it creates your product and then click on the "Configure Offer" button which will direct you to the offer configuration page. If the fields are empty, make sure your server is not hidden, otherwise it will not be taken into account in the system to retrieve Plesk plans.
 
 ![img](/img/next_gen/extensions/modules/plesk/image_3.png)
 
-Dans cette page, vous pourrez sélectionner le plan qui faudra livrer à vos clients puis sauvegarder.
+On this page, you can select the plan to deliver to your customers and then save.
 
-### Panel de gestion
+### Management Panel
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Hosting" label="Hébergement">
+<TabItem value="Hosting" label="Hosting">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_4.png)
 
 </TabItem>
 
-<TabItem value="Revendeur" label="Revendeur">
+<TabItem value="Revendeur" label="Reseller">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_5.png)
 
 </TabItem>
 
-<TabItem value="AdminHosing" label="Admin Hébergement">
+<TabItem value="AdminHosing" label="Admin Hosting">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_6.png)
 
 </TabItem>
 
-<TabItem value="AdminRevendeur" label="Admin Revendeur">
+<TabItem value="AdminRevendeur" label="Admin Reseller">
 
 ![img](/img/next_gen/extensions/modules/plesk/image_7.png)
 
@@ -87,20 +88,20 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-## Metadonnées utilisées
+## Metadata Used
 
-| Clé           | Valeur            | Description              |
-|---------------|-------------------|--------------------------|
-| `login`       | string            | Identifiant du client    |
-| `type`        | reseller ou login | Type d'hébergement       |
-| `reseller_id` | int               | Identifiant du revendeur |
-| `webspace_id` | int               | Identifiant du webspace  |
-| `domain`      | string            | Domaine du webspace      |
-
-
+| Key           | Value             | Description           |
+|---------------|-------------------|-----------------------|
+| `login`       | string            | Customer identifier   |
+| `type`        | reseller or login | Hosting type          |
+| `reseller_id` | int               | Reseller identifier   |
+| `webspace_id` | int               | Webspace identifier   |
+| `domain`      | string            | Webspace domain       |
 
 
-## Importer un compte Plesk existant
 
-Si vous avez déjà des Plesk cPanel existants, vous pouvez les importer dans CLIENTXCMS. Pour cela, allez dans `Espace d'administration` > `Services` > `Créer`.
-Plus d'informations sur la création de service [ici](/services/). Vous pourrez sélectionner l'hébergement cPanel que vous souhaitez importer dans la liste des hébergements disponibles.
+
+## Import an Existing Plesk Account
+
+If you already have existing Plesk accounts, you can import them into CLIENTXCMS. To do this, go to `Administration Area` > `Services` > `Create`.
+More information on service creation [here](/services/). You can select the Plesk hosting you want to import from the list of available hostings.

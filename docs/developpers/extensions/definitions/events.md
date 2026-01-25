@@ -1,47 +1,49 @@
+---
+translated: true
+---
+# Events
 
-# Evenements
+In **CLIENTXCMS**, you can leverage [Laravel events](https://laravel.com/docs/11.x/events) to execute specific actions in response to certain actions. An event triggers logic, and a **listener** is attached to listen for that event and execute code when it occurs.
 
-Dans **CLIENTXCMS**, vous pouvez tirer parti des [événements Laravel](https://laravel.com/docs/11.x/events) pour exécuter des actions spécifiques en réponse à certaines actions. Un événement permet de déclencher une logique, et un **listener** est attaché pour écouter cet événement et exécuter du code lorsqu'il se produit.
+## List of Available Events
 
-## Liste des événements disponibles
+Here is a table of events available in CLIENTXCMS:
 
-Voici un tableau des événements disponibles dans CLIENTXCMS :
-
-| Catégorie | Événement                        | Nom complet (namespace)                              |
+| Category  | Event                            | Full Name (namespace)                                |
 |-----------|----------------------------------|------------------------------------------------------|
-| Invoice   | Facture annulée                  | `App\Events\Invoice\InvoiceCancelled`                |
-|           | Facture complétée                | `App\Events\Invoice\InvoiceCompleted`                |
-|           | Facture créée                    | `App\Events\Invoice\InvoiceCreated`                  |
-|           | Échec de la facture              | `App\Events\Invoice\InvoiceFailed`                   |
-|           | Facture remboursée               | `App\Events\Invoice\InvoiceRefunded`                 |
-| Service   | Service annulé                   | `App\Events\Service\ServiceCancelled`                |
-|           | Service créé                     | `App\Events\Service\ServiceCreated`                  |
-|           | Service livré                    | `App\Events\Service\ServiceDelivered`                |
-|           | Échec de la livraison du service | `App\Events\Service\ServiceDeliveryFailed`           |
-|           | Service expiré                   | `App\Events\Service\ServiceExpired`                  |
-|           | Service renouvelé                | `App\Events\Service\ServiceRenewed`                  |
-|           | Service suspendu                 | `App\Events\Service\ServiceSuspended`                |
-|           | Service réactivé                 | `App\Events\Service\ServiceUnsuspended`              |
-| Helpdesk  | Ticket client répondu            | `App\Events\Helpdesk\HelpdeskTicketAnsweredCustomer` |
-|           | Ticket staff répondu             | `App\Events\Helpdesk\HelpdeskTicketAnsweredStaff`    |
-|           | Ticket de support créé           | `App\Events\Helpdesk\HelpdeskTicketCreatedEvent`     |
-| Resources | Événement de ressource abstraite | `App\Events\Resources\AbstractResourceEvent`         |
-|           | Ressource clonée                 | `App\Events\Resources\ResourceCloneEvent`            |
-|           | Ressource créée                  | `App\Events\Resources\ResourceCreatedEvent`          |
-|           | Ressource supprimée              | `App\Events\Resources\ResourceDeletedEvent`          |
-|           | Ressource mise à jour            | `App\Events\Resources\ResourceUpdatedEvent`          |
-| Core      | Paiement finalisé                | `App\Events\Core\CheckoutCompletedEvent`             |
-## Utilisation des événements
+| Invoice   | Invoice cancelled                | `App\Events\Invoice\InvoiceCancelled`                |
+|           | Invoice completed                | `App\Events\Invoice\InvoiceCompleted`                |
+|           | Invoice created                  | `App\Events\Invoice\InvoiceCreated`                  |
+|           | Invoice failed                   | `App\Events\Invoice\InvoiceFailed`                   |
+|           | Invoice refunded                 | `App\Events\Invoice\InvoiceRefunded`                 |
+| Service   | Service cancelled                | `App\Events\Service\ServiceCancelled`                |
+|           | Service created                  | `App\Events\Service\ServiceCreated`                  |
+|           | Service delivered                | `App\Events\Service\ServiceDelivered`                |
+|           | Service delivery failed          | `App\Events\Service\ServiceDeliveryFailed`           |
+|           | Service expired                  | `App\Events\Service\ServiceExpired`                  |
+|           | Service renewed                  | `App\Events\Service\ServiceRenewed`                  |
+|           | Service suspended                | `App\Events\Service\ServiceSuspended`                |
+|           | Service unsuspended              | `App\Events\Service\ServiceUnsuspended`              |
+| Helpdesk  | Customer ticket answered         | `App\Events\Helpdesk\HelpdeskTicketAnsweredCustomer` |
+|           | Staff ticket answered            | `App\Events\Helpdesk\HelpdeskTicketAnsweredStaff`    |
+|           | Support ticket created           | `App\Events\Helpdesk\HelpdeskTicketCreatedEvent`     |
+| Resources | Abstract resource event          | `App\Events\Resources\AbstractResourceEvent`         |
+|           | Resource cloned                  | `App\Events\Resources\ResourceCloneEvent`            |
+|           | Resource created                 | `App\Events\Resources\ResourceCreatedEvent`          |
+|           | Resource deleted                 | `App\Events\Resources\ResourceDeletedEvent`          |
+|           | Resource updated                 | `App\Events\Resources\ResourceUpdatedEvent`          |
+| Core      | Payment completed                | `App\Events\Core\CheckoutCompletedEvent`             |
+## Using Events
 
-Une fois qu'un événement est déclenché dans CLIENTXCMS, les listeners enregistrés exécutent leur logique associée. Par exemple, si le listener `App\Events\Invoice\InvoiceCreated` est enclenché, cela enverra l'événement aux listeners enregistrés qui traiteront la suite selon leur logique.
+Once an event is triggered in CLIENTXCMS, registered listeners execute their associated logic. For example, if the `App\Events\Invoice\InvoiceCreated` listener is triggered, it will send the event to registered listeners who will process it according to their logic.
 
-## Écouter un événement
+## Listening to an Event
 
-Dans certains cas, au lieu d'enregistrer un listener dans le `EventServiceProvider`, vous pouvez directement utiliser la méthode `Event::listen` dans le **ServiceProvider** de votre extension pour écouter un événement.
+In some cases, instead of registering a listener in the `EventServiceProvider`, you can directly use the `Event::listen` method in your extension's **ServiceProvider** to listen for an event.
 
-### Exemple d'écoute dans le ServiceProvider
+### Example of Listening in the ServiceProvider
 
-Prenons l'exemple de l'événement `InvoiceCompleted`. Vous pouvez l'écouter et exécuter une action dans le `FundServiceProvider` comme suit :
+Let's take the example of the `InvoiceCompleted` event. You can listen for it and execute an action in the `FundServiceProvider` as follows:
 
 ```php
 <?php
@@ -68,7 +70,7 @@ class FundServiceProvider extends BaseAddonServiceProvider
         $this->loadTranslations();
         $this->loadMigrations();
 
-        // Enregistrement des routes
+        // Route registration
         \Route::middleware(['web', 'admin'])
             ->prefix(admin_prefix())
             ->name($this->uuid . '.')
@@ -82,25 +84,25 @@ class FundServiceProvider extends BaseAddonServiceProvider
                 require addon_path($this->uuid, 'routes/web.php');
             });
 
-        // Écouter l'événement InvoiceCompleted
+        // Listen for the InvoiceCompleted event
         Event::listen(InvoiceCompleted::class, function ($event) {
-            // Logique exécutée lors de l'événement InvoiceCompleted
+            // Logic executed when InvoiceCompleted event occurs
             \Log::info('Invoice has been completed: ' . $event->invoice->id);
         });
     }
 }
 ```
 
-Dans cet exemple, nous utilisons `Event::listen` pour écouter l'événement `InvoiceCompleted`. Chaque fois que cet événement est déclenché, la logique fournie dans le callback est exécutée (ici, un simple log est écrit pour indiquer que la facture a été complétée).
+In this example, we use `Event::listen` to listen for the `InvoiceCompleted` event. Each time this event is triggered, the logic provided in the callback is executed (here, a simple log is written to indicate that the invoice has been completed).
 
-### Création d'un listener dédié
+### Creating a Dedicated Listener
 
-Il est souvent préférable d'extraire la logique d'écoute dans une classe dédiée pour mieux organiser votre code. Pour ce faire, vous pouvez créer un **listener** qui sera appelé lorsque l'événement `InvoiceCompleted` est déclenché.
+It is often preferable to extract the listening logic into a dedicated class to better organize your code. To do this, you can create a **listener** that will be called when the `InvoiceCompleted` event is triggered.
 
-1. Créez une classe listener appelée `InvoiceCompletedListener`.
-2. Implémentez la logique dans cette classe.
+1. Create a listener class called `InvoiceCompletedListener`.
+2. Implement the logic in this class.
 
-Voici à quoi peut ressembler le listener :
+Here is what the listener might look like:
 
 ```php
 <?php
@@ -119,13 +121,13 @@ class InvoiceCompletedListener
      */
     public function handle(InvoiceCompleted $event)
     {
-        // Logique à exécuter lors de l'événement InvoiceCompleted
+        // Logic to execute when InvoiceCompleted event occurs
         \Log::info('Invoice has been completed by listener: ' . $event->invoice->id);
     }
 }
 ```
 
-Ensuite, modifiez le `FundServiceProvider` pour utiliser ce listener :
+Then, modify the `FundServiceProvider` to use this listener:
 
 ```php
 public function boot()
@@ -134,7 +136,7 @@ public function boot()
     $this->loadTranslations();
     $this->loadMigrations();
 
-    // Enregistrement des routes
+    // Route registration
     \Route::middleware(['web', 'admin'])
         ->prefix(admin_prefix())
         ->name($this->uuid . '.')
@@ -148,6 +150,7 @@ public function boot()
             require addon_path($this->uuid, 'routes/web.php');
         });
 
-    // Enregistrer le listener InvoiceCompletedListener pour écouter l'événement InvoiceCompleted
+    // Register the InvoiceCompletedListener to listen for the InvoiceCompleted event
     Event::listen(InvoiceCompleted::class, [InvoiceCompletedListener::class, 'handle']);
 }
+```

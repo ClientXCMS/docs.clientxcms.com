@@ -1,26 +1,27 @@
 ---
 sidebar_position: 1
+translated: true
 ---
-# Création d'une extension
+# Creating an Extension
 
-Pour créer une nouvelle extension, vous pouvez utiliser la commande artisan suivante :
+To create a new extension, you can use the following artisan command:
 
 ```bash
 php artisan clientxcms:create-extension
 ```
 
-Lors de l'exécution de cette commande, plusieurs questions vous seront posées, notamment :
+When executing this command, several questions will be asked, including:
 
-- **Nom** : Le nom de l'extension
-- **UUID** : Un identifiant unique que vous devez fournir. **Attention** : cet UUID doit être unique.
-- **Type** : Définir si l'extension est un *addon* ou un *module*.
-- **Utilisation des routes** : Préciser si l'extension utilise des routes.
-- **Utilisation des contrôleurs** : Indiquer si des contrôleurs sont nécessaires.
-- **Utilisation d'une base de données** : Préciser si l'extension nécessite l'utilisation d'une base de données.
+- **Name**: The name of the extension
+- **UUID**: A unique identifier that you must provide. **Warning**: this UUID must be unique.
+- **Type**: Define whether the extension is an *addon* or a *module*.
+- **Use of routes**: Specify if the extension uses routes.
+- **Use of controllers**: Indicate if controllers are needed.
+- **Use of a database**: Specify if the extension requires database usage.
 
-#### Structure d'un addon
+#### Structure of an addon
 
-Voici un exemple de la structure d'un addon, basé sur l'extension `fund` :
+Here is an example of the structure of an addon, based on the `fund` extension:
 
 ```
 /addons/fund
@@ -50,12 +51,12 @@ Voici un exemple de la structure d'un addon, basé sur l'extension `fund` :
 └── permissions.json
 ```
 
-- **lang/** : Contient les fichiers de traduction pour différentes langues (par exemple, anglais `en`, français `fr`).
-- **database/** : Contient les migrations, seeders ou factories pour l’extension.
-- **views/admin** : Contient les vues de l’administration de l'extension.
-- **views/default** : Contient les vues de l'extension.
-- **routes/** : Contient les fichiers de routes spécifiques à l'extension. Les routes d'administration sont définies dans `admin.php`, et les routes publiques dans `web.php`.
-- **src/** : Contient les fichiers principaux de l'extension, tels que les contrôleurs, les modèles, et le service provider (`FundServiceProvider.php`).
-- **addon.json|module.json** : Fichier de configuration principal de l'addon/module, contenant les métadonnées et informations nécessaires au CMS pour reconnaître et charger l'extension.
-- **composer.json** : Fichier standard Composer pour la gestion des dépendances de l'extension.
-- **permissions.json** : Fichier contenant les permissions spécifiques à l'extension. Plus d'informations sur les permissions [ici](/developpers/extensions/definitions/permissions).
+- **lang/**: Contains translation files for different languages (for example, English `en`, French `fr`).
+- **database/**: Contains migrations, seeders, or factories for the extension.
+- **views/admin**: Contains the administration views for the extension.
+- **views/default**: Contains the extension views.
+- **routes/**: Contains route files specific to the extension. Administration routes are defined in `admin.php`, and public routes in `web.php`.
+- **src/**: Contains the main files of the extension, such as controllers, models, and the service provider (`FundServiceProvider.php`).
+- **addon.json|module.json**: Main configuration file of the addon/module, containing metadata and information needed by the CMS to recognize and load the extension.
+- **composer.json**: Standard Composer file for managing extension dependencies.
+- **permissions.json**: File containing permissions specific to the extension. More information about permissions [here](/developpers/extensions/definitions/permissions).

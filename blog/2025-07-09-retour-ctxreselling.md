@@ -1,43 +1,44 @@
 ---
 slug: retour-ctxreselling
-title: Programme de revente CTX Reselling
+title: CTX Reselling Reseller Program
 authors: [martindev]
 tags: [clientxcms, ctxreselling, revendeur, hosting]
+translated: true
 ---
-# Programme de revente CTX Reselling
+# CTX Reselling Reseller Program
 
 
-Le programme de revente CTX Reselling vous permet de proposer facilement des VPS à vos clients, sans connaissance technique ni gestion d'infrastructure. C'est une solution simple et rapide pour élargir votre offre.
+The CTX Reselling reseller program allows you to easily offer VPS to your clients, without technical knowledge or infrastructure management. It's a simple and fast solution to expand your offerings.
 
-Ce programme vient en complément du programme partenaire pour les licences, afin de vous permettre de revendre à la fois des services (VPS) et des licences à vos clients.
+This program complements the partner program for licenses, allowing you to resell both services (VPS) and licenses to your clients.
 
 
-![programme revendeur](/img/blog/retour-ctxreselling/image.png)
+![reseller program](/img/blog/retour-ctxreselling/image.png)
 
 <!-- truncate -->
 
 
-## Les avantages en bref
+## Benefits at a Glance
 
-- Aucun frais d’inscription
-- Support technique 7/7
-- Gestion simple depuis CLIENTXCMS
-- Marque blanche
-- Livraison immédiate
+- No registration fees
+- Technical support 7 days a week
+- Simple management from CLIENTXCMS
+- White label
+- Immediate delivery
 
 
-## Comment ça marche ?
+## How Does It Work?
 
-1. Inscrivez-vous sur [CTXHosting](https://ctxhosting.fr/register) et demandez l’activation du mode revendeur.
-2. Ajoutez vos offres dans CLIENTXCMS.
-3. Vos clients commandent, vous payez uniquement ce qu’ils consomment.
-4. Notre équipe vous accompagne si besoin.
+1. Register on [CTXHosting](https://ctxhosting.fr/register) and request reseller mode activation.
+2. Add your offers in CLIENTXCMS.
+3. Your clients order, you only pay for what they consume.
+4. Our team supports you if needed.
 
-Pour tout savoir sur la configuration, consultez la documentation officielle : [Documentation CTX Reselling](/extensions/addons/reselling_client)
+For full configuration details, check the official documentation: [CTX Reselling Documentation](/extensions/addons/reselling_client)
 
-## Questions fréquentes
+## Frequently Asked Questions
 
-- **Qui peut devenir revendeur ?** Tout utilisateur CLIENTXCMS.
-- **Quels services puis-je revendre ?** VPS (LXC, KVM, HDD).
-- **Y a-t-il des prérequis ?** Aucun, tout est clé en main.
-- **Où trouver la documentation ?** [Voir la documentation](/extensions/addons/reselling_client)
+- **Who can become a reseller?** Any CLIENTXCMS user.
+- **What services can I resell?** VPS (LXC, KVM, HDD).
+- **Are there prerequisites?** None, everything is turnkey.
+- **Where to find the documentation?** [See the documentation](/extensions/addons/reselling_client)

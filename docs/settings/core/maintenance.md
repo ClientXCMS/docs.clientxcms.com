@@ -1,175 +1,176 @@
 ---
 sidebar_position: 4
+translated: true
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 
 # Maintenance
-Le système de maintenance vous permet de mettre votre **ClientXCMS** en mode maintenance. Cela signifie que votre **CLIENTXCMS** sera inaccessible pour les utilisateurs pendant la période de maintenance.
-Il permet d'informer les utilisateurs de la raison de la maintenance et de la durée estimée de la maintenance. Pour ce faire, allez dans le menu `Paramètres` puis dans la section `Paramètres généraux` et enfin dans `Maintenance`.
+The maintenance system allows you to put your **ClientXCMS** in maintenance mode. This means your **CLIENTXCMS** will be inaccessible to users during the maintenance period.
+It allows you to inform users of the reason for the maintenance and the estimated maintenance duration. To do this, go to the `Settings` menu, then to the `General Settings` section, and finally to `Maintenance`.
 ![Maintenance](/img/next_gen/settings/core/maintenance/maintenance.png)
-- **Activer la maintenance** : Activez ou désactivez la maintenance.
-- **Message de maintenance** : Le message de maintenance qui sera affiché aux utilisateurs.
-- **URL de maintenance** : L'URL pour passer outre la maintenance.
-- **Texte du bouton de maintenance** : Le texte du bouton pour passer outre la maintenance.
-- **URL de l'image de maintenance** : L'URL de l'image de maintenance.
-- **Icone de maintenance** : L'icone de maintenance.
+- **Enable maintenance**: Enable or disable maintenance.
+- **Maintenance message**: The maintenance message that will be displayed to users.
+- **Maintenance URL**: The URL to bypass maintenance.
+- **Maintenance button text**: The text of the button to bypass maintenance.
+- **Maintenance image URL**: The URL of the maintenance image.
+- **Maintenance icon**: The maintenance icon.
 
-:::tip Astuce
-Le mode maintenance est votre **bouclier de protection** pendant les opérations sensibles.
-Il permet de travailler sereinement tout en gardant vos clients informés de la situation.
+:::tip Tip
+Maintenance mode is your **protective shield** during sensitive operations.
+It allows you to work peacefully while keeping your clients informed of the situation.
 :::
 
-## Pourquoi utiliser le mode maintenance ?
+## Why Use Maintenance Mode?
 
-Le mode maintenance est indispensable pour :
+Maintenance mode is essential for:
 
-* **Protéger vos données** pendant les mises à jour critiques
-* **Éviter les erreurs** causées par des accès pendant des modifications
-* **Communiquer professionnellement** sur les interruptions de service
-* **Maintenir la confiance** en montrant que les maintenances sont planifiées
+* **Protecting your data** during critical updates
+* **Avoiding errors** caused by access during modifications
+* **Communicating professionally** about service interruptions
+* **Maintaining trust** by showing that maintenances are planned
 
-:::tip Astuce
-C'est comme mettre un panneau "Fermé pour travaux" sur votre boutique 🚧 — vos clients comprennent et apprécient la transparence.
+:::tip Tip
+It's like putting an "Closed for maintenance" sign on your shop 🚧 — your clients understand and appreciate the transparency.
 :::
 
-## Configuration du mode maintenance
+## Maintenance Mode Configuration
 
-### Activation et désactivation
+### Activation and Deactivation
 
-**Activer la maintenance** | (interrupteur)<br />
-Active ou désactive instantanément le mode maintenance sur votre plateforme.
-Lorsqu'activé, seuls les administrateurs peuvent accéder au système.
+**Enable maintenance** | (switch)<br />
+Instantly enables or disables maintenance mode on your platform.
+When enabled, only administrators can access the system.
 
 :::warning Important
-Une fois la maintenance activée, tous les utilisateurs non-administrateurs seront automatiquement déconnectés et redirigés vers la page de maintenance.
+Once maintenance is enabled, all non-administrator users will be automatically logged out and redirected to the maintenance page.
 :::
 
-### Message d'information
+### Information Message
 
-**Message de maintenance** | (zone de texte)<br />
-Le message principal affiché sur la page de maintenance.
-Expliquez brièvement la raison de l'interruption et la durée estimée.
+**Maintenance message** | (text area)<br />
+The main message displayed on the maintenance page.
+Briefly explain the reason for the interruption and the estimated duration.
 
-Exemple de message efficace :
+Example of an effective message:
 ```
-Nous effectuons actuellement une mise à jour importante de nos systèmes.
-Notre plateforme sera de nouveau disponible dans environ 2 heures.
-Merci de votre compréhension.
+We are currently performing an important update to our systems.
+Our platform will be available again in approximately 2 hours.
+Thank you for your understanding.
 ```
 
-### Personnalisation visuelle
+### Visual Customization
 
-**URL de l'image de maintenance** | (URL)<br />
-Ajoutez une image personnalisée pour illustrer la page de maintenance.
-Peut être votre logo ou une illustration thématique.
+**Maintenance image URL** | (URL)<br />
+Add a custom image to illustrate the maintenance page.
+Can be your logo or a themed illustration.
 
-**Icône de maintenance** | (texte)<br />
-Définit l'icône affichée sur la page (utilise les classes d'icônes CSS).
-Par exemple : `fas fa-tools` pour une icône d'outils.
+**Maintenance icon** | (text)<br />
+Defines the icon displayed on the page (uses CSS icon classes).
+For example: `fas fa-tools` for a tools icon.
 
-### Options de contournement
+### Bypass Options
 
-**URL de maintenance** | (URL)<br />
-Lien externe vers lequel rediriger les utilisateurs pendant la maintenance.
-Utile pour diriger vers une page de statut ou un site temporaire.
+**Maintenance URL** | (URL)<br />
+External link to redirect users to during maintenance.
+Useful for directing to a status page or temporary site.
 
-**Texte du bouton de maintenance** | (texte)<br />
-Le texte affiché sur le bouton de redirection.
-Par exemple : "Voir le statut" ou "Plus d'informations".
+**Maintenance button text** | (text)<br />
+The text displayed on the redirect button.
+For example: "View status" or "More information".
 
-## Comportement du système en maintenance
+## System Behavior During Maintenance
 
-### Pour les administrateurs
+### For Administrators
 
-✅ **Accès complet maintenu** : Les administrateurs peuvent toujours se connecter
-✅ **Travail sans interruption** : Toutes les fonctionnalités restent accessibles
-✅ **Indicateur visuel** : Un badge ou notification rappelle que la maintenance est active
+✅ **Full access maintained**: Administrators can still log in
+✅ **Uninterrupted work**: All features remain accessible
+✅ **Visual indicator**: A badge or notification reminds that maintenance is active
 
-### Pour les utilisateurs
+### For Users
 
-🚫 **Accès bloqué** : Impossible de se connecter à l'espace client
-🚫 **Sessions terminées** : Les utilisateurs connectés sont déconnectés
-✅ **Page informative** : Affichage de la page de maintenance personnalisée
+🚫 **Access blocked**: Unable to log into the client area
+🚫 **Sessions terminated**: Logged-in users are disconnected
+✅ **Informative page**: Display of the customized maintenance page
 
-## Personnalisation avancée
+## Advanced Customization
 
-### Modifier le template de maintenance
+### Modify the Maintenance Template
 
-Pour une personnalisation complète, vous pouvez modifier le fichier template :
+For complete customization, you can modify the template file:
 
 ```
 resources/themes/default/views/maintenance.blade.php
 ```
 
-Cela permet de :
-- Adapter complètement le design à votre charte graphique
-- Ajouter des éléments dynamiques (compte à rebours, etc.)
-- Intégrer des informations supplémentaires
+This allows you to:
+- Fully adapt the design to your brand guidelines
+- Add dynamic elements (countdown, etc.)
+- Integrate additional information
 
-### Bonnes pratiques de personnalisation
+### Customization Best Practices
 
-1. **Conservez la simplicité** : La page doit charger rapidement
-2. **Restez informatif** : Message clair sur la durée et la raison
-3. **Gardez votre identité** : Utilisez vos couleurs et votre logo
-4. **Pensez mobile** : La page doit être responsive
+1. **Keep it simple**: The page should load quickly
+2. **Stay informative**: Clear message about duration and reason
+3. **Keep your identity**: Use your colors and logo
+4. **Think mobile**: The page must be responsive
 
-## Exemples d'utilisation
+## Usage Examples
 
-### Maintenance planifiée
+### Planned Maintenance
 
-Pour une mise à jour prévue :
-1. Activez la maintenance **avant** de commencer les travaux
-2. Définissez un message précis avec l'heure de retour estimée
-3. Effectuez vos modifications
-4. Désactivez la maintenance une fois terminé
+For a scheduled update:
+1. Enable maintenance **before** starting work
+2. Set a precise message with the estimated return time
+3. Make your modifications
+4. Disable maintenance once finished
 
-### Maintenance d'urgence
+### Emergency Maintenance
 
-En cas de problème critique :
-1. Activez immédiatement la maintenance
-2. Utilisez un message générique si nécessaire
-3. Mettez à jour le message avec plus de détails dès que possible
-4. Communiquez sur d'autres canaux (réseaux sociaux, email)
+In case of a critical problem:
+1. Immediately enable maintenance
+2. Use a generic message if necessary
+3. Update the message with more details as soon as possible
+4. Communicate on other channels (social media, email)
 
-## Aperçu de la page de maintenance
+## Maintenance Page Preview
 
-Voici à quoi ressemble la page de maintenance vue par vos utilisateurs :
+Here is what the maintenance page looks like as seen by your users:
 
 <ThemedImage
-  alt="Aperçu de la page de maintenance"
+  alt="Maintenance page preview"
   sources={{
     light: '/img/next_gen/settings/core/maintenance/maintenance_home.png',
     dark: '/img/next_gen/settings/core/maintenance/maintenance_home_dark.png'
   }}
 />
 
-La page affiche :
-- Votre message personnalisé
-- L'image ou icône configurée
-- Le bouton de redirection (si configuré)
-- Un design épuré et professionnel
+The page displays:
+- Your custom message
+- The configured image or icon
+- The redirect button (if configured)
+- A clean and professional design
 
-## Conseils et recommandations
+## Tips and Recommendations
 
-### Communication proactive
+### Proactive Communication
 
-- **Prévenez à l'avance** : Informez vos clients des maintenances planifiées
-- **Soyez précis** : Donnez des horaires clairs et respectez-les
-- **Restez joignable** : Indiquez un moyen de contact pour les urgences
+- **Notify in advance**: Inform your clients of planned maintenances
+- **Be precise**: Give clear schedules and respect them
+- **Stay reachable**: Indicate a means of contact for emergencies
 
-### Optimisation du temps
+### Time Optimization
 
-- **Heures creuses** : Planifiez les maintenances aux heures de faible activité
-- **Durée minimale** : Préparez tout en amont pour réduire le temps d'arrêt
-- **Tests préalables** : Testez les modifications dans un environnement de test
+- **Off-peak hours**: Schedule maintenances during low activity hours
+- **Minimal duration**: Prepare everything in advance to reduce downtime
+- **Prior testing**: Test modifications in a test environment
 
-### Suivi post-maintenance
+### Post-Maintenance Follow-up
 
-- **Vérifiez tout** : Assurez-vous que tout fonctionne après la maintenance
-- **Communiquez la fin** : Informez vos clients que le service est rétabli
-- **Surveillez** : Restez vigilant aux éventuels problèmes post-maintenance
+- **Check everything**: Make sure everything works after maintenance
+- **Communicate the end**: Inform your clients that service is restored
+- **Monitor**: Stay vigilant for potential post-maintenance issues
 
-:::tip À retenir
-Le mode maintenance est un outil puissant qui, bien utilisé, renforce la confiance de vos clients. Une maintenance bien gérée et communiquée est perçue comme un signe de professionnalisme et de fiabilité.
+:::tip Remember
+Maintenance mode is a powerful tool that, when used well, strengthens your clients' trust. Well-managed and communicated maintenance is perceived as a sign of professionalism and reliability.
 :::

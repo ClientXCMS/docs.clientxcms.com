@@ -1,32 +1,35 @@
+---
+translated: true
+---
 
-# Produits & Services
+# Products & Services
 
-Les produits et services sont des éléments essentiels de toute boutique en ligne. Ils définissent les offres disponibles pour les clients et les options de provisionnement pour les administrateurs. Dans le cadre de l'extension, les produits et services sont gérés via des classes spécifiques qui définissent les caractéristiques et les comportements de chaque type de produit.
+Products and services are essential elements of any online store. They define the available offers for customers and provisioning options for administrators. Within the extension, products and services are managed via specific classes that define the characteristics and behaviors of each product type.
 
 :::info
-Cette section est majeure puisqu'elle permet de définir : 
-- l'automatisation de la création de produit avec les serveurs
-- la configuration du produit
-- la gestion des données à la commande
-- la gestion des options
+This section is major as it allows you to define:
+- automation of product creation with servers
+- product configuration
+- order data management
+- options management
 :::
-Interface : `App/Contracts/Store/ProductTypeInterface`
+Interface: `App/Contracts/Store/ProductTypeInterface`
 
-Classe abstraite : `App/Abstracts/AbstractProductType`
-## Création de la classe
+Abstract Class: `App/Abstracts/AbstractProductType`
+## Creating the Class
 
-L'interface `App/Contracts/Store/ProductTypeInterface` définit les méthodes à implémenter pour chaque type de produit. Voici un aperçu des méthodes clés de l'interface :
+The `App/Contracts/Store/ProductTypeInterface` interface defines the methods to implement for each product type. Here's an overview of the key methods of the interface:
 
-- `uuid()`: Retourne l'UUID unique du produit.
-- `title()`: Retourne le titre du produit.
-- `type()`: Retourne le type de provisionnement du produit..
-- `data()`: Permet d'ajouter des informations supplémentaires à demander à l'utilisateur lors de la commande.
-- `panel()`: Retourne l'interface de provisionnement du panel si nécessaire.
-- `server()`: Retourne l'interface de provisionnement du serveur pour les produits de type service.
-- `options()`: Retourne un tableau des options supplémentaires pour le produit.
-- `config()`: Retourne la configuration spécifique du produit.
+- `uuid()`: Returns the unique UUID of the product.
+- `title()`: Returns the product title.
+- `type()`: Returns the product provisioning type.
+- `data()`: Allows adding additional information to request from the user during ordering.
+- `panel()`: Returns the panel provisioning interface if needed.
+- `server()`: Returns the server provisioning interface for service-type products.
+- `options()`: Returns an array of additional options for the product.
+- `config()`: Returns the product-specific configuration.
 
-Voici un exemple de classe abstraite avec des implémentations par défaut des méthodes :
+Here's an example abstract class with default method implementations:
 
 ```php
 // addons/fund/src/CustomProductType
@@ -37,42 +40,42 @@ use App\Models\Store\Product;
 
 class CustomProductType extends AbstractProductType
 {
-    protected string $uuid = 'custom-product'; // UUID unique du produit
-    protected string $title = 'Custom Product'; // Titre du produit
-    protected string $type = self::SERVICE; // Type de provisionnement (service)
+    protected string $uuid = 'custom-product'; // Unique product UUID
+    protected string $title = 'Custom Product'; // Product title
+    protected string $type = self::SERVICE; // Provisioning type (service)
 
 
     public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
     {
         return new CustomProductData();
     }
-    
+
     /**
-     * Retourne la classe de configuration du produit
+     * Returns the product configuration class
      */
     public function config(?Product $product = null): ?\App\Contracts\Store\ProductConfigInterface
     {
-        return new CustomProductConfig(); // Ou null
+        return new CustomProductConfig(); // Or null
     }
     /**
-     * Retourne des données supplémentaires liées au produit
+     * Returns additional data related to the product
      */
     public function data(?Product $product = null): ?\App\Contracts\Store\ProductDataInterface
     {
-        return new CustomProductData(); // Ou null
+        return new CustomProductData(); // Or null
     }
 
     /**
-     * Retourne le type de serveur nécessaire au produit
+     * Returns the server type required for the product
      */
     public function server(): ?\App\Contracts\Provisioning\ServerTypeInterface
     {
-        // Retourne une implémentation de la classe produit si le produit en nécessite un
-        return new CustomProductServer(); // ou null
+        // Returns a product class implementation if the product requires one
+        return new CustomProductServer(); // or null
     }
 
     /**
-     * Pour l'instant n'est encore implémenté
+     * Not yet implemented
      */
     public function options(): array
     {
@@ -82,11 +85,11 @@ class CustomProductType extends AbstractProductType
 }
 ```
 
-Les classes `CustomProductData` et `CustomProductServer` doivent être implémentées pour gérer les données et le provisionnement du produit. Elle seront définies dans les sections suivantes.
+The `CustomProductData` and `CustomProductServer` classes must be implemented to handle product data and provisioning. They will be defined in the following sections.
 
-## Enregistrement du produit dans le Service Provider
+## Registering the Product in the Service Provider
 
-Une fois la classe de produit définie, elle doit être enregistrée dans le **Service Provider** de l'extension pour que le CMS puisse la reconnaître et l'utiliser.
+Once the product class is defined, it must be registered in the extension's **Service Provider** so the CMS can recognize and use it.
 
 ```php
 namespace App\Addons\Fund;
@@ -105,16 +108,16 @@ class FundServiceProvider extends BaseAddonServiceProvider
 
     public function boot()
     {
-        // Enregistrement du nouveau type de produit
+        // Register the new product type
         $this->registerProductTypes();
     }
-    
-    
+
+
     public function productsTypes(): array
     {
         return [
             CustomProductType::class,
         ];
-    }    
+    }
 }
 ```
