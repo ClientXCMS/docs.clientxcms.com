@@ -1,211 +1,212 @@
 ---
 sidebar_position: 2
+translated: true
 ---
 import ThemedImage from '@theme/ThemedImage';
 
-# Messagerie
+# Email
 
-Dans **CLIENTXCMS**, la configuration de la **messagerie** est essentielle pour maintenir une **communication fluide avec vos clients**.
-L'objectif est simple : **configurer correctement l'envoi des e-mails pour garantir leur délivrabilité** et offrir une **expérience professionnelle** à vos utilisateurs. Une bonne configuration améliore la fiabilité de vos communications, renforce la confiance et assure que vos messages importants arrivent bien à destination.
+In **CLIENTXCMS**, **email** configuration is essential for maintaining **seamless communication with your clients**.
+The goal is simple: **properly configure email sending to ensure deliverability** and provide a **professional experience** for your users. Good configuration improves the reliability of your communications, builds trust, and ensures your important messages reach their destination.
 
-La messagerie est utilisée pour toutes les communications automatiques : inscriptions, réinitialisations de mot de passe, notifications de commandes, factures, etc.
+Email is used for all automated communications: registrations, password resets, order notifications, invoices, etc.
 
-Vous pouvez gérer la messagerie depuis :
+You can manage email settings from:
 
-`Paramètres` > `Paramètres généraux` > `Paramètres de messagerie`
+`Settings` > `General Settings` > `Email Settings`
 
 <ThemedImage
-  alt="Interface de configuration de la messagerie"
+  alt="Email configuration interface"
   sources={{
     light: '/img/next_gen/settings/mailing_settings/mailing_settings.png',
     dark: '/img/next_gen/settings/mailing_settings/mailing_settings_dark.png'
   }}
 />
 
-:::tip Astuce
-Une configuration SMTP correcte est **cruciale** pour éviter que vos e-mails finissent dans les spams.
-Prenez le temps de bien paramétrer ces options et de tester régulièrement votre configuration.
+:::tip Tip
+Correct SMTP configuration is **crucial** to prevent your emails from ending up in spam.
+Take the time to properly set up these options and regularly test your configuration.
 :::
 
-## Pourquoi configurer la messagerie ?
+## Why Configure Email?
 
-La messagerie automatique est au cœur de l'expérience client dans CLIENTXCMS. Elle permet de :
+Automated email is at the heart of the client experience in CLIENTXCMS. It allows you to:
 
-* Confirmer les inscriptions et les commandes de vos clients
-* Envoyer les factures et les rappels de paiement
-* Notifier les clients des changements sur leurs services
-* Gérer les réinitialisations de mot de passe en toute sécurité
+* Confirm your clients' registrations and orders
+* Send invoices and payment reminders
+* Notify clients of changes to their services
+* Securely manage password resets
 
-:::tip Astuce
-C'est un peu comme avoir un assistant personnel qui envoie automatiquement tous vos courriers importants 📬 — fiable, rapide et professionnel.
+:::tip Tip
+It's like having a personal assistant who automatically sends all your important mail 📬 — reliable, fast, and professional.
 :::
 
-## Configuration de base
+## Basic Configuration
 
-### Paramètres d'identité
+### Identity Settings
 
-Ces paramètres définissent comment vos e-mails apparaîtront dans la boîte de réception de vos clients :
+These settings define how your emails will appear in your clients' inbox:
 
-**Adresse d'envoi** | (adresse e-mail)
-L'adresse e-mail qui apparaîtra comme expéditeur de tous vos messages automatiques.
-Utilisez une adresse professionnelle du type `noreply@votredomaine.com` ou `support@votredomaine.com`.
+**Sender address** | (email address)
+The email address that will appear as the sender of all your automated messages.
+Use a professional address like `noreply@yourdomain.com` or `support@yourdomain.com`.
 
-**Nom d'envoi** | (texte)
-Le nom qui s'affichera à côté de l'adresse d'envoi dans les clients mail.
-Généralement le nom de votre entreprise ou de votre service.
+**Sender name** | (text)
+The name that will appear next to the sender address in email clients.
+Usually your company or service name.
 
-**Domaine de l'espace client** | (URL)
-L'URL complète de votre installation CLIENTXCMS (ex: `https://demo.clientxcms.com`).
-Utilisé pour générer les liens dans les e-mails.
+**Client area domain** | (URL)
+The complete URL of your CLIENTXCMS installation (e.g.: `https://demo.clientxcms.com`).
+Used to generate links in emails.
 
-### Personnalisation des messages
+### Message Customization
 
-**Salutation de début** | (texte)
-Le message d'accueil qui apparaîtra au début de chaque e-mail.
-Par exemple : "Bonjour" ou "Cher client".
+**Opening greeting** | (text)
+The welcome message that will appear at the beginning of each email.
+For example: "Hello" or "Dear customer".
 
-**Salutation de fin** | (texte)
-La signature qui apparaîtra à la fin de chaque e-mail.
-Par exemple : "Cordialement, L'équipe ClientXCMS" ou "Merci de votre confiance".
+**Closing greeting** | (text)
+The signature that will appear at the end of each email.
+For example: "Best regards, The ClientXCMS Team" or "Thank you for your trust".
 
-### Options avancées
+### Advanced Options
 
-**Désactiver les e-mails** | (case à cocher)
-Empêche l'envoi de tous les e-mails depuis le système.
-⚠️ À utiliser uniquement en développement ou en maintenance.
+**Disable emails** | (checkbox)
+Prevents all emails from being sent from the system.
+⚠️ Use only in development or maintenance.
 
-## Configuration SMTP
+## SMTP Configuration
 
-SMTP (Simple Mail Transfer Protocol) est le protocole standard pour l'envoi d'e-mails. Une configuration SMTP correcte garantit la délivrabilité de vos messages.
+SMTP (Simple Mail Transfer Protocol) is the standard protocol for sending emails. Correct SMTP configuration ensures the deliverability of your messages.
 
-### CTXMailer - service mail professionnel
+### CTXMailer - Professional Mail Service
 
-CLIENTXCMS propose également **CTXMailer**, une offre d'hébergement de boîtes mail entièrement intégrée :
+CLIENTXCMS also offers **CTXMailer**, a fully integrated email hosting solution:
 
-- **Inclus** dans les plans **Premium** et **Enterprise** (support + hébergement cloud)
-- **Caractéristiques** : jusqu'à 20 boîtes mail incluses, 15 Go de stockage, interface sécurisée
-- **Option** : disponible pour les autres licences à **3 € / mois**
+- **Included** in **Premium** and **Enterprise** plans (support + cloud hosting)
+- **Features**: up to 20 mailboxes included, 15 GB storage, secure interface
+- **Option**: available for other licenses at **€3 / month**
 
-En savoir plus : https://clientxcms.com/ctxmailer
+Learn more: https://clientxcms.com/ctxmailer
 
 :::tip
-Si vous utilisez CTXMailer, les paramètres SMTP sont fournis automatiquement et la configuration de délivrabilité (SPF/DKIM) est facilitée depuis l'espace client.
+If you use CTXMailer, SMTP settings are provided automatically and deliverability configuration (SPF/DKIM) is simplified from the client area.
 :::
 
-### Paramètres de connexion
+### Connection Settings
 
-**Hôte SMTP** | (adresse serveur)
-L'adresse du serveur SMTP de votre fournisseur de messagerie.
+**SMTP Host** | (server address)
+The address of your email provider's SMTP server.
 
-**Port SMTP** | (numéro)
-Le port utilisé pour la connexion SMTP. Les ports standards sont :
+**SMTP Port** | (number)
+The port used for SMTP connection. Standard ports are:
 
-- `587` : Pour TLS/STARTTLS (recommandé)
-- `465` : Pour SSL
-- `25` : Port standard (souvent bloqué par les FAI)
+- `587`: For TLS/STARTTLS (recommended)
+- `465`: For SSL
+- `25`: Standard port (often blocked by ISPs)
 
-**Chiffrement SMTP** | (menu déroulant)
-Le type de sécurisation de la connexion :
+**SMTP Encryption** | (dropdown menu)
+The type of connection security:
 
-- **TLS** : Recommandé, utilise le port 587
-- **SSL** : Alternative sécurisée, utilise le port 465
-- **Aucun** : Non recommandé sauf en environnement local
+- **TLS**: Recommended, uses port 587
+- **SSL**: Secure alternative, uses port 465
+- **None**: Not recommended except in local environment
 
-### Authentification
+### Authentication
 
-**Nom d'utilisateur SMTP** | (texte)
-Généralement votre adresse e-mail complète ou un identifiant fourni par votre hébergeur.
+**SMTP Username** | (text)
+Usually your full email address or an identifier provided by your host.
 
-**Mot de passe SMTP** | (mot de passe)
-Le mot de passe associé à votre compte SMTP.
-Pour certains services (Gmail, Office 365), vous devrez utiliser un mot de passe d'application spécifique.
+**SMTP Password** | (password)
+The password associated with your SMTP account.
+For some services (Gmail, Office 365), you will need to use a specific app password.
 
 :::warning Important
-Pour des raisons de sécurité, utilisez toujours un **mot de passe d'application** dédié plutôt que le mot de passe principal de votre compte e-mail.
+For security reasons, always use a dedicated **app password** rather than your main email account password.
 :::
 
-## Test et validation
+## Testing and Validation
 
-### Tester la configuration
+### Test Configuration
 
-Après avoir configuré vos paramètres SMTP, il est **essentiel** de tester la connexion :
+After configuring your SMTP settings, it is **essential** to test the connection:
 
-1. Cliquez sur le bouton **"Tester la connexion SMTP"**
-2. Un e-mail de test sera envoyé à l'adresse configurée
-3. Vérifiez la réception et l'apparence du message
+1. Click the **"Test SMTP Connection"** button
+2. A test email will be sent to the configured address
+3. Check the reception and appearance of the message
 
 <ThemedImage
-  alt="Test réussi de la connexion SMTP"
+  alt="Successful SMTP connection test"
   sources={{
     light: '/img/next_gen/settings/core/mail/mail_success.png',
     dark: '/img/next_gen/settings/core/mail/mail_success.png'
   }}
 />
 
-### Indicateurs de succès
+### Success Indicators
 
-- ✅ **Connexion réussie** : Message de confirmation affiché
-- ✅ **E-mail reçu** : Vérifiez votre boîte de réception
-- ✅ **Bon formatage** : L'e-mail s'affiche correctement
+- ✅ **Successful connection**: Confirmation message displayed
+- ✅ **Email received**: Check your inbox
+- ✅ **Good formatting**: Email displays correctly
 
 
-## Résolution des problèmes
+## Troubleshooting
 
-### Erreurs fréquentes
+### Common Errors
 
 **"scheme is not supported"**
-Le protocole de chiffrement sélectionné n'est pas compatible avec votre serveur.
-→ **Solution** : Essayez de basculer entre TLS et SSL.
+The selected encryption protocol is not compatible with your server.
+→ **Solution**: Try switching between TLS and SSL.
 
 **"Authentication failed"**
-Les identifiants fournis sont incorrects.
-→ **Solution** : Vérifiez votre nom d'utilisateur et mot de passe. Pour Gmail/Office 365, utilisez un mot de passe d'application.
+The provided credentials are incorrect.
+→ **Solution**: Check your username and password. For Gmail/Office 365, use an app password.
 
 **"Connection timeout"**
-Le serveur SMTP ne répond pas.
-→ **Solution** : Vérifiez l'hôte et le port. Assurez-vous que votre firewall autorise les connexions sortantes.
+The SMTP server is not responding.
+→ **Solution**: Check the host and port. Make sure your firewall allows outgoing connections.
 
-### Bonnes pratiques
+### Best Practices
 
-Pour optimiser la délivrabilité de vos e-mails :
+To optimize your email deliverability:
 
-1. **Utilisez un domaine vérifié** : L'adresse d'envoi doit correspondre à votre domaine
-2. **Configurez SPF/DKIM/DMARC** : Ces protocoles authentifient vos e-mails
-3. **Évitez les mots spam** : Dans vos salutations et contenus
-4. **Testez régulièrement** : La configuration peut changer avec le temps
+1. **Use a verified domain**: The sender address must match your domain
+2. **Configure SPF/DKIM/DMARC**: These protocols authenticate your emails
+3. **Avoid spam words**: In your greetings and content
+4. **Test regularly**: Configuration can change over time
 
-## Exemples de configuration
+## Configuration Examples
 
-### Configuration avec Gmail
-
-```
-Hôte SMTP : smtp.gmail.com
-Port : 587
-Chiffrement : TLS
-Nom d'utilisateur : votre-email@gmail.com
-Mot de passe : [Mot de passe d'application]
-```
-
-### Configuration avec Office 365
+### Gmail Configuration
 
 ```
-Hôte SMTP : smtp.office365.com
-Port : 587
-Chiffrement : TLS
-Nom d'utilisateur : votre-email@votredomaine.com
-Mot de passe : [Mot de passe du compte]
+SMTP Host: smtp.gmail.com
+Port: 587
+Encryption: TLS
+Username: your-email@gmail.com
+Password: [App password]
 ```
 
-### Configuration avec OVH
+### Office 365 Configuration
 
 ```
-Hôte SMTP : ssl0.ovh.net
-Port : 465
-Chiffrement : SSL
-Nom d'utilisateur : votre-email@votredomaine.com
-Mot de passe : [Mot de passe e-mail]
+SMTP Host: smtp.office365.com
+Port: 587
+Encryption: TLS
+Username: your-email@yourdomain.com
+Password: [Account password]
 ```
 
-:::tip À retenir
-Une messagerie bien configurée est la base d'une relation client professionnelle. Prenez le temps de tester et d'optimiser vos paramètres pour garantir que chaque message arrive à destination.
+### OVH Configuration
+
+```
+SMTP Host: ssl0.ovh.net
+Port: 465
+Encryption: SSL
+Username: your-email@yourdomain.com
+Password: [Email password]
+```
+
+:::tip Remember
+A well-configured email system is the foundation of a professional client relationship. Take the time to test and optimize your settings to ensure every message reaches its destination.
 :::

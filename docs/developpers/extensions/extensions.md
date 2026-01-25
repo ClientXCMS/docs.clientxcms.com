@@ -1,42 +1,44 @@
-
+---
+translated: true
+---
 # Extensions
 
-Les extensions dans le CMS ClientXCMS sont de deux types : **addons** et **modules**, et elles se trouvent dans les dossiers respectifs `/modules` et `/addons`. Chaque extension est basée sur le framework **Laravel** et suit une structure bien définie.
-Nous allons voir dans ce guide comment créer une extension, comment la structurer, et comment l'enregistrer dans le CMS.
+Extensions in the ClientXCMS CMS are of two types: **addons** and **modules**, and they are located in the respective `/modules` and `/addons` folders. Each extension is based on the **Laravel** framework and follows a well-defined structure.
+In this guide, we will see how to create an extension, how to structure it, and how to register it in the CMS.
 
-## Prérequis
-Nous recommandons d'avoir de bonnes connaissances en **PHP** et **Laravel**, ainsi que d'être à l'aise avec les concepts suivants :
+## Prerequisites
+We recommend having good knowledge of **PHP** and **Laravel**, as well as being comfortable with the following concepts:
 
-- [Les controllers](https://laravel.com/docs/11.x/controllers)
-- [Les vues](https://laravel.com/docs/11.x/views)
-- [Les modèles Eloquent](https://laravel.com/docs/11.x/eloquent)
-- [Les services providers](https://laravel.com/docs/11.x/providers)
-- Et tout autre concept de Laravel
+- [Controllers](https://laravel.com/docs/11.x/controllers)
+- [Views](https://laravel.com/docs/11.x/views)
+- [Eloquent Models](https://laravel.com/docs/11.x/eloquent)
+- [Service Providers](https://laravel.com/docs/11.x/providers)
+- And any other Laravel concept
 
-Ces sujets ne seront pas forcément abordés en détail dans cette documentation.
+These topics will not necessarily be covered in detail in this documentation.
 
-Vous devez également avoir accès aux sources pour l'auto-hébergement.
+You must also have access to the source code for self-hosting.
 
-De plus, il est recommandé d'être à l'aise avec **TailwindCSS**, **Blade**, et **Vite.js**.
+Additionally, it is recommended to be comfortable with **TailwindCSS**, **Blade**, and **Vite.js**.
 
-## Licence de développement
-Nous pouvons vous fournir une licence de développement avec les mêmes extensions que votre licence principale et 15 clients autorisés pour votre développement. Pour plus d'informations, veuillez nous contacter.
+## Development License
+We can provide you with a development license with the same extensions as your main license and 15 authorized clients for your development. For more information, please contact us.
 ## Activation
 
-Les extensions chargées peuvent s'activer ou se désactiver dans la page Extensions
+Loaded extensions can be activated or deactivated on the Extensions page
 ![img](/img/next_gen/extensions/image_1.png)
 
-## Choisir entre un module et un addon
+## Choosing between a module and an addon
 
-Pour faire simple, les modules sont utilisés comme livraison de service par exemple pour implémenter un panel de gestion comme Virtualizor, Plesk, ou Pterodactyl. Les addons sont utilisés pour ajouter des fonctionnalités supplémentaires comme des méthodes de paiement, logique, ou des pages personnalisées.
-## Demande d'ajout au marketplace
+Simply put, modules are used for service delivery, for example to implement a management panel like Virtualizor, Plesk, or Pterodactyl. Addons are used to add additional features such as payment methods, logic, or custom pages.
+## Request to add to the marketplace
 
-Vous pouvez faire la demande pour être développeur sur [https://clientxcms.com/client/resources](https://clientxcms.com/client/ressources) et ainsi proposer vos extensions à la communauté.
-![Capture d’écran création d'une extension](/img/blog/lancement-opensource/marketplace2.png)
+You can request to become a developer at [https://clientxcms.com/client/resources](https://clientxcms.com/client/ressources) and thus offer your extensions to the community.
+![Screenshot of creating an extension](/img/blog/lancement-opensource/marketplace2.png)
 
-Désormais, chaque développeur peut :  
-- Créer ses propres extensions  
-- Publier et partager ses créations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)  
-- Explorer et installer facilement les extensions partagées par la communauté  
+From now on, each developer can:
+- Create their own extensions
+- Publish and share their creations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)
+- Easily explore and install extensions shared by the community
 
-Cette interface intuitive a été pensée pour simplifier la gestion et encourager l’écosystème collaboratif autour de CLIENTXCMS.
+This intuitive interface was designed to simplify management and encourage the collaborative ecosystem around CLIENTXCMS.

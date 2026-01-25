@@ -1,60 +1,61 @@
 ---
 sidebar_position: 3
+translated: true
 ---
-# Fonctions & Paramètres
+# Functions & Settings
 
-Cette page liste les fonctions et clés de paramètres utilisables pour les thèmes.
+This page lists the functions and setting keys usable for themes.
 
-## Fonctions
+## Functions
 
-| Fonction                                                     | Description                                      |
+| Function                                                     | Description                                      |
 |--------------------------------------------------------------|--------------------------------------------------|
-| `{{ auth()->check() }}`                                      | Vérifie si l'utilisateur est connecté            |
-| `{{ auth()->user() }}`                                       | Retourne l'utilisateur connecté                  |
-| `{!! app('seo')->head() !!}`                                 | Retourne les métadonnées à ajouter dans le head   |
-| `{!! app('seo')->favicon() !!}`                              | Retourne la balise meta pour le favicon           |
-| `{!! app('seo')->foot() !!}`                                 | Retourne les scripts de fin de page               |
-| `{{ setting(key, value) }}`                                  | Retourne la valeur d'un paramètre de configuration|
-| `{{ basket(false) }}`                                        | Retourne le modèle du panier                     |
-| `{{ basket()->total() }}`                                    | Retourne le total du panier                      |
-| `{{ basket()->quantity() }}`                                 | Retourne le nombre d'articles dans le panier     |
-| `{{ basket()->items() }}`                                    | Retourne les articles du panier                  |
-| `{{ is_darkmode() }}`                                        | Retourne vrai si la page est en mode sombre      |
-| `{{ is_lightmode() }}`                                       | Retourne vrai si la page est en mode clair       |
-| `{{ format_bytes($bytes, $precision = 2, $suffix = true) }}` | Retourne la taille en octets formatée (Ko, Mo, Go, etc.) |
-| `{{ currency() }}`                                           | Renvoie la devise actuelle au format ISO         |
-| `{{ currency_symbol(?$currency = null) }}`                   | Renvoie le symbole de la devise actuelle         |
-| `{{ currencies() }}`                                         | Renvoie un tableau contenant toutes les devises  |
-| `{{ tax_percent(?$iso = null) }}`                            | Renvoie le pourcentage de taxe pour un pays      |
-| `{{ formatted_price($price, $currency = null) }}`            | Renvoie le prix formaté avec la devise           |
-| `module_path($module, $path)`                                | Retourne le chemin d'un fichier dans un module   |
-| `addon_path($module, $path)`                                 | Retourne le chemin d'un fichier dans un addon    |
-| `theme_manager()`                                            | Renvoie l'instance du gestionnaire de thème      |
-| `{{ is_subroute($route) }}`                                  | Retourne vrai si la route est une sous-route     |
-| `{{ is_route($route) }}`                                     | Retourne vrai si la route est la route actuelle  |
-| `{{ ctx_version() }}`                                        | Retourne la version de CLIENTXCMS                |
-| `{{ theme_config($key, $default = null) }}`                  | Retourne la configuration du thème               |
+| `{{ auth()->check() }}`                                      | Checks if the user is logged in                  |
+| `{{ auth()->user() }}`                                       | Returns the logged-in user                       |
+| `{!! app('seo')->head() !!}`                                 | Returns the metadata to add in the head          |
+| `{!! app('seo')->favicon() !!}`                              | Returns the meta tag for the favicon             |
+| `{!! app('seo')->foot() !!}`                                 | Returns the end-of-page scripts                  |
+| `{{ setting(key, value) }}`                                  | Returns the value of a configuration setting     |
+| `{{ basket(false) }}`                                        | Returns the basket model                         |
+| `{{ basket()->total() }}`                                    | Returns the basket total                         |
+| `{{ basket()->quantity() }}`                                 | Returns the number of items in the basket        |
+| `{{ basket()->items() }}`                                    | Returns the basket items                         |
+| `{{ is_darkmode() }}`                                        | Returns true if the page is in dark mode         |
+| `{{ is_lightmode() }}`                                       | Returns true if the page is in light mode        |
+| `{{ format_bytes($bytes, $precision = 2, $suffix = true) }}` | Returns the formatted byte size (KB, MB, GB, etc.) |
+| `{{ currency() }}`                                           | Returns the current currency in ISO format       |
+| `{{ currency_symbol(?$currency = null) }}`                   | Returns the current currency symbol              |
+| `{{ currencies() }}`                                         | Returns an array containing all currencies       |
+| `{{ tax_percent(?$iso = null) }}`                            | Returns the tax percentage for a country         |
+| `{{ formatted_price($price, $currency = null) }}`            | Returns the formatted price with currency        |
+| `module_path($module, $path)`                                | Returns the path of a file in a module           |
+| `addon_path($module, $path)`                                 | Returns the path of a file in an addon           |
+| `theme_manager()`                                            | Returns the theme manager instance               |
+| `{{ is_subroute($route) }}`                                  | Returns true if the route is a sub-route         |
+| `{{ is_route($route) }}`                                     | Returns true if the route is the current route   |
+| `{{ ctx_version() }}`                                        | Returns the CLIENTXCMS version                   |
+| `{{ theme_config($key, $default = null) }}`                  | Returns the theme configuration                  |
 
-## Paramètres
+## Settings
 
-Vous pouvez les récupérer avec la fonction `{{ setting() }}`.
+You can retrieve them with the `{{ setting() }}` function.
 
-| Clé                        | Description                                        |
+| Key                        | Description                                        |
 |----------------------------|----------------------------------------------------|
-| `app_name`                  | Nom du site                                        |
-| `app_url`                   | URL du site                                        |
-| `app_timezone`              | Fuseau horaire du site                             |
-| `app_address`               | Adresse du site                                    |
-| `app_logo`                  | Logo du site                                       |
-| `app_logo_text`             | Logo texte du site                                 |
-| `app_favicon`               | Favicon du site                                    |
-| `app_debug`                 | Mode débogage du site                              |
-| `app_env`                   | Environnement du site                              |
-| `theme_header_logo`         | Affiche le logo dans l'en-tête du site             |
-| `theme_switch_mode`         | Type de thème (both, light, dark)                  |
-| `theme_footer_description`  | Description du pied de page                        |
-| `theme_home_title_meta`     | Titre meta de la page d'accueil                    |
-| `theme_home_image_meta`     | Image meta de la page d'accueil                    |
-| `seo_site_title`            | Titre du site (affiché à côté du titre de la page) |
+| `app_name`                  | Site name                                          |
+| `app_url`                   | Site URL                                           |
+| `app_timezone`              | Site timezone                                      |
+| `app_address`               | Site address                                       |
+| `app_logo`                  | Site logo                                          |
+| `app_logo_text`             | Site text logo                                     |
+| `app_favicon`               | Site favicon                                       |
+| `app_debug`                 | Site debug mode                                    |
+| `app_env`                   | Site environment                                   |
+| `theme_header_logo`         | Display logo in site header                        |
+| `theme_switch_mode`         | Theme type (both, light, dark)                     |
+| `theme_footer_description`  | Footer description                                 |
+| `theme_home_title_meta`     | Homepage meta title                                |
+| `theme_home_image_meta`     | Homepage meta image                                |
+| `seo_site_title`            | Site title (displayed next to page title)          |
 
-Vous pouvez les récupérer avec la fonction `{{ setting() }}` ou `{{ translated_setting() }}`.
+You can retrieve them with the `{{ setting() }}` function or `{{ translated_setting() }}`.

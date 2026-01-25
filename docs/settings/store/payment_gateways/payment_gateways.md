@@ -1,116 +1,119 @@
+---
+translated: true
+---
 import DocCardList from '@theme/DocCardList';
 
-# Passerelles de paiement
+# Payment Gateways
 
-Dans **CLIENTXCMS**, une **passerelle de paiement** correspond à un **système de traitement des transactions financières** que vous proposez à vos clients dans votre boutique.
-L'objectif est clair : **offrir des méthodes de paiement sécurisées, diversifiées et adaptées à votre clientèle**. Une bonne configuration des passerelles de paiement permet à vos clients de **régler leurs commandes facilement** tout en vous garantissant la sécurité des transactions.
+In **CLIENTXCMS**, a **payment gateway** corresponds to a **financial transaction processing system** that you offer to your customers in your store.
+The objective is clear: **offer secure, diverse payment methods adapted to your clientele**. Good payment gateway configuration allows your customers to **easily pay for their orders** while guaranteeing transaction security.
 
-Chaque passerelle peut être entièrement personnalisée : nom d'affichage, montant minimum, statut de visibilité, paramètres de connexion, etc.
+Each gateway can be fully customized: display name, minimum amount, visibility status, connection parameters, etc.
 
-Vous pouvez gérer les passerelles de paiement depuis :
+You can manage payment gateways from:
 
-`Paramètres` > `Paramètres de la boutique` > `Passerelles de paiement`
+`Settings` > `Store Settings` > `Payment Gateways`
 
-![Configuration d'une passerelle de paiement](/img/next_gen/settings/store/payment_gateways/balance/config.png)
+![Payment gateway configuration](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 
-:::tip Astuce
-Une **diversité de moyens de paiement** augmente considérablement votre taux de conversion. Plus vous offrez d'options à vos clients, plus ils ont de chances de finaliser leur achat.
+:::tip Tip
+A **diversity of payment methods** significantly increases your conversion rate. The more options you offer your customers, the more likely they are to complete their purchase.
 :::
 
-## Pourquoi utiliser plusieurs passerelles de paiement ?
+## Why use multiple payment gateways?
 
-Les passerelles de paiement sont essentielles pour le bon fonctionnement de votre boutique. Elles représentent concrètement les moyens dont disposent vos clients pour vous régler — que ce soit par carte bancaire, PayPal, virement ou crédit boutique.
+Payment gateways are essential for your store's proper functioning. They concretely represent the means your customers have to pay you — whether by credit card, PayPal, bank transfer, or store credit.
 
-Configurer plusieurs passerelles vous permet de :
+Configuring multiple gateways allows you to:
 
-* Répondre aux préférences de paiement de tous vos clients
-* Réduire l'abandon de panier en offrant des alternatives
-* Sécuriser vos transactions avec des systèmes fiables
-* Optimiser vos coûts de transaction selon les montants
+* Meet the payment preferences of all your customers
+* Reduce cart abandonment by offering alternatives
+* Secure your transactions with reliable systems
+* Optimize your transaction costs based on amounts
 
-:::tip Astuce
-C'est comme avoir **plusieurs caisses dans un magasin** 🏪 — certains clients préfèrent payer en espèces, d'autres par carte. Plus vous offrez de choix, plus vous fidélisez votre clientèle.
+:::tip Tip
+It's like having **multiple checkouts in a store** 🏪 — some customers prefer to pay cash, others by card. The more choices you offer, the more you retain your clientele.
 :::
 
-## Passerelles disponibles
+## Available Gateways
 
-CLIENTXCMS supporte nativement plusieurs passerelles de paiement populaires :
+CLIENTXCMS natively supports several popular payment gateways:
 
 <DocCardList />
 
-### Types de passerelles
+### Gateway Types
 
-Les passerelles se répartissent en plusieurs catégories :
+Gateways fall into several categories:
 
-| Type de passerelle         | Description                                 | Exemples          |
-| -------------------------- | ------------------------------------------- | ----------------- |
-| **Cartes bancaires** | Paiement direct par carte de crédit/débit | Stripe, Stancer   |
-| **Portefeuilles**    | Solutions de paiement en ligne              | PayPal            |
-| **Virements**        | Transferts bancaires traditionnels          | Virement bancaire |
-| **Crédit boutique** | Système de solde interne                   | Balance           |
+| Gateway Type         | Description                                 | Examples          |
+| -------------------- | ------------------------------------------- | ----------------- |
+| **Credit Cards**     | Direct payment by credit/debit card         | Stripe, Stancer   |
+| **Wallets**          | Online payment solutions                    | PayPal            |
+| **Transfers**        | Traditional bank transfers                  | Bank Transfer     |
+| **Store Credit**     | Internal balance system                     | Balance           |
 
-## Configuration des passerelles
+## Gateway Configuration
 
-### Accès à la configuration
+### Accessing Configuration
 
-Pour configurer une passerelle de paiement :
+To configure a payment gateway:
 
-1. Rendez-vous dans `Paramètres` > `Paramètres de la boutique`
-2. Sélectionnez la section **« Passerelles de paiement »**
-3. Choisissez la passerelle que vous souhaitez configurer
+1. Go to `Settings` > `Store Settings`
+2. Select the **"Payment Gateways"** section
+3. Choose the gateway you want to configure
 
-### Paramètres communs
+### Common Parameters
 
-Chaque passerelle dispose de paramètres de base identiques :
+Each gateway has identical basic settings:
 
-**Nom** | (texte)`<br />`
+**Name** | (text)<br />
 
-Le nom d'affichage de la passerelle tel qu'il apparaîtra à vos clients lors du paiement.
+The gateway display name as it will appear to your customers during payment.
 
-**Montant minimal** | (montant)`<br />`
+**Minimum Amount** | (amount)<br />
 
-Montant minimal requis pour que cette passerelle soit proposée aux clients.
+Minimum amount required for this gateway to be offered to customers.
 
-**Statut** | (menu déroulant)`<br />`
+**Status** | (dropdown menu)<br />
 
-Définit la visibilité et la disponibilité de la passerelle :
+Defines the gateway's visibility and availability:
 
-* **Actif** : Visible et utilisable par tous les clients
-* **Non référencé** : Accessible uniquement aux administrateurs pour tests
-* **Caché** : Totalement invisible pour tous
+* **Active**: Visible and usable by all customers
+* **Unlisted**: Accessible only to administrators for testing
+* **Hidden**: Completely invisible to everyone
 
 :::info Information
-Certaines passerelles nécessitent des **paramètres de connexion spécifiques** (clés API, identifiants marchands, etc.). Consultez la documentation de chaque passerelle pour connaître les champs requis.
+Some gateways require **specific connection parameters** (API keys, merchant IDs, etc.). Consult each gateway's documentation for required fields.
 :::
 
-### Exemple de configuration
+### Configuration Example
 
-Voici un exemple de configuration pour la passerelle **Balance** (crédit boutique) :
+Here's a configuration example for the **Balance** (store credit) gateway:
 
-![Exemple de configuration Balance](/img/next_gen/settings/store/payment_gateways/balance/config.png)
+![Balance configuration example](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 
-Cette passerelle permet aux clients d'utiliser leur crédit boutique pour régler leurs commandes.
+This gateway allows customers to use their store credit to pay for their orders.
 
-## Statut des passerelles
+## Gateway Status
 
-Le **statut** détermine la visibilité et l'accessibilité de chaque passerelle :
+The **status** determines each gateway's visibility and accessibility:
 
 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
 
 <div style={{ flex: 1 }}>
 
-| Statut                     | Visibilité                               |
-| -------------------------- | ----------------------------------------- |
-| **Actif**            | Visible et utilisable par tous            |
-| **Non référencé** | Accessible aux administrateurs uniquement |
-| **Caché**           | Totalement invisible                      |
+| Status           | Visibility                               |
+| ---------------- | ---------------------------------------- |
+| **Active**       | Visible and usable by everyone           |
+| **Unlisted**     | Accessible to administrators only        |
+| **Hidden**       | Completely invisible                     |
 
 </div>
 
 <div style={{ flex: 1, textAlign: 'center' }}>
 
-:::tip Conseil
-Utilisez le statut **« Non référencé »** pour tester une nouvelle passerelle avant de la rendre publique.
+:::tip Advice
+Use the **"Unlisted"** status to test a new gateway before making it public.
 
 :::
 
@@ -118,69 +121,69 @@ Utilisez le statut **« Non référencé »** pour tester une nouvelle passerell
 
 </div>
 
-## Gestion des factures
+## Invoice Management
 
-### Modifier la passerelle d'une facture
+### Changing an Invoice's Gateway
 
-Vous pouvez changer la méthode de paiement d'une facture existante :
+You can change the payment method for an existing invoice:
 
-1. Rendez-vous dans la section **« Factures »**
-2. Sélectionnez la facture à modifier
-3. Changez la passerelle de paiement dans les détails de la facture
-4. Sauvegardez les modifications
+1. Go to the **"Invoices"** section
+2. Select the invoice to modify
+3. Change the payment gateway in the invoice details
+4. Save the modifications
 
-![Modification de passerelle sur une facture](/img/next_gen/settings/store/payment_gateways/invoice.png)
+![Gateway modification on an invoice](/img/next_gen/settings/store/payment_gateways/invoice.png)
 
-:::warning Attention
-La modification de la passerelle d'une facture peut affecter le processus de paiement en cours. Assurez-vous que le client en soit informé.
+:::warning Warning
+Modifying an invoice's gateway may affect the ongoing payment process. Make sure the customer is informed.
 :::
 
-## Configuration avancée
+## Advanced Configuration
 
-### Montants minimums
+### Minimum Amounts
 
-Chaque passerelle peut avoir un **montant minimum** différent :
+Each gateway can have a different **minimum amount**:
 
-- Utile pour éviter les frais sur les petites transactions
-- Permet d'orienter les clients vers les passerelles les plus rentables
-- Améliore l'expérience utilisateur en masquant les options non pertinentes
+- Useful to avoid fees on small transactions
+- Helps direct customers to the most cost-effective gateways
+- Improves user experience by hiding irrelevant options
 
-### Gestion des devises
+### Currency Management
 
-CLIENTXCMS gère automatiquement :
+CLIENTXCMS automatically handles:
 
-- La **conversion de devises** si nécessaire
-- L'**affichage des montants** dans la devise du client
-- Les **taux de change** en temps réel
+- **Currency conversion** if necessary
+- **Amount display** in the customer's currency
+- **Exchange rates** in real-time
 
-## Sécurité des paiements
+## Payment Security
 
-### Bonnes pratiques
+### Best Practices
 
-* **Utilisez uniquement des passerelles certifiées** PCI-DSS
-* **Activez la vérification 3D Secure** quand disponible
-* **Surveillez régulièrement** les transactions suspectes
-* **Tenez à jour** les configurations et clés API
+* **Use only PCI-DSS certified gateways**
+* **Enable 3D Secure verification** when available
+* **Regularly monitor** suspicious transactions
+* **Keep** configurations and API keys up to date
 
-### Conformité
+### Compliance
 
-Toutes les passerelles intégrées respectent :
+All integrated gateways comply with:
 
-- Les standards **PCI-DSS** pour la sécurité des cartes
-- Le règlement **RGPD** pour la protection des données
-- Les exigences **DSP2** pour l'authentification forte.
+- **PCI-DSS** standards for card security
+- **GDPR** regulation for data protection
+- **PSD2** requirements for strong authentication.
 
-## Configuration par passerelle
+## Configuration by Gateway
 
-Chaque passerelle dispose de sa propre documentation détaillée :
+Each gateway has its own detailed documentation:
 
-* **Configuration spécifique** selon le fournisseur
-* **Paramètres de connexion** requis
-* **Fonctionnalités avancées** disponibles
-* **Résolution des problèmes** courants
+* **Specific configuration** according to the provider
+* **Required connection parameters**
+* **Available advanced features**
+* **Common troubleshooting**
 
-Consultez la documentation de chaque passerelle pour obtenir les instructions détaillées de configuration.
+Consult each gateway's documentation for detailed configuration instructions.
 
-:::tip À retenir
-Une **configuration soignée de vos passerelles de paiement** est cruciale pour maximiser vos conversions. Testez régulièrement vos moyens de paiement et diversifiez vos options selon votre clientèle.
+:::tip Remember
+A **careful configuration of your payment gateways** is crucial to maximize your conversions. Regularly test your payment methods and diversify your options according to your clientele.
 :::

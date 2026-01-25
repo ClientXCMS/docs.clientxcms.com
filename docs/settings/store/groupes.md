@@ -1,237 +1,236 @@
 ---
+translated: true
 sidebar_position: 2
 ---
 
-# Groupes
+# Groups
 
-Dans **CLIENTXCMS**, un **groupe** correspond à une **catégorie logique de produits** que vous proposez dans votre boutique. <br/>
-L’objectif est simple : **organiser vos services et améliorer le processus d'achat** pour que vos clients puissent **naviguer facilement et acheter rapidement**. Un bon groupement améliore l’expérience utilisateur, guide la décision d’achat et donne à votre boutique un aspect structuré et professionnel.
+In **CLIENTXCMS**, a **group** corresponds to a **logical category of products** that you offer in your store. <br/>
+The objective is simple: **organize your services and improve the purchasing process** so your customers can **navigate easily and buy quickly**. Good grouping improves the user experience, guides purchasing decisions, and gives your store a structured and professional appearance.
 
-Chaque groupe peut être entièrement personnalisé : nom de ce dernier, description, visibilité, etc...
+Each group can be fully customized: name, description, visibility, etc.
 
-Vous pouvez gérer les groupes depuis :
+You can manage groups from:
 
-`Paramètres` > `Paramètres de la boutique` > `Groupes`
+`Settings` > `Store Settings` > `Groups`
 
-![Accès à la configuration des groupes](/img/next_gen/settings/store/groups/settings.png)
+![Group configuration access](/img/next_gen/settings/store/groups/settings.png)
 
-:::tip Astuce
-Un produit **doit toujours appartenir à un groupe** pour apparaître dans la boutique.
-Prenez donc un moment pour structurer vos groupes avant d’ajouter de nouveaux services.
+:::tip Tip
+A product **must always belong to a group** to appear in the store.
+Take a moment to structure your groups before adding new services.
 :::
 ---
 
-## Pourquoi utiliser des groupes ?
+## Why use groups?
 
-Imaginons que vous vendiez des services d’hébergement pterodactyl, des VPS, et des noms de domaine.
-Créer un groupe distinct pour chacun de ces types de produits permet à vos clients de :
+Imagine you sell pterodactyl hosting services, VPS, and domain names.
+Creating a distinct group for each of these product types allows your customers to:
 
-* Voir tout ce qui est lié à un même service au même endroit
-* Comprendre rapidement les différences entre les offres
-* Gagner du temps pour vos clients dans leur parcours d’achat
+* See everything related to the same service in one place
+* Quickly understand the differences between offers
+* Save time for your customers in their purchasing journey
 
-:::tip Astuce
-C’est un peu comme organiser les rayons d’un magasin 🛒 — plus c’est clair, plus c’est efficace.
+:::tip Tip
+It's a bit like organizing store aisles 🛒 — the clearer it is, the more effective it is.
 :::
 
-## Interfaces utilisateur
+## User Interfaces
 
-### Vue côté boutique
+### Store-side View
 
-La boutique est disponible à partir de l'URL : `/store`
+The store is available from the URL: `/store`
 
-Chaque groupe est accessible via une URL structurée comme suit :
+Each group is accessible via a structured URL as follows:
 
-https://demo.clientxcms.com/store/nomdugroupe
+https://demo.clientxcms.com/store/groupname
 
-Par exemple, pour un groupe nommé **VPS** :
+For example, for a group named **VPS**:
 https://demo.clientxcms.com/store/vps
 
 
-![Vue d'un groupe sur la boutique](/img/next_gen/settings/store/groups/view_group.png)
+![Group view on the store](/img/next_gen/settings/store/groups/view_group.png)
 
-Cela permet de **classer vos offres par type de service**, comme par exemple :
+This allows you to **organize your offers by service type**, such as:
 
-- Hébergement Minecraft
-- VPS KVM
-- VPS LXC
-- Licences ClientXCMS
-- Starter Pack Hébergeur
+- Minecraft Hosting
+- KVM VPS
+- LXC VPS
+- ClientXCMS Licenses
+- Hosting Starter Pack
 
-### Vue administrateur
+### Administrator View
 
-Dans l’interface d’administration, vous disposez d’une liste complète des groupes créés. Vous pouvez :
-- **Rechercher** un groupe par son nom
-- **Effectuer des actions** comme afficher, modifier, dupliquer ou supprimer un produit
+In the administration interface, you have a complete list of created groups. You can:
+- **Search** for a group by name
+- **Perform actions** like view, edit, duplicate, or delete a product
 
-![Vue de la liste des groupes dans l'administration](/img/next_gen/settings/store/groups/view_group_in_admin.png)
+![Group list view in administration](/img/next_gen/settings/store/groups/view_group_in_admin.png)
 
-## Gérer les groupes de produits
-### Crée un nouveau groupe
+## Managing Product Groups
+### Creating a New Group
 
-Créer un groupe vous permet d’organiser vos produits de manière logique et visuelle dans la boutique. Voici les champs à renseigner lors de la création :
+Creating a group allows you to organize your products logically and visually in the store. Here are the fields to fill in when creating:
 
-![Créer un groupe](/img/next_gen/settings/store/groups/create_group.png)
+![Create a group](/img/next_gen/settings/store/groups/create_group.png)
 
-**Nom** | (texte)<br />
-Le nom du groupe tel qu’il apparaîtra dans la boutique.
+**Name** | (text)<br />
+The group name as it will appear in the store.
 
-**Slug** | (texte)<br />
-La fin personnalisée de l’URL, permettant d’accéder directement à la page du groupe.
-(exemple : `vps-linux` donnera une URL du type : `clientxcms.com/store/vps-linux`)
+**Slug** | (text)<br />
+The custom URL ending, allowing direct access to the group page.
+(example: `vps-linux` will give a URL like: `clientxcms.com/store/vps-linux`)
 
-**Groupe Parent** | (menu déroulant)<br />
-Si ce groupe appartient à une catégorie supérieure, vous pouvez le rattacher ici. Utile pour créer des hiérarchies (ex. : `VPS` > `VPS Linux`).
+**Parent Group** | (dropdown menu)<br />
+If this group belongs to a higher category, you can attach it here. Useful for creating hierarchies (e.g.: `VPS` > `VPS Linux`).
 
-**Statut** | (menu déroulant)<br />
-Définit la visibilité du groupe dans la boutique :  
-- **Actif** : Disponible à l'achat
-- **Non référencé** : Accessible uniquement via un lien direct  
-- **Caché** : Indisponible à l'achat
+**Status** | (dropdown menu)<br />
+Defines the group's visibility in the store:
+- **Active**: Available for purchase
+- **Unlisted**: Accessible only via direct link
+- **Hidden**: Unavailable for purchase
 
-**Description** | (zone de texte)<br />
- Un court texte explicatif qui sera visible sur la page du groupe, pour aider le client à comprendre l’offre globale.
+**Description** | (text area)<br />
+A short explanatory text that will be visible on the group page, to help customers understand the overall offer.
 
-**Image** | (fichiers)<br />
-Illustration affichée sur la boutique. Cela permet de rendre l’interface plus visuelle et attractive.
+**Image** | (files)<br />
+Illustration displayed on the store. This makes the interface more visual and attractive.
 
-**Ordre de tri** | (champ numérique)<br />
- Contrôle la position du groupe dans la liste affichée. Plus le chiffre est bas, plus le groupe apparaît haut dans la boutique.
+**Sort Order** | (numeric field)<br />
+Controls the group's position in the displayed list. The lower the number, the higher the group appears in the store.
 
-**Épinglé** | (case à cocher)<br />
- Activez cette option pour mettre le groupe en avant — il s’affichera en tête de liste dans votre boutique.
+**Pinned** | (checkbox)<br />
+Enable this option to highlight the group — it will be displayed at the top of the list in your store.
 
-**Utiliser l'image comme arrière-plan** | (case à cocher)<br />
-Permet d’appliquer l’image sélectionnée comme arrière-plan du groupe sur la page boutique. Idéal pour créer une ambiance ou un repère visuel fort.
+**Use Image as Background** | (checkbox)<br />
+Allows you to apply the selected image as the group's background on the store page. Ideal for creating an ambiance or strong visual landmark.
 
-:::tip Astuce
-Prenez le temps de rédiger un nom et une description clairs et engageants. C’est souvent la première chose que vos clients liront avant de découvrir vos produits et cela améliorera votre référencement.
+:::tip Tip
+Take the time to write a clear and engaging name and description. This is often the first thing your customers will read before discovering your products, and it will improve your SEO.
 :::
 
-Voici une version améliorée et plus détaillée de ta section **"Cloner un groupe"**, avec un style cohérent et une explication claire des deux options. Je t’indique également où insérer les captures d’écran pour une UX optimale :
+### Cloning a Group
 
-### Cloner un groupe
+You can clone an existing group from the administration interface by clicking the **"Clone"** button located to the right of the group in question, in your groups list.
 
-Vous pouvez cloner un groupe existant depuis l’interface d’administration en cliquant sur le bouton **« Cloner »** situé à droite du groupe concerné, dans la liste de vos groupes.
+Once this action is initiated, **two choices are available**:
 
-Une fois cette action lancée, **deux choix s’offrent à vous** :
+* **Clone with products**:
+  This option duplicates not only the group settings (name, description, visibility...), but also **all the products** it contains.
+  The cloned products will have the same settings as the originals, saving you time if you want to offer a similar offer in another category.
 
-* **Cloner avec les produits** :
-  Cette option permet de dupliquer non seulement les paramètres du groupe (nom, description, visibilité...), mais également **tous les produits** qu’il contient.
-  Les produits clonés auront les mêmes réglages que les originaux, ce qui vous permet de gagner du temps si vous souhaitez proposer une offre similaire dans une autre catégorie.
-
-* **Cloner sans les produits** :
-  Ici, seul le groupe est dupliqué, sans aucun produit.
-  C’est idéal si vous souhaitez repartir d’un modèle de groupe sans dupliquer son contenu.
+* **Clone without products**:
+  Here, only the group is duplicated, without any products.
+  This is ideal if you want to start from a group template without duplicating its content.
 
 ---
 
-**Captures d’écran :**
+**Screenshots:**
 
-1. **Liste des groupes avec le bouton "Cloner" visible**
-![Vue de la liste des groupes avec l'option "cloner" dans l'administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_in_admin.png)
+1. **Group list with the "Clone" button visible**
+![Group list view with "clone" option in administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_in_admin.png)
 
-2. **Fenêtre modale avec les deux options "Avec les produits" / "Sans les produits"**
+2. **Modal window with the two options "With products" / "Without products"**
 
-![Vue de la liste des groupes avec la fenêtre modal de l'option "cloner" dans l'administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_modal_in_admin.png)
+![Group list view with "clone" option modal window in administration](/img/next_gen/settings/store/groups/view_feature_cloning_into_group_modal_in_admin.png)
 
-3. **Résultat final : aperçu du groupe cloné avec ou sans produits selon l’option choisie**
+3. **Final result: preview of the cloned group with or without products depending on the chosen option**
 
-![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_without_product_into_group_in_admin.png)
+![Cloned group view without products in administration](/img/next_gen/settings/store/groups/view_after_cloning_without_product_into_group_in_admin.png)
 
 
-### Editer un groupe
+### Editing a Group
 
-Pour éditer un groupe, appuyez sur le bouton "Afficher" présent dans la liste de vos groupes sur l'interface d'administration.<br />
-![Vue de la liste des groupes dans l'administration](/img/next_gen/settings/store/groups/view_group_in_admin.png)
+To edit a group, click the "View" button in your groups list on the administration interface.<br />
+![Group list view in administration](/img/next_gen/settings/store/groups/view_group_in_admin.png)
 
-Modifiez les informations nécessaire à l'édition initié puis enregistrer vos modifications avec le bouton "Mettre à jours les détails".
+Modify the necessary information for the initiated edit, then save your changes with the "Update details" button.
 
-![Éditer un groupe dans l'administration](/img/next_gen/settings/store/groups/edit_group_in_admin.png)
+![Edit a group in administration](/img/next_gen/settings/store/groups/edit_group_in_admin.png)
 
-#### Statut du groupe
+#### Group Status
 
-Le **statut** détermine la visibilité et l’accessibilité du produit :
+The **status** determines the product's visibility and accessibility:
 
 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
 
 <div style={{ flex: 1 }}>
 
-| Statut           | Visibilité                                                |
+| Status           | Visibility                                                |
 |------------------|-----------------------------------------------------------|
-| **Actif**        | Disponible à l'achat                                      |
-| **Non référencé**| Accessible uniquement via un lien direct                  |
-| **Caché**        | Indisponible à l'achat                                    |
+| **Active**       | Available for purchase                                    |
+| **Unlisted**     | Accessible only via direct link                           |
+| **Hidden**       | Unavailable for purchase                                  |
 
 </div>
 
 <div style={{ flex: 1 }}>
-  <img src="/img/next_gen/settings/store/products/statut_product.png" alt="Statut d'un produit" style={{ maxWidth: '100%' }} />
+  <img src="/img/next_gen/settings/store/products/statut_product.png" alt="Product status" style={{ maxWidth: '100%' }} />
 </div>
 
 </div>
 
-#### Traduire un groupe
+#### Translating a Group
 
-CLIENTXCMS intègre un **système de traduction complet** vous permettant d’adapter chaque groupe à différentes langues, sans compromis sur la précision ou l’expérience utilisateur.
+CLIENTXCMS integrates a **complete translation system** allowing you to adapt each group to different languages, without compromising precision or user experience.
 
-Chaque champ (nom, description, slug, etc.) est **entièrement personnalisable** selon la langue sélectionnée. Vous pouvez donc affiner chaque traduction manuellement pour garantir une cohérence parfaite avec votre offre.
+Each field (name, description, slug, etc.) is **fully customizable** according to the selected language. You can therefore refine each translation manually to ensure perfect consistency with your offer.
 
-![Traduire un groupe dans l'administration](/img/next_gen/settings/store/groups/trad_group_in_admin.png)
+![Translate a group in administration](/img/next_gen/settings/store/groups/trad_group_in_admin.png)
 
-Merci de vous référer à la section lié [aux traductions](../core/locales) pour de plus ample informations à ce sujet.
+Please refer to the section on [translations](../core/locales) for more information on this subject.
 
-:::tip Astuce
-La qualité de vos traductions peut grandement améliorer la perception de votre boutique par les utilisateurs internationaux — prenez le temps de les adapter avec soin.
+:::tip Tip
+The quality of your translations can greatly improve the perception of your store by international users — take the time to adapt them carefully.
 :::
 
-### Supprimer un groupe
-La suppression d’un groupe est possible uniquement s’il ne contient aucun produit.<br />
-Cette restriction permet d’éviter toute suppression accidentelle de services visibles en boutique.
+### Deleting a Group
+Group deletion is only possible if it contains no products.<br />
+This restriction prevents accidental deletion of services visible in the store.
 
-✅ **Étapes à suivre :**
+✅ **Steps to follow:**
 
-1. Assurez-vous que le groupe concerné ne contient **aucun produit actif**.
-2. Une fois cette condition remplie, vous pourrez supprimer ce dernier depuis la page de gestion des groupes au sein de votre espace d'adminsitration.
-3. Cliquez sur ce bouton : une **demande de confirmation** s’affichera pour valider votre action.
-4. Après confirmation, le groupe sera définitivement supprimé.
+1. Make sure the group in question contains **no active products**.
+2. Once this condition is met, you can delete it from the group management page in your administration area.
+3. Click this button: a **confirmation request** will appear to validate your action.
+4. After confirmation, the group will be permanently deleted.
 
-![Supprimer un groupe dans l'administration](/img/next_gen/settings/store/groups/delete_group_in_admin.png)
+![Delete a group in administration](/img/next_gen/settings/store/groups/delete_group_in_admin.png)
 
-:::danger Avertissement
-La suppression est **définitive** : le groupe ne pourra pas être restauré une fois supprimé.
-Assurez-vous d’avoir bien retiré ou déplacé les produits liés avant de procéder sinon vous ne pourrez effectué aucune action de suppression du groupe.
+:::danger Warning
+Deletion is **permanent**: the group cannot be restored once deleted.
+Make sure you have properly removed or moved linked products before proceeding, otherwise you will not be able to perform any group deletion action.
 :::
 
-### Cacher un groupe
-Cette option vous permet de rendre un groupe invisible dans la boutique, en un seul clic.
+### Hiding a Group
+This option allows you to make a group invisible in the store with a single click.
 
-Lorsque cette case est cochée :
+When this box is checked:
 
-* Le **groupe** n’apparaît plus dans l’interface publique,
-* Et **aucun des produits associés** ne sera visible ou disponible à l’achat.
+* The **group** no longer appears in the public interface,
+* And **none of the associated products** will be visible or available for purchase.
 
-C’est une solution idéale si vous souhaitez **désactiver temporairement une gamme de services** sans la supprimer.
+This is an ideal solution if you want to **temporarily disable a range of services** without deleting it.
 
-✅ **Comment faire ?**<br />
-Changer simplement le Statut de votre groupe **dans le menu déroulant** située au sein de l'édition de votre groupe.
+✅ **How to do it?**<br />
+Simply change the Status of your group **in the dropdown menu** located within your group edit.
 
-![Cacher un groupe dans l'administration](/img/next_gen/settings/store/groups/cached_group_in_admin.png)
+![Hide a group in administration](/img/next_gen/settings/store/groups/cached_group_in_admin.png)
 
-:::tip Astuce
-Vous pouvez réactiver l’affichage du groupe à tout moment en séléctionnant "Actif"
-C’est une manière souple de gérer les produits saisonniers, les offres en maintenance ou les lancements différés.
+:::tip Tip
+You can reactivate the group display at any time by selecting "Active".
+This is a flexible way to manage seasonal products, offers under maintenance, or delayed launches.
 :::
 
-## Gestion avancée
-### Métadonnées disponibles
+## Advanced Management
+### Available Metadata
 
-| Clé                          | Valeur   | Description                            |
+| Key                          | Value    | Description                            |
 |------------------------------|----------|----------------------------------------|
-| `use_image_as_background`    | `true`   | Lien pour ajouter le produit au panier |
-| `pinned_label`               | Texte    | Produit réalisé à la demande           |
-| `group_url`                  | Texte    | Titre du bouton d’ajout au panier      |
+| `use_image_as_background`    | `true`   | Link to add the product to cart        |
+| `pinned_label`               | Text     | Product made on demand                 |
+| `group_url`                  | Text     | Add to cart button title               |
 
-:::tip À retenir
-Utilisez les métadonnées pour affiner le comportement du produit sans modifier son code ou son module source.
+:::tip Remember
+Use metadata to refine product behavior without modifying its code or source module.
 :::

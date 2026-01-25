@@ -1,413 +1,414 @@
 ---
+translated: true
 sidebar_position: 1
 ---
 
-# Produits
+# Products
 
-Dans **CLIENTXCMS**, un **produit** correspond à un **service que vous proposez à la location** dans votre boutique. <br/>
-L’objectif est clair : **définir précisément chaque offre, personnaliser son apparence et maîtriser sa commercialisation**. Une bonne configuration des produits permet à vos clients de **comprendre rapidement ce qu’ils achètent** et de passer commande en toute confiance.
+In **CLIENTXCMS**, a **product** corresponds to a **service you offer for rent** in your store. <br/>
+The objective is clear: **precisely define each offer, customize its appearance and control its commercialization**. Good product configuration allows your customers to **quickly understand what they're buying** and place orders with confidence.
 
-Chaque produit peut être entièrement personnalisé : nom, description, prix, type, durée, gestion du stock, visibilité, etc.
+Each product can be fully customized: name, description, price, type, duration, stock management, visibility, etc.
 
-Vous pouvez gérer les produits depuis :
+You can manage products from:
 
-`Paramètres` > `Paramètres de la boutique` > `Produits`
+`Settings` > `Store Settings` > `Products`
 
-![Accès à la configuration des produits](/img/next_gen/settings/store/products/settings.png)
+![Product configuration access](/img/next_gen/settings/store/products/settings.png)
 
-:::tip Astuce
-Un produit **ne peut pas exister sans être rattaché à un groupe**.
-Avant de créer un produit, assurez-vous que les groupes sont bien définis pour garantir une boutique cohérente et facile à naviguer.
+:::tip Tip
+A product **cannot exist without being attached to a group**.
+Before creating a product, make sure groups are well defined to ensure a coherent and easy-to-navigate store.
 :::
 
-## Pourquoi utiliser des produits ?
+## Why use products?
 
-Les produits sont le cœur de votre boutique. Ils représentent concrètement ce que vous vendez — que ce soit un service d'hébergement comme un VPS, une instance Plesk, cPanel ou tout autre service.
+Products are the heart of your store. They concretely represent what you sell — whether it's a hosting service like a VPS, a Plesk instance, cPanel, or any other service.
 
-Créer des produits bien définis vous permet de :
+Creating well-defined products allows you to:
 
-* Présenter clairement chaque service proposé à vos clients
-* Définir précisément les caractéristiques, les prix et les options de chaque offre
-* Gérer facilement la facturation, la durée, et le renouvellement de vos services
+* Clearly present each service offered to your customers
+* Precisely define the characteristics, prices, and options for each offer
+* Easily manage billing, duration, and renewal of your services
 
-:::tip Astuce
-C’est un peu comme étiqueter chaque article dans un magasin 🏷️ — vos clients savent exactement ce qu’ils achètent, et vous, vous gardez le contrôle sur chaque aspect de la vente.
+:::tip Tip
+It's a bit like labeling each item in a store 🏷️ — your customers know exactly what they're buying, and you keep control over every aspect of the sale.
 :::
 
-## Interfaces utilisateur
-### Vue côté boutique
+## User Interfaces
+### Store-side View
 
-Les produits sont affichés dans la boutique et organisés par **groupes**.  
-Chaque groupe est accessible via une URL structurée comme suit :
+Products are displayed in the store and organized by **groups**.
+Each group is accessible via a structured URL as follows:
 
-https://demo.clientxcms.com/store/nomdugroupe
+https://demo.clientxcms.com/store/groupname
 
-Par exemple, pour un groupe nommé **pterodactyl** :
+For example, for a group named **pterodactyl**:
 https://demo.clientxcms.com/store/pterodactyl
 
-![Vision dans un groupe de produit](/img/next_gen/settings/store/products/store_list.png)
+![Product group view](/img/next_gen/settings/store/products/store_list.png)
 
-Cela permet de **classer vos offres par type de service**, comme par exemple :
+This allows you to **organize your offers by service type**, such as:
 
-- Hébergement Pterodactyl
-- Hébergement Minecraft
-- VPS KVM
-- VPS LXC
-- Licences ClientXCMS
-- Starter Pack Hébergeur
+- Pterodactyl Hosting
+- Minecraft Hosting
+- KVM VPS
+- LXC VPS
+- ClientXCMS Licenses
+- Hosting Starter Pack
 
-## Vue administrateur
+## Administrator View
 
-Dans l’interface d’administration, vous disposez d’une liste complète des produits créés. Vous pouvez :
-- **Rechercher** un produit par son nom ou le groupe de produit
-- **Filtrer** par groupe
-- **Effectuer des actions** comme modifier, dupliquer ou supprimer un produit
+In the administration interface, you have a complete list of created products. You can:
+- **Search** for a product by name or product group
+- **Filter** by group
+- **Perform actions** like edit, duplicate, or delete a product
 
-![Vue de la liste des produits en administration](/img/next_gen/settings/store/products/admin_list.png)
+![Product list view in administration](/img/next_gen/settings/store/products/admin_list.png)
 
-### Actions disponibles
+### Available Actions
 
 | Action        | Description                                  |
 |---------------|----------------------------------------------|
-| **Cloner**    | Duplique le produit existant                 |
-| **Afficher**  | Ouvre le produit pour l’éditer               |
-| **Supprimer** | Supprime définitivement le produit           |
+| **Clone**     | Duplicates the existing product              |
+| **View**      | Opens the product for editing                |
+| **Delete**    | Permanently deletes the product              |
 
-:::danger Attention
-La suppression d’un produit peut provoquer des erreurs si celui-ci est lié à des services ou commandes.  
-Procédez avec prudence, nous recommandons de ne rien supprimer sous aucun pretexte à aucun moment du cycle de vie de votre CMS.
+:::danger Warning
+Deleting a product can cause errors if it is linked to services or orders.
+Proceed with caution; we recommend never deleting anything under any circumstances at any point in your CMS lifecycle.
 :::
 
-### Types de produits
+### Product Types
 
-Chaque produit doit obligatoirement être **associé à un type**.  
-Les types sont fournis par les **modules d’approvisionnement** (comme *Pterodactyl*, *Proxmox* ou *Plesk*) que vous pouvez activer dans les paramètres d'administration situé dans `Paramètres` > `Paramètres des extensions` > `Extensions`
+Each product must be **associated with a type**.
+Types are provided by **provisioning modules** (like *Pterodactyl*, *Proxmox*, or *Plesk*) that you can enable in administration settings located at `Settings` > `Extension Settings` > `Extensions`
 
-Ces types permettent à CLIENTXCMS de synchroniser automatiquement vos produits avec les modules de gestion (facturation, création de service, configuration, etc.).
+These types allow CLIENTXCMS to automatically synchronize your products with management modules (billing, service creation, configuration, etc.).
 
-Merci de vous reporter directement à la section des [modules](../../../extensions) pour plus d'information à ce sujet.
+Please refer directly to the [modules section](/extensions/) for more information on this subject.
 
-### Cycles de facturation disponibles
+### Available Billing Cycles
 
-Un **cycle de facturation** détermine la fréquence à laquelle le client paiera pour le produit.
+A **billing cycle** determines how often the customer will pay for the product.
 
-Voici les cycles disponibles :
+Here are the available cycles:
 
-- **Mensuel**
-- **Trimestriel**
-- **Semestriel**
-- **Annuel**
-- **Biannuel**
-- **Triennal**
-- **Hebdomadaire**
+- **Monthly**
+- **Quarterly**
+- **Semi-annually**
+- **Annually**
+- **Biennially**
+- **Triennially**
+- **Weekly**
 
-Chaque cycle peut avoir son propre prix.
+Each cycle can have its own price.
 
-## Créer un nouveau produit
+## Creating a New Product
 
-Pour ajouter un produit à votre boutique, cliquez sur le bouton **« Créer »** en haut à droite de la page.
+To add a product to your store, click the **"Create"** button in the top right of the page.
 
-![Création d'un produit](/img/next_gen/settings/store/products/create_product.png)
+![Product creation](/img/next_gen/settings/store/products/create_product.png)
 
-### Paramètres à définir
+### Parameters to Define
 
-Voici les champs à compléter lors de la création d’un produit :
+Here are the fields to complete when creating a product:
 
-**Nom** | (texte)<br />
+**Name** | (text)<br />
 
-Le nom du produit tel qu’il apparaîtra dans votre boutique, ce dernier sera également sa référence commerciale sur les factures
+The product name as it will appear in your store; this will also be its commercial reference on invoices.
 
-**Stock disponible** |  (champ numérique)<br />
+**Available Stock** | (numeric field)<br />
 
-Quantité disponible pour ce produit. Reportez-vous à la section [Gérer le stock d’un produit](./products#gérer-le-stock-dun-produit) pour en savoir plus.
+Quantity available for this product. Refer to the [Managing Product Stock](./products#managing-product-stock) section to learn more.
 
-**Type de produit** | (menu déroulant)<br />
+**Product Type** | (dropdown menu)<br />
 
-Sélectionnez le type de service que vous souhaitez livrer à votre client. Pour plus d'informations, consultez la section dédiée aux [types de produits](./products#types-de-produits).
+Select the type of service you want to deliver to your customer. For more information, see the dedicated [product types](./products#product-types) section.
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Définit la visibilité du produit dans la boutique :
+Defines the product's visibility in the store:
 
-* **Actif** : Disponible à l'achat dans la boutique
-* **Non référencé** : Accessible uniquement via un lien direct
-* **Caché** : Indisponible à l'achat
+* **Active**: Available for purchase in the store
+* **Unlisted**: Accessible only via direct link
+* **Hidden**: Unavailable for purchase
 
-Merci de vous reporter à la section dédié [au statut d'un produit](./products#statut-du-produit). pour de plus ample informations à ce sujet. <br />
+Please refer to the dedicated [product status](./products#product-status) section for more information on this subject. <br />
 
-**Groupe de produit** | (menu déroulant)<br />
+**Product Group** | (dropdown menu)<br />
 
-Associez votre produit à un groupe pour qu’il apparaisse correctement dans la boutique.<br />
-Merci de vous reporter à la page dédié aux [groupes](./groupes) pour de plus ample informations à ce sujet.<br />
+Associate your product with a group so it appears correctly in the store.<br />
+Please refer to the dedicated [groups](./groupes) page for more information on this subject.<br />
 
-**Ordre de tri** | (champ numérique)<br />
+**Sort Order** | (numeric field)<br />
 
-Détermine la position du produit dans son groupe. Un chiffre plus bas le place plus haut dans la liste.
+Determines the product's position in its group. A lower number places it higher in the list.
 
-**Épinglé** | (case à cocher)<br />
+**Pinned** | (checkbox)<br />
 
-Permet de mettre en avant ce produit. Il sera affiché en tête de liste dans son groupe.
+Allows you to highlight this product. It will be displayed at the top of the list in its group.
 
-**Description** | (zone de texte avec éditeur HTML)<br />
+**Description** | (text area with HTML editor)<br />
 
-Rédigez ici une courte description qui sera affichée dans la description du produit. Ce champ prend en charge le HTML et le CSS via l'éditeur intégré (compatible avec TailwindCSS).
+Write a short description here that will be displayed in the product description. This field supports HTML and CSS via the integrated editor (compatible with TailwindCSS).
 
-> ⚠️ Soyez rigoureux : un code mal structuré ou une balise non fermée peut altérer l'affichage du CMS.
+> ⚠️ Be rigorous: poorly structured code or an unclosed tag can affect the CMS display.
 
-Exemple de description en HTML
+HTML description example
 
 ```html
-<p class="ql-align-center">Une solution conçue pour allier accessibilité et fiabilité, soutenue par votre engagement.</p>
-<p class="ql-align-center"><em>(Offre réservée aux adhérents de l'association)</em></p>
+<p class="ql-align-center">A solution designed to combine accessibility and reliability, supported by your commitment.</p>
+<p class="ql-align-center"><em>(Offer reserved for association members)</em></p>
 <ol>
-    <li class="ql-align-center"><strong>Processeur</strong> : 8 vCPU Ryzen 9 7950x3D @ 4.2 GHz jusqu'à 5.7 GHz</li>
-    <li class="ql-align-center"><strong>Mémoire vive</strong> : 32 Go de RAM DDR5</li>
-    <li class="ql-align-center"><strong>Stockage</strong> : 200 Go SSD</li>
-    <li class="ql-align-center"><strong>Connectivité</strong> : IPv4 incluse, 1 Gbps en burst</li>
+    <li class="ql-align-center"><strong>Processor</strong>: 8 vCPU Ryzen 9 7950x3D @ 4.2 GHz up to 5.7 GHz</li>
+    <li class="ql-align-center"><strong>Memory</strong>: 32 GB DDR5 RAM</li>
+    <li class="ql-align-center"><strong>Storage</strong>: 200 GB SSD</li>
+    <li class="ql-align-center"><strong>Connectivity</strong>: IPv4 included, 1 Gbps burst</li>
 </ol>
-<p class="ql-align-center">🛡️ | Protection Anti-DDoS (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
-<p class="ql-align-center">🚚 | Livraison en <strong>quelques minutes seulement</strong></p>
+<p class="ql-align-center">🛡️ | Anti-DDoS Protection (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
+<p class="ql-align-center">🚚 | Delivery in <strong>just a few minutes</strong></p>
 ```
 
-:::tip Astuce
-Prenez le temps de rédiger un **nom clair** et une **description engageante**. C’est souvent le premier contact qu’a un client avec votre service. Une bonne présentation peut faire toute la différence – et améliorer votre référencement naturel.
+:::tip Tip
+Take the time to write a **clear name** and an **engaging description**. This is often the first contact a customer has with your service. A good presentation can make all the difference — and improve your SEO.
 :::
 
-:::tip Astuce
-Certain thème supporte les descriptions personnalisées dans les mêtadata du produit. Plus d'informations dans la documentation du thème utilisé. Vous pouvez générer les descriptions avec ce [outil en ligne](https://cdn.clientxcms.com/ressources/simulator).
+:::tip Tip
+Some themes support custom descriptions in product metadata. More information in your theme's documentation. You can generate descriptions with this [online tool](https://cdn.clientxcms.com/ressources/simulator).
 :::
 
-## Configuration des prix
+## Pricing Configuration
 
-Chaque cycle de facturation peut avoir :
-- un **prix** distinct
-- des **frais d’installation** facultatifs
+Each billing cycle can have:
+- a distinct **price**
+- optional **setup fees**
 
-🟢 Un produit avec un prix de `0` est **considéré comme gratuit**.  
-🔴 Si vous laissez le champ prix vide pour un cycle, **il sera désactivé**.
+🟢 A product with a price of `0` is **considered free**.
+🔴 If you leave the price field empty for a cycle, **it will be disabled**.
 
-### Utiliser la calculatrice intégrée
+### Using the Integrated Calculator
 
-![Interface de la calculatrice de prix](/img/next_gen/settings/store/products/create_pricing2.png)
+![Price calculator interface](/img/next_gen/settings/store/products/create_pricing2.png)
 
-CLIENTXCMS propose une **calculatrice de prix intégrée**.  
-Elle vous aide à :
-- appliquer une **réduction en %**
+CLIENTXCMS offers an **integrated price calculator**.
+It helps you:
+- apply a **percentage discount**
 
-Cette fonction est idéale pour proposer des offres dégressives cohérentes.
+This feature is ideal for offering consistent degressive offers.
 
-Les tarifs calculés apparaîtront ainsi dans la fiche produit côté panier.
+The calculated prices will appear in the product card on the cart side.
 
-Cela permet de simplifier le choix du client tout en maintenant une cohérence commerciale dans vos offres.
+This simplifies customer choice while maintaining commercial consistency in your offers.
 
-:::tip Astuce
-Si vous souhaitez configurer des cycles de facturation additionnels avant d’ouvrir la calculatrice, cliquez sur le bouton « Configurer plus de tarifs ».
-Cela permettra d’afficher tous les cycles disponibles.
-Sans cette étape, la calculatrice appliquera votre réduction uniquement sur les cycles visibles à l’écran.
+:::tip Tip
+If you want to configure additional billing cycles before opening the calculator, click the "Configure more prices" button.
+This will display all available cycles.
+Without this step, the calculator will apply your discount only to the cycles visible on the screen.
 :::
 
-### Affichage des cycles de facturation
+### Billing Cycle Display
 
-Les cycles de facturation configuré pour un produit sont automatiquement affichés sur la page de configuration, juste avant l'ajout au panier.
+The billing cycles configured for a product are automatically displayed on the configuration page, just before adding to cart.
 
-![Affichage des cycles](/img/next_gen/settings/store/products/config_billing.png)
+![Cycle display](/img/next_gen/settings/store/products/config_billing.png)
 
-Cela permet au client de choisir facilement la durée de souscription souhaitée.
+This allows the customer to easily choose their desired subscription duration.
 
-### Présélection d’un cycle via l’URL
+### Pre-selecting a Cycle via URL
 
-Il est possible de **préselectionner un cycle de facturation** par défaut, directement depuis l’URL, à l’aide du paramètre `billing`.  
-Cela est particulièrement utile pour orienter vos visiteurs vers un cycle associée à une offre précise depuis votre site vitrine.
+It's possible to **pre-select a billing cycle** by default, directly from the URL, using the `billing` parameter.
+This is particularly useful for directing visitors to a cycle associated with a specific offer from your showcase site.
 
-Par exemple, pour présélectionner un cycle **annuel**, ajoutez ce paramètre à votre URL :
+For example, to pre-select an **annual** cycle, add this parameter to your URL:
 
-Ce qui donne une URL complète comme :
+This gives a complete URL like:
 https://demo.clientxcms.com/store/basket/add/4?billing=annually
 
-#### Paramètres disponibles pour préselectionner le cycle de facturation
+#### Available Parameters for Pre-selecting the Billing Cycle
 
-Voici les valeurs possibles du paramètre `billing` :
+Here are the possible values for the `billing` parameter:
 
-| Valeur du paramètre | Cycle de facturation | Description                           |
+| Parameter Value      | Billing Cycle        | Description                           |
 |----------------------|----------------------|---------------------------------------|
-| `monthly`            | Mensuel              | Facturation tous les mois             |
-| `quarterly`          | Trimestriel          | Facturation tous les 3 mois           |
-| `semiannually`       | Semestriel           | Facturation tous les 6 mois           |
-| `annually`           | Annuel               | Facturation tous les 12 mois          |
-| `biennially`         | Biannuel             | Facturation tous les 24 mois          |
-| `triennially`        | Triennal             | Facturation tous les 36 mois          |
-| `weekly`             | Hebdomadaire         | Facturation chaque semaine            |
+| `monthly`            | Monthly              | Monthly billing                       |
+| `quarterly`          | Quarterly            | Billing every 3 months                |
+| `semiannually`       | Semi-annually        | Billing every 6 months                |
+| `annually`           | Annually             | Billing every 12 months               |
+| `biennially`         | Biennially           | Billing every 24 months               |
+| `triennially`        | Triennially          | Billing every 36 months               |
+| `weekly`             | Weekly               | Weekly billing                        |
 
-:::tip Astuce
-Assurez-vous que le cycle sélectionné est bien **tarifé** dans la configuration du produit. Si le champ de prix est vide, le cycle ne pourra pas être affiché ni sélectionné.
+:::tip Tip
+Make sure the selected cycle is properly **priced** in the product configuration. If the price field is empty, the cycle cannot be displayed or selected.
 :::
 
-### Activer des cycles de facturation supplémentaires
+### Enabling Additional Billing Cycles
 
-Par défaut, certains cycles comme le **biannuel**, le **triennal** ou **l’hebdomadaire** peuvent ne pas être visibles dans l’interface de configuration du produit.
+By default, some cycles like **biennial**, **triennial**, or **weekly** may not be visible in the product configuration interface.
 
-Pour les rendre disponibles, cliquez sur le bouton **« Configurer plus de tarifs »** dans la section des prix de la fiche produit.
+To make them available, click the **"Configure more prices"** button in the pricing section of the product page.
 
-![Configurer d'autres cycles de facturation](/img/next_gen/settings/store/products/config_more_princing.png)
+![Configure other billing cycles](/img/next_gen/settings/store/products/config_more_princing.png)
 
-Vous pourrez alors ajouter et personnaliser les tarifs de ces cycles selon vos besoins.
+You can then add and customize the prices for these cycles according to your needs.
 
 :::info
-Assurez-vous de **renseigner un prix pour chaque cycle de facturation que vous activez**, sans quoi il ne sera pas affiché aux clients dans la boutique. <br/>
-Concernant les **frais d'installation**, même si vous videz le champ, ils seront automatiquement ramenés à zéro — c’est un comportement normal du système.
+Make sure to **enter a price for each billing cycle you enable**, otherwise it won't be displayed to customers in the store. <br/>
+Regarding **setup fees**, even if you empty the field, they will automatically be set to zero — this is normal system behavior.
 :::
 
-## Édition d’un produit
+## Product Editing
 
-L’édition d’un produit vous permet de **modifier ses caractéristiques**, comme si vous le recréiez, tout en conservant son lien avec les commandes existantes ou son historique de ventes.
+Product editing allows you to **modify its characteristics**, as if you were recreating it, while preserving its link to existing orders or sales history.
 
-### Accéder à l’édition
+### Accessing Editing
 
-Pour éditer un produit :
+To edit a product:
 
-1. Rendez-vous dans la liste des produits.
-2. Cliquez sur le bouton **« Afficher »** dans la colonne **Actions** du produit concerné.
+1. Go to the product list.
+2. Click the **"View"** button in the **Actions** column of the relevant product.
 
-![Accès à l'édition d'un produit](/img/next_gen/settings/store/products/edit_product.png)
+![Product editing access](/img/next_gen/settings/store/products/edit_product.png)
 
-### Modifier les informations générales
+### Modifying General Information
 
-Une fois dans l’interface d’édition, vous pouvez modifier :
-- Le **nom du produit**
-- Sa **description**
-- Son **type**, **groupe**, **stock**, **ordre d’affichage**, etc.
+Once in the editing interface, you can modify:
+- The **product name**
+- Its **description**
+- Its **type**, **group**, **stock**, **display order**, etc.
 
-![Affichage d'un service](/img/next_gen/settings/store/products/view_product.png)
+![Service display](/img/next_gen/settings/store/products/view_product.png)
 
-Cela fonctionne exactement comme lors de la **création** du produit. Les modifications sont prises en compte immédiatement après l’enregistrement.
+This works exactly like when **creating** the product. Changes take effect immediately after saving.
 
-## Configuration technique du produit
+## Product Technical Configuration
 
-Chaque produit peut avoir une **configuration spécifique** selon son type (ex. : hébergement pterodactyl, VPS livré sur un proxmox, licence ClientXCMS, etc.). Cette configuration détermine **les ressources et les limitations** de l’offre, c'est la configuration du produit.
+Each product can have a **specific configuration** based on its type (e.g.: pterodactyl hosting, VPS delivered on proxmox, ClientXCMS license, etc.). This configuration determines **the resources and limitations** of the offer — this is the product configuration.
 
-### Exemple avec un module : Pterodactyl
+### Example with a Module: Pterodactyl
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
 
 <div style={{ flex: '1 1 400px' }}>
 
-Si votre produit repose sur le module **Pterodactyl**, vous pouvez configurer :
+If your product uses the **Pterodactyl** module, you can configure:
 
-| Fonctionnalité                            | Description                                                                 |
-|------------------------------------------|------------------------------------------------------------------------------|
-| Nom / Description du serveur             | Permet de personnaliser le nom et la description affichés à la livraison.    |
-| L’emplacement de livraison               | Définit le serveur physique sur lequel le service sera déployé.              |
-| L’œuf                                    | Sélectionne l’egg Pterodactyl à utiliser pour le service.                    |
-| Commande de démarrage                    | Détermine comment l’instance démarre sur le serveur Pterodactyl.             |
-| Image Docker                             | Définit l’image système utilisée pour le déploiement.                        |
-| CPU                                      | Spécifie le nombre de cœurs alloués à l’instance.                            |
-| RAM                                      | Quantité de mémoire vive allouée.                                            |
-| Stockage                                 | Espace disque attribué à l’instance.                                         |
-| Allocations (ports)                      | Nombre de ports assignés au service.                                         |
-| Backups / Bases de données               | Nombre de sauvegardes ou de bases de données autorisées.                     |
+| Feature                            | Description                                                                 |
+|-----------------------------------|------------------------------------------------------------------------------|
+| Server Name / Description         | Customize the name and description displayed upon delivery.                 |
+| Delivery Location                 | Defines the physical server on which the service will be deployed.          |
+| Egg                               | Selects the Pterodactyl egg to use for the service.                         |
+| Startup Command                   | Determines how the instance starts on the Pterodactyl server.               |
+| Docker Image                      | Defines the system image used for deployment.                               |
+| CPU                               | Specifies the number of cores allocated to the instance.                    |
+| RAM                               | Amount of memory allocated.                                                 |
+| Storage                           | Disk space allocated to the instance.                                       |
+| Allocations (ports)               | Number of ports assigned to the service.                                    |
+| Backups / Databases               | Number of backups or databases allowed.                                     |
 
 </div>
 
 <div style={{ flex: '1 1 200px', textAlign: 'center' }}>
-  <img src="/img/next_gen/extensions/modules/pterodactyl/images_4.png" alt="Exemple de configuration Pterodactyl" style={{ maxWidth: '100%', borderRadius: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
+  <img src="/img/next_gen/extensions/modules/pterodactyl/images_4.png" alt="Pterodactyl configuration example" style={{ maxWidth: '100%', borderRadius: '6px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
 </div>
 
 </div>
 
-:::info  
-Les champs affichés dépendent du **type de produit** et du **module d’approvisionnement** activé.  
-Consultez la documentation spécifique du module pour connaître les paramètres disponibles pour ce dernier.  
+:::info
+The displayed fields depend on the **product type** and the **provisioning module** enabled.
+Consult the specific module documentation to learn about available parameters.
 :::
 
-## Supprimer un produit
+## Deleting a Product
 
-:::danger Avertissement
-La suppression d’un produit peut provoquer des dysfonctionnements dans le système, notamment si le produit est lié à des services ou une commande existantes. Les recommandations de l'équipe sont de ne jamais supprimer un élément quelques soit le cycle de vie du CMS.
+:::danger Warning
+Deleting a product can cause system malfunctions, especially if the product is linked to existing services or orders. The team's recommendation is to never delete any element at any point in the CMS lifecycle.
 :::
 
-Pour supprimer un produit :
-1. Cliquez sur le bouton rouge **« Supprimer »** dans la colonne **Actions**.
-2. Confirmez l’opération.
+To delete a product:
+1. Click the red **"Delete"** button in the **Actions** column.
+2. Confirm the operation.
 
-![Supression d'un produit](/img/next_gen/settings/store/products/edit_product.png)
+![Product deletion](/img/next_gen/settings/store/products/edit_product.png)
 
-## Statut du produit
+## Product Status
 
-Le **statut** détermine la visibilité et l’accessibilité du produit :
+The **status** determines the product's visibility and accessibility:
 
 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
 
 <div style={{ flex: 1 }}>
 
-| Statut           | Visibilité                               |
+| Status           | Visibility                               |
 |------------------|------------------------------------------|
-| **Actif**        | Disponible à l'achat                     |
-| **Non référencé**| Accessible uniquement via un lien direct |
-| **Caché**        | Indisponible à l'achat                   |
+| **Active**       | Available for purchase                   |
+| **Unlisted**     | Accessible only via direct link          |
+| **Hidden**       | Unavailable for purchase                 |
 
 </div>
 
 <div style={{ flex: 1 }}>
-  <img src="/img/next_gen/settings/store/products/statut_product.png" alt="Statut d'un produit" style={{ maxWidth: '100%' }} />
+  <img src="/img/next_gen/settings/store/products/statut_product.png" alt="Product status" style={{ maxWidth: '100%' }} />
 </div>
 
 </div>
 
-## Lien direct pour ajouter un produit au panier
+## Direct Link to Add a Product to Cart
 
-Lorsque vous éditez un produit, un lien est généré automatiquement.  
-Ce dernier permet d’ajouter le produit au panier depuis votre site vitrine :
+When you edit a product, a link is automatically generated.
+This allows you to add the product to the cart from your showcase site:
 
 https://demo.clientxcms.com/store/basket/add/[id]
 
-Remplacez `[id]` par l’ID réel du produit ou bien récupérer le lien directement sur la page de votre produit.
+Replace `[id]` with the actual product ID or retrieve the link directly from your product page.
 
-![Lien Basket](/img/next_gen/settings/store/products/view_link_basket.png)
+![Basket Link](/img/next_gen/settings/store/products/view_link_basket.png)
 
-## Gérer le stock d’un produit
+## Managing Product Stock
 
-### Stock manuel
+### Manual Stock
 
-- Définissez une valeur dans le champ **Stock disponible** :
-  - `0` → Le produit est **indisponible à l’achat**.
-  - `-1` → Le stock est **illimité**.
+- Set a value in the **Available Stock** field:
+  - `0` → The product is **unavailable for purchase**.
+  - `-1` → Stock is **unlimited**.
 
-### Stock automatique
+### Automatic Stock
 
-CLIENTXCMS permet d’automatiser la gestion du stock grâce à une métadonnée :
+CLIENTXCMS allows you to automate stock management using metadata:
 
-| Clé          | Valeur | Effet                              |
+| Key          | Value  | Effect                              |
 |--------------|--------|-------------------------------------|
-| `auto_stock` | `true` | Le stock est ajusté automatiquement |
+| `auto_stock` | `true` | Stock is automatically adjusted     |
 
-- Lorsqu’un **service est commandé**, le stock est décrémenté.
-- Lorsqu’un **service est expiré ou supprimé**, le stock est incrémenté.
+- When a **service is ordered**, stock is decremented.
+- When a **service expires or is deleted**, stock is incremented.
 
-### Désactiver la gestion de stock
+### Disabling Stock Management
 
-Pour forcer l’interface à ignorer toute gestion de stock, utilisez la métadonnée :
+To force the interface to ignore all stock management, use the metadata:
 
-| Clé             | Valeur | Effet                              |
-|------------------|--------|-------------------------------------|
-| `disabled_stock` | `true` | La gestion de stock est désactivée |
+| Key               | Value  | Effect                              |
+|-------------------|--------|-------------------------------------|
+| `disabled_stock`  | `true` | Stock management is disabled        |
 
-## Métadonnées disponibles
+## Available Metadata
 
-Les **métadonnées** permettent d’ajouter des options personnalisées à un produit.
+**Metadata** allows you to add custom options to a product.
 
-Voici les clés disponibles :
+Here are the available keys:
 
-| Clé                             | Valeur              | Description                              |
+| Key                             | Value               | Description                              |
 |---------------------------------|---------------------|------------------------------------------|
-| `basket_url`                    | Texte               | Lien pour ajouter le produit au panier   |
-| `is_personalized_product`       | `true`              | Produit réalisé à la demande             |
-| `basket_title`                  | Texte               | Titre du bouton d’ajout au panier        |
-| `allow_only_as_much_services`   | `active:3` / `all:5`| Limite le nombre de services autorisés   |
-| `auto_stock`                    | `true`              | Active la gestion automatique du stock   |
-| `disabled_stock`                | `true`              | Désactive toute gestion de stock         |
-| `pinned_label`                  | Texte               | Étiquette spéciale visible en boutique   |
-| `max_renewals`                  | Nombre              | Nombre total de renouvellements possibles|
+| `basket_url`                    | Text                | Link to add the product to cart          |
+| `is_personalized_product`       | `true`              | Product made on demand                   |
+| `basket_title`                  | Text                | Add to cart button title                 |
+| `allow_only_as_much_services`   | `active:3` / `all:5`| Limits the number of allowed services    |
+| `auto_stock`                    | `true`              | Enables automatic stock management       |
+| `disabled_stock`                | `true`              | Disables all stock management            |
+| `pinned_label`                  | Text                | Special label visible in store           |
+| `max_renewals`                  | Number              | Total number of possible renewals        |
 
-:::tip À retenir
-Utilisez les métadonnées pour affiner le comportement du produit sans modifier son code ou son module source.
+:::tip Remember
+Use metadata to refine product behavior without modifying its code or source module.
 :::

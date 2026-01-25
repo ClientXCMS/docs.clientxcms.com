@@ -1,37 +1,40 @@
 ---
 sidebar_position: 7
+translated: true
 ---
-# Créer son premier service
-Vous pouvez créer un service en quelques clics depuis votre espace client. Pour cela, rendez-vous sur `Espace Administation` > `Services` > `Créer`.
+# Creating Your First Service
 
-Dans cette étape, veuillez sélectionner le client, le produit que vous avez créé et le type de service. Puis cliquez sur suivant.
+You can create a service in just a few clicks from your admin panel. To do so, go to `Admin Panel` > `Services` > `Create`.
+
+In this step, please select the client, the product you created, and the service type. Then click next.
 ![img](/img/next_gen/services/create_step1.png)
 
-Dans cette seconde étape, vous pouvez remplir le formulaire et choisir selon le type de module, les VPS ou serveurs de jeux déjà existants que vous avez sur votre serveur. Puis cliquez sur importer
+In this second step, you can fill out the form and choose, based on the module type, the existing VPS or game servers that you have on your server. Then click import.
 
-- **Nom du service** : Nom du service
-- **Expiration** : Date d'expiration du service
-- **Description** : Description du service - visible par le client, non modifiable par le client
-- **Prix** : Prix du service
-- **Prix initial** : Prix initial du service
-- **Serveur** : Serveur où le service est hébergé
-- **Recurrence** : Cycle de facturation
-- **Notes** : Notes sur le service
-- **Renouvellement maximum** : Nombre maximum de renouvellements (vide pour illimité)
+- **Service Name**: The display name for this service
+- **Expiration**: Service expiration date
+- **Description**: Service description - visible to the customer, not editable by the customer
+- **Price**: Service price
+- **Initial Price**: Initial service price
+- **Server**: Server where the service is hosted
+- **Billing Cycle**: How often the service is billed (monthly, yearly, etc.)
+- **Notes**: Notes about the service
+- **Maximum Renewals**: Maximum number of renewals (empty for unlimited)
 
 ![img](/img/next_gen/services/create_service.png)
 
 :::info
-La création ne crée pas de facture, il faudra passer par une commande sur votre compte client pour générer une facture.
+Creating a service does not create an invoice. You will need to place an order through your customer account to generate an invoice.
 :::
 
-## Problème de livraison
+## Delivery Issues
 
-Si vous avez un problème de livraison de service, rendez-vous sur `Espace Administation` > `Paramètres` > `Historique` et recherchez le fichier 'services-delivery.log'. Vous pouvez également consulter la page du module d'approvisionnement pour plus d'informations.
+If you have a service delivery issue, go to `Admin Panel` > `Settings` > `History` and look for the file 'services-delivery.log'. You can also check the provisioning module page for more information.
 ![img](/img/next_gen/services/delivery_log.png)
 
-Par exemple, dans ce cas de figure, le service n'a pas pu être livré, car le pterodactyl n'a plus d'allocation disponible. Plus d'informations sur la configuration du module Pterodactyl [ici](../extensions/modules/Pterodactyl.md#erreurs-courantes).
+For example, in this case, the service could not be delivered because Pterodactyl has no more available allocations. More information about configuring the Pterodactyl module is available [here](../extensions/modules/Pterodactyl.md#common-errors).
 
-## Aperçu d'un service
-Voici un aperçu d'un service.
+## Service Overview
+
+Here is an overview of a service.
 ![img](/img/next_gen/services/show_service.png)

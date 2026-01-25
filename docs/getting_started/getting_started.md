@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
+translated: true
 ---
-# Comment bien démarrer
+# Getting Started
 ## Introduction
-Bienvenue dans le processus de démarrage de votre espace client. Nous allons vous guider à travers les étapes nécessaires pour configurer votre espace client et commencer à utiliser les services de la plateforme. Nous vous recommandons de suivre les étapes dans l'ordre pour une meilleure expérience utilisateur.
+Welcome to the setup process for your client area. We will guide you through the necessary steps to configure your client area and start using the platform's services. We recommend following the steps in order for a better user experience.
 

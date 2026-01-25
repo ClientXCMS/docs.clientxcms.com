@@ -1,32 +1,33 @@
 ---
 sidebar_position: 4
+translated: true
 ---
-# Clients
-Les clients sont les utilisateurs de votre espace client. Ils peuvent se connecter à leur espace client pour gérer leurs services, factures, tickets, etc. Ils peuvent se connecter via la page de connexion de l'espace client. Les clients peuvent s'inscrire via la page d'inscription de l'espace client ou manuellement via l'administration.
+# Customers
+Customers are the users of your client area. They can log in to their client area to manage their services, invoices, tickets, etc. They can log in via the client area login page. Customers can register via the client area registration page or manually through the administration panel.
 
-## Gestion des clients
-Vous pouvez gérer les clients via l'administration. Vous pouvez voir la liste des clients, les éditer, les supprimer.
-Les pastilles de couleur sur la première colonne de la liste des clients indiquent le statut du client. Les couleurs sont les suivantes :
-- Vert : Le client est actif
-- Jaune : Le client est suspendu ou en attente de confirmation
-- Rouge : Le client est banni
+## Customer Management
+You can manage customers through the administration panel. You can view the customer list, edit them, and delete them.
+The colored badges in the first column of the customer list indicate the customer's status. The colors are as follows:
+- Green: The customer is active
+- Yellow: The customer is suspended or pending confirmation
+- Red: The customer is banned
 ![image](/img/next_gen/customers/customers.png)
-Vous pouvez rechercher un client via la barre de recherche en haut de la page. Vous pouvez rechercher un client par son nom, prénom, email.
+You can search for a customer using the search bar at the top of the page. You can search for a customer by their name, first name, or email.
 
-## Création de client via l'administration
-Pour créer un client via l'administration, cliquez sur le bouton `Créer` en haut à droite de la page. Vous serez redirigé vers la page de création de client. 
+## Creating a Customer via Administration
+To create a customer through the administration panel, click the `Create` button at the top right of the page. You will be redirected to the customer creation page.
 ![image](/img/next_gen/customers/create.png)
-## Fiche client
-Vous pouvez voir la fiche client en cliquant sur le bouton `Voir` sur la liste des clients. Vous pouvez voir les informations du client, ses services, ses factures, ses tickets, ses emails, ses moyens de paiement, son historique des actions sous forme de tableau.
+## Customer Profile
+You can view the customer profile by clicking the `View` button on the customer list. You can see the customer's information, their services, invoices, tickets, emails, payment methods, and action history in table format.
 
 ![image](/img/next_gen/customers/show.png)
 
-Vous pouvez éditer le client en cliquant sur le bouton `Mettre à jour les détails` en haut à droite de la page.
-Vous pouvez également ajouter des notes ou avoir la dernière connexion du client avec son IP.
+You can edit the customer by clicking the `Update Details` button at the top right of the page.
+You can also add notes or view the customer's last login with their IP address.
 
-### Détails des informations du client
+### Customer Information Details
 
-Chaque élement des tableaux sont cliquables pour voir les détails de chaque élément.
+Each element in the tables is clickable to view the details of each item.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -36,14 +37,14 @@ import TabItem from '@theme/TabItem';
 
 ![image](/img/next_gen/customers/services.png)
 
-Vous pouvez voir les services du client sur la fiche client.
+You can view the customer's services on the customer profile.
 </TabItem>
 
-<TabItem value="Factures" label="Factures">
+<TabItem value="Factures" label="Invoices">
 
 ![img](/img/next_gen/customers/invoices.png)
 
-Vous pouvez voir les factures du client sur la fiche client.
+You can view the customer's invoices on the customer profile.
 
 </TabItem>
 
@@ -51,83 +52,83 @@ Vous pouvez voir les factures du client sur la fiche client.
 
 ![img](/img/next_gen/customers/tickets.png)
 
-Vous pouvez voir les tickets du client sur la fiche client.
+You can view the customer's tickets on the customer profile.
 
 </TabItem>
 
-<TabItem value="E-mails" label="E-mails envoyés">
+<TabItem value="E-mails" label="Sent Emails">
 
 ![img](/img/next_gen/customers/emails.png)
 
-Vous pouvez voir les emails envoyés au client sur la fiche client.
+You can view the emails sent to the customer on the customer profile.
 
 </TabItem>
-<TabItem value="Moyen de paiement" label="Moyens de paiements">
+<TabItem value="Moyen de paiement" label="Payment Methods">
 
 ![img](/img/next_gen/customers/payment_methods.png)
 
-Vous pouvez voir les moyens de paiement du client sur la fiche client. Ces données sont sensibles, elles sont stockées de manière sécurisée via des plateformes tierces comme Stripe.
+You can view the customer's payment methods on the customer profile. This data is sensitive and is stored securely through third-party platforms like Stripe.
 
 </TabItem>
-<TabItem value="Historique des actions" label="Historique des actions">
+<TabItem value="Historique des actions" label="Action History">
 
 ![img](/img/next_gen/customers/actions.png)
 
-Vous pouvez voir l'historique des actions du client sur la fiche client. Cela vous permet de voir les actions effectuées sur le client.
+You can view the customer's action history on the customer profile. This allows you to see actions performed on the customer.
 
-Les actions sont les suivantes :
-- Modification des informations du client
-- Nouvelle connexion
-- Changement de solde
-- Réinitialisation du mot de passe
-- Confirmation du compte
-- Activation de la 2FA
-- Désactivation de la 2FA
-- Désactiver la question de sécurité
+The actions are as follows:
+- Customer information modification
+- New login
+- Balance change
+- Password reset
+- Account confirmation
+- 2FA activation
+- 2FA deactivation
+- Security question disabled
 
 </TabItem>
 </Tabs>
-### Actions disponibles
-Vous pouvez effectuer des actions sur le client via la fiche client. Les actions sont les suivantes :
+### Available Actions
+You can perform actions on the customer through the customer profile. The actions are as follows:
 
 ![img](/img/next_gen/customers/actions.png)
 
-#### Renvoyer le mail de confirmation
-Vous pouvez renvoyer le mail de confirmation au client. Cela permet au client de confirmer son compte.
-#### Confirmer le compte
-Vous pouvez confirmer le compte automatiquement si le client a des difficultés à confirmer son compte.
-#### Envoyer un email de réinitialisation de mot de passe
-Vous pouvez envoyer un email de réinitialisation de mot de passe au client.
-#### Envoyer un mail
-Vous pouvez envoyer un mail au client via l'interface.
+#### Resend Confirmation Email
+You can resend the confirmation email to the customer. This allows the customer to confirm their account.
+#### Confirm Account
+You can automatically confirm the account if the customer has difficulty confirming their account.
+#### Send Password Reset Email
+You can send a password reset email to the customer.
+#### Send Email
+You can send an email to the customer through the interface.
 
-#### Suspendre le client
-Vous pouvez suspendre le client si celui-ci ne respecte pas les conditions d'utilisation. Vous pouvez ajouter une raison ou suspendre ses services.
+#### Suspend Customer
+You can suspend the customer if they violate the terms of use. You can add a reason or suspend their services.
 
 ![img](/img/next_gen/customers/suspend.png)
 
-#### Réactiver le client
-Vous pouvez réactiver le client. Cela permet de réactiver le client après une suspension. Vous pouvez également réactiver ses services ou voir les raisons de la suspension.
-#### Bannir le client
-Vous pouvez bannir le client si celui-ci ne respecte pas les conditions d'utilisation. Vous pouvez ajouter une raison ou bannir ses services
+#### Reactivate Customer
+You can reactivate the customer. This allows you to reactivate the customer after a suspension. You can also reactivate their services or view the suspension reasons.
+#### Ban Customer
+You can ban the customer if they violate the terms of use. You can add a reason or ban their services.
 
 ![img](/img/next_gen/customers/ban.png)
 
-#### Retirer la double authentification
-Vous pouvez retirer la double authentification du client si celle-ci est activée.
-### Désactiver la question de sécurité
-Vous pouvez désactiver la question de sécurité du client si celle-ci est activée.
-#### Supprimer le client
-Vous pouvez supprimer le client. Cela supprimera de manière douce le client en basculant son statut en "Supprimé".
-## Sécurité
-### Changement de mot de passe
-Vous pouvez changer le mot de passe du client via la fiche client. Cela permet de changer le mot de passe du client en cas de perte de mot de passe.
+#### Remove Two-Factor Authentication
+You can remove the customer's two-factor authentication if it is enabled.
+### Disable Security Question
+You can disable the customer's security question if it is enabled.
+#### Delete Customer
+You can delete the customer. This will soft delete the customer by changing their status to "Deleted".
+## Security
+### Password Change
+You can change the customer's password through the customer profile. This allows you to change the customer's password in case of password loss.
 
-### Automatisation de la confirmation de compte
+### Automatic Account Confirmation
 
-Vous pouvez automatiser la confirmation de compte des clients. Cela permet d'automatiquement confirmer le compte des clients après leur inscription. Pour activer cette fonctionnalité, allez dans `Espace d'administration` > `Paramètres` > `Général` > `Sécurité` et activez l'option `Confirmation automatique de l'inscription`.
+You can automate customer account confirmation. This allows you to automatically confirm customer accounts after registration. To enable this feature, go to `Administration Area` > `Settings` > `General` > `Security` and enable the `Automatic registration confirmation` option.
 
-## Erreurs fréquentes
-Erreur 500 lors de la connexion d'un client : Cette erreur vient généralement d'un problème de hashage du mot de passe. Vous pouvez réinitialiser le mot de passe du client pour résoudre ce problème.
+## Common Errors
+Error 500 when a customer logs in: This error usually comes from a password hashing problem. You can reset the customer's password to resolve this issue.
 
-Vous pouvez vérifier sur votre base de données si tout les mots de passe sont bien hashés de la même manière. Par exemple, si vous avez changé de méthode de hashage, il est possible que les anciens mots de passe ne soient pas reconnus. Les mots de passe doivent être hashés avec la même méthode pour être reconnus soit commançaient par `$2y$` ou `$argon2i`. Vous pouvez changer la méthode de hashage des mots de passe dans les paramètres de sécurité avec l'option `Driver de hashage`.
+You can check your database to see if all passwords are hashed the same way. For example, if you changed the hashing method, old passwords may not be recognized. Passwords must be hashed with the same method to be recognized, starting with either `$2y$` or `$argon2i`. You can change the password hashing method in the security settings with the `Hashing driver` option.

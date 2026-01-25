@@ -1,23 +1,24 @@
 ---
 slug: nouvelle-version-2.11.0
-title: Nouvelle version v2.11.0
+title: New version v2.11.0
 authors: [martindev]
 tags: [version, release, clientxcms]
+translated: true
 ---
 # v2.11.0 - Coupon Update**
 
-Nous sommes ravis de vous annoncer la sortie de la version **v2.11.0** de ClientXCMS, qui apporte de nombreuses améliorations et nouvelles fonctionnalités pour enrichir votre expérience utilisateur.
+We are pleased to announce the release of version **v2.11.0** of ClientXCMS, which brings numerous improvements and new features to enhance your user experience.
 ![version v2.14.0](/img/blog/versions/v2.11.0.png)
 
 <!-- truncate -->
 
-- `➕` **Codes promotionnels personnalisables** : Améliorez vos ventes avec des codes promo adaptés à vos clients !,
-- `➕` **Module Pterobox** : Permettez à vos clients de créer leurs propres serveurs sur votre plateforme Pterodactyl.,
-- `➕` **Addon Page** : Créez votre propre page HTML sur l'espace client.,
-- `➕` **Ajout des frais de transaction** : Déduisez directement les frais des passerelles de paiements sur la facture.,
-- `➕` **Pièces jointes dans le centre d'aide** : Facilitez le support client en permettant l'ajout de pièces jointes dans le système de support.,
-- `➕` **Système de statut clients** : Désactiver ou bannissez des clients non conformes,
-- `➕` **Refonte du PDF de facture & Numéro de facture** : Facilitez le l'administratif avec un numéro de facture unique personnalisable du type : CTX-2024-06-01.,
-- `➕` Création de compte utilisateurs via l'administration,
-- `➕` **Bot communautaire & Personnalisé Discord sync** : Nous avons re-développer les bots spécialement pour Next GEN,
-- `➕` **Ajouts d'options dans les personnalisation** : Autoriser uniquement le mode sombre ou claire sur votre espace client ou désactivez la page d'accueil.
+- `➕` **Customizable promotional codes**: Boost your sales with promo codes tailored to your customers!
+- `➕` **Pterobox Module**: Allow your clients to create their own servers on your Pterodactyl platform.
+- `➕` **Page Addon**: Create your own HTML page on the client area.
+- `➕` **Added transaction fees**: Directly deduct payment gateway fees on the invoice.
+- `➕` **Attachments in help center**: Facilitate customer support by allowing attachments in the support system.
+- `➕` **Customer status system**: Disable or ban non-compliant customers.
+- `➕` **Invoice PDF redesign & Invoice number**: Simplify administration with a unique customizable invoice number like: CTX-2024-06-01.
+- `➕` User account creation via administration
+- `➕` **Community & Custom Discord sync bot**: We have re-developed the bots specifically for Next GEN
+- `➕` **Added options in customization**: Allow only dark or light mode on your client area or disable the homepage.

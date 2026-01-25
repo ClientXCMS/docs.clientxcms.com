@@ -1,198 +1,199 @@
 ---
 sidebar_position: 2
+translated: true
 ---
-# Départements
+# Departments
 
-Dans **CLIENTXCMS**, les **départements** constituent l'épine dorsale de l'organisation de votre centre d'aide.
-L'objectif est organisationnel : **structurer le support par spécialités**, **orienter efficacement les demandes** et **optimiser l'expertise de chaque équipe**. Une organisation départementale bien pensée accélère les résolutions, améliore la qualité des réponses et permet une montée en compétences ciblée.
+In **CLIENTXCMS**, **departments** form the backbone of your help center organization.
+The goal is organizational: **structure support by specialties**, **efficiently route requests**, and **optimize each team's expertise**. A well-designed departmental organization accelerates resolutions, improves response quality, and enables targeted skill development.
 
-Les départements permettent de catégoriser automatiquement les tickets selon leur nature et de les diriger vers les bonnes équipes.
+Departments allow automatic categorization of tickets based on their nature and routing them to the right teams.
 
-Vous pouvez gérer les départements depuis :
+You can manage departments from:
 
-`Paramètres` > `Centre d'aide` > `Départements`
+`Settings` > `Help Center` > `Departments`
 
-![Interface de gestion des départements](/img/next_gen/settings/helpdesk/departments/index_admin.png)
+![Department management interface](/img/next_gen/settings/helpdesk/departments/index_admin.png)
 
-:::tip Astuce
-Des départements bien organisés transforment le chaos des demandes en **flux de travail structuré**.
-Chaque client est dirigé vers l'expert le plus qualifié pour son problème.
+:::tip Tip
+Well-organized departments transform the chaos of requests into a **structured workflow**.
+Each client is directed to the most qualified expert for their problem.
 :::
 
-## Pourquoi organiser en départements ?
+## Why Organize into Departments?
 
-La structuration départementale est essentielle pour :
+Departmental structuring is essential for:
 
-* **Spécialiser les équipes** selon leurs compétences
-* **Accélérer les résolutions** grâce à l'expertise ciblée
-* **Améliorer la satisfaction** avec des réponses plus précises
-* **Optimiser la charge** de travail entre les équipes
-* **Faciliter le suivi** des métriques par domaine
+* **Specializing teams** according to their skills
+* **Accelerating resolutions** through targeted expertise
+* **Improving satisfaction** with more precise answers
+* **Optimizing workload** between teams
+* **Facilitating tracking** of metrics by domain
 
-:::tip Astuce
-C'est comme organiser un hôpital en services spécialisés 🏥 — cardiologie, pédiatrie, urgences... chaque patient va au bon endroit du premier coup.
+:::tip Tip
+It's like organizing a hospital into specialized units 🏥 — cardiology, pediatrics, emergency... each patient goes to the right place on the first try.
 :::
 
-## Départements par défaut
+## Default Departments
 
-### Configuration initiale
+### Initial Configuration
 
-CLIENTXCMS propose une structure départementale standard pour démarrer rapidement :
+CLIENTXCMS offers a standard departmental structure to get started quickly:
 
-| Département            | Utilisation                               | Expertise requise            |
-| ----------------------- | ----------------------------------------- | ---------------------------- |
-| 🔧**Technique**   | Problèmes serveurs, bugs, configurations | Informatique, développement |
-| 💰**Facturation** | Factures, paiements, remboursements       | Comptabilité, commercial    |
-| 🏢**Commercial**  | Ventes, devis, négociations              | Business, relation client    |
-| 📋**Général**   | Demandes diverses, informations           | Support généraliste        |
+| Department | Use | Required Expertise |
+| ---------- | --- | ------------------ |
+| 🔧**Technical** | Server problems, bugs, configurations | IT, development |
+| 💰**Billing** | Invoices, payments, refunds | Accounting, sales |
+| 🏢**Sales** | Sales, quotes, negotiations | Business, customer relations |
+| 📋**General** | Various requests, information | General support |
 
-### Adaptation à votre activité
+### Adapting to Your Business
 
-Ces départements par défaut peuvent être :
+These default departments can be:
 
-- **Modifiés** : Changement de nom, icône, description
-- **Supprimés** : Si non pertinents pour votre activité
-- **Complétés** : Ajout de départements spécifiques
+- **Modified**: Name, icon, description changes
+- **Deleted**: If not relevant to your business
+- **Supplemented**: Addition of specific departments
 
-**Exemples d'adaptations** :
+**Examples of adaptations**:
 
-#### Hébergeur web
+#### Web Host
 
-- 🔧 **Technique** : Serveurs, DNS, SSL
-- 💰 **Facturation** : Paiements, renouvellements
-- 🚀 **Migration** : Transferts de sites
-- 📈 **Commercial** : Nouvelles offres
+- 🔧 **Technical**: Servers, DNS, SSL
+- 💰 **Billing**: Payments, renewals
+- 🚀 **Migration**: Site transfers
+- 📈 **Sales**: New offers
 
-#### Agence de développement
+#### Development Agency
 
-- 💻 **Développement** : Bugs, nouvelles fonctionnalités
-- 🎨 **Design** : Interface, UX/UI
-- 📋 **Projet** : Planning, spécifications
-- 💰 **Facturation** : Devis, paiements
+- 💻 **Development**: Bugs, new features
+- 🎨 **Design**: Interface, UX/UI
+- 📋 **Project**: Planning, specifications
+- 💰 **Billing**: Quotes, payments
 
-## Création d'un département
+## Creating a Department
 
-### Processus de création
+### Creation Process
 
-Pour ajouter un nouveau département :
+To add a new department:
 
-1. Cliquez sur **"Créer"** en haut à droite
-2. Remplissez les informations du département
-3. Configurez l'apparence visuelle
-4. Sauvegardez la configuration
+1. Click **"Create"** in the top right
+2. Fill in department information
+3. Configure visual appearance
+4. Save the configuration
 
-![Formulaire de création d'un département](/img/next_gen/settings/helpdesk/departments/create.png)
+![Department creation form](/img/next_gen/settings/helpdesk/departments/create.png)
 
-### Configuration du département
+### Department Configuration
 
-**Nom** | (texte)
-Le nom affiché dans l'interface client et administrateur.
-Utilisez un terme clair et immédiatement compréhensible.
+**Name** | (text)
+The name displayed in the client and administrator interface.
+Use a clear and immediately understandable term.
 
-**Exemples de noms efficaces** :
+**Examples of effective names**:
 
-- ✅ "Support Technique" plutôt que "Tech"
-- ✅ "Facturation & Paiements" plutôt que "Compta"
-- ✅ "Assistance Commerciale" plutôt que "Ventes"
+- ✅ "Technical Support" rather than "Tech"
+- ✅ "Billing & Payments" rather than "Accounting"
+- ✅ "Sales Assistance" rather than "Sales"
 
-**Icône** | (sélecteur d'icône)
-Représentation visuelle du département pour une identification rapide.
+**Icon** | (icon selector)
+Visual representation of the department for quick identification.
 
-**Description** | (texte long)
-Explication détaillée du type de demandes traitées par ce département.
-Aide les clients à choisir le bon département.
+**Description** | (long text)
+Detailed explanation of the type of requests handled by this department.
+Helps clients choose the right department.
 
-**Exemple de description pour "Support Technique"** :
+**Example description for "Technical Support"**:
 
 ```
-Problèmes techniques, pannes serveur, configurations, erreurs de site, 
-questions DNS, certificats SSL, performances et optimisations.
+Technical problems, server outages, configurations, site errors,
+DNS questions, SSL certificates, performance and optimizations.
 ```
 
-## Interface client
+## Client Interface
 
-### Sélection de département
+### Department Selection
 
-Lors de la création d'un ticket, les clients voient tous les départements disponibles :
+When creating a ticket, clients see all available departments:
 
-![Sélection de département côté client](/img/next_gen/settings/helpdesk/departments/departments.png)
+![Client-side department selection](/img/next_gen/settings/helpdesk/departments/departments.png)
 
-L'affichage comprend :
-- **Icône** du département
-- **Nom** descriptif
-- **Description** d'aide au choix
+The display includes:
+- Department **icon**
+- Descriptive **name**
+- **Description** to help with choice
 
-### Pré-sélection automatique
+### Automatic Pre-selection
 
-Vous pouvez diriger automatiquement les clients vers un département via des paramètres URL :
+You can automatically direct clients to a department via URL parameters:
 
-#### Paramètres disponibles
+#### Available Parameters
 
-| Paramètre     | Description         | Exemple de valeur                      |
-| -------------- | ------------------- | -------------------------------------- |
-| `department` | ID du département  | `1` (Technique)                      |
-| `priority`   | Priorité du ticket | `low`, `medium`, `high`          |
-| `subject`    | Sujet pré-rempli   | `Problème de connexion`             |
-| `content`    | Message pré-rempli | `Bonjour, j'ai un problème avec...` |
-| `related_id` | Service concerné   | `123` (ID du service)                |
+| Parameter | Description | Example Value |
+| --------- | ----------- | ------------- |
+| `department` | Department ID | `1` (Technical) |
+| `priority` | Ticket priority | `low`, `medium`, `high` |
+| `subject` | Pre-filled subject | `Connection problem` |
+| `content` | Pre-filled message | `Hello, I have a problem with...` |
+| `related_id` | Related service | `123` (Service ID) |
 
-#### Exemples d'URLs pré-configurées
+#### Pre-configured URL Examples
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-	<TabItem value="support_technique_with_contexte" label="Support technique avec contexte">
+	<TabItem value="support_technique_with_contexte" label="Technical support with context">
 	```
-	https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Serveur+inaccessible
-	```
-    </TabItem>
-    <TabItem value="billing_question" label="Question de facturation">
-	```
-	https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Question+facture
+	https://demo.clientxcms.com/client/support/create?department=1&priority=high&subject=Server+inaccessible
 	```
     </TabItem>
-    <TabItem value="commercial_request" label="Demande commerciale">
+    <TabItem value="billing_question" label="Billing question">
 	```
-	https://demo.clientxcms.com/client/support/create?department=4&content=Je+souhaiterais+un+devis+pour...
+	https://demo.clientxcms.com/client/support/create?department=2&related_id=456&subject=Invoice+question
+	```
+    </TabItem>
+    <TabItem value="commercial_request" label="Sales request">
+	```
+	https://demo.clientxcms.com/client/support/create?department=4&content=I+would+like+a+quote+for...
 	```
 	</TabItem>
 </Tabs>
 
-	Utilisez ces URLs pré-configurées pour :
+	Use these pre-configured URLs for:
 
-	- **Dans vos e-mails** : insérer un lien direct contextuel vers la création d'un ticket pré-rempli.
-	- **Sur votre site** : boutons d'aide qui ouvrent la création de ticket avec le bon département/priorité.
-	- **Dans les signatures** : proposer un accès rapide au support adapté selon la nature du message.
-	- **Automatisation** : appels depuis des scripts ou des notifications pour ouvrir un ticket lié à un service précis.
+	- **In your emails**: insert a direct contextual link to create a pre-filled ticket.
+	- **On your website**: help buttons that open ticket creation with the right department/priority.
+	- **In signatures**: provide quick access to appropriate support based on message nature.
+	- **Automation**: calls from scripts or notifications to open a ticket linked to a specific service.
 
-	Astuce : encodez correctement les paramètres (espaces, caractères spéciaux) pour garantir le bon remplissage des champs.
+	Tip: properly encode parameters (spaces, special characters) to ensure correct field filling.
 
-### Utilisation des URLs pré-configurées
+### Using Pre-configured URLs
 
-- **Dans vos e-mails** : Liens directs selon le contexte
-- **Sur votre site** : Boutons d'aide contextuelle
-- **En signature** : Accès rapide au support
-- **Dans vos FAQ** : Création de ticket ciblée
+- **In your emails**: Direct links based on context
+- **On your website**: Contextual help buttons
+- **In signatures**: Quick access to support
+- **In your FAQ**: Targeted ticket creation
 
-## Gestion des départements
+## Department Management
 
-### Modification d'un département
+### Modifying a Department
 
-Pour éditer un département existant :
+To edit an existing department:
 
-1. Cliquez sur **"Afficher"** dans la liste
-2. Modifiez les informations nécessaires
-3. Adaptez les traductions si besoin
-4. Sauvegardez les modifications
+1. Click **"View"** in the list
+2. Modify necessary information
+3. Adapt translations if needed
+4. Save changes
 
-![Interface de modification d'un département](/img/next_gen/settings/helpdesk/departments/edit.png)
+![Department modification interface](/img/next_gen/settings/helpdesk/departments/edit.png)
 
-### Traductions multilingues
+### Multilingual Translations
 
-Chaque département peut être traduit dans toutes les langues activées :
-- **Nom** spécifique par langue
-- **Description** adaptée culturellement
-- **Cohérence** avec la terminologie locale
+Each department can be translated into all enabled languages:
+- Language-specific **name**
+- Culturally adapted **description**
+- **Consistency** with local terminology
 
-**Accès aux traductions** : Icône à droite de chaque champ
+**Translation access**: Icon to the right of each field

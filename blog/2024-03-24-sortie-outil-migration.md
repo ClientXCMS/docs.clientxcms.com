@@ -1,32 +1,33 @@
 ---
 slug: sortie-outil-migration
-title: Sortie outil de migration  
+title: Migration Tool Release
 authors: [martindev]
-tags: [migration, outil, clientxcms, release]  
+tags: [migration, outil, clientxcms, release]
+translated: true
 ---
-# Annonce de la sortie de l'outil de migration 🚀✨
+# Migration Tool Release Announcement 🚀✨
 
-Chers utilisateurs,
+Dear users,
 
-Nous sommes ravis de vous annoncer la sortie tant attendue de notre tout nouveau Module de Migration, conçu pour faciliter le passage de notre CMS de la version 1 à la version 2 (NextGen) de CLIENTXCMS.
+We are pleased to announce the long-awaited release of our brand new Migration Module, designed to facilitate the transition of our CMS from version 1 to version 2 (NextGen) of CLIENTXCMS.
 
-![Lancement de l'outil de migration](/img/blog/sortie-outil-migration/image.png)
+![Migration tool launch](/img/blog/sortie-outil-migration/image.png)
 <!-- truncate -->
-Avec notre outil de Migrations, bénéficiez d'une transition fluide et automatisée de vos données essentielles, garantissant une continuité optimale dans votre expérience utilisateur. Voici ce que vous pouvez migrer automatiquement :
+With our Migration tool, benefit from a smooth and automated transition of your essential data, ensuring optimal continuity in your user experience. Here's what you can migrate automatically:
 
-`🔧` **Services** : Tous vos services seront migrés sans effort, préservant ainsi les détails importants. 
+`🔧` **Services**: All your services will be migrated effortlessly, preserving important details.
 
-`🎫 `**Factures** : Les informations de facturation seront automatiquement transférées pour une gestion transparente. 
+`🎫 `**Invoices**: Billing information will be automatically transferred for transparent management.
 
-`🛍️` **Produits** : Vos produits seront migrés en toute simplicité, vous permettant de poursuivre vos activités sans interruption. 
+`🛍️` **Products**: Your products will be migrated with ease, allowing you to continue your activities without interruption.
 
-`👥` **Comptes Clients** : Les comptes de vos clients seront intégralement migrés pour maintenir leur historique et leurs préférences. 
+`👥` **Customer Accounts**: Your customers' accounts will be fully migrated to maintain their history and preferences.
 
-`🖥️` **Serveurs** : Migration des serveurs nécessitera une reconfiguration des clés d'API pour assurer leur bon fonctionnement dans la nouvelle version. 
+`🖥️` **Servers**: Server migration will require reconfiguration of API keys to ensure proper functioning in the new version.
 
-La migration depuis d’autres services sera bientôt disponible pour pouvoir changer d’espace client rapidement
+Migration from other services will be available soon to allow quick client area switching.
 
 ![img](/img/next_gen/extensions/addons/importation/importation.png)
 
-## Réalisation de la migration
-Pour réaliser la migration, rendez vous sur la page de migration après avoir installé l'addon de migration. Vous y trouverez un guide détaillé pour vous accompagner tout au long du processus sur [notre page de documentation](/extensions/addons/importation).
+## Performing the Migration
+To perform the migration, go to the migration page after installing the migration addon. You will find a detailed guide to accompany you throughout the process on [our documentation page](/extensions/addons/importation).

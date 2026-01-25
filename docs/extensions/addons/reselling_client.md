@@ -1,84 +1,88 @@
-# Revente CTX
+---
+translated: true
+---
 
-ClientXCMS propose un système de revente de VPS et de licence CLIENTXCMS. Toute les informations sont disponible sur notre site vitrine ainsi que les prix de revente.
+# CTX Reselling
+
+ClientXCMS offers a VPS and CLIENTXCMS license reselling system. All information is available on our showcase website along with reselling prices.
 
 ### VPS
-Toutes les informations, y compris les prix, sont disponibles [ici](https://ctxhosting.fr/ctxreselling).  
-**Prérequis** : Vous devez disposer d'une licence CLIENTXCMS valide et active.
+All information, including prices, is available [here](https://ctxhosting.fr/ctxreselling).
+**Prerequisite**: You must have a valid and active CLIENTXCMS license.
 
-### Licence CLIENTXCMS
-Toutes les informations, y compris les prix, sont disponibles [ici](https://clientxcms.com/partners).  
-**Prérequis** : Vous devez disposer d'une licence CLIENTXCMS valide et active.
+### CLIENTXCMS License
+All information, including prices, is available [here](https://clientxcms.com/partners).
+**Prerequisite**: You must have a valid and active CLIENTXCMS license.
 
-Pour toute demande ou pour devenir partenaire, veuillez contacter le support.
+For any request or to become a partner, please contact support.
 
-#### Concernant les licences CLIENTXCMS :
-- Aucune clé d'API n'est requise.
-- Les commandes doivent être effectuées via [clientxcms.com](https://clientxcms.com) en utilisant le code promo partenaire indiqué sur la page revendeur.
-- Vous pouvez également commander des licences pour vos clients et accéder à l'espace revendeur pour gérer leurs licences.
+#### Regarding CLIENTXCMS licenses:
+- No API key is required.
+- Orders must be placed via [clientxcms.com](https://clientxcms.com) using the partner promo code indicated on the reseller page.
+- You can also order licenses for your customers and access the reseller area to manage their licenses.
 
-#### Concernant les VPS :
-- Vous recevrez une clé d'API qui vous permettra de gérer les VPS de vos clients directement depuis votre espace client CLIENTXCMS.
-- La facturation est basée sur les services commandés par vous ou vos clients.
-- Pour les renouvellements ou les modifications de dates d'expiration, les frais seront calculés au prorata des jours restants jusqu'à la date d'expiration, avec un montant minimum de 0,50 €.
+#### Regarding VPS:
+- You will receive an API key that will allow you to manage your customers' VPS directly from your CLIENTXCMS client area.
+- Billing is based on services ordered by you or your customers.
+- For renewals or expiration date changes, fees will be calculated pro-rata based on remaining days until expiration, with a minimum amount of €0.50.
 
-Ce système garantit une gestion simplifiée des licences et des services VPS pour vos clients, tout en offrant flexibilité et automatisation.
+This system ensures simplified management of licenses and VPS services for your customers, while offering flexibility and automation.
 :::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
+To use the following features, the Plesk module must be enabled on your CLIENTXCMS. [click here to enable it](../)
 :::
 
-### Fonctionnalité supportées
-- Automatisez la création et l'approvisionnement des VPS
-- Gestion des VPS depuis l'espace client
-- Envoie des identifiants de connexion par E-mail
-- Réinstallation automatique des VPS
-- Automatisez les suspensions et les résiliations
-- Amélioration de service
+### Supported Features
+- Automate VPS creation and provisioning
+- VPS management from client area
+- Send login credentials by email
+- Automatic VPS reinstallation
+- Automate suspensions and terminations
+- Service upgrades
 
-## Création du serveur
-Créez un serveur CLIENTXCMS dans `Espace d'administration ` > `Paramètre` > `Approvisionnement` > `Serveurs` > `Nouveau` en sélectionnant le type de serveur en "Reselling".
+## Server Creation
+Create a CLIENTXCMS server in `Admin Panel` > `Settings` > `Provisioning` > `Servers` > `New` by selecting the server type as "Reselling".
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image.png)
 
-**Adresse IP** : clients.ctxhosting.fr
-**Nom d'hôte** : clients.ctxhosting.fr
-**Nom d'utilisateur** : ctxreselling
-**Mot de passe** : Clé d'API indiqué dans le mail de bienvenue
-**Port** : 443
+**IP Address**: clients.ctxhosting.fr
+**Hostname**: clients.ctxhosting.fr
+**Username**: ctxreselling
+**Password**: API key indicated in the welcome email
+**Port**: 443
 
-Le port suivant doit être ouvert pour connecter CLIENTXCMS à votre serveur de revente : 443
+The following port must be open to connect CLIENTXCMS to your reselling server: 443
 
-:::danger Attention
-Ce n'est pas vos identifiants CLIENTXCMS, mais bien la clé d'API.
+:::danger Warning
+These are not your CLIENTXCMS credentials, but the API key.
 :::
-Vous pouvez tester la connexion au serveur et vérifier que le serveur renvoie *"Success"* en réponse.
+You can test the server connection and verify that the server returns *"Success"* in response.
 
-## Configuration de l'offre
-En premier lieu, [créez votre produit](../../settings/store/products.md#créer-un-nouveau-produit) en sélectionnant "Reselling".
+## Offer Configuration
+First, [create your product](../../settings/store/products.md#creating-a-new-product) by selecting "Reselling".
 ![img](/img/next_gen/extensions/addons/reselling_client/image_2.png)
-Après appuyer sur le bouton "Créer" il vous crée votre produit et puis cliquer sur le bouton "Configurer l'offre" qui vous dirigera vers la page de configuration de l'offre. Si les champs est vide, assurez-vous que votre serveur ne soit pas caché, dans ce cas il ne sera pris en compte dans le système pour récupérer les offres de revente.
+After pressing the "Create" button, it creates your product, then click the "Configure Offer" button which will direct you to the offer configuration page. If the fields are empty, make sure your server is not hidden, in which case it will not be considered by the system to retrieve reselling offers.
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image_3.png)
 
-## Rendu du service
+## Service Display
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Hosting" label="Gestion VPS">
+<TabItem value="Hosting" label="VPS Management">
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image_4.png)
 
 </TabItem>
 
-<TabItem value="Revendeur" label="Réinstallation">
+<TabItem value="Revendeur" label="Reinstallation">
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image_5.png)
 
 </TabItem>
 
-<TabItem value="AdminHosing" label="Donnée client">
+<TabItem value="AdminHosing" label="Customer Data">
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image_6.png)
 

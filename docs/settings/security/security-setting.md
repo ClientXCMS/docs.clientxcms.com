@@ -1,122 +1,123 @@
 ---
+translated: true
 sidebar_position: 1
 ---
 
-# Paramètres de sécurité
+# Security Settings
 
-Dans **CLIENTXCMS**, les **paramètres de sécurité** constituent la première ligne de défense de votre plateforme. <br/>
-L'objectif est vital : **configurer les mécanismes de protection fondamentaux** pour **sécuriser l'authentification**, **filtrer les accès malveillants** et **renforcer la robustesse de votre système**. Une configuration sécuritaire appropriée protège vos données, prévient les intrusions et maintient la confiance de vos utilisateurs.
+In **CLIENTXCMS**, **security settings** constitute the first line of defense for your platform. <br/>
+The objective is vital: **configure fundamental protection mechanisms** to **secure authentication**, **filter malicious access** and **strengthen the robustness of your system**. Proper security configuration protects your data, prevents intrusions, and maintains user trust.
 
-Ces paramètres contrôlent l'authentification, le chiffrement des mots de passe, les protections anti-spam et l'accès à l'administration.
+These settings control authentication, password encryption, anti-spam protections, and administration access.
 
-Vous pouvez gérer les paramètres de sécurité depuis :
+You can manage security settings from:
 
-`Paramètres` > `Sécurité` > `Paramètres de sécurité`
+`Settings` > `Security` > `Security Settings`
 
-:::tip Astuce
-La sécurité commence par de bons paramètres de base. 
-Chaque option que vous configurez ici **renforce significativement** la protection de votre plateforme.
+:::tip Tip
+Security starts with good basic settings.
+Each option you configure here **significantly strengthens** your platform's protection.
 :::
 
-## Pourquoi configurer ces paramètres ?
+## Why configure these settings?
 
-Les paramètres de sécurité sont essentiels pour :
+Security settings are essential for:
 
-* **Protéger les comptes utilisateurs** avec un chiffrement robuste
-* **Filtrer les inscriptions malveillantes** et le spam
-* **Sécuriser l'accès administrateur** avec des URLs personnalisées
-* **Contrôler l'authentification** selon vos besoins métier
+* **Protecting user accounts** with robust encryption
+* **Filtering malicious registrations** and spam
+* **Securing administrator access** with custom URLs
+* **Controlling authentication** according to your business needs
 
-:::tip Astuce
-C'est comme ajuster les serrures et alarmes de votre maison 🏠 — plus c'est bien configuré, plus vous dormez tranquille.
+:::tip Tip
+It's like adjusting the locks and alarms on your house 🏠 — the better it's configured, the better you sleep.
 :::
 
-## Chiffrement des mots de passe
+## Password Encryption
 
-### Algorithmes de hashage
+### Hashing Algorithms
 
-**Driver de hashage** | (menu déroulant)<br />
-Choisissez l'algorithme utilisé pour chiffrer les mots de passe des utilisateurs.
+**Hashing Driver** | (dropdown menu)<br />
+Choose the algorithm used to encrypt user passwords.
 
-| Algorithm | Sécurité | Performance | Recommandation |
+| Algorithm | Security | Performance | Recommendation |
 |-----------|----------|-------------|----------------|
-| **bcrypt** | ✅ Élevée | ⚡ Rapide | Par défaut, recommandé |
-| **argon2** | ✅✅ Très élevée | 🐌 Plus lent | Haute sécurité |
-| **argon2id** | ✅✅✅ Maximale | 🐌🐌 Le plus lent | Sécurité critique |
+| **bcrypt** | ✅ High | ⚡ Fast | Default, recommended |
+| **argon2** | ✅✅ Very high | 🐌 Slower | High security |
+| **argon2id** | ✅✅✅ Maximum | 🐌🐌 Slowest | Critical security |
 
-:::info Migration depuis la v1
-Pour les utilisateurs migrant depuis CLIENTXCMS v1, conservez `argon` pour maintenir la compatibilité avec les mots de passe existants.
+:::info Migration from v1
+For users migrating from CLIENTXCMS v1, keep `argon` to maintain compatibility with existing passwords.
 :::
 
-:::warning Important - Changement d'algorithme
-Changer l'algorithme de hashage rendra **tous les mots de passe existants invalides**. Les utilisateurs devront réinitialiser leur mot de passe pour se reconnecter.
+:::warning Important - Algorithm Change
+Changing the hashing algorithm will make **all existing passwords invalid**. Users will need to reset their password to log in again.
 :::
 
-## Sécurisation de l'administration
+## Administration Security
 
-### URL d'administration personnalisée
+### Custom Administration URL
 
-**Préfixe de l'administration** | (texte)<br />
-Personnalisez l'URL d'accès à votre interface d'administration pour masquer l'accès standard.
+**Administration Prefix** | (text)<br />
+Customize the URL for accessing your administration interface to hide the standard access path.
 
-**Exemples de configuration** :
+**Configuration Examples**:
 
-| Préfixe | URL d'accès | Niveau de sécurité |
-|---------|-------------|-------------------|
-| `admin` | `/admin` | ⚠️ Standard (évitez) |
-| `backoffice` | `/backoffice` | ✅ Mieux |
-| `manage-2024` | `/manage-2024` | ✅✅ Recommandé |
+| Prefix | Access URL | Security Level |
+|--------|------------|----------------|
+| `admin` | `/admin` | ⚠️ Standard (avoid) |
+| `backoffice` | `/backoffice` | ✅ Better |
+| `manage-2024` | `/manage-2024` | ✅✅ Recommended |
 | `secure-xyz789` | `/secure-xyz789` | ✅✅✅ Optimal |
 
-:::tip Bonnes pratiques
-- Utilisez un préfixe **unique et non prévisible**
-- Évitez les mots évidents comme "admin", "panel", "dashboard"
-- Incluez des chiffres ou caractères spéciaux
-- Changez périodiquement pour renforcer la sécurité
+:::tip Best Practices
+- Use a **unique and unpredictable** prefix
+- Avoid obvious words like "admin", "panel", "dashboard"
+- Include numbers or special characters
+- Change periodically to enhance security
 :::
 
-## Protection CAPTCHA
+## CAPTCHA Protection
 
-### Configuration du service CAPTCHA
+### CAPTCHA Service Configuration
 
-**Driver de CAPTCHA** | (menu déroulant)<br />
-Choisissez le service de protection contre les bots et le spam automatisé.
+**CAPTCHA Driver** | (dropdown menu)<br />
+Choose the protection service against bots and automated spam.
 
-| Service | Avantages | Inconvénients |
+| Service | Advantages | Disadvantages |
 |---------|-----------|---------------|
-| **none** | Aucune friction | ❌ Aucune protection |
-| **reCAPTCHA** | Largement supporté | 🔍 Collecte de données Google |
-| **hCaptcha** | Respectueux de la vie privée | ⚡ Moins connu |
-| **Cloudflare Turnstile** | Performance optimale | 🆕 Plus récent |
+| **none** | No friction | ❌ No protection |
+| **reCAPTCHA** | Widely supported | 🔍 Google data collection |
+| **hCaptcha** | Privacy-friendly | ⚡ Less known |
+| **Cloudflare Turnstile** | Optimal performance | 🆕 More recent |
 
-### Configuration des clés
+### Key Configuration
 
-**Clé du site** | (clé publique)<br />
-La clé publique fournie par votre service CAPTCHA, visible côté client.
+**Site Key** | (public key)<br />
+The public key provided by your CAPTCHA service, visible on the client side.
 
-**Clé secrète** | (clé privée)<br />
-La clé secrète pour valider les réponses CAPTCHA côté serveur.
+**Secret Key** | (private key)<br />
+The secret key to validate CAPTCHA responses on the server side.
 
-:::warning Sécurité des clés
-- Ne partagez **jamais** votre clé secrète
-- Renouvelez les clés si elles sont compromises
-- Configurez les domaines autorisés dans votre tableau de bord CAPTCHA
+:::warning Key Security
+- **Never** share your secret key
+- Renew keys if they are compromised
+- Configure authorized domains in your CAPTCHA dashboard
 :::
 
-### Configuration détaillée
+### Detailed Configuration
 
-Pour une configuration avancée des CAPTCHAs, consultez la [documentation développeur](/developpers/software/captcha).
+For advanced CAPTCHA configuration, see the [developer documentation](/developpers/software/captcha).
 
-### Problème de connection avec un captcha mal configuré
-Si vous avez un problème de connexion à cause d'un captcha mal configuré, vous pouvez désactiver temporairement le captcha vous connectant à votre base de données et en modifiant la valeur `captcha_driver` dans la table `settings` à `none`. Cela désactivera le captcha et vous permettra de vous connecter à votre espace client pour corriger la configuration du captcha.
-Commande SQL à exécuter :
+### Connection Problem with Misconfigured CAPTCHA
+If you have a connection problem due to a misconfigured CAPTCHA, you can temporarily disable the CAPTCHA by connecting to your database and changing the `captcha_driver` value in the `settings` table to `none`. This will disable the CAPTCHA and allow you to log in to your client area to correct the CAPTCHA configuration.
+SQL command to execute:
 ```sql
 UPDATE settings SET value = 'none' WHERE `key` = 'captcha_driver';
 ```
 
-Vous pouvez ensuite vider le cache de l'application en exécutant la commande suivante dans votre terminal à la racine de votre projet :
+You can then clear the application cache by running the following command in your terminal at the root of your project:
 ```bash
 php artisan cache:clear
 ```
-Vous devriez maintenant pouvoir vous connecter à votre espace client et corriger la configuration du captcha.
-Les mots de passe des **administrateurs** sont toujours chiffrés avec `bcrypt` pour garantir un accès rapide et sécurisé à l'interface d'administration, quel que soit l'algorithme choisi pour les utilisateurs.
+You should now be able to log in to your client area and correct the CAPTCHA configuration.
+**Administrator** passwords are always encrypted with `bcrypt` to ensure fast and secure access to the administration interface, regardless of the algorithm chosen for users.

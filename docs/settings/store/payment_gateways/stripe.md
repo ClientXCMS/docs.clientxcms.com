@@ -1,250 +1,253 @@
-# Stripe (Paiements par carte)
+---
+translated: true
+---
+# Stripe (Card Payments)
 
-La passerelle **Stripe** dans **CLIENTXCMS** correspond à l'**intégration de la solution de paiement américaine de référence mondiale** qui permet à vos clients de régler leurs commandes avec leur carte bancaire via l'une des plateformes les plus avancées du marché. <br/>
-L'objectif est clair : **offrir l'expérience de paiement par carte la plus sophistiquée avec des outils de gestion avancés et une fiabilité éprouvée**. Un système Stripe bien configuré permet à vos clients de **payer avec une fluidité exceptionnelle** tout en vous donnant accès aux meilleurs outils d'analytics et de gestion du marché.
+The **Stripe** gateway in **CLIENTXCMS** corresponds to the **integration of the world-leading American payment solution** that allows your customers to pay for their orders with their credit card via one of the most advanced platforms on the market. <br/>
+The objective is clear: **offer the most sophisticated card payment experience with advanced management tools and proven reliability**. A well-configured Stripe system allows your customers to **pay with exceptional fluidity** while giving you access to the best analytics and management tools on the market.
 
-La passerelle Stripe peut être entièrement personnalisée : nom d'affichage, montant minimum, mode test/live, clés API, webhooks, etc.
+The Stripe gateway can be fully customized: display name, minimum amount, test/live mode, API keys, webhooks, etc.
 
-Vous pouvez configurer Stripe depuis :
+You can configure Stripe from:
 
-`Paramètres` > `Paramètres de la boutique` > `Stripe`
+`Settings` > `Store Settings` > `Stripe`
 
-![Configuration de la passerelle Stripe](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
+![Stripe gateway configuration](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
 
-:::tip Astuce
-**Stripe** est considéré comme la **Rolls-Royce** des passerelles de paiement avec une technologie de pointe, des outils exceptionnels et une réputation mondiale inégalée.
+:::tip Tip
+**Stripe** is considered the **Rolls-Royce** of payment gateways with cutting-edge technology, exceptional tools, and an unmatched global reputation.
 :::
 
-## Pourquoi choisir Stripe ?
+## Why choose Stripe?
 
-Stripe représente l'excellence technologique dans le domaine des paiements en ligne, utilisé par des millions d'entreprises dans le monde, des startups aux plus grandes corporations internationales.
+Stripe represents technological excellence in online payments, used by millions of businesses worldwide, from startups to the largest international corporations.
 
-Intégrer Stripe vous permet de :
+Integrating Stripe allows you to:
 
-* Bénéficier de la technologie de paiement la plus avancée au monde
-* Accéder aux meilleurs outils d'analytics et de reporting du marché
-* Profiter d'une interface utilisateur exceptionnellement fluide
-* Utiliser des fonctionnalités avancées (abonnements, paiements différés, etc.)
-* Garantir une sécurité maximale avec les dernières innovations
-* S'appuyer sur une infrastructure mondiale ultra-fiable
+* Benefit from the world's most advanced payment technology
+* Access the best analytics and reporting tools on the market
+* Enjoy an exceptionally smooth user interface
+* Use advanced features (subscriptions, deferred payments, etc.)
+* Guarantee maximum security with the latest innovations
+* Rely on an ultra-reliable global infrastructure
 
-:::tip Astuce
-Stripe est comme la **Ferrari des paiements** 🏎️ — performance maximale, technologie de pointe et prestige international. C'est le choix des entreprises qui ne veulent aucun compromis sur la qualité.
+:::tip Tip
+Stripe is like the **Ferrari of payments** 🏎️ — maximum performance, cutting-edge technology, and international prestige. It's the choice of businesses that want no compromise on quality.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement de pointe
+### Cutting-Edge Payment Process
 
-Le paiement via Stripe suit un processus ultra-optimisé :
+Payment via Stripe follows an ultra-optimized process:
 
-1. **Sélection Stripe** : Le client choisit "Paiement par carte" (Stripe)
-2. **Interface premium** : Redirection vers l'interface Stripe ultra-moderne
-3. **Saisie optimisée** : Formulaire intelligent avec auto-complétion
-4. **Validation instantanée** : Vérification en temps réel des données
-5. **3D Secure intelligent** : Authentification adaptative selon le risque
-6. **Confirmation ultra-rapide** : Traitement instantané du paiement
-7. **Webhooks avancés** : Notifications sécurisées et détaillées
-8. **Retour seamless** : Intégration parfaite avec votre boutique
+1. **Stripe Selection**: The customer chooses "Card Payment" (Stripe)
+2. **Premium Interface**: Redirect to ultra-modern Stripe interface
+3. **Optimized Entry**: Smart form with auto-completion
+4. **Instant Validation**: Real-time data verification
+5. **Smart 3D Secure**: Adaptive authentication based on risk
+6. **Ultra-Fast Confirmation**: Instant payment processing
+7. **Advanced Webhooks**: Secure and detailed notifications
+8. **Seamless Return**: Perfect integration with your store
 
-### Excellence technique Stripe
+### Stripe Technical Excellence
 
-| Avantage                    | Description                                        |
+| Advantage                    | Description                                        |
 |-----------------------------|----------------------------------------------------|
-| **Performance mondiale**    | Infrastructure distribuée dans le monde entier    |
-| **IA anti-fraude**         | Machine learning avancé pour détecter les fraudes |
-| **Interface adaptative**   | UX qui s'adapte selon l'appareil et le contexte   |
-| **Fiabilité 99.99%**       | Uptime exceptionnel avec redondance maximale      |
+| **Global Performance**      | Infrastructure distributed worldwide               |
+| **AI Anti-Fraud**           | Advanced machine learning to detect fraud          |
+| **Adaptive Interface**      | UX that adapts according to device and context     |
+| **99.99% Reliability**      | Exceptional uptime with maximum redundancy         |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres essentiels
+### Essential Parameters
 
-**Nom de la passerelle** | (texte)<br />
+**Gateway Name** | (text)<br />
 
-Utilisez "Paiement sécurisé" ou "Carte bancaire" pour valoriser la sécurité Stripe.
+Use "Secure Payment" or "Credit Card" to highlight Stripe's security.
 
-**Montant minimal** | (montant)<br />
+**Minimum Amount** | (amount)<br />
 
-Stripe n'impose pas de minimum. Configurez selon votre stratégie (0€ ou 1€ minimum).
+Stripe imposes no minimum. Configure according to your strategy (€0 or €1 minimum).
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Maintenez en **"Actif"** pour offrir la meilleure expérience de paiement.
+Keep on **"Active"** to offer the best payment experience.
 
-**Mode de fonctionnement** | (Test/Live)<br />
+**Operating Mode** | (Test/Live)<br />
 
-- **Mode Test** : Tests avec l'environnement sandbox Stripe
-- **Mode Live** : Production avec de vraies transactions
+- **Test Mode**: Tests with Stripe sandbox environment
+- **Live Mode**: Production with real transactions
 
-:::info Configuration recommandée
-Pour Stripe :
-- **Nom** : "Paiement sécurisé" ou "Carte bancaire"
-- **Montant minimal** : 1€
-- **Statut** : Actif
-- **Mode** : Live (après tests complets)
+:::info Recommended Configuration
+For Stripe:
+- **Name**: "Secure Payment" or "Credit Card"
+- **Minimum Amount**: €1
+- **Status**: Active
+- **Mode**: Live (after complete testing)
 :::
 
-## Récupération des identifiants API
+## API Credentials Retrieval
 
-### Accès au dashboard Stripe
+### Stripe Dashboard Access
 
-Pour configurer Stripe, vous devez récupérer vos clés API depuis votre compte :
+To configure Stripe, you need to retrieve your API keys from your account:
 
-1. **Connectez-vous** à votre [dashboard Stripe](https://dashboard.stripe.com/)
-2. Accédez à la section **« Développeurs »**
-3. Cliquez sur **« Clés API »**
+1. **Log in** to your [Stripe dashboard](https://dashboard.stripe.com/)
+2. Go to the **"Developers"** section
+3. Click on **"API Keys"**
 
-![Section Clés API dans Stripe](/img/next_gen/settings/store/payment_gateways/stripe/apikeys.png)
+![API Keys section in Stripe](/img/next_gen/settings/store/payment_gateways/stripe/apikeys.png)
 
-### Création des clés API
+### Creating API Keys
 
-4. **Créez une nouvelle clé** si nécessaire :
+4. **Create a new key** if needed:
 
-![Création d'une clé API Stripe](/img/next_gen/settings/store/payment_gateways/stripe/apikey.png)
+![Creating a Stripe API key](/img/next_gen/settings/store/payment_gateways/stripe/apikey.png)
 
-### Types de clés Stripe
+### Stripe Key Types
 
-Stripe utilise deux types de clés pour sécuriser les intégrations :
+Stripe uses two types of keys to secure integrations:
 
-**Clé publique** | (pk_...)<br />
-- Utilisée côté client pour initialiser les paiements
-- Peut être exposée publiquement en toute sécurité
-- Commence par `pk_test_` (test) ou `pk_live_` (live)
+**Public Key** | (pk_...)<br />
+- Used client-side to initiate payments
+- Can be safely exposed publicly
+- Starts with `pk_test_` (test) or `pk_live_` (live)
 
-**Clé secrète** | (sk_...)<br />
-- Utilisée côté serveur pour les opérations critiques
-- Doit rester absolument confidentielle
-- Commence par `sk_test_` (test) ou `sk_live_` (live)
+**Secret Key** | (sk_...)<br />
+- Used server-side for critical operations
+- Must remain absolutely confidential
+- Starts with `sk_test_` (test) or `sk_live_` (live)
 
-5. **Copiez vos clés** (publique et secrète)
-6. **Collez-les** dans les champs correspondants de CLIENTXCMS
+5. **Copy your keys** (public and secret)
+6. **Paste them** in the corresponding CLIENTXCMS fields
 
-:::warning Sécurité critique
-La **clé secrète Stripe** ne doit jamais être exposée publiquement. Elle donne un accès complet à votre compte et vos paiements. Stockez-la de manière ultra-sécurisée.
+:::warning Critical Security
+The **Stripe secret key** must never be publicly exposed. It gives full access to your account and payments. Store it ultra-securely.
 :::
 
-## Configuration des webhooks
+## Webhook Configuration
 
-### Importance des webhooks
+### Webhook Importance
 
-Les webhooks Stripe sont **essentiels** pour recevoir les notifications de paiement en temps réel et garantir la synchronisation parfaite entre Stripe et votre boutique.
+Stripe webhooks are **essential** to receive real-time payment notifications and guarantee perfect synchronization between Stripe and your store.
 
-### Configuration étape par étape
+### Step-by-Step Configuration
 
-1. Dans votre dashboard Stripe, accédez à **« Webhooks »**
-2. Cliquez sur **« Ajouter un endpoint »**
+1. In your Stripe dashboard, go to **"Webhooks"**
+2. Click **"Add an endpoint"**
 
-![Configuration des webhooks Stripe](/img/next_gen/settings/store/payment_gateways/stripe/webhooks.png)
+![Stripe webhook configuration](/img/next_gen/settings/store/payment_gateways/stripe/webhooks.png)
 
-3. **Configurez l'endpoint** avec les paramètres suivants :
+3. **Configure the endpoint** with the following parameters:
 
-| Paramètre           | Valeur                                    |
+| Parameter           | Value                                    |
 |---------------------|-------------------------------------------|
-| **URL d'endpoint**  | `https://votre-domaine.com/gateways/stripe/notification` |
-| **Description**     | Notifications de paiement CLIENTXCMS     |
-| **Écouter**         | Événements de paiement                   |
-| **Version API**     | 2023-10-16 (ou version recommandée)      |
-| **Événements**      | `checkout.session.completed`             |
+| **Endpoint URL**    | `https://your-domain.com/gateways/stripe/notification` |
+| **Description**     | CLIENTXCMS payment notifications         |
+| **Listen**          | Payment events                           |
+| **API Version**     | 2023-10-16 (or recommended version)      |
+| **Events**          | `checkout.session.completed`             |
 
-4. **Récupérez la clé secrète** du webhook :
+4. **Retrieve the webhook secret key**:
 
-![Secret du webhook Stripe](/img/next_gen/settings/store/payment_gateways/stripe/secret.png)
+![Stripe webhook secret](/img/next_gen/settings/store/payment_gateways/stripe/secret.png)
 
-5. **Copiez cette clé secrète** dans le champ webhook de CLIENTXCMS
+5. **Copy this secret key** into the CLIENTXCMS webhook field
 
-:::info Événements recommandés
-Pour une intégration complète, ajoutez aussi :
+:::info Recommended Events
+For a complete integration, also add:
 - `payment_intent.succeeded`
 - `payment_intent.payment_failed`
-- `invoice.payment_succeeded` (pour les abonnements)
+- `invoice.payment_succeeded` (for subscriptions)
 :::
 
-## Modes de fonctionnement
+## Operating Modes
 
-### Mode Test (Sandbox)
+### Test Mode (Sandbox)
 
-Le mode test Stripe offre un environnement complet pour :
-- **Tester toutes les fonctionnalités** sans argent réel
-- **Simuler différents scénarios** avec des cartes de test spécialisées
-- **Valider les webhooks** et intégrations
-- **Former vos équipes** en toute sécurité
+Stripe test mode offers a complete environment to:
+- **Test all features** without real money
+- **Simulate different scenarios** with specialized test cards
+- **Validate webhooks** and integrations
+- **Train your teams** safely
 
-**Cartes de test Stripe** :
-- `4242424242424242` : Visa réussie
-- `4000000000000002` : Carte déclinée
-- `4000002500003155` : Authentification 3D Secure requise
+**Stripe Test Cards**:
+- `4242424242424242`: Successful Visa
+- `4000000000000002`: Declined card
+- `4000002500003155`: 3D Secure authentication required
 
-### Mode Live (Production)
+### Live Mode (Production)
 
-Le mode live active toute la puissance de Stripe :
-- **Vrais paiements** avec de l'argent réel
-- **Analytics avancés** et rapports détaillés
-- **Outils de gestion** professionnels
-- **Support Stripe** premium
+Live mode activates all of Stripe's power:
+- **Real payments** with real money
+- **Advanced analytics** and detailed reports
+- **Professional management tools**
+- **Premium Stripe support**
 
-:::tip Conseil
-Testez **exhaustivement** tous vos parcours en mode test avant la mise en production. Stripe offre des outils de simulation très avancés.
+:::tip Advice
+Test **exhaustively** all your journeys in test mode before going to production. Stripe offers very advanced simulation tools.
 :::
 
-## Fonctionnalités avancées
+## Advanced Features
 
 ### Stripe Dashboard
 
-Le dashboard Stripe vous donne accès à :
+The Stripe dashboard gives you access to:
 
-| Fonctionnalité              | Description                                        |
+| Feature                     | Description                                        |
 |-----------------------------|----------------------------------------------------|
-| **Analytics temps réel**    | Métriques détaillées sur vos paiements           |
-| **Gestion des clients**     | Base de données clients intégrée                 |
-| **Détection de fraude**     | IA avancée avec scoring de risque                |
-| **Rapports automatiques**   | Exports comptables et fiscaux                    |
+| **Real-time Analytics**     | Detailed metrics on your payments                  |
+| **Customer Management**     | Integrated customer database                       |
+| **Fraud Detection**         | Advanced AI with risk scoring                      |
+| **Automatic Reports**       | Accounting and tax exports                         |
 
-### Outils de croissance
+### Growth Tools
 
-Stripe propose des outils uniques :
-- **Stripe Radar** : Protection anti-fraude avec IA
-- **Stripe Sigma** : Analytics avancés avec SQL
-- **Stripe Atlas** : Création d'entreprise internationale
-- **Stripe Capital** : Financement basé sur vos revenus
+Stripe offers unique tools:
+- **Stripe Radar**: AI-powered anti-fraud protection
+- **Stripe Sigma**: Advanced analytics with SQL
+- **Stripe Atlas**: International company creation
+- **Stripe Capital**: Revenue-based financing
 
-## Sécurité et conformité
+## Security and Compliance
 
-### Standards de sécurité
+### Security Standards
 
-Stripe respecte tous les standards les plus exigeants :
-- **PCI-DSS Level 1** : Certification maximale
-- **SOC 1 et SOC 2** : Audits de conformité
-- **GDPR Compliant** : Conformité européenne
-- **ISO 27001** : Sécurité informatique
+Stripe meets all the most demanding standards:
+- **PCI-DSS Level 1**: Maximum certification
+- **SOC 1 and SOC 2**: Compliance audits
+- **GDPR Compliant**: European compliance
+- **ISO 27001**: IT security
 
-### Technologies de protection
+### Protection Technologies
 
-* **Chiffrement AES-256** pour toutes les données
-* **TLS 1.2+** pour toutes les communications
-* **Tokenisation** avancée des cartes
-* **Machine Learning** pour la détection de fraude
+* **AES-256 encryption** for all data
+* **TLS 1.2+** for all communications
+* **Advanced tokenization** of cards
+* **Machine Learning** for fraud detection
 
-## Tarification Stripe
+## Stripe Pricing
 
-### Structure tarifaire
+### Pricing Structure
 
-Stripe propose une tarification claire :
-- **Cartes européennes** : 1,4% + 0,25€
-- **Cartes non-européennes** : 2,9% + 0,25€
-- **American Express** : Tarifs spéciaux
-- **Échecs de paiement** : Pas de frais
+Stripe offers clear pricing:
+- **European cards**: 1.4% + €0.25
+- **Non-European cards**: 2.9% + €0.25
+- **American Express**: Special rates
+- **Failed payments**: No fees
 
-### Avantages tarifaires
+### Pricing Advantages
 
-| Avantage                | Description                                        |
+| Advantage                | Description                                        |
 |-------------------------|----------------------------------------------------|
-| **Pas de frais fixes** | Uniquement des commissions sur les transactions  |
-| **Tarifs dégressifs**  | Réductions selon le volume                        |
-| **Pas de frais cachés** | Transparence totale sur la tarification         |
-| **Facturation claire** | Rapports détaillés des frais                     |
+| **No fixed fees**       | Only commissions on transactions                   |
+| **Volume discounts**    | Reductions based on volume                         |
+| **No hidden fees**      | Total pricing transparency                         |
+| **Clear billing**       | Detailed fee reports                               |
 
 
-:::tip À retenir
-Stripe représente l'**excellence absolue** dans le paiement par carte avec une technologie inégalée, des outils exceptionnels et une fiabilité légendaire. C'est le choix premium pour les entreprises exigeantes.
+:::tip Remember
+Stripe represents **absolute excellence** in card payments with unmatched technology, exceptional tools, and legendary reliability. It's the premium choice for demanding businesses.
 :::

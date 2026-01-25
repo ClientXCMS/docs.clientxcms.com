@@ -1,257 +1,258 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 # Pelican
 
-Le module **Pelican** permet d’intégrer le panel **Pelican** directement à **ClientXCMS** afin de vendre et gérer automatiquement des serveurs (jeux ou applicatifs) depuis votre boutique.
+The **Pelican** module allows you to integrate the **Pelican** panel directly into **ClientXCMS** to sell and automatically manage servers (games or applications) from your store.
 
-Il s’adresse aux hébergeurs souhaitant une **automatisation complète**, une **expérience client premium**, et une **gestion avancée côté administrateur**.
+It is designed for hosting providers seeking **complete automation**, a **premium customer experience**, and **advanced administration-side management**.
 
 ---
 
-## 1) Présentation générale
+## 1) General Overview
 
-Avec le module Pelican :
+With the Pelican module:
 
-- Les serveurs sont **créés automatiquement** à la commande
-- Les clients gèrent leurs serveurs **sans quitter ClientXCMS**
-- L’administrateur garde un **contrôle total** sur les ressources, eggs et fonctionnalités
-- L’intégration repose sur les **API officielles Pelican**
+- Servers are **automatically created** upon order
+- Customers manage their servers **without leaving ClientXCMS**
+- The administrator maintains **full control** over resources, eggs, and features
+- Integration relies on the **official Pelican APIs**
 
-### Fonctionnalités clés
+### Key Features
 
-- Provisioning automatique des serveurs
-- Gestion complète côté client (start / stop / restart / kill)
-- Réinstallation contrôlée (avec ou sans changement d’egg)
-- Import et synchronisation des eggs Pelican
-- Gestion avancée des variables (env vars)
-- Support des options payantes (RAM, CPU, disque, DB, backups…)
-- Actions administrateur avancées
-- Cache et optimisation des appels API
+- Automatic server provisioning
+- Full customer-side management (start / stop / restart / kill)
+- Controlled reinstallation (with or without egg change)
+- Import and synchronization of Pelican eggs
+- Advanced variable management (env vars)
+- Support for paid options (RAM, CPU, disk, DB, backups...)
+- Advanced administrator actions
+- Cache and API call optimization
 
-:::info Module requis
-Pour utiliser toutes les fonctionnalités décrites ci-dessous, le module **Pelican** doit être activé dans votre ClientXCMS.
+:::info Required Module
+To use all the features described below, the **Pelican** module must be enabled in your ClientXCMS.
 :::
 
 ---
 
-## 2) Activation du module
+## 2) Module Activation
 
-Une fois le module installé dans votre ClientXCMS, vous devez l’activer depuis l’interface d’administration.
+Once the module is installed in your ClientXCMS, you must activate it from the administration interface.
 
-Chemin :
+Path:
 `Admin → Extensions / Modules → Pelican`
 
-![Activation du module Pelican](/img/next_gen/extensions/modules/pelican/activation_module.png)
+![Pelican module activation](/img/next_gen/extensions/modules/pelican/activation_module.png)
 
-> Tant que le module n’est pas activé, aucune fonctionnalité Pelican ne sera disponible.
-
----
-
-## 3) Prérequis techniques
-
-### Côté ClientXCMS
-
-- ClientXCMS à jour
-- PHP **8.1 ou supérieur**
-- Accès administrateur
-
-### Côté Pelican
-
-- Un panel Pelican fonctionnel et accessible en HTTP(S)
-- Une **Application API Key** (obligatoire)
-- Une **Client API Key** (optionnelle mais recommandée)
+> As long as the module is not activated, no Pelican functionality will be available.
 
 ---
 
-## 4) Création des clés API Pelican
+## 3) Technical Requirements
+
+### ClientXCMS Side
+
+- Up-to-date ClientXCMS
+- PHP **8.1 or higher**
+- Administrator access
+
+### Pelican Side
+
+- A functional Pelican panel accessible via HTTP(S)
+- An **Application API Key** (required)
+- A **Client API Key** (optional but recommended)
+
+---
+
+## 4) Creating Pelican API Keys
 
 ### 4.1 Application API Key
 
-Cette clé permet à ClientXCMS de **créer et gérer les serveurs**.
+This key allows ClientXCMS to **create and manage servers**.
 
-![Permissions Application API Pelican](/img/next_gen/extensions/modules/pelican/pelican_app_key_permissions.png)
+![Pelican Application API Permissions](/img/next_gen/extensions/modules/pelican/pelican_app_key_permissions.png)
 
-⚠️ Assurez-vous que la clé dispose bien des permissions nécessaires (serveurs, users, nodes, eggs, allocations…).
-
----
-
-### 4.2 Client API Key (optionnelle)
-
-Cette clé améliore l’expérience client (statut, actions serveur, etc.).
-
-![Création d'une Client API Key Pelican](/img/next_gen/extensions/modules/pelican/pelican_client_key_creation.png)
+⚠️ Make sure the key has the necessary permissions (servers, users, nodes, eggs, allocations...).
 
 ---
 
-## 5) Ajouter un serveur Pelican dans ClientXCMS
+### 4.2 Client API Key (optional)
 
-Le module Pelican s’appuie sur le système de **serveurs de provisioning** de ClientXCMS.
+This key improves the customer experience (status, server actions, etc.).
 
-Chemin :
-`Admin → Paramètres → Approvisionnement → Serveurs → Nouveau`
+![Creating a Pelican Client API Key](/img/next_gen/extensions/modules/pelican/pelican_client_key_creation.png)
 
-Type de serveur : **Pelican**
+---
 
-![Connexion au serveur Pelican](/img/next_gen/extensions/modules/pelican/connexion_serveur.png)
+## 5) Adding a Pelican Server in ClientXCMS
 
-### Champs à renseigner
+The Pelican module relies on the ClientXCMS **provisioning servers** system.
 
-| Champ | Description |
+Path:
+`Admin → Settings → Provisioning → Servers → New`
+
+Server type: **Pelican**
+
+![Pelican server connection](/img/next_gen/extensions/modules/pelican/connexion_serveur.png)
+
+### Fields to Fill In
+
+| Field | Description |
 |------|------------|
-| Adresse | URL complète du panel Pelican |
+| Address | Full URL of the Pelican panel |
 | Username | **Application API Key** |
-| Password | **Client API Key** (optionnel) |
+| Password | **Client API Key** (optional) |
 
-Une fois configuré, utilisez le bouton **Tester la connexion** pour valider l’accès à l’API.
-
----
-
-## 6) Importer et gérer les Eggs
-
-Les eggs Pelican doivent être importés afin d’être utilisés dans les produits.
-
-### 6.1 Import des eggs
-
-Chemin :
-`Admin → Extensions → Pelican → Eggs → Importer`
-
-![Import des eggs Pelican](/img/next_gen/extensions/modules/pelican/import_eggs.png)
-
-Cette action :
-- Récupère les eggs depuis Pelican
-- Les stocke localement
-- Permet leur sélection dans les produits
+Once configured, use the **Test Connection** button to validate API access.
 
 ---
 
-### 6.2 Liste des eggs
+## 6) Importing and Managing Eggs
 
-![Liste des eggs Pelican](/img/next_gen/extensions/modules/pelican/liste_eggs.png)
+Pelican eggs must be imported to be used in products.
 
-Depuis cette page, vous pouvez :
-- Activer / désactiver un egg
-- Synchroniser un egg
-- Accéder à ses détails
+### 6.1 Importing Eggs
 
----
+Path:
+`Admin → Extensions → Pelican → Eggs → Import`
 
-### 6.3 Détail d’un egg et variables
+![Pelican egg import](/img/next_gen/extensions/modules/pelican/import_eggs.png)
 
-![Détail d'un egg Pelican](/img/next_gen/extensions/modules/pelican/detail_egg.png)
-
-Chaque egg contient :
-- Son image Docker
-- Sa commande de démarrage
-- Ses variables d’environnement
-- Les options `user_editable`, `required`, etc.
-
-Ces variables peuvent ensuite être rendues modifiables côté client.
+This action:
+- Retrieves eggs from Pelican
+- Stores them locally
+- Allows their selection in products
 
 ---
 
-## 7) Configuration d’un produit Pelican
+### 6.2 Egg List
 
-Chaque produit ClientXCMS peut livrer **un serveur Pelican**.
+![Pelican egg list](/img/next_gen/extensions/modules/pelican/liste_eggs.png)
 
-Chemin :
-`Admin → Boutique → Produits → (Produit) → Configuration → Pelican`
-
-![Configuration produit Pelican](/img/next_gen/extensions/modules/pelican/config_produit.png)
-
-### Vous pouvez définir :
-
-- Le serveur Pelican utilisé
-- L’egg par défaut ou les eggs autorisées
-- Les nodes autorisées
-- Les ressources (RAM, CPU, disque…)
-- Les fonctionnalités (DB, backups, allocations)
-- Les options de déploiement (ports, IP dédiée, tags)
-- Les permissions client (réinstallation, variables, egg)
+From this page, you can:
+- Enable / disable an egg
+- Synchronize an egg
+- Access its details
 
 ---
 
-## 8) Expérience client – Commande et gestion
+### 6.3 Egg Details and Variables
 
-### 8.1 Choix de l’egg et des variables à l’achat
+![Pelican egg details](/img/next_gen/extensions/modules/pelican/detail_egg.png)
 
-![Sélection des eggs et variables à l'achat](/img/next_gen/extensions/modules/pelican/achat_service_selection_eggs_variables.png)
+Each egg contains:
+- Its Docker image
+- Its startup command
+- Its environment variables
+- Options `user_editable`, `required`, etc.
 
-Selon la configuration :
-- Le client peut choisir son egg
-- Renseigner certaines variables
-- Ajouter des options payantes
-
----
-
-### 8.2 Panel client – Gestion du serveur
-
-![Panel client Pelican](/img/next_gen/extensions/modules/pelican/panel_client_service.png)
-
-Le client peut :
-- Démarrer / arrêter / redémarrer son serveur
-- Voir le statut en temps réel
-- Réinstaller le serveur
-- Modifier les variables autorisées
+These variables can then be made editable on the customer side.
 
 ---
 
-### 8.3 Réinstallation du serveur
+## 7) Pelican Product Configuration
 
-![Réinstallation d'un serveur Pelican](/img/next_gen/extensions/modules/pelican/reinstaller_serveur.png)
+Each ClientXCMS product can deliver **a Pelican server**.
 
-La réinstallation peut :
-- Réutiliser le même egg
-- Ou permettre un changement d’egg (si autorisé)
+Path:
+`Admin → Store → Products → (Product) → Configuration → Pelican`
 
----
+![Pelican product configuration](/img/next_gen/extensions/modules/pelican/config_produit.png)
 
-## 9) Administration des services
+### You can define:
 
-### 9.1 Tableau de bord Pelican
-
-![Tableau de bord Pelican](/img/next_gen/extensions/modules/pelican/tableaudebord.png)
-
-Depuis ce dashboard, l’administrateur accède rapidement à :
-- L’état des serveurs Pelican
-- La gestion des eggs
-- Les outils de maintenance
+- The Pelican server used
+- The default egg or allowed eggs
+- Allowed nodes
+- Resources (RAM, CPU, disk...)
+- Features (DB, backups, allocations)
+- Deployment options (ports, dedicated IP, tags)
+- Customer permissions (reinstallation, variables, egg)
 
 ---
 
-### 9.2 Gestion d’un service côté admin
+## 8) Customer Experience - Ordering and Management
 
-![Panel admin service Pelican](/img/next_gen/extensions/modules/pelican/panel_admin_service.png)
+### 8.1 Egg and Variable Selection at Purchase
 
-Actions disponibles :
-- Suspendre / réactiver
-- Réinstaller
-- Supprimer
-- Mettre à jour les ressources
-- Synchroniser avec Pelican
+![Egg and variable selection at purchase](/img/next_gen/extensions/modules/pelican/achat_service_selection_eggs_variables.png)
+
+Depending on the configuration:
+- The customer can choose their egg
+- Fill in certain variables
+- Add paid options
 
 ---
 
-## 10) Paramètres et cache
+### 8.2 Customer Panel - Server Management
 
-![Paramètres du module Pelican](/img/next_gen/extensions/modules/pelican/parametres.png)
+![Pelican customer panel](/img/next_gen/extensions/modules/pelican/panel_client_service.png)
 
-Le module utilise un système de cache pour :
-- Accélérer l’interface admin
-- Réduire les appels API Pelican
+The customer can:
+- Start / stop / restart their server
+- View real-time status
+- Reinstall the server
+- Modify allowed variables
 
-Un bouton permet de **vider le cache** à tout moment.
+---
+
+### 8.3 Server Reinstallation
+
+![Pelican server reinstallation](/img/next_gen/extensions/modules/pelican/reinstaller_serveur.png)
+
+Reinstallation can:
+- Reuse the same egg
+- Or allow an egg change (if authorized)
+
+---
+
+## 9) Service Administration
+
+### 9.1 Pelican Dashboard
+
+![Pelican dashboard](/img/next_gen/extensions/modules/pelican/tableaudebord.png)
+
+From this dashboard, the administrator quickly accesses:
+- Pelican server status
+- Egg management
+- Maintenance tools
+
+---
+
+### 9.2 Admin-Side Service Management
+
+![Pelican admin service panel](/img/next_gen/extensions/modules/pelican/panel_admin_service.png)
+
+Available actions:
+- Suspend / reactivate
+- Reinstall
+- Delete
+- Update resources
+- Synchronize with Pelican
+
+---
+
+## 10) Settings and Cache
+
+![Pelican module settings](/img/next_gen/extensions/modules/pelican/parametres.png)
+
+The module uses a cache system to:
+- Speed up the admin interface
+- Reduce Pelican API calls
+
+A button allows you to **clear the cache** at any time.
 
 ---
 
 ## 11) Conclusion
 
-Le module **Pelican pour ClientXCMS** est une solution **clé en main**, pensée pour :
+The **Pelican module for ClientXCMS** is a **turnkey solution**, designed for:
 
-- Les hébergeurs professionnels
-- La vente automatisée de serveurs
-- Une expérience client moderne
-- Une administration simple et puissante
+- Professional hosting providers
+- Automated server sales
+- A modern customer experience
+- Simple and powerful administration
 
-Il permet de passer d’un simple panel Pelican à une **véritable offre commerciale prête à vendre**.
+It allows you to go from a simple Pelican panel to a **real commercial offering ready to sell**.

@@ -1,11 +1,12 @@
 ---
 sidebar_position: 8
+translated: true
 ---
-# Etape final
 
-Vous avez maintenant terminé la configuration de votre CLIENTXCMS. Vous pouvez maintenant commencer à créer vos groupes et produits, et à les vendre à vos clients.
+# Congratulations
 
-Si vous avez des idées pour améliorer ce guide, n'hésitez pas. Plus d'informations sur  [le dépot github](https://github.com/ClientXCMS/docs.clientxcms.com).
+You have now completed the configuration of your CLIENTXCMS. You can now start creating your groups and products, and selling them to your customers.
 
-Merci d'avoir choisi CLIENTXCMS ! 🎉
+If you have ideas to improve this guide, feel free to contribute. Learn more on [the GitHub repository](https://github.com/ClientXCMS/docs.clientxcms.com).
 
+Thank you for choosing CLIENTXCMS!

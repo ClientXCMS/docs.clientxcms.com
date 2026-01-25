@@ -1,62 +1,67 @@
+---
+translated: true
+---
+
 # Cloudflare Subdomains
 
-Cette extension permet de gérer les sous-domaines avec Cloudflare. Elle est utile pour les utilisateurs qui souhaitent offrir à leurs clients la possibilité de créer des sous-domaines personnalisés pour leurs services.
+This extension allows managing subdomains with Cloudflare. It is useful for users who want to offer their customers the ability to create custom subdomains for their services.
 
-## Type supporté
+## Supported Types
 - cPanel
 - Pterodactyl
 - Plesk
 
 :::info Modules
-Pour utiliser la fonctionnalité de sous-domaines avec Pterodactyl, veuillez installer le package `clientxcms/sso-pterodactyl` via Composer. Vous pouvez le faire en exécutant la commande suivante dans votre terminal :
+To use the subdomain feature with Pterodactyl, please install the `clientxcms/sso-pterodactyl` package via Composer. You can do this by running the following command in your terminal:
 ```bash
 composer require clientxcms/sso-pterodactyl
 ```
 :::
-Celui ci rajoutera les endpoints nécessaires pour la gestion des sous-domaines dans Pterodactyl
-## Installation
-Vous pouvez l’activer depuis la section **Extensions**, puis le configurer via les **paramètres d’extension** disponible dans la section **Approvisionnement**.
+This will add the necessary endpoints for subdomain management in Pterodactyl
 
-### Création de l'API Cloudflare
+## Installation
+You can enable it from the **Extensions** section, then configure it via **extension settings** available in the **Provisioning** section.
+
+### Creating the Cloudflare API
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/api.png)
-Pour utiliser cette extension, vous devez créer une clé API dans votre compte Cloudflare. Voici comment
-1. Connectez-vous à votre compte Cloudflare.
-2. Allez dans la section **Mon profil**.
-3. Cliquez sur **API Tokens**.
-4. Cliquez sur **Create Token**.
-5. Sélectionnez **Edit zone DNS** dans les permissions.
-6. Sélectionnez les zones que vous souhaitez gérer avec cette clé.
-7. Cliquez sur **Continue to summary** puis sur **Create Token**.
-8. Copiez la clé API générée.
-9. Collez la clé API dans les paramètres de l'extension Cloudflare Subdomains dans CLIENTXCMS.
+To use this extension, you must create an API key in your Cloudflare account. Here's how:
+1. Log in to your Cloudflare account.
+2. Go to the **My Profile** section.
+3. Click on **API Tokens**.
+4. Click on **Create Token**.
+5. Select **Edit zone DNS** in permissions.
+6. Select the zones you want to manage with this key.
+7. Click **Continue to summary** then **Create Token**.
+8. Copy the generated API key.
+9. Paste the API key in the Cloudflare Subdomains extension settings in CLIENTXCMS.
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/config.png)
 
-**Clé API** : La clé API que vous avez générée dans votre compte Cloudflare.
+**API Key**: The API key you generated in your Cloudflare account.
 
-**TTL** : Le TTL (Time To Live) est le temps pendant lequel les enregistrements DNS sont mis en cache. Par défaut, il est réglé sur 1 heure (3600 secondes). Vous pouvez le modifier selon vos besoins.
+**TTL**: The TTL (Time To Live) is the time during which DNS records are cached. By default, it is set to 1 hour (3600 seconds). You can modify it according to your needs.
 
-**Proxied** : Cette option permet de choisir si le trafic vers le sous-domaine doit passer par le réseau Cloudflare. Si vous activez cette option, le trafic sera protégé par Cloudflare et bénéficiera de ses fonctionnalités de sécurité et de performance. Si vous la désactivez, le trafic ira directement vers votre serveur.
+**Proxied**: This option allows you to choose whether traffic to the subdomain should go through the Cloudflare network. If you enable this option, traffic will be protected by Cloudflare and benefit from its security and performance features. If you disable it, traffic will go directly to your server.
 
-Puis vous pouvez cliquer sur **Enregistrer** pour sauvegarder vos paramètres.
+Then you can click **Save** to save your settings.
 
-## Configurer un sous-domaine
-Pour configurer un sous-domaine, allez dans les paramètres > Approvisionnement > Sous-domaines et selectionnez le domaine que vous souhaitez automatiser.
+## Configuring a Subdomain
+To configure a subdomain, go to Settings > Provisioning > Subdomains and select the domain you want to automate.
 
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/config2.png)
 
-Celui ci ajoutez une metadonnées **cloudflare_zone_id** avec l'ID de la zone Cloudflare que vous souhaitez utiliser pour les sous-domaines.
-Vous pouvez trouver l'ID de la zone dans votre tableau de bord Cloudflare, dans la section **Overview** du domaine concerné.
+Add a metadata **cloudflare_zone_id** with the Cloudflare zone ID you want to use for subdomains.
+You can find the zone ID in your Cloudflare dashboard, in the **Overview** section of the relevant domain.
 
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/zone_id.png)
 
-## Liste des sous-domaines
-Vous pouvez consulter la liste des sous-domaines créés dans la section **Sous-domaines** de l'extension Cloudflare Subdomains. Cette liste affiche les sous-domaines créés, leur statut et les actions possibles.
+## Subdomain List
+You can view the list of created subdomains in the **Subdomains** section of the Cloudflare Subdomains extension. This list displays created subdomains, their status, and possible actions.
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/domains.png)
 
-Ils se supprimeront automatiquement si le service est expiré ou supprimé.
-Vous pouvez y retrouver les colonnes suivantes :
-- **ID de l'enregistrement** : L'ID de l'enregistrement DNS dans Cloudflare.
-- **Sous-domaine** : Le sous-domaine créé pour le service.
-- **Cible** : l'IP auquel le sous-domaine est associé.
-- **Service** : Le service auquel le sous-domaine est associé.
-- **Suppression** : Un bouton pour supprimer le sous-domaine.
+They will be automatically deleted if the service is expired or deleted.
+You can find the following columns:
+- **Record ID**: The DNS record ID in Cloudflare.
+- **Subdomain**: The subdomain created for the service.
+- **Target**: The IP to which the subdomain is associated.
+- **Service**: The service to which the subdomain is associated.
+- **Delete**: A button to delete the subdomain.

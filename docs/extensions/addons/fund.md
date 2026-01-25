@@ -1,103 +1,106 @@
-# Fonds
+---
+translated: true
+---
 
-> Cette page présente la configuration et l’usage de l'addon **Funds** pour ClientXCMS.
-> Objectif : permettre aux clients de créditer leur solde (pré-paiement) et, si vous l’autorisez, de **transférer** des fonds vers d’autres comptes.
+# Funds
+
+> This page presents the configuration and usage of the **Funds** addon for ClientXCMS.
+> Objective: allow customers to credit their balance (pre-payment) and, if you allow it, **transfer** funds to other accounts.
 
 ---
 
-## 1. Principe général
+## 1. General Principle
 
-1. **Crédit de compte**
+1. **Account Credit**
 
-   * Le client choisit un montant (dans la fourchette autorisée) et règle via la passerelle de paiement de son choix.
-   * Le solde **ClientXCMS Balance** est immédiatement mis à jour après validation du paiement.
-2. **Transfert de fonds** (optionnel)
+   * The customer chooses an amount (within the allowed range) and pays via their chosen payment gateway.
+   * The **ClientXCMS Balance** is immediately updated after payment validation.
+2. **Fund Transfer** (optional)
 
-   * Si activé, un client peut envoyer tout ou partie de son solde vers un autre compte.
-   * Des règles (délai, minimum, maximum, dépôt préalable) évitent les abus.
-3. **Suivi & historique**
+   * If enabled, a customer can send all or part of their balance to another account.
+   * Rules (delay, minimum, maximum, prior deposit) prevent abuse.
+3. **Tracking & History**
 
-   * Tableau d’administration pour tracer tous les transferts.
-   * Page « Moyens de paiement » côté client avec historique détaillé.
+   * Administration table to trace all transfers.
+   * "Payment Methods" page on client side with detailed history.
 
 ---
 
-## 2. Prérequis
+## 2. Prerequisites
 
-Une fois l’extension activée :
+Once the extension is activated:
 
-* **Administration → Paramètres → Paramètres des extensions → Fonds**
-* Gestion des transferts : **Administration → Paramètres → Paramètres des extensions → Fonds » (onglet *Transferts*)**
+* **Administration → Settings → Extension Settings → Funds**
+* Transfer management: **Administration → Settings → Extension Settings → Funds** (*Transfers* tab)
 
-| Élément     | Détail / Version                                                     |
+| Element     | Detail / Version                                                     |
 | ----------- | -------------------------------------------------------------------- |
-| Add-on      | **Funds** (gratuit, core)                                            |
-| Passerelle  | Au moins une passerelle active (Stripe, PayPal, etc.)                |
-| Rôle client | Autorisation « Ajouter / transférer des fonds » (activée par défaut) |
+| Add-on      | **Funds** (free, core)                                               |
+| Gateway     | At least one active gateway (Stripe, PayPal, etc.)                   |
+| Client Role | "Add / transfer funds" authorization (enabled by default)            |
 
 ---
 
-## 3. Paramètres globaux
+## 3. Global Settings
 
 ![img](/img/next_gen/extensions/addons/fund/fonds1.png)
 
-| Section                  | Champ                                 | Fonction                                       | Exemple                 |
+| Section                  | Field                                 | Function                                       | Example                 |
 | ------------------------ | ------------------------------------- | ---------------------------------------------- | ----------------------- |
-| **Créditer des fonds**   | Montant minimum / maximum             | Limites pour un dépôt unique                   | `5` · `1000`            |
-| **Transférer des fonds** | *Case* « Autoriser les transferts »   | Active ou non la fonctionnalité                | ✅ / ❌                   |
-|                          | Montant minimum / maximum (transfert) | Plage autorisée pour un transfert              | `5` · `1000`            |
-|                          | Délai de transfert (minutes)          | Anti-spam entre deux transferts du même client | `5`                     |
-|                          | Dépôt minimum requis                  | Solde à créditer avant de pouvoir transférer   | `5` (0 pour désactiver) |
+| **Credit Funds**         | Minimum / maximum amount              | Limits for a single deposit                    | `5` · `1000`            |
+| **Transfer Funds**       | *Checkbox* "Allow transfers"          | Enables or disables the feature                | ✅ / ❌                   |
+|                          | Minimum / maximum amount (transfer)   | Allowed range for a transfer                   | `5` · `1000`            |
+|                          | Transfer delay (minutes)              | Anti-spam between two transfers from same client | `5`                   |
+|                          | Minimum deposit required              | Balance to credit before being able to transfer | `5` (0 to disable)     |
 
-> Les montants suivent la devise principale de votre boutique.
+> Amounts follow your store's main currency.
 
-Cliquez **Enregistrer** pour appliquer.
+Click **Save** to apply.
 
 ---
 
-## 4. Tableau des transferts (administration)
+## 4. Transfers Table (administration)
 
 ![img](/img/next_gen/extensions/addons/fund/fonds2.png)
 
-* **#** : identifiant interne
-* **Client / Destinataire**
-* **Montant**
-* **Statut** : *Terminé* / *En attente* / *Annulé*
-* **Date de transfert**
-* **Créé** : date de la demande
+* **#**: internal identifier
+* **Customer / Recipient**
+* **Amount**
+* **Status**: *Completed* / *Pending* / *Cancelled*
+* **Transfer date**
+* **Created**: request date
 
-Utilisez les filtres standards (date, client, statut) pour vos audits ou litiges.
+Use standard filters (date, customer, status) for your audits or disputes.
 
 ---
 
-## 5. Crédits et transferts côté client
+## 5. Credits and Transfers on Client Side
 
 ![img](/img/next_gen/extensions/addons/fund/fonds3.png)
 
-> **Mon compte → Moyens de paiement**
+> **My Account → Payment Methods**
 
-### 5.1 Créditer mon compte
+### 5.1 Credit My Account
 
-1. Saisir un montant (entre mini & maxi).
-2. Sélectionner la passerelle de paiement.
-3. Valider : le solde est mis à jour après succès du paiement.
+1. Enter an amount (between min & max).
+2. Select the payment gateway.
+3. Validate: balance is updated after successful payment.
 
-### 5.2 Transférer des fonds (si activé)
+### 5.2 Transfer Funds (if enabled)
 
-1. Indiquer le montant et l’e-mail du destinataire.
-2. Vérifier le résumé : limites, solde, délai restant.
-3. Cliquer **Transférer**.
-4. Le destinataire reçoit instantanément le crédit et un e-mail de notification (si activé).
+1. Enter the amount and recipient's email.
+2. Check the summary: limits, balance, remaining delay.
+3. Click **Transfer**.
+4. The recipient instantly receives the credit and a notification email (if enabled).
 
-Un tableau récapitule **Historique des transferts** (statut + actions possibles, ex. annulation tant que *En attente*).
+A table summarizes **Transfer History** (status + possible actions, e.g., cancellation while *Pending*).
 
 ---
 
-## 6. Bonnes pratiques
+## 6. Best Practices
 
-1. **Limites équilibrées** : fixez un min/max cohérents avec vos tarifs pour éviter micro-paiements coûteux ou dépôts trop élevés.
-2. **Anti-fraude** : maintenez un délai de quelques minutes entre deux transferts et imposez un dépôt minimum avant tout transfert.
-3. **Support** : gardez l’ID du transfert pour toute réclamation.
-4. **Communication** : précisez dans vos CGU que le solde n’est pas remboursable (si tel est votre choix légal).
-5. **Logs** : vérifiez régulièrement la liste des transferts pour détecter d’éventuelles anomalies.
-
+1. **Balanced limits**: set min/max consistent with your rates to avoid costly micro-payments or overly high deposits.
+2. **Anti-fraud**: maintain a few minutes delay between two transfers and require a minimum deposit before any transfer.
+3. **Support**: keep the transfer ID for any complaint.
+4. **Communication**: specify in your terms that the balance is non-refundable (if that's your legal choice).
+5. **Logs**: regularly check the transfer list to detect any anomalies.

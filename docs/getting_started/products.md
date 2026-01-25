@@ -1,18 +1,19 @@
 ---
 sidebar_position: 4
+translated: true
 ---
-# Création du premier produit
+# Creating Your First Product
 
-Une fois que vous avez configuré votre premier serveur, vous pouvez créer votre premier groupe de produits. Pour cela, rendez-vous dans les `Paramètres` puis dans `Boutique` puis `Groupes` et `Créer`.
+Once you have configured your first server, you can create your first product group. To do this, go to `Settings` then `Store` then `Groups` and `Create`.
 
 ![img](/img/next_gen/Store/Groupe/image_2.png)
 
-Une fois que vous avez créé votre groupe de produits, vous pouvez ajouter des produits à ce groupe. Pour cela, rendez-vous dans les `Paramètres` puis dans `Boutique` puis `Produits` et `Créer`.
+Once you have created your product group, you can add products to this group. To do this, go to `Settings` then `Store` then `Products` and `Create`.
 
 ![img](/img/next_gen/settings/store/products/create_product.png)
 
-Dans cette page vous pourrais configurer votre produit en fonction de vos besoins en remplissant les champs nécessaires ainsi que le type de produit que vous souhaitez créer. (Le même que le type de serveur que vous avez configuré)
+On this page, you can configure your product according to your needs by filling in the required fields, as well as selecting the product type you want to create (the same as the server type you configured).
 
-Vous pouvez également ajouter le prix du produit, rajouter des frais d'installation ou une description du produit.
+You can also add the product price, add installation fees, or add a product description.
 
-Votre produit est maintenant créé et disponible à la vente sur votre boutique en ligne.
+Your product is now created and available for sale on your online store.

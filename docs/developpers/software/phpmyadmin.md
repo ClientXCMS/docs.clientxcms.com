@@ -1,26 +1,27 @@
 ---
+translated: true
 sidebar_position: 1
 ---
 
-# Installation PHPMyAdmin
+# PHPMyAdmin Installation
 
-phpMyAdmin est un outil logiciel gratuit écrit en PHP, destiné à gérer l'administration de MySQL sur le Web. phpMyAdmin prend en charge un large éventail d'opérations sur MySQL et MariaDB. Les opérations fréquemment utilisées (gestion des bases de données, des tables, des colonnes, des relations, des index, des utilisateurs, des autorisations, etc.) peuvent être effectuées via l'interface utilisateur, tandis que vous avez toujours la possibilité d'exécuter directement n'importe quelle instruction SQL.
+phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc.) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.
 
-Il est souvent utilisé pour des hébergements de serveurs de jeux avec le panel [pterodactyl](../../extensions/modules/Pterodactyl).
+It is often used for game server hosting with the [Pterodactyl](../../extensions/modules/Pterodactyl) panel.
 
-Cette page est destinée à l'installation de ce logiciel
+This page is intended for installing this software.
 
-## Connexion 
-Ouvrez un logiciel de type [Putty](https://www.puttygen.com/) ou [Termius](https://termius.com/) et se connecter à votre serveur. Puis copier/coller la commande suivant pour installer directement dans le dossier public de pterodactyl
+## Connection
+Open software like [Putty](https://www.puttygen.com/) or [Termius](https://termius.com/) and connect to your server. Then copy/paste the following command to install directly in the pterodactyl public folder.
 
-## Installation des dépendances
-Executez cette commande pour installer toute les dépendances requises pour PHPMyAdmin.
+## Installing dependencies
+Run this command to install all required dependencies for PHPMyAdmin.
 ```
 apt-get install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql -y```
 ```
-### Installation dans un dossier
+### Installation in a folder
 
-#### Installation des fichiers
+#### Installing files
 
 ```
 cd /var/www/pterodactyl/public
@@ -32,28 +33,28 @@ mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### Configuration du PHPMyAdmin
+#### PHPMyAdmin Configuration
 
-Ouvrez le fichier config.inc.php en ligne de commande ou en SFTP 
+Open the config.inc.php file via command line or SFTP
 ```
 nano config.inc.php
 ```
-et à `$cfg['blowfish_secret']`, modifiez la ligne par celle-ci : 
+and at `$cfg['blowfish_secret']`, modify the line to this:
 
 `$cfg['blowfish_secret'] =  ->     = 'tsje8870s78b441s7e7du2bg7l51yjd9';`
 
 :::info Information
-Pour plus de sécurité, nous vous recommandons fortement de générer une autre chaine de caractère que celle sur cette page; Il faut juste quelle fasse 32 caractères.
+For better security, we strongly recommend generating a different character string than the one on this page; it just needs to be 32 characters long.
 :::
 
-### Installation sur un sous domaine
-#### Création du sous domaine
-Ajoutez un enregistrement A avec cette informations dans votre zone DNS:
+### Installation on a subdomain
+#### Creating the subdomain
+Add an A record with this information in your DNS zone:
 - Type: A
 - Name: phpmyadmin
-- IPv4 : L'ip de votre pterodactyl
+- IPv4: Your pterodactyl IP
 ![img](https://media.discordapp.net/attachments/475073153509490689/1040939792348749874/image.png)
-#### Installation des fichiers
+#### Installing files
 
 ```
 cd /var/www/
@@ -65,7 +66,7 @@ mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### Création du Vhost
+#### Creating the Vhost
 ##### Apache
 ```bash
 cd /etc/apache2/sites-available/
@@ -74,14 +75,14 @@ cd /etc/apache2/sites-available/
 nano phpmyadmin.exemple.com.conf
 ```
 
-###### Exemple de fichier de configuration
+###### Configuration file example
 ```bash
 <VirtualHost *:80>
     ServerAdmin admin@example.com
     ServerName phpmyadmin.example.com
     ServerAlias www.phpmyadmin.example.com
     DocumentRoot /var/www/phpmyadmin/public
-     
+
     <Directory /var/www/phpmyadmin/public/>
             Options Indexes FollowSymLinks MultiViews
             AllowOverride All
@@ -89,7 +90,7 @@ nano phpmyadmin.exemple.com.conf
             allow from all
             Require all granted
     </Directory>
-     
+
     LogLevel debug
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
@@ -98,64 +99,64 @@ nano phpmyadmin.exemple.com.conf
 ```dockerfile
 a2ensite phpmyadmin.exemple.com.conf
 ```
-Enfin, relancez votre serveur apache pour que vos modifications soient prises en compte.
+Finally, restart your Apache server for your changes to take effect.
 
 ```sudo service apache2 restart```
 
 #### Nginx
-Connectez-vous en SSH à votre machine virtuelle et exécutez ces commandes
+Connect via SSH to your virtual machine and run these commands
 ```bash
 cd /etc/nginx/conf.d/
 ```
 ```bash
 nano phpmyadmin.exemple.com.conf
 ```
-##### Exemple de fichier de configuration
+##### Configuration file example
 ```bash
 server {
     listen 80;
     listen [::]:80;
     server_name phpmyadmin.exemple.com;
     root /var/www/phpmyadmin;
- 
+
     index index.php;
- 
+
     charset utf-8;
- 
+
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
- 
+
     location = /favicon.ico { access_log off; log_not_found off; }
     location = /robots.txt  { access_log off; log_not_found off; }
- 
+
     error_page 404 /index.php;
- 
+
     location ~ \.php$ {
         fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
         fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
         include fastcgi_params;
     }
- 
+
     location ~ /\.(?!well-known).* {
         deny all;
     }
 }
 ```
 
-Enfin, relancez votre serveur nginx pour que vos modifications soient prises en compte.
+Finally, restart your Nginx server for your changes to take effect.
 
 ```sudo service nginx restart```
-#### Configuration du PHPMyAdmin
+#### PHPMyAdmin Configuration
 
-Ouvrez le fichier config.inc.php en ligne de commande ou en SFTP
+Open the config.inc.php file via command line or SFTP
 ```
 nano config.inc.php
 ```
-et à `$cfg['blowfish_secret']`, modifiez la ligne par celle-ci :
+and at `$cfg['blowfish_secret']`, modify the line to this:
 
 `$cfg['blowfish_secret'] =  ->     = 'tsje8870s78b441s7e7du2bg7l51yjd9';`
 
 :::info Information
-Pour plus de sécurité, nous vous recommandons fortement de générer une autre chaine de caractère que celle sur cette page; Il faut juste quelle fasse 32 caractères.
+For better security, we strongly recommend generating a different character string than the one on this page; it just needs to be 32 characters long.
 :::

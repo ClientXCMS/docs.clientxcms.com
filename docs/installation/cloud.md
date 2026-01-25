@@ -1,78 +1,88 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 # Cloud
 
-Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les versions cloud sur les serveurs de CLIENTXCMS. Les offres Cloud sont installées automatiquement sur les serveurs de CLIENTXCMS. Cela vous permet de bénéficier d'une installation optimisée et de mises à jour automatiques. Cette méthode est disponible pour toutes les licences Premium et Entreprise.
+This page will guide you through the installation of ClientXCMS Next Gen for cloud versions on CLIENTXCMS servers. Cloud offerings are automatically installed on CLIENTXCMS servers. This allows you to benefit from an optimized installation and automatic updates. This method is available for all Premium and Enterprise licenses.
 
-## Domaine
-Lors de la commande de votre licence, vous avez dû renseigner un nom de domaine. Ce nom de domaine sera utilisé pour l'installation de l'espace client. Si vous n'avez pas encore commandé de licence, rendez-vous sur [cette page](https://clientxcms.com/pricing) pour la commander.
+## Domain
 
-Si vous souhaitez installer l'espace client sur un sous-domaine, vous pouvez le faire en renseignant le sous-domaine dans la section "Changer le domaine" de votre espace client.
+When ordering your license, you had to provide a domain name. This domain name will be used for the client area installation. If you haven't ordered a license yet, go to [this page](https://clientxcms.com/pricing) to order one.
+
+If you want to install the client area on a subdomain, you can do so by entering the subdomain in the "Change Domain" section of your client area.
 
 ## Installation
-La première étape est d'activer l'offre cloud depuis votre espace client. Pour cela, rendez-vous sur la page "Mes Services" et cliquez sur le bouton "Cloud" dans les onglets de navigation.
 
-![Activation Cloud](/img/next_gen/Installation/Cloud/activation.png)
+The first step is to activate the cloud offering from your client area. To do this, go to the "My Services" page and click on the "Cloud" button in the navigation tabs.
 
-Après ceci, le système va vous indiquer le serveur sur lequel votre espace client sera installer vous devez simplement relier votre domaine aux serveurs de CLIENTXCMS. Pour cela, récupérez l'enregistrement CNAME fourni par le système et ajoutez-le à votre domaine.
+![Cloud Activation](/img/next_gen/Installation/Cloud/activation.png)
 
-![Enregistrement CNAME](/img/next_gen/Installation/Cloud/cname.png)
+After this, the system will indicate the server on which your client area will be installed. You simply need to link your domain to CLIENTXCMS servers. To do this, retrieve the CNAME record provided by the system and add it to your domain.
 
-Pour plus d'information pour ajouter le CNAME, une page dédiée est disponible [ici](../developpers/software/relier-domain-cname.md)
+![CNAME Record](/img/next_gen/Installation/Cloud/cname.png)
 
-Pour vérifier que votre domaine est bien relié aux serveurs de CLIENTXCMS, vous pouvez utiliser le site [CheckHost](https://check-host.net) et renseigner votre domaine.
-Il devrait vous indiquer que l'enregistrement CNAME est bien relié à l'adresse IP du serveur de CLIENTXCMS.
+For more information on adding the CNAME, a dedicated page is available [here](../developpers/software/relier-domain-cname.md).
 
-![CheckHost](/img/next_gen/Installation/Cloud/checkhost.png)
+To verify that your domain is properly linked to CLIENTXCMS servers, you can use the [CheckHost](https://check-host.net) website and enter your domain. It should indicate that the CNAME record is properly linked to the CLIENTXCMS server IP address.
 
-Notre système va ensuite installer l'espace client sur votre domaine. Le processus peut prendre quelques minutes. Une fois l'installation terminée, vous pouvez accéder à votre espace administration en vous rendant sur votre domaine avec les informations envoyées par e-mail.
+![CheckHost Verification](/img/next_gen/Installation/Cloud/checkhost.png)
 
-![Email](/img/next_gen/Installation/Cloud/email.png)
+Our system will then install the client area on your domain. The process may take a few minutes. Once the installation is complete, you can access your admin area by going to your domain with the credentials sent by email.
 
-Une fois sur votre domaine, vous serrez automatiquement redirigé vers clientxcms.com pour valider votre licence. Vous pouvez ensuite vous connecter à votre espace client avec les identifiants envoyés par e-mail.
+![Email Credentials](/img/next_gen/Installation/Cloud/email.png)
+
+Once on your domain, you will be automatically redirected to clientxcms.com to validate your license. You can then log in to your client area with the credentials sent by email.
+
 ### Cloudflare
-Une fois que vous êtes connecté à votre compte Cloudflare, vous devez ajouter un enregistrement CNAME pour votre sous-domaine. 
 
-![Ajout d'un enregistrement CNAME](/img/next_gen/Installation/Cloud/cloudflare.png)
-1. Cliquez sur le bouton "Ajouter un enregistrement" et sélectionnez "CNAME" dans le menu déroulant.
+Once you are logged into your Cloudflare account, you need to add a CNAME record for your subdomain.
 
-2. Entrez le sous-domaine que vous avez renseigné dans la section "Changer le domaine" de votre espace client dans le champ "Nom" et l'enregistrement CNAME fourni par le système dans le champ "Cible".
+![Adding a CNAME Record](/img/next_gen/Installation/Cloud/cloudflare.png)
 
-3. Cliquez sur "Enregistrer" pour ajouter l'enregistrement.
+1. Click the "Add a record" button and select "CNAME" from the dropdown menu.
+
+2. Enter the subdomain you specified in the "Change Domain" section of your client area in the "Name" field and the CNAME record provided by the system in the "Target" field.
+
+3. Click "Save" to add the record.
 
 :::info Cloudflare
-Vous devez désactiver le proxy pour le sous-domaine que vous avez renseigné.
+You must disable the proxy for the subdomain you specified.
 :::
+
 ### OVH
-Pour ajouter un enregistrement CNAME à votre domaine OVH, suivez les étapes suivantes :
 
-![Ajout d'un enregistrement CNAME](/img/next_gen/Installation/Cloud/ovh.png)
+To add a CNAME record to your OVH domain, follow these steps:
 
-1. Connectez-vous à votre espace client OVH et cliquez sur "Domaines" dans le menu de gauche.
-2. Cliquez sur le domaine que vous souhaitez modifier.
-3. Cliquez sur l'onglet "Zone DNS" dans le menu horizontal.
-4. Cliquez sur le bouton "Ajouter un enregistrement" et sélectionnez "CNAME" dans le menu déroulant.
-5. Entrez le sous-domaine que vous avez renseigné dans la section "Changer le domaine" de votre espace client dans le champ "Nom" et l'enregistrement CNAME fourni par le système dans le champ "Cible".
-6. Cliquez sur "Suivant" pour ajouter l'enregistrement.
-7. Cliquez sur "Confirmer" pour valider les modifications.
-8. Attendez quelques minutes pour que les modifications soient prises en compte.
+![Adding a CNAME Record](/img/next_gen/Installation/Cloud/ovh.png)
 
+1. Log in to your OVH client area and click on "Domains" in the left menu.
+2. Click on the domain you want to modify.
+3. Click on the "DNS Zone" tab in the horizontal menu.
+4. Click the "Add a record" button and select "CNAME" from the dropdown menu.
+5. Enter the subdomain you specified in the "Change Domain" section of your client area in the "Name" field and the CNAME record provided by the system in the "Target" field.
+6. Click "Next" to add the record.
+7. Click "Confirm" to validate the changes.
+8. Wait a few minutes for the changes to take effect.
 
-## Modification du domaine
-Vous pouvez modifier le domaine de votre espace client à tout moment depuis votre espace client. Pour cela, rendez-vous sur la page "Changer le domaine" et renseignez le nouveau domaine que vous souhaitez utiliser.
-Il faudra au préalable ajouter un enregistrement CNAME pour le nouveau domaine.
-![Changer le domaine](/img/next_gen/Installation/Cloud/change_domain.png)
-:::info TIPS
-La modification du domaine est possible tout les 60 jours. Pour les changements de sous-domaine, cela n'est pas considéré comme un changement de domaine.
+## Domain Modification
+
+You can change your client area domain at any time from your client area. To do this, go to the "Change Domain" page and enter the new domain you want to use. You will need to add a CNAME record for the new domain beforehand.
+
+![Change Domain](/img/next_gen/Installation/Cloud/change_domain.png)
+
+:::info TIP
+Domain modification is possible every 60 days. For subdomain changes, this is not considered a domain change.
 :::
-## Réinstallation de l'instance
-Si vous souhaitez réinstaller votre espace client, vous pouvez le faire depuis votre espace client. Pour cela, rendez-vous sur la page "Cloud" et cliquez sur le bouton "Réinstaller".
-Il vous sera demandé de confirmer la réinstallation. Une fois confirmé, le système va réinstaller l'espace client sur votre domaine.
-![Réinstallation](/img/next_gen/Installation/Cloud/reinstall.png)
 
-Les identifiants de connexion vous seront envoyés par e-mail une fois l'installation terminée.
+## Instance Reinstallation
 
-:::info TIPS
-Dans le cas ou il y a un réinstallation et un changement de domaine, il faudra changer le domaine avant de réinstaller l'instance.
+If you want to reinstall your client area, you can do so from your client area. To do this, go to the "Cloud" page and click on the "Reinstall" button. You will be asked to confirm the reinstallation. Once confirmed, the system will reinstall the client area on your domain.
+
+![Instance Reinstallation Interface](/img/next_gen/Installation/Cloud/reinstall.png)
+
+The login credentials will be sent to you by email once the installation is complete.
+
+:::info TIP
+In case of a reinstallation and domain change, you must change the domain before reinstalling the instance.
 :::

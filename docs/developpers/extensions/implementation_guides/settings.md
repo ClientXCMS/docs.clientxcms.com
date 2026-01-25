@@ -1,12 +1,15 @@
-# Paramètres
+---
+translated: true
+---
+# Settings
 
-Dans **ClientXCMS**, il est possible d'ajouter des **cards** (cartes) et des **items** (éléments) dans l'interface des paramètres pour permettre la gestion d'extensions ou de configurations spécifiques dans la page paramètres.
+In **ClientXCMS**, you can add **cards** and **items** to the settings interface to manage extension configurations or specific settings on the settings page.
 
-## Ajout d'une carte (card)
+## Adding a Card
 
-Une carte représente une section dans les paramètres. Vous pouvez ajouter une carte dans votre **ServiceProvider** en utilisant la méthode `addCard()`. Cette méthode permet de définir le titre, la description et l'ordre d'affichage de la carte dans les paramètres.
+A card represents a section in settings. You can add a card in your **ServiceProvider** using the `addCard()` method. This method defines the title, description, and display order of the card in settings.
 
-Voici un exemple d'ajout d'une carte dans la méthode `boot()` du **ServiceProvider** de l'extension :
+Here's an example of adding a card in the `boot()` method of the extension's **ServiceProvider**:
 
 ```php
 public function boot(): void
@@ -15,26 +18,26 @@ public function boot(): void
         return;
     }
 
-    // Ajoute une carte avec l'UUID 'fund', le titre et la sous-description définis dans les fichiers de traduction
+    // Add a card with UUID 'fund', title and sub-description defined in translation files
     $this->app['settings']->addCard(
-        'fund',                             // UUID unique de la carte
-        'fund::messages.admin.title',       // Titre de la carte (défini dans les fichiers de langue)
-        'fund::messages.admin.subheading',  // Description de la carte (fichiers de langue)
-        4,                                  // Ordre d'affichage
-        null,                               // Liste d'items (null pour les injecter automatiquement)
-        true,                               // Indique que la carte est active
-        1                                   // Indique la longueur de la carte (1 par défaut, 2, 4, 8)
+        'fund',                             // Unique card UUID
+        'fund::messages.admin.title',       // Card title (defined in language files)
+        'fund::messages.admin.subheading',  // Card description (language files)
+        4,                                  // Display order
+        null,                               // Item list (null to inject automatically)
+        true,                               // Indicates the card is active
+        1                                   // Card width (1 by default, 2, 4, 8)
     );
 }
 ```
 
-Dans cet exemple, la méthode `addCard()` ajoute une carte intitulée "fund", avec son titre et sa description définis dans les fichiers de traduction, et une position (ordre) de 4 dans l'interface.
+In this example, the `addCard()` method adds a card named "fund", with its title and description defined in translation files, and a position (order) of 4 in the interface.
 
-## Ajout d'un item (card item)
+## Adding an Item (Card Item)
 
-Un item est un élément au sein d'une carte qui renvoie soit à une vue, soit à une action. Pour ajouter un item, utilisez la méthode `addCardItem()`.
+An item is an element within a card that links to either a view or an action. To add an item, use the `addCardItem()` method.
 
-Voici un exemple d'ajout d'un item dans la carte "fund" :
+Here's an example of adding an item to the "fund" card:
 
 ```php
 public function boot(): void
@@ -43,57 +46,57 @@ public function boot(): void
         return;
     }
 
-    // Ajoute la carte
+    // Add the card
     $this->app['settings']->addCard('fund', 'fund::messages.admin.title', 'fund::messages.admin.subheading', 4, null, true);
 
-    // Ajoute un item dans la carte 'fund'
+    // Add an item to the 'fund' card
     $this->app['settings']->addCardItem(
-        'fund',                                // UUID de la carte
-        'fund',                                // UUID de l'item
-        'fund::messages.admin.settings.title', // Titre de l'item
-        'fund::messages.admin.settings.description',  // Description de l'item
-        'bi bi-gear',                  // Icône de l'item (classe bootstrap)
-        [FundAdminController::class, 'showSettings'], // Action ou route (ici méthode du contrôleur)
-        Permission::MANAGE_SETTINGS            // Permission nécessaire pour afficher l'item
+        'fund',                                // Card UUID
+        'fund',                                // Item UUID
+        'fund::messages.admin.settings.title', // Item title
+        'fund::messages.admin.settings.description',  // Item description
+        'bi bi-gear',                  // Item icon (Bootstrap class)
+        [FundAdminController::class, 'showSettings'], // Action or route (controller method here)
+        Permission::MANAGE_SETTINGS            // Required permission to display the item
     );
 }
 ```
 
-Dans cet exemple, l'item renvoie à l'action `showFund` du `FundAdminController`, qui affiche une vue dédiée dans l'administration de l'extension.
+In this example, the item links to the `showFund` action of the `FundAdminController`, which displays a dedicated view in the extension administration.
 
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
 
-## Signature des méthodes
+## Method Signatures
 
-Voici la signature des deux méthodes `addCard()` et `addCardItem()` utilisées dans les exemples ci-dessus :
+Here are the signatures of the two methods `addCard()` and `addCardItem()` used in the examples above:
 
 ```php
-// Ajoute une carte dans l'interface de paramètres
+// Add a card to the settings interface
 public function addCard(
-    string $uuid,        // Identifiant unique de la carte
-    string $name,        // Titre de la carte (fichier de langue)
-    string $description, // Description de la carte (fichier de langue)
-    int $order,          // Ordre d'affichage dans la liste des cartes
-    ?Collection $items = null, // Collection des items à afficher
-    bool $is_active = true,    // Indique si la carte est active
-    int $size = 1          // Taille de la carte (1, 2, 4, 8) 1 par défaut
+    string $uuid,        // Unique card identifier
+    string $name,        // Card title (language file)
+    string $description, // Card description (language file)
+    int $order,          // Display order in the card list
+    ?Collection $items = null, // Collection of items to display
+    bool $is_active = true,    // Indicates if the card is active
+    int $size = 1          // Card size (1, 2, 4, 8) 1 by default
 ): void
 
-// Ajoute un item dans une carte existante
+// Add an item to an existing card
 public function addCardItem(
-    string $card_uuid,  // UUID de la carte dans laquelle ajouter l'item
-    string $uuid,       // Identifiant unique de l'item
-    string $name,       // Titre de l'item (fichier de langue)
-    string $description, // Description de l'item (fichier de langue)
-    string $icon,       // Icône de l'item (icon Bootstrap ou autre)
-    $action,            // Action ou callable (route ou méthode de contrôleur)
-    ?string $permission = null // Permission requise pour accéder à l'item
+    string $card_uuid,  // UUID of the card to add the item to
+    string $uuid,       // Unique item identifier
+    string $name,       // Item title (language file)
+    string $description, // Item description (language file)
+    string $icon,       // Item icon (Bootstrap or other icon)
+    $action,            // Action or callable (route or controller method)
+    ?string $permission = null // Required permission to access the item
 ): void
 ```
 
-## Créer un contrôleur pour l'item
+## Creating a Controller for the Item
 
-Dans le contrôleur, vous pouvez définir la logique à exécuter lorsque l'utilisateur accède à cet item. Voici un exemple de méthode dans le `FundAdminController` qui affiche une vue :
+In the controller, you can define the logic to execute when the user accesses this item. Here's an example method in the `FundAdminController` that displays a view:
 
 ```php
 <?php
@@ -107,13 +110,13 @@ class FundAdminController
 {
     public function showSettings()
     {
-        // Retourne une vue spécifique dans l'admin pour l'extension "fund"
+        // Return a specific view in admin for the "fund" extension
         return view('fund_admin::settings');
     }
 
     public function updateSettings(Request $request)
     {
-        // Valide les données du formulaire
+        // Validate form data
         $validated = $request->validate([
             'fund_key_1' => 'required|string',
         ]);
@@ -122,16 +125,16 @@ class FundAdminController
     }
 }
 ```
-## Route de l'item
-Vous devez définir une route pour sauvegarder les paramètres de l'extension. Voici un exemple de route dans le fichier de routes de l'extension dans le fichier `routes/admin.blade.php` :
+## Item Route
+You must define a route to save the extension settings. Here's an example route in the extension's routes file in `routes/admin.blade.php`:
 
 ```php
 // addons/fund/routes/admin.blade.php
 use App\Addons\Fund\Controllers\FundAdminController;
 Route::put('settings', [FundAdminController::class, 'updateSettings'])->name('settings');
 ```
-## Vue de l'item
-Vous devez créer une vue pour l'item dans le répertoire de vues de votre extension. Voici un exemple de vue `settings.blade.php` :
+## Item View
+You must create a view for the item in your extension's views directory. Here's an example `settings.blade.php` view:
 
 ```blade
 <!-- addons/fund/views/admin/settings.blade.php -->
@@ -159,6 +162,6 @@ Vous devez créer une vue pour l'item dans le répertoire de vues de votre exten
     </div>
 @endsection
 ```
-Vous pouvez avoir plus d'informations sur les options sur les [champs possibles des formulaires](https://docs.clientxcms.com/developpers/themes/forms) dans la documentation thème.
+You can find more information about [form field options](/developpers/themes/forms) in the theme documentation.
 
-Vous pourrez ainsi récupérer le paramètre avec la fonction `setting('fund_key_1')` dans votre vue ou controller.
+You can then retrieve the setting with the `setting('fund_key_1')` function in your view or controller.

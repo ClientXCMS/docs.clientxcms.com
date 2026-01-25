@@ -1,124 +1,125 @@
 ---
 sidebar_position: 4
+translated: true
 ---
-# Factures
-Les factures permettent de gérer les paiements des clients. Elles se créent automatiquement lorsqu'un client achète un produit ou un service. Vous pouvez également créer des factures manuellement.
-## Gestion des factures
-Vous pouvez afficher et gérer les factures dans la section "Factures" du menu d'administration.
+# Invoices
+Invoices are used to manage customer payments. They are automatically created when a customer purchases a product or service. You can also create invoices manually.
+## Invoice Management
+You can view and manage invoices in the "Invoices" section of the administration menu.
 ![img](/img/next_gen/invoices/admin_index.png)
-### Filtrage
-Vous pouvez filtrer les facture par statut. Les statuts disponibles sont:
-- **Toutes**: Affiche toutes les factures
-- **Payées**: Affiche les factures payées
-- **En attente**: Affiche les factures en attente de paiement
-- **Annulées**: Affiche les factures annulées
-- **Remboursées**: Affiche les factures remboursées
-- **Brouillon**: Affiche les factures en brouillon
-- **Echoué**: Affiche les factures échoués
+### Filtering
+You can filter invoices by status. Available statuses are:
+- **All**: Display all invoices
+- **Paid**: Display paid invoices
+- **Pending**: Display invoices pending payment
+- **Cancelled**: Display cancelled invoices
+- **Refunded**: Display refunded invoices
+- **Draft**: Display draft invoices
+- **Failed**: Display failed invoices
 ![img](/img/next_gen/invoices/filter.png)
-### Recherche
-Vous pouvez rechercher une facture par son identifiant unique, le nom du client ou l'id externe de la facture.
+### Search
+You can search for an invoice by its unique identifier, customer name, or external invoice ID.
 
-### Actions de masses
-Vous pouvez effectuer des actions de masse sur les factures. Les actions disponibles sont:
-- **Supprimer**: Supprime les factures sélectionnées
-- **Marquer comme payé**: Marque les factures sélectionnées comme payées
-- **Marquer comme annulé**: Marque les factures sélectionnées comme annulées
-- **Marquer comme remboursé**: Marque les factures sélectionnées comme remboursées
-- **Marquer comme échoué**: Marque les factures sélectionnées comme échouées
+### Bulk Actions
+You can perform bulk actions on invoices. Available actions are:
+- **Delete**: Delete selected invoices
+- **Mark as Paid**: Mark selected invoices as paid
+- **Mark as Cancelled**: Mark selected invoices as cancelled
+- **Mark as Refunded**: Mark selected invoices as refunded
+- **Mark as Failed**: Mark selected invoices as failed
 
-### Exportation
-Cette fonctionnalité sera disponible dans des versions futures.
-## Création et édition de facture
-Lors de la création d'une facture, la facture est en état de brouillon. Vous pouvez ajouter des produits, des réductions et des renouvellements de service à la facture. Une fois que la facture est prête, vous pouvez la marquer comme en attente.
+### Export
+This feature will be available in future versions.
+## Creating and Editing Invoices
+When creating an invoice, the invoice is in draft state. You can add products, discounts, and service renewals to the invoice. Once the invoice is ready, you can mark it as pending.
 
-Pour modifier une facture en attente vous pouvez cliquer sur le bouton "Editer la facture" sur la page de la facture.
+To edit a pending invoice, you can click the "Edit Invoice" button on the invoice page.
 
-Une fois vos modifications effectuées, vous pouvez valider la facture avec le bouton "Valider la facture".
-### Brouillon
+Once your changes are made, you can validate the invoice with the "Validate Invoice" button.
+### Draft
 ![img](/img/next_gen/invoices/draft.png)
-Vous pouvez retrouver la liste des articles, les modifier ou les supprimer. Vous pouvez également ajouter des articles à la facture.
+You can find the list of items, edit or delete them. You can also add items to the invoice.
 
-#### Ajouter un article
-Vous pouvez ajouter un article à la facture selectionnant un produit ou un renouvellement d'un service du client.
+#### Add an Item
+You can add an item to the invoice by selecting a product or a service renewal for the customer.
 
 ![img](/img/next_gen/invoices/add_product.png)
 
-Vous pouvez configurer l'article en modifiant la quantité, le prix unitaire, la description et les données supplémentaires de l'article.
+You can configure the item by modifying the quantity, unit price, description, and additional data for the item.
 
-#### Ajouter une réduction
+#### Add a Discount
 
-Si vous avez configuré des réductions, vous pouvez les ajouter lors de la l'édition d'un l'article.
+If you have configured discounts, you can add them when editing an item.
 
 ![img](/img/next_gen/invoices/edit_product.png)
 
-Cela permet de réduire le montant de la facture selon la réduction appliquée.
+This reduces the invoice amount according to the applied discount.
 
-### Modifier des informations de la facture
+### Edit Invoice Information
 ![img](/img/next_gen/invoices/edit.png)
 
-**ID externe**: L'identifiant externe de la facture. Cela permet de lier la facture à la paserelle de paiement.
+**External ID**: The external identifier of the invoice. This links the invoice to the payment gateway.
 
-**Notes**: Les notes de la facture. Cela peut être utilisé pour ajouter des informations supplémentaires sur la facture. Les notes ne sont pas visibles par le client.
+**Notes**: Invoice notes. This can be used to add additional information about the invoice. Notes are not visible to the customer.
 
-**Etat**: L'état de la facture. Vous pouvez changer l'état en modifiant le champ.
+**Status**: The invoice status. You can change the status by modifying the field.
 
-**Moyen de paiement**: Le moyen de paiement utilisé pour la facture. (PayPal, Stripe, etc.)
+**Payment Method**: The payment method used for the invoice. (PayPal, Stripe, etc.)
 
-**Date de paiement**: La date de paiement de la facture. Cela permet de savoir quand la facture a été payée.
+**Payment Date**: The payment date of the invoice. This shows when the invoice was paid.
 
-**Date d'échéance**: La date d'échéance de la facture. Cela permet de savoir quand la facture doit être payée.
+**Due Date**: The due date of the invoice. This shows when the invoice must be paid.
 
-**Frais de transaction**: Les frais de transaction de la facture. Cela permet de savoir combien de frais de transaction ont été appliqués à la facture par la passerelle de paiement.
+**Transaction Fees**: The transaction fees for the invoice. This shows how much transaction fees were applied to the invoice by the payment gateway.
 
-**TVA**: Le montant de TVA de la facture. Cela permet de savoir combien de TVA a été appliquée à la facture.
+**VAT**: The VAT amount of the invoice. This shows how much VAT was applied to the invoice.
 
-**Devise**: La devise de la facture. Cela permet de savoir dans quelle devise la facture a été payée.
+**Currency**: The invoice currency. This shows in which currency the invoice was paid.
 
-## Détails de facture
-Vous pouvez voir les détails d'une facture en cliquant sur le bouton "Afficher" sur la page des factures. Celle-ci comporte beaucoup d'informations sur la facture, le client, les paiements. Cela permets d'avoir une vue d'ensemble sur la facture.
+## Invoice Details
+You can view the details of an invoice by clicking the "View" button on the invoices page. This contains a lot of information about the invoice, the customer, and the payments. This provides an overview of the invoice.
 ![img](/img/next_gen/invoices/show.png)
 
-### Notifier le client
+### Notify Customer
 
-Vous pouvez notifier le client par email en cliquant sur le bouton "Notifier le client". Cela enverra un email au client avec les détails de la facture.
-Cela enverra aussi le PDF de la facture en pièce jointe.
+You can notify the customer by email by clicking the "Notify Customer" button. This will send an email to the customer with the invoice details.
+This will also send the invoice PDF as an attachment.
 
-### Payer la facture
+### Pay Invoice
 ![img](/img/next_gen/invoices/pay.png)
 
-Si le client à définit un moyen de paiement, vous pouvez payer la facture en cliquant sur le bouton "Payer". Cela tentra de prélever le montant de la facture sur le moyen de paiement du client.
+If the customer has defined a payment method, you can pay the invoice by clicking the "Pay" button. This will attempt to charge the invoice amount from the customer's payment method.
 
-### Lien de la facture
-Vous pouvez copier le lien de la facture en cliquant sur le bouton presse papier. Cela copiera le lien de la facture dans le presse-papier.
+### Invoice Link
+You can copy the invoice link by clicking the clipboard button. This will copy the invoice link to the clipboard.
 
-### Livrer une facture
+### Deliver an Invoice
 
-Vous pouvez livrer les produits de la facture en cliquant sur le bouton "Livrer". Cela livrera les produits de la facture au client. Cette action devrait être automatique mais peut être faite manuellement si nécessaire.
+You can deliver the invoice products by clicking the "Deliver" button. This will deliver the invoice products to the customer. This action should be automatic but can be done manually if necessary.
 
-## Etat disponibles
-Les factures peuvent avoir plusieurs états. Les états disponibles sont:
-- **Brouillon**: La facture est en cours de création
-- **En attente**: La facture est en attente de paiement
-- **Payé**: La facture a été payée
-- **Annulé**: La facture a été annulée
-- **Remboursé**: La facture a été remboursée
-- **Echoué**: La facture a échouée
+## Available Statuses
+Invoices can have several statuses. Available statuses are:
+- **Draft**: The invoice is being created
+- **Pending**: The invoice is pending payment
+- **Paid**: The invoice has been paid
+- **Cancelled**: The invoice has been cancelled
+- **Refunded**: The invoice has been refunded
+- **Failed**: The invoice has failed
 
-## Principe d'abonnement
+## Subscription Principle
 
-CLIENTXCMS utilise un système d'abonnement différents des passerelles de paiement. Les abonnements sont gérés par CLIENTXCMS et non par la passerelle de paiement. Cela permet de gérer les abonnements de manière plus flexible et de ne pas être dépendant de la passerelle de paiement par exemple pour les modifications d'abonnement ou les changements de date d'expiration.
+CLIENTXCMS uses a subscription system different from payment gateways. Subscriptions are managed by CLIENTXCMS and not by the payment gateway. This allows for more flexible subscription management and independence from the payment gateway, for example for subscription modifications or expiration date changes.
 
-### Processus
+### Process
 
-- Le client achète un service
-- Une facture est créée et payée
-- Le client ajoute une méthode de paiement à son compte
-- Le client active l'abonnement sur son service
-- Lorsque la date de prélèvement arrive selon la date d'expiration, CLIENTXCMS crée une facture pour le renouvellement de l'abonnement
-- CLIENTXCMS tente de prélever le montant de la facture sur la méthode de paiement du client
-- Si le paiement est réussi, la facture est marquée comme payée et le service est renouvelé
-- Si le paiement échoue, le client reçoit un email pour l'informer de l'échec du paiement
-- Le paiment est réessayé chaque jour pendant 7 jours (configurable)
-- Si le paiement échoue après 7 jours, la facture est marquée comme échouée et le service est suspendu classiquement
+- The customer purchases a service
+- An invoice is created and paid
+- The customer adds a payment method to their account
+- The customer activates the subscription on their service
+- When the billing date arrives according to the expiration date, CLIENTXCMS creates an invoice for the subscription renewal
+- CLIENTXCMS attempts to charge the invoice amount from the customer's payment method
+- If the payment is successful, the invoice is marked as paid and the service is renewed
+- If the payment fails, the customer receives an email informing them of the payment failure
+- The payment is retried every day for 7 days (configurable)
+- If the payment fails after 7 days, the invoice is marked as failed and the service is suspended as usual
 

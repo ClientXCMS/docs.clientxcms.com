@@ -1,20 +1,23 @@
-# Panel de gestion 
-Le CMS permet d'ajouter des **panels de gestion avancée** sur les services, offrant ainsi aux utilisateurs la possibilité de gérer et d'interagir avec leurs services via des interfaces graphiques spécifiques. Le panel peut inclure plusieurs **tabs** (sous-pages) pour structurer les différentes actions possibles.
+---
+translated: true
+---
+# Management Panel
+The CMS allows adding **advanced management panels** for services, giving users the ability to manage and interact with their services through specific graphical interfaces. The panel can include multiple **tabs** (sub-pages) to structure the different possible actions.
 
-Interface : `App/Contracts/Provisioning/PanelProvisioningInterface`
+Interface: `App/Contracts/Provisioning/PanelProvisioningInterface`
 
-Class abstraite : `App/Abstracts/AbstractPanelProvisioning`
-## Création de la classe
+Abstract Class: `App/Abstracts/AbstractPanelProvisioning`
+## Creating the Class
 
-L'interface `App/Contracts/Provisioning/PanelProvisioningInterface` définit les méthodes qui doivent être implémentées pour créer un panel de gestion de service. Chaque **tab** représente une sous-page du panel, permettant aux utilisateurs d'effectuer des actions spécifiques sur leur service.
+The `App/Contracts/Provisioning/PanelProvisioningInterface` interface defines the methods that must be implemented to create a service management panel. Each **tab** represents a sub-page of the panel, allowing users to perform specific actions on their service.
 
-Les principales méthodes à implémenter sont :
+The main methods to implement are:
 
-- `uuid()`: Retourne l'UUID unique du panel.
-- `tabs()`: Retourne un tableau de **tabs** sous forme d'objets `ProvisioningTabDTO` qui définissent les sous-pages du panel.
-- `render()`: Gère le rendu du panel pour l'utilisateur.
-- `renderAdmin()`: Gère le rendu du panel dans l'administration.
-- `permissions()`: Définit les permissions nécessaires pour accéder au panel. (Pas encore implémenté)
+- `uuid()`: Returns the unique UUID of the panel.
+- `tabs()`: Returns an array of **tabs** as `ProvisioningTabDTO` objects that define the panel's sub-pages.
+- `render()`: Handles the panel rendering for the user.
+- `renderAdmin()`: Handles the panel rendering in administration.
+- `permissions()`: Defines the permissions required to access the panel. (Not yet implemented)
 
 ```php
 <?php
@@ -27,10 +30,10 @@ use App\Models\Provisioning\Service;
 
 class CustomProductPanel extends AbstractPanelProvisioning
 {
-    protected string $uuid = 'gameserver'; // UUID unique du panel
+    protected string $uuid = 'gameserver'; // Unique panel UUID
 
     /**
-     * Définit les tabs (sous-pages) pour le panel
+     * Define the tabs (sub-pages) for the panel
      */
     public function tabs(Service $service): array
     {
@@ -46,7 +49,7 @@ class CustomProductPanel extends AbstractPanelProvisioning
     }
 
     /**
-     * Rendu du panel pour l'utilisateur
+     * Render the panel for the user
      */
     public function render(Service $service, array $permissions = [])
     {
@@ -56,23 +59,23 @@ class CustomProductPanel extends AbstractPanelProvisioning
         ];
 
         if (!$service->server) {
-            \Session::flash('error', 'Serveur non trouvé');
+            \Session::flash('error', 'Server not found');
             return '';
         }
 
-        // Logique pour obtenir les informations du serveur
+        // Logic to get server information
         $serverInfo = $this->getServerInfo($service);
 
         $data['serverInfo'] = $serverInfo;
-        return view('gamepanel::panel.index', $data); // Vue du panel
+        return view('gamepanel::panel.index', $data); // Panel view
     }
 
     /**
-     * Logique pour récupérer les informations du serveur
+     * Logic to retrieve server information
      */
     protected function getServerInfo(Service $service)
     {
-        // Exemple de logique pour obtenir les informations du serveur
+        // Example logic to get server information
         return [
             'cpu' => '25%',
             'ram' => '4 GB',
@@ -81,7 +84,7 @@ class CustomProductPanel extends AbstractPanelProvisioning
     }
 
     /**
-     * Tab personnalisée pour la console
+     * Custom tab for the console
      */
     public function renderConsole(Service $service)
     {
@@ -90,22 +93,22 @@ class CustomProductPanel extends AbstractPanelProvisioning
     }
 
     /**
-     * Rendu du panel dans l'administration
+     * Render the panel in administration
      */
     public function renderAdmin(Service $service)
     {
-        return $this->render($service, ['*']); // Affiche toutes les permissions
+        return $this->render($service, ['*']); // Display all permissions
     }
 }
 ```
-## Vue du panel
-Vous pouvez créer une vue dans le dossier `addons/fund/views/default/panel/index.blade.php` pour afficher le panel de gestion du service. Cette vue peut inclure des onglets pour naviguer entre les différentes sous-pages du panel.
+## Panel View
+You can create a view in the `addons/fund/views/default/panel/index.blade.php` folder to display the service management panel. This view can include tabs to navigate between the different sub-pages of the panel.
 
 ```blade
-Info : {{ $serverInfo['cpu'] }} CPU, {{ $serverInfo['ram'] }} RAM, Uptime : {{ $serverInfo['uptime'] }}
+Info: {{ $serverInfo['cpu'] }} CPU, {{ $serverInfo['ram'] }} RAM, Uptime: {{ $serverInfo['uptime'] }}
 ```
-## Vue de la console
-Vous pouvez créer une vue dans le dossier `addons/fund/views/default/panel/console.blade.php` pour afficher la console du serveur de jeu. Cette vue peut inclure un terminal interactif pour permettre aux utilisateurs d'interagir avec leur serveur.
+## Console View
+You can create a view in the `addons/fund/views/default/panel/console.blade.php` folder to display the game server console. This view can include an interactive terminal to allow users to interact with their server.
 
 ```blade
 <div class="console">
@@ -113,13 +116,13 @@ Vous pouvez créer une vue dans le dossier `addons/fund/views/default/panel/cons
 </div>
 ```
 
-## Enregistrement de la classe dans le produit
+## Registering the Class in the Product
 
-Une fois le panel créé, vous pouvez l'associer à un produit via la méthode `panel()` dans la classe du produit. Voici comment l'intégrer dans une classe de produit :
+Once the panel is created, you can associate it with a product via the `panel()` method in the product class. Here's how to integrate it into a product class:
 
 ```php
 public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
 {
-    return new GameServerPanel(); // Retourne le panel associé au produit
+    return new GameServerPanel(); // Returns the panel associated with the product
 }
 ```

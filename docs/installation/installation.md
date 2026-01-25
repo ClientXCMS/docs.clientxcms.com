@@ -1,20 +1,29 @@
-
+---
+translated: true
+---
 
 import DocCardList from '@theme/DocCardList';
 
 # Installation
-L'espace client peut être installé de deux manières différentes : en autohébergement ou sur les serveurs de CLIENTXCMS. Cette page vous guidera dans le choix de l'installation qui vous convient le mieux.
+
+The client area can be installed in two different ways: Self-hosted or on CLIENTXCMS servers. This page will guide you in choosing the installation method that best suits your needs.
 
 <DocCardList />
 
 ## Cloud
-L'installation la plus simple, elle permet d'être installé en quelques minutes de manière automatique. Pour cela, il vous suffit de vous rendre sur [cette page](https://clientxcms.com/cloud) et de suivre les instructions.
-:::success Remarque
-Vous pouvez interchanger vos extensions à tout moment depuis votre espace client.
+
+The simplest installation method, allowing automatic setup in just a few minutes. Simply go to [this page](https://clientxcms.com/cloud) and follow the instructions.
+
+:::success Note
+You can switch your extensions at any time from your client area.
 :::
-L'offre cloud est disponible pour toutes les licences Premium et Entreprise. Vous pouvez retrouver plus d'information sur les offres cloud [ici](https://clientxcms.com/pricing).
-## Autohébergement
-L'installation en autohébergement est plus complexe nécessitant une accreditation validée. Pour cela, vous devez disposer d'un serveur web, d'une base de données et de PHP. Vous pouvez suivre les instructions d'installation en autohébergement [ici](./selfhosted).
+
+The cloud offering is available for all Premium and Enterprise licenses. You can find more information about cloud offerings [here](https://clientxcms.com/pricing).
+
+## Self-hosted
+
+Self-hosted installation is more complex and requires validated accreditation. You will need a web server, a database, and PHP. You can follow the self-hosted installation instructions [here](./selfhosted).
+
 :::warning
-L'installation en autohébergement nécessite des connaissances en administration système. Si vous n'êtes pas sûr de vous, nous vous recommandons d'opter pour l'installation Cloud.
+Self-hosted installation requires system administration knowledge. If you are not confident, we recommend opting for Cloud installation.
 :::

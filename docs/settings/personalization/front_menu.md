@@ -1,12 +1,16 @@
-# Menu du haut de la page
+---
+translated: true
+---
 
-Dans **CLIENTXCMS**, le **menu supérieur** constitue l'épine dorsale de la navigation de votre plateforme et le premier point d'orientation pour vos visiteurs. <br/>
-L'objectif est stratégique : **faciliter l'accès aux fonctionnalités essentielles**, **guider intuitivement les utilisateurs** et **renforcer l'expérience de navigation**. Un menu bien structuré réduit la friction, améliore l'engagement et optimise le parcours client vers la conversion.
+# Header Menu
 
-Cette page permet de configurer et personnaliser entièrement la navigation principale de votre espace client.
+In **CLIENTXCMS**, the **header menu** forms the backbone of your platform's navigation and the first point of orientation for your visitors. <br/>
+The objective is strategic: **facilitate access to essential features**, **intuitively guide users** and **enhance the navigation experience**. A well-structured menu reduces friction, improves engagement and optimizes the customer journey toward conversion.
 
-Vous pouvez personnaliser le menu depuis :
+This page allows you to fully configure and customize the main navigation of your client area.
 
-`Paramètres` > `Personnalisation` > `Menu du haut de la page`
+You can customize the menu from:
 
-![Configuration du menu supérieur](/img/next_gen/settings/personalization/front_menu/admin.png)
+`Settings` > `Personalization` > `Header Menu`
+
+![Header menu configuration](/img/next_gen/settings/personalization/front_menu/admin.png)

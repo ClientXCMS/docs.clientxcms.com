@@ -1,17 +1,18 @@
 ---
 slug: nouvelle-version-2.14.7
-title: Nouvelle version 2.14.7
+title: New Version 2.14.7
 authors: [martindev]
+translated: true
 ---
 # v2.14.7
 
-Nous sommes ravis de vous annoncer la sortie de la version **2.14.7** de ClientXCMS !
+We are pleased to announce the release of version **2.14.7** of ClientXCMS!
 ![version 2.14.7](/img/blog/versions/v2.14.7.png)
 
 <!-- truncate -->
 
-## ➕ Ajouts
+## ➕ Additions
 
-- ➕ Addon **DiscordGift**
-- ➕ Addon **GiftCard**
-- ➕ [Proxmox] Support de la gestion des **IPv6**
+- ➕ **DiscordGift** addon
+- ➕ **GiftCard** addon
+- ➕ [Proxmox] Support for **IPv6** management

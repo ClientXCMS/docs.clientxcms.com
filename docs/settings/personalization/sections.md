@@ -1,15 +1,19 @@
-# Sections personnalisées
+---
+translated: true
+---
 
-Dans **CLIENTXCMS**, les **sections personnalisées** constituent des blocs modulaires puissants pour **enrichir et structurer le contenu** de votre plateforme. <br/>
-L'objectif est stratégique : **créer des zones de contenu dynamiques**, **améliorer l'engagement utilisateur** et **personnaliser l'expérience client** selon vos besoins spécifiques. Des sections bien conçues peuvent augmenter de 300% le temps passé sur votre site et significativement améliorer vos taux de conversion.
+# Custom Sections
 
-Cette page permet de créer, configurer et organiser des sections de contenu modulaires pour votre espace client.
+In **CLIENTXCMS**, **custom sections** are powerful modular blocks to **enrich and structure the content** of your platform. <br/>
+The objective is strategic: **create dynamic content zones**, **improve user engagement** and **personalize the customer experience** according to your specific needs. Well-designed sections can increase time spent on your site by 300% and significantly improve your conversion rates.
 
-Vous pouvez gérer les sections depuis :
+This page allows you to create, configure and organize modular content sections for your client area.
 
-`Paramètres` > `Personnalisation` > `Sections`
+You can manage sections from:
 
-:::tip Astuce
-Les sections sont vos **blocs de construction marketing**. 
-Chaque section est une opportunité de convaincre, rassurer ou orienter vos visiteurs vers l'action souhaitée.
+`Settings` > `Personalization` > `Sections`
+
+:::tip Tip
+Sections are your **marketing building blocks**.
+Each section is an opportunity to convince, reassure or guide your visitors toward the desired action.
 :::

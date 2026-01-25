@@ -1,39 +1,40 @@
 ---
 sidebar_position: 0
+translated: true
 ---
 import ThemedImage from '@theme/ThemedImage';
 
-# Paramètres généraux
+# General Settings
 
-Les **paramètres généraux** constituent le socle de configuration de votre **CLIENTXCMS**. C'est ici que vous définissez l'identité de votre hébergement, configurez les fonctionnalités essentielles et personnalisez l'expérience utilisateur. 
-L'objectif est simple : **adapter le CMS à vos besoins spécifiques** pour offrir une plateforme professionnelle et cohérente à vos clients.
+The **general settings** form the configuration foundation of your **CLIENTXCMS**. This is where you define your hosting identity, configure essential features, and customize the user experience.
+The goal is simple: **adapt the CMS to your specific needs** to offer a professional and consistent platform to your clients.
 
-Les paramètres généraux regroupent plusieurs aspects fondamentaux : les informations de l'application, la licence, les langues, les emails et la maintenance.
+General settings encompass several fundamental aspects: application information, license, languages, emails, and maintenance.
 
-Vous pouvez gérer ces paramètres depuis :
+You can manage these settings from:
 
-`Paramètres` > `Paramètres Généraux` > `Paramètres globaux`
+`Settings` > `General Settings` > `Global Settings`
 
 <ThemedImage
-  alt="Interface des paramètres généraux"
+  alt="General settings interface"
   sources={{
     light: '/img/next_gen/settings/general_settings/general_settings.png',
     dark: '/img/next_gen/settings/general_settings/general_settings_dark.png'
   }}
 />
 
-:::tip Astuce
-Des paramètres bien configurés sont la base d'un hébergement professionnel. Prenez le temps de personnaliser chaque aspect pour refléter votre identité et optimiser l'expérience de vos clients.
+:::tip Tip
+Well-configured settings are the foundation of professional hosting. Take the time to customize each aspect to reflect your identity and optimize your clients' experience.
 :::
 
-## Vue d'ensemble
+## Overview
 
-### Architecture des paramètres
+### Settings Architecture
 
-Les paramètres généraux s'organisent autour de plusieurs composants :
+General settings are organized around several components:
 
-* **[Application](./app)** : Configuration globale du CMS (nom, URL, timezone, etc.)
-* **[Licence](./license)** : Gestion de votre licence ClientXCMS
-* **[Langues](./locales)** : Configuration multilingue et traductions
-* **[Email](./mail)** : Paramètres d'envoi des emails
-* **[Maintenance](./maintenance)** : Mode maintenance et messages personnalisés
+* **[Application](./app)**: Global CMS configuration (name, URL, timezone, etc.)
+* **[License](./license)**: Managing your ClientXCMS license
+* **[Languages](./locales)**: Multilingual configuration and translations
+* **[Email](./mail)**: Email sending settings
+* **[Maintenance](./maintenance)**: Maintenance mode and custom messages

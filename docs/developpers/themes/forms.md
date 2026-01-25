@@ -1,29 +1,30 @@
 ---
 sidebar_position: 6
+translated: true
 ---
-# Formulaire
-Les formulaires sont des éléments essentiels pour interagir avec les utilisateurs et sont souvent utilisés pour collecter des informations. Les formulaires sont utilisés pour collecter des informations de l'utilisateur, telles que les coordonnées, les commentaires, les avis, etc. Les formulaires sont également utilisés pour collecter des informations de l'utilisateur, telles que l'inscription, le checkout etc.
+# Forms
+Forms are essential elements for interacting with users and are often used to collect information. Forms are used to collect user information such as contact details, comments, reviews, etc. Forms are also used to collect user information such as registration, checkout, etc.
 
 
-Pour les formulaires, nous avons rajouté un ensemble de composants sous forme d'`@include` de fichier pour les formulaires. Vous pouvez les utiliser dans vos vues. Cela permet de pouvoir les modifier facilement sans devoir repasser sur chaque formulaire.
-Pour les utiliser :
+For forms, we have added a set of components as file `@include` for forms. You can use them in your views. This allows you to easily modify them without having to go through each form.
+To use them:
 ### Input
 ```blade
 @include('shared.input', ['name' => 'name', 'label' => 'Name', 'value' => '', 'type' => 'text'])
 ```
 ------------------------------------------------
-| Propriété  | Description        | Type   | Obligatoire |
-|------------|--------------------|--------|-------------|
-| name       | Nom du champ       | String | Oui         |
-| label      | Label du champ     | String | Non         |
-| value      | Valeur du champ    | String | Non         |
-| type       | Type du champ      | String | Non         |
-| attributes | Attributs du champ | Array  | Non         |
-| step       | Step du champ      | String | Non         |
-| disabled   | Champ désactiver   | Bool   | Non         |
-| readonly   | Champ regardable   | Bool   | Non         |
-| help       | Aide du champ      | String | Non         |
-| optional   | Champ optionnel    | Bool   | Non         |
+| Property   | Description        | Type   | Required |
+|------------|--------------------|--------|----------|
+| name       | Field name         | String | Yes      |
+| label      | Field label        | String | No       |
+| value      | Field value        | String | No       |
+| type       | Field type         | String | No       |
+| attributes | Field attributes   | Array  | No       |
+| step       | Field step         | String | No       |
+| disabled   | Disabled field     | Bool   | No       |
+| readonly   | Readonly field     | Bool   | No       |
+| help       | Field help         | String | No       |
+| optional   | Optional field     | Bool   | No       |
 
 ------------------------------------------------
 ### Password
@@ -31,29 +32,29 @@ Pour les utiliser :
 @include('shared.password', ['name' => 'password', 'label' => 'Password', 'value' => ''])
 ```
 ------------------------------------------------
-| Propriété  | Description        | Type   | Obligatoire |
-|------------|--------------------|--------|-------------|
-| name       | Nom du champ       | String | Oui         |
-| label      | Label du champ     | String | Non         |
-| value      | Valeur du champ    | String | Non         |
-| help       | Aide du champ      | String | Non         |
-| optional   | Champ optionnel    | Bool   | Non         |
+| Property   | Description        | Type   | Required |
+|------------|--------------------|--------|----------|
+| name       | Field name         | String | Yes      |
+| label      | Field label        | String | No       |
+| value      | Field value        | String | No       |
+| help       | Field help         | String | No       |
+| optional   | Optional field     | Bool   | No       |
 ------------------------------------------------
 ### Textarea
 ```blade
 @include('shared.textarea', ['name' => 'description', 'label' => 'Description', 'value' => ''])
 ```
 ------------------------------------------------
-| Propriété       | Description                           | Type    | Obligatoire |
-|-----------------|---------------------------------------|---------|-------------|
-| name            | Nom du champ                          | String  | Oui         |
-| label           | Label du champ                        | String  | Non         |
-| value           | Valeur du champ                       | String  | Non         |
-| attributes      | Attributs du champ                    | Array   | Non         |
-| rows            | nombre de ligne                       | Integer | Non         |
-| disabled        | Champ désactiver                      | Bool    | Non         |
-| help            | Aide du champ                         | String  | Non         |
-| Inverifiedvalue | Valeur non vérifié (HTML non échappé) | String  | Non         |
+| Property        | Description                           | Type    | Required |
+|-----------------|---------------------------------------|---------|----------|
+| name            | Field name                            | String  | Yes      |
+| label           | Field label                           | String  | No       |
+| value           | Field value                           | String  | No       |
+| attributes      | Field attributes                      | Array   | No       |
+| rows            | Number of rows                        | Integer | No       |
+| disabled        | Disabled field                        | Bool    | No       |
+| help            | Field help                            | String  | No       |
+| Inverifiedvalue | Unverified value (unescaped HTML)     | String  | No       |
 ------------------------------------------------
 
 ### Select
@@ -61,44 +62,44 @@ Pour les utiliser :
 @include('shared.select', ['name' => 'country', 'label' => 'Country', 'value' => '', 'options' => ['France', 'Belgium', 'Germany']])
 ```
 ------------------------------------------------
-| Propriété  | Description        | Type   | Obligatoire |
-|------------|--------------------|--------|-------------|
-| name       | Nom du champ       | String | Oui         |
-| label      | Label du champ     | String | Non         |
-| value      | Valeur du champ    | String | Non         |
-| options    | Options du champ   | Array  | Oui         |
-| attributes | Attributs du champ | Array  | Non         |
-| help       | Aide du champ      | String | Non         |
+| Property   | Description        | Type   | Required |
+|------------|--------------------|--------|----------|
+| name       | Field name         | String | Yes      |
+| label      | Field label        | String | No       |
+| value      | Field value        | String | No       |
+| options    | Field options      | Array  | Yes      |
+| attributes | Field attributes   | Array  | No       |
+| help       | Field help         | String | No       |
 ------------------------------------------------
 ### Checkbox
 ```blade
 @include('shared.checkbox', ['name' => 'terms', 'label' => 'I agree to the terms and conditions', 'value' => '1'])
 ```
 ------------------------------------------------
-| Propriété  | Description        | Type   | Obligatoire |
-|------------|--------------------|--------|-------------|
-| name       | Nom du champ       | String | Oui         |
-| label      | Label du champ     | String | Non         |
-| value      | Valeur du champ    | String | Non         |
-| checked    | Champ coché       | Bool   | Non         |
+| Property   | Description        | Type   | Required |
+|------------|--------------------|--------|----------|
+| name       | Field name         | String | Yes      |
+| label      | Field label        | String | No       |
+| value      | Field value        | String | No       |
+| checked    | Checked field      | Bool   | No       |
 ------------------------------------------------
 
 ### Captcha
-Si vous estimez que vous avez besoin d'un captcha pour votre formulaire, vous pouvez rajouter le captcha en utilisant le composant suivant :
+If you feel you need a captcha for your form, you can add the captcha using the following component:
 ```blade
 @include('shared.captcha')
 ```
-ClientXCMS prendra en charge la création et la validation du captcha pour vous.
+ClientXCMS will handle the creation and validation of the captcha for you.
 
-### Message flash
-ClientXCMS prend en charge les messages flash pour les formulaires. Vous pouvez les afficher en utilisant le composant suivant :
+### Flash Message
+ClientXCMS supports flash messages for forms. You can display them using the following component:
 ```blade
 @include('shared.flash')
 ```
 
 ### Validation
-ClientXCMS prend en charge la validation des formulaires et affiche le message d'erreur à côté du champ concerné. Vous pouvez consulter la [documentation de Laravel](https://laravel.com/docs/11.x/validation) pour plus d'informations sur la validation.
-Pour debuguer les erreurs de validation, vous pouvez utiliser la méthode `errors()` ou `@dump($errors);`de Laravel.
+ClientXCMS supports form validation and displays the error message next to the relevant field. You can check the [Laravel documentation](https://laravel.com/docs/11.x/validation) for more information on validation.
+To debug validation errors, you can use Laravel's `errors()` method or `@dump($errors);`.
 ```blade
 @if ($errors->any())
     <div class="alert alert-danger">
@@ -109,3 +110,4 @@ Pour debuguer les erreurs de validation, vous pouvez utiliser la méthode `error
         </ul>
     </div>
 @endif
+```

@@ -1,48 +1,49 @@
 ---
 sidebar_position: 5
+translated: true
 ---
 
-# Déploiement automatisé avec Ansible
+# Automated Deployment with Ansible
 
-**Ansible** permet un déploiement entièrement automatisé de ClientXCMS, de l'installation des prérequis jusqu'à la mise en production. Cette méthode est recommandée pour les environnements de production et les déploiements multi-serveurs.
+**Ansible** enables fully automated deployment of ClientXCMS, from prerequisite installation to production deployment. This method is recommended for production environments and multi-server deployments.
 
-## Prérequis
+## Prerequisites
 
-### Sur la machine de contrôle (votre ordinateur)
-- **Ansible 2.9+** installé
-- **Git** pour cloner le playbook
-- **Accès SSH** aux serveurs cibles
+### On the control machine (your computer)
+- **Ansible 2.9+** installed
+- **Git** to clone the playbook
+- **SSH access** to target servers
 
-### Sur les serveurs cibles
-- **Ubuntu 22.04+**, **Debian 11+** ou **Rocky/AlmaLinux 9+**
-- **Accès root** ou utilisateur avec privilèges sudo
-- **Connexion internet** pour télécharger les paquets
+### On the target servers
+- **Ubuntu 22.04+**, **Debian 11+** or **Rocky/AlmaLinux 9+**
+- **Root access** or user with sudo privileges
+- **Internet connection** to download packages
 
-## Installation du playbook
+## Playbook Installation
 
-### 1. Cloner le dépôt Ansible
+### 1. Clone the Ansible Repository
 
 ```bash
 git clone https://github.com/ClientXCMS/ansible.git clientxcms-ansible
 cd clientxcms-ansible
 ```
 
-### 2. Configuration de l'inventaire
+### 2. Inventory Configuration
 
-Éditez le fichier d'inventaire selon votre environnement :
+Edit the inventory file according to your environment:
 
 #### Production
 ```bash
 # inventory/production.yml
 [clientxcms]
-serveur1.example.com ansible_host=192.168.1.100 ansible_user=root
-serveur2.example.com ansible_host=192.168.1.101 ansible_user=root
+server1.example.com ansible_host=192.168.1.100 ansible_user=root
+server2.example.com ansible_host=192.168.1.101 ansible_user=root
 
 [clientxcms:vars]
 environment_name=production
 ```
 
-#### Développement
+#### Development
 ```bash
 # inventory/development.yml
 [clientxcms]
@@ -52,11 +53,11 @@ dev.local ansible_host=192.168.1.50 ansible_user=root
 environment_name=development
 ```
 
-## Déploiement
+## Deployment
 
-### Nouveau déploiement production
+### New Production Deployment
 
-Pour un premier déploiement sur un serveur de production :
+For a first deployment on a production server:
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
@@ -67,82 +68,82 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_oauth_client_secret=VOTRE_CLIENT_SECRET"
 ```
 
-### Déploiement développement
+### Development Deployment
 
-Pour un environnement de développement ou de test :
+For a development or test environment:
 
 ```bash
 ansible-playbook -i inventory/development.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx"
 ```
 
-### Choix du serveur web
+### Web Server Choice
 
-Le playbook prend en charge deux serveurs web :
+The playbook supports two web servers:
 
 ```bash
-# Nginx (recommandé pour la production)
+# Nginx (recommended for production)
 -e "webserver=nginx"
 
-# Apache (compatible hébergement partagé)
+# Apache (shared hosting compatible)
 -e "webserver=apache"
 ```
 
-## Variables de configuration
+## Configuration Variables
 
-### Variables obligatoires (production)
+### Mandatory Variables (Production)
 
-| Variable | Description | Exemple |
+| Variable | Description | Example |
 |----------|-------------|---------|
-| `webserver` | Serveur web à installer | `nginx` ou `apache` |
-| `clientxcms_domain` | Nom de domaine | `manager.example.com` |
-| `clientxcms_admin_email` | Email administrateur | `admin@example.com` |
-| `clientxcms_oauth_client_id` | ID OAuth ClientXCMS | `9707826860385` |
-| `clientxcms_oauth_client_secret` | Secret OAuth | `votre_secret` |
+| `webserver` | Web server to install | `nginx` or `apache` |
+| `clientxcms_domain` | Domain name | `manager.example.com` |
+| `clientxcms_admin_email` | Administrator email | `admin@example.com` |
+| `clientxcms_oauth_client_id` | ClientXCMS OAuth ID | `9707826860385` |
+| `clientxcms_oauth_client_secret` | OAuth secret | `votre_secret` |
 
-### Variables optionnelles
+### Optional Variables
 
-| Variable | Description | Défaut |
-|----------|-------------|--------|
-| `clientxcms_force_reinstall` | Forcer la réinstallation | `false` |
-| `clientxcms_ssl_enabled` | Activer SSL/Let's Encrypt | `true` (prod), `false` (dev) |
-| `clientxcms_repo_branch` | Branche Git à déployer | `master` |
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `clientxcms_force_reinstall` | Force reinstallation | `false` |
+| `clientxcms_ssl_enabled` | Enable SSL/Let's Encrypt | `true` (prod), `false` (dev) |
+| `clientxcms_repo_branch` | Git branch to deploy | `master` |
 
-### Obtenir les identifiants OAuth
+### Obtaining OAuth Credentials
 
-Les identifiants OAuth sont requis en production et s'obtiennent depuis votre compte ClientXCMS :
+OAuth credentials are required in production and can be obtained from your ClientXCMS account:
 
-1. Connectez-vous sur [clientxcms.com](https://clientxcms.com)
-2. Accédez à **Mon Compte** > **Mes services** > **Gérer le service** > **Onglet Service**
-3. Section **Authentification**
-4. Notez le **OAuth Client ID** et le **OAuth Secret**
+1. Log in to [clientxcms.com](https://clientxcms.com)
+2. Go to **My Account** > **My Services** > **Manage Service** > **Service Tab**
+3. **Authentication** section
+4. Note the **OAuth Client ID** and **OAuth Secret**
 
-## Composants installés
+## Installed Components
 
-Le playbook Ansible installe et configure automatiquement :
+The Ansible playbook automatically installs and configures:
 
-### Infrastructure système
-- **PHP 8.3** avec toutes les extensions requises
-- **MariaDB 10.11+** (base de données)
-- **Nginx** ou **Apache** (serveur web)
-- **PHP-FPM** (gestionnaire de processus)
+### System Infrastructure
+- **PHP 8.3** with all required extensions
+- **MariaDB 10.11+** (database)
+- **Nginx** or **Apache** (web server)
+- **PHP-FPM** (process manager)
 
-### Sécurité
-- **Certificats SSL** (Let's Encrypt en production)
-- **Pare-feu** configuré (ports 22, 80, 443)
-- **Permissions** et utilisateurs sécurisés
-- **Configuration PHP** durcie
+### Security
+- **SSL Certificates** (Let's Encrypt in production)
+- **Firewall** configured (ports 22, 80, 443)
+- Secure **permissions** and users
+- **Hardened PHP configuration**
 
 ### ClientXCMS
-- **Code source** depuis Git
-- **Dépendances Composer** et **NPM**
-- **Configuration** `.env` automatique
-- **Base de données** initialisée
-- **Tâches cron** et **queues Laravel**
+- **Source code** from Git
+- **Composer** and **NPM dependencies**
+- Automatic `.env` **configuration**
+- **Initialized database**
+- **Cron tasks** and **Laravel queues**
 
-## Gestion des mises à jour
+## Update Management
 
-### Mise à jour d'une instance spécifique
+### Updating a Specific Instance
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
@@ -150,33 +151,33 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_domain=manager.example.com"
 ```
 
-### Mise à jour de toutes les instances
+### Updating All Instances
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_update_mode=true"
 ```
 
-### Processus de mise à jour
+### Update Process
 
-1. **Backup automatique** (fichiers + base de données)
-2. **Mode maintenance** (`php artisan down`)
-3. **Récupération** du code source Git
-4. **Installation** des dépendances
-5. **Migrations** de base de données
-6. **Nettoyage** des caches
-7. **Compilation** des assets
-8. **Sortie de maintenance** (`php artisan up`)
+1. **Automatic backup** (files + database)
+2. **Maintenance mode** (`php artisan down`)
+3. **Git source code retrieval**
+4. **Dependencies installation**
+5. **Database migrations**
+6. **Cache cleanup**
+7. **Asset compilation**
+8. **Exit maintenance mode** (`php artisan up`)
 
-:::info Backups automatiques
-Chaque mise à jour génère un backup complet dans `/var/backups/clientxcms/[domain]/[timestamp]/`
+:::info Automatic Backups
+Each update generates a complete backup in `/var/backups/clientxcms/[domain]/[timestamp]/`
 :::
 
-## Gestion des erreurs et rollback
+## Error Handling and Rollback
 
-### En cas d'échec de mise à jour
+### In Case of Update Failure
 
-Si une mise à jour échoue, le playbook affiche la commande de rollback exacte :
+If an update fails, the playbook displays the exact rollback command:
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
@@ -185,20 +186,20 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_rollback_timestamp=1709123456"
 ```
 
-### Processus de rollback
+### Rollback Process
 
-1. **Vérification** de l'existence du backup
-2. **Affichage** des détails (date, commit git)
-3. **Confirmation** utilisateur
-4. **Restauration** des fichiers (préserve `.env`)
-5. **Restauration** de la base de données
-6. **Nettoyage** des caches
+1. **Backup existence verification**
+2. **Details display** (date, git commit)
+3. **User confirmation**
+4. **File restoration** (preserves `.env`)
+5. **Database restoration**
+6. **Cache cleanup**
 
-## Options avancées
+## Advanced Options
 
-### Mode simulation (dry-run)
+### Dry-run Mode (Simulation)
 
-Testez le déploiement sans appliquer les modifications :
+Test the deployment without applying changes:
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
@@ -206,9 +207,9 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx"
 ```
 
-### Mode verbeux (debug)
+### Verbose Mode (Debug)
 
-Affichez plus d'informations lors de l'exécution :
+Display more information during execution:
 
 ```bash
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
@@ -216,42 +217,42 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx"
 ```
 
-### Utilisation de tags
+### Using Tags
 
-Exécutez uniquement certaines parties du playbook :
+Run only certain parts of the playbook:
 
 ```bash
-# Installation des prérequis uniquement
+# Prerequisites installation only
 --tags prerequisites
 
-# Déploiement ClientXCMS uniquement  
+# ClientXCMS deployment only
 --tags clientxcms
 
-# Mode mise à jour uniquement
+# Update mode only
 --tags update
 ```
 
-## Structure des fichiers de backup
+## Backup File Structure
 
 ```
 /var/backups/clientxcms/
 ├── manager.example.com/
 │   ├── 1709123456/
-│   │   ├── files.tar.gz          # Archive complète des fichiers
-│   │   ├── database.sql          # Dump MySQL/MariaDB
-│   │   └── metadata.json         # Métadonnées (date, commit, etc.)
+│   │   ├── files.tar.gz          # Complete file archive
+│   │   ├── database.sql          # MySQL/MariaDB dump
+│   │   └── metadata.json         # Metadata (date, commit, etc.)
 │   └── 1709234567/
 │       └── ...
-└── autre-domaine.com/
+└── another-domain.com/
     └── ...
 ```
 
-## Exemples complets
+## Complete Examples
 
-### Déploiement production multi-domaines
+### Multi-domain Production Deployment
 
 ```bash
-# Premier domaine
+# First domain
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx" \
   -e "clientxcms_domain=client1.example.com" \
@@ -259,7 +260,7 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_oauth_client_id=8387752805262" \
   -e "clientxcms_oauth_client_secret=SECRET1"
 
-# Deuxième domaine sur le même serveur
+# Second domain on the same server
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx" \
   -e "clientxcms_domain=client2.example.com" \
@@ -268,95 +269,95 @@ ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_oauth_client_secret=SECRET2"
 ```
 
-### Mise à jour planifiée avec rétention personnalisée
+### Scheduled Update with Custom Retention
 
 ```bash
-# Garder 10 backups au lieu de 5 par défaut
+# Keep 10 backups instead of 5 by default
 ansible-playbook -i inventory/production.yml playbooks/deploy-clientxcms.yml \
   -e "clientxcms_update_mode=true" \
   -e "clientxcms_backup_retention=10"
 ```
 
-### Déploiement avec branche spécifique
+### Deployment with Specific Branch
 
 ```bash
-# Déployer la branche develop pour les tests
+# Deploy the develop branch for testing
 ansible-playbook -i inventory/staging.yml playbooks/deploy-clientxcms.yml \
   -e "webserver=nginx" \
   -e "clientxcms_domain=staging.example.com" \
   -e "clientxcms_repo_branch=develop"
 ```
 
-## Détection automatique des instances
+## Automatic Instance Detection
 
-Le playbook détecte automatiquement les instances ClientXCMS existantes via :
+The playbook automatically detects existing ClientXCMS instances via:
 
-1. **Scan** de `/var/www/` pour les répertoires
-2. **Vérification** du fichier marqueur `storage/installed`  
-3. **Validation** de la présence du fichier `artisan`
+1. **Scan** of `/var/www/` for directories
+2. **Verification** of the `storage/installed` marker file
+3. **Validation** of the `artisan` file presence
 
-Si aucun domaine spécifique n'est fourni, toutes les instances détectées seront mises à jour.
+If no specific domain is provided, all detected instances will be updated.
 
-## Bonnes pratiques
+## Best Practices
 
-### Sécurité
-- **Ne pas** commiter les secrets OAuth dans Git ou bien penser à utiliser Vault pour les secrets et informations sensibles à chiffrer.
-- Utiliser un **utilisateur dédié** pour Ansible
-- **Tester** d'abord sur un environnement de staging
-- **Vérifier** les backups régulièrement
+### Security
+- **Do not** commit OAuth secrets to Git, or consider using Vault for secrets and sensitive information to encrypt.
+- Use a **dedicated user** for Ansible
+- **Test** first on a staging environment
+- **Verify** backups regularly
 
 ### Performance
-- Utiliser **Nginx + PHP-FPM** pour la production
-- Activer **OPcache** PHP (fait automatiquement)
-- Configurer **MariaDB** selon votre charge
-- Monitorer les **ressources** serveur avec Grafana (prévu dans une prochaine mise à jour de la playbook)
+- Use **Nginx + PHP-FPM** for production
+- Enable **PHP OPcache** (done automatically)
+- Configure **MariaDB** according to your load
+- Monitor server **resources** with Grafana (planned in a future playbook update)
 
 ### Maintenance
-- **Planifier** les mises à jour pendant les créneaux de faible trafic
-- **Conserver** les backups selon votre politique de rétention
-- **Tester** les rollbacks sur un environnement de test
-- **Documenter** vos configurations spécifiques
+- **Schedule** updates during low traffic periods
+- **Keep** backups according to your retention policy
+- **Test** rollbacks on a test environment
+- **Document** your specific configurations
 
-:::tip Recommandation
-Pour un déploiement professionnel, utilisez Ansible avec un serveur de contrôle dédié et des clés SSH plutôt que des mots de passe.
+:::tip Recommendation
+For a professional deployment, use Ansible with a dedicated control server and SSH keys rather than passwords.
 :::
 
-## Support et dépannage
+## Support and Troubleshooting
 
-L’équipe de **ClientXCMS** ne fournit **aucun support externe** concernant l’utilisation d’Ansible et des playbooks fournis.  
-Nous restons toutefois disponibles sur les **canaux communautaires**, mais cette assistance **n’entre pas dans l’offre de support officielle**.
+The **ClientXCMS** team does **not provide external support** regarding the use of Ansible and the provided playbooks.
+We remain available on **community channels** however, but this assistance is **not part of the official support offering**.
 
-### Logs disponibles
+### Available Logs
 
-- **Ansible** : `/var/log/ansible.log`
-- **ClientXCMS** : `storage/logs/laravel.log`
-- **Nginx** : `/var/log/nginx/`
-- **Apache** : `/var/log/apache2/` ou `/var/log/httpd/`
+- **Ansible**: `/var/log/ansible.log`
+- **ClientXCMS**: `storage/logs/laravel.log`
+- **Nginx**: `/var/log/nginx/`
+- **Apache**: `/var/log/apache2/` or `/var/log/httpd/`
 
-### Résolution de problèmes courants
+### Common Problem Resolution
 
-#### Erreur de connexion SSH
+#### SSH Connection Error
 
 ```bash
-# Vérifiez la connectivité
+# Check connectivity
 ansible -i inventory/production.yml all -m ping
-````
+```
 
-#### Erreur d’authentification OAuth
+#### OAuth Authentication Error
 
-* Vérifiez vos identifiants sur [clientxcms.com](https://clientxcms.com)
-* Assurez-vous que l’application OAuth est bien active
+* Check your credentials on [clientxcms.com](https://clientxcms.com)
+* Make sure the OAuth application is active
 
-#### Échec du déploiement SSL
+#### SSL Deployment Failure
 
-* Vérifiez que le domaine pointe correctement vers le serveur
-* Attendez la propagation DNS (jusqu’à **48 h**)
-* **N’activez pas le proxy Cloudflare** lors de la génération des certificats
+* Verify that the domain points correctly to the server
+* Wait for DNS propagation (up to **48 hours**)
+* **Do not enable Cloudflare proxy** during certificate generation
 
-### Ressources d’aide
+### Help Resources
 
-Pour obtenir de l’aide supplémentaire, consultez :
+For additional help, consult:
 
-* **[Documentation ClientXCMS](https://docs.clientxcms.com)**
+* **[ClientXCMS Documentation](/)**
 * **[GitHub Issues](https://github.com/ClientXCMS/ansible/issues)**
-* **[Discord communautaire](https://discord.gg/clientxcms)**
+* **[Community Discord](https://gg.clientxcms.com)**

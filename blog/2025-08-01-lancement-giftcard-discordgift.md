@@ -1,76 +1,77 @@
 ---
 slug: lancement-giftcard-discordgift
-title: Lancement des addons « Gift Card » & « Discord Gift »
+title: Launch of "Gift Card" & "Discord Gift" Addons
 authors: [martindev]
 tags: [addons, boutique, communauté, clientxcms]
+translated: true
 ---
-# Lancement officiel des add-ons « Gift Card » & « Discord Gift »
+# Official Launch of "Gift Card" & "Discord Gift" Add-ons
 
-Nous sommes heureux d’annoncer la sortie de **deux nouveaux addons majeurs** qui viennent renforcer la boutique, dynamiser votre communauté et offrir de nouvelles possibilités d’engagement pour vos utilisateurs.
+We are pleased to announce the release of **two major new addons** that strengthen the store, energize your community, and offer new engagement possibilities for your users.
 
 ![addons](/img/blog/lancement-giftcard-discordgift/header.png)
 
-Ces deux outils sont simples, puissants, et surtout conçus pour augmenter vos revenus tout en proposant une meilleure expérience utilisateur.
+These two tools are simple, powerful, and above all designed to increase your revenue while providing a better user experience.
 <!-- truncate -->
 
-## Gift Card – Cartes-cadeaux
+## Gift Card – Gift Cards
 
 ![giftcard](/img/next_gen/extensions/addons/giftcards/giftcards_client_view.png)
 
-L’addon **Gift Card** permet de créer, vendre et gérer des cartes-cadeaux directement depuis votre espace client ClientXCMS.
+The **Gift Card** addon allows you to create, sell, and manage gift cards directly from your ClientXCMS client area.
 
 
-### Fonctionnalités principales
+### Main Features
 
-- Génération automatique de cartes-cadeaux (code unique)
-- Montant **fixe** ou **aléatoire**
-- Utilisations limitées ou illimitées
-- Envoi automatique par e-mail
-- Tableau de bord complet : total reversé, taux d’utilisation, historique
+- Automatic gift card generation (unique code)
+- **Fixed** or **random** amount
+- Limited or unlimited uses
+- Automatic email sending
+- Complete dashboard: total disbursed, usage rate, history
 
 ![admin-giftcards](/img/next_gen/extensions/addons/giftcards/giftcards_admin_view.png)
 
 
-### Achat en boutique
+### Store Purchase
 
 ![giftcard-store](/img/next_gen/extensions/addons/giftcards/giftcards_creer_admin.png)
 
-👉 Choisir un montant → valider le paiement → recevoir le code instantanément.
+👉 Choose an amount → validate payment → receive the code instantly.
 
-### Prix
+### Price
 
-➡️ **6,50€ TTC – à vie**
+➡️ **€6.50 incl. VAT – lifetime**
 👉 https://clientxcms.com/resources/giftcard
 
-Documentation : https://docs.clientxcms.com/extensions/addons/giftcard
+Documentation: https://docs.clientxcms.com/extensions/addons/giftcard
 
 
-## Discord Gift – Cadeaux Discord automatisés
+## Discord Gift – Automated Discord Gifts
 
 ![discordgift](/img/next_gen/extensions/addons/discordgift/discordgift_admin_config.png)
 
-L’addon **Discord Gift** crée une nouvelle dynamique communautaire :
-un code généré automatiquement, publié sur votre serveur via Webhook, et utilisable une seule fois par chaque membre.
+The **Discord Gift** addon creates a new community dynamic:
+an automatically generated code, posted on your server via Webhook, and usable once per member.
 
 
-### Fonctionnalités principales
+### Main Features
 
-- Lancement automatique ou manuel
-- Publication du code via Webhook avec minuteur
-- Montant crédité **aléatoire** (min/max)
-- Nombre d’utilisations configurable
-- Graphique des derniers lancements
-- Messages personnalisables : début, utilisation, fin
+- Automatic or manual launch
+- Code posting via Webhook with timer
+- **Random** credited amount (min/max)
+- Configurable number of uses
+- Graph of recent launches
+- Customizable messages: start, use, end
 
 ![discordgift-webhook](/img/next_gen/extensions/addons/discordgift/discordgift_webhooks.png)
 
 
 
-### Prix
+### Price
 
-➡️ **6,50€ TTC – à vie**
+➡️ **€6.50 incl. VAT – lifetime**
 👉 https://clientxcms.com/resources/discordgift
 
-Documentation : https://docs.clientxcms.com/extensions/addons/discordgift
+Documentation: https://docs.clientxcms.com/extensions/addons/discordgift
 
 
