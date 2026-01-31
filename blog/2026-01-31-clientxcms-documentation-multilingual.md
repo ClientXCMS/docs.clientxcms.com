@@ -11,7 +11,7 @@ We are happy to announce that the **CLIENTXCMS documentation is now fully availa
 
 This update is part of a broader effort to internationalize the project, with **English as the primary language** to encourage contributions from the global community.
 
-{/* TODO: add header image at /img/blog/clientxcms-documentation-multilingual/header.png */}
+![Multilingual Documentation](/img/blog/clientxcms-documentation-multilingual/header.png)
 
 <!-- truncate -->
 

@@ -10,7 +10,7 @@ Nous sommes heureux de vous annoncer que la **documentation CLIENTXCMS est déso
 
 Cette mise à jour s'inscrit dans un effort plus large d'internationalisation du projet, avec **l'anglais comme langue principale** afin d'encourager les contributions de la communauté mondiale.
 
-{/* TODO: add header image at /img/blog/clientxcms-documentation-multilingual/header.png */}
+![Documentation multilingue](/img/blog/clientxcms-documentation-multilingual/header.png)
 
 <!-- truncate -->
 
