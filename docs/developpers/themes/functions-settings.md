@@ -35,6 +35,7 @@ This page lists the functions and setting keys usable for themes.
 | `{{ is_route($route) }}`                                     | Returns true if the route is the current route   |
 | `{{ ctx_version() }}`                                        | Returns the CLIENTXCMS version                   |
 | `{{ theme_config($key, $default = null) }}`                  | Returns the theme configuration                  |
+| `{{ translated_setting($key, $default = null) }}`            | Returns a translatable setting value from the database |
 
 ## Settings
 

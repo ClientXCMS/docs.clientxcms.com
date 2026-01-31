@@ -34,6 +34,7 @@ Cette page liste les fonctions et clés de paramètres utilisables pour les thè
 | `{{ is_route($route) }}`                                     | Retourne vrai si la route est la route actuelle  |
 | `{{ ctx_version() }}`                                        | Retourne la version de CLIENTXCMS                |
 | `{{ theme_config($key, $default = null) }}`                  | Retourne la configuration du thème               |
+| `{{ translated_setting($key, $default = null) }}`            | Retourne une valeur de paramètre traduisible depuis la base de données |
 
 ## Paramètres
 

@@ -24,6 +24,7 @@ resources/themes/
     ├── database/
     │   └── seeders/
     │       └── ThemeNameSeeder.php
+    │   └── db_settings.php
     ├── lang/
     │   └── fr/
     │       └── messages.php
