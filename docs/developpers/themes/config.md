@@ -37,3 +37,7 @@ To retrieve the configuration in your theme, you can use the `theme_config` meth
 ```php
 {{ theme_config('config_1') }}
 ```
+
+:::tip Translatable Configuration
+If you need some configuration fields to support multiple languages, you can store them in the database instead of `config.json`. See [Database Settings](./db-settings.md) for details.
+:::

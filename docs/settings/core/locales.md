@@ -109,19 +109,20 @@ CLIENTXCMS automatically detects:
 
 When a language is activated, the following elements are translated:
 
-✅ **User interface**: All menus, buttons, and messages
-✅ **Automated emails**: Notifications, invoices, confirmations
-✅ **System messages**: Errors, confirmations, alerts
-✅ **Static content**: Legal pages, terms and conditions
+- ✅ **User interface**: All menus, buttons, and messages
+- ✅ **Automated emails**: Notifications, invoices, confirmations
+- ✅ **System messages**: Errors, confirmations, alerts
+- ✅ **Static content**: Legal pages, terms and conditions
+- ✅ **Theme configuration**: Translatable fields defined by the theme (titles, descriptions, text content) — if the active theme supports [database settings](/developpers/themes/db-settings)
 
 ### Elements Requiring Manual Translation
 
 Some content requires manual translation:
 
-📝 **Product descriptions**: Via the product management interface
-📝 **Custom pages**: Specifically created content
-📝 **Announcements and news**: Marketing communications
-📝 **SEO metadata**: Titles and descriptions for search engines
+- 📝 **Product descriptions**: Via the product management interface
+- 📝 **Custom pages**: Specifically created content
+- 📝 **Announcements and news**: Marketing communications
+- 📝 **SEO metadata**: Titles and descriptions for search engines
 
 ## Translation Customization
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 # Formulaire
 Les formulaires sont des éléments essentiels pour interagir avec les utilisateurs et sont souvent utilisés pour collecter des informations. Les formulaires sont utilisés pour collecter des informations de l'utilisateur, telles que les coordonnées, les commentaires, les avis, etc. Les formulaires sont également utilisés pour collecter des informations de l'utilisateur, telles que l'inscription, le checkout etc.

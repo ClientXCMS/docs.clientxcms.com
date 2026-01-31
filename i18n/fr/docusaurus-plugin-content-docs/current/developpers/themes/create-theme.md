@@ -20,7 +20,8 @@ resources/themes/
     ├── config/
     │   └── config.json
     │   └── config.blade.php
-    │   └── rules.blade.php
+    │   └── rules.php
+    │   └── db_settings.php
     ├── lang/
     │   └── fr/
     │       └── messages.php
