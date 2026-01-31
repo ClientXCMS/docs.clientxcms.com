@@ -36,3 +36,7 @@ Pour récupérer la configuration dans votre thème, vous pouvez utiliser la mé
 ```php
 {{ theme_config('config_1') }}
 ```
+
+:::tip Configuration traduisible
+Si vous avez besoin que certains champs de configuration supportent plusieurs langues, vous pouvez les stocker en base de données au lieu de `config.json`. Consultez [Configuration en base de données](./db-settings.md) pour plus de détails.
+:::

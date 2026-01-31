@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 # Sections
 Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personalisation.
