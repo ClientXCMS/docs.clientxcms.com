@@ -20,7 +20,10 @@ resources/themes/
     ├── config/
     │   └── config.json
     │   └── config.blade.php
-    │   └── rules.blade.php
+    │   └── rules.php
+    ├── database/
+    │   └── seeders/
+    │       └── ThemeNameSeeder.php
     ├── lang/
     │   └── fr/
     │       └── messages.php
@@ -56,7 +59,11 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
     "multi_footer_columns": true
   },
   "default_theme_mode": "dark",
-  "demo": "https://demo.clientxcms.com"
+  "demo": "https://demo.clientxcms.com",
+  "seeder": {
+    "file": "database/seeders/ExampleSeeder.php",
+    "class": "Database\\Seeders\\ExampleSeeder"
+  }
 }
 ```
 ### Ajouter une image de prévisualisation
