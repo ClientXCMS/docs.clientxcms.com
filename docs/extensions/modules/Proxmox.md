@@ -296,5 +296,7 @@ If no IP is found, this error is returned.
 | `proxmox:process-post-install`   | Manages post-installation actions for VPS.                       | -          |
 | `proxmox:cleanup-console-users`  | Cleans up Proxmox console users.                                 | -          |
 
-### NoVNC Support
+### Support NoVNC
 To support noVNC, you must create a custom role in Proxmox with the `VM.Console` permission named "CustomerPanel".
+
+You can define in the Proxmox server metadata on ClientXCMS the key `proxmox_url` with the value `proxmox.example.com` if you use a local proxmox to indicate the URL of the proxmox.
