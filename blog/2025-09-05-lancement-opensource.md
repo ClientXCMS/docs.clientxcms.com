@@ -1,64 +1,65 @@
 ---
 slug: lancement-opensource
-title: Lancement de CLIENTXCMS en Open Source
+title: CLIENTXCMS Open Source Launch
 authors: [martindev]
 tags: [opensource, cms, extensions, community]
+translated: true
 ---
 
-Après 5 ans de développement, des nuits blanches et plus de **3,2 millions de lignes ajoutées**, le moment est arrivé : **CLIENTXCMS devient Open Source**.  
-Ce projet, né au lycée, a grandi avec nous et évolue désormais vers un futur collaboratif, où chaque développeur peut contribuer à son amélioration.
+After 5 years of development, sleepless nights, and more than **3.2 million lines added**, the moment has arrived: **CLIENTXCMS is going Open Source**.
+This project, born in high school, has grown with us and is now evolving toward a collaborative future, where every developer can contribute to its improvement.
 
-![Capture d’écran ClientXCMS](/img/blog/lancement-opensource/opensource.png)
+![ClientXCMS Screenshot](/img/blog/lancement-opensource/opensource.png)
 <!-- truncate -->
 
-## 🤝 Contributions & Communauté
+## 🤝 Contributions & Community
 
-L’ouverture en open source signifie que **tout le monde peut désormais participer** : corriger des bugs, proposer de nouvelles fonctionnalités ou créer des extensions.  
+Going open source means that **everyone can now participate**: fix bugs, propose new features, or create extensions.
 
-Vous trouverez le code sur GitHub :  
+You can find the code on GitHub:
 👉 [github.com/clientxcms/clientxcms](https://github.com/clientxcms/clientxcms)
 
-Vous pouvez également plus de 30 dépôts liés à CLIENTXCMS sur notre organisation GitHub :
+You can also find more than 30 repositories related to CLIENTXCMS on our GitHub organization:
 👉 [github.com/clientxcms](https://github.com/clientxcms)
 
-N’hésitez pas à :  
-- Mettre une ⭐ sur le dépôt pour soutenir le projet  
-- Créer vos issues et pull requests  
-- Partager vos idées via [ideas.clientxcms.com](https://ideas.clientxcms.com)  
-- Rejoindre notre [forum](https://forum.clientxcms.com) pour échanger avec la communauté
+Feel free to:
+- Give a ⭐ on the repository to support the project
+- Create your issues and pull requests
+- Share your ideas via [ideas.clientxcms.com](https://ideas.clientxcms.com)
+- Join our [forum](https://forum.clientxcms.com) to exchange with the community
 
-## 🛠️ Nouvelle interface des extensions & Marketplace
+## 🛠️ New Extensions Interface & Marketplace
 
-Une grande nouveauté accompagne ce passage en open source : la **nouvelle interface dédiée aux extensions** et le **marketplace intégré**.  
+A major new feature accompanies this transition to open source: the **new dedicated extensions interface** and the **integrated marketplace**.
 
-![Capture d’écran marketplace](/img/blog/lancement-opensource/marketplace.png)
+![Marketplace Screenshot](/img/blog/lancement-opensource/marketplace.png)
 
-Désormais, chaque développeur peut :  
-- Créer ses propres extensions  
-- Publier et partager ses créations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)  
-- Explorer et installer facilement les extensions partagées par la communauté  
+From now on, every developer can:
+- Create their own extensions
+- Publish and share their creations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)
+- Easily explore and install extensions shared by the community
 
-Cette interface intuitive a été pensée pour simplifier la gestion et encourager l’écosystème collaboratif autour de CLIENTXCMS.  
+This intuitive interface has been designed to simplify management and encourage the collaborative ecosystem around CLIENTXCMS.
 
-![Capture d’écran création d'une extension](/img/blog/lancement-opensource/marketplace2.png)
+![Extension creation screenshot](/img/blog/lancement-opensource/marketplace2.png)
 
 
-## 📦 Roadmap & mise à jour v2.14.8
+## 📦 Roadmap & v2.14.8 Update
 
-La prochaine mise à jour **v2.14.8** est en cours de finalisation.  
-Elle sera déployée prochainement sur les **versions Cloud**, avec son lot de correctifs et de nouvelles fonctionnalités.  
+The next update **v2.14.8** is being finalized.
+It will be deployed soon on **Cloud versions**, with its batch of fixes and new features.
 
-Nous vous tiendrons informés via le [changelog](https://clientxcms.com/changelogs).  
+We will keep you informed via the [changelog](https://clientxcms.com/changelogs).
 
-## Quelques chiffres clés
-- **5 ans** de développement
-- **3,2 millions** de lignes de code ajoutées
-- **30+ dépôts open source** sur GitHub
-- **2 versions développées** (v1 et v2 - NextGen)
+## Some Key Figures
+- **5 years** of development
+- **3.2 million** lines of code added
+- **30+ open source repositories** on GitHub
+- **2 versions developed** (v1 and v2 - NextGen)
 
 ## ✨ Conclusion
 
-CLIENTXCMS n’est plus seulement un projet, c’est désormais une **aventure collective**.  
-En rejoignant la communauté, vous pouvez contribuer à son évolution et participer à la création d’un écosystème riche en extensions et en idées.  
+CLIENTXCMS is no longer just a project, it is now a **collective adventure**.
+By joining the community, you can contribute to its evolution and participate in creating an ecosystem rich in extensions and ideas.
 
-**Le futur de CLIENTXCMS est entre vos mains.**
+**The future of CLIENTXCMS is in your hands.**

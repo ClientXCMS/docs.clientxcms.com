@@ -1,56 +1,59 @@
-# Modèles & Oses Proxmox
+---
+translated: true
+---
+# Proxmox Templates & OSes
 
-## Modèles KVM
-CLIENTXCMS met à votre disposition un ensemble de modèles de serveurs virtuels préconfigurés pour Proxmox KVM. Ces modèles sont disponibles pour les distributions suivantes :
+## KVM Templates
+CLIENTXCMS provides you with a set of preconfigured virtual server templates for Proxmox KVM. These templates are available for the following distributions:
 - Debian 10
 - Debian 11
 - Debian 12
 - Ubuntu 20.04
 - Ubuntu 22.04
 ### Installation
-Pour commencer veuillez télécharger le zip contenant les modèles depuis le lien suivant : [Modèles KVM](https://clientxcms.com/ref/template-kvm-proxmox)
+To begin, please download the zip containing the templates from the following link: [KVM Templates](https://clientxcms.com/ref/template-kvm-proxmox)
 
 ```bash
 wget --user-agent="download" https://clientxcms.com/ref/template-kvm-proxmox -O Template-KVM.tar.gz
 ```
-- Décompressez le fichier téléchargé :
+- Extract the downloaded file:
 ```bash
 tar -xvf Template-KVM.tar.gz
 ```
 :::info
-Il faut bien sûr au préalable avoir installé le paquet tar.
+You must first have installed the tar package.
 ```
 sudo apt install tar untar
 ```
 :::
 <br/>
-- Déplacez les fichiers de configuration des modèles dans le dossier de configuration de Proxmox :
+- Move the template configuration files to the Proxmox configuration folder:
 ```
 mv Template-KVM/Config/* /etc/pve/qemu-server/
 ```
-- Ajoutez à votre Proxmox les disk de ces modèles : 
-Pour cela, il faut connaître la localisation du dossier local avec la commande :
+- Add the template disks to your Proxmox:
+To do this, you need to know the location of the local folder with the command:
 ```
 cat /etc/pve/storage.cfg
 ```
-Généralement, le dossier est situé ici : `/var/lib/vz`
+Generally, the folder is located here: `/var/lib/vz`
 
-- Déplacez les disques dans le bon dossier.
+- Move the disks to the correct folder.
 ```
 mv Template-KVM/Disk/* /var/lib/vz/images/
 ```
 
-L'installation des modèles est presque terminée maintenant.
-Pour finir, il faut juste configurer l'espace de stockage pour qu'il accepte les modèles.
+The template installation is almost complete now.
+To finish, you just need to configure the storage space to accept the templates.
 
-Pour cela, il faut aller dans `Datacenter` > `Storage` > `local` et ajouter dans `content` `Disk Image`:
+To do this, go to `Datacenter` > `Storage` > `local` and add `Disk Image` in `content`:
 
 ![img](/img/tutorial/proxmox.png)
 
-Voilà vous venez d'installer les modèles sur votre proxmox. Nous vous remercions pour votre confiance et restons à votre disposition pour toute question.
+There you go, you have just installed the templates on your Proxmox. Thank you for your trust and we remain available for any questions.
 
-## Oses LXC
-Nous travaillons actuellement sur la mise en place de modèles LXC pour Proxmox. Ces modèles seront disponibles prochainement.
+## LXC OSes
+We are currently working on setting up LXC templates for Proxmox. These templates will be available soon.
 
 ## Windows
-Nous travaillons actuellement sur la mise en place de modèles Windows pour Proxmox. Ces modèles seront disponibles prochainement.
+We are currently working on setting up Windows templates for Proxmox. These templates will be available soon.

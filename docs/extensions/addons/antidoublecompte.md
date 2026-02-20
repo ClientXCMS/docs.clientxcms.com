@@ -1,19 +1,19 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
-# Anti double compte
-L'anti double compte est un système qui permet de vérifier que les utilisateurs ne créer pas plusieurs compte et permet de vous prévenir si c'est le cas.
+# Anti Duplicate Account
+The anti duplicate account is a system that verifies users don't create multiple accounts and alerts you if they do.
 
 ## Configuration
-Vous pouvez gérer la configuration de l'anti double compte dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions ` > `Double Comptes` > `Paramètre`
+You can manage the anti duplicate account configuration in `Admin Panel` > `Settings` > `Extension Settings` > `Duplicate Accounts` > `Settings`
 
 ![img](/img/next_gen/extensions/addons/antidoublecompte/parametre.png)
 
-Ici vous pouvez choisir si vous voulez que le compte détecter sois suspendu, ban, supprimer.
+Here you can choose whether you want the detected account to be suspended, banned, or deleted.
 
-## Panel de gestion
+## Management Panel
 ![img](/img/next_gen/extensions/addons/antidoublecompte/gestion.png)
 
-Ici, vous pouvez voir tout les rapport que le système à trouver comme double compte. Vous pouvez aussi accepter ou refuser le compte.
-
+Here, you can see all reports that the system has found as duplicate accounts. You can also accept or reject the account.

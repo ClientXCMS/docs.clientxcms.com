@@ -1,13 +1,14 @@
 ---
 sidebar_position: 2
+translated: true
 ---
-# Fichier de configuration
+# Configuration File
 
-Lors de la création d'une extension avec la commande `php artisan clientxcms:create-extension`, la structure de base est générée et deux fichiers de configuration sont automatiquement générés : `addon.json` et `composer.json`.
+When creating an extension with the command `php artisan clientxcms:create-extension`, the basic structure is generated and two configuration files are automatically created: `addon.json` and `composer.json`.
 
-## Fichier `addon.json`
+## `addon.json` File
 
-Le fichier `addon.json` est utilisé par le CMS pour enregistrer les métadonnées spécifiques de l'extension. Voici un exemple de configuration de ce fichier :
+The `addon.json` file is used by the CMS to register extension-specific metadata. Here is an example configuration of this file:
 
 ```json
 {
@@ -25,17 +26,17 @@ Le fichier `addon.json` est utilisé par le CMS pour enregistrer les métadonné
 }
 ```
 
-- **name** : Le nom de l'extension.
-- **description** : Une courte description de l'extension.
-- **uuid** : Un identifiant unique pour l'extension. Il est impératif que cet UUID soit **unique** afin d'éviter tout conflit entre extensions.
-- **version** : Version actuelle de l'extension.
-- **author** : Informations sur l'auteur de l'extension, avec son nom et son adresse email.
-- **providers** : Une liste des *Service Providers* de l'extension.
-- **thumbnail** : URL vers le logo de l’extension.
+- **name**: The name of the extension.
+- **description**: A short description of the extension.
+- **uuid**: A unique identifier for the extension. It is imperative that this UUID is **unique** to avoid any conflicts between extensions.
+- **version**: Current version of the extension.
+- **author**: Information about the extension author, including name and email address.
+- **providers**: A list of the extension's *Service Providers*.
+- **thumbnail**: URL to the extension logo.
 
-## Fichier `composer.json`
+## `composer.json` File
 
-Le fichier `composer.json` est utilisé par Composer pour gérer les dépendances de l'extension et pour l'autoloading des classes PHP. Voici un exemple de configuration de ce fichier :
+The `composer.json` file is used by Composer to manage extension dependencies and for PHP class autoloading. Here is an example configuration of this file:
 
 ```json
 {
@@ -58,9 +59,9 @@ Le fichier `composer.json` est utilisé par Composer pour gérer les dépendance
 }
 ```
 
-- **name** : Le nom complet de l'extension.
-- **description** : Une courte description de l'extension.
-- **type** : Définit le type d'extension.
-- **require** : Liste des dépendances minimales requises, par exemple la version PHP minimale (`>=8.0`).
-- **config** : Configuration Composer additionnelle. Ici, `optimize-autoloader` est activé pour optimiser le chargement automatique des classes et `platform-check` est désactivé pour éviter les vérifications de compatibilité de la plateforme.
-- **autoload** : Définit la stratégie d'autoloading, en spécifiant le namespace de l'extension (`App\\Addons\\Fund\\`) et le dossier source correspondant (`src/`).
+- **name**: The full name of the extension.
+- **description**: A short description of the extension.
+- **type**: Defines the extension type.
+- **require**: List of minimum required dependencies, for example the minimum PHP version (`>=8.0`).
+- **config**: Additional Composer configuration. Here, `optimize-autoloader` is enabled to optimize class autoloading and `platform-check` is disabled to avoid platform compatibility checks.
+- **autoload**: Defines the autoloading strategy, specifying the extension namespace (`App\\Addons\\Fund\\`) and the corresponding source folder (`src/`).

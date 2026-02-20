@@ -1,45 +1,44 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
+translated: true
 ---
 # Sections
-Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personalisation.
+Sections are content elements that can be added to a CLIENTXCMS page. They are controlled by themes and can be customized in the administration interface from the section page in personalization settings.
 ![Sections](/img/next_gen/developpers/themes/section_admin.png)
 
-## Création d'une section personnalisée
-Pour des sections personnalisées vous pouvez créer un fichier `sections.json` dans le dossier `resources/views/sections` de votre thème. Par exemple, pour une section `hero` vous pouvez créer un fichier `resources/views/sections/hero.blade.php` avec le contenu suivant :
+## Creating a Custom Section
+For custom sections, you can create a `sections.json` file in the `resources/views/sections` folder of your theme. For example, for a `hero` section you can create a file `resources/views/sections/hero.blade.php` with the following content:
 ```blade
 <section class="hero">
     <div class="hero-content">
-        <h1>Bienvenue sur {{ setting('app.name') }}</h1>
-        <p>Ceci est un thème par défault</p>
+        <h1>Welcome to {{ setting('app.name') }}</h1>
+        <p>This is a default theme</p>
     </div>
 </section>
 ```
-Et un fichier `resources/views/sections/sections.json` avec le contenu suivant :
+And a file `resources/views/sections/sections.json` with the following content:
 ```json
 [
     {
         "path": "sections.hero",
         "uuid": "hero",
         "default": true,
-        "thumbnail": "https://via.placeholder.com/150", // Image de prévisualisation hébergée
-        "default_url": "/", // URL par défaut
+        "thumbnail": "https://via.placeholder.com/150", // Hosted preview image
+        "default_url": "/", // Default URL
         "section_type": 1,
     }
 ]
 ```
-## Propriétés
+## Properties
 
-**path** : Chemin de la vue de la section
+**path**: Section view path
 
-**uuid** : Identifiant unique de la section
+**uuid**: Unique section identifier
 
-**default** (faculatif): Si la section est la section par défaut
+**default** (optional): If the section is the default section
 
-**thumbnail**(faculatif) : Image de prévisualisation de la section
+**thumbnail** (optional): Section preview image
 
-**default_url**(faculatif) : URL par défaut de la section
+**default_url** (optional): Default section URL
 
-**section_type** : Type de section
-
-
+**section_type**: Section type

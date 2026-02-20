@@ -2,107 +2,89 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Projet Overview
+## Project Overview
 
-This is the official documentation website for ClientXCMS, built with Docusaurus 3. The site serves as the main documentation hub for the ClientXCMS content management system, providing installation guides, configuration instructions, and extension documentation.
+Official documentation website for ClientXCMS, built with Docusaurus 3. French-language documentation for the ClientXCMS content management system.
 
 ## Core Development Commands
 
-### Development
-- `npm install` - Install dependencies
-- `npm run start` - Start development server (http://localhost:3000)
-- `npm run build` - Build production version
-- `npm run serve` - Serve built version locally
-- `npm run prod` - Build and serve in one command
-- `npm run typecheck` - Run TypeScript type checking
+```bash
+npm install          # Install dependencies
+npm run start        # Development server at http://localhost:3000
+npm run build        # Production build
+npm run serve        # Serve built version
+npm run prod         # Build and serve combined
+npm run typecheck    # TypeScript type checking
+npm run clear        # Clear Docusaurus cache
+```
 
-### Utility Commands
-- `npm run clear` - Clear Docusaurus cache
-- `npm run swizzle` - Customize Docusaurus components
-- `npm run write-translations` - Generate translation files
-- `npm run write-heading-ids` - Generate heading IDs
+## Architecture
 
-## Architecture & Structure
+### Content Structure
+- `/docs/` - Markdown documentation files
+- `/blog/` - Blog posts
+- `/src/components/` - Custom React components
+- `/src/css/` - Custom styles
+- `/static/` - Static assets
 
-### Content Organization
-- `/docs/` - Main documentation content (Markdown files)
-- `/blog/` - Blog posts and announcements
-- `/static/` - Static assets (images, files)
-- `/src/` - Custom React components and styles
+### Documentation Hierarchy
+```
+docs/
+  introductions/     # Project overview
+  installation/      # Installation guides (cloud, self-hosted, Plesk)
+  getting_started/   # Initial setup
+  settings/          # Configuration by feature
+  extensions/        # Modules and addons
+  developpers/       # API, themes, extensions guides
+```
 
-### Documentation Structure
-Documentation is organized hierarchically:
-- `introductions/` - Project introductions and overview
-- `installation/` - Installation guides (cloud, self-hosted, Plesk)
-- `getting_started/` - Initial setup and configuration
-- `settings/` - Configuration documentation organized by feature
-- `extensions/` - Modules and addons documentation
-- `developpers/` - Developer guides for API, themes, extensions
+### Asset Mirror Structure
+Assets must mirror the documentation path:
+- Doc: `/docs/settings/core/maintenance`
+- Assets: `/static/img/next_gen/settings/core/maintenance`
 
-### Asset Management
-Assets follow a mirror structure:
-- Documentation path: `/docs/settings/core/maintenance`
-- Corresponding assets: `/static/next_gen/settings/core/maintenance`
+All images must be hosted within the repository (no external hosting).
 
-### Configuration Files
-- `docusaurus.config.ts` - Main Docusaurus configuration
-- `sidebars.ts` - Sidebar navigation (auto-generated from folder structure)
-- `tsconfig.json` - TypeScript configuration
+### Configuration
+- `docusaurus.config.ts` - Main config, presets, plugins, theme
+- `sidebars.ts` - Auto-generated from folder structure
+- `static/api-docs.json` - OpenAPI spec for `/api` route (Redocusaurus)
 
-## Branching Strategy
+### Key Technical Details
+- Docs served at root (`routeBasePath: '/'`)
+- Single locale: French (`fr`)
+- Local search via `@easyops-cn/docusaurus-search-local`
+- API documentation via Redocusaurus preset
+- Version label: "NEXT GEN" (no active versioning currently)
 
-### Branch Structure
-- `V2` - Main production branch
-- `preprod` - Pre-production testing branch
+## Branching & Deployment
+
+| Branch | Environment | URL |
+|--------|-------------|-----|
+| `V2` | Production | https://docs.clientxcms.com |
+| `preprod` | Pre-production | https://preprod-docs.clientxcms.com |
+
 - Feature branches: `feat/feature-name`
 - Fix branches: `fix/issue-name`
+- Never push directly to `V2`
+- PRs to `preprod` for new content, `V2` for hotfixes only
 
-### Deployment
-- Production: https://docs.clientxcms.com (from V2 branch)
-- Pre-production: https://preprod-docs.clientxcms.com (from preprod branch)
+### CI/CD
+- PRs trigger `npm run build` test (non-dependabot)
+- Push to `V2` triggers Docker build and deployment
 
 ## Content Guidelines
 
 ### File Naming
-- All files and folders must be lowercase
-- Use English names for consistency
-- Follow kebab-case for multi-word names
+- Lowercase only
+- English names
+- Kebab-case for multi-word names
 
-### Documentation Categories
-Each category has a `_category_.json` file defining:
-- `label` - Display name in sidebar
-- `position` - Order in navigation
-
-### Image Management
-- All images must be hosted within the repository
-- Use the mirror structure in `/static/next_gen/`
-- No external image hosting allowed
-
-## Development Workflow
-
-1. Clone repository and install dependencies
-2. Create feature branch from appropriate base (`preprod` for new features, `V2` for hotfixes)
-3. Make changes and test locally with `npm run start`
-4. Commit changes and push to feature branch
-5. Create pull request to appropriate base branch
-
-## Technical Details
-
-### Framework
-- Docusaurus 3.8.1 with TypeScript support
-- React 19.1.0 for custom components
-- Local search plugin (@easyops-cn/docusaurus-search-local)
-
-### Internationalization
-- Default locale: French (`fr`)
-- Configured for single language documentation
-
-### Plugins
-- Google Analytics integration (GTAG)
-- Local search functionality
-- Environment variables support via dotenv
-
-## Environment Requirements
-- Node.js >= 18.0
-- npm for package management
-- Git for version control
+### Category Configuration
+Each folder can have `_category_.json`:
+```json
+{
+  "label": "Display Name",
+  "position": 1
+}
+```

@@ -1,43 +1,44 @@
 ---
 sidebar_position: 6
+translated: true
 ---
-# Tâches planifiées
-Les tâches planifiées permettent de définir les actions récurrentes comme la livraison de service, expiration ou la notification des clients.
+# Scheduled Tasks
+Scheduled tasks allow you to define recurring actions such as service delivery, expiration, or customer notifications.
 
-## Tâches existantes
-Voici une description des tâches planifiées par défaut dans CLIENTXCMS .
+## Existing Tasks
+Here is a description of the default scheduled tasks in CLIENTXCMS.
 ### Services delivery
-La commande `php artisan services:delivery` permet de livrer les services, renouveller les services en attente de renouvellement.
+The command `php artisan services:delivery` delivers services and renews services awaiting renewal.
 
-Récurrence : Toutes les minutes
+Frequency: Every minute
 ### Services expire
-La commande `php artisan services:expire` permet de vérifier les services qui sont expirés ou doivent être suspendus et les désactiver.
+The command `php artisan services:expire` checks services that have expired or need to be suspended and disables them.
 
-Récurrence : Toutes les minutes
+Frequency: Every minute
 ### Services renewals
-La commande `php artisan services:renewals` permet de générer les factures de renouvellement des services.
+The command `php artisan services:renewals` generates renewal invoices for services.
 
-Récurrence : Tout les 3 heures
+Frequency: Every 3 hours
 ### Services notifications
-La commande `php artisan services:notify-expiration` permet de notifier par e-mail les clients des services qui vont expirer prochainement.
+The command `php artisan services:notify-expiration` notifies customers by email of services that will expire soon.
 
-Récurrence : Tout les jours à 9h
+Frequency: Every day at 9am
 ### Helpdesk close
-La commande `php artisan clientxcms:helpdesk-close` permet de fermer les tickets qui sont en attente de réponse depuis X jours.
+The command `php artisan clientxcms:helpdesk-close` closes tickets that have been awaiting a response for X days.
 
-Récurrence : Tout les jours à 12h
+Frequency: Every day at 12pm
 ### Invoice delete
-La commande `php artisan clientxcms:invoice-delete` permet de supprimer ou annuler les factures qui sont en attente de paiement depuis X jours.
+The command `php artisan clientxcms:invoice-delete` deletes or cancels invoices that have been awaiting payment for X days.
 
-Récurrence : Tout les jours à minuit
+Frequency: Every day at midnight
 ### Purge metadata
-La commande `php artisan clientxcms:purge-metadata` permet de supprimer les métadonnées qui sont plus utilisés.
+The command `php artisan clientxcms:purge-metadata` deletes metadata that is no longer used.
 
-Récurrence : Tout les lundi à minuit
+Frequency: Every Monday at midnight
 
-## Créer une tâche planifiée
-Pour créer une tâche planifiée, vous devez créer une commande artisan et ajouter la commande dans le fichier `ServiceProvider`. Pour créer la commande artisan veuillez créer une classe qui etends `Command` dans votre dossier extension.
-Par exemple : 
+## Creating a Scheduled Task
+To create a scheduled task, you need to create an artisan command and add the command in the `ServiceProvider` file. To create the artisan command, please create a class that extends `Command` in your extension folder.
+For example:
 
 ```php
 <?php
@@ -55,7 +56,7 @@ class MyCommand extends Command
     }
 }
 ```
-Puis ajoutez la commande dans le fichier `ServiceProvider` de votre extension.
+Then add the command in your extension's `ServiceProvider` file.
 
 ```php
 <?php

@@ -1,15 +1,19 @@
-# Notifications d'achat
+---
+translated: true
+---
 
-Purchase Alert (ou Notifications d'achat) est un add-on qui permet d'afficher des alertes flash pour informer vos visiteurs des achats récents effectués sur votre site. Cela peut aider à créer un sentiment d'urgence et à encourager les visiteurs à passer à l'action.
+# Purchase Notifications
 
-## Configuration de l'alerte d'achat
-Pour configurer l'alerte d'achat, allez dans les paramètres de personnalisation. Vous y trouverez les options suivantes :
+Purchase Alert (or Purchase Notifications) is an add-on that displays flash alerts to inform your visitors about recent purchases made on your site. This can help create a sense of urgency and encourage visitors to take action.
 
-**Durée d'affichage en millisecondes** : La durée pendant laquelle l'alerte sera affichée en millisecondes. Par défaut, elle est définie sur 10000 ms (10 secondes).
+## Purchase Alert Configuration
+To configure the purchase alert, go to customization settings. You will find the following options:
 
-**Intervalle de temps entre les notifications en millisecondes** : L'intervalle de temps entre deux alertes d'achat consécutives. Par défaut, il est défini sur 15000 ms (15 secondes).
+**Display duration in milliseconds**: The duration for which the alert will be displayed in milliseconds. By default, it is set to 10000 ms (10 seconds).
 
-**Nombre de jours maximum pour récupérer les achats récents** : Le nombre de jours pour lesquels les alertes d'achat seront conservées. Par défaut, il est défini sur 7 jours.
+**Time interval between notifications in milliseconds**: The time interval between two consecutive purchase alerts. By default, it is set to 15000 ms (15 seconds).
 
-## Rendu visuel de l'alerte d'achat
+**Maximum number of days to retrieve recent purchases**: The number of days for which purchase alerts will be kept. By default, it is set to 7 days.
+
+## Visual Display of Purchase Alert
 ![img](/img/next_gen/extensions/addons/purchasealert/alert.gif)

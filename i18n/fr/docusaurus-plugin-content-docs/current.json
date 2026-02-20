@@ -1,0 +1,90 @@
+{
+  "version.label": {
+    "message": "NEXT GEN",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Project Information": {
+    "message": "Project Information",
+    "description": "The label for category 'Project Information' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Comment bien démarrer": {
+    "message": "Comment bien démarrer",
+    "description": "The label for category 'Comment bien démarrer' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.extensions": {
+    "message": "Extensions",
+    "description": "The label for category 'Extensions' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Modules": {
+    "message": "Modules",
+    "description": "The label for category 'Modules' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Addons": {
+    "message": "Addons",
+    "description": "The label for category 'Addons' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Paramètres": {
+    "message": "Paramètres",
+    "description": "The label for category 'Paramètres' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Globaux": {
+    "message": "Globaux",
+    "description": "The label for category 'Globaux' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Boutique": {
+    "message": "Boutique",
+    "description": "The label for category 'Boutique' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Passerelles de paiement": {
+    "message": "Passerelles de paiement",
+    "description": "The label for category 'Passerelles de paiement' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Sécurité": {
+    "message": "Sécurité",
+    "description": "The label for category 'Sécurité' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Centre d'aide": {
+    "message": "Centre d'aide",
+    "description": "The label for category 'Centre d'aide' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Personnalisation": {
+    "message": "Personnalisation",
+    "description": "The label for category 'Personnalisation' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Approvisionement": {
+    "message": "Approvisionement",
+    "description": "The label for category 'Approvisionement' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Développeurs": {
+    "message": "Développeurs",
+    "description": "The label for category 'Développeurs' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Thèmes": {
+    "message": "Thèmes",
+    "description": "The label for category 'Thèmes' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.developpers-extensions": {
+    "message": "Extensions",
+    "description": "The label for category 'Extensions' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Définitions": {
+    "message": "Définitions",
+    "description": "The label for category 'Définitions' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Guide d'implémentations": {
+    "message": "Guide d'implémentations",
+    "description": "The label for category 'Guide d'implémentations' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Produits & Services": {
+    "message": "Produits & Services",
+    "description": "The label for category 'Produits & Services' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Aide & Logiciels": {
+    "message": "Aide & Logiciels",
+    "description": "The label for category 'Aide & Logiciels' in sidebar 'defaultSidebar'"
+  }
+}

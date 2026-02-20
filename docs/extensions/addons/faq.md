@@ -1,45 +1,49 @@
-# Foire aux questions
+---
+translated: true
+---
 
-L’addon **FAQ** pour CLIENTXCMS permet de créer et organiser facilement des **foires aux questions** adaptées à chaque contexte : FAQ globales, FAQ liées à un produit spécifique ou encore FAQ par groupes.
+# Frequently Asked Questions
+
+The **FAQ** addon for CLIENTXCMS allows you to easily create and organize **frequently asked questions** adapted to each context: global FAQs, FAQs linked to a specific product, or FAQs by groups.
 
 ![img](/img/next_gen/extensions/addons/faq/image.png)
-## Configuration de base
-Pour configurer l’addon FAQ, allez dans les paramètres de personnalisation puis dans l’onglet **FAQ**. Vous y retrouvez l'ensemble des questions fréquemment posées.
+## Basic Configuration
+To configure the FAQ addon, go to customization settings then to the **FAQ** tab. You will find all frequently asked questions there.
 ![img](/img/next_gen/extensions/addons/faq/admin.png)
 
-Vous pouvez définir si vous voulez activer les votes d’utilité. Cela permet aux utilisateurs de voter si une question/réponse leur a été utile ou non.
+You can define whether you want to enable helpfulness votes. This allows users to vote if a question/answer was helpful to them or not.
 
-### Ajouter une question
-Pour ajouter une nouvelle question, cliquez sur le bouton **Créer**. Remplissez les champs suivants :
-- **Titre** : Le titre de la question.
-- **Groupe** : Si la question doit être associée à un groupe spécifique.
-- **Produit** : Si la question doit être liée à un produit particulier.
-- **Contenu** : La réponse à la question.
-- **Ordre** : Permet de définir l’ordre d’affichage des questions.
+### Adding a Question
+To add a new question, click the **Create** button. Fill in the following fields:
+- **Title**: The question title.
+- **Group**: If the question should be associated with a specific group.
+- **Product**: If the question should be linked to a particular product.
+- **Content**: The answer to the question.
+- **Order**: Allows you to define the display order of questions.
 
 :::info
-Si la question est associée à un produit, elle n’apparaîtra sur la page produit correspondante. Si elle est associée à un groupe, elle n’apparaîtra que sur la page du groupe. Sinon, elle sera affichée dans la FAQ globale.
+If the question is associated with a product, it will only appear on the corresponding product page. If it is associated with a group, it will only appear on the group page. Otherwise, it will be displayed in the global FAQ.
 :::
 
-## Rendu sur le site
+## Site Display
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="General" label="Général">
+<TabItem value="General" label="General">
 
 ![img](/img/next_gen/extensions/addons/faq/image.png)
 
 </TabItem>
 
-<TabItem value="Produit" label="Produit">
+<TabItem value="Produit" label="Product">
 
 ![img](/img/next_gen/extensions/addons/faq/product.png)
 
 </TabItem>
 
-<TabItem value="Groupe" label="Groupe">
+<TabItem value="Groupe" label="Group">
 
 ![img](/img/next_gen/extensions/addons/faq/group.png)
 
@@ -47,8 +51,8 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-### Support des thèmes
-Pour supporter l'affichage des FAQ sur votre thème, votre thème doit inclure ce code dans le fichier `views/front/store/group.blade.php` : 
+### Theme Support
+To support FAQ display on your theme, your theme must include this code in the `views/front/store/group.blade.php` file:
 ```blade
 @includeWhen(app('extension')->extensionIsEnabled('faq'), 'faq::widget', ['group' => $group ?? null])
 ```

@@ -1,87 +1,88 @@
 ---
 sidebar_position: 1
+translated: true
 ---
-# Paramètres du centre d'aide
+# Help Center Settings
 
-Dans **CLIENTXCMS**, les **paramètres du centre d'aide** définissent le comportement et les règles de fonctionnement de votre système de support.
-L'objectif est stratégique : **optimiser l'efficacité du support**, **automatiser les processus répétitifs** et **garantir une expérience cohérente** pour vos clients et votre équipe. Une configuration appropriée améliore la productivité, réduit la charge de travail manuelle et maintient un niveau de service élevé.
+In **CLIENTXCMS**, **help center settings** define the behavior and operational rules of your support system.
+The goal is strategic: **optimize support efficiency**, **automate repetitive processes**, and **ensure a consistent experience** for your clients and team. Proper configuration improves productivity, reduces manual workload, and maintains a high level of service.
 
-:::tip Astuce
-Des paramètres bien configurés transforment votre centre d'aide en **machine bien huilée**.
-Chaque automatisation vous fait gagner du temps pour vous concentrer sur les cas complexes.
+:::tip Tip
+Well-configured settings transform your help center into a **well-oiled machine**.
+Each automation saves you time to focus on complex cases.
 :::
 
-## Pourquoi configurer ces paramètres ?
+## Why Configure These Settings?
 
-La configuration du centre d'aide est essentielle pour :
+Help center configuration is essential for:
 
-* **Automatiser la gestion** des tickets inactifs
-* **Contrôler les interactions** avec les clients
-* **Sécuriser les échanges** de fichiers
-* **Intégrer avec vos outils** externes
-* **Maintenir la qualité** du service
+* **Automating management** of inactive tickets
+* **Controlling interactions** with clients
+* **Securing file** exchanges
+* **Integrating with your external** tools
+* **Maintaining service** quality
 
-:::tip Astuce
-C'est comme régler les paramètres d'une machine industrielle ⚙️ — plus c'est précis, plus c'est efficace et fiable.
+:::tip Tip
+It's like adjusting the settings of an industrial machine ⚙️ — the more precise it is, the more efficient and reliable.
 :::
 
-## Gestion automatique des tickets
+## Automatic Ticket Management
 
-### Fermeture automatique
+### Automatic Closure
 
-**Fermeture automatique après inactivité** | (nombre de jours)
-Définit après combien de jours un ticket sans activité sera automatiquement fermé.
+**Auto-close after inactivity** | (number of days)
+Defines after how many days a ticket without activity will be automatically closed.
 
-**Valeurs recommandées** :
+**Recommended values**:
 
-- **7 jours** : Standard pour la plupart des cas
-- **3 jours** : Support haute réactivité
-- **14 jours** : Projets complexes nécessitant plus de temps
-- **0** : Désactive la fermeture automatique
+- **7 days**: Standard for most cases
+- **3 days**: High-responsiveness support
+- **14 days**: Complex projects requiring more time
+- **0**: Disables automatic closure
 
-:::tip Avantages de la fermeture automatique
+:::tip Benefits of automatic closure
 
-- **Nettoie automatiquement** les tickets abandonnés
-- **Maintient des statistiques** précises
-- **Libère la charge** de travail des équipes
-- **Encourage la réactivité** des clients
+- **Automatically cleans** abandoned tickets
+- **Maintains accurate** statistics
+- **Frees up workload** for teams
+- **Encourages client** responsiveness
   :::
 
-### Ré-ouverture contrôlée
+### Controlled Re-opening
 
-**Autorisation de ré-ouverture** | (nombre de jours)
-Permet aux clients de rouvrir leurs tickets fermés pendant une période limitée.
+**Re-opening authorization** | (number of days)
+Allows clients to reopen their closed tickets for a limited period.
 
-**Options disponibles** :
+**Available options**:
 
-- **7 jours** : Délai standard recommandé
-- **0** : Désactive la ré-ouverture
-- **-1** : Ré-ouverture illimitée dans le temps
+- **7 days**: Recommended standard delay
+- **0**: Disables re-opening
+- **-1**: Unlimited re-opening time
 
-**Cas d'usage** :
+**Use cases**:
 
-- **7 jours** : Pour les problèmes techniques standards
-- **14 jours** : Pour les migrations ou projets complexes
-- **0** : Pour forcer de nouveaux tickets et éviter la confusion
-- **-1** : Pour un support premium avec suivi long terme
+- **7 days**: For standard technical problems
+- **14 days**: For migrations or complex projects
+- **0**: To force new tickets and avoid confusion
+- **-1**: For premium support with long-term follow-up
 
-:::warning Attention
-Une ré-ouverture illimitée peut créer des tickets très anciens difficiles à gérer. Privilégiez un délai raisonnable.
+:::warning Warning
+Unlimited re-opening can create very old tickets that are difficult to manage. Prefer a reasonable delay.
 :::
 
 ## Webhooks
 
-**URL du webhook** : URL de votre endpoint pour recevoir les notifications de tickets (POST JSON). Utilisez une URL en HTTPS si possible.
+**Webhook URL**: URL of your endpoint to receive ticket notifications (POST JSON). Use an HTTPS URL if possible.
 
-- Si l'URL fournie est un webhook Discord (ex. https://discord.com/api/webhooks/xxxxx), les notifications apparaîtront automatiquement sous forme d'embed (capture ci‑dessous).
+- If the provided URL is a Discord webhook (e.g., https://discord.com/api/webhooks/xxxxx), notifications will automatically appear as embeds (screenshot below).
   ![image](https://cdn.clientxcms.com/ressources/docs/ticket.png)
-- Si vous utilisez un webhook personnalisé, CLIENTXCMS enverra une requête HTTP POST avec un payload JSON structuré. Exemple :
+- If you use a custom webhook, CLIENTXCMS will send an HTTP POST request with a structured JSON payload. Example:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-	<TabItem value="ticket_create" label="Création d'un ticket">
+	<TabItem value="ticket_create" label="Ticket creation">
 
 ```json
 {
@@ -90,10 +91,10 @@ import TabItem from '@theme/TabItem';
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
-        "department": "Général",
-        "priority": "Basse",
+        "department": "General",
+        "priority": "Low",
         "subject": "Test ticket",
-        "message": "Bonjour, voici le contenu du ticket.",
+        "message": "Hello, here is the ticket content.",
         "customername": "Martin Dev",
         "customeremail": "test@clientxcms.com",
         "appname": "CLIENTXCMS",
@@ -104,7 +105,7 @@ import TabItem from '@theme/TabItem';
 
     </TabItem>
 
-    <TabItem value="ticket_close" label="Fermeture d'un ticket">
+    <TabItem value="ticket_close" label="Ticket closure">
 
 ```json
 {
@@ -113,8 +114,8 @@ import TabItem from '@theme/TabItem';
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
-        "department": "Général",
-        "priority": "Basse",
+        "department": "General",
+        "priority": "Low",
         "subject": "Test ticket",
         "customername": "Martin Dev",
         "customeremail": "test@clientxcms.com",
@@ -126,7 +127,7 @@ import TabItem from '@theme/TabItem';
 
     </TabItem>
 
-    <TabItem value="ticket_answer_staff" label="Réponse du staff">
+    <TabItem value="ticket_answer_staff" label="Staff reply">
 
 ```json
 {
@@ -135,10 +136,10 @@ import TabItem from '@theme/TabItem';
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
-        "department": "Général",
-        "priority": "Basse",
+        "department": "General",
+        "priority": "Low",
         "subject": "Test ticket",
-        "message": "Bonjour, voici le contenu de la réponse du staff.",
+        "message": "Hello, here is the staff reply content.",
         "customername": "Martin Dev",
         "customeremail": "test@clientxcms.com",
         "appname": "CLIENTXCMS",
@@ -148,7 +149,7 @@ import TabItem from '@theme/TabItem';
 ```
 
     </TabItem>
-    <TabItem value="ticket_answer_customer" label="Réponse du client">
+    <TabItem value="ticket_answer_customer" label="Customer reply">
 
 ```json
 {
@@ -157,10 +158,10 @@ import TabItem from '@theme/TabItem';
         "_url": "https://example.com/admin/helpdesk/tickets/1",
         "ticketid": "1",
         "customer_url": "https://example.com/admin/customers/1",
-        "department": "Général",
-        "priority": "Basse",
+        "department": "General",
+        "priority": "Low",
         "subject": "Test ticket",
-        "message": "Bonjour, voici le contenu de la réponse du client.",
+        "message": "Hello, here is the customer reply content.",
         "customername": "Martin Dev",
         "customeremail": "test@clientxcms.com"
         "appname": "CLIENTXCMS",
@@ -173,179 +174,181 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-Notes utiles :
+Useful notes:
 
-- `action` : indique l'événement (ex. `helpdesk_create`, `helpdesk_answered_staff`, `helpdesk_answered_customer`).
-- `_url` : lien interne vers l'édition du ticket
-- Les valeurs sont au format chaîne. Adaptez votre traitement côté serveur selon vos besoins.
+- `action`: indicates the event (e.g., `helpdesk_create`, `helpdesk_answered_staff`, `helpdesk_answered_customer`).
+- `_url`: internal link to ticket editing
+- Values are in string format. Adapt your server-side processing according to your needs.
 
-## Gestion des pièces jointes
+## Attachment Management
 
-### Activation des fichiers
+### File Activation
 
-**Autoriser les pièces jointes** | (interrupteur)
-Active ou désactive la possibilité pour les clients de joindre des fichiers à leurs tickets.
+**Allow attachments** | (switch)
+Enables or disables the ability for clients to attach files to their tickets.
 
-**Avantages des pièces jointes** :
+**Attachment benefits**:
 
-- **Captures d'écran** pour les problèmes visuels
-- **Logs d'erreur** pour le diagnostic technique
-- **Documents** pour les demandes administratives
-- **Preuves** pour les réclamations
+- **Screenshots** for visual problems
+- **Error logs** for technical diagnosis
+- **Documents** for administrative requests
+- **Evidence** for complaints
 
-### Sécurité et limitations
+### Security and Limitations
 
-**Taille maximale** | (Mo)
-Limite la taille des fichiers que les clients peuvent joindre.
+**Maximum size** | (MB)
+Limits the size of files that clients can attach.
 
-**Recommandations par type d'usage** :
+**Recommendations by usage type**:
 
-| Type de support                | Taille recommandée | Justification                     |
-| ------------------------------ | ------------------- | --------------------------------- |
-| **Support général**    | 5 Mo                | Screenshots et documents légers  |
-| **Support technique**    | 10 Mo               | Logs et fichiers de configuration |
-| **Support développeur** | 25 Mo               | Archives de code et dumps         |
-| **Serveur limité**      | 2 Mo                | Économie d'espace disque         |
+| Support Type | Recommended Size | Justification |
+| ------------ | ---------------- | ------------- |
+| **General support** | 5 MB | Screenshots and light documents |
+| **Technical support** | 10 MB | Logs and configuration files |
+| **Developer support** | 25 MB | Code archives and dumps |
+| **Limited server** | 2 MB | Disk space saving |
 
-### Types de fichiers autorisés
+### Allowed File Types
 
-**Extensions acceptées** | (liste séparée par virgules)
-Définit quels types de fichiers sont acceptés dans les tickets.
+**Accepted extensions** | (comma-separated list)
+Defines which file types are accepted in tickets.
 
-**Configuration par défaut** : `jpg,jpeg,png,doc,docx,xls,xlsx`
+**Default configuration**: `jpg,jpeg,png,doc,docx,xls,xlsx`
 
-**Configurations recommandées** :
+**Recommended configurations**:
 
-#### Support standard
+#### Standard Support
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log
 ```
 
-#### Support technique avancé
+#### Advanced Technical Support
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
 ```
 
-#### Support sécurisé (restrictif)
+#### Secure Support (restrictive)
 
 ```
 jpg,jpeg,png,pdf,txt
 ```
 
-:::warning Sécurité des fichiers
-**Types à éviter absolument** :
+:::warning File Security
+**Types to absolutely avoid**:
 
-- `.exe, .bat, .cmd` : Fichiers exécutables
-- `.php, .js, .html` : Scripts potentiellement malveillants
-- `.scr, .pif` : Extensions souvent utilisées par les malwares
+- `.exe, .bat, .cmd`: Executable files
+- `.php, .js, .html`: Potentially malicious scripts
+- `.scr, .pif`: Extensions often used by malware
 
-**Bonnes pratiques** :
+**Best practices**:
 
-- Limitez aux types strictement nécessaires
-- Scannez les fichiers avec un antivirus
-- Vérifiez régulièrement les uploads suspects
+- Limit to strictly necessary types
+- Scan files with antivirus
+- Regularly check suspicious uploads
   :::
 
-### Entreprise établie
+### Established Business
 
 ```
-Fermeture automatique : 7 jours
-Ré-ouverture : 14 jours
-Pièces jointes : Activées (10 Mo)
-Types autorisés : jpg,png,pdf,doc,docx,txt,log
-Webhook : Système CRM
+Auto-close: 7 days
+Re-opening: 14 days
+Attachments: Enabled (10 MB)
+Allowed types: jpg,png,pdf,doc,docx,txt,log
+Webhook: CRM system
 ```
 
-### Support technique spécialisé
-```
-Fermeture automatique : 14 jours
-Ré-ouverture : -1 (illimitée)
-Pièces jointes : Activées (25 Mo)
-Types autorisés : jpg,png,pdf,txt,log,zip,sql,json
-Webhook : Slack + monitoring
-```
+### Specialized Technical Support
 
-### Organisation sécurisée
 ```
-Fermeture automatique : 5 jours
-Ré-ouverture : 0 (désactivée)
-Pièces jointes : Activées (2 Mo)
-Types autorisés : jpg,png,pdf,txt
-Webhook : Système audit interne
+Auto-close: 14 days
+Re-opening: -1 (unlimited)
+Attachments: Enabled (25 MB)
+Allowed types: jpg,png,pdf,txt,log,zip,sql,json
+Webhook: Slack + monitoring
 ```
 
-## Optimisation des performances
+### Secure Organization
 
-### Surveillance des métriques
+```
+Auto-close: 5 days
+Re-opening: 0 (disabled)
+Attachments: Enabled (2 MB)
+Allowed types: jpg,png,pdf,txt
+Webhook: Internal audit system
+```
 
-Analysez régulièrement :
-- **Taux de ré-ouverture** : Indicateur de qualité des résolutions
-- **Temps de fermeture** : Efficacité des automatisations
-- **Volume de pièces jointes** : Impact sur l'espace disque
-- **Types de fichiers** : Adaptation aux besoins réels
+## Performance Optimization
 
-### Maintenance préventive
+### Metric Monitoring
 
-1. **Nettoyage périodique** : Supprimez les vieux fichiers
-2. **Révision des paramètres** : Ajustez selon l'évolution
-3. **Tests webhook** : Vérifiez la connectivité régulièrement
-4. **Formation équipe** : Assurez-vous que tous maîtrisent les paramètres
+Regularly analyze:
+- **Re-opening rate**: Indicator of resolution quality
+- **Closure time**: Automation efficiency
+- **Attachment volume**: Impact on disk space
+- **File types**: Adaptation to real needs
 
-:::tip À retenir
-Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui fonctionne pour une petite équipe peut ne pas convenir à une organisation plus importante. Révisez et ajustez régulièrement selon vos métriques et retours d'expérience.
+### Preventive Maintenance
+
+1. **Periodic cleanup**: Delete old files
+2. **Settings review**: Adjust according to evolution
+3. **Webhook testing**: Check connectivity regularly
+4. **Team training**: Ensure everyone masters the settings
+
+:::tip Remember
+Help center settings should evolve with your business. What works for a small team may not suit a larger organization. Regularly review and adjust according to your metrics and feedback.
 :::
 
 
-### Entreprise établie
+### Established Business
 
 ```
-Fermeture automatique : 7 jours
-Ré-ouverture : 14 jours
-Pièces jointes : Activées (10 Mo)
-Types autorisés : jpg,png,pdf,doc,docx,txt,log
-Webhook : Système CRM
+Auto-close: 7 days
+Re-opening: 14 days
+Attachments: Enabled (10 MB)
+Allowed types: jpg,png,pdf,doc,docx,txt,log
+Webhook: CRM system
 ```
 
-### Support technique spécialisé
+### Specialized Technical Support
 
 ```
-Fermeture automatique : 14 jours
-Ré-ouverture : -1 (illimitée)
-Pièces jointes : Activées (25 Mo)
-Types autorisés : jpg,png,pdf,txt,log,zip,sql,json
-Webhook : Slack + monitoring
+Auto-close: 14 days
+Re-opening: -1 (unlimited)
+Attachments: Enabled (25 MB)
+Allowed types: jpg,png,pdf,txt,log,zip,sql,json
+Webhook: Slack + monitoring
 ```
 
-### Organisation sécurisée
+### Secure Organization
 
 ```
-Fermeture automatique : 5 jours
-Ré-ouverture : 0 (désactivée)
-Pièces jointes : Activées (2 Mo)
-Types autorisés : jpg,png,pdf,txt
-Webhook : Système audit interne
+Auto-close: 5 days
+Re-opening: 0 (disabled)
+Attachments: Enabled (2 MB)
+Allowed types: jpg,png,pdf,txt
+Webhook: Internal audit system
 ```
 
-## Optimisation des performances
+## Performance Optimization
 
-### Surveillance des métriques
+### Metric Monitoring
 
-Analysez régulièrement :
+Regularly analyze:
 
-- **Taux de ré-ouverture** : Indicateur de qualité des résolutions
-- **Temps de fermeture** : Efficacité des automatisations
-- **Volume de pièces jointes** : Impact sur l'espace disque
-- **Types de fichiers** : Adaptation aux besoins réels
+- **Re-opening rate**: Indicator of resolution quality
+- **Closure time**: Automation efficiency
+- **Attachment volume**: Impact on disk space
+- **File types**: Adaptation to real needs
 
-### Maintenance préventive
+### Preventive Maintenance
 
-1. **Nettoyage périodique** : Supprimez les vieux fichiers
-2. **Révision des paramètres** : Ajustez selon l'évolution
-3. **Tests webhook** : Vérifiez la connectivité régulièrement
-4. **Formation équipe** : Assurez-vous que tous maîtrisent les paramètres
+1. **Periodic cleanup**: Delete old files
+2. **Settings review**: Adjust according to evolution
+3. **Webhook testing**: Check connectivity regularly
+4. **Team training**: Ensure everyone masters the settings
 
-:::tip À retenir
-Les paramètres du centre d'aide doivent évoluer avec votre activité. Ce qui fonctionne pour une petite équipe peut ne pas convenir à une organisation plus importante. Révisez et ajustez régulièrement selon vos métriques et retours d'expérience.
+:::tip Remember
+Help center settings should evolve with your business. What works for a small team may not suit a larger organization. Regularly review and adjust according to your metrics and feedback.
 :::

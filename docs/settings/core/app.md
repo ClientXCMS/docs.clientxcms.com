@@ -1,98 +1,99 @@
 ---
 sidebar_position: 1
+translated: true
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 
 # Application
 
-La configuration de l'**application** définit l'identité et le comportement global de votre **CLIENTXCMS**. C'est ici que vous personnalisez l'apparence, définissez les paramètres techniques et adaptez l'interface à votre image de marque. <br/>
-L'objectif est clair : **créer une expérience cohérente et professionnelle** qui reflète votre identité tout en optimisant les performances techniques.
+The **application** configuration defines the identity and global behavior of your **CLIENTXCMS**. This is where you customize the appearance, set technical parameters, and adapt the interface to your brand image. <br/>
+The goal is clear: **create a consistent and professional experience** that reflects your identity while optimizing technical performance.
 
-Chaque paramètre de l'application influence directement l'expérience utilisateur, de l'affichage du logo à la gestion des erreurs techniques.
+Each application setting directly influences the user experience, from logo display to technical error handling.
 
-:::tip Astuce
-Une application bien configurée inspire confiance. Personnalisez chaque détail pour que vos clients reconnaissent immédiatement votre marque et bénéficient d'une expérience fluide.
+:::tip Tip
+A well-configured application inspires trust. Customize every detail so your clients immediately recognize your brand and enjoy a seamless experience.
 :::
 
-## Paramètres essentiels
+## Essential Settings
 
-### Identité de l'application
+### Application Identity
 
-**Nom de l'espace client** | (texte)<br />
-Le nom qui apparaît dans l'interface et les communications. Ce nom est visible dans :
-- Le titre des pages du navigateur
-- Les emails envoyés aux clients
-- L'interface d'administration
-- Les factures et documents
+**Client area name** | (text)<br />
+The name that appears in the interface and communications. This name is visible in:
+- Browser page titles
+- Emails sent to clients
+- Administration interface
+- Invoices and documents
 
-**URL de l'application** | (URL)<br />
-L'adresse complète de votre installation ClientXCMS. Assurez-vous d'utiliser :
-- HTTPS en production (obligatoire pour la sécurité)
-- Un domaine stable et professionnel
-- Une URL sans slash final
+**Application URL** | (URL)<br />
+The complete address of your ClientXCMS installation. Make sure to use:
+- HTTPS in production (required for security)
+- A stable and professional domain
+- A URL without a trailing slash
 
-**Logo de l'espace client** | (image)<br />
-Le logo principal affiché dans l'interface. Recommandations :
-- Format : PNG ou SVG pour la transparence
-- Dimensions : 200x200px minimum
-- Poids : Moins de 500 Ko
-- Fond transparent privilégié
+**Client area logo** | (image)<br />
+The main logo displayed in the interface. Recommendations:
+- Format: PNG or SVG for transparency
+- Dimensions: 200x200px minimum
+- Size: Less than 500 KB
+- Transparent background preferred
 
-**Logo texte de l'espace client** | (image)<br />
-Version horizontale du logo avec texte, utilisée dans :
-- La barre de navigation principale
-- Les emails
-- Les documents PDF
+**Client area text logo** | (image)<br />
+Horizontal version of the logo with text, used in:
+- Main navigation bar
+- Emails
+- PDF documents
 
-**Favicon de l'espace client** | (image)<br />
-L'icône affichée dans l'onglet du navigateur. Spécifications :
-- Format : ICO, PNG ou SVG
-- Dimensions : 32x32px ou 64x64px
-- Poids : Moins de 100 Ko
+**Client area favicon** | (image)<br />
+The icon displayed in the browser tab. Specifications:
+- Format: ICO, PNG or SVG
+- Dimensions: 32x32px or 64x64px
+- Size: Less than 100 KB
 
-### Configuration technique
+### Technical Configuration
 
-**Environnement de l'espace client** | (menu déroulant)<br />
-Détermine le mode de fonctionnement :
+**Client area environment** | (dropdown menu)<br />
+Determines the operating mode:
 
-| Environnement | Usage | Caractéristiques |
-|---------------|-------|------------------|
-| **Production** | Clients réels | Cache activé, erreurs masquées, performances optimisées |
-| **Développement** | Tests et debug | Cache désactivé, erreurs détaillées, outils de debug |
+| Environment | Usage | Characteristics |
+|-------------|-------|-----------------|
+| **Production** | Real clients | Cache enabled, errors hidden, optimized performance |
+| **Development** | Tests and debug | Cache disabled, detailed errors, debug tools |
 
-**Mode debug** | (case à cocher)<br />
-Active l'affichage détaillé des erreurs. À utiliser uniquement en développement :
-- ✅ **Activé** : Affiche les erreurs techniques détaillées
-- ❌ **Désactivé** : Affiche des messages d'erreur génériques
+**Debug mode** | (checkbox)<br />
+Enables detailed error display. Use only in development:
+- ✅ **Enabled**: Displays detailed technical errors
+- ❌ **Disabled**: Displays generic error messages
 
-**Fuseau horaire** | (menu déroulant)<br />
-Définit la référence temporelle pour :
-- Les timestamps dans les logs
-- La génération des factures
-- Les horaires affichés aux clients
-- Les tâches planifiées (cron)
+**Timezone** | (dropdown menu)<br />
+Sets the time reference for:
+- Timestamps in logs
+- Invoice generation
+- Times displayed to clients
+- Scheduled tasks (cron)
 
-**Langue par défaut** | (menu déroulant)<br />
-La langue utilisée quand aucune préférence n'est définie. Impact :
-- Interface pour les nouveaux visiteurs
-- Emails système
-- Messages d'erreur
-- Documentation intégrée
+**Default language** | (dropdown menu)<br />
+The language used when no preference is set. Impact:
+- Interface for new visitors
+- System emails
+- Error messages
+- Built-in documentation
 
-## Différences entre les logos
+## Differences Between Logos
 
-### Logo standard
-Le logo carré ou vertical, utilisé comme icône :
-- Page de connexion
-- Emails (en-tête)
-- Favicon agrandi
-- Applications mobiles
+### Standard Logo
+The square or vertical logo, used as an icon:
+- Login page
+- Emails (header)
+- Enlarged favicon
+- Mobile applications
 
-Exemple de dimensions recommandées :
-- 512x512px pour une qualité optimale
-- 256x256px pour un usage standard
-- 128x128px minimum accepté
+Recommended dimension examples:
+- 512x512px for optimal quality
+- 256x256px for standard usage
+- 128x128px minimum accepted
 
-### Logo texte
+### Text Logo
 [<img src="https://clientxcms.com/assets/images/logo/LogoBlueText.png" width="300" height="100"/>](https://clientxcms.com/assets/images/logo/LogoBlueText.png)

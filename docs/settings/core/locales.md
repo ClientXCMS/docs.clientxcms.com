@@ -1,194 +1,196 @@
 ---
 sidebar_position: 3
+translated: true
 ---
 
-# Langues
+# Languages
 
-Dans **CLIENTXCMS**, la gestion des **langues** vous permet d'**internationaliser votre plateforme** et de **toucher une clientèle mondiale**. <br/>
-L'objectif est simple : **offrir une expérience native à chaque utilisateur** dans sa langue préférée et **élargir votre marché potentiel**. Une plateforme multilingue améliore l'accessibilité, renforce la confiance des clients internationaux et augmente vos opportunités commerciales.
+In **CLIENTXCMS**, **language** management allows you to **internationalize your platform** and **reach a global customer base**. <br/>
+The goal is simple: **offer a native experience to each user** in their preferred language and **expand your potential market**. A multilingual platform improves accessibility, strengthens international client trust, and increases your business opportunities.
 
-Le système de langues prend en charge l'interface complète, les e-mails automatiques et même vos contenus personnalisés.
+The language system supports the complete interface, automated emails, and even your custom content.
 
-Vous pouvez gérer les langues depuis :
+You can manage languages from:
 
-`Paramètres` > `Paramètres généraux` > `Langues`
+`Settings` > `General Settings` > `Languages`
 
-![Accès à la configuration des langues](/img/next_gen/settings/core/locales/image.png)
+![Access to language configuration](/img/next_gen/settings/core/locales/image.png)
 
-:::tip Astuce
-Une plateforme disponible dans la langue native de vos clients **augmente significativement** les taux de conversion.
-C'est un investissement minimal pour un impact commercial maximal.
+:::tip Tip
+A platform available in your clients' native language **significantly increases** conversion rates.
+It's a minimal investment for maximum commercial impact.
 :::
 
-## Pourquoi proposer plusieurs langues ?
+## Why Offer Multiple Languages?
 
-Le multilinguisme est essentiel pour :
+Multilingualism is essential for:
 
-* **Élargir votre marché** à l'international sans barrière linguistique
-* **Améliorer l'expérience client** en proposant une interface native
-* **Augmenter la confiance** des utilisateurs non francophones
-* **Optimiser votre référencement** dans différents pays
+* **Expanding your market** internationally without language barriers
+* **Improving customer experience** by offering a native interface
+* **Increasing trust** among non-French-speaking users
+* **Optimizing your SEO** in different countries
 
-:::tip Astuce
-C'est comme avoir plusieurs vitrines dans différents pays 🌍 — chaque client se sent chez lui, peu importe sa langue maternelle.
+:::tip Tip
+It's like having multiple storefronts in different countries 🌍 — each customer feels at home, regardless of their native language.
 :::
 
-## Langues disponibles
+## Available Languages
 
-CLIENTXCMS propose actuellement les langues suivantes :
+CLIENTXCMS currently offers the following languages:
 
-| Langue | Code | Statut |
-|--------|------|---------|
-| 🇫🇷 **Français** | `fr` | Langue par défaut |
-| 🇬🇧 **Anglais** | `en` | Disponible |
-| 🇪🇸 **Espagnol** | `es` | Disponible |
-| 🇩🇪 **Allemand** | `de` | Disponible |
-| 🇮🇹 **Italien** | `it` | Disponible |
+| Language | Code | Status |
+|----------|------|--------|
+| 🇫🇷 **French** | `fr` | Default language |
+| 🇬🇧 **English** | `en` | Available |
+| 🇪🇸 **Spanish** | `es` | Available |
+| 🇩🇪 **German** | `de` | Available |
+| 🇮🇹 **Italian** | `it` | Available |
 
 :::info Note
-D'autres langues peuvent être ajoutées sur demande de la communauté. Les traductions sont maintenues et améliorées régulièrement.
+Additional languages can be added upon community request. Translations are regularly maintained and improved.
 :::
 
-## Gestion des langues
+## Language Management
 
-### Télécharger une langue
+### Download a Language
 
-Pour ajouter une nouvelle langue à votre plateforme :
+To add a new language to your platform:
 
-1. Accédez à la page de gestion des langues
-2. Localisez la langue souhaitée dans la liste
-3. Cliquez sur le bouton **"Télécharger"**
-4. La langue sera automatiquement installée et activée
+1. Access the language management page
+2. Locate the desired language in the list
+3. Click the **"Download"** button
+4. The language will be automatically installed and activated
 
-:::tip Astuce
-L'installation est instantanée et ne nécessite aucun redémarrage. Vos utilisateurs peuvent immédiatement changer de langue.
+:::tip Tip
+Installation is instant and requires no restart. Your users can immediately change languages.
 :::
 
-### Mettre à jour les traductions
+### Update Translations
 
-Les fichiers de langue sont régulièrement améliorés pour :
-- Corriger d'éventuelles erreurs de traduction
-- Ajouter les traductions des nouvelles fonctionnalités
-- Améliorer la qualité linguistique
+Language files are regularly improved to:
+- Correct any translation errors
+- Add translations for new features
+- Improve linguistic quality
 
-Pour mettre à jour une langue :
+To update a language:
 
-1. Le bouton **"Mettre à jour"** apparaît pour chaque langue installée
-2. Cliquez dessus pour télécharger la dernière version
-3. Les traductions sont mises à jour instantanément
+1. The **"Update"** button appears for each installed language
+2. Click on it to download the latest version
+3. Translations are updated instantly
 
 :::info Important
-Le bouton "Mettre à jour" reste toujours visible, même si vous avez la dernière version. Cela permet de **réinstaller** la langue en cas de problème ou de personnalisation accidentelle.
+The "Update" button always remains visible, even if you have the latest version. This allows you to **reinstall** the language in case of problems or accidental customization.
 :::
 
-## Configuration de la langue par défaut
+## Default Language Configuration
 
-### Définir la langue principale
+### Set the Primary Language
 
-La langue par défaut est celle affichée :
-- Aux nouveaux visiteurs
-- Lorsque la langue du navigateur n'est pas disponible
-- Dans les communications système
+The default language is displayed to:
+- New visitors
+- When the browser language is not available
+- In system communications
 
-Pour la modifier :
-1. Allez dans `Paramètres` > `Paramètres généraux`
-2. Sélectionnez la nouvelle langue par défaut
-3. Enregistrez les modifications
+To modify it:
+1. Go to `Settings` > `General Settings`
+2. Select the new default language
+3. Save the changes
 
-### Comportement automatique
+### Automatic Behavior
 
-CLIENTXCMS détecte automatiquement :
-- La langue du navigateur du visiteur
-- La préférence enregistrée de l'utilisateur connecté
-- La langue par défaut si aucune correspondance
+CLIENTXCMS automatically detects:
+- The visitor's browser language
+- The saved preference of the logged-in user
+- The default language if no match
 
-## Impact sur votre plateforme
+## Impact on Your Platform
 
-### Éléments traduits
+### Translated Elements
 
-Lorsqu'une langue est activée, les éléments suivants sont traduits :
+When a language is activated, the following elements are translated:
 
-✅ **Interface utilisateur** : Tous les menus, boutons et messages
-✅ **E-mails automatiques** : Notifications, factures, confirmations
-✅ **Messages système** : Erreurs, confirmations, alertes
-✅ **Contenu statique** : Pages légales, conditions générales
+- ✅ **User interface**: All menus, buttons, and messages
+- ✅ **Automated emails**: Notifications, invoices, confirmations
+- ✅ **System messages**: Errors, confirmations, alerts
+- ✅ **Static content**: Legal pages, terms and conditions
+- ✅ **Theme configuration**: Translatable fields defined by the theme (titles, descriptions, text content) — if the active theme supports [database settings](/developpers/themes/db-settings)
 
-### Éléments à traduire manuellement
+### Elements Requiring Manual Translation
 
-Certains contenus nécessitent une traduction manuelle :
+Some content requires manual translation:
 
-📝 **Descriptions de produits** : Via l'interface de gestion des produits
-📝 **Pages personnalisées** : Contenu créé spécifiquement
-📝 **Annonces et actualités** : Communications marketing
-📝 **Métadonnées SEO** : Titres et descriptions pour le référencement
+- 📝 **Product descriptions**: Via the product management interface
+- 📝 **Custom pages**: Specifically created content
+- 📝 **Announcements and news**: Marketing communications
+- 📝 **SEO metadata**: Titles and descriptions for search engines
 
-## Personnalisation des traductions
+## Translation Customization
 
-### Modifier les traductions existantes
+### Modify Existing Translations
 
-Si vous souhaitez adapter certaines traductions :
+If you want to adapt certain translations:
 
-1. Les fichiers de langue sont stockés dans `/resources/lang/`
-2. Chaque langue a son propre dossier (ex: `fr/`, `en/`)
-3. Modifiez les fichiers PHP avec précaution
-4. Testez vos modifications en environnement de développement
+1. Language files are stored in `/resources/lang/`
+2. Each language has its own folder (e.g., `fr/`, `en/`)
+3. Modify PHP files with caution
+4. Test your modifications in a development environment
 
-:::warning Attention
-Les modifications manuelles seront **écrasées** lors des mises à jour. Documentez vos changements pour pouvoir les réappliquer.
+:::warning Warning
+Manual modifications will be **overwritten** during updates. Document your changes so you can reapply them.
 :::
 
-### Ajouter des traductions personnalisées
+### Add Custom Translations
 
-Pour vos contenus spécifiques :
+For your specific content:
 
 ```php
-// Dans vos vues ou contrôleurs
+// In your views or controllers
 __('custom.my_translation_key')
 
-// Dans le fichier de langue
-'my_translation_key' => 'Ma traduction personnalisée',
+// In the language file
+'my_translation_key' => 'My custom translation',
 ```
 
-## Bonnes pratiques
+## Best Practices
 
-### Pour l'expérience utilisateur
+### For User Experience
 
-1. **Sélecteur visible** : Placez le sélecteur de langue dans l'en-tête
-2. **Drapeaux clairs** : Utilisez des icônes reconnaissables
-3. **Mémorisation** : La préférence doit être sauvegardée
-4. **Cohérence** : Traduisez TOUT ou rien
+1. **Visible selector**: Place the language selector in the header
+2. **Clear flags**: Use recognizable icons
+3. **Memorization**: Preferences should be saved
+4. **Consistency**: Translate EVERYTHING or nothing
 
-### Pour le référencement
+### For SEO
 
-1. **URLs localisées** : Utilisez des sous-domaines ou répertoires
-2. **Balises hreflang** : Indiquez les alternatives linguistiques
-3. **Contenu unique** : Évitez les traductions automatiques de mauvaise qualité
-4. **Sitemap multilingue** : Incluez toutes les versions
+1. **Localized URLs**: Use subdomains or directories
+2. **Hreflang tags**: Indicate language alternatives
+3. **Unique content**: Avoid poor-quality automatic translations
+4. **Multilingual sitemap**: Include all versions
 
-### Pour la maintenance
+### For Maintenance
 
-1. **Documentation** : Notez vos personnalisations
-2. **Tests réguliers** : Vérifiez après chaque mise à jour
-3. **Feedback utilisateurs** : Collectez les retours sur la qualité
-4. **Veille** : Surveillez les nouvelles langues disponibles
+1. **Documentation**: Note your customizations
+2. **Regular testing**: Check after each update
+3. **User feedback**: Collect quality feedback
+4. **Monitoring**: Watch for new available languages
 
-## Cas d'usage avancés
+## Advanced Use Cases
 
-### Activation conditionnelle
+### Conditional Activation
 
-Vous pouvez activer des langues selon vos besoins :
+You can activate languages according to your needs:
 
-- **Phase de test** : Commencez avec 2-3 langues principales
-- **Expansion graduelle** : Ajoutez des langues selon la demande
-- **Marchés ciblés** : Activez uniquement les langues pertinentes
+- **Testing phase**: Start with 2-3 main languages
+- **Gradual expansion**: Add languages based on demand
+- **Targeted markets**: Only activate relevant languages
 
-### Intégration avec les modules
+### Integration with Modules
 
-Certains modules supportent le multilinguisme :
-- Traduction automatique des produits
-- Génération de factures multilingues
-- Support client dans plusieurs langues
+Some modules support multilingualism:
+- Automatic product translation
+- Multilingual invoice generation
+- Customer support in multiple languages
 
-:::tip À retenir
-Le multilinguisme est un **avantage concurrentiel majeur**. Chaque langue ajoutée ouvre votre business à des millions de nouveaux clients potentiels. L'effort d'implementation est minimal comparé au potentiel de croissance.
+:::tip Remember
+Multilingualism is a **major competitive advantage**. Each language added opens your business to millions of new potential customers. The implementation effort is minimal compared to the growth potential.
 :::

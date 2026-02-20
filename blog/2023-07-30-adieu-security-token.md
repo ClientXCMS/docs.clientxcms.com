@@ -1,71 +1,72 @@
 ---
-slug: a-dieu-security  
-title: Adieu au token de sécurité  
+slug: a-dieu-security
+title: Goodbye to the Security Token
 authors: [martindev]
-tags: [nouvelle documentation, news, mise à jour]  
+tags: [nouvelle documentation, news, mise à jour]
+translated: true
 ---
 
-Chers utilisateurs de CLIENTXCMS,
+Dear CLIENTXCMS users,
 
-Nous avons le plaisir de vous annoncer que le problème récurrent lié à l'erreur **"Security token is invalid"** a été résolu. Cette erreur, qui a pu affecter certains d'entre vous, n'est désormais plus un obstacle. Notre équipe technique a travaillé avec diligence pour identifier et corriger la cause, afin de garantir une expérience plus stable et sécurisée sur notre plateforme.
+We are pleased to announce that the recurring issue related to the **"Security token is invalid"** error has been resolved. This error, which may have affected some of you, is no longer an obstacle. Our technical team has worked diligently to identify and fix the cause, ensuring a more stable and secure experience on our platform.
 
 <!-- truncate -->
 
-### La fin d'un problème gênant : "Security Token is Invalid"
+### The End of an Annoying Problem: "Security Token is Invalid"
 
-Nous savons à quel point il était frustrant de rencontrer l'erreur **"Security token is invalid"** lors de l'utilisation de CLIENTXCMS. Cette erreur pouvait survenir pour diverses raisons, mais grâce à une refonte complète du système, nous avons pu résoudre définitivement ce problème.
+We know how frustrating it was to encounter the **"Security token is invalid"** error when using CLIENTXCMS. This error could occur for various reasons, but thanks to a complete system overhaul, we have been able to permanently resolve this issue.
 
-### Nouvelle fonctionnalité : Synchronisation via OAuth2
+### New Feature: OAuth2 Synchronization
 
-En plus de résoudre cette erreur, nous avons le plaisir de vous présenter une nouvelle fonctionnalité qui simplifiera et sécurisera encore davantage votre expérience avec CLIENTXCMS. Nous avons intégré un système de synchronisation basé sur **OAuth2** pour la gestion des modules et des thèmes.
+In addition to resolving this error, we are pleased to introduce a new feature that will further simplify and secure your experience with CLIENTXCMS. We have integrated a synchronization system based on **OAuth2** for module and theme management.
 
-**Qu'est-ce que cela change pour vous ?**  
-Grâce à OAuth2, la synchronisation des modules et des thèmes entre vos différents sites se fait désormais de manière plus fluide et sécurisée.
+**What does this change for you?**
+Thanks to OAuth2, synchronization of modules and themes between your different sites is now smoother and more secure.
 
-**Comment profiter de la synchronisation via OAuth2 ?**
+**How to take advantage of OAuth2 synchronization?**
 
-![Etape 1](https://share.byh.fr/files/MBuPzXg2a67lLvq-image.png)
+![Step 1](https://share.byh.fr/files/MBuPzXg2a67lLvq-image.png)
 
-1. Connectez-vous à votre compte CLIENTXCMS.
-2. Allez dans votre "Espace Licence" et cherchez la section dédiée à OAuth2.
-3. Vous y trouverez vos identifiants OAuth2, tels que :  
-   - **Client ID :** 6267874835637  
-   - **Client Secret :** [Votre Secret]  
-![Etape 1](/img/tutorial/step3.png)
+1. Log in to your CLIENTXCMS account.
+2. Go to your "License Area" and look for the OAuth2 section.
+3. There you will find your OAuth2 credentials, such as:
+   - **Client ID:** 6267874835637
+   - **Client Secret:** [Your Secret]
+![Step 1](/img/tutorial/step3.png)
 
-4. Copiez ces informations et collez-les dans votre fichier `.env` en respectant le format suivant :  
+4. Copy this information and paste it into your `.env` file following this format:
    ```
-   APP_CLIENTID=6267874835637  
-   APP_SECRET=v1ejuvj1ruhupstkdlguersbfqaul7yc4kfemk4ysl1rmmz0ha51vo42osf9pl0a8xbkiisbewbsfsaonskhagkmsu1jlrb6pggnsrts8lkvfp8z6bypbgvfpmylcdk3  
+   APP_CLIENTID=6267874835637
+   APP_SECRET=v1ejuvj1ruhupstkdlguersbfqaul7yc4kfemk4ysl1rmmz0ha51vo42osf9pl0a8xbkiisbewbsfsaonskhagkmsu1jlrb6pggnsrts8lkvfp8z6bypbgvfpmylcdk3
    ```
 
-Si vous avez des questions ou des difficultés lors de l'intégration de cette fonctionnalité, notre équipe d'assistance est à votre disposition pour vous guider.
+If you have questions or difficulties integrating this feature, our support team is available to guide you.
 
-### Nouveautés de la mise à jour v2.8.10
+### What's New in Update v2.8.10
 
-#### Module SEO : Optimisez votre visibilité en ligne
+#### SEO Module: Optimize Your Online Visibility
 
-Le module **SEO** a été conçu pour vous aider à améliorer le référencement de vos sites. Grâce à lui, vous pouvez facilement gérer vos métadonnées, balises, descriptions et bien plus encore. Cette fonctionnalité vous permet d’augmenter la visibilité de vos sites sur les moteurs de recherche et d'attirer davantage de visiteurs qualifiés.
+The **SEO** module has been designed to help you improve your sites' search engine optimization. With it, you can easily manage your metadata, tags, descriptions, and much more. This feature allows you to increase your sites' visibility on search engines and attract more qualified visitors.
 
-#### Module SocialAuth+ : Connexion simplifiée avec des services tiers
+#### SocialAuth+ Module: Simplified Login with Third-Party Services
 
-Le module **SocialAuth+** vous permet désormais de proposer à vos utilisateurs la possibilité de se connecter rapidement via des services populaires tels que **Facebook**, **Google**, **Twitter**, et bien d'autres. Cela simplifie l'inscription et améliore l'interaction avec vos utilisateurs.
+The **SocialAuth+** module now allows you to offer your users the ability to quickly log in via popular services such as **Facebook**, **Google**, **Twitter**, and many others. This simplifies registration and improves interaction with your users.
 
-![Etape 1](/img/tutorial/step5.png)
+![Step 1](/img/tutorial/step5.png)
 
-#### Ajout d'options pour les services existants
+#### Adding Options for Existing Services
 
-Nous avons pris en compte vos retours et, grâce à cette mise à jour, vous pouvez maintenant personnaliser les services déjà en place. Cette nouvelle fonctionnalité vous permet de mieux adapter les services à vos besoins spécifiques, en garantissant une parfaite intégration à vos projets.
+We have taken your feedback into account and, thanks to this update, you can now customize existing services. This new feature allows you to better adapt services to your specific needs, ensuring perfect integration into your projects.
 
-![Etape 1](/img/tutorial/step4.png)
+![Step 1](/img/tutorial/step4.png)
 
-### Merci pour votre confiance
+### Thank You for Your Trust
 
-Nous tenons à vous remercier chaleureusement pour la confiance que vous accordez à CLIENTXCMS. Vos retours, suggestions et idées sont essentiels pour nous aider à améliorer continuellement notre plateforme. Notre équipe est à votre disposition pour vous offrir un support de qualité et vous accompagner dans vos projets.
+We would like to warmly thank you for the trust you place in CLIENTXCMS. Your feedback, suggestions, and ideas are essential to help us continuously improve our platform. Our team is at your disposal to offer you quality support and accompany you in your projects.
 
-N'hésitez pas à vous connecter dès aujourd'hui pour découvrir toutes les nouvelles fonctionnalités et modules. Si vous avez des questions ou des préoccupations concernant leur intégration, notre équipe d'assistance est là pour vous aider.
+Don't hesitate to log in today to discover all the new features and modules. If you have questions or concerns about their integration, our support team is here to help.
 
-Restez à l'écoute, car d'autres améliorations passionnantes arrivent bientôt !
+Stay tuned, as more exciting improvements are coming soon!
 
-Cordialement,  
-L'équipe CLIENTXCMS
+Best regards,
+The CLIENTXCMS team

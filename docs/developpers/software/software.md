@@ -1,4 +1,7 @@
+---
+translated: true
+---
 import DocCardList from '@theme/DocCardList';
 
-# Aide & Logiciels
+# Help & Software
 <DocCardList />

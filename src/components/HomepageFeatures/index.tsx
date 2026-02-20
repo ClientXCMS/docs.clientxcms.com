@@ -1,36 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
-
-const FeatureList = [
-  {
-    title: 'Gestion des revenues',
-    Svg: require('@site/static/img/payment.svg').default,
-    description: (
-      <>
-        Acceptez les paiements de votre clientèle via les passerelles de paiements pré-installées. Gérez des <b>Devis</b>, <b>Taxes</b>,  <b>Livraison de service/gestion de service</b>, <b>Factures</b> de vos clients.
-      </>
-    ),
-  },
-  {
-    title: 'Installation & Configuration',
-    Svg: require('@site/static/img/fast.svg').default,
-    description: (
-      <>
-        Installez et configurez votre espace client aussi rapidement que possible. Reliez votre Panel externe à <b>CLIENTXCMS</b> puis créez des <b>offres</b> en les ajoutants dans un <b>groupe</b> et <b>vendez-les</b>.
-      </>
-    ),
-  },
-  {
-    title: 'Personnalisation de l\'espace client',
-    Svg: require('@site/static/img/custom.svg').default,
-    description: (
-      <>
-      Faite de votre <b>espace client</b> un <b>espace privilégiés</b> pour vos clients. Il est important que vos clients se repèrent grâce à votre <b>Logo</b>, <b>Favicon</b>, <b>Thème</b> ou <b>Couleur primaire</b>
-      </>
-    ),
-  },
-];
 
 function Feature({Svg, title, description}) {
   return (
@@ -51,9 +22,68 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+          <Feature
+            Svg={require('@site/static/img/payment.svg').default}
+            title={
+              <Translate id="homepage.features.revenue.title">
+                Revenue Management
+              </Translate>
+            }
+            description={
+              <Translate
+                id="homepage.features.revenue.description"
+                values={{
+                  quotes: <b><Translate id="homepage.features.revenue.quotes">Quotes</Translate></b>,
+                  taxes: <b><Translate id="homepage.features.revenue.taxes">Taxes</Translate></b>,
+                  delivery: <b><Translate id="homepage.features.revenue.delivery">Service delivery/management</Translate></b>,
+                  invoices: <b><Translate id="homepage.features.revenue.invoices">Invoices</Translate></b>,
+                }}>
+                {'Accept payments from your customers via pre-installed payment gateways. Manage {quotes}, {taxes}, {delivery}, and {invoices} for your clients.'}
+              </Translate>
+            }
+          />
+          <Feature
+            Svg={require('@site/static/img/fast.svg').default}
+            title={
+              <Translate id="homepage.features.installation.title">
+                Installation & Configuration
+              </Translate>
+            }
+            description={
+              <Translate
+                id="homepage.features.installation.description"
+                values={{
+                  clientxcms: <b>CLIENTXCMS</b>,
+                  offers: <b><Translate id="homepage.features.installation.offers">offers</Translate></b>,
+                  group: <b><Translate id="homepage.features.installation.group">group</Translate></b>,
+                  sell: <b><Translate id="homepage.features.installation.sell">sell them</Translate></b>,
+                }}>
+                {'Install and configure your client area as quickly as possible. Connect your external Panel to {clientxcms}, then create {offers} by adding them to a {group} and {sell}.'}
+              </Translate>
+            }
+          />
+          <Feature
+            Svg={require('@site/static/img/custom.svg').default}
+            title={
+              <Translate id="homepage.features.customization.title">
+                Client Area Customization
+              </Translate>
+            }
+            description={
+              <Translate
+                id="homepage.features.customization.description"
+                values={{
+                  clientArea: <b><Translate id="homepage.features.customization.clientArea">client area</Translate></b>,
+                  privilegedSpace: <b><Translate id="homepage.features.customization.privilegedSpace">privileged space</Translate></b>,
+                  logo: <b><Translate id="homepage.features.customization.logo">Logo</Translate></b>,
+                  favicon: <b><Translate id="homepage.features.customization.favicon">Favicon</Translate></b>,
+                  theme: <b><Translate id="homepage.features.customization.theme">Theme</Translate></b>,
+                  primaryColor: <b><Translate id="homepage.features.customization.primaryColor">Primary Color</Translate></b>,
+                }}>
+                {'Make your {clientArea} a {privilegedSpace} for your customers. It is important that your clients recognize your brand through your {logo}, {favicon}, {theme}, or {primaryColor}.'}
+              </Translate>
+            }
+          />
         </div>
       </div>
     </section>

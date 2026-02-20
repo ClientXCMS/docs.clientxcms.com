@@ -1,30 +1,31 @@
 ---
 sidebar_position: 4
+translated: true
 ---
-# Configuration du thème
+# Theme Configuration
 
-Vous pouvez rajouter de la configuration à votre thème en créant un fichier `config.blade.php` dans le dossier `resources/themes/theme_name/config/` de votre installation.
+You can add configuration to your theme by creating a `config.blade.php` file in the `resources/themes/theme_name/config/` folder of your installation.
 ```blade
 @include('shared.text', ['name' => 'config_1', 'label' => 'Configuration 1', 'value' => ''])
 ```
 
-## Validation de la configuration
-Vous pouvez valider la configuration en créant un fichier `rules.php` dans le dossier `resources/themes/theme_name/config/` de votre installation.
+## Configuration Validation
+You can validate the configuration by creating a `rules.php` file in the `resources/themes/theme_name/config/` folder of your installation.
 ```php
 <?php
 return [
     'config_1' => 'required|string',
 ];
 ```
-Vous pouvez regarder la [documentation de Laravel](https://laravel.com/docs/11.x/validation) pour plus d'informations sur la validation.
-## Stockage de la configuration
-La configuration du thème est stockée dans un fichier `config.json` dans le dossier `resources/themes/theme_name/config/` de votre installation.
+You can check the [Laravel documentation](https://laravel.com/docs/11.x/validation) for more information on validation.
+## Configuration Storage
+The theme configuration is stored in a `config.json` file in the `resources/themes/theme_name/config/` folder of your installation.
 ```json
 {
     "config_1": "value"
 }
 ```
-Vous pouvez par ailleurs définir des valeurs par défaut dans le fichier `config.json` de votre thème.
+You can also define default values in the `config.json` file of your theme.
 ```json
 {
     "config_1": "value",
@@ -32,7 +33,11 @@ Vous pouvez par ailleurs définir des valeurs par défaut dans le fichier `confi
 }
 ```
 
-Pour récupérer la configuration dans votre thème, vous pouvez utiliser la méthode `theme_config`.
+To retrieve the configuration in your theme, you can use the `theme_config` method.
 ```php
 {{ theme_config('config_1') }}
 ```
+
+:::tip Translatable Configuration
+If you need some configuration fields to support multiple languages, you can store them in the database instead of `config.json`. See [Database Settings](./db-settings.md) for details.
+:::

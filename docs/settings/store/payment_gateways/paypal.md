@@ -1,227 +1,230 @@
+---
+translated: true
+---
 # PayPal
 
-La passerelle **PayPal** dans **CLIENTXCMS** correspond à l'**intégration de la solution de paiement en ligne la plus populaire au monde** qui permet à vos clients de régler leurs commandes avec leur compte PayPal ou leur carte bancaire via l'interface sécurisée PayPal. <br/>
-L'objectif est clair : **offrir une méthode de paiement universellement reconnue, sécurisée et rapide** qui inspire confiance à vos clients. Un système PayPal bien configuré permet à vos clients de **payer en quelques clics** tout en vous garantissant la réception sécurisée des fonds.
+The **PayPal** gateway in **CLIENTXCMS** corresponds to the **integration of the world's most popular online payment solution** that allows your customers to pay for their orders with their PayPal account or credit card via PayPal's secure interface. <br/>
+The objective is clear: **offer a universally recognized, secure, and fast payment method** that inspires trust in your customers. A well-configured PayPal system allows your customers to **pay in a few clicks** while guaranteeing secure receipt of funds.
 
-La passerelle PayPal peut être entièrement personnalisée : nom d'affichage, montant minimum, mode de fonctionnement, configuration IPN, etc.
+The PayPal gateway can be fully customized: display name, minimum amount, operating mode, IPN configuration, etc.
 
-Vous pouvez configurer la passerelle PayPal depuis :
+You can configure the PayPal gateway from:
 
-`Paramètres` > `Paramètres de la boutique` > `PayPal`
+`Settings` > `Store Settings` > `PayPal`
 
-![Configuration de la passerelle PayPal](/img/next_gen/settings/store/payment_gateways/paypal/config.png)
+![PayPal gateway configuration](/img/next_gen/settings/store/payment_gateways/paypal/config.png)
 
-:::tip Astuce
-**PayPal** est la passerelle de paiement qui inspire le plus confiance aux consommateurs. Sa présence peut considérablement augmenter votre taux de conversion, particulièrement à l'international.
+:::tip Tip
+**PayPal** is the payment gateway that inspires the most consumer trust. Its presence can significantly increase your conversion rate, particularly internationally.
 :::
 
-## Pourquoi intégrer PayPal ?
+## Why integrate PayPal?
 
-La passerelle PayPal est un incontournable du commerce électronique mondial. Elle représente concrètement une méthode de paiement universelle, acceptée et reconnue par des millions d'utilisateurs dans le monde entier.
+The PayPal gateway is a must-have for global e-commerce. It concretely represents a universal payment method, accepted and recognized by millions of users worldwide.
 
-Intégrer PayPal vous permet de :
+Integrating PayPal allows you to:
 
-* Rassurer vos clients avec une marque de confiance internationale
-* Accepter les paiements de clients sans compte PayPal (cartes bancaires)
-* Bénéficier d'une protection contre la fraude intégrée
-* Accéder à un marché international plus large
-* Simplifier la gestion des remboursements et litiges
-* Proposer des paiements en plusieurs devises
+* Reassure your customers with an international trusted brand
+* Accept payments from customers without a PayPal account (credit cards)
+* Benefit from integrated fraud protection
+* Access a wider international market
+* Simplify refund and dispute management
+* Offer payments in multiple currencies
 
-:::tip Astuce
-PayPal est comme le **passeport universel** du paiement en ligne 🌍 — reconnu partout, il ouvre votre boutique au monde entier et rassure instantanément vos clients.
+:::tip Tip
+PayPal is like the **universal passport** for online payment 🌍 — recognized everywhere, it opens your store to the whole world and instantly reassures your customers.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement
+### Payment Process
 
-Le paiement via PayPal suit un processus sécurisé et fluide :
+Payment via PayPal follows a secure and smooth process:
 
-1. **Sélection PayPal** : Le client choisit "PayPal" comme moyen de paiement
-2. **Redirection sécurisée** : Le client est dirigé vers les serveurs PayPal
-3. **Authentification** : Connexion au compte PayPal ou saisie des données de carte
-4. **Validation du paiement** : Le client confirme la transaction sur PayPal
-5. **Retour automatique** : Redirection vers votre boutique
-6. **Notification IPN** : PayPal confirme le paiement à votre système
-7. **Validation automatique** : La commande est immédiatement traitée
-8. **Confirmation client** : Email de confirmation et activation du service
+1. **PayPal Selection**: The customer chooses "PayPal" as payment method
+2. **Secure Redirect**: The customer is directed to PayPal servers
+3. **Authentication**: Login to PayPal account or card data entry
+4. **Payment Validation**: The customer confirms the transaction on PayPal
+5. **Automatic Return**: Redirect to your store
+6. **IPN Notification**: PayPal confirms the payment to your system
+7. **Automatic Validation**: The order is immediately processed
+8. **Customer Confirmation**: Confirmation email and service activation
 
-### Avantages du processus PayPal
+### PayPal Process Advantages
 
-| Avantage                | Description                                        |
+| Advantage                | Description                                        |
 |-------------------------|----------------------------------------------------|
-| **Sécurité maximale**   | Données bancaires jamais transmises à votre site |
-| **Simplicité client**   | Pas de ressaisie pour les détenteurs de compte   |
-| **Traitement instantané** | Validation automatique des paiements           |
-| **Protection vendeur**  | Couverture contre certains types de fraude       |
+| **Maximum Security**    | Banking data never transmitted to your site        |
+| **Customer Simplicity** | No re-entry for account holders                    |
+| **Instant Processing**  | Automatic payment validation                       |
+| **Seller Protection**   | Coverage against certain types of fraud            |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres essentiels
+### Essential Parameters
 
-**Nom de la passerelle** | (texte)<br />
+**Gateway Name** | (text)<br />
 
-Utilisez simplement "PayPal" pour une reconnaissance immédiate par vos clients.
+Simply use "PayPal" for immediate recognition by your customers.
 
-**Montant minimal** | (montant)<br />
+**Minimum Amount** | (amount)<br />
 
-PayPal n'impose pas de montant minimal. Vous pouvez configurer 0.50€ pour accepter tous les montants.
+PayPal imposes no minimum amount. You can configure €0.50 to accept all amounts.
 
-**Statut** | (menu déroulant)<br />
+**Status** | (dropdown menu)<br />
 
-Maintenez la passerelle en statut **"Actif"** pour maximiser les conversions.
+Keep the gateway on **"Active"** status to maximize conversions.
 
-**Mode de fonctionnement** | (test/live)<br />
+**Operating Mode** | (test/live)<br />
 
-- **Mode test** : Pour vos tests avec des transactions fictives
-- **Mode live** : Pour les vraies transactions avec vos clients
+- **Test mode**: For your tests with fictitious transactions
+- **Live mode**: For real transactions with your customers
 
-**Email PayPal** | (email)<br />
+**PayPal Email** | (email)<br />
 
-L'adresse email associée à votre compte marchand PayPal.
+The email address associated with your PayPal merchant account.
 
-:::info Configuration recommandée
-Pour une utilisation optimale de PayPal :
-- **Nom** : "PayPal"
-- **Montant minimal** : 0€
-- **Statut** : Actif
-- **Mode** : Live (après tests)
+:::info Recommended Configuration
+For optimal PayPal use:
+- **Name**: "PayPal"
+- **Minimum Amount**: €0
+- **Status**: Active
+- **Mode**: Live (after testing)
 :::
 
-### Configuration avancée
+### Advanced Configuration
 
-La passerelle PayPal nécessite quelques paramètres techniques pour fonctionner parfaitement :
+The PayPal gateway requires some technical parameters to work perfectly:
 
-- **Email du compte PayPal** : L'adresse de votre compte professionnel PayPal
-- **URL de retour** : Automatiquement configurée par CLIENTXCMS
-- **URL d'annulation** : Redirection en cas d'abandon du paiement
+- **PayPal account email**: Your professional PayPal account address
+- **Return URL**: Automatically configured by CLIENTXCMS
+- **Cancel URL**: Redirect in case of payment abandonment
 
-## Configuration des notifications (IPN)
+## Notification Configuration (IPN)
 
-### Qu'est-ce que l'IPN ?
+### What is IPN?
 
-L'**IPN (Instant Payment Notification)** est un service PayPal qui permet une communication sécurisée entre PayPal et votre boutique pour confirmer les paiements en temps réel.
+**IPN (Instant Payment Notification)** is a PayPal service that enables secure communication between PayPal and your store to confirm payments in real-time.
 
-### URL de notification
+### Notification URL
 
-CLIENTXCMS génère automatiquement l'URL de notification :
+CLIENTXCMS automatically generates the notification URL:
 ```
-https://votre-domaine.com/gateways/paypal/notification
+https://your-domain.com/gateways/paypal/notification
 ```
 
-### Configurer l'IPN dans PayPal
+### Configuring IPN in PayPal
 
-Pour activer les notifications PayPal :
+To enable PayPal notifications:
 
-1. **Connectez-vous** à votre compte PayPal professionnel
-2. Accédez à **« Mon compte »**
-3. Dans **« Vos outils de vente »**, cliquez sur **« Plus d'options »**
-4. Sélectionnez **« Notifications instantanées de paiement »**
-5. Cliquez sur **« Mettre à jour »**
-6. **Saisissez l'URL** : `https://votre-domaine.com/gateways/paypal/notification`
-7. **Activez les notifications**
-8. **Sauvegardez** les paramètres
+1. **Log in** to your professional PayPal account
+2. Go to **"My Account"**
+3. In **"Your sales tools"**, click **"More options"**
+4. Select **"Instant Payment Notifications"**
+5. Click **"Update"**
+6. **Enter the URL**: `https://your-domain.com/gateways/paypal/notification`
+7. **Enable notifications**
+8. **Save** the settings
 
 :::warning Important
-L'IPN est **essentiel** pour le bon fonctionnement de la passerelle. Sans cette configuration, les paiements peuvent ne pas être validés automatiquement.
+IPN is **essential** for the gateway to function properly. Without this configuration, payments may not be automatically validated.
 :::
 
-## Modes de fonctionnement
+## Operating Modes
 
-### Mode Test (Sandbox)
+### Test Mode (Sandbox)
 
-Le mode test vous permet de :
-- Tester l'intégration sans argent réel
-- Vérifier le bon fonctionnement de l'IPN
-- Simuler différents scénarios de paiement
-- Former votre équipe sur le processus
+Test mode allows you to:
+- Test the integration without real money
+- Verify IPN proper functioning
+- Simulate different payment scenarios
+- Train your team on the process
 
-**Compte requis** : Compte développeur PayPal avec comptes sandbox
+**Required account**: PayPal developer account with sandbox accounts
 
-### Mode Live (Production)
+### Live Mode (Production)
 
-Le mode live active :
-- Les vrais paiements avec de l'argent réel
-- L'accès à tous les outils PayPal
-- Les rapports et statistiques complètes
-- La protection vendeur PayPal
+Live mode activates:
+- Real payments with real money
+- Access to all PayPal tools
+- Complete reports and statistics
+- PayPal seller protection
 
-**Compte requis** : Compte PayPal Business vérifié
+**Required account**: Verified PayPal Business account
 
-:::tip Conseil
-Toujours **tester en mode sandbox** avant de passer en production. Effectuez plusieurs transactions test pour valider tous les scénarios.
+:::tip Advice
+Always **test in sandbox mode** before going to production. Perform several test transactions to validate all scenarios.
 :::
 
-## Gestion des paiements
+## Payment Management
 
-### Suivi automatique
+### Automatic Tracking
 
-Avec PayPal configuré correctement :
-- Les paiements sont **validés automatiquement**
-- Les services sont **activés immédiatement**
-- Les confirmations sont **envoyées automatiquement**
-- L'historique est **tracé dans votre interface**
+With PayPal correctly configured:
+- Payments are **automatically validated**
+- Services are **activated immediately**
+- Confirmations are **sent automatically**
+- History is **tracked in your interface**
 
-### Tableau de bord PayPal
+### PayPal Dashboard
 
-Depuis votre compte PayPal, vous pouvez :
-- Consulter toutes vos transactions
-- Gérer les remboursements
-- Accéder aux rapports détaillés
-- Configurer les paramètres avancés
+From your PayPal account, you can:
+- View all your transactions
+- Manage refunds
+- Access detailed reports
+- Configure advanced settings
 
-## Frais et commissions
+## Fees and Commissions
 
-### Structure tarifaire PayPal
+### PayPal Pricing Structure
 
-PayPal applique des commissions sur chaque transaction :
-- **Transactions nationales** : ~2,9% + 0,35€
-- **Transactions internationales** : ~3,4% + frais fixes
-- **Micropaiements** : Tarification spéciale pour les petits montants
+PayPal applies commissions on each transaction:
+- **Domestic transactions**: ~2.9% + €0.35
+- **International transactions**: ~3.4% + fixed fees
+- **Micropayments**: Special pricing for small amounts
 
-### Optimisation des coûts
+### Cost Optimization
 
-* **Volume élevé** : Négociation de tarifs préférentiels possible
-* **Compte professionnel** : Tarifs plus avantageux qu'un compte personnel
-* **Devises multiples** : Éviter les frais de change automatiques
-* **Facturation directe** : Inclure les frais dans vos prix ou les répercuter
+* **High volume**: Negotiation of preferential rates possible
+* **Professional account**: More advantageous rates than personal account
+* **Multiple currencies**: Avoid automatic exchange fees
+* **Direct billing**: Include fees in your prices or pass them on
 
-## Sécurité et conformité
+## Security and Compliance
 
-### Protection PayPal
+### PayPal Protection
 
-PayPal offre plusieurs niveaux de protection :
-- **Chiffrement SSL** de toutes les données
-- **Détection de fraude** automatique
-- **Protection vendeur** contre certains litiges
-- **Conformité PCI-DSS** automatique
+PayPal offers several levels of protection:
+- **SSL encryption** of all data
+- **Automatic fraud detection**
+- **Seller protection** against certain disputes
+- **Automatic PCI-DSS compliance**
 
-### Bonnes pratiques sécurité
+### Security Best Practices
 
-* **Vérifiez l'IPN** : Toujours valider les notifications PayPal
-* **Surveillez les transactions** : Contrôlez régulièrement votre compte
-* **Politiques claires** : Définissez vos conditions de vente
-* **Formation équipe** : Sensibilisez votre équipe aux bonnes pratiques
+* **Verify IPN**: Always validate PayPal notifications
+* **Monitor transactions**: Regularly check your account
+* **Clear policies**: Define your terms of sale
+* **Team training**: Educate your team on best practices
 
-## Résolution des problèmes
+## Troubleshooting
 
-### Problèmes courants
+### Common Problems
 
-| Problème                    | Solution                                          |
-|----------------------------|---------------------------------------------------|
-| **Paiements non validés**  | Vérifier la configuration IPN                   |
-| **Redirections échouées**  | Contrôler les URL de retour                     |
-| **Comptes restreints**     | Vérifier le statut de votre compte PayPal       |
-| **Devises non supportées** | Activer les devises dans votre compte PayPal    |
+| Problem                    | Solution                                          |
+|---------------------------|---------------------------------------------------|
+| **Unvalidated payments**  | Check IPN configuration                           |
+| **Failed redirects**      | Check return URLs                                 |
+| **Restricted accounts**   | Verify your PayPal account status                 |
+| **Unsupported currencies**| Enable currencies in your PayPal account          |
 
-### Support PayPal
+### PayPal Support
 
-En cas de problème technique :
-- **Centre d'aide PayPal** : Documentation complète
-- **Support marchand** : Aide dédiée aux professionnels
-- **Communauté développeurs** : Forums techniques spécialisés
+In case of technical problems:
+- **PayPal Help Center**: Complete documentation
+- **Merchant support**: Dedicated help for professionals
+- **Developer community**: Specialized technical forums
 
-:::tip À retenir
-PayPal est un **incontournable du e-commerce** qui rassure vos clients et simplifie vos paiements. Une configuration soignée et des tests réguliers garantissent un fonctionnement optimal de cette passerelle essentielle.
+:::tip Remember
+PayPal is an **e-commerce must-have** that reassures your customers and simplifies your payments. Careful configuration and regular testing guarantee optimal operation of this essential gateway.
 :::

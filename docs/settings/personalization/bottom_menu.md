@@ -1,12 +1,16 @@
-# Menu du pied de page
+---
+translated: true
+---
 
-Dans **CLIENTXCMS**, le **pied de page** représente l'ancrage final de votre plateforme et l'espace de confiance où vos visiteurs cherchent les informations essentielles. <br/>
-L'objectif est capital : **rassurer sur votre professionnalisme**, **fournir les liens légaux obligatoires** et **renforcer votre crédibilité**. Un footer bien structuré complète parfaitement l'expérience utilisateur et peut convertir les visiteurs hésitants en dernière instance.
+# Footer Menu
 
-Cette page permet de configurer tous les éléments du pied de page pour créer une zone de confiance optimale.
+In **CLIENTXCMS**, the **footer** represents the final anchor of your platform and the trust zone where your visitors seek essential information. <br/>
+The objective is crucial: **reassure about your professionalism**, **provide mandatory legal links** and **strengthen your credibility**. A well-structured footer perfectly completes the user experience and can convert hesitant visitors at the last moment.
 
-Vous pouvez personnaliser le pied de page depuis :
+This page allows you to configure all footer elements to create an optimal trust zone.
 
-`Paramètres` > `Personnalisation` > `Menu du pied de page`
+You can customize the footer from:
 
-![Configuration du pied de page](/img/next_gen/settings/personalization/bottom_menu/admin.png)
+`Settings` > `Personalization` > `Footer Menu`
+
+![Footer configuration](/img/next_gen/settings/personalization/bottom_menu/admin.png)

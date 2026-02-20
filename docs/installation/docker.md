@@ -1,59 +1,75 @@
+---
+sidebar_position: 5
+translated: true
+---
+
 # Docker
 
-Vous pouvez installer ClientXCMS via Docker en suivant les étapes ci-dessous.
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
-- Un serveur avec Docker et Docker Compose installés. Vous pouvez suivre les instructions d'installation de
+You can install ClientXCMS via Docker by following the steps below.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+- A server with Docker and Docker Compose installed. You can follow the installation instructions for:
     - [Docker](https://docs.docker.com/get-docker/)
     - [Docker Compose](https://docs.docker.com/compose/install/)
-- Un nom de domaine pointant vers votre serveur.
+- A domain name pointing to your server.
 
-Lancer les commandes suivantes pour installer Docker et Docker Compose sur un serveur Ubuntu :
+Run the following commands to install Docker and Docker Compose on an Ubuntu server:
 ```bash
 docker compose build
 ```
 ```bash
 docker compose up -d
 ```
+
 ## Installation
 
-1. Créez un répertoire pour ClientXCMS et accédez-y :
+1. Create a directory for ClientXCMS and navigate to it:
 ```bash
 mkdir /var/www
 cd /var/www
 ```
-2. Clonez le dépôt Git de ClientXCMS :
+
+2. Clone the ClientXCMS Git repository:
 ```bash
 git clone https://github.com/ClientXCMS/clientxcms.git
 cd clientxcms
 ```
-3. Copiez le fichier d'exemple de configuration Docker Compose :
+
+3. Copy the example Docker Compose configuration file:
 ```bash
 cp docker-compose.example.yml docker-compose.yml
 ```
-4. Modifiez le fichier d'environnement pour configurer les variables nécessaires, notamment la connexion à la base de données et le nom de domaine :
+
+4. Edit the environment file to configure the necessary variables, including the database connection and domain name:
 ```bash
 cp .env.example .env
 nano .env
 ```
-Vous pouvez modifier les variables comme le domaine : 
+
+You can modify variables such as the domain:
 ```env
-APP_URL=https://votre-domaine.com
+APP_URL=https://your-domain.com
 OAUTH_CLIENT_ID="XX"
 OAUTH_CLIENT_SECRET="XX"
 ```
-Ainsi que vos clés API, la connexion à la base de données, etc.
 
-Le docker se chargera de générer le certificat SSL via Let's Encrypt automatiquement en rajoutant l'email dans le fichier docker-compose.yml :
+As well as your API keys, database connection, etc.
+
+Docker will generate the SSL certificate via Let's Encrypt automatically by adding the email in the docker-compose.yml file:
 ```yaml
 - LETSENCRYPT_EMAIL=your_email@example.com
 ```
-5. Lancez les conteneurs Docker :
+
+5. Launch the Docker containers:
 ```bash
 docker-compose up --build -d
 ```
-6. Ajouter un compte administrateur :
+
+6. Add an administrator account:
 ```bash
 docker exec -it clientxcms_app-1 php artisan clientxcms:install-admin
 ```
-7. Accédez à votre nom de domaine dans un navigateur web pour terminer l'installation en confirmation l'accès à la licence
+
+7. Access your domain name in a web browser to complete the installation by confirming license access.

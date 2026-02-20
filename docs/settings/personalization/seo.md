@@ -1,127 +1,131 @@
-# Paramètres SEO
+---
+translated: true
+---
 
-Dans **CLIENTXCMS**, l'**optimisation pour les moteurs de recherche (SEO)** constitue un levier essentiel pour **maximiser la visibilité de votre plateforme** et **attirer un trafic qualifié**. <br/>
-L'objectif est stratégique : **améliorer votre positionnement dans les résultats de recherche**, **augmenter votre trafic organique** et **renforcer votre présence en ligne**. Un SEO bien configuré peut multiplier par 5 votre visibilité naturelle et réduire significativement vos coûts d'acquisition client.
+# SEO Settings
 
-Cette page permet de configurer tous les éléments techniques et structurels pour optimiser votre référencement naturel.
+In **CLIENTXCMS**, **Search Engine Optimization (SEO)** is an essential lever to **maximize your platform's visibility** and **attract qualified traffic**. <br/>
+The objective is strategic: **improve your ranking in search results**, **increase your organic traffic** and **strengthen your online presence**. Well-configured SEO can multiply your natural visibility by 5 and significantly reduce your customer acquisition costs.
 
-Vous pouvez accéder aux paramètres SEO depuis :
+This page allows you to configure all technical and structural elements to optimize your natural search ranking.
 
-`Paramètres` > `Personnalisation` > `Paramètres SEO`
+You can access SEO settings from:
+
+`Settings` > `Personalization` > `SEO Settings`
 
 
-## Configuration de base
+## Basic Configuration
 
-### Métadonnées fondamentales
+### Fundamental Metadata
 
-**Titre du site** | (balise title)<br />
-Élément le plus important pour le SEO, affiché dans l'onglet du navigateur et les résultats de recherche.
+**Site Title** | (title tag)<br />
+The most important element for SEO, displayed in the browser tab and search results.
 
-**Description de l'espace client** | (meta description)<br />
-Résumé affiché sous le titre dans les résultats de recherche, crucial pour le taux de clic.
+**Client Area Description** | (meta description)<br />
+Summary displayed under the title in search results, crucial for click-through rate.
 
-**Exemples efficaces** :
+**Effective Examples**:
 ```
-"Hébergement web professionnel avec 99.9% de disponibilité. Support 24/7, 
-serveurs SSD et sauvegarde automatique. Essai gratuit 30 jours."
-```
-
-```
-"Agence digitale spécialisée en création de sites web et e-commerce. 
-+500 projets réalisés, équipe certifiée. Devis gratuit en 24h."
-```
-
-### Mots-clés stratégiques
-
-**Mots-clés de l'espace client** | (keywords)<br />
-Termes principaux définissant votre activité et recherchés par votre audience.
-
-**Stratégie de sélection** :
-- **Pertinence** : En lien direct avec vos services
-- **Volume de recherche** : Suffisamment recherchés
-- **Concurrence** : Accessible selon votre autorité
-- **Intention** : Correspondant à vos objectifs
-
-**Types de mots-clés** :
-- **Génériques** : "hébergement web", "création site"
-- **Longue traîne** : "hébergeur web français pas cher"
-- **Locaux** : "agence web Lyon", "hébergement Paris"
-- **Métier** : "serveur dédié", "VPS SSD"
-
-**Exemples par secteur** :
-
-#### Hébergeur web
-```
-hébergement web, serveur VPS, serveur dédié, nom de domaine, 
-hébergement français, cloud hosting, backup automatique
+"Professional web hosting with 99.9% uptime. 24/7 support,
+SSD servers and automatic backup. 30-day free trial."
 ```
 
-#### Agence digitale
 ```
-création site web, développement web, refonte site internet, 
-e-commerce, SEO, maintenance site, agence digitale
-```
-
-#### Service B2B
-```
-solution SaaS, logiciel métier, digitalisation, automatisation, 
-CRM, outils gestion, transformation digitale
+"Digital agency specializing in website and e-commerce creation.
+500+ completed projects, certified team. Free quote within 24 hours."
 ```
 
-## Scripts et intégrations
+### Strategic Keywords
 
-### Scripts Header
+**Client Area Keywords** | (keywords)<br />
+Main terms defining your activity and searched by your audience.
 
-**Scripts dans le header** | (balises head)<br />
-Code inséré avant la fermeture de la balise `</head>`, essentiel pour les configurations initiales.
+**Selection Strategy**:
+- **Relevance**: Directly related to your services
+- **Search Volume**: Sufficiently searched
+- **Competition**: Accessible based on your authority
+- **Intent**: Matching your objectives
 
-**Utilisations courantes** :
-- **Balises meta** supplémentaires
-- **Verification sites** (Google, Bing, Pinterest)
-- **Fonts personnalisées** (Google Fonts)
-- **Scripts critiques** chargés en priorité
+**Types of Keywords**:
+- **Generic**: "web hosting", "website creation"
+- **Long-tail**: "affordable French web hosting"
+- **Local**: "web agency Lyon", "hosting Paris"
+- **Industry**: "dedicated server", "SSD VPS"
 
-**Exemples pratiques** :
+**Examples by Sector**:
 
-**Google Site Verification** :
+#### Web Hosting Provider
+```
+web hosting, VPS server, dedicated server, domain name,
+French hosting, cloud hosting, automatic backup
+```
+
+#### Digital Agency
+```
+website creation, web development, website redesign,
+e-commerce, SEO, site maintenance, digital agency
+```
+
+#### B2B Service
+```
+SaaS solution, business software, digitalization, automation,
+CRM, management tools, digital transformation
+```
+
+## Scripts and Integrations
+
+### Header Scripts
+
+**Header Scripts** | (head tags)<br />
+Code inserted before the closing `</head>` tag, essential for initial configurations.
+
+**Common Uses**:
+- Additional **meta tags**
+- **Site verification** (Google, Bing, Pinterest)
+- **Custom fonts** (Google Fonts)
+- **Critical scripts** loaded as priority
+
+**Practical Examples**:
+
+**Google Site Verification**:
 ```html
-<meta name="google-site-verification" content="votre-code-verification" />
+<meta name="google-site-verification" content="your-verification-code" />
 ```
 
-**Open Graph Facebook** :
+**Facebook Open Graph**:
 ```html
-<meta property="og:title" content="Votre Titre" />
-<meta property="og:description" content="Votre Description" />
-<meta property="og:image" content="URL-de-votre-image" />
+<meta property="og:title" content="Your Title" />
+<meta property="og:description" content="Your Description" />
+<meta property="og:image" content="your-image-URL" />
 ```
 
-**Schema.org Organization** :
+**Schema.org Organization**:
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Votre Entreprise",
-  "url": "https://votresite.com",
-  "logo": "https://votresite.com/logo.png"
+  "name": "Your Company",
+  "url": "https://yoursite.com",
+  "logo": "https://yoursite.com/logo.png"
 }
 </script>
 ```
 
-### Scripts Footer
+### Footer Scripts
 
-**Scripts dans le footer** | (avant balise body)<br />
-Code inséré avant la fermeture du body, optimal pour les scripts non-critiques.
+**Footer Scripts** | (before body tag)<br />
+Code inserted before the closing body tag, optimal for non-critical scripts.
 
-**Utilisations recommandées** :
-- **Google Analytics** et tracking
-- **Hotjar** ou heatmaps
-- **Chatbots** et support
-- **Scripts tiers** non-critiques
+**Recommended Uses**:
+- **Google Analytics** and tracking
+- **Hotjar** or heatmaps
+- **Chatbots** and support
+- Non-critical **third-party scripts**
 
-**Exemples d'intégration** :
+**Integration Examples**:
 
-**Google Analytics 4** :
+**Google Analytics 4**:
 ```html
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -133,7 +137,7 @@ Code inséré avant la fermeture du body, optimal pour les scripts non-critiques
 </script>
 ```
 
-**Facebook Pixel** :
+**Facebook Pixel**:
 ```html
 <script>
 !function(f,b,e,v,n,t,s)
@@ -144,23 +148,23 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'VOTRE_PIXEL_ID');
+fbq('init', 'YOUR_PIXEL_ID');
 fbq('track', 'PageView');
 </script>
 ```
 
-## Paramètres d'affichage
+## Display Settings
 
-### Couleur principale
+### Primary Color
 
-**Couleur principale** | (brand color)<br />
-Couleur de marque utilisée pour les embeds et intégrations sociales.
+**Primary Color** | (brand color)<br />
+Brand color used for social embeds and integrations.
 
-### Contrôle d'indexation
+### Indexing Control
 
-**Désactiver le référencement** | (noindex global)<br />
-Option pour empêcher l'indexation complète de votre plateforme.
+**Disable Search Indexing** | (global noindex)<br />
+Option to prevent complete indexing of your platform.
 
-:::warning Attention
-Désactiver le référencement supprime votre visibilité Google. À utiliser uniquement pour des sites non-publics ou en développement.
+:::warning Warning
+Disabling search indexing removes your Google visibility. Only use for non-public sites or sites under development.
 :::

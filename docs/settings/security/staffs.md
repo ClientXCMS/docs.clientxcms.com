@@ -1,218 +1,219 @@
 ---
+translated: true
 sidebar_position: 4
 ---
-# Personnels
+# Staff Members
 
-Dans **CLIENTXCMS**, la gestion des **comptes personnel** constitue le cœur de la sécurité administrative de votre plateforme.
-L'objectif est stratégique : **contrôler précisément qui peut accéder à l'administration**, **définir les niveaux d'autorisation appropriés** et **tracer toutes les activités administratives**. Une gestion rigoureuse des comptes administrateurs protège votre système contre les accès non autorisés et garantit une responsabilité claire des actions.
+In **CLIENTXCMS**, managing **staff accounts** is the core of your platform's administrative security.
+The objective is strategic: **precisely control who can access the administration**, **define appropriate authorization levels** and **trace all administrative activities**. Rigorous management of administrator accounts protects your system against unauthorized access and ensures clear accountability for actions.
 
-Cette section permet de créer, gérer et surveiller tous les comptes ayant accès à l'interface d'administration.
+This section allows you to create, manage, and monitor all accounts with access to the administration interface.
 
-Vous pouvez gérer les personnels depuis :
+You can manage staff members from:
 
-`Paramètres` > `Sécurité` > `Personnels`
+`Settings` > `Security` > `Staff Members`
 
-![Liste des comptes personnels](/img/next_gen/settings/security/staffs/staff_list.png)
+![Staff accounts list](/img/next_gen/settings/security/staffs/staff_list.png)
 
-:::tip Astuce
-Chaque compte administrateur est une **clé d'accès** à votre système.
-Traitez-les avec le même soin que les clés de votre domicile — limitez le nombre et surveillez leur usage.
+:::tip Tip
+Each administrator account is an **access key** to your system.
+Treat them with the same care as your house keys — limit the number and monitor their usage.
 :::
 
-## Pourquoi gérer les comptes personnels ?
+## Why manage staff accounts?
 
-La gestion des administrateurs est essentielle pour :
+Administrator management is essential for:
 
-* **Sécuriser l'accès** à l'interface d'administration
-* **Répartir les responsabilités** selon les rôles et compétences
-* **Tracer les actions** pour l'audit et la responsabilité
-* **Limiter les risques** liés aux comptes compromis
-* **Faciliter la collaboration** en équipe avec des accès appropriés
+* **Securing access** to the administration interface
+* **Distributing responsibilities** according to roles and skills
+* **Tracking actions** for audit and accountability
+* **Limiting risks** related to compromised accounts
+* **Facilitating collaboration** in teams with appropriate access
 
-:::tip Astuce
-C'est comme gérer les accès à un coffre-fort 🔐 — chaque personne doit avoir exactement les droits dont elle a besoin, ni plus, ni moins.
+:::tip Tip
+It's like managing access to a safe 🔐 — each person should have exactly the rights they need, no more, no less.
 :::
 
-## Création d'un compte personnel
+## Creating a Staff Account
 
-### Processus de création
+### Creation Process
 
-Pour ajouter un nouveau membre à votre équipe administrative :
+To add a new member to your administrative team:
 
-1. Cliquez sur le bouton **"Créer"** en haut à droite
-2. Remplissez le formulaire de création
-3. Définissez les permissions appropriées
-4. Validez la création du compte
+1. Click the **"Create"** button in the top right
+2. Fill in the creation form
+3. Define appropriate permissions
+4. Validate the account creation
 
-![Formulaire de création d'un compte personnel](/img/next_gen/settings/security/staffs/staff_create.png)
+![Staff account creation form](/img/next_gen/settings/security/staffs/staff_create.png)
 
-### Informations du compte
+### Account Information
 
-**Nom d'utilisateur** | (texte unique)
-Identifiant unique pour ce compte administrateur.
-Utilisez une convention claire (prénom.nom, initiales, etc.).
+**Username** | (unique text)
+Unique identifier for this administrator account.
+Use a clear convention (firstname.lastname, initials, etc.).
 
-**Prénom** | (texte)
-Prénom de la personne pour identification et personnalisation.
+**First Name** | (text)
+Person's first name for identification and personalization.
 
-**Nom de famille** | (texte)
-Nom de famille pour identification complète.
+**Last Name** | (text)
+Last name for complete identification.
 
-**Adresse e-mail** | (e-mail unique)
-Adresse e-mail professionnelle utilisée pour :
+**Email Address** | (unique email)
+Professional email address used for:
 
-- L'authentification au système
-- Les notifications importantes
-- La récupération de mot de passe
+- System authentication
+- Important notifications
+- Password recovery
 
-### Configuration d'accès
+### Access Configuration
 
-**Mot de passe** | (optionnel)
-Définissez un mot de passe initial ou laissez vide pour envoyer un e-mail d'activation.
+**Password** | (optional)
+Set an initial password or leave blank to send an activation email.
 
-- **Mot de passe défini** : L'utilisateur peut se connecter immédiatement
-- **Champ vide** : Un e-mail d'activation sera envoyé
+- **Password defined**: User can log in immediately
+- **Empty field**: An activation email will be sent
 
-**Date d'expiration** | (optionnel)
-Définit une date limite d'utilisation du compte.
+**Expiration Date** | (optional)
+Sets a usage deadline for the account.
 
-- **Vide** : Compte permanent
-- **Date définie** : Accès automatiquement révoqué à cette date
+- **Empty**: Permanent account
+- **Date set**: Access automatically revoked on this date
 
-:::tip Bonnes pratiques
+:::tip Best Practices
 
-- Utilisez des **comptes temporaires** pour les prestataires externes
-- Définissez des **dates d'expiration** pour les stages ou missions courtes
-- **Révisez régulièrement** les dates d'expiration
-  :::
-
-### Personnalisation
-
-**Langue** | (menu déroulant)
-Langue d'affichage de l'interface d'administration pour cet utilisateur.
-
-**Signature** | (texte)
-Signature personnalisée utilisée dans :
-
-- Les réponses aux tickets de support
-- Les communications officielles
-- Les rapports générés
-
-**Rôle** | (menu déroulant)
-Définit les permissions et l'accès de l'utilisateur aux différentes sections.
-
-## Modification d'un compte
-
-### Interface de modification
-
-Accédez aux détails d'un compte pour le modifier :
-
-![Interface de modification d'un compte](/img/next_gen/settings/security/staffs/staff_show.png)
-
-### Modifications courantes
-
-- **Changement de rôle** : Promotion ou limitation des accès
-- **Mise à jour des informations** : Changement d'e-mail, nom, etc.
-- **Extension d'expiration** : Prolongation d'accès temporaire
-- **Réinitialisation de mot de passe** : En cas d'oubli ou de compromission
-
-:::warning Sécurité
-Toute modification d'un compte administrateur est **tracée et horodatée**. Ces actions sont visibles dans l'historique des actions.
+- Use **temporary accounts** for external contractors
+- Set **expiration dates** for internships or short-term assignments
+- **Regularly review** expiration dates
 :::
 
-## Surveillance et audit
+### Customization
 
-### Historique des connexions
+**Language** | (dropdown menu)
+Display language for the administration interface for this user.
 
-Chaque compte dispose d'un historique détaillé des connexions :
+**Signature** | (text)
+Custom signature used in:
 
-![Historique des connexions](/img/next_gen/settings/security/staffs/staff_log.png)
+- Support ticket responses
+- Official communications
+- Generated reports
 
-**Informations trackées** :
-- Date et heure de connexion
-- Adresse IP d'origine
-- Navigateur et système d'exploitation
-- Durée de la session
-- Tentatives d'échec
+**Role** | (dropdown menu)
+Defines the user's permissions and access to different sections.
 
-### Historique des actions
+## Modifying an Account
 
-Surveillez toutes les actions effectuées par chaque administrateur :
+### Modification Interface
 
-![Historique des actions](/img/next_gen/settings/security/staffs/staff_actionlog.png)
+Access an account's details to modify it:
 
-**Actions enregistrées** :
-- Modifications de configuration
-- Gestion des clients et services
-- Actions sur les factures
-- Modifications de la boutique
-- Accès aux données sensibles
+![Account modification interface](/img/next_gen/settings/security/staffs/staff_show.png)
 
-### Analyse des comportements
+### Common Modifications
 
-Utilisez ces données pour :
-- **Détecter les activités suspectes**
-- **Auditer les modifications importantes**
-- **Identifier les besoins de formation**
-- **Optimiser les processus d'équipe**
+- **Role change**: Promotion or limitation of access
+- **Information update**: Email change, name, etc.
+- **Expiration extension**: Extending temporary access
+- **Password reset**: In case of forgotten or compromised password
 
-## Gestion des mots de passe
-
-### Réinitialisation par e-mail
-
-**Méthode recommandée** pour la récupération :
-
-1. Sur la page de connexion admin, cliquez **"Mot de passe oublié"**
-2. Saisissez l'adresse e-mail du compte
-3. Un lien de réinitialisation est envoyé par e-mail
-4. L'utilisateur clique sur le lien et définit un nouveau mot de passe
-
-**Avantages** :
-- Processus sécurisé et automatisé
-- Pas d'intervention manuelle nécessaire
-- Respect des politiques de sécurité
-
-### Réinitialisation manuelle (urgence)
-
-En cas de problème avec la méthode e-mail :
-
-:::warning Procédure d'urgence uniquement
-Cette méthode nécessite un accès direct à la base de données et doit être utilisée uniquement en cas d'urgence absolue.
+:::warning Security
+Any modification to an administrator account is **tracked and timestamped**. These actions are visible in the action history.
 :::
 
-**Étapes** :
-1. Accédez à PHPMyAdmin (voir section [Base de données](./database))
-2. Générez un mot de passe fort sur [motdepasse.xyz](https://www.motdepasse.xyz/)
-3. Créez le hash bcrypt sur [bcrypt.fr](https://www.bcrypt.fr/)
-4. Exécutez : `UPDATE admins SET password = 'hash_généré' WHERE email = 'email@admin.com'`
-5. Informez l'administrateur du nouveau mot de passe
+## Monitoring and Audit
 
-## Suppression de comptes
+### Login History
 
-### Procédure de suppression
+Each account has a detailed login history:
 
-Pour supprimer définitivement un compte :
+![Login history](/img/next_gen/settings/security/staffs/staff_log.png)
 
-1. Cliquez sur le bouton rouge **"Supprimer"** dans la liste
-2. Confirmez l'action dans la boîte de dialogue
-3. Le compte est immédiatement désactivé
+**Tracked information**:
+- Login date and time
+- Source IP address
+- Browser and operating system
+- Session duration
+- Failed attempts
 
-### Conséquences de la suppression
+### Action History
 
-- **Accès révoqué** : Impossible de se connecter
-- **Sessions fermées** : Déconnexion immédiate si connecté
-- **Historique conservé** : Les actions passées restent tracées
-- **Irréversible** : Le compte ne peut pas être restauré
+Monitor all actions performed by each administrator:
 
-:::tip Alternative à la suppression
-Plutôt que de supprimer, considérez :
+![Action history](/img/next_gen/settings/security/staffs/staff_actionlog.png)
 
-- **Désactivation temporaire** avec date d'expiration passée
-- **Changement de rôle** vers un niveau sans permissions
-- **Archivage** pour conserver l'historique
-  :::
+**Recorded actions**:
+- Configuration changes
+- Customer and service management
+- Invoice actions
+- Store modifications
+- Access to sensitive data
 
-:::tip À retenir
+### Behavior Analysis
 
-La gestion des comptes administrateurs est un équilibre entre sécurité et praticité. Plus vous êtes rigoureux dans la gestion des accès, plus votre plateforme est sécurisée. Surveillez, auditez et adaptez régulièrement selon l'évolution de votre équipe.
+Use this data to:
+- **Detect suspicious activities**
+- **Audit important changes**
+- **Identify training needs**
+- **Optimize team processes**
+
+## Password Management
+
+### Email Reset
+
+**Recommended method** for recovery:
+
+1. On the admin login page, click **"Forgot Password"**
+2. Enter the account's email address
+3. A reset link is sent by email
+4. The user clicks the link and sets a new password
+
+**Advantages**:
+- Secure and automated process
+- No manual intervention required
+- Compliance with security policies
+
+### Manual Reset (Emergency)
+
+In case of problems with the email method:
+
+:::warning Emergency Procedure Only
+This method requires direct database access and should only be used in cases of absolute emergency.
+:::
+
+**Steps**:
+1. Access PHPMyAdmin (see [Database](./database) section)
+2. Generate a strong password at [motdepasse.xyz](https://www.motdepasse.xyz/)
+3. Create the bcrypt hash at [bcrypt.fr](https://www.bcrypt.fr/)
+4. Execute: `UPDATE admins SET password = 'generated_hash' WHERE email = 'email@admin.com'`
+5. Inform the administrator of the new password
+
+## Account Deletion
+
+### Deletion Procedure
+
+To permanently delete an account:
+
+1. Click the red **"Delete"** button in the list
+2. Confirm the action in the dialog box
+3. The account is immediately deactivated
+
+### Consequences of Deletion
+
+- **Access revoked**: Cannot log in
+- **Sessions closed**: Immediate disconnection if logged in
+- **History preserved**: Past actions remain tracked
+- **Irreversible**: The account cannot be restored
+
+:::tip Alternative to Deletion
+Rather than deleting, consider:
+
+- **Temporary deactivation** with a past expiration date
+- **Role change** to a level without permissions
+- **Archiving** to preserve history
+:::
+
+:::tip Remember
+
+Staff account management is a balance between security and practicality. The more rigorous you are in access management, the more secure your platform is. Monitor, audit, and regularly adapt according to your team's evolution.
 :::

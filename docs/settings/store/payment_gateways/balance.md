@@ -1,118 +1,121 @@
-# Balance (Crédit boutique)
+---
+translated: true
+---
+# Balance (Store Credit)
 
-La passerelle **Balance** dans **CLIENTXCMS** correspond au **système de crédit boutique interne** qui permet à vos clients d'utiliser un solde prépayé pour régler leurs commandes.
-L'objectif est clair : **simplifier les paiements récurrents, fidéliser votre clientèle et offrir une expérience de paiement instantanée**. Un système de balance bien configuré permet à vos clients de **régler leurs achats en un clic** tout en vous garantissant un paiement sécurisé.
+The **Balance** gateway in **CLIENTXCMS** corresponds to the **internal store credit system** that allows your customers to use a prepaid balance to pay for their orders.
+The objective is clear: **simplify recurring payments, build customer loyalty, and offer an instant payment experience**. A well-configured balance system allows your customers to **pay for their purchases in one click** while guaranteeing you a secure payment.
 
-La passerelle Balance peut être entièrement personnalisée : nom d'affichage, montant minimum, conditions d'utilisation, etc.
+The Balance gateway can be fully customized: display name, minimum amount, usage conditions, etc.
 
-Vous pouvez configurer la passerelle Balance depuis :
+You can configure the Balance gateway from:
 
-`Paramètres` > `Paramètres de la boutique` > `Balance`
+`Settings` > `Store Settings` > `Balance`
 
-![Configuration de la passerelle Balance](/img/next_gen/settings/store/payment_gateways/balance/config.png)
+![Balance gateway configuration](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 
-:::tip Astuce
-Le système de **crédit boutique** encourage les clients à prépayer leurs services, ce qui améliore votre trésorerie et réduit les risques d'impayés.
+:::tip Tip
+The **store credit** system encourages customers to prepay their services, which improves your cash flow and reduces the risk of unpaid bills.
 :::
 
-## Pourquoi utiliser le système Balance ?
+## Why use the Balance system?
 
-La passerelle Balance est un outil puissant pour optimiser la gestion des paiements de votre boutique. Elle représente concrètement un portefeuille virtuel que vos clients peuvent alimenter et utiliser pour leurs achats.
+The Balance gateway is a powerful tool for optimizing your store's payment management. It concretely represents a virtual wallet that your customers can fund and use for their purchases.
 
-Mettre en place un système de balance vous permet de :
+Implementing a balance system allows you to:
 
-* Simplifier le processus de paiement pour les clients réguliers
-* Réduire les frais de transaction sur les petits montants
-* Améliorer votre trésorerie avec des paiements anticipés
-* Fidéliser votre clientèle avec un système de crédit pratique
-* Éviter les problèmes de paiement récurrent
+* Simplify the payment process for regular customers
+* Reduce transaction fees on small amounts
+* Improve your cash flow with advance payments
+* Build customer loyalty with a convenient credit system
+* Avoid recurring payment problems
 
-:::tip Astuce
-C'est comme avoir un **porte-monnaie numérique dédié** à votre boutique 💳 — vos clients rechargent leur solde quand ils le souhaitent et payent instantanément leurs services.
+:::tip Tip
+It's like having a **dedicated digital wallet** for your store 💳 — your customers top up their balance whenever they want and instantly pay for their services.
 :::
 
-## Fonctionnement du système
+## System Operation
 
-### Processus de paiement
+### Payment Process
 
-Le paiement par Balance suit un processus simplifié :
+Payment by Balance follows a simplified process:
 
-1. **Sélection du moyen de paiement** : Le client choisit "Balance" lors du checkout
-2. **Vérification du solde** : Le système vérifie que le solde est suffisant
-3. **Déduction automatique** : Le montant est automatiquement déduit du solde
-4. **Validation instantanée** : La commande est immédiatement validée
-5. **Confirmation** : Le client reçoit sa confirmation de paiement
-6. **Livraison** : Les services sont provisionnés automatiquement
+1. **Payment Method Selection**: The customer chooses "Balance" during checkout
+2. **Balance Verification**: The system checks that the balance is sufficient
+3. **Automatic Deduction**: The amount is automatically deducted from the balance
+4. **Instant Validation**: The order is immediately validated
+5. **Confirmation**: The customer receives their payment confirmation
+6. **Delivery**: Services are provisioned automatically
 
-### Avantages pour les clients
+### Customer Advantages
 
-| Avantage                       | Description                                         |
+| Advantage                       | Description                                         |
 | ------------------------------ | --------------------------------------------------- |
-| **Paiement instantané** | Pas d'attente de validation bancaire                |
-| **Sécurité maximale**  | Pas de saisie de données bancaires à chaque achat |
-| **Contrôle du budget**  | Gestion claire des dépenses prépayées            |
-| **Simplicité d'usage**  | Paiement en un clic                                 |
+| **Instant Payment**            | No waiting for bank validation                      |
+| **Maximum Security**           | No bank data entry for each purchase                |
+| **Budget Control**             | Clear management of prepaid expenses                |
+| **Ease of Use**                | One-click payment                                   |
 
-## Configuration de la passerelle
+## Gateway Configuration
 
-### Paramètres recommandés
+### Recommended Parameters
 
-**Nom de la passerelle** | (texte)
+**Gateway Name** | (text)
 
-Nous recommandons d'utiliser un nom explicite comme "Crédit boutique" ou "Solde compte" pour que vos clients comprennent immédiatement de quoi il s'agit.
+We recommend using an explicit name like "Store Credit" or "Account Balance" so your customers immediately understand what it is.
 
-**Montant minimal** | (montant)
+**Minimum Amount** | (amount)
 
-Il est **fortement conseillé de configurer le montant minimal à 0€** pour permettre l'utilisation du solde sur tous les montants, même les plus petits.
+It is **strongly recommended to configure the minimum amount to €0** to allow balance use on all amounts, even the smallest.
 
-**Statut** | (menu déroulant)
+**Status** | (dropdown menu)
 
-Gardez la passerelle en statut **"Actif"** pour que tous vos clients puissent l'utiliser.
+Keep the gateway on **"Active"** status so all your customers can use it.
 
-:::info Configuration optimale
-La configuration idéale pour la Balance est :
+:::info Optimal Configuration
+The ideal configuration for Balance is:
 
-- **Nom** : "Crédit boutique" ou "Solde compte"
-- **Montant minimal** : 0€
-- **Statut** : Actif
-  :::
+- **Name**: "Store Credit" or "Account Balance"
+- **Minimum Amount**: €0
+- **Status**: Active
+:::
 
-### Interface de configuration
+### Configuration Interface
 
-![Configuration complète de la Balance](/img/next_gen/settings/store/payment_gateways/balance/config.png)
+![Complete Balance configuration](/img/next_gen/settings/store/payment_gateways/balance/config.png)
 
-Cette interface vous permet de personnaliser entièrement l'affichage et le comportement de la passerelle Balance.
+This interface allows you to fully customize the display and behavior of the Balance gateway.
 
-## Gestion des soldes clients
+## Customer Balance Management
 
-### Alimenter le solde d'un client
+### Adding Credit to a Customer's Balance
 
-Pour ajouter du crédit au solde d'un client :
+To add credit to a customer's balance:
 
-1. Rendez-vous dans le menu **« Clients »**
-2. Sélectionnez le client concerné
-3. Modifiez le champ **« Solde »** sur la page du client
-4. Cliquez sur **« Enregistrer »** pour valider
+1. Go to the **"Customers"** menu
+2. Select the relevant customer
+3. Modify the **"Balance"** field on the customer page
+4. Click **"Save"** to validate
 
-### Méthodes d'alimentation
+### Funding Methods
 
-Le solde client peut être alimenté de plusieurs façons :
+Customer balance can be funded in several ways:
 
-| Méthode                      | Description                                             |
-| ----------------------------- | ------------------------------------------------------- |
-| **Ajout manuel**        | L'administrateur crédite directement le compte         |
-| **Addon Ajout de fond** | Les clients peuvent recharger leur solde eux-mêmes     |
-| **Addon carte cadeaux**      | Permet aux clients d'utiliser des cartes cadeaux pour créditer leur solde              |
+| Method                      | Description                                             |
+| --------------------------- | ------------------------------------------------------- |
+| **Manual Addition**         | The administrator directly credits the account          |
+| **Add Funds Addon**         | Customers can top up their balance themselves           |
+| **Gift Cards Addon**        | Allows customers to use gift cards to credit their balance |
 
-:::tip Conseil
-Utilisez l'**addon "Ajout de fond"** pour permettre aux clients de recharger leur solde de manière autonome. Cela réduit votre charge administrative.
+:::tip Advice
+Use the **"Add Funds" addon** to allow customers to top up their balance independently. This reduces your administrative workload.
 :::
 
 :::warning Important
 
-Assurez-vous que vos **conditions générales de vente** mentionnent clairement les règles d'utilisation du crédit boutique (durée de validité, remboursement, etc.).
+Make sure your **terms of service** clearly mention the rules for using store credit (validity period, refunds, etc.).
 
 :::
-:::tip À retenir
-La passerelle Balance est un **outil de fidélisation et d'optimisation** majeur. Elle simplifie l'expérience client tout en améliorant votre gestion financière. Encouragez son utilisation !
+:::tip Remember
+The Balance gateway is a **major loyalty and optimization tool**. It simplifies the customer experience while improving your financial management. Encourage its use!
 :::

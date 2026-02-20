@@ -1,46 +1,51 @@
 ---
 sidebar_position: 2
+translated: true
 ---
-# Création d'un thème
-Lorsque vous créez un thème, il est fortement recommandé d'activer le débogage et l'environment de développement pour voir les erreurs de votre thème. Pour activer le débogage, vous devez ajouter la clé `APP_DEBUG=true` et `APP_ENV=local` dans le fichier `.env` de votre installation.
+# Creating a Theme
+When creating a theme, it is strongly recommended to enable debugging and the development environment to see errors in your theme. To enable debugging, you must add the keys `APP_DEBUG=true` and `APP_ENV=local` in the `.env` file of your installation.
 ```env
 APP_DEBUG=true
 APP_ENV=local
 ```
-## Structure d'un thème
+## Theme Structure
 ```bash
 resources/themes/
 └── theme_name/
     ├── assets/
     │   ├── css/
-    │   │   └── app.css <!-- Votre fichier css principal -->
+    │   │   └── app.css <!-- Your main css file -->
     │   ├── js/
-    │   │   └── app.js <!-- Votre fichier js principal -->
+    │   │   └── app.js <!-- Your main js file -->
     │   └── images/
     ├── config/
     │   └── config.json
     │   └── config.blade.php
-    │   └── rules.blade.php
+    │   └── rules.php
+    ├── database/
+    │   └── seeders/
+    │       └── ThemeNameSeeder.php
+    │   └── db_settings.php
     ├── lang/
     │   └── fr/
     │       └── messages.php
     ├── views/
     │   ├── layouts/
-    │   │   └── auth.blade.php <!-- Layout pour les pages d'authentification -->
-    │   │   └── client.blade.php <!-- Layout pour les pages client -->
-    │   │   └── front.blade.php <!-- Layout pour les pages front -->
+    │   │   └── auth.blade.php <!-- Layout for authentication pages -->
+    │   │   └── client.blade.php <!-- Layout for client pages -->
+    │   │   └── front.blade.php <!-- Layout for front pages -->
     └── theme.json
     └── menus.json
 ```
-## Commande de création d'un thème
-Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI.
+## Theme Creation Command
+To create a theme, you can use the `clientxcms:create-theme` command from the artisan CLI.
 ```bash
 php artisan clientxcms:create-theme
 ```
-La commande vous demandera le nom du thème et créera la structure du thème pour vous selon vos réponses.
-![Commande clientxcms:create-theme](/img/next_gen/developpers/themes/cli.png)
-## Fichier du thème
-Le fichier `theme.json` est le fichier de configuration du thème. Il contient les informations du thème.
+The command will ask you for the theme name and will create the theme structure for you based on your answers.
+![clientxcms:create-theme command](/img/next_gen/developpers/themes/cli.png)
+## Theme File
+The `theme.json` file is the theme configuration file. It contains the theme information.
 ```json
 {
   "uuid": "example",
@@ -56,33 +61,37 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
     "multi_footer_columns": true
   },
   "default_theme_mode": "dark",
-  "demo": "https://demo.clientxcms.com"
+  "demo": "https://demo.clientxcms.com",
+  "seeder": {
+    "file": "database/seeders/ExampleSeeder.php",
+    "class": "Database\\Seeders\\ExampleSeeder"
+  }
 }
 ```
-### Ajouter une image de prévisualisation
-Vous pouvez ajouter une image de prévisualisation pour votre thème en ajoutant un fichier `screenshot.png` dans le dossier `resources/themes/theme_name/`.
+### Adding a Preview Image
+You can add a preview image for your theme by adding a `screenshot.png` file in the `resources/themes/theme_name/` folder.
 
-## Technologie
-Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/11.x/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
-Vous êtes libre d'utiliser les technologies que vous souhaitez pour votre thème en termes de CSS.
+## Technology
+We use the [Blade](https://laravel.com/docs/11.x/blade) template engine for views. For assets, we use [vite](https://vitejs.dev/) with [preline](https://preline.io/) based on [tailwindcss](https://tailwindcss.com/).
+You are free to use whatever technologies you want for your theme in terms of CSS.
 
-Vous pouvez lancez la commande suivante pour compiler les assets de votre thème.
+You can run the following command to compile your theme's assets.
 ```bash
 npm run dev
 ```
 
-## Vue du thème
-Les vues du thème permettent de personnaliser l'apparence de votre site web. Vous pouvez modifier les vues du thème en modifiant les fichiers dans le dossier `resources/themes/theme_name/views/` de votre installation.
-Nous conseillons de ne pas modifier les fichiers du thème par défaut. Vous pouvez l'écraser en créant un thème enfant.
+## Theme Views
+Theme views allow you to customize the appearance of your website. You can modify theme views by editing files in the `resources/themes/theme_name/views/` folder of your installation.
+We recommend not modifying the default theme files. You can override them by creating a child theme.
 
-Si vous n'êtes pas habitué à Blade, vous pouvez consulter la [documentation](https://laravel.com/docs/11.x/blade) de Blade pour vous adapter à leur syntaxe de condition, boucle, etc.
+If you are not familiar with Blade, you can consult the Blade [documentation](https://laravel.com/docs/11.x/blade) to learn their syntax for conditions, loops, etc.
 :::info Information
-Si vous avez pas implémenté une vue dans votre thème, le thème par défaut sera utilisé.
+If you haven't implemented a view in your theme, the default theme will be used.
 :::
 
-### Gestions des assets
-Les assets sont géré par [vite](https://vitejs.dev/). Vous pouvez ajouter vos fichiers css et js dans le dossier `resources/themes/theme_name/css/` et `resources/themes/theme_name/js/` de votre installation.
-Vous pouvez reprendre l'exemple suivant pour ajouter vos fichiers css.
+### Asset Management
+Assets are managed by [vite](https://vitejs.dev/). You can add your css and js files in the `resources/themes/theme_name/css/` and `resources/themes/theme_name/js/` folders of your installation.
+You can use the following example to add your css files.
 ```css
 @tailwind base;
 @tailwind components;
@@ -91,7 +100,7 @@ Vous pouvez reprendre l'exemple suivant pour ajouter vos fichiers css.
 @import 'flatpickr/dist/flatpickr.min.css';
 ```
 
-Vous pouvez rajouter vos importations de fichiers CSS et Javascript dans vos fichiers blade avec la function @vite() dans votre header par exemplecomme ci-dessous.
+You can add your CSS and Javascript file imports in your blade files with the @vite() function in your header for example as shown below.
 ```blade
 @vite('resources/themes/yourtheme/css/app.scss')
 ```

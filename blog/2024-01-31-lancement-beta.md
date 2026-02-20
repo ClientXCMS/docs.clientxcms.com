@@ -1,29 +1,30 @@
 ---
 slug: lancement-beta-clientxcms-nextgen
-title: Lancement de la bêta de ClientXCMS NextGen  
+title: ClientXCMS NextGen Beta Launch
 authors: [martindev]
-tags: [clientxcms, beta, nextgen, release]  
+tags: [clientxcms, beta, nextgen, release]
+translated: true
 ---
 
-# Annonce lancement de la bêta de ClientXCMS NextGen 🚀✨
+# ClientXCMS NextGen Beta Launch Announcement 🚀✨
 
-Nous sommes ravis de vous annoncer la sortie tant attendue de CLIENTXCMS NextGen, une refonte moderne et innovante du CMS conçu spécialement pour les hébergeurs faite en moins de 2 mois de développement. 
+We are pleased to announce the long-awaited release of CLIENTXCMS NextGen, a modern and innovative redesign of the CMS designed specifically for hosting providers, made in less than 2 months of development.
 
-![Lancement de la bêta de ClientXCMS NextGen](/img/blog/lancement-beta/image.png)
+![ClientXCMS NextGen Beta Launch](/img/blog/lancement-beta/image.png)
 
 <!-- truncate -->
-Informations:
+Information:
 
-- ✨ Licence d'essai : Pour nos utilisateurs de la v1, bénéficiez d'une licence d'essai en plus de celle de la v1 pour découvrir toutes les nouvelles fonctionnalités de la NextGen.
+- ✨ Trial license: For our v1 users, benefit from a trial license in addition to the v1 license to discover all the new features of NextGen.
 
-- 🚀 Installation en un clic : Simplifiez votre expérience avec une installation rapide et facile pour ne pas perdre de temps. Par la suite, vous pourrez utiliser votre propre instance ou rester dans le cloud.
+- 🚀 One-click installation: Simplify your experience with quick and easy installation to save time. Subsequently, you can use your own instance or stay in the cloud.
 
-- 🛠️ Compatibilité Pterodactyl : Exclusivement disponible pour Pterodactyl dans un premier temps. Pour ainsi étendre la compatibilité à Proxmox, Plesk, Pterobox, CTXReselling, Virtualizor et cPanel dans l'ordre cité.
+- 🛠️ Pterodactyl compatibility: Exclusively available for Pterodactyl initially. To then extend compatibility to Proxmox, Plesk, Pterobox, CTXReselling, Virtualizor, and cPanel in the order mentioned.
 
-- 📦 Nouvelle Terminologie : Les "modules" deviennent désormais des "extensions" pour une meilleure compréhension. Vous trouverez quatre types d'extensions : thèmes, composants (exemples : FAQ, annonce, avis, support WebHook), modules de livraison et addons 
+- 📦 New terminology: "Modules" are now called "extensions" for better understanding. You will find four types of extensions: themes, components (examples: FAQ, announcement, reviews, WebHook support), delivery modules, and addons.
 
-🔄 Migration de vos Données : Nous allons faire un programme pour  migrer vos données, y compris les services de vos clients sous Pterodactyl, les comptes clients, les factures, les produits et les groupes.- 
+🔄 Data migration: We will create a program to migrate your data, including your customers' Pterodactyl services, customer accounts, invoices, products, and groups.
 
-Joignez-vous à nous pour cette nouvelle aventure avec ClientXCMS NextGen et découvrez comment cette version repensée peut transformer votre expérience d'hébergement.
+Join us for this new adventure with ClientXCMS NextGen and discover how this redesigned version can transform your hosting experience.
 
-*Restez à l'écoute pour plus d'informations sur cette nouvelle version*
+*Stay tuned for more information on this new version*

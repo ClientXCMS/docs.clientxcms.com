@@ -1,0 +1,1350 @@
+# Sprint Status - ClientXCMS i18n Documentation (Parallel Edition)
+# Generated: 2026-01-24
+# Project: docs.clientxcms.com
+# Branch: feat/i18n
+# Remote: alexwrite/docs.clientxcms.com
+
+# WORKFLOW FOR PARALLEL INSTANCES:
+# ================================
+# 1. Read this file, find first "ready-for-dev" story with owner: null
+# 2. Claim it by setting owner: "<your-instance-id>" and status: in-progress
+# 3. Commit claim: git commit -m "claim: <story-id>"
+# 4. git push (with pull --rebase if needed)
+# 5. Execute translation: FR -> EN in docs/, keep FR in i18n/fr/
+# 6. Run /code-review
+# 7. Commit translation: git commit -m "docs(i18n): translate <filename>"
+# 8. Update status: done, push
+# 9. Loop to step 1
+
+# TRANSLATION RULES:
+# ==================
+# - Source: docs/<path>.md (currently FR, translate to EN)
+# - Mirror: i18n/fr/docusaurus-plugin-content-docs/current/<path>.md (keep FR)
+# - Add frontmatter: translated: true
+# - Keep technical terms, variable names, code blocks unchanged
+# - Maintain admonition format (:::tip, :::warning, etc.)
+
+# STATUS DEFINITIONS:
+# ===================
+# ready-for-dev: Available for claiming
+# in-progress: Claimed by an instance
+# review: Translation done, pending review
+# done: Completed and merged
+
+generated: 2026-01-24
+project: docs.clientxcms.com
+branch: feat/i18n
+remote: alexwrite
+
+# ============================================================================
+# COMPLETED EPICS (0-3)
+# ============================================================================
+
+completed_epics:
+  epic-0-setup-infrastructure: done
+  epic-1-mvd-introduction: done
+  epic-2-mvd-installation: done
+  epic-3-mvd-getting-started: done
+
+completed_stories:
+  # Epic 1: Introduction
+  - intro-introduction
+
+  # Epic 2: Installation (8 files)
+  - install-installation
+  - install-requis
+  - install-cloud
+  - install-selfhosted
+  - install-plesk
+  - install-docker
+  - install-ansible
+  - install-upgrade
+
+  # Epic 3: Getting Started (9 files)
+  - gs-getting-started
+  - gs-first-login
+  - gs-personalization
+  - gs-server
+  - gs-products
+  - gs-payments
+  - gs-accounts
+  - gs-service
+  - gs-finish
+
+# ============================================================================
+# ACTIVE STORIES - READY FOR PARALLEL EXECUTION
+# ============================================================================
+
+stories:
+
+  # --------------------------------------------------------------------------
+  # EPIC 4: Settings - Core (6 files)
+  # --------------------------------------------------------------------------
+
+  settings-core-index:
+    file: docs/settings/core/core.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/core.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-core-app:
+    file: docs/settings/core/app.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/app.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-core-mail:
+    file: docs/settings/core/mail.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/mail.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-core-maintenance:
+    file: docs/settings/core/maintenance.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/maintenance.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-core-license:
+    file: docs/settings/core/license.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/license.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-core-locales:
+    file: docs/settings/core/locales.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/core/locales.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  # --------------------------------------------------------------------------
+  # EPIC 4B: Settings - Other sections (35 files)
+  # --------------------------------------------------------------------------
+
+  # Settings index
+  settings-index:
+    file: docs/settings/settings.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/settings.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  # Billing (1 file)
+  settings-billing-index:
+    file: docs/settings/billing/billing.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/billing/billing.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  # Helpdesk (3 files)
+  settings-helpdesk-index:
+    file: docs/settings/helpdesk/helpdesk.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/helpdesk/helpdesk.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-helpdesk-departments:
+    file: docs/settings/helpdesk/departments.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/helpdesk/departments.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-helpdesk-settings:
+    file: docs/settings/helpdesk/helpdesk-settings.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/helpdesk/helpdesk-settings.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  # Personalization (7 files)
+  settings-personalization-index:
+    file: docs/settings/personalization/personalization.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/personalization.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: medium
+
+  settings-personalization-home:
+    file: docs/settings/personalization/home.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/home.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: medium
+
+  settings-personalization-front-menu:
+    file: docs/settings/personalization/front_menu.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/front_menu.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: low
+
+  settings-personalization-bottom-menu:
+    file: docs/settings/personalization/bottom_menu.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/bottom_menu.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: low
+
+  settings-personalization-sections:
+    file: docs/settings/personalization/sections.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/sections.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: low
+
+  settings-personalization-seo:
+    file: docs/settings/personalization/seo.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/seo.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: medium
+
+  settings-personalization-socials:
+    file: docs/settings/personalization/socials.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/personalization/socials.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: low
+
+  # Provisioning (5 files)
+  settings-provisioning-index:
+    file: docs/settings/provisioning/provisioning.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/provisioning.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: high
+
+  settings-provisioning-servers:
+    file: docs/settings/provisioning/servers.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/servers.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: high
+
+  settings-provisioning-services:
+    file: docs/settings/provisioning/services.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/services.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: high
+
+  settings-provisioning-configoptions:
+    file: docs/settings/provisioning/configoptions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/configoptions.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: medium
+
+  settings-provisioning-cancellation:
+    file: docs/settings/provisioning/cancellation_reasons.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/provisioning/cancellation_reasons.md
+    epic: 4
+    status: done
+    owner: worker-2
+    priority: low
+
+  # Security (6 files)
+  settings-security-index:
+    file: docs/settings/security/security.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/security.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-security-settings:
+    file: docs/settings/security/security-setting.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/security-setting.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-security-staffs:
+    file: docs/settings/security/staffs.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/staffs.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-security-database:
+    file: docs/settings/security/database.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/database.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-security-history:
+    file: docs/settings/security/history.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/history.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  settings-security-questions:
+    file: docs/settings/security/security-questions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/security/security-questions.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # Store (12 files)
+  settings-store-index:
+    file: docs/settings/store/store.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/store.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-store-products:
+    file: docs/settings/store/products.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/products.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-store-groupes:
+    file: docs/settings/store/groupes.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/groupes.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-store-coupon:
+    file: docs/settings/store/coupon.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/coupon.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-store-gateways-index:
+    file: docs/settings/store/payment_gateways/payment_gateways.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/payment_gateways.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-store-gateways-stripe:
+    file: docs/settings/store/payment_gateways/stripe.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/stripe.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-store-gateways-paypal:
+    file: docs/settings/store/payment_gateways/paypal.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/paypal.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  settings-store-gateways-paypal-express:
+    file: docs/settings/store/payment_gateways/paypal_express_checkout.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/paypal_express_checkout.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-store-gateways-mollie:
+    file: docs/settings/store/payment_gateways/mollie.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/mollie.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  settings-store-gateways-stancer:
+    file: docs/settings/store/payment_gateways/stancer.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/stancer.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  settings-store-gateways-balance:
+    file: docs/settings/store/payment_gateways/balance.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/balance.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  settings-store-gateways-bank:
+    file: docs/settings/store/payment_gateways/bank_transfert.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/settings/store/payment_gateways/bank_transfert.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 4C: Root docs (3 files)
+  # --------------------------------------------------------------------------
+
+  docs-customers:
+    file: docs/customers.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/customers.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  docs-invoices:
+    file: docs/invoices.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/invoices.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  docs-services:
+    file: docs/services.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/services.md
+    epic: 4
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  # --------------------------------------------------------------------------
+  # EPIC 5: Extensions - Modules (9 files)
+  # --------------------------------------------------------------------------
+
+  ext-modules-index:
+    file: docs/extensions/modules/modules.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/modules.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-modules-pterodactyl:
+    file: docs/extensions/modules/Pterodactyl.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Pterodactyl.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-modules-pelican:
+    file: docs/extensions/modules/Pelican.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Pelican.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-modules-wisp:
+    file: docs/extensions/modules/Wisp.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Wisp.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-modules-pterobox:
+    file: docs/extensions/modules/Pterobox.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Pterobox.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-modules-proxmox:
+    file: docs/extensions/modules/Proxmox.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Proxmox.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-modules-cpanel:
+    file: docs/extensions/modules/cPanel.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/cPanel.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-modules-plesk:
+    file: docs/extensions/modules/Plesk.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/Plesk.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-modules-virtualizor:
+    file: docs/extensions/modules/VirtualizorCloud.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/modules/VirtualizorCloud.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 5: Extensions - Addons (22 files)
+  # --------------------------------------------------------------------------
+
+  ext-index:
+    file: docs/extensions/extensions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/extensions.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-addons-index:
+    file: docs/extensions/addons/addons.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/addons.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-addons-socialauthplus:
+    file: docs/extensions/addons/socialauthplus.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/socialauthplus.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  ext-addons-announcement-bar:
+    file: docs/extensions/addons/announcement_bar.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/announcement_bar.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-customers-reviews:
+    file: docs/extensions/addons/customers_reviews.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/customers_reviews.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-backup:
+    file: docs/extensions/addons/backup.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/backup.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-discordgift:
+    file: docs/extensions/addons/discordgift.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/discordgift.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-discordlink:
+    file: docs/extensions/addons/discordlink.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/discordlink.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-giftcard:
+    file: docs/extensions/addons/giftcard.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/giftcard.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-fund:
+    file: docs/extensions/addons/fund.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/fund.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  ext-addons-reselling:
+    file: docs/extensions/addons/reselling_client.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/reselling_client.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-cloudflare:
+    file: docs/extensions/addons/cloudflaresubdomains.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/cloudflaresubdomains.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-netbox:
+    file: docs/extensions/addons/netbox.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/netbox.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-supportid:
+    file: docs/extensions/addons/supportid.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/supportid.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-free-trial:
+    file: docs/extensions/addons/free_trial.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/free_trial.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-faq:
+    file: docs/extensions/addons/faq.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/faq.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-importation:
+    file: docs/extensions/addons/importation.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/importation.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-pennylane:
+    file: docs/extensions/addons/pennylane.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/pennylane.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-abby:
+    file: docs/extensions/addons/abby.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/abby.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-sitemap:
+    file: docs/extensions/addons/sitemap.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/sitemap.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-purchasealert:
+    file: docs/extensions/addons/purchasealert.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/purchasealert.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-antidouble:
+    file: docs/extensions/addons/antidoublecompte.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/antidoublecompte.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  ext-addons-page:
+    file: docs/extensions/addons/page.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/extensions/addons/page.md
+    epic: 5
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 6: Developers - API & Commands (2 files)
+  # --------------------------------------------------------------------------
+
+  dev-api:
+    file: docs/developpers/api.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/api.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  dev-commands:
+    file: docs/developpers/commands.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/commands.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  # --------------------------------------------------------------------------
+  # EPIC 6: Developers - Extensions (12 files)
+  # --------------------------------------------------------------------------
+
+  dev-ext-index:
+    file: docs/developpers/extensions/extensions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/extensions.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  dev-ext-create:
+    file: docs/developpers/extensions/create.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/create.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  dev-ext-configuration:
+    file: docs/developpers/extensions/configuration.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/configuration.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-database:
+    file: docs/developpers/extensions/database.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/database.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-routes:
+    file: docs/developpers/extensions/routes.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/routes.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-schedules:
+    file: docs/developpers/extensions/schedules.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/schedules.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # Definitions (5 files)
+  dev-ext-def-index:
+    file: docs/developpers/extensions/definitions/definitions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/definitions/definitions.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-def-events:
+    file: docs/developpers/extensions/definitions/events.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/definitions/events.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-def-models:
+    file: docs/developpers/extensions/definitions/models.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/definitions/models.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-def-permissions:
+    file: docs/developpers/extensions/definitions/permissions.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/definitions/permissions.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-def-translations:
+    file: docs/developpers/extensions/definitions/translations.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/definitions/translations.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  # Implementation guides (10 files)
+  dev-ext-impl-index:
+    file: docs/developpers/extensions/implementation_guides/implementation_guides.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/implementation_guides.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-impl-gateway:
+    file: docs/developpers/extensions/implementation_guides/gateway.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/gateway.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-impl-navigation:
+    file: docs/developpers/extensions/implementation_guides/navigation.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/navigation.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-email:
+    file: docs/developpers/extensions/implementation_guides/email.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/email.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-settings:
+    file: docs/developpers/extensions/implementation_guides/settings.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/settings.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-product-index:
+    file: docs/developpers/extensions/implementation_guides/product/product.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/product/product.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-ext-impl-product-config:
+    file: docs/developpers/extensions/implementation_guides/product/configuration.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/product/configuration.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-product-data:
+    file: docs/developpers/extensions/implementation_guides/product/data.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/product/data.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-product-panel:
+    file: docs/developpers/extensions/implementation_guides/product/panel.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/product/panel.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-ext-impl-product-server:
+    file: docs/developpers/extensions/implementation_guides/product/server.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/extensions/implementation_guides/product/server.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 6: Developers - Themes (7 files)
+  # --------------------------------------------------------------------------
+
+  dev-themes-index:
+    file: docs/developpers/themes/themes.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/themes.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  dev-themes-create:
+    file: docs/developpers/themes/create-theme.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/create-theme.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  dev-themes-config:
+    file: docs/developpers/themes/config.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/config.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-themes-forms:
+    file: docs/developpers/themes/forms.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/forms.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-themes-sections:
+    file: docs/developpers/themes/sections.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/sections.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-themes-functions:
+    file: docs/developpers/themes/functions-settings.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/functions-settings.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-themes-snippets:
+    file: docs/developpers/themes/code-snippets.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/themes/code-snippets.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 6: Developers - Software guides (8 files)
+  # --------------------------------------------------------------------------
+
+  dev-software-index:
+    file: docs/developpers/software/software.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/software.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  dev-software-captcha:
+    file: docs/developpers/software/captcha.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/captcha.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-phpmyadmin:
+    file: docs/developpers/software/phpmyadmin.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/phpmyadmin.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-proxmox:
+    file: docs/developpers/software/proxmox.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/proxmox.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-fivem:
+    file: docs/developpers/software/fivem-changer-cle.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/fivem-changer-cle.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-domain-a:
+    file: docs/developpers/software/relier-domain-a.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/relier-domain-a.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-domain-cname:
+    file: docs/developpers/software/relier-domain-cname.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/relier-domain-cname.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  dev-software-migrate-cloud:
+    file: docs/developpers/software/migrate_cloud_to_v2.md
+    i18n: i18n/fr/docusaurus-plugin-content-docs/current/developpers/software/migrate_cloud_to_v2.md
+    epic: 6
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # --------------------------------------------------------------------------
+  # EPIC 7: Blog posts (35 files)
+  # --------------------------------------------------------------------------
+
+  # 2025 Feature articles (priority: high)
+  blog-2025-opensource:
+    file: blog/2025-09-05-lancement-opensource.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-09-05-lancement-opensource.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  blog-2025-ai-support:
+    file: blog/2025-02-26-nouveau-support-ia.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-02-26-nouveau-support-ia.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  blog-2025-partner:
+    file: blog/2025-03-14-nouveau-programme-partenaire.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-03-14-nouveau-programme-partenaire.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  blog-2025-forum:
+    file: blog/2025-07-11-nouveau-forum.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-07-11-nouveau-forum.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-giftcard:
+    file: blog/2025-08-01-lancement-giftcard-discordgift.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-08-01-lancement-giftcard-discordgift.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-reselling:
+    file: blog/2025-07-09-retour-ctxreselling.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-07-09-retour-ctxreselling.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-addons-dec:
+    file: blog/2025-12-15-nouveaux-addons-faq-avis-clients-netbox-supportid.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-12-15-nouveaux-addons-faq-avis-clients-netbox-supportid.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-update-nov:
+    file: blog/2025-11-21-update-clientxcms-novembre-2025.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-11-21-update-clientxcms-novembre-2025.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-mise-opensource:
+    file: blog/2025-05-31-mise-en-opensource.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-05-31-mise-en-opensource.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: high
+
+  blog-2026-new-year:
+    file: blog/2025-12-31-bonne-annee-2026.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-12-31-bonne-annee-2026.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # 2025 Changelogs (priority: medium)
+  blog-2025-v2-14-0:
+    file: blog/2025-02-08-nouvelle-version-2.14.0.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-02-08-nouvelle-version-2.14.0.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2025-v2-14-1:
+    file: blog/2025-02-24-nouvelle-version-2.14.1.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-02-24-nouvelle-version-2.14.1.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-2:
+    file: blog/2025-02-25-nouvelle-version-2.14.2.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-02-25-nouvelle-version-2.14.2.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-3:
+    file: blog/2025-03-18-nouvelle-version-2.14.3.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-03-18-nouvelle-version-2.14.3.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-4:
+    file: blog/2025-04-25-nouvelle-version-2.14.4.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-04-25-nouvelle-version-2.14.4.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-5:
+    file: blog/2025-05-28-nouvelle-version-2.14.5.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-05-28-nouvelle-version-2.14.5.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-6:
+    file: blog/2025-07-02-nouvelle-version-2.14.6.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-07-02-nouvelle-version-2.14.6.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-7:
+    file: blog/2025-07-16-nouvelle-version-2.14.7.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-07-16-nouvelle-version-2.14.7.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-8:
+    file: blog/2025-08-21-nouvelle-version-2.14.8.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-08-21-nouvelle-version-2.14.8.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-9:
+    file: blog/2025-11-20-nouvelle-version-2.14.9.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-11-20-nouvelle-version-2.14.9.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2025-v2-14-10:
+    file: blog/2025-12-15-nouvelle-version-2.14.10.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2025-12-15-nouvelle-version-2.14.10.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # 2024 Strategic articles (priority: medium)
+  blog-2024-beta:
+    file: blog/2024-01-31-lancement-beta.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-01-31-lancement-beta.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2024-proxmox:
+    file: blog/2024-03-18-sortie-du-module-proxmox.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-03-18-sortie-du-module-proxmox.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2024-migration:
+    file: blog/2024-03-24-sortie-outil-migration.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-03-24-sortie-outil-migration.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  blog-2024-website:
+    file: blog/2024-08-03-nouveau-site-internet.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-08-03-nouveau-site-internet.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-virtualizor:
+    file: blog/2024-10-31-retour-de-virtualizorcloud.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-10-31-retour-de-virtualizorcloud.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-addon-page:
+    file: blog/2024-11-18-mise-a-jour-addon-page.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-11-18-mise-a-jour-addon-page.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-fin-v1:
+    file: blog/2024-12-31-fin-clientxcms-v1.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-12-31-fin-clientxcms-v1.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: medium
+
+  # 2024 Changelogs (priority: low)
+  blog-2024-v2-10:
+    file: blog/2024-05-20-nouvelle-version-2.10.0.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-05-20-nouvelle-version-2.10.0.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-v2-11:
+    file: blog/2024-06-11-nouvelle-version-2.11.0.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-06-11-nouvelle-version-2.11.0.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-v2-12:
+    file: blog/2024-07-07-nouvelle-version-2.12.0.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-07-07-nouvelle-version-2.12.0.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2024-v2-13:
+    file: blog/2024-10-20-nouvelle-version-2.13.0.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2024-10-20-nouvelle-version-2.13.0.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  # Older articles (priority: low - optional)
+  blog-2023-discord-sync:
+    file: blog/2023-01-27-fonctionalites-bot-discord-sync.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2023-01-27-fonctionalites-bot-discord-sync.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2023-discord-gift:
+    file: blog/2023-02-23-fonctionalites-cadeau-discord.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2023-02-23-fonctionalites-cadeau-discord.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2023-security-token:
+    file: blog/2023-07-30-adieu-security-token.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2023-07-30-adieu-security-token.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+  blog-2022-nouvelle-docs:
+    file: blog/2022-08-24-nouvelle-docs.md
+    i18n: i18n/fr/docusaurus-plugin-content-blog/2022-08-24-nouvelle-docs.md
+    epic: 7
+    status: ready-for-dev
+    owner: null
+    priority: low
+
+# ============================================================================
+# STATISTICS
+# ============================================================================
+
+stats:
+  total_stories: 132
+  completed: 30
+  remaining: 102
+  by_epic:
+    epic-4-settings: 44
+    epic-5-extensions: 32
+    epic-6-developers: 38
+    epic-7-blog: 35
+  by_priority:
+    high: 35
+    medium: 40
+    low: 57
