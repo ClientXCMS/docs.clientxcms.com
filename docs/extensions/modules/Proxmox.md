@@ -297,6 +297,6 @@ If no IP is found, this error is returned.
 | `proxmox:cleanup-console-users`  | Cleans up Proxmox console users.                                 | -          |
 
 ### Support NoVNC
-To support noVNC, you must create a custom role in Proxmox with the `VM.Console` permission named "CustomerPanel".
+To support noVNC, you must create a custom role in Proxmox with the `VM.Console` permission named "PanelCustomer".
 
 You can define in the Proxmox server metadata on ClientXCMS the key `proxmox_url` with the value `proxmox.example.com` if you use a local proxmox to indicate the URL of the proxmox.

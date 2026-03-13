@@ -296,4 +296,4 @@ Si aucune IP n'est trouvée. Cette erreur est renvoyée.
 | `proxmox:cleanup-console-users`       | Nettoie les utilisateurs de la console Proxmox.                             | -          |
 
 ### Support NoVNC
-Pour supporter le noVNC, vous devez créer un rôle personnalisé dans Proxmox avec la permission `VM.Console` avec le nom "CustomerPanel".
+Pour supporter le noVNC, vous devez créer un rôle personnalisé dans Proxmox avec la permission `VM.Console` avec le nom "PanelCustomer".
