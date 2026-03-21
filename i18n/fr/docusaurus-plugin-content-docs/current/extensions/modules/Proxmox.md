@@ -297,3 +297,7 @@ Si aucune IP n'est trouvée. Cette erreur est renvoyée.
 
 ### Support NoVNC
 Pour supporter le noVNC, vous devez créer un rôle personnalisé dans Proxmox avec la permission `VM.Console` avec le nom "PanelCustomer".
+Vous pouvez définir dans les métadonnées du serveur Proxmox sur ClientXCMS la clé `proxmox_url` avec la valeur `proxmox.example.com` si vous utilisez un proxmox local pour indiquer l'URL du proxmox.
+
+### Supporter les sauvegardes
+Pour supporter les sauvegardes, vous devez définir dans les métadonnées du serveur Proxmox sur ClientXCMS la clé `proxmox_backup_storage` avec la valeur du stockage de sauvegarde à utiliser pour les VPS. Par exemple, si votre stockage de sauvegarde s'appelle "backup", vous devez définir `proxmox_backup_storage` avec la valeur `backup`. Cela permettra à ClientXCMS de savoir quel stockage utiliser pour les sauvegardes des VPS. 
