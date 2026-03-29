@@ -32,11 +32,6 @@ Les plans correspondants sont disponibles sur la page suivante :
 - **Espace disque** : minimum **25 Go** requis
 - **Mémoire vive (RAM)** : minimum **2 Go** (4 Go recommandés)
 
-:::info CTXHosting
-Il est possible de louer une machine virtuelle **préconfigurée et optimisée** pour ClientXCMS.  
-Nous vous recommandons de vous tourner vers notre projet [CTXHosting](https://ctxhosting.fr).
-:::
-
 
 ### PHP
 

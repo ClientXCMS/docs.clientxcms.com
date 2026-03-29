@@ -5,7 +5,7 @@ translated: true
 
 # SocialAuth+
 
-The SocialAuth+ extension makes it easy to connect with OAuth2 for the following platforms: [Google](#google), [Discord](#discord), [GitHub](#github) and [Facebook](#facebook).
+The SocialAuth+ extension makes it easy to connect with OAuth2 for the following platforms: [Google](#google), [Discord](#discord), [GitHub](#github), [Facebook](#facebook), [Microsoft](#microsoft), [Minecraft](#minecraft), [Twitch](#twitch) and [ClientXCMS](#clientxcms).
 > Make it easier for your potential customers to access your platform with SocialAuth+. This solution uses OAuth+ technology for fast and secure login. Your users can register and log in with one click via their accounts, without worrying about losing their password. Simplify their user experience and increase your conversion rate with this advanced authentication extension.
 
 
@@ -43,6 +43,10 @@ It is generally formatted like this: ``https://your.domain.com/auth/<platform_na
 - discord
 - facebook
 - github
+- microsoft
+- minecraft
+- twitch
+- clientxcms
 
 ## Obtaining OAuth2 Authentication Keys
 
@@ -199,6 +203,92 @@ You will then have the "Client ID" and "Client Secret" keys for your application
 **10.** Publish the application to make it public: In the Facebook application management panel menu, in the "**Publish**" category, click on the "**Go live**" button to launch the OAuth2 application in production mode so that it can be used by your users.
 
 ![Image: Facebook Config - Publish the application](/img/next_gen/extensions/addons/socialauth/SA+_Facebook9.png)
+
+### Microsoft
+
+**1.** Go to the [Microsoft Entra admin center](https://entra.microsoft.com/) and sign in with your Microsoft account.
+
+**2.** In the left navigation menu, go to **Identity** > **Applications** > **App registrations**.
+
+**3.** Click on **"+ New registration"** at the top.
+
+**4.** Fill in the required information:
+- **Name:** Enter a display name for your application (e.g., the name of your site).
+- **Supported account types:** Select **"Accounts in any organizational directory and personal Microsoft accounts"** to allow all Microsoft users to authenticate.
+- **Redirect URI:** Select **"Web"** as the platform, then enter the [redirect URI given by ClientXCMS in the configuration page](#redirect-uri).
+
+**5.** Click on the **"Register"** button to create the application.
+
+**6.** You will be redirected to the **Overview** page of your application. Copy the **"Application (client) ID"** — this is your **Client ID**.
+
+**7.** In the left menu, click on **"Certificates & secrets"**.
+
+**8.** Under the **"Client secrets"** tab, click on **"+ New client secret"**.
+
+**9.** Enter a description (e.g., "ClientXCMS OAuth") and select an expiration duration, then click **"Add"**.
+
+**10.** **Important:** The secret **Value** is displayed only once. Copy it immediately — this is your **Client Secret**. If you lose it, you will need to generate a new one.
+
+**11.** Insert both the **Client ID** and **Client Secret** in the [platform OAuth configuration](#oauth2-configuration-example) on ClientXCMS.
+
+
+### Minecraft
+
+Minecraft authentication uses Microsoft OAuth2 (since Minecraft accounts have migrated to Microsoft accounts). The setup is the same as for [Microsoft](#microsoft).
+
+**1.** Follow **steps 1 to 10** of the [Microsoft](#microsoft) section above to register an application in the [Microsoft Entra admin center](https://entra.microsoft.com/) and obtain your **Client ID** and **Client Secret**.
+
+**2.** During registration, make sure to use the **Minecraft-specific** [redirect URI given by ClientXCMS in the configuration page](#redirect-uri) (the Minecraft redirect URI is different from the Microsoft one).
+
+**3.** In your application's **API Permissions** section, click **"+ Add a permission"**, then select **"Xbox Live"** and add the **`XboxLive.signin`** scope. This permission is required for Minecraft authentication through Xbox Live services.
+
+**4.** Click **"Grant admin consent"** to approve the permission.
+
+**5.** Insert the **Client ID** and **Client Secret** in the [platform OAuth configuration](#oauth2-configuration-example) on ClientXCMS.
+
+### Twitch
+
+**1.** Make sure **Two-Factor Authentication (2FA)** is enabled on your Twitch account. This is required to register applications on the Twitch Developer Console.
+
+**2.** Go to the [Twitch Developer Console](https://dev.twitch.tv/console) and log in with your Twitch account.
+
+**3.** Click on the **"Applications"** tab in the top navigation.
+
+**4.** Click on the **"+ Register Your Application"** button.
+
+**5.** Fill in the required information:
+- **Name:** Give your application a unique name (do not include "Twitch" in the name).
+- **OAuth Redirect URLs:** Enter the [redirect URI given by ClientXCMS in the configuration page](#redirect-uri) and click **"Add"**.
+- **Category:** Select the category that best describes your application (e.g., "Website Integration").
+
+**6.** Complete the CAPTCHA verification and click **"Create"** to register the application.
+
+**7.** Back on the **Applications** tab, find your newly created application and click the **"Manage"** button.
+
+**8.** Copy the **Client ID** displayed on the management page.
+
+**9.** Click the **"New Secret"** button to generate a **Client Secret**. **Important:** The secret is displayed only once — copy it immediately and store it securely.
+
+**10.** Insert both the **Client ID** and **Client Secret** in the [platform OAuth configuration](#oauth2-configuration-example) on ClientXCMS.
+
+
+### ClientXCMS
+
+ClientXCMS can also be used as an OAuth2 provider, which allows your users to log in using their ClientXCMS account.
+
+:::info
+Access to the ClientXCMS OAuth2 provider is **not available by default**. You must **open a support ticket** on the [ClientXCMS platform](https://clientxcms.com/client/support) to request access to the OAuth2 provider feature. The ClientXCMS team will provide you with the necessary credentials.
+:::
+
+**1.** Open a support ticket on the [ClientXCMS platform](https://clientxcms.com/client/support) requesting access to the OAuth2 provider.
+
+**2.** The ClientXCMS team will review your request and provide you with a **Client ID** and **Client Secret**.
+
+**3.** Once you have received the credentials, insert them in the [platform OAuth configuration](#oauth2-configuration-example) on ClientXCMS.
+
+**4.** Make sure to set the [redirect URI given by ClientXCMS in the configuration page](#redirect-uri) when communicating with the support team.
+
+---
 
 ## Error 403 Problem
 
