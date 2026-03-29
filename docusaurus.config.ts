@@ -115,8 +115,7 @@ const config: Config = {
         docsDir: ["docs"],
         docsRouteBasePath: ["docs"],
       },
-    ],
-    "docusaurus-plugin-cookie-consent",
+    ]
   ],
   themeConfig: {
     tableOfContents: {
