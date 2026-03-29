@@ -1,7 +1,6 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-// console.log('Tracking ID:', process.env.GTAG_TRACKING_ID); // Vérification de la variable
 
 
 
@@ -13,6 +12,28 @@ const config: Config = {
   onBrokenLinks: 'warn',
   favicon: 'https://cdn.clientxcms.com/ressources/Themes/CLIENTXCMS/images/favicon.ico',
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
+
+  headTags: [
+    {
+      tagName: 'script',
+      innerHTML: `
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//matomo.clientxcms.com/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '4']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      `,
+      attributes: {
+        type: 'text/javascript',
+      },
+    },
+  ],
   projectName: 'docs.clientxcms.com', // Usually your repo name.
 
   // Even if you don't use internationalization, you can use this field to set
@@ -95,13 +116,7 @@ const config: Config = {
         docsRouteBasePath: ["docs"],
       },
     ],
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'process.env.GTAG_TRACKING_ID',
-        anonymizeIP: false,
-      },
-    ],
+    "docusaurus-plugin-cookie-consent",
   ],
   themeConfig: {
     tableOfContents: {
