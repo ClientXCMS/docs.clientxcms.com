@@ -109,3 +109,55 @@ Then you can import it with the following command:
 ```bash
 php artisan db:seed --class=EmailTemplateSeeder
 ```
+
+## Creating an Email Template Layout
+To create a custom email layout (similar to the Layer, Welcome, or Wave templates available at [https://clientxcms.com/resources/group/email-template]), you need to create a Blade file: `resources/views/vendor/notifications/{layout_name}.blade.php`.
+
+Example content for `{layout_name}.blade.php`:
+
+```php
+@component('mail::message')
+# {{ $subject }}
+
+{{ $body }}
+
+@component('mail::button', ['url' => $url])
+{{ $button }}
+@endcomponent
+
+@endcomponent
+```
+
+### Layout Configuration
+You can easily add configuration options for your layout by creating a file: `resources/views/vendor/notifications/{layout_name}_template_config.blade.php`.
+
+```php
+@include('admin/shared/input', [
+    'name' => 'email_template_title',
+    'label' => __('global.name'),
+    'value' => old('email_template_title', setting('email_template_title'))
+])
+```
+
+You can also define validation rules in the file: `resources/views/vendor/notifications/{layout_name}_template_config.php`.
+
+```php
+<?php
+return [
+    'email_template_title' => 'required|string|max:255',
+];
+```
+
+The values entered will be saved directly in the `settings` table. You can access them via `setting('email_template_title')` or `setting('email_template_title', 'default_value')` in your templates.
+
+### Activating the Layout
+To activate your new layout, run the following SQL command on your database:
+
+```sql
+UPDATE settings SET value = '{layout_name}_template' WHERE `key` = 'email_template_name';
+```
+
+Finally, clear your application cache:
+```bash
+php artisan cache:clear
+```
