@@ -5,7 +5,6 @@ authors: [martindev]
 tags: [nouveautés, annonce, ctxhosting, ctxmailer, traductions]
 translated: true
 ---
-
 Nous avons le plaisir de vous annoncer plusieurs nouveautés importantes sur ClientXCMS, ainsi que quelques changements à venir concernant nos services annexes. Au programme : une toute nouvelle landing page, la sortie de l'addon Quote Manager, la traduction complète de nos ressources, et des évolutions sur nos offres Cloud et CTXHosting.
 
 ![Nouvelle landing page de ClientXCMS](/img/blog/new-landing-page-quote_manager/landingpage.png)
@@ -22,7 +21,7 @@ Cette nouvelle interface met en avant les fonctionnalités clés de notre CMS de
 
 Nous sommes également ravis d'annoncer la sortie d'un tout nouvel addon très attendu : **Quote Manager** (Gestionnaire de devis).
 
-Cet outil vous permet de créer, gérer et envoyer des devis professionnels directement depuis votre espace administrateur ClientXCMS. Vos clients pourront ainsi consulter et valider leurs devis en toute simplicité depuis leur espace client. 
+Cet outil vous permet de créer, gérer et envoyer des devis professionnels directement depuis votre espace administrateur ClientXCMS. Vos clients pourront ainsi consulter et valider leurs devis en toute simplicité depuis leur espace client.
 
 ![Interface Administrateur Quote Manager](/img/next_gen/extensions/addons/quote_manager/admin_index.png)
 ![Détails du Devis Quote Manager](/img/next_gen/extensions/addons/quote_manager/admin_show.png)
@@ -40,7 +39,7 @@ Que vous soyez francophone, anglophone ou autre, vous pourrez désormais navigue
 
 ## Fin du service CTXMailer et Nouveaux Avantages Licences
 
-À partir du 1er du mois prochain, nous mettrons fin à notre service de messagerie **ctxmailer**. Nous avons pris cette décision pour nous recentrer sur notre cœur de métier : le développement de ClientXCMS.
+À partir du 1er du mois de juin, nous mettrons fin à notre service de messagerie **ctxmailer**. Nous avons pris cette décision pour nous recentrer sur notre cœur de métier : le développement de ClientXCMS.
 
 Cependant, pour compenser cette fermeture, nous avons une excellente nouvelle pour les détenteurs de licences Premium et Entreprise : **des extensions payantes seront désormais incluses d'office** dans vos licences ! Vous bénéficierez ainsi de nouvelles fonctionnalités puissantes sans coût supplémentaire.
 
@@ -48,7 +47,7 @@ Cependant, pour compenser cette fermeture, nous avons une excellente nouvelle po
 
 ## Changement d'Infrastructure pour les Offres Cloud
 
-Nous préparons une évolution majeure pour nos offres Cloud. Un **changement d'infrastructure est prévu pour la mi-mai**. 
+Nous préparons une évolution majeure pour nos offres Cloud. Un **changement d'infrastructure est prévu pour la mi-mai**.
 
 Cette migration a pour but d'améliorer les performances, la stabilité et la sécurité de vos hébergements. Nous vous communiquerons plus d'informations détaillées très prochainement concernant les étapes de cette transition.
 
@@ -57,8 +56,8 @@ Cette migration a pour but d'améliorer les performances, la stabilité et la s�
 Dans la même dynamique d'amélioration continue, les services de **CTXHosting** passent actuellement en maintenance le temps de changer d'infrastructure.
 
 **Ce que cela implique :**
+
 - **Clients actuels :** Vos services restent actifs et vous pouvez continuer à les renouveler correctement sans interruption.
 - **Nouveaux clients :** Nous suspendons temporairement la prise de commandes pour les nouveaux serveurs VPS.
-
 
 Nous vous remercions de votre confiance et de votre fidélité. Restez à l'écoute pour les prochaines mises à jour et n'hésitez pas à nous faire part de vos retours !
