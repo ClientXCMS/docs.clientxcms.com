@@ -118,6 +118,7 @@ const config: Config = {
     ]
   ],
   themeConfig: {
+    defaultMode: 'light',
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,

@@ -22,14 +22,42 @@ import type {Props} from '@theme/DocItem/Layout';
 
 import styles from './styles.module.css';
 
+type OptionalDocData = {
+  frontMatter: Record<string, unknown>;
+  toc: unknown[];
+  metadata: unknown;
+};
+
+function useOptionalDoc(): OptionalDocData | null {
+  try {
+    const doc = useDoc();
+    return {
+      frontMatter: (doc.frontMatter as Record<string, unknown>) ?? {},
+      toc: doc.toc ?? [],
+      metadata: doc.metadata,
+    };
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
-function useDocTOC() {
-  const {frontMatter, toc} = useDoc();
+function useDocTOC(doc: OptionalDocData | null) {
   const windowSize = useWindowSize();
 
-  const hidden = frontMatter.hide_table_of_contents;
+  if (!doc) {
+    return {
+      hidden: true,
+      mobile: undefined,
+      desktop: undefined,
+    };
+  }
+
+  const {frontMatter, toc} = doc;
+
+  const hidden = frontMatter.hide_table_of_contents === true;
   const canRender = !hidden && toc.length > 0;
 
   const mobile = canRender ? <DocItemTOCMobile /> : undefined;
@@ -54,7 +82,13 @@ function useDocTOC() {
  */
 function useShowNotTranslatedBanner(): boolean {
   const {i18n} = useDocusaurusContext();
-  const {frontMatter} = useDoc();
+  const doc = useOptionalDoc();
+
+  if (!doc) {
+    return false;
+  }
+
+  const {frontMatter} = doc;
 
   const isDefaultLocale = i18n.currentLocale === i18n.defaultLocale;
   const isTranslated = (frontMatter as {translated?: boolean}).translated === true;
@@ -63,14 +97,28 @@ function useShowNotTranslatedBanner(): boolean {
 }
 
 export default function DocItemLayout({children}: Props): ReactNode {
-  const docTOC = useDocTOC();
-  const {metadata} = useDoc();
+  const doc = useOptionalDoc();
+  const docTOC = useDocTOC(doc);
   const showNotTranslatedBanner = useShowNotTranslatedBanner();
+
+  if (!doc) {
+    return (
+      <div className="row">
+        <div className="col">
+          <div className={styles.docItemContainer}>
+            <article>
+              <DocItemContent>{children}</DocItemContent>
+            </article>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
-        <ContentVisibility metadata={metadata} />
+        <ContentVisibility metadata={doc.metadata} />
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article>

@@ -19,7 +19,7 @@ Self-hosted updates are manual. You need to replace the application files with t
 We recommend making a backup of your application and database before starting an update.
 :::
 
-To update ClientXCMS, choose one of the methods below: downloading the release (archive) or updating via Git.
+To update ClientXCMS, choose one of the methods below: downloading the release (archive), updating via Git, or via the administration interface.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -110,6 +110,15 @@ npm install && npm run build
 php artisan up
 php artisan clientxcms:on-update
 ```
+</TabItem>
+<TabItem value="automatic" label="Automatic">
+
+1. Log in to your administration interface.
+2. Go to **Settings** > **Security** > **Update**.
+3. Click the update button to launch the automatic process.
+   ![Update](/img/next_gen/settings/security/update/update.png)
+4. Rebuild the assets:
+   - Run the command `npm install && npm run build`.
 
 </TabItem>
 </Tabs>
