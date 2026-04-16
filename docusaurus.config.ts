@@ -88,21 +88,19 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-    [
-      'redocusaurus',
-      {
-        specs: [
-          {
-            id: 'clientxcms-api',
-            spec: 'static/api-docs.json',
-            route: '/api',
-          },
-        ],
-        theme: {
-          primaryColor: '#2c46ba',
-        },
-      },
-    ],
+    // retiré pour le moment car compile mal
+    // [
+    //   'redocusaurus',
+    //   {
+    //     specs: [
+    //       {
+    //         id: 'clientxcms-api',
+    //         spec: 'static/api-docs.json',
+    //         route: '/api',
+    //       },
+    //     ],
+    //   },
+    // ],
   ],
   plugins: [
     [
@@ -138,7 +136,7 @@ const config: Config = {
           label: 'Documentation',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/api', label: 'API', position: 'left' },
+        //{ to: '/api', label: 'API', position: 'left' },
         { to: 'https://clientxcms.com/resources', label: 'Resources', position: 'left' },
         { to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left' },
         { to: 'https://ideas.clientxcms.com', label: 'Submit an idea', position: 'left' },
@@ -206,10 +204,10 @@ const config: Config = {
         {
           title: 'Developers',
           items: [
-            {
-              label: 'API Documentation',
-              to: '/api',
-            },
+            // {
+            //   label: 'API Documentation',
+            //   to: '/api',
+            // },
             {
               label: 'Extensions',
               href: 'https://docs.clientxcms.com/extensions',

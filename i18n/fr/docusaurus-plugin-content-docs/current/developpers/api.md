@@ -73,9 +73,8 @@ N'hésitez pas à utiliser ?pricing=1 pour obtenir les prix des produits en plus
 
 ## Spécifications
 
-Deux ressources sont disponibles pour explorer l'API :
+Une ressource est disponible pour explorer l'API :
 
-- **[Documentation complète](/api)** : Consultez l'ensemble des endpoints, paramètres et schémas de réponse sur cette documentation.
 - **Interface Swagger sur votre instance** : Testez l'API directement depuis votre espace client via l'URL `/api/documentation` (exemple : `https://votre-domaine.com/api/documentation`).
 
 :::tip
