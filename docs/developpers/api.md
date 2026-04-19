@@ -74,9 +74,8 @@ Feel free to use ?pricing=1 to get product prices in addition to the products.
 
 ## Specifications
 
-Two resources are available to explore the API:
+One resource is available to explore the API:
 
-- **[Full documentation](/api)**: View all endpoints, parameters, and response schemas in this documentation.
 - **Swagger interface on your instance**: Test the API directly from your client area via the URL `/api/documentation` (example: `https://your-domain.com/api/documentation`).
 
 :::tip

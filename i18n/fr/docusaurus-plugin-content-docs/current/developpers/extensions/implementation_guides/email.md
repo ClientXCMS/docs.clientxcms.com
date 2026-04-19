@@ -1,4 +1,4 @@
-# Envoie d'email & Notifications
+# Envoi d'email & Notifications
 
 ClientXCMS utilise le système de notification de Laravel pour envoyer des emails aux utilisateurs et aux administrateurs. Les notifications permettent de personnaliser les messages envoyés par email en utilisant des **modèles CLIENTXCMS**. 
 Pour plus de détails sur la configuration des mails dans Laravel, consultez la documentation officielle [ici](https://laravel.com/docs/11.x/mail#introduction)
@@ -105,4 +105,56 @@ Pour créer un modèle d'email, vous devez ajouter une nouvelle entrée dans le 
 Puis vous pouvez l'importer avec la commande suivante : 
 ```bash
 php artisan db:seed --class=EmailTemplateSeeder
+```
+
+## Créer une mise en page (Layout) de modèle d'email
+Pour créer une mise en page personnalisée (comme les modèles Layer, Welcome ou Wave disponibles sur [https://clientxcms.com/resources/group/email-template]), vous devez créer un fichier Blade : `resources/views/vendor/notifications/{layout_name}.blade.php`.
+
+Exemple de contenu pour le fichier `{layout_name}.blade.php` :
+
+```php
+@component('mail::message')
+# {{ $subject }}
+
+{{ $body }}
+
+@component('mail::button', ['url' => $url])
+{{ $button }}
+@endcomponent
+
+@endcomponent
+```
+
+### Configuration de la mise en page
+Vous pouvez facilement ajouter des options de configuration pour votre mise en page en créant un fichier : `resources/views/vendor/notifications/{layout_name}_template_config.blade.php`.
+
+```php
+@include('admin/shared/input', [
+    'name' => 'email_template_title',
+    'label' => __('global.name'),
+    'value' => old('email_template_title', setting('email_template_title'))
+])
+```
+
+Vous pouvez également définir des règles de validation dans le fichier : `resources/views/vendor/notifications/{layout_name}_template_config.php`.
+
+```php
+<?php
+return [
+    'email_template_title' => 'required|string|max:255',
+];
+```
+
+Les valeurs saisies seront sauvegardées directement dans la table `settings`. Vous pourrez y accéder via `setting('email_template_title')` ou `setting('email_template_title', 'valeur_par_defaut')` dans vos modèles.
+
+### Activer la mise en page
+Pour activer votre nouvelle mise en page, exécutez la commande SQL suivante sur votre base de données :
+
+```sql
+UPDATE settings SET value = '{layout_name}_template' WHERE `key` = 'email_template_name';
+```
+
+Enfin, videz le cache de l'application :
+```bash
+php artisan cache:clear
 ```

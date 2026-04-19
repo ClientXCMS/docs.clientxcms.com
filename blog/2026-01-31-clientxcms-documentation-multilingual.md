@@ -1,6 +1,6 @@
 ---
 title: CLIENTXCMS Documentation Now Available in French and English
-url: /blog/2026-01-31-clientxcms-documentation-multilingual
+url: /blog/clientxcms-documentation-multilingual
 authors: [martindev, alexandre]
 tags: [documentation, update, internationalization, accessibility, ai-workflow]
 translated: true

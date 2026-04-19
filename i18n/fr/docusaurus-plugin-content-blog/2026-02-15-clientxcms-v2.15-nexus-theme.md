@@ -13,7 +13,7 @@ translated: true
 
 ## Nouvelle démo
 
-La démo a été entièrement mise à jour pour refléter la v2.15. Toutes les nouveautés sont présentées dans [notre article dédié](blog/2025/12/31/bonne-annee-2026).
+La démo a été entièrement mise à jour pour refléter la v2.15. Toutes les nouveautés sont présentées dans [notre article dédié](blog/bonne-annee-2026).
 
 **Testez par vous-même :** [demo.clientxcms.com/?theme=nexus](https://demo.clientxcms.com/?theme=nexus)
 

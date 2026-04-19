@@ -88,6 +88,7 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    // retiré pour le moment car compile mal
     [
       'redocusaurus',
       {
@@ -98,9 +99,6 @@ const config: Config = {
             route: '/api',
           },
         ],
-        theme: {
-          primaryColor: '#2c46ba',
-        },
       },
     ],
   ],
@@ -118,6 +116,7 @@ const config: Config = {
     ]
   ],
   themeConfig: {
+    defaultMode: 'light',
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,

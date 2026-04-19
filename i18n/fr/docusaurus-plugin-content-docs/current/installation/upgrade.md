@@ -14,7 +14,7 @@ La mise à jour de l'espace client en autohébergement est manuelle. Vous devez 
 Nous vous recommandons de faire une sauvegarde de votre espace client et de la base de données avant de commencer une mise à jour.
 :::
 
-Pour mettre à jour ClientXCMS, choisissez l'une des méthodes ci‑dessous : téléchargement de la release (archive) ou mise à jour via Git.
+Pour mettre à jour ClientXCMS, choisissez l'une des méthodes ci‑dessous : téléchargement de la release (archive), mise à jour via Git ou via l'interface d'administration.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -106,7 +106,17 @@ php artisan up
 php artisan clientxcms:on-update
 ```
 
-    </TabItem>
+</TabItem>
+<TabItem value="automatic" label="Automatique">
+
+1. Connectez-vous à votre interface d'administration.
+2. Allez dans **Paramètres** > **Sécurité** > **Mise à jour**.
+3. Cliquez sur le bouton de mise à jour pour lancer le processus automatique.
+   ![Mise à jour](/img/next_gen/settings/security/update/update.png)
+4. Reconstruisez les assets :
+   - Exécutez la commande `npm install && npm run build`.
+
+</TabItem>
 </Tabs>
 
 ### Plesk
