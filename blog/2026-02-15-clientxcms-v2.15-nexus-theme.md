@@ -14,7 +14,7 @@ translated: true
 
 ## New Demo
 
-The demo has been fully updated to reflect v2.15. All new features are presented in [our dedicated article](blog/2025/12/31/bonne-annee-2026).
+The demo has been fully updated to reflect v2.15. All new features are presented in [our dedicated article](blog/bonne-annee-2026).
 
 **Test it yourself:** [demo.clientxcms.com/?theme=nexus](https://demo.clientxcms.com/?theme=nexus)
 
