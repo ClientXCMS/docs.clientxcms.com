@@ -44,6 +44,38 @@ php artisan clientxcms:create-theme
 ```
 The command will ask you for the theme name and will create the theme structure for you based on your answers.
 ![clientxcms:create-theme command](/img/next_gen/developpers/themes/cli.png)
+
+### Creation via CLI with options
+
+To create a theme without going through the interactive questions, you can use the following command:
+
+```bash
+php artisan clientxcms:create-theme \
+  --name="My theme" \
+  --uuid="my-theme" \
+  --parent="default" \
+  --description="Theme description" \
+  --author-name="ClientXCMS" \
+  --author-email="contact@clientxcms.com" \
+  --css=1 \
+  --js=1 \
+  --config=1 \
+  --lang=1
+```
+
+#### Option details
+
+* `--name`: displayed theme name.
+* `--uuid`: unique theme identifier.
+* `--parent`: parent theme used as a base. Possible values: `default` or `bootstrap`.
+* `--description`: theme description.
+* `--author-name`: author name.
+* `--author-email`: author email address.
+* `--css`: creates the main CSS file for the theme.
+* `--js`: creates the main JavaScript file for the theme.
+* `--config`: creates the theme configuration files.
+* `--lang`: creates the theme language files.
+
 ## Theme File
 The `theme.json` file is the theme configuration file. It contains the theme information.
 ```json

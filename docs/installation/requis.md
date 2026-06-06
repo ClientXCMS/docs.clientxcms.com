@@ -33,10 +33,6 @@ The corresponding plans are available on the following page:
 - **Disk Space**: minimum **25 GB** required
 - **RAM**: minimum **2 GB** (4 GB recommended)
 
-:::info CTXHosting
-You can rent a **preconfigured and optimized** virtual machine for ClientXCMS.
-We recommend checking out our [CTXHosting](https://ctxhosting.fr) project.
-:::
 
 
 ### PHP

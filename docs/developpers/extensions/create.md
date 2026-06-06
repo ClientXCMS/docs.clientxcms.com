@@ -19,6 +19,33 @@ When executing this command, several questions will be asked, including:
 - **Use of controllers**: Indicate if controllers are needed.
 - **Use of a database**: Specify if the extension requires database usage.
 
+### Creation via CLI with options
+
+To create an extension without going through the interactive questions, you can use the following command:
+
+```bash
+php artisan clientxcms:create-extension \
+  --name="My extension" \
+  --uuid="my-extension" \
+  --type="addon" \
+  --routes=1 \
+  --controllers=1 \
+  --database=1 \
+  --views=1 \
+  --lang=1
+```
+
+#### Option details
+
+* `--name`: displayed extension name.
+* `--uuid`: unique extension identifier.
+* `--type`: extension type. Possible values: `addon` or `module`.
+* `--routes`: creates route files.
+* `--controllers`: creates controllers.
+* `--database`: creates database-related files, such as migrations and seeders.
+* `--views`: creates extension views.
+* `--lang`: creates translation files.
+
 #### Structure of an addon
 
 Here is an example of the structure of an addon, based on the `fund` extension:
