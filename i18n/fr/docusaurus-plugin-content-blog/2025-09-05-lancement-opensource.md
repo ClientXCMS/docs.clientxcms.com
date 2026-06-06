@@ -24,7 +24,7 @@ Vous pouvez également plus de 30 dépôts liés à CLIENTXCMS sur notre organis
 N'hésitez pas à :
 - Mettre une ⭐ sur le dépôt pour soutenir le projet
 - Créer vos issues et pull requests
-- Partager vos idées via [ideas.clientxcms.com](https://ideas.clientxcms.com)
+- Partager vos idées via [clientxcms.com/ideas](https://clientxcms.com/ideas)
 - Rejoindre notre [forum](https://forum.clientxcms.com) pour échanger avec la communauté
 
 ## 🛠️ Nouvelle interface des extensions & Marketplace

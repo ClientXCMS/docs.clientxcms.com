@@ -119,7 +119,7 @@ Nous allons concentrer nos efforts sur :
 * et la valorisation des idées émanant de la communauté.
 
 📍 Pour cela, nous avons lancé un site dédié :
-👉 [ideas.clientxcms.com](https://ideas.clientxcms.com)
+👉 [clientxcms.com/ideas](https://clientxcms.com/ideas)
 Un espace où vous pouvez vous connecter via Discord, **voter pour les idées d'extensions**, en proposer de nouvelles, et suivre leur évolution. L'objectif est clair : co-construire un outil au plus près des besoins réels.
 
 ![image](/img/blog/mise-en-opensource/ideas.png)

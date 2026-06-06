@@ -139,7 +139,7 @@ const config: Config = {
         { to: '/api', label: 'API', position: 'left' },
         { to: 'https://clientxcms.com/resources', label: 'Resources', position: 'left' },
         { to: 'https://clientxcms.com/changelogs', label: 'Changelog', position: 'left' },
-        { to: 'https://ideas.clientxcms.com', label: 'Submit an idea', position: 'left' },
+        { to: 'https://clientxcms.com/ideas', label: 'Submit an idea', position: 'left' },
         {
           href: 'https://clientxcms.com',
           label: 'Back to website',
@@ -214,7 +214,7 @@ const config: Config = {
             },
             {
               label: 'Submit an idea',
-              href: 'https://ideas.clientxcms.com',
+              href: 'https://clientxcms.com/ideas',
             },
             {
               label: 'Submit an extension',

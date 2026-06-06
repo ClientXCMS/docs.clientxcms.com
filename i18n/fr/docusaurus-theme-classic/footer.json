@@ -45,7 +45,7 @@
   },
   "link.item.label.Submit an idea": {
     "message": "Soumettre une idée",
-    "description": "The label of footer link with label=Submit an idea linking to https://ideas.clientxcms.com"
+    "description": "The label of footer link with label=Submit an idea linking to https://clientxcms.com/ideas"
   },
   "link.item.label.Submit an extension": {
     "message": "Soumettre une extension",

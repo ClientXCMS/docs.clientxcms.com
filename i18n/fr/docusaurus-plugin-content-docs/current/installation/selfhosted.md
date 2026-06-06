@@ -96,7 +96,8 @@ Extrayez ensuite l'archive dans le dossier d'installation :
 
 ```bash
 unzip /tmp/clientxcms.zip -d /tmp/clientxcms-release
-cp -R /tmp/clientxcms-release/*/* /var/www/clientxcms/
+cd /tmp/clientxcms-release/ClientXCMS-*
+cp -R . /var/www/clientxcms/
 cd /var/www/clientxcms
 ```
 

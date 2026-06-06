@@ -25,7 +25,7 @@ You can also find more than 30 repositories related to CLIENTXCMS on our GitHub 
 Feel free to:
 - Give a ⭐ on the repository to support the project
 - Create your issues and pull requests
-- Share your ideas via [ideas.clientxcms.com](https://ideas.clientxcms.com)
+- Share your ideas via [clientxcms.com/ideas](https://clientxcms.com/ideas)
 - Join our [forum](https://forum.clientxcms.com) to exchange with the community
 
 ## 🛠️ New Extensions Interface & Marketplace
