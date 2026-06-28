@@ -107,6 +107,20 @@ env FQDN=panel.example.com APP_LOCALE=fr \
 Leave `MYSQL_PASSWORD` unset to auto-generate one. Other overridable variables
 include `INSTALL_DIR`, `CLIENTXCMS_BRANCH`, `PHP_VERSION` and `NODE_VERSION`.
 
+## Updating
+
+Update an existing install to the latest version. Re-run the entrypoint and
+choose **Update**, or run it directly:
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/alexwrite/clientxcms-installer/main/installers/update.sh)
+```
+
+It follows the [Git upgrade procedure](./upgrade): maintenance mode, a database
+backup (saved to `storage/backups/`), `git pull`, `composer install`, migrations
+and extension updates, cache clear, asset rebuild, then it lifts maintenance and
+runs the post-update hook. Set `SKIP_BACKUP=true` to skip the backup.
+
 ## Uninstall
 
 Re-run the entrypoint and choose **Uninstall**, or run it directly:

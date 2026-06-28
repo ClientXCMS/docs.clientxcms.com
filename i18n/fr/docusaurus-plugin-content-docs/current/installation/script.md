@@ -108,6 +108,21 @@ Laissez `MYSQL_PASSWORD` vide pour en générer un automatiquement. Parmi les
 autres variables surchargeables : `INSTALL_DIR`, `CLIENTXCMS_BRANCH`,
 `PHP_VERSION` et `NODE_VERSION`.
 
+## Mise à jour
+
+Mettez à jour une installation existante vers la dernière version. Relancez le
+point d'entrée et choisissez **Update**, ou lancez-le directement :
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/alexwrite/clientxcms-installer/main/installers/update.sh)
+```
+
+Il suit la [procédure de mise à jour Git](./upgrade) : mode maintenance,
+sauvegarde de la base de données (dans `storage/backups/`), `git pull`,
+`composer install`, migrations et mises à jour d'extensions, vidage des caches,
+recompilation des assets, puis sortie du mode maintenance et exécution du hook
+de post-mise à jour. Définissez `SKIP_BACKUP=true` pour ignorer la sauvegarde.
+
 ## Désinstallation
 
 Relancez le point d'entrée et choisissez **Uninstall**, ou lancez-le directement :
