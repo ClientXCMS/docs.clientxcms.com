@@ -215,22 +215,6 @@ Then check that the module is visible from the container:
 sudo docker compose exec app ls /app/modules
 ```
 
-ClientXCMS stores active modules in the database. If a module placed in the `modules` folder does not appear in the administration, add it to the `modules` table by adapting the values to its `module.json` file:
-
-```bash
-sudo docker compose exec app php artisan tinker --execute="
-DB::table('modules')->insert([
-    'name' => 'ModuleName',
-    'uuid' => 'module-uuid',
-    'version' => '1.0',
-    'enabled' => 1,
-    'provider' => 'App\\\\Modules\\\\ModuleName\\\\ModuleNameServiceProvider',
-    'created_at' => now(),
-    'updated_at' => now(),
-]);
-"
-```
-
 Then regenerate the autoload files and clear the caches:
 
 ```bash
@@ -238,6 +222,7 @@ sudo docker compose exec app composer dump-autoload
 sudo docker compose exec app php artisan optimize:clear
 ```
 
+You can now activate it from the ClientXCMS administration panel.
 ## Updating the installation
 
 To update the code and restart the containers:
