@@ -15,6 +15,9 @@ Vous pouvez interchanger vos extensions à tout moment depuis votre espace clien
 L'offre cloud est disponible pour toutes les licences Premium et Entreprise. Vous pouvez retrouver plus d'information sur les offres cloud [ici](https://clientxcms.com/pricing).
 ## Autohébergement
 L'installation en autohébergement est plus complexe nécessitant une accreditation validée. Pour cela, vous devez disposer d'un serveur web, d'une base de données et de PHP. Vous pouvez suivre les instructions d'installation en autohébergement [ici](./selfhosted).
+
+Pour une mise en place entièrement automatisée, le [script d'installation](./script) installe et configure toute la stack sur un serveur vierge en une seule commande.
+
 :::warning
 L'installation en autohébergement nécessite des connaissances en administration système. Si vous n'êtes pas sûr de vous, nous vous recommandons d'opter pour l'installation Cloud.
 :::
