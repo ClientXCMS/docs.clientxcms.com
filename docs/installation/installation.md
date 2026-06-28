@@ -24,6 +24,8 @@ The cloud offering is available for all Premium and Enterprise licenses. You can
 
 Self-hosted installation is more complex and requires validated accreditation. You will need a web server, a database, and PHP. You can follow the self-hosted installation instructions [here](./selfhosted).
 
+For a fully automated setup, the [installation script](./script) installs and configures the entire stack on a fresh server in a single command.
+
 :::warning
 Self-hosted installation requires system administration knowledge. If you are not confident, we recommend opting for Cloud installation.
 :::

@@ -120,7 +120,7 @@ We will focus our efforts on:
 * and valuing ideas from the community.
 
 📍 For this, we have launched a dedicated site:
-👉 [ideas.clientxcms.com](https://ideas.clientxcms.com)
+👉 [clientxcms.com/ideas](https://clientxcms.com/ideas)
 A space where you can connect via Discord, **vote for extension ideas**, propose new ones, and follow their evolution. The goal is clear: to co-build a tool as close as possible to real needs.
 
 ![image](/img/blog/mise-en-opensource/ideas.png)

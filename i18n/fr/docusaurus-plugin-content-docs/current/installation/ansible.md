@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Déploiement automatisé avec Ansible
+# Ansible
 
 **Ansible** permet un déploiement entièrement automatisé de ClientXCMS, de l'installation des prérequis jusqu'à la mise en production. Cette méthode est recommandée pour les environnements de production et les déploiements multi-serveurs.
 
