@@ -21,7 +21,7 @@
     "@docusaurus/preset-classic": "^3.10.0",
     "@easyops-cn/docusaurus-search-local": "^0.55.0",
     "@mdx-js/react": "^3.1.1",
-    "brace-expansion": "5.0.5",
+    "brace-expansion": "5.0.7",
     "clsx": "^2.0.0",
     "cross-spawn": "7.0.6",
     "docusaurus-plugin-dotenv": "^1.0.1",
