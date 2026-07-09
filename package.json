@@ -21,7 +21,7 @@
     "@docusaurus/preset-classic": "^3.10.0",
     "@easyops-cn/docusaurus-search-local": "^0.55.0",
     "@mdx-js/react": "^3.1.1",
-    "brace-expansion": "5.0.5",
+    "brace-expansion": "5.0.7",
     "clsx": "^2.0.0",
     "cross-spawn": "7.0.6",
     "docusaurus-plugin-dotenv": "^1.0.1",
@@ -34,7 +34,7 @@
     "@docusaurus/module-type-aliases": "^3.5.2",
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.5.2",
-    "typescript": "~6.0.2"
+    "typescript": "~7.0.2"
   },
   "browserslist": {
     "production": [
