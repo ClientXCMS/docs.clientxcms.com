@@ -31,14 +31,6 @@ Loaded extensions can be activated or deactivated on the Extensions page
 ## Choosing between a module and an addon
 
 Simply put, modules are used for service delivery, for example to implement a management panel like Virtualizor, Plesk, or Pterodactyl. Addons are used to add additional features such as payment methods, logic, or custom pages.
-## Request to add to the marketplace
+## Publishing on the Marketplace
 
-You can request to become a developer at [https://clientxcms.com/client/resources](https://clientxcms.com/client/ressources) and thus offer your extensions to the community.
-![Screenshot of creating an extension](/img/blog/lancement-opensource/marketplace2.png)
-
-From now on, each developer can:
-- Create their own extensions
-- Publish and share their creations via [clientxcms.com/client/ressources](https://clientxcms.com/client/ressources)
-- Easily explore and install extensions shared by the community
-
-This intuitive interface was designed to simplify management and encourage the collaborative ecosystem around CLIENTXCMS.
+You can distribute your addon or module to the CLIENTXCMS community as a free or paid resource. Follow the [marketplace publication guide](../publish-resource) to activate your developer area and prepare the listing, then read [Publishing an Addon or Module](./publish-marketplace) for UUID, Service Provider, GitHub repository, packaging, and update requirements.
