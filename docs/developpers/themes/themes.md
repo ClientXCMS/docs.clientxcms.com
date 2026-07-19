@@ -5,6 +5,8 @@ translated: true
 # Themes
 CLIENTXCMS offers a theme system to customize the appearance of your website. Themes are folders containing configuration files and template files. Themes are available from the administration interface via `Settings` > `Themes` > `Theme Settings`.
 
+If you want to distribute a theme to the community, follow the [marketplace publication guide](../publish-resource), then read [Publishing a Theme](./publish-marketplace) for demo, GitHub repository, packaging, and update requirements.
+
 You can enable or disable a theme by clicking the `Enable` or `Disable` button corresponding to the theme.
 ![Themes](/img/next_gen/developpers/themes/themes.png)
 
