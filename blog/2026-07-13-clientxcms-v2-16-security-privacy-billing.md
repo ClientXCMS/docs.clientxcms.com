@@ -1,6 +1,6 @@
 ---
 slug: clientxcms-v2-16-security-privacy-billing
-title: "ClientXCMS 2.16: Security, Privacy and Better Account Management"
+title: "ClientXCMS 2.16: Security, Privacy and sub users Management"
 authors: [martindev]
 tags: [release, security, privacy, billing, cloud, v2.16]
 translated: true

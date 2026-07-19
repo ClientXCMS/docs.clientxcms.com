@@ -1,11 +1,10 @@
 ---
 slug: clientxcms-v2-16-securite-rgpd-facturation
-title: "ClientXCMS 2.16 : sécurité, RGPD et meilleure gestion des comptes"
+title: "ClientXCMS 2.16 : sécurité, RGPD et sous utilisateurs"
 authors: [martindev]
 tags: [release, security, privacy, billing, cloud, v2.16]
 translated: true
 ---
-
 **ClientXCMS 2.16** est l'une de nos mises à jour les plus importantes. Au cœur de cette version : les accès délégués avec les sous-utilisateurs et une gestion complète des avoirs, accompagnés d'un nouveau profil, d'une sécurité renforcée et de nouveaux outils de confidentialité.
 
 ![Interface d'invitation d'un sous-utilisateur et configuration des permissions déléguées](/img/blog/v2.16/invite_users.png)
@@ -42,7 +41,7 @@ Lorsque l'administrateur l'active, chaque utilisateur peut protéger son compte 
 
 Les appareils de confiance rendent cette protection plus fluide : un appareil reconnu peut être mémorisé et géré directement depuis l'espace de sécurité. Les questions de sécurité sont maintenant traduisibles afin de proposer une protection cohérente dans la langue de chaque utilisateur.
 
-![Liste des appareils de confiance dans les paramètres de sécurité du compte](/img/blog/v2.16/device%20securities.png)
+![Liste des appareils de confiance dans les paramètres de sécurité du compte](</img/blog/v2.16/device%20securities.png>)
 
 Toutes ces protections sont également disponibles pour les comptes des **administrateurs et des membres du staff**, dont les accès aux informations sensibles nécessitent une sécurité renforcée.
 
