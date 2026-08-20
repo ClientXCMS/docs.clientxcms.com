@@ -75,6 +75,73 @@ Personnalisez l'URL d'accès à votre interface d'administration pour masquer l'
 - Changez périodiquement pour renforcer la sécurité
 :::
 
+## Authentification multifacteur (MFA)
+
+Les paramètres suivants rendent l'authentification multifacteur obligatoire :
+
+| Paramètre | Description |
+|-----------|-------------|
+| `force_2fa_admin` | Oblige les administrateurs à configurer et à utiliser la MFA |
+| `force_2fa_client` | Oblige les clients à configurer et à utiliser la MFA |
+
+### Récupérer l'accès lorsque la MFA est forcée
+
+Si un problème de configuration de la MFA empêche les connexions, vous pouvez désactiver temporairement cette obligation directement dans la base de données :
+
+```sql
+UPDATE settings SET value = 'false' WHERE `key` IN ('force_2fa_admin', 'force_2fa_client');
+```
+
+Videz ensuite le cache de l'application depuis la racine du projet :
+
+```bash
+php artisan cache:clear
+```
+
+:::warning Mesure de récupération temporaire
+Cette commande désactive la MFA obligatoire pour les administrateurs et les clients. Corrigez la configuration de la MFA ou du service SMS, puis réactivez les options appropriées dans les paramètres de sécurité.
+:::
+
+### MFA par SMS
+
+Dans les paramètres de la MFA par SMS, vous pourrez sélectionner votre fournisseur SMS. Les fournisseurs disponibles sont **OVH** et **Twilio**. Une fois le fournisseur sélectionné, remplissez les champs affichés pour celui-ci.
+
+#### OVH
+
+| Champ | Valeur attendue |
+|-------|-----------------|
+| **Endpoint** | Région de l'API OVH : `ovh-eu`, `ovh-ca` ou `ovh-us` |
+| **Clé d'application** | Clé d'application OVH |
+| **Secret de l'application** | Secret de l'application OVH |
+| **Clé consommateur** | Clé consommateur OVH |
+| **Nom du service** | Nom du service SMS OVH |
+| **Expéditeur** | Expéditeur affiché dans les SMS |
+
+#### Twilio
+
+| Champ | Valeur attendue |
+|-------|-----------------|
+| **SID du compte** | SID du compte Twilio |
+| **Jeton d'authentification** | Jeton d'authentification Twilio |
+| **Numéro expéditeur** | Numéro de téléphone expéditeur Twilio |
+
+:::warning Identifiants sensibles
+Les secrets des fournisseurs SMS sont sensibles. Ne les publiez pas, ne les partagez pas et remplacez-les immédiatement s'ils sont exposés.
+:::
+
+## Paramètres RGPD
+
+Des paramètres supplémentaires de confidentialité sont disponibles :
+
+| Paramètre | Description |
+|-----------|-------------|
+| `gdrp_cookies_privacy_link` | Lien vers la politique de confidentialité affiché avec les informations sur les cookies |
+| `gdpr_purge_inactive_days` | Nombre de jours d'inactivité avant la purge des données personnelles éligibles |
+
+## Logs de sécurité
+
+Les erreurs d'authentification, de configuration et du système peuvent être consultées depuis `Paramètres` > `Sécurité` > `Historique`. Consultez la page [Historique et logs](./history.md) pour connaître les fichiers disponibles, leur durée de conservation et les actions de diagnostic.
+
 ## Protection CAPTCHA
 
 ### Configuration du service CAPTCHA
