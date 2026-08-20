@@ -76,6 +76,73 @@ Customize the URL for accessing your administration interface to hide the standa
 - Change periodically to enhance security
 :::
 
+## Multi-Factor Authentication (MFA)
+
+The following settings make multi-factor authentication mandatory:
+
+| Setting | Description |
+|---------|-------------|
+| `force_2fa_admin` | Requires administrators to configure and use MFA |
+| `force_2fa_client` | Requires customers to configure and use MFA |
+
+### Recovering Access When MFA Is Forced
+
+If an MFA configuration problem prevents users from logging in, you can temporarily disable the requirement directly in the database:
+
+```sql
+UPDATE settings SET value = 'false' WHERE `key` IN ('force_2fa_admin', 'force_2fa_client');
+```
+
+Then clear the application cache from the root of the project:
+
+```bash
+php artisan cache:clear
+```
+
+:::warning Temporary recovery measure
+This command disables forced MFA for both administrators and customers. Correct the MFA or SMS configuration, then enable the appropriate options again from the security settings.
+:::
+
+### MFA by SMS
+
+In the MFA by SMS settings, select your SMS provider. The available providers are **OVH** and **Twilio**. Once a provider is selected, complete the fields displayed for that provider.
+
+#### OVH
+
+| Field | Expected value |
+|-------|----------------|
+| **Endpoint** | OVH API region: `ovh-eu`, `ovh-ca`, or `ovh-us` |
+| **Application key** | OVH application key |
+| **Application secret** | OVH application secret |
+| **Consumer key** | OVH consumer key |
+| **Service name** | Name of the OVH SMS service |
+| **Sender** | Sender displayed for SMS messages |
+
+#### Twilio
+
+| Field | Expected value |
+|-------|----------------|
+| **Account SID** | Twilio Account SID |
+| **Authentication token** | Twilio authentication token |
+| **Sender number** | Twilio sender phone number |
+
+:::warning Credentials
+SMS provider secrets are sensitive. Do not publish or share them, and replace them immediately if they are exposed.
+:::
+
+## GDPR Settings
+
+Additional privacy settings are available:
+
+| Setting | Description |
+|---------|-------------|
+| `gdrp_cookies_privacy_link` | Link to the privacy policy displayed with the cookie information |
+| `gdpr_purge_inactive_days` | Number of inactive days before eligible personal data is purged |
+
+## Security Logs
+
+Authentication, configuration, and system errors can be reviewed from `Settings` > `Security` > `History`. See [History and logs](./history.md) for the available log files, their retention, and diagnostic actions.
+
 ## CAPTCHA Protection
 
 ### CAPTCHA Service Configuration

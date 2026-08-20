@@ -12,7 +12,9 @@ const config: Config = {
   onBrokenLinks: 'warn',
   favicon: 'https://cdn.clientxcms.com/ressources/Themes/CLIENTXCMS/images/favicon.ico',
   organizationName: 'clientxcms', // Usually your GitHub org/user name.
-
+  clientModules: [
+    require.resolve('./src/clientModules/analytics.js'),
+  ],
   headTags: [
     {
       tagName: 'script',
