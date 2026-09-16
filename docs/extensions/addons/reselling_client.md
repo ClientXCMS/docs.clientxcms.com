@@ -27,9 +27,6 @@ For any request or to become a partner, please contact support.
 - For renewals or expiration date changes, fees will be calculated pro-rata based on remaining days until expiration, with a minimum amount of €0.50.
 
 This system ensures simplified management of licenses and VPS services for your customers, while offering flexibility and automation.
-:::info Modules
-To use the following features, the Plesk module must be enabled on your CLIENTXCMS. [click here to enable it](../)
-:::
 
 ### Supported Features
 - Automate VPS creation and provisioning
