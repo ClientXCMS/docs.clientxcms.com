@@ -134,8 +134,8 @@ Gestion complète de votre infrastructure de services. Cette section centralise 
 * **[Paramètres des services](./provisioning/services)** : Configuration des options de services
 * **[Serveurs](./provisioning/servers)** : Liste et état des serveurs configurés
 * **Sous-domaines** : Gestion des sous-domaines autorisés
-* **[Options de configuration](./provisioning/provisioning.md)** : Personnalisation des services
-* **[Configuration](./provisioning/provisioning.md)** : Options générales d'approvisionnement
+* **[Options de configuration](./provisioning)** : Personnalisation des services
+* **[Configuration](./provisioning)** : Options générales d'approvisionnement
 
 **[→ Configurer l'approvisionnement](./provisioning)**
 
@@ -180,7 +180,7 @@ Configuration complète de votre boutique en ligne. Gérez vos produits, moyens 
 Configuration des modules et extensions installés sur votre plateforme. Cette section permet de gérer les paramètres spécifiques à chaque extension pour étendre les fonctionnalités de ClientXCMS.
 
 **Configuration disponible :**
-* **[Extensions](../extensions/extensions.md)** : Gestion des extensions du Marketplace
+* **[Extensions](../extensions)** : Gestion des extensions du Marketplace
 * **[Discord Link](../extensions/addons/discordlink.md)** : Discord OAuth2 et rôles automatiques
 * **[Discord Gift](../extensions/addons/discordgift.md)** : Distribution automatique de cartes-cadeaux Discord
 * **[Double comptes](../extensions/addons/antidoublecompte.md)** : Détection des comptes multiples
@@ -258,7 +258,7 @@ Système de facturation avancé pour gérer les abonnements, renouvellements et 
 
 **Configuration disponible :**
 * **Abonnements** : Gestion des renouvellements automatiques
-* **[Facturation](./billing/billing.md)** : Configuration des factures et taxes
+* **[Facturation](./billing)** : Configuration des factures et taxes
 * **Améliorations des services** : Upgrades et downgrades
 * **Transferts de fonds** : Historique des transactions
 

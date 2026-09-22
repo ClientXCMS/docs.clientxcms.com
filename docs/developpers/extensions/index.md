@@ -3,8 +3,8 @@ translated: true
 ---
 # Extensions
 
-Extensions in the ClientXCMS CMS are of two types: **addons** and **modules**, and they are located in the respective `/modules` and `/addons` folders. Each extension is based on the **Laravel** framework and follows a well-defined structure.
-In this guide, we will see how to create an extension, how to structure it, and how to register it in the CMS.
+ClientXCMS extensions come in three types: **addons**, **modules**, and **themes**. Addons and modules share a common structure based on the **Laravel** framework and are located in the respective `/addons` and `/modules` folders; themes have their own structure and are covered in a [dedicated guide](../themes).
+This guide covers addons and modules: how to create one, how to structure it, and how to register it in the CMS.
 
 ## Prerequisites
 We recommend having good knowledge of **PHP** and **Laravel**, as well as being comfortable with the following concepts:

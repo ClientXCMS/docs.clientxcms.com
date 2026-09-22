@@ -176,7 +176,7 @@ Une fois la classe de configuration et le modèle créé, vous devez associer ce
 ```php
 public function config(): ?\App\Contracts\Store\ProductConfigInterface
 {
-    return new \App\Addons\Fund\GameserverConfig(); // Retourne la classe de configuration pour ce produit
+    return new \App\Addons\Fund\CustomProductConfig(); // Retourne la classe de configuration pour ce produit
 }
 ```
 

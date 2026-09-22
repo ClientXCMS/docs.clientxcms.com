@@ -3,7 +3,7 @@ sidebar_position: 1
 translated: true
 ---
 # Themes
-CLIENTXCMS offers a theme system to customize the appearance of your website. Themes are folders containing configuration files and template files. Themes are available from the administration interface via `Settings` > `Themes` > `Theme Settings`.
+Themes are one of the three extension types in ClientXCMS, alongside [addons and modules](../extensions). CLIENTXCMS offers a theme system to customize the appearance of your website. Themes are folders containing configuration files and template files. Themes are available from the administration interface via `Settings` > `Themes` > `Theme Settings`.
 
 If you want to distribute a theme to the community, follow the [marketplace publication guide](../publish-resource), then read [Publishing a Theme](./publish-marketplace) for demo, GitHub repository, packaging, and update requirements.
 

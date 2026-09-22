@@ -28,8 +28,8 @@ The ClientXCMS store is built around several key components:
 * **[Products](./products)**: The services you offer for sale (hosting, VPS, licenses, etc.)
 * **[Groups](./groupes)**: The categories that organize your products logically
 * **[Coupons](./coupon)**: Promotional codes to boost your sales
-* **[Payment Methods](./payment_gateways/payment_gateways.md)**: Gateways to receive payments
-* **[Billing](../billing/billing.md)**: Invoice management and accounting settings
+* **[Payment Methods](./payment_gateways)**: Gateways to receive payments
+* **[Billing](../billing)**: Invoice management and accounting settings
 
 ### Typical Customer Journey
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 # Thèmes
-CLIENTXCMS propose un système de thèmes pour personnaliser l'apparence de votre site web. Les thèmes sont des dossiers contenant des fichiers de configuration et des fichiers de templates. Les thèmes sont disponible partir de l'interface d'administration depuis `Paramètres`> `Themes`> `Paramètre du thème`.
+Les thèmes sont l'un des trois types d'extension de ClientXCMS, aux côtés des [addons et modules](../extensions). CLIENTXCMS propose un système de thèmes pour personnaliser l'apparence de votre site web. Les thèmes sont des dossiers contenant des fichiers de configuration et des fichiers de templates. Les thèmes sont disponible partir de l'interface d'administration depuis `Paramètres`> `Themes`> `Paramètre du thème`.
 
 Pour distribuer un thème à la communauté, suivez le [guide de publication sur le marketplace](../publish-resource), puis consultez [Publier un thème](./publish-marketplace) pour les règles concernant la démonstration, le dépôt GitHub, l'archive et les mises à jour.
 

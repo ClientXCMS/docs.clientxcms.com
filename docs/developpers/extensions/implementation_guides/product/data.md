@@ -79,4 +79,15 @@ public function data(?Product $product = null): ?\App\Contracts\Store\ProductDat
 
 ### Implementation for Requesting a Domain Name
 
-Here's an example based on domain name collection for a web hosting product, using the `App\Abstracts\WebHostingProductData` class.
+Here's an example based on domain name collection for a web hosting product, using the `App\Abstracts\WebHostingProductData` class. Extend it directly instead of `AbstractProductData` when your product needs a domain name at order time - it already implements the `domain`, `domain_subdomain`, and `subdomain` parameters, along with their validation rules (FQDN format, domain availability, subdomain collision):
+
+```php
+namespace App\Addons\Fund;
+
+use App\Abstracts\WebHostingProductData;
+
+class CustomWebHostingProductData extends WebHostingProductData
+{
+    // Override render(), renderAdmin(), or validate() here only if you need to customize the default behavior.
+}
+```

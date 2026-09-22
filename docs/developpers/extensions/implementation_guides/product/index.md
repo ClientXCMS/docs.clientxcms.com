@@ -4,7 +4,7 @@ translated: true
 
 # Products & Services
 
-Products and services are essential elements of any online store. They define the available offers for customers and provisioning options for administrators. Within the extension, products and services are managed via specific classes that define the characteristics and behaviors of each product type.
+Products and services are essential elements of any online store. They define the available offers for customers and provisioning options for administrators. Within the extension, products and services are managed via specific classes that define the characteristics and behaviors of each product type. In practice, this is mostly used by **modules** that deliver a service through a provider (Proxmox, Pterodactyl, Plesk...); addons rarely need it.
 
 :::info
 This section is major as it allows you to define:
@@ -47,7 +47,7 @@ class CustomProductType extends AbstractProductType
 
     public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
     {
-        return new CustomProductData();
+        return new CustomProductPanel();
     }
 
     /**
@@ -85,7 +85,7 @@ class CustomProductType extends AbstractProductType
 }
 ```
 
-The `CustomProductData` and `CustomProductServer` classes must be implemented to handle product data and provisioning. They will be defined in the following sections.
+The `CustomProductPanel`, `CustomProductConfig`, `CustomProductData`, and `CustomProductServer` classes must be implemented to handle the management panel, configuration, order data, and provisioning. They will be defined in the following sections.
 
 ## Registering the Product in the Service Provider
 

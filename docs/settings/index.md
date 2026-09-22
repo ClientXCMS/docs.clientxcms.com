@@ -137,8 +137,8 @@ Complete management of your service infrastructure. This section centralizes ser
 * **[Service Settings](./provisioning/services)**: Service options configuration
 * **[Servers](./provisioning/servers)**: List and status of configured servers
 * **Subdomains**: Management of authorized subdomains
-* **[Configuration Options](./provisioning/provisioning.md)**: Service customization
-* **[Configuration](./provisioning/provisioning.md)**: General provisioning options
+* **[Configuration Options](./provisioning)**: Service customization
+* **[Configuration](./provisioning)**: General provisioning options
 
 **[→ Configure Provisioning](./provisioning)**
 
@@ -183,7 +183,7 @@ Complete configuration of your online store. Manage your products, payment metho
 Configuration of modules and extensions installed on your platform. This section allows you to manage settings specific to each extension to extend ClientXCMS functionality.
 
 **Available Configuration:**
-* **[Extensions](../extensions/extensions.md)**: Marketplace extension management
+* **[Extensions](../extensions)**: Marketplace extension management
 * **[Discord Link](../extensions/addons/discordlink.md)**: Discord OAuth2 and automatic roles
 * **[Discord Gift](../extensions/addons/discordgift.md)**: Automatic Discord gift card distribution
 * **[Duplicate Accounts](../extensions/addons/antidoublecompte.md)**: Multiple account detection
@@ -261,7 +261,7 @@ Advanced billing system to manage subscriptions, renewals, and transactions. Con
 
 **Available Configuration:**
 * **Subscriptions**: Automatic renewal management
-* **[Billing](./billing/billing.md)**: Invoice and tax configuration
+* **[Billing](./billing)**: Invoice and tax configuration
 * **Service Upgrades**: Upgrades and downgrades
 * **Fund Transfers**: Transaction history
 

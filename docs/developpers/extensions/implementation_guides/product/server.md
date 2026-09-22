@@ -49,7 +49,7 @@ class CustomGameServerType extends AbstractServerType
         // Logic to create account on remote API
         // Return service state change
         $data = $service->data; // Data from order
-        $config = \App\Addons\Fund\Models\GameServerConfig::where('product_id', $service->product_id)->first(); // Product configuration
+        $config = \App\Addons\Fund\Models\GameserverConfigModel::where('product_id', $service->product_id)->first(); // Product configuration
         return new ServiceStateChangeDTO($service, true, 'Account created successfully');
     }
 
@@ -115,6 +115,6 @@ To associate this server management class with a product, you must implement the
 ```php
 public function server(): ?\App\Contracts\Provisioning\ServerTypeInterface
 {
-    return new \App\Fund\CustomGameServerType(); // Associates the CustomGameServerType server type with the product
+    return new \App\Addons\Fund\CustomGameServerType(); // Associates the CustomGameServerType server type with the product
 }
 ```

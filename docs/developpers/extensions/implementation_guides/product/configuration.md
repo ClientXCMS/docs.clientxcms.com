@@ -179,7 +179,7 @@ Once the configuration class and model are created, you must associate this conf
 ```php
 public function config(): ?\App\Contracts\Store\ProductConfigInterface
 {
-    return new \App\Addons\Fund\GameserverConfig(); // Returns the configuration class for this product
+    return new \App\Addons\Fund\CustomProductConfig(); // Returns the configuration class for this product
 }
 ```
 

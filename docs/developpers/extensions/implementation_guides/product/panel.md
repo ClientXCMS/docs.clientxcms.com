@@ -123,6 +123,6 @@ Once the panel is created, you can associate it with a product via the `panel()`
 ```php
 public function panel(): ?\App\Contracts\Provisioning\PanelProvisioningInterface
 {
-    return new GameServerPanel(); // Returns the panel associated with the product
+    return new \App\Addons\Fund\CustomProductPanel(); // Returns the panel associated with the product
 }
 ```

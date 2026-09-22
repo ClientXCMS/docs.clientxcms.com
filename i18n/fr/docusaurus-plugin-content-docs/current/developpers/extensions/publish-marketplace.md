@@ -4,16 +4,14 @@ sidebar_position: 5
 
 # Publier un addon ou un module
 
-Suivez d'abord le [guide commun de publication sur le marketplace](../publish-resource), puis revenez sur cette page.
-
-CLIENTXCMS propose deux types d'extensions :
+Suivez d'abord le [guide commun de publication sur le marketplace](../publish-resource), puis revenez sur cette page. Ce guide couvre deux des trois types d'extensions, les addons et les modules (pour les thèmes, voir [Publier un thème](../themes/publish-marketplace)) :
 
 - un **module** livre et gère un service avec un fournisseur comme Pterodactyl, Proxmox ou Plesk ;
 - un **addon** ajoute une fonctionnalité telle qu'un moyen de paiement, une logique métier ou des pages personnalisées.
 
-Si l'extension n'existe pas encore, commencez par [Créer une extension](./create).
+Si l'addon ou le module n'existe pas encore, commencez par [Créer un addon ou un module](./create).
 
-## Identifiant et type d'extension
+## Identifiant et type
 
 Choisissez le même type dans le marketplace que dans les métadonnées de votre extension. L'UUID marketplace doit être strictement identique dans :
 
