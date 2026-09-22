@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 translated: true
 ---
 
@@ -20,7 +20,7 @@ This page will guide you through the installation of ClientXCMS Next Gen for sel
    !["Laravel ToolKit" extension - Plesk](/img/next_gen/Installation/Plesk/Plesk_extension_LaravelTK.png)
 5. Generate a free SSL certificate via Let's Encrypt.
    ![SSL Certificate - Plesk](/img/next_gen/Installation/Plesk/Plesk_ssl.png)
-6. In your domain dashboard, click "PHP" under development tools. Use PHP version **8.3** for optimal compatibility.
+6. In your domain dashboard, click "PHP" under development tools. Use the PHP version required by your ClientXCMS release for optimal compatibility (see [Requirements](./requis)).
    ![PHP version - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHP83.png)
 
 ## Laravel Environment Installation

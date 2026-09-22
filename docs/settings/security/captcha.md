@@ -1,5 +1,6 @@
 ---
 translated: true
+sidebar_position: 6
 ---
 # Captcha
 

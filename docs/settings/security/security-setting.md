@@ -173,7 +173,7 @@ The secret key to validate CAPTCHA responses on the server side.
 
 ### Detailed Configuration
 
-For advanced CAPTCHA configuration, see the [developer documentation](/developpers/software/captcha).
+For advanced CAPTCHA configuration, see the [dedicated page](./captcha).
 
 ### Connection Problem with Misconfigured CAPTCHA
 If you have a connection problem due to a misconfigured CAPTCHA, you can temporarily disable the CAPTCHA by connecting to your database and changing the `captcha_driver` value in the `settings` table to `none`. This will disable the CAPTCHA and allow you to log in to your client area to correct the CAPTCHA configuration.

@@ -1,5 +1,6 @@
 ---
 translated: true
+sidebar_position: 2
 ---
 # Proxmox Templates & OSes
 

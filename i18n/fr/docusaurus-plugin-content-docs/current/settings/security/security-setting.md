@@ -172,7 +172,7 @@ La clé secrète pour valider les réponses CAPTCHA côté serveur.
 
 ### Configuration détaillée
 
-Pour une configuration avancée des CAPTCHAs, consultez la [documentation développeur](/developpers/software/captcha).
+Pour une configuration avancée des CAPTCHAs, consultez la [page dédiée](./captcha).
 
 ### Problème de connection avec un captcha mal configuré
 Si vous avez un problème de connexion à cause d'un captcha mal configuré, vous pouvez désactiver temporairement le captcha vous connectant à votre base de données et en modifiant la valeur `captcha_driver` dans la table `settings` à `none`. Cela désactivera le captcha et vous permettra de vous connecter à votre espace client pour corriger la configuration du captcha.

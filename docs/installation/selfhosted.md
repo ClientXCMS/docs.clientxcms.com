@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 translated: true
 ---
 
@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # Self-hosted
 
-This page guides you through installing ClientXCMS Next Gen on a VPS or dedicated server. It targets a Debian 12 installation with PHP 8.3, MariaDB, and an Apache or Nginx web server.
+This page guides you through installing ClientXCMS Next Gen on a VPS or dedicated server. It targets a Debian 12 installation with MariaDB and an Apache or Nginx web server, using the PHP version required by your ClientXCMS release (see [Requirements](./requis)).
 
 Self-hosting is recommended if you want to manage the server, updates, backups, and system configuration yourself. If you want a more automated installation, see the [Cloud](./cloud), [Plesk](./plesk), or [Docker](./docker) installation instead.
 
@@ -38,7 +38,7 @@ sudo apt upgrade -y
 sudo apt install ca-certificates apt-transport-https software-properties-common wget curl git unzip nano lsb-release -y
 ```
 
-Install PHP 8.3 and the required extensions:
+Check the PHP version required by your release in [Requirements](./requis), then install it and its extensions (the commands below use 8.3 as an example, replace it with your required version):
 
 ```bash
 curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
@@ -167,7 +167,7 @@ server {
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        fastcgi_pass unix:/run/php/phpX.Y-fpm.sock; # Replace X.Y with your installed PHP version, e.g. php -v
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
@@ -192,7 +192,7 @@ sudo systemctl reload nginx
 Install Apache and the PHP module:
 
 ```bash
-sudo apt install apache2 libapache2-mod-php8.3 -y
+sudo apt install apache2 libapache2-mod-phpX.Y -y # Replace X.Y with the PHP version installed above
 sudo a2enmod rewrite
 ```
 

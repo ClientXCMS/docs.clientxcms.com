@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 translated: true
 ---
 
@@ -127,8 +127,8 @@ OAuth credentials are required in production and can be obtained from your Clien
 The Ansible playbook automatically installs and configures:
 
 ### System Infrastructure
-- **PHP 8.3** with all required extensions
-- **MariaDB 10.11+** (database)
+- **PHP** with all required extensions (the playbook currently targets PHP 8.2, outdated compared to the current [requirements](./requis) - see the warning above)
+- **MariaDB** (database)
 - **Nginx** or **Apache** (web server)
 - **PHP-FPM** (process manager)
 

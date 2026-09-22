@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 # Captcha
 
 Cette page vous explique comment configurer les captchas reCAPTCHA, hCaptcha et Cloudflare Turnstile dans votre espace client.

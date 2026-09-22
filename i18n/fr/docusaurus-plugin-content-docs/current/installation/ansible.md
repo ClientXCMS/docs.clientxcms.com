@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 ---
 
 # Ansible
@@ -126,8 +126,8 @@ Les identifiants OAuth sont requis en production et s'obtiennent depuis votre co
 Le playbook Ansible installe et configure automatiquement :
 
 ### Infrastructure système
-- **PHP 8.3** avec toutes les extensions requises
-- **MariaDB 10.11+** (base de données)
+- **PHP** avec toutes les extensions requises (le playbook cible actuellement PHP 8.2, obsolète par rapport aux [prérequis](./requis) actuels - voir l'avertissement ci-dessus)
+- **MariaDB** (base de données)
 - **Nginx** ou **Apache** (serveur web)
 - **PHP-FPM** (gestionnaire de processus)
 
