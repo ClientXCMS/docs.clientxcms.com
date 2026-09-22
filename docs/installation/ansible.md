@@ -5,7 +5,11 @@ translated: true
 
 # Ansible
 
-**Ansible** enables fully automated deployment of ClientXCMS, from prerequisite installation to production deployment. This method is recommended for production environments and multi-server deployments.
+:::danger Not currently usable
+This playbook is **out of date** and not maintained in sync with the current ClientXCMS requirements: it installs PHP 8.2, while ClientXCMS now requires PHP 8.3 or higher (see [Requirements](./requis)). Do not use it for a production deployment as-is. Use the [manual VPS/dedicated server guide](./selfhosted) instead until this playbook is reworked.
+:::
+
+**Ansible** enables fully automated deployment of ClientXCMS, from prerequisite installation to production deployment.
 
 ## Prerequisites
 
@@ -15,7 +19,7 @@ translated: true
 - **SSH access** to target servers
 
 ### On the target servers
-- **Ubuntu 22.04+**, **Debian 11+** or **Rocky/AlmaLinux 9+**
+- Any Linux distribution able to provide the required PHP version and a compatible database (see [Requirements](./requis)) - the playbook currently targets Debian/Ubuntu and RedHat-family distributions
 - **Root access** or user with sudo privileges
 - **Internet connection** to download packages
 
