@@ -28,10 +28,6 @@ Security settings are essential for:
 * **Securing administrator access** with custom URLs
 * **Controlling authentication** according to your business needs
 
-:::tip Tip
-It's like adjusting the locks and alarms on your house 🏠 — the better it's configured, the better you sleep.
-:::
-
 ## Password Encryption
 
 ### Hashing Algorithms
@@ -41,9 +37,9 @@ Choose the algorithm used to encrypt user passwords.
 
 | Algorithm | Security | Performance | Recommendation |
 |-----------|----------|-------------|----------------|
-| **bcrypt** | ✅ High | ⚡ Fast | Default, recommended |
-| **argon2** | ✅✅ Very high | 🐌 Slower | High security |
-| **argon2id** | ✅✅✅ Maximum | 🐌🐌 Slowest | Critical security |
+| **bcrypt** | High | Fast | Default, recommended |
+| **argon2** | Very high | Slower | High security |
+| **argon2id** | Maximum | Slowest | Critical security |
 
 :::info Migration from v1
 For users migrating from CLIENTXCMS v1, keep `argon` to maintain compatibility with existing passwords.
@@ -64,10 +60,10 @@ Customize the URL for accessing your administration interface to hide the standa
 
 | Prefix | Access URL | Security Level |
 |--------|------------|----------------|
-| `admin` | `/admin` | ⚠️ Standard (avoid) |
-| `backoffice` | `/backoffice` | ✅ Better |
-| `manage-2024` | `/manage-2024` | ✅✅ Recommended |
-| `secure-xyz789` | `/secure-xyz789` | ✅✅✅ Optimal |
+| `admin` | `/admin` | Standard (avoid) |
+| `backoffice` | `/backoffice` | Better |
+| `manage-2024` | `/manage-2024` | Recommended |
+| `secure-xyz789` | `/secure-xyz789` | Optimal |
 
 :::tip Best Practices
 - Use a **unique and unpredictable** prefix
@@ -152,10 +148,10 @@ Choose the protection service against bots and automated spam.
 
 | Service | Advantages | Disadvantages |
 |---------|-----------|---------------|
-| **none** | No friction | ❌ No protection |
-| **reCAPTCHA** | Widely supported | 🔍 Google data collection |
-| **hCaptcha** | Privacy-friendly | ⚡ Less known |
-| **Cloudflare Turnstile** | Optimal performance | 🆕 More recent |
+| **none** | No friction | No protection |
+| **reCAPTCHA** | Widely supported | Google data collection |
+| **hCaptcha** | Privacy-friendly | Less known |
+| **Cloudflare Turnstile** | Optimal performance | More recent |
 
 ### Key Configuration
 

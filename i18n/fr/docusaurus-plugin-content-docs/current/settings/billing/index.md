@@ -27,10 +27,6 @@ La facturation automatisée est cruciale pour :
 * **Améliorer l'expérience client** avec des factures claires et professionnelles
 * **Simplifier votre comptabilité** et faciliter les déclarations fiscales
 
-:::tip Astuce
-C'est comme avoir un comptable intégré qui travaille 24h/24 📊 — précis, fiable et toujours conforme aux réglementations.
-:::
-
 ## Configuration de base
 
 ### Devise principale

@@ -29,10 +29,6 @@ Robust security allows you to:
 * **Keep the trust** of your users
 * **Avoid financial losses** related to security incidents
 
-:::tip Tip
-It's like having multiple locks on your house 🔒 — each security layer strengthens the overall protection.
-:::
-
 
 ## Navigation in this section
 

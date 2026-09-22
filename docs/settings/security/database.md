@@ -28,10 +28,6 @@ Direct database management is useful for:
 * **Initializing data** with system seeders
 * **Diagnosing problems** with structure or data
 
-:::tip Tip
-It's like having access to your car's engine 🔧 — powerful, but requires expertise to avoid damage.
-:::
-
 ## Connection Information
 
 ### Access Settings
@@ -80,15 +76,15 @@ Migrations are scripts that modify your database structure:
 
 ### Running Migrations
 
-**Module Selection** | (dropdown menu)
-Choose the module or extension for which to run migrations:
+**Extension Selection** | (dropdown menu)
+Choose the extension for which to run migrations:
 
 - **Core**: Main ClientXCMS system migrations
-- **Extensions**: Migrations specific to installed modules
+- **Extensions**: Migrations specific to installed extensions
 
 **Migration Process**:
 
-1. Select the appropriate module
+1. Select the appropriate extension
 2. Click **"Migrate"** to start the operation
 3. Monitor the output for any errors
 4. Verify your system is working properly

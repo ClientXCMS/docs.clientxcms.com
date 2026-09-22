@@ -26,10 +26,6 @@ L'intégration sociale permet de :
 * **Améliorer votre référencement** avec des signaux sociaux positifs
 * **Faciliter le partage** de votre contenu et de vos offres
 
-:::tip Astuce
-C'est comme ouvrir des succursales de votre magasin 🏪 dans différents quartiers digitaux — chaque réseau vous connecte à une communauté spécifique.
-:::
-
 ## Gestion des réseaux sociaux
 
 ### Interface d'administration

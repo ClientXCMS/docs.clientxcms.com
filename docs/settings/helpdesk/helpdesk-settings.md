@@ -22,10 +22,6 @@ Help center configuration is essential for:
 * **Integrating with your external** tools
 * **Maintaining service** quality
 
-:::tip Tip
-It's like adjusting the settings of an industrial machine ⚙️ — the more precise it is, the more efficient and reliable.
-:::
-
 ## Automatic Ticket Management
 
 ### Automatic Closure

@@ -29,10 +29,6 @@ A structured support system allows you to:
 * **Automate processes** for more efficiency
 * **Maintain a complete history** of customer interactions
 
-:::tip Tip
-It's like having a virtual call center 📞 — organized, traceable, and available 24/7 for your clients.
-:::
-
 ## Navigation in This Section
 
 <DocCardList />

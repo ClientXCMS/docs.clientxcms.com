@@ -46,47 +46,47 @@ Accédez directement aux différentes sections de configuration :
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginBottom: '2rem'}}>
 
 <a href="#paramètres-généraux" className="settings-card">
-  <h3>🏢 Paramètres généraux</h3>
+  <h3>Paramètres généraux</h3>
   <p>Configuration de base (nom, logo, mail, maintenance, langues, licence)</p>
 </a>
 
 <a href="#approvisionnement" className="settings-card">
-  <h3>⚙️ Approvisionnement</h3>
+  <h3>Approvisionnement</h3>
   <p>Gestion des services et serveurs</p>
 </a>
 
 <a href="#paramètres-de-la-boutique" className="settings-card">
-  <h3>🛒 Paramètres de la boutique</h3>
+  <h3>Paramètres de la boutique</h3>
   <p>Produits, paiements, coupons, facturation</p>
 </a>
 
 <a href="#paramètres-des-extensions" className="settings-card">
-  <h3>🧩 Paramètres des extensions</h3>
+  <h3>Paramètres des extensions</h3>
   <p>Modules et addons installés</p>
 </a>
 
 <a href="#proxmox" className="settings-card">
-  <h3>🖥️ Proxmox</h3>
+  <h3>Proxmox</h3>
   <p>IPAM, modèles KVM, systèmes LXC</p>
 </a>
 
 <a href="#sécurité" className="settings-card">
-  <h3>🔒 Sécurité</h3>
+  <h3>Sécurité</h3>
   <p>Personnels, API, base de données, logs</p>
 </a>
 
 <a href="#facturation" className="settings-card">
-  <h3>💰 Facturation</h3>
+  <h3>Facturation</h3>
   <p>Abonnements, factures, transferts</p>
 </a>
 
 <a href="#centre-daide" className="settings-card">
-  <h3>🎧 Centre d'aide</h3>
+  <h3>Centre d'aide</h3>
   <p>Helpdesk et support client</p>
 </a>
 
 <a href="#personnalisation" className="settings-card">
-  <h3>🎨 Personnalisation</h3>
+  <h3>Personnalisation</h3>
   <p>Interface, thème, SEO, menus</p>
 </a>
 
@@ -177,7 +177,7 @@ Configuration complète de votre boutique en ligne. Gérez vos produits, moyens 
   }}
 />
 
-Configuration des modules et extensions installés sur votre plateforme. Cette section permet de gérer les paramètres spécifiques à chaque extension pour étendre les fonctionnalités de ClientXCMS.
+Configuration des extensions installées sur votre plateforme. Cette section permet de gérer les paramètres spécifiques à chaque extension pour étendre les fonctionnalités de ClientXCMS.
 
 **Configuration disponible :**
 * **[Extensions](../extensions)** : Gestion des extensions du Marketplace
@@ -191,7 +191,7 @@ Configuration des modules et extensions installés sur votre plateforme. Cette s
 **[→ Gérer les extensions](../extensions)**
 
 :::info
-Consultez la section [Extensions](../extensions) pour plus d'informations sur l'installation et la configuration des modules.
+Consultez la section [Extensions](../extensions) pour plus d'informations sur l'installation et la configuration des extensions.
 :::
 
 ### Proxmox

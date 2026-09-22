@@ -29,10 +29,6 @@ Le multilinguisme est essentiel pour :
 * **Augmenter la confiance** des utilisateurs non francophones
 * **Optimiser votre référencement** dans différents pays
 
-:::tip Astuce
-C'est comme avoir plusieurs vitrines dans différents pays 🌍 — chaque client se sent chez lui, peu importe sa langue maternelle.
-:::
-
 ## Langues disponibles
 
 CLIENTXCMS propose actuellement les langues suivantes :
@@ -108,20 +104,20 @@ CLIENTXCMS détecte automatiquement :
 
 Lorsqu'une langue est activée, les éléments suivants sont traduits :
 
-- ✅ **Interface utilisateur** : Tous les menus, boutons et messages
-- ✅ **E-mails automatiques** : Notifications, factures, confirmations
-- ✅ **Messages système** : Erreurs, confirmations, alertes
-- ✅ **Contenu statique** : Pages légales, conditions générales
-- ✅ **Configuration du thème** : Champs traduisibles définis par le thème (titres, descriptions, contenu textuel) — si le thème actif supporte les [paramètres en base de données](/fr/developpers/themes/db-settings)
+- **Interface utilisateur** : Tous les menus, boutons et messages
+- **E-mails automatiques** : Notifications, factures, confirmations
+- **Messages système** : Erreurs, confirmations, alertes
+- **Contenu statique** : Pages légales, conditions générales
+- **Configuration du thème** : Champs traduisibles définis par le thème (titres, descriptions, contenu textuel) — si le thème actif supporte les [paramètres en base de données](/fr/developpers/themes/db-settings)
 
 ### Éléments à traduire manuellement
 
 Certains contenus nécessitent une traduction manuelle :
 
-- 📝 **Descriptions de produits** : Via l'interface de gestion des produits
-- 📝 **Pages personnalisées** : Contenu créé spécifiquement
-- 📝 **Annonces et actualités** : Communications marketing
-- 📝 **Métadonnées SEO** : Titres et descriptions pour le référencement
+- **Descriptions de produits** : Via l'interface de gestion des produits
+- **Pages personnalisées** : Contenu créé spécifiquement
+- **Annonces et actualités** : Communications marketing
+- **Métadonnées SEO** : Titres et descriptions pour le référencement
 
 ## Personnalisation des traductions
 

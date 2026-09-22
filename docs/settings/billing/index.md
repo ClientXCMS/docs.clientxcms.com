@@ -28,10 +28,6 @@ Automated billing is crucial for:
 * **Improving customer experience** with clear and professional invoices
 * **Simplifying your accounting** and facilitating tax declarations
 
-:::tip Tip
-It's like having a built-in accountant working 24/7 📊 — precise, reliable, and always compliant with regulations.
-:::
-
 ## Basic Configuration
 
 ### Primary Currency

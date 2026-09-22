@@ -21,10 +21,6 @@ La configuration du centre d'aide est essentielle pour :
 * **Intégrer avec vos outils** externes
 * **Maintenir la qualité** du service
 
-:::tip Astuce
-C'est comme régler les paramètres d'une machine industrielle ⚙️ — plus c'est précis, plus c'est efficace et fiable.
-:::
-
 ## Gestion automatique des tickets
 
 ### Fermeture automatique

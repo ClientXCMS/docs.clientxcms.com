@@ -30,10 +30,6 @@ Social integration allows you to:
 * **Improve your SEO** with positive social signals
 * **Facilitate sharing** of your content and offers
 
-:::tip Tip
-It's like opening branches of your store in different digital neighborhoods — each network connects you to a specific community.
-:::
-
 ## Social Network Management
 
 ### Administration Interface

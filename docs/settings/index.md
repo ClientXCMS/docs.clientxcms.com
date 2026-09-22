@@ -49,47 +49,47 @@ Access the different configuration sections directly:
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginBottom: '2rem'}}>
 
 <a href="#general-settings" className="settings-card">
-  <h3>🏢 General Settings</h3>
+  <h3>General Settings</h3>
   <p>Basic configuration (name, logo, email, maintenance, languages, license)</p>
 </a>
 
 <a href="#provisioning" className="settings-card">
-  <h3>⚙️ Provisioning</h3>
+  <h3>Provisioning</h3>
   <p>Service and server management</p>
 </a>
 
 <a href="#store-settings" className="settings-card">
-  <h3>🛒 Store Settings</h3>
+  <h3>Store Settings</h3>
   <p>Products, payments, coupons, invoicing</p>
 </a>
 
 <a href="#extension-settings" className="settings-card">
-  <h3>🧩 Extension Settings</h3>
+  <h3>Extension Settings</h3>
   <p>Installed modules and addons</p>
 </a>
 
 <a href="#proxmox" className="settings-card">
-  <h3>🖥️ Proxmox</h3>
+  <h3>Proxmox</h3>
   <p>IPAM, KVM templates, LXC systems</p>
 </a>
 
 <a href="#security" className="settings-card">
-  <h3>🔒 Security</h3>
+  <h3>Security</h3>
   <p>Staff, API, database, logs</p>
 </a>
 
 <a href="#billing" className="settings-card">
-  <h3>💰 Billing</h3>
+  <h3>Billing</h3>
   <p>Subscriptions, invoices, transfers</p>
 </a>
 
 <a href="#help-center" className="settings-card">
-  <h3>🎧 Help Center</h3>
+  <h3>Help Center</h3>
   <p>Helpdesk and customer support</p>
 </a>
 
 <a href="#customization" className="settings-card">
-  <h3>🎨 Customization</h3>
+  <h3>Customization</h3>
   <p>Interface, theme, SEO, menus</p>
 </a>
 
@@ -180,7 +180,7 @@ Complete configuration of your online store. Manage your products, payment metho
   }}
 />
 
-Configuration of modules and extensions installed on your platform. This section allows you to manage settings specific to each extension to extend ClientXCMS functionality.
+Configuration of extensions installed on your platform. This section allows you to manage settings specific to each extension to extend ClientXCMS functionality.
 
 **Available Configuration:**
 * **[Extensions](../extensions)**: Marketplace extension management
@@ -194,7 +194,7 @@ Configuration of modules and extensions installed on your platform. This section
 **[→ Manage Extensions](../extensions)**
 
 :::info
-See the [Extensions](../extensions) section for more information on module installation and configuration.
+See the [Extensions](../extensions) section for more information on extension installation and configuration.
 :::
 
 ### Proxmox

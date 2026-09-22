@@ -13,7 +13,7 @@ Il permet d'informer les utilisateurs de la raison de la maintenance et de la du
 - **URL de maintenance** : L'URL pour passer outre la maintenance.
 - **Texte du bouton de maintenance** : Le texte du bouton pour passer outre la maintenance.
 - **URL de l'image de maintenance** : L'URL de l'image de maintenance.
-- **Icone de maintenance** : L'icone de maintenance.
+- **Icône de maintenance** : L'icone de maintenance.
 
 :::tip Astuce
 Le mode maintenance est votre **bouclier de protection** pendant les opérations sensibles.
@@ -28,10 +28,6 @@ Le mode maintenance est indispensable pour :
 * **Éviter les erreurs** causées par des accès pendant des modifications
 * **Communiquer professionnellement** sur les interruptions de service
 * **Maintenir la confiance** en montrant que les maintenances sont planifiées
-
-:::tip Astuce
-C'est comme mettre un panneau "Fermé pour travaux" sur votre boutique 🚧 — vos clients comprennent et apprécient la transparence.
-:::
 
 ## Configuration du mode maintenance
 
@@ -82,15 +78,15 @@ Par exemple : "Voir le statut" ou "Plus d'informations".
 
 ### Pour les administrateurs
 
-✅ **Accès complet maintenu** : Les administrateurs peuvent toujours se connecter
-✅ **Travail sans interruption** : Toutes les fonctionnalités restent accessibles
-✅ **Indicateur visuel** : Un badge ou notification rappelle que la maintenance est active
+- **Accès complet maintenu** : Les administrateurs peuvent toujours se connecter
+- **Travail sans interruption** : Toutes les fonctionnalités restent accessibles
+- **Indicateur visuel** : Un badge ou notification rappelle que la maintenance est active
 
 ### Pour les utilisateurs
 
-🚫 **Accès bloqué** : Impossible de se connecter à l'espace client
-🚫 **Sessions terminées** : Les utilisateurs connectés sont déconnectés
-✅ **Page informative** : Affichage de la page de maintenance personnalisée
+- **Accès bloqué** : Impossible de se connecter à l'espace client
+- **Sessions terminées** : Les utilisateurs connectés sont déconnectés
+- **Page informative** : Affichage de la page de maintenance personnalisée
 
 ## Personnalisation avancée
 

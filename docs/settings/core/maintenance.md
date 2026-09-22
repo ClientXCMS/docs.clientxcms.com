@@ -30,10 +30,6 @@ Maintenance mode is essential for:
 * **Communicating professionally** about service interruptions
 * **Maintaining trust** by showing that maintenances are planned
 
-:::tip Tip
-It's like putting an "Closed for maintenance" sign on your shop 🚧 — your clients understand and appreciate the transparency.
-:::
-
 ## Maintenance Mode Configuration
 
 ### Activation and Deactivation
@@ -83,15 +79,15 @@ For example: "View status" or "More information".
 
 ### For Administrators
 
-✅ **Full access maintained**: Administrators can still log in
-✅ **Uninterrupted work**: All features remain accessible
-✅ **Visual indicator**: A badge or notification reminds that maintenance is active
+- **Full access maintained**: Administrators can still log in
+- **Uninterrupted work**: All features remain accessible
+- **Visual indicator**: A badge or notification reminds that maintenance is active
 
 ### For Users
 
-🚫 **Access blocked**: Unable to log into the client area
-🚫 **Sessions terminated**: Logged-in users are disconnected
-✅ **Informative page**: Display of the customized maintenance page
+- **Access blocked**: Unable to log into the client area
+- **Sessions terminated**: Logged-in users are disconnected
+- **Informative page**: Display of the customized maintenance page
 
 ## Advanced Customization
 

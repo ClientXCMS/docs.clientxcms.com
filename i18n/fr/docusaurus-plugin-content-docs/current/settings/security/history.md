@@ -27,13 +27,9 @@ La surveillance des logs est essentielle pour :
 * **Auditer les actions** des administrateurs et utilisateurs
 * **Planifier la maintenance** en anticipant les problèmes récurrents
 
-:::tip Astuce
-C'est comme avoir un système de vidéosurveillance pour votre plateforme 📹 — vous voyez tout ce qui se passe, même quand vous n'êtes pas là.
-:::
-
 ## Types de logs
 
-### 📋 Logs des tâches planifiées
+### Logs des tâches planifiées
 
 Les tâches automatiques génèrent leurs propres fichiers de logs pour tracer leur exécution :
 
@@ -48,7 +44,7 @@ Les tâches automatiques génèrent leurs propres fichiers de logs pour tracer l
 | `purge-metadata.log`    | `clientxcms:purge-metadata`  | Nettoyage des métadonnées          |
 | `purge-basket.log`      | `clientxcms:purge-basket`    | Vidage des paniers abandonnés       |
 
-#### Contenu des logs de tâches
+**Contenu des logs de tâches**
 
 Chaque fichier contient :
 - **Horodatage** précis de l'exécution
@@ -57,7 +53,7 @@ Chaque fichier contient :
 - **Erreurs rencontrées** et leurs détails
 - **Durée d'exécution** de la tâche
 
-### 🚨 Logs d'erreurs système
+### Logs d'erreurs système
 
 Les erreurs applicatives sont enregistrées quotidiennement :
 
@@ -67,13 +63,13 @@ Exemples :
 - `laravel-2024-08-15.log`
 - `laravel-2024-08-16.log`
 
-#### Rétention des logs
+**Rétention des logs**
 
 - **Durée de conservation** : 15 jours automatiquement
 - **Rotation quotidienne** : Un nouveau fichier chaque jour
 - **Suppression automatique** : Les logs de plus de 15 jours sont effacés
 
-#### Contenu des logs d'erreurs
+**Contenu des logs d'erreurs**
 
 - **Erreurs PHP** : Exceptions non gérées, erreurs fatales
 - **Erreurs SQL** : Problèmes de base de données
@@ -87,25 +83,25 @@ Exemples :
 
 Pour chaque fichier de log, trois actions sont possibles :
 
-**🔽 Télécharger** | (bouton gris)
+**Télécharger** | (bouton gris)
 Télécharge le fichier de log sur votre ordinateur pour analyse hors ligne.
 Utile pour archivage ou analyse avec des outils externes.
 
 ### Cas d'usage des actions
 
-#### Téléchargement
+**Téléchargement**
 
 - **Analyse approfondie** avec des outils externes
 - **Archivage** pour audit ou conformité
 - **Partage** avec le support technique
 - **Surveillance** des tendances long terme
 
-#### Vidage
+**Vidage**
 - **Nettoyage** d'un fichier devenu trop volumineux
 - **Reset** après résolution d'un problème récurrent
 - **Optimisation** de l'espace disque
 
-#### Suppression
+**Suppression**
 - **Maintenance** de l'espace disque
 - **Conformité** aux politiques de rétention
 - **Nettoyage** de logs non pertinents
@@ -121,7 +117,7 @@ Utile pour archivage ou analyse avec des outils externes.
 
 ### Analyse des logs
 
-#### Logs de tâches planifiées
+**Logs de tâches planifiées**
 ```
 [2024-08-15 02:00:01] INFO: services:delivery started
 [2024-08-15 02:00:05] INFO: Processing 15 pending services
@@ -130,14 +126,14 @@ Utile pour archivage ou analyse avec des outils externes.
 [2024-08-15 02:00:12] INFO: services:delivery completed in 11.2s
 ```
 
-#### Logs d'erreurs système
+**Logs d'erreurs système**
 ```
 [2024-08-15 14:23:45] ERROR: PDOException: Connection refused
 [2024-08-15 14:23:45] ERROR: Stack trace: /var/www/app/Database.php:42
 [2024-08-15 14:24:01] INFO: Database connection restored
 ```
 
-### Dépannage courant
+## Dépannage courant
 
 ### Logs trop volumineux
 

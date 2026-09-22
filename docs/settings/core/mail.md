@@ -37,10 +37,6 @@ Automated email is at the heart of the client experience in CLIENTXCMS. It allow
 * Notify clients of changes to their services
 * Securely manage password resets
 
-:::tip Tip
-It's like having a personal assistant who automatically sends all your important mail 📬 — reliable, fast, and professional.
-:::
-
 ## Basic Configuration
 
 ### Identity Settings
@@ -73,7 +69,7 @@ For example: "Best regards, The ClientXCMS Team" or "Thank you for your trust".
 
 **Disable emails** | (checkbox)
 Prevents all emails from being sent from the system.
-⚠️ Use only in development or maintenance.
+Use only in development or maintenance.
 
 ## SMTP Configuration
 
@@ -145,9 +141,9 @@ After configuring your SMTP settings, it is **essential** to test the connection
 
 ### Success Indicators
 
-- ✅ **Successful connection**: Confirmation message displayed
-- ✅ **Email received**: Check your inbox
-- ✅ **Good formatting**: Email displays correctly
+- **Successful connection**: Confirmation message displayed
+- **Email received**: Check your inbox
+- **Good formatting**: Email displays correctly
 
 
 ## Troubleshooting

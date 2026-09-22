@@ -26,10 +26,6 @@ Une sécurité robuste vous permet de :
 * **Conserver la confiance** de vos utilisateurs
 * **Éviter les pertes financières** liées aux incidents de sécurité
 
-:::tip Astuce
-C'est comme avoir plusieurs verrous sur votre maison 🔒 — chaque couche de sécurité renforce la protection globale.
-:::
-
 
 ## Navigation dans cette section
 

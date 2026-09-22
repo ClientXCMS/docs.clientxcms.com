@@ -30,10 +30,6 @@ Administrator management is essential for:
 * **Limiting risks** related to compromised accounts
 * **Facilitating collaboration** in teams with appropriate access
 
-:::tip Tip
-It's like managing access to a safe 🔐 — each person should have exactly the rights they need, no more, no less.
-:::
-
 ## Creating a Staff Account
 
 ### Creation Process

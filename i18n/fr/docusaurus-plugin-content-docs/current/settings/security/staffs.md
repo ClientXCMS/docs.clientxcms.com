@@ -29,10 +29,6 @@ La gestion des administrateurs est essentielle pour :
 * **Limiter les risques** liés aux comptes compromis
 * **Faciliter la collaboration** en équipe avec des accès appropriés
 
-:::tip Astuce
-C'est comme gérer les accès à un coffre-fort 🔐 — chaque personne doit avoir exactement les droits dont elle a besoin, ni plus, ni moins.
-:::
-
 ## Création d'un compte personnel
 
 ### Processus de création

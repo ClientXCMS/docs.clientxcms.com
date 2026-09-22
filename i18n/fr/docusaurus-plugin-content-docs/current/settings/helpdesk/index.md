@@ -26,10 +26,6 @@ Un système de support structuré vous permet de :
 * **Automatiser les processus** pour plus d'efficacité
 * **Maintenir un historique complet** des interactions client
 
-:::tip Astuce
-C'est comme avoir un centre d'appel virtuel 📞 — organisé, traçable et disponible 24h/24 pour vos clients.
-:::
-
 ## Navigation dans cette section
 
 <DocCardList />

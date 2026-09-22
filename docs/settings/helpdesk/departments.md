@@ -30,10 +30,6 @@ Departmental structuring is essential for:
 * **Optimizing workload** between teams
 * **Facilitating tracking** of metrics by domain
 
-:::tip Tip
-It's like organizing a hospital into specialized units 🏥 — cardiology, pediatrics, emergency... each patient goes to the right place on the first try.
-:::
-
 ## Default Departments
 
 ### Initial Configuration
@@ -42,10 +38,10 @@ CLIENTXCMS offers a standard departmental structure to get started quickly:
 
 | Department | Use | Required Expertise |
 | ---------- | --- | ------------------ |
-| 🔧**Technical** | Server problems, bugs, configurations | IT, development |
-| 💰**Billing** | Invoices, payments, refunds | Accounting, sales |
-| 🏢**Sales** | Sales, quotes, negotiations | Business, customer relations |
-| 📋**General** | Various requests, information | General support |
+| **Technical** | Server problems, bugs, configurations | IT, development |
+| **Billing** | Invoices, payments, refunds | Accounting, sales |
+| **Sales** | Sales, quotes, negotiations | Business, customer relations |
+| **General** | Various requests, information | General support |
 
 ### Adapting to Your Business
 
@@ -57,19 +53,19 @@ These default departments can be:
 
 **Examples of adaptations**:
 
-#### Web Host
+**Web Host**
 
-- 🔧 **Technical**: Servers, DNS, SSL
-- 💰 **Billing**: Payments, renewals
-- 🚀 **Migration**: Site transfers
-- 📈 **Sales**: New offers
+- **Technical**: Servers, DNS, SSL
+- **Billing**: Payments, renewals
+- **Migration**: Site transfers
+- **Sales**: New offers
 
-#### Development Agency
+**Development Agency**
 
-- 💻 **Development**: Bugs, new features
-- 🎨 **Design**: Interface, UX/UI
-- 📋 **Project**: Planning, specifications
-- 💰 **Billing**: Quotes, payments
+- **Development**: Bugs, new features
+- **Design**: Interface, UX/UI
+- **Project**: Planning, specifications
+- **Billing**: Quotes, payments
 
 ## Creating a Department
 
@@ -92,9 +88,9 @@ Use a clear and immediately understandable term.
 
 **Examples of effective names**:
 
-- ✅ "Technical Support" rather than "Tech"
-- ✅ "Billing & Payments" rather than "Accounting"
-- ✅ "Sales Assistance" rather than "Sales"
+- "Technical Support" rather than "Tech"
+- "Billing & Payments" rather than "Accounting"
+- "Sales Assistance" rather than "Sales"
 
 **Icon** | (icon selector)
 Visual representation of the department for quick identification.
@@ -127,7 +123,7 @@ The display includes:
 
 You can automatically direct clients to a department via URL parameters:
 
-#### Available Parameters
+**Available Parameters**
 
 | Parameter | Description | Example Value |
 | --------- | ----------- | ------------- |
@@ -137,7 +133,7 @@ You can automatically direct clients to a department via URL parameters:
 | `content` | Pre-filled message | `Hello, I have a problem with...` |
 | `related_id` | Related service | `123` (Service ID) |
 
-#### Pre-configured URL Examples
+**Pre-configured URL Examples**
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

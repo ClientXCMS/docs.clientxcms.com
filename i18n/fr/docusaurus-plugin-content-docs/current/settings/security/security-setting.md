@@ -27,10 +27,6 @@ Les paramètres de sécurité sont essentiels pour :
 * **Sécuriser l'accès administrateur** avec des URLs personnalisées
 * **Contrôler l'authentification** selon vos besoins métier
 
-:::tip Astuce
-C'est comme ajuster les serrures et alarmes de votre maison 🏠 — plus c'est bien configuré, plus vous dormez tranquille.
-:::
-
 ## Chiffrement des mots de passe
 
 ### Algorithmes de hashage
@@ -40,9 +36,9 @@ Choisissez l'algorithme utilisé pour chiffrer les mots de passe des utilisateur
 
 | Algorithm | Sécurité | Performance | Recommandation |
 |-----------|----------|-------------|----------------|
-| **bcrypt** | ✅ Élevée | ⚡ Rapide | Par défaut, recommandé |
-| **argon2** | ✅✅ Très élevée | 🐌 Plus lent | Haute sécurité |
-| **argon2id** | ✅✅✅ Maximale | 🐌🐌 Le plus lent | Sécurité critique |
+| **bcrypt** | Élevée | Rapide | Par défaut, recommandé |
+| **argon2** | Très élevée | Plus lent | Haute sécurité |
+| **argon2id** | Maximale | Le plus lent | Sécurité critique |
 
 :::info Migration depuis la v1
 Pour les utilisateurs migrant depuis CLIENTXCMS v1, conservez `argon` pour maintenir la compatibilité avec les mots de passe existants.
@@ -63,10 +59,10 @@ Personnalisez l'URL d'accès à votre interface d'administration pour masquer l'
 
 | Préfixe | URL d'accès | Niveau de sécurité |
 |---------|-------------|-------------------|
-| `admin` | `/admin` | ⚠️ Standard (évitez) |
-| `backoffice` | `/backoffice` | ✅ Mieux |
-| `manage-2024` | `/manage-2024` | ✅✅ Recommandé |
-| `secure-xyz789` | `/secure-xyz789` | ✅✅✅ Optimal |
+| `admin` | `/admin` | Standard (évitez) |
+| `backoffice` | `/backoffice` | Mieux |
+| `manage-2024` | `/manage-2024` | Recommandé |
+| `secure-xyz789` | `/secure-xyz789` | Optimal |
 
 :::tip Bonnes pratiques
 - Utilisez un préfixe **unique et non prévisible**
@@ -151,10 +147,10 @@ Choisissez le service de protection contre les bots et le spam automatisé.
 
 | Service | Avantages | Inconvénients |
 |---------|-----------|---------------|
-| **none** | Aucune friction | ❌ Aucune protection |
-| **reCAPTCHA** | Largement supporté | 🔍 Collecte de données Google |
-| **hCaptcha** | Respectueux de la vie privée | ⚡ Moins connu |
-| **Cloudflare Turnstile** | Performance optimale | 🆕 Plus récent |
+| **none** | Aucune friction | Aucune protection |
+| **reCAPTCHA** | Largement supporté | Collecte de données Google |
+| **hCaptcha** | Respectueux de la vie privée | Moins connu |
+| **Cloudflare Turnstile** | Performance optimale | Plus récent |
 
 ### Configuration des clés
 

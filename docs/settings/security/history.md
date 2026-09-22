@@ -28,13 +28,9 @@ Log monitoring is essential for:
 * **Auditing actions** of administrators and users
 * **Planning maintenance** by anticipating recurring problems
 
-:::tip Tip
-It's like having a video surveillance system for your platform 📹 — you see everything that happens, even when you're not there.
-:::
-
 ## Types of Logs
 
-### 📋 Scheduled Task Logs
+### Scheduled Task Logs
 
 Automatic tasks generate their own log files to trace their execution:
 
@@ -49,7 +45,7 @@ Automatic tasks generate their own log files to trace their execution:
 | `purge-metadata.log`    | `clientxcms:purge-metadata`| Metadata cleanup                     |
 | `purge-basket.log`      | `clientxcms:purge-basket`  | Abandoned cart cleanup               |
 
-#### Task Log Content
+**Task log content**
 
 Each file contains:
 - **Precise timestamp** of execution
@@ -58,7 +54,7 @@ Each file contains:
 - **Errors encountered** and their details
 - **Execution duration** of the task
 
-### 🚨 System Error Logs
+### System Error Logs
 
 Application errors are recorded daily:
 
@@ -68,13 +64,13 @@ Examples:
 - `laravel-2024-08-15.log`
 - `laravel-2024-08-16.log`
 
-#### Log Retention
+**Log retention**
 
 - **Retention period**: 15 days automatically
 - **Daily rotation**: A new file each day
 - **Automatic deletion**: Logs older than 15 days are deleted
 
-#### Error Log Content
+**Error log content**
 
 - **PHP errors**: Unhandled exceptions, fatal errors
 - **SQL errors**: Database problems
@@ -88,25 +84,25 @@ Examples:
 
 For each log file, three actions are available:
 
-**🔽 Download** | (gray button)
+**Download** | (gray button)
 Download the log file to your computer for offline analysis.
 Useful for archiving or analysis with external tools.
 
 ### Action Use Cases
 
-#### Download
+**Download**
 
 - **In-depth analysis** with external tools
 - **Archiving** for audit or compliance
 - **Sharing** with technical support
 - **Long-term** trend monitoring
 
-#### Clearing
+**Clearing**
 - **Cleanup** of a file that has become too large
 - **Reset** after resolving a recurring problem
 - **Disk space** optimization
 
-#### Deletion
+**Deletion**
 - **Disk space** maintenance
 - **Compliance** with retention policies
 - **Cleanup** of irrelevant logs
@@ -122,7 +118,7 @@ Useful for archiving or analysis with external tools.
 
 ### Log Analysis
 
-#### Scheduled Task Logs
+**Scheduled task logs**
 ```
 [2024-08-15 02:00:01] INFO: services:delivery started
 [2024-08-15 02:00:05] INFO: Processing 15 pending services
@@ -131,14 +127,14 @@ Useful for archiving or analysis with external tools.
 [2024-08-15 02:00:12] INFO: services:delivery completed in 11.2s
 ```
 
-#### System Error Logs
+**System error logs**
 ```
 [2024-08-15 14:23:45] ERROR: PDOException: Connection refused
 [2024-08-15 14:23:45] ERROR: Stack trace: /var/www/app/Database.php:42
 [2024-08-15 14:24:01] INFO: Database connection restored
 ```
 
-### Common Troubleshooting
+## Common Troubleshooting
 
 ### Logs Too Large
 
