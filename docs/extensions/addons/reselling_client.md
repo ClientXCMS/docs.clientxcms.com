@@ -41,10 +41,10 @@ Create a CLIENTXCMS server in `Admin Panel` > `Settings` > `Provisioning` > `Ser
 
 ![img](/img/next_gen/extensions/addons/reselling_client/image.png)
 
-**IP Address**: clients.ctxhosting.fr
-**Hostname**: clients.ctxhosting.fr
+**IP Address**: by-hoster.net/client
+**Hostname**: by-hoster.net/client
 **Username**: ctxreselling
-**Password**: API key indicated in the welcome email
+**Password**: Contact By-Hoster.net support
 **Port**: 443
 
 The following port must be open to connect CLIENTXCMS to your reselling server: 443
