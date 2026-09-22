@@ -3,7 +3,7 @@ sidebar_position: 6
 translated: true
 ---
 # Sections
-Sections are content elements that can be added to a CLIENTXCMS page. They are controlled by themes and can be customized in the administration interface from the section page in personalization settings: a page picker on the left (e.g. Home, Basket), the list of sections currently on the selected page just below it, and a live preview of the currently selected section on the right, rendered with its actual (or default) content.
+Sections are content elements that can be added to a CLIENTXCMS page. They are controlled by themes and can be customized in the administration interface from the section page in personalization settings, which combines a page picker on the left (e.g. Home, Basket), the list of sections currently on the selected page just below it, and a live preview of the currently selected section on the right, rendered with its actual (or default) content.
 
 ## Creating a Custom Section
 For custom sections, you can create a `sections.json` file in the `resources/views/sections` folder of your theme. For example, for a `hero` section you can create a file `resources/views/sections/hero.blade.php` with the following content:
@@ -49,7 +49,7 @@ And a file `resources/views/sections/sections.json` with the following content:
 The `sections.json` file above only describes static metadata. If your theme's sections need fields that admins can edit from the personalization interface (a badge, a title, a repeatable list of items, an icon picker...), replace `sections.json` with a `sections.php` file in the same `views/sections/` folder.
 
 :::info
-`sections.php` and `sections.json` are mutually exclusive: if `views/sections/sections.php` exists, it is loaded and `sections.json` is ignored entirely, even if both files are present.
+`sections.php` and `sections.json` are mutually exclusive, so if `views/sections/sections.php` exists, it is loaded and `sections.json` is ignored entirely, even if both files are present.
 :::
 
 The file must `return` an array of associative arrays, one per section, in the exact same shape as the JSON format (`path`, `uuid`, `default`, `thumbnail`, `default_url`, `protected`...), plus an optional `fields` key describing the configuration form. Two DTO builders let you generate that array with plain PHP instead of writing it by hand: `App\DTO\Core\Extensions\SectionDefinition` for the section itself, and `App\DTO\Core\Extensions\SectionField` for each configuration field.
@@ -67,7 +67,7 @@ The file must `return` an array of associative arrays, one per section, in the e
 | `->protected(bool $protected = true)` | Whether the section can be removed from a page in the admin. Defaults to `true`. |
 | `->fields(array $fields)` | Sets the full list of configuration fields, replacing any previous ones. |
 | `->field(SectionField $field)` | Appends a single field to the list. |
-| `->extensionNeeded(string $extension)` | Ties the section to an extension: it stays visible but greyed out until that extension is enabled. |
+| `->extensionNeeded(string $extension)` | Ties the section to an extension, so it stays visible but greyed out until that extension is enabled. |
 | `->toArray()` | Converts the definition to the array format the theme loader expects. |
 
 ### Describing a Field: `SectionField`
@@ -106,7 +106,7 @@ This is what keeps a theme with dozens of section variants (grid, cards, carouse
 
 ### Worked Example
 
-The example below defines two sections in `resources/themes/your_theme/views/sections/sections.php`: a simple one built from a preset, and a fully custom one using a repeater.
+The example below defines two sections in `resources/themes/your_theme/views/sections/sections.php`, a simple one built from a preset and a fully custom one using a repeater.
 
 ```php
 <?php

@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 # Sections
-Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personnalisation : un sélecteur de page à gauche (ex. Accueil, Panier), la liste des sections présentes sur la page sélectionnée juste en dessous, et un aperçu en direct de la section actuellement sélectionnée à droite, rendu avec son contenu réel (ou par défaut).
+Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personnalisation, qui combine un sélecteur de page à gauche (ex. Accueil, Panier), la liste des sections présentes sur la page sélectionnée juste en dessous, et un aperçu en direct de la section actuellement sélectionnée à droite, rendu avec son contenu réel (ou par défaut).
 
 ## Création d'une section personnalisée
 Pour des sections personnalisées vous pouvez créer un fichier `sections.json` dans le dossier `resources/views/sections` de votre thème. Par exemple, pour une section `hero` vous pouvez créer un fichier `resources/views/sections/hero.blade.php` avec le contenu suivant :
@@ -48,7 +48,7 @@ Et un fichier `resources/views/sections/sections.json` avec le contenu suivant :
 Le fichier `sections.json` ci-dessus ne décrit que des métadonnées statiques. Si les sections de votre thème ont besoin de champs modifiables par les administrateurs depuis l'interface de personnalisation (un badge, un titre, une liste répétable d'éléments, un sélecteur d'icône...), remplacez `sections.json` par un fichier `sections.php` dans le même dossier `views/sections/`.
 
 :::info
-`sections.php` et `sections.json` s'excluent mutuellement : si `views/sections/sections.php` existe, il est chargé et `sections.json` est totalement ignoré, même si les deux fichiers sont présents.
+`sections.php` et `sections.json` s'excluent mutuellement, donc si `views/sections/sections.php` existe, il est chargé et `sections.json` est totalement ignoré, même si les deux fichiers sont présents.
 :::
 
 Le fichier doit `return` un tableau de tableaux associatifs, un par section, avec exactement la même forme que le format JSON (`path`, `uuid`, `default`, `thumbnail`, `default_url`, `protected`...), plus une clé `fields` optionnelle décrivant le formulaire de configuration. Deux builders DTO permettent de générer ce tableau en PHP classique plutôt qu'à la main : `App\DTO\Core\Extensions\SectionDefinition` pour la section elle-même, et `App\DTO\Core\Extensions\SectionField` pour chaque champ de configuration.
@@ -66,7 +66,7 @@ Le fichier doit `return` un tableau de tableaux associatifs, un par section, ave
 | `->protected(bool $protected = true)` | Si la section peut être retirée d'une page depuis l'admin. Vaut `true` par défaut. |
 | `->fields(array $fields)` | Définit la liste complète des champs de configuration, en remplaçant les précédents. |
 | `->field(SectionField $field)` | Ajoute un seul champ à la liste. |
-| `->extensionNeeded(string $extension)` | Lie la section à une extension : elle reste visible mais grisée tant que l'extension n'est pas activée. |
+| `->extensionNeeded(string $extension)` | Lie la section à une extension, donc elle reste visible mais grisée tant que l'extension n'est pas activée. |
 | `->toArray()` | Convertit la définition au format tableau attendu par le chargeur de thème. |
 
 ### Décrire un champ : `SectionField`
@@ -105,7 +105,7 @@ C'est ce qui évite qu'un thème avec des dizaines de variantes de sections (gri
 
 ### Exemple complet
 
-L'exemple ci-dessous définit deux sections dans `resources/themes/votre_theme/views/sections/sections.php` : une simple construite à partir d'un preset, et une entièrement personnalisée utilisant un repeater.
+L'exemple ci-dessous définit deux sections dans `resources/themes/votre_theme/views/sections/sections.php`, une simple construite à partir d'un preset et une entièrement personnalisée utilisant un repeater.
 
 ```php
 <?php

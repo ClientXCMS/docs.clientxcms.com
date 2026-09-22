@@ -41,7 +41,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Result: the item is inserted into the admin menu at the given position, alongside the other native items, using the icon and the label resolved from the translation key. Each admin individually chooses a horizontal top menu or a vertical sidebar for their own session (a toggle in the admin header); both layouts render the same underlying list of items, only their look changes.
+The item is then inserted into the admin menu at the given position, alongside the other native items, with the icon and the label resolved from the translation key. Each admin individually chooses a horizontal top menu or a vertical sidebar for their own session with a toggle in the admin header, but both layouts render the same underlying list of items, so only their look changes.
 
 :::info TIPS
 This will not display the menu, but the user can access the URL directly. To block URL access, you must add a check in the controller.
@@ -75,7 +75,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-Result: a new card appears on the settings page, showing the resolved card title and description, with the item listed underneath as an icon plus its own title and description, linking to the given controller action.
+A new card then appears on the settings page, showing the resolved card title and description, and the item is listed underneath as an icon plus its own title and description, linking to the given controller action.
 
 For more information on managing cards and items in settings, see the [dedicated page](../../../settings).
 
@@ -105,7 +105,7 @@ $this->app['extension']->addAdminCountWidget(
 );
 ```
 
-Result: a small card widget appears on the admin dashboard, showing the icon, the title ("Total Clients"), and the live count returned by the closure.
+A small card widget then appears on the admin dashboard, showing the icon, the title ("Total Clients"), and the live count returned by the closure.
 
 ### Complex Widgets: Displaying the Last 3 Logged-In Users
 
@@ -163,4 +163,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Result: the item is inserted into the client area's menu at the given position, alongside the other native items, using the icon and the label resolved from the translation key. The menu's actual layout (horizontal, sidebar, dropdown...) depends on the active theme, since `FrontMenuItem` only registers the data - each theme's views decide how to render it.
+The item is then inserted into the client area's menu at the given position, alongside the other native items, with the icon and the label resolved from the translation key. `FrontMenuItem` only registers the data, so the menu's actual layout (horizontal, sidebar, dropdown...) depends on the active theme and its views decide how to render it.

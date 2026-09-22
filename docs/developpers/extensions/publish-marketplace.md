@@ -38,7 +38,7 @@ The **Service providers** section lets you declare one namespace per field, with
 
 ## Preparing the GitHub Repository
 
-Use a public GitHub repository to keep the source auditable and the history of every release accessible. The official [ClientXCMS Pterodactyl module](https://github.com/ClientXCMS/module-pterodactyl) is the reference layout: its `master` branch contains `modules/pterodactyl`, a bilingual README, and versioned GitHub releases.
+Use a public GitHub repository to keep the source auditable and the history of every release accessible. The official [ClientXCMS Pterodactyl module](https://github.com/ClientXCMS/module-pterodactyl) is the reference layout, and its `master` branch contains `modules/pterodactyl`, a bilingual README, and versioned GitHub releases.
 
 Recommended module layout:
 

@@ -37,12 +37,11 @@ resources/themes/
     └── menus.json
 ```
 ## Commande de création d'un thème
-Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI.
+Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI. Les options `--name` et `--uuid` sont obligatoires et la commande échoue immédiatement sans elles :
 ```bash
-php artisan clientxcms:create-theme
+php artisan clientxcms:create-theme --name="Mon theme" --uuid="mon-theme"
 ```
-La commande vous demandera le nom du thème et créera la structure du thème pour vous selon vos réponses.
-La commande vous interroge de manière interactive sur le nom du thème, son UUID, puis une question oui/non pour chaque fichier optionnel (CSS, JS, config...), avant d'afficher `Theme created successfully.` une fois terminé.
+Une fois le nom et l'UUID fournis, la commande demande tout ce que vous n'avez pas passé en option (description, nom d'auteur, email d'auteur), puis une question oui/non pour chaque fichier optionnel (CSS, JS, config, lang), avant d'afficher `Theme created successfully.` une fois terminé.
 
 
 ### Création via CLI avec options

@@ -6,7 +6,7 @@ Les thèmes sont l'un des trois types d'extension de ClientXCMS, aux côtés des
 
 Pour distribuer un thème à la communauté, suivez le [guide de publication sur le marketplace](../publish-resource), puis consultez [Publier un thème](./publish-marketplace) pour les règles concernant la démonstration, le dépôt GitHub, l'archive et les mises à jour.
 
-Vous pouvez activer ou désactiver un thème en cliquant sur le bouton `Activer` ou `Désactiver` correspondant au thème. Chaque thème est présenté sous forme de carte avec une miniature d'aperçu, son statut (Activée/Désactivée), son nom et sa description ; la carte du thème actif expose une action **Configurer mon thème**, tandis que celle d'un thème désactivé expose **Démo** et **Activer**.
+Vous pouvez activer ou désactiver un thème en cliquant sur le bouton `Activer` ou `Désactiver` correspondant au thème. Chaque thème est présenté sous forme de carte avec une miniature d'aperçu, son statut, son nom et sa description.
 
 ## Installation d'un thème
 :::info Information

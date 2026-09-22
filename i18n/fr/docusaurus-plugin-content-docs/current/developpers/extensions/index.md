@@ -2,7 +2,7 @@
 # Extensions
 
 Les extensions ClientXCMS sont de trois types : **addons**, **modules**, et **thèmes**. Les addons et les modules partagent une structure commune basée sur le framework **Laravel** et se trouvent dans les dossiers respectifs `/addons` et `/modules` ; les thèmes ont leur propre structure et sont couverts dans un [guide dédié](../themes).
-Ce guide couvre les addons et modules : comment en créer un, comment le structurer, et comment l'enregistrer dans le CMS.
+Ce guide couvre les addons et modules, et explique comment en créer un, comment le structurer, et comment l'enregistrer dans le CMS.
 
 ## Prérequis
 Nous recommandons d'avoir de bonnes connaissances en **PHP** et **Laravel**, ainsi que d'être à l'aise avec les concepts suivants :
@@ -23,7 +23,7 @@ De plus, il est recommandé d'être à l'aise avec **TailwindCSS**, **Blade**, e
 Nous pouvons vous fournir une licence de développement avec les mêmes extensions que votre licence principale et 15 clients autorisés pour votre développement. Pour plus d'informations, veuillez nous contacter.
 ## Activation
 
-Les extensions chargées peuvent s'activer ou se désactiver dans la page **Paramètres > Extensions**. Elle présente trois onglets - **Mes extensions**, **Découvrir** et **Thèmes** - affichant chacun les éléments installés et disponibles sous forme de cartes (nom, version, prix, statut). Selon l'état de l'extension, les actions disponibles sont **Mettre à jour**, **Activer**/**Désactiver**, **Désinstaller**, et **Détails** (ou **Acheter** pour une ressource payante non installée). Un bouton **Vider le cache** dans l'en-tête de la page permet de forcer le rechargement des métadonnées des extensions après une modification manuelle de fichiers.
+Les extensions chargées peuvent s'activer ou se désactiver dans la page **Paramètres > Extensions**, qui présente les éléments installés et disponibles sous forme de cartes. Selon l'état de l'extension, les actions disponibles sont **Mettre à jour**, **Activer**/**Désactiver**, **Désinstaller**, et **Détails** (ou **Acheter** pour une ressource payante non installée), et une action **Vider le cache** permet de forcer le rechargement des métadonnées des extensions après une modification manuelle de fichiers.
 
 ## Choisir entre un module et un addon
 

@@ -38,7 +38,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Résultat : l'item s'insère dans le menu admin à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. Chaque admin choisit individuellement un menu horizontal en haut de page ou une sidebar verticale pour sa propre session (un bouton dans l'en-tête admin) ; les deux affichages rendent la même liste d'items sous-jacente, seul l'aspect change.
+L'item s'insère alors dans le menu admin à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. Chaque admin choisit individuellement un menu horizontal en haut de page ou une sidebar verticale pour sa propre session grâce à un bouton dans l'en-tête admin, mais les deux affichages rendent la même liste d'items sous-jacente, donc seul l'aspect change.
 
 :::info TIPS
 Cela affichera pas le menu, mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
@@ -72,7 +72,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-Résultat : une nouvelle card apparaît sur la page des paramètres, affichant le titre et la description résolus, avec l'item listé en dessous sous forme d'icône plus son propre titre et description, pointant vers l'action du contrôleur donnée.
+Une nouvelle card apparaît alors sur la page des paramètres, affichant le titre et la description résolus, et l'item est listé en dessous sous forme d'icône plus son propre titre et description, pointant vers l'action du contrôleur donnée.
 
 Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../../../settings).
 
@@ -102,7 +102,7 @@ $this->app['extension']->addAdminCountWidget(
 );
 ```
 
-Résultat : un petit widget en carte apparaît sur le tableau de bord admin, affichant l'icône, le titre ("Total Clients") et le compte en direct renvoyé par la closure.
+Un petit widget en carte apparaît alors sur le tableau de bord admin, affichant l'icône, le titre ("Total Clients") et le compte en direct renvoyé par la closure.
 
 ### Widgets complexes : afficher les 3 derniers utilisateurs connectés
 
@@ -160,4 +160,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Résultat : l'item s'insère dans le menu de l'espace client à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. La mise en forme réelle du menu (horizontal, sidebar, menu déroulant...) dépend du thème actif, car `FrontMenuItem` ne fait qu'enregistrer la donnée - c'est aux vues de chaque thème de décider comment la rendre.
+L'item s'insère alors dans le menu de l'espace client à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. `FrontMenuItem` ne fait qu'enregistrer la donnée, donc la mise en forme réelle du menu (horizontal, sidebar, menu déroulant...) dépend du thème actif et de ses vues pour décider comment la rendre.

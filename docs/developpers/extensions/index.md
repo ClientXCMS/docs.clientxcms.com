@@ -4,7 +4,7 @@ translated: true
 # Extensions
 
 ClientXCMS extensions come in three types: **addons**, **modules**, and **themes**. Addons and modules share a common structure based on the **Laravel** framework and are located in the respective `/addons` and `/modules` folders; themes have their own structure and are covered in a [dedicated guide](../themes).
-This guide covers addons and modules: how to create one, how to structure it, and how to register it in the CMS.
+This guide covers addons and modules, and explains how to create one, how to structure it, and how to register it in the CMS.
 
 ## Prerequisites
 We recommend having good knowledge of **PHP** and **Laravel**, as well as being comfortable with the following concepts:
@@ -25,7 +25,7 @@ Additionally, it is recommended to be comfortable with **TailwindCSS**, **Blade*
 We can provide you with a development license with the same extensions as your main license and 15 authorized clients for your development. For more information, please contact us.
 ## Activation
 
-Loaded extensions can be activated or deactivated on the **Settings > Extensions** page. It lists three tabs - **My Extensions**, **Discover**, and **Themes** - each showing installed and available items as cards (name, version, price, status). Depending on the extension's state, the available actions are **Update**, **Activate**/**Deactivate**, **Uninstall**, and **Details** (or **Buy** for a paid, uninstalled resource). A **Clear Cache** button in the page header lets you force a reload of extension metadata after a manual file change.
+Loaded extensions can be activated or deactivated on the **Settings > Extensions** page, which lists installed and available items as cards. Depending on the extension's state, the available actions are **Update**, **Activate**/**Deactivate**, **Uninstall**, and **Details** (or **Buy** for a paid, uninstalled resource), and a **Clear Cache** action lets you force a reload of extension metadata after a manual file change.
 
 ## Choosing between a module and an addon
 

@@ -37,7 +37,7 @@ La section **Service providers** permet de déclarer un namespace par champ, ave
 
 ## Préparer le dépôt GitHub
 
-Utilisez un dépôt GitHub public pour rendre les sources vérifiables et conserver l'historique des versions. Le [module Pterodactyl officiel de CLIENTXCMS](https://github.com/ClientXCMS/module-pterodactyl) sert de référence : sa branche `master` contient `modules/pterodactyl`, un README bilingue et des releases GitHub versionnées.
+Utilisez un dépôt GitHub public pour rendre les sources vérifiables et conserver l'historique des versions. Le [module Pterodactyl officiel de CLIENTXCMS](https://github.com/ClientXCMS/module-pterodactyl) sert de référence, et sa branche `master` contient `modules/pterodactyl`, un README bilingue et des releases GitHub versionnées.
 
 Structure recommandée pour un module :
 
