@@ -18,9 +18,10 @@ Exécutez cette commande pour installer toute les dépendances requises pour PHP
 ```
 apt-get install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql -y```
 ```
-### Installation dans un dossier
 
-#### Installation des fichiers
+## Installation dans un dossier
+
+### Installation des fichiers (installation dans un dossier)
 
 ```
 cd /var/www/pterodactyl/public
@@ -32,7 +33,7 @@ mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### Configuration du PHPMyAdmin
+### Configuration de phpMyAdmin (installation dans un dossier)
 
 Ouvrez le fichier config.inc.php en ligne de commande ou en SFTP 
 ```
@@ -46,14 +47,14 @@ et à `$cfg['blowfish_secret']`, modifiez la ligne par celle-ci :
 Pour plus de sécurité, nous vous recommandons fortement de générer une autre chaine de caractère que celle sur cette page; Il faut juste quelle fasse 32 caractères.
 :::
 
-### Installation sur un sous domaine
-#### Création du sous domaine
+## Installation sur un sous domaine
+### Création du sous domaine
 Ajoutez un enregistrement A avec cette informations dans votre zone DNS:
 - Type: A
 - Name: phpmyadmin
 - IPv4 : L'ip de votre pterodactyl
 ![img](https://media.discordapp.net/attachments/475073153509490689/1040939792348749874/image.png)
-#### Installation des fichiers
+### Installation des fichiers (installation sur un sous domaine)
 
 ```
 cd /var/www/
@@ -65,8 +66,7 @@ mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### Création du Vhost
-##### Apache
+### Création du virtual host Apache
 ```bash
 cd /etc/apache2/sites-available/
 ```
@@ -74,7 +74,7 @@ cd /etc/apache2/sites-available/
 nano phpmyadmin.exemple.com.conf
 ```
 
-###### Exemple de fichier de configuration
+Exemple de fichier de configuration :
 ```bash
 <VirtualHost *:80>
     ServerAdmin admin@example.com
@@ -102,7 +102,7 @@ Enfin, relancez votre serveur apache pour que vos modifications soient prises en
 
 ```sudo service apache2 restart```
 
-#### Nginx
+### Création du virtual host Nginx
 Connectez-vous en SSH à votre machine virtuelle et exécutez ces commandes
 ```bash
 cd /etc/nginx/conf.d/
@@ -110,7 +110,7 @@ cd /etc/nginx/conf.d/
 ```bash
 nano phpmyadmin.exemple.com.conf
 ```
-##### Exemple de fichier de configuration
+Exemple de fichier de configuration :
 ```bash
 server {
     listen 80;
@@ -146,7 +146,7 @@ server {
 Enfin, relancez votre serveur nginx pour que vos modifications soient prises en compte.
 
 ```sudo service nginx restart```
-#### Configuration du PHPMyAdmin
+### Configuration de phpMyAdmin (installation sur un sous domaine)
 
 Ouvrez le fichier config.inc.php en ligne de commande ou en SFTP
 ```

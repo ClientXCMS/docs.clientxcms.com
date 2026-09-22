@@ -19,9 +19,10 @@ Run this command to install all required dependencies for PHPMyAdmin.
 ```
 apt-get install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql -y```
 ```
-### Installation in a folder
 
-#### Installing files
+## Installation in a folder
+
+### Installing files (folder installation)
 
 ```
 cd /var/www/pterodactyl/public
@@ -33,7 +34,7 @@ mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### PHPMyAdmin Configuration
+### Configuring phpMyAdmin (folder installation)
 
 Open the config.inc.php file via command line or SFTP
 ```
@@ -47,14 +48,14 @@ and at `$cfg['blowfish_secret']`, modify the line to this:
 For better security, we strongly recommend generating a different character string than the one on this page; it just needs to be 32 characters long.
 :::
 
-### Installation on a subdomain
-#### Creating the subdomain
+## Installation on a subdomain
+### Creating the subdomain
 Add an A record with this information in your DNS zone:
 - Type: A
 - Name: phpmyadmin
 - IPv4: Your pterodactyl IP
 ![img](https://media.discordapp.net/attachments/475073153509490689/1040939792348749874/image.png)
-#### Installing files
+### Installing files (subdomain installation)
 
 ```
 cd /var/www/
@@ -66,8 +67,7 @@ mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
-#### Creating the Vhost
-##### Apache
+### Creating the Apache virtual host
 ```bash
 cd /etc/apache2/sites-available/
 ```
@@ -75,7 +75,7 @@ cd /etc/apache2/sites-available/
 nano phpmyadmin.exemple.com.conf
 ```
 
-###### Configuration file example
+Configuration file example:
 ```bash
 <VirtualHost *:80>
     ServerAdmin admin@example.com
@@ -103,7 +103,7 @@ Finally, restart your Apache server for your changes to take effect.
 
 ```sudo service apache2 restart```
 
-#### Nginx
+### Creating the Nginx virtual host
 Connect via SSH to your virtual machine and run these commands
 ```bash
 cd /etc/nginx/conf.d/
@@ -111,7 +111,7 @@ cd /etc/nginx/conf.d/
 ```bash
 nano phpmyadmin.exemple.com.conf
 ```
-##### Configuration file example
+Configuration file example:
 ```bash
 server {
     listen 80;
@@ -147,7 +147,7 @@ server {
 Finally, restart your Nginx server for your changes to take effect.
 
 ```sudo service nginx restart```
-#### PHPMyAdmin Configuration
+### Configuring phpMyAdmin (subdomain installation)
 
 Open the config.inc.php file via command line or SFTP
 ```
