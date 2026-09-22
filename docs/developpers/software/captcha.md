@@ -57,6 +57,6 @@ This page explains how to configure reCAPTCHA, hCaptcha, and Cloudflare Turnstil
    - **Site key**: to add Turnstile to your forms.
    - **Secret key**: for validating responses on your server.
 
-## Conclusion
+## Activating the Captcha
 
 You can now add these keys to your client area to activate the captcha of your choice.

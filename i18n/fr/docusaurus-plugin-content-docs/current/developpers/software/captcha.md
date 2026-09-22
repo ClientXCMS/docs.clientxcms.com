@@ -54,6 +54,6 @@ Cette page vous explique comment configurer les captchas reCAPTCHA, hCaptcha et 
    - **Clé site** (Site key) : pour ajouter Turnstile à vos formulaires.
    - **Clé secrète** (Secret key) : pour la validation des réponses sur votre serveur.
 
-## Conclusion
+## Activer le captcha
 
 Vous pourrez désormais ajouter ces clés à votre espace client pour activer le captcha de votre choix.

@@ -10,7 +10,7 @@ CLIENTXCMS provides you with a set of preconfigured virtual server templates for
 - Debian 12
 - Ubuntu 20.04
 - Ubuntu 22.04
-### Installation
+### Installing the KVM Templates
 To begin, please download the zip containing the templates from the following link: [KVM Templates](https://clientxcms.com/ref/template-kvm-proxmox)
 
 ```bash

@@ -7,7 +7,7 @@ CLIENTXCMS met à votre disposition un ensemble de modèles de serveurs virtuels
 - Debian 12
 - Ubuntu 20.04
 - Ubuntu 22.04
-### Installation
+### Installation des modèles KVM
 Pour commencer veuillez télécharger le zip contenant les modèles depuis le lien suivant : [Modèles KVM](https://clientxcms.com/ref/template-kvm-proxmox)
 
 ```bash

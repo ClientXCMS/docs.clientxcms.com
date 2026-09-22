@@ -1,7 +1,7 @@
 ---
 translated: true
 ---
-# Configuration
+# Product Configuration
 
 Products can have configurations that control performance parameters like memory or RAM. They subsequently allow delivering services based on this configuration.
 

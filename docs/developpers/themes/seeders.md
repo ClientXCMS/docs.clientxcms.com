@@ -6,7 +6,7 @@ translated: true
 
 Themes can define Laravel seeders to populate the database with initial data when running `php artisan db:seed`. This is useful for creating default menu links, sections, sample content, or any data your theme depends on.
 
-## Configuration
+## Registering a Seeder
 
 To register a seeder, add a `seeder` entry to your theme's `theme.json`:
 

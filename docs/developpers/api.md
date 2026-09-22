@@ -38,7 +38,7 @@ The first argument is the API key name, the second is the administrator account 
 
 You can regenerate an API key in the **Settings > Security > API Keys** interface. Click **Regenerate**.
 
-## Example
+## Calling the API
 
 ### PHP
 ```php

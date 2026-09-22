@@ -37,7 +37,7 @@ Le premier argument est le nom de la clé d'API, le second est le compte adminis
 
 Vous pouvez régénérer une clé d'API dans l'interface **Paramètres > Sécurité > API Keys**. Cliquez sur **Regénérer**.
 
-## Exemple
+## Appeler l'API
 
 ### PHP
 ```php

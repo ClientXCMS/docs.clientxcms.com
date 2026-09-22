@@ -3,7 +3,7 @@
 ClientXCMS utilise le système de notification de Laravel pour envoyer des emails aux utilisateurs et aux administrateurs. Les notifications permettent de personnaliser les messages envoyés par email en utilisant des **modèles CLIENTXCMS**. 
 Pour plus de détails sur la configuration des mails dans Laravel, consultez la documentation officielle [ici](https://laravel.com/docs/mail#introduction)
 
-## Configuration
+## Configurer les services de messagerie
 
 Avant d'envoyer des mails, il est essentiel de configurer les services de messagerie. 
 Vous pouvez configurer les paramètres de mail dans la [section mail](/settings/core/mail) de l'administration.

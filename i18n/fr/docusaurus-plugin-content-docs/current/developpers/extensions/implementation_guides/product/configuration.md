@@ -1,4 +1,4 @@
-# Configuration
+# Configuration du produit
 
 Les produits peuvent avoir des configurations permettant de contrôler les performances comme la mémoire ou la RAM. Ils permettent par la suite de livrer des services à partir de cette configuration.
 
