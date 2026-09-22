@@ -47,7 +47,7 @@ php artisan clientxcms:create-extension \
   --views=1
 ```
 
-#### Option details
+### Option Details
 
 * `--name`: displayed addon/module name.
 * `--uuid`: unique addon/module identifier.
@@ -66,7 +66,7 @@ php artisan clientxcms:create-extension \
 There is no `--database` option: use `--migrations` and `--models` instead.
 :::
 
-#### Structure of an addon
+### Structure of an Addon
 
 Here is the structure of a real, public addon - [`idea`](https://github.com/ClientXCMS/addon-idea) - which matches almost exactly what the create command scaffolds by default:
 

@@ -63,7 +63,7 @@ php artisan clientxcms:create-theme \
   --lang=1
 ```
 
-#### Option details
+Options:
 
 * `--name`: displayed theme name.
 * `--uuid`: unique theme identifier.
