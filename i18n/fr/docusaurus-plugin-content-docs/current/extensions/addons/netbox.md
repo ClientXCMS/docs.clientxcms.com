@@ -21,7 +21,7 @@ NETBOX_TOKEN=votre_token_api_netbox
 - **NETBOX_TOKEN** : Le token API pour accéder à l'API de NetBox
 
 ## Panel d'administration
-Une fois l'addon installé, vous pouvez configurer les paramètres de NetBox dans `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Netbox`.
+Une fois l'addon installé, vous pouvez configurer les paramètres de NetBox depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 ![img](/img/next_gen/extensions/addons/netbox/netbox.png)
 
 Vous retrouverez l'ensemble des IPs disponibles dans NetBox avec leur état. Le module Proxmox utilisera ces IPs pour l'attribution automatique lors de la création de machines virtuelles ou de conteneurs.

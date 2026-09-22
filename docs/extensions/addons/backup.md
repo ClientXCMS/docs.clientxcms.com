@@ -172,7 +172,7 @@ For backing up to your personal or shared Google Drive space.
 #### Step 5 — Obtain the Refresh Token with OAuth 2.0 Playground
 
 1. Open:
-   👉 [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
+   [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
 2. Click **Settings**
 3. Check: *Use your own OAuth credentials*
 4. Enter:

@@ -73,7 +73,7 @@ Cette clé permet à ClientXCMS de **créer et gérer les serveurs**.
 
 ![Permissions Application API Pelican](/img/next_gen/extensions/modules/pelican/pelican_app_key_permissions.png)
 
-⚠️ Assurez-vous que la clé dispose bien des permissions nécessaires (serveurs, users, nodes, eggs, allocations…).
+Assurez-vous que la clé dispose bien des permissions nécessaires (serveurs, users, nodes, eggs, allocations…).
 
 ---
 

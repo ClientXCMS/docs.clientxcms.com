@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 L'importation sert à importer vos données de ClientXCMS V1 ou bien même WHMCS.
 
 ## Configuration
-Vous pouvez gérer la configuration de l'anti double compte dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions ` > `Importation`
+Vous pouvez gérer la configuration de l'importation depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 
 ![img](/img/next_gen/extensions/addons/importation/importation.png)
 

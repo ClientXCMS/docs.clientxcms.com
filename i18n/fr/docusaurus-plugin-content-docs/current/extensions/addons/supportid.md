@@ -7,7 +7,7 @@ L'addon Support ID demande la version 2.14.9 ou supérieure de CLIENTXCMS.
 :::
 
 ## Configuration de l'addon
-Vous pouvez configurer l'addon en accédant à `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Support ID`.
+Vous pouvez configurer l'addon depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 ![img](/img/next_gen/extensions/addons/supportid/config.png)
 - **Préfixe du Support ID** : Définit le préfixe utilisé pour générer les Support IDs (par défaut : CTX-).
 - **Format du code** : Choisissez entre un code alphanumérique ou uniquement numérique pour le Support ID.

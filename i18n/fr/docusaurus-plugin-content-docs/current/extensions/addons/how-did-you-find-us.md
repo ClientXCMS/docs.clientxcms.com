@@ -16,7 +16,7 @@ Ces informations sont ensuite rattachées au profil du client pour une analyse u
 
 ## Configuration Admin
 
-La gestion de l'addon se fait dans **Paramètres** > **Paramètres des extensions** > **Comment vous nous avez trouvé**.
+La gestion de l'addon se fait depuis sa page de paramètres, sous **Paramètres** dans l'espace d'administration.
 
 ### Gestion des sources (CRUD)
 

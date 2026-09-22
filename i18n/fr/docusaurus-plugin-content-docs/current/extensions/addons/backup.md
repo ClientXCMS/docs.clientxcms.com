@@ -168,7 +168,7 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
 #### Étape 5 — Obtenir le Refresh Token avec OAuth 2.0 Playground
 
 1. Ouvrez :
-   👉 [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
+   [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
 2. Cliquez sur **Settings**
 3. Cochez : *Use your own OAuth credentials*
 4. Renseignez :

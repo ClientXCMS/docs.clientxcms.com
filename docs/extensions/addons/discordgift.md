@@ -66,10 +66,10 @@ Once the addon is activated, you can access its configuration in Admin Panel > S
 | **Hours between gifts**                      | Interval before the next automatic launch          | `1` = 1 hr                                    |
 | **Expiration (in minutes)**                  | Duration during which the code remains valid       | `65`                                          |
 | **Maximum number of uses**                   | Number of people who can use the code              | `1` or `∞`                                    |
-| **Show timer on client area**                | Countdown bar visible to customers                 | ✅ / ❌                                         |
+| **Show timer on client area**                | Countdown bar visible to customers                 | Yes / No                                      |
 | **Next Discord gift defined**                | UTC date/time of next launch (editable)            | `2025-07-16 01:11:00`                         |
 
-> ℹ️ *Amounts are stored in cents to avoid decimals (ClientXCMS convention)*.
+> *Amounts are stored in cents to avoid decimals (ClientXCMS convention)*.
 
 ---
 

@@ -33,7 +33,7 @@ translated: true
 
 Once the addon is activated:
 
-* **Administration → Settings → Extension Settings → Gift Card Settings**
+* **Administration → Settings**, in the addon's settings page
 * Management interface: **Administration → Settings → Store Settings → Gift Cards**
 
 | Element      | Version / Detail                                                |
@@ -50,7 +50,7 @@ Once the addon is activated:
 | ------------------------------ | --------------------------------------------------------- | ---------------------------- |
 | **Allowed amounts**            | Values offered for purchase, comma-separated              | `10,20,50,100,200`           |
 | **Expiration (days)**          | Default validity period for created or sold cards         | `365`                        |
-| **Allow purchase**             | Enables/disables sales in client area                     | ✅                            |
+| **Allow purchase**             | Enables/disables sales in client area                     | Yes                          |
 | **Gift card prefix**           | Automatically added before each generated code            | `CC` (will give `CC-6MCP9IC8`) |
 
 > Amounts are expressed in your store's main currency.

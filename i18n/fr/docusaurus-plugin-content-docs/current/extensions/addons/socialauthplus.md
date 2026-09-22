@@ -295,5 +295,5 @@ Pour régler ce problème, rendez-vous sur votre panel de gestion Plesk, puis We
 Re-testez la connexion via Google.
 
 
-## Félicitations 👏
+## Félicitations
 Vous avez maintenant configuré l'addon SocialAuth+ avec les clés d'authentification OAuth2. Vos clients pourront désormais se connecter et s'inscrire plus facilement, plus rapidement et en toute sécurité sur votre espace client !

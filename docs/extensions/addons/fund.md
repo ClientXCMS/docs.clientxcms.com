@@ -30,8 +30,8 @@ translated: true
 
 Once the addon is activated:
 
-* **Administration → Settings → Extension Settings → Funds**
-* Transfer management: **Administration → Settings → Extension Settings → Funds** (*Transfers* tab)
+* **Administration → Settings**, in the addon's settings page
+* Transfer management: same settings page (*Transfers* tab)
 
 | Element     | Detail / Version                                                     |
 | ----------- | -------------------------------------------------------------------- |
@@ -48,7 +48,7 @@ Once the addon is activated:
 | Section                  | Field                                 | Function                                       | Example                 |
 | ------------------------ | ------------------------------------- | ---------------------------------------------- | ----------------------- |
 | **Credit Funds**         | Minimum / maximum amount              | Limits for a single deposit                    | `5` · `1000`            |
-| **Transfer Funds**       | *Checkbox* "Allow transfers"          | Enables or disables the feature                | ✅ / ❌                   |
+| **Transfer Funds**       | *Checkbox* "Allow transfers"          | Enables or disables the feature                | Yes / No                 |
 |                          | Minimum / maximum amount (transfer)   | Allowed range for a transfer                   | `5` · `1000`            |
 |                          | Transfer delay (minutes)              | Anti-spam between two transfers from same client | `5`                   |
 |                          | Minimum deposit required              | Balance to credit before being able to transfer | `5` (0 to disable)     |

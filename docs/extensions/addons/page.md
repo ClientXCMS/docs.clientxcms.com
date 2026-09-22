@@ -7,7 +7,7 @@ translated: true
 The Page addon allows you to create custom pages.
 
 ## Configuration
-You can manage the page configuration in `Admin Panel` > `Settings` > `Extension Settings` > `Page` > `Create`
+You can manage the page configuration from its settings page in the admin panel, under **Settings**.
 
 ![img](/img/next_gen/extensions/addons/page/configuration.png)
 

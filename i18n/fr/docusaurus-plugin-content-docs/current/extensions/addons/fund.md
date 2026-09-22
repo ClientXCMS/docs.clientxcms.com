@@ -26,8 +26,8 @@
 
 Une fois l’addon activé :
 
-* **Administration → Paramètres → Paramètres des extensions → Fonds**
-* Gestion des transferts : **Administration → Paramètres → Paramètres des extensions → Fonds » (onglet *Transferts*)**
+* **Administration → Paramètres**, dans la page de paramètres de l'addon
+* Gestion des transferts : même page de paramètres (onglet *Transferts*)
 
 | Élément     | Détail / Version                                                     |
 | ----------- | -------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ Une fois l’addon activé :
 | Section                  | Champ                                 | Fonction                                       | Exemple                 |
 | ------------------------ | ------------------------------------- | ---------------------------------------------- | ----------------------- |
 | **Créditer des fonds**   | Montant minimum / maximum             | Limites pour un dépôt unique                   | `5` · `1000`            |
-| **Transférer des fonds** | *Case* « Autoriser les transferts »   | Active ou non la fonctionnalité                | ✅ / ❌                   |
+| **Transférer des fonds** | *Case* « Autoriser les transferts »   | Active ou non la fonctionnalité                | Oui / Non                |
 |                          | Montant minimum / maximum (transfert) | Plage autorisée pour un transfert              | `5` · `1000`            |
 |                          | Délai de transfert (minutes)          | Anti-spam entre deux transferts du même client | `5`                     |
 |                          | Dépôt minimum requis                  | Solde à créditer avant de pouvoir transférer   | `5` (0 pour désactiver) |

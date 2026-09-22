@@ -22,7 +22,7 @@ Synchronization works with the SocialAuth+ addon which is required with Discord 
 
 ## Configuration
 
-Once the addon is activated, you can access its configuration in `Admin Panel` > `Settings` > `Extension Settings` > `DiscordLink`
+Once the addon is activated, you can access its configuration from its settings page in the admin panel, under **Settings**.
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 
@@ -52,7 +52,7 @@ Add the bot to your Discord server by clicking [this invitation link](https://cl
 It will link your Discord server with your hosting service.
 
 #### Step 2
-Copy the following command to your server. **⚠ Warning, the key will only be displayed once!**
+Copy the following command to your server. **Warning, the key will only be displayed once!**
 If lost, it will need to be reset.
 
 
@@ -75,7 +75,7 @@ It will link your Discord server with your hosting service.
 
 
 #### Step 2
-Copy the following token to a safe place. **⚠ Warning, it will only be displayed once!**
+Copy the following token to a safe place. **Warning, it will only be displayed once!**
 If lost, it will need to be reset.
 
 
@@ -116,7 +116,7 @@ Retrieves customer information based on their Discord ID.
 
 | Name         | Type      | Required | Description                        |
 |-------------|---------|--------|--------------------------------|
-| `discord_id` | `integer` | ✅      | The Discord user identifier |
+| `discord_id` | `integer` | Yes     | The Discord user identifier |
 
 ##### Responses
 
@@ -128,7 +128,7 @@ Retrieves customer information based on their Discord ID.
 
 
 
-#### 📌 Get the list of customers who should have a Discord role
+#### Get the list of customers who should have a Discord role
 
 ```http
 GET /application/discordlink/getlinkedcustomers
@@ -146,7 +146,7 @@ Returns the list of customers who should have a role on the Discord server.
 
 ---
 
-#### ✅ Verify API key validity
+#### Verify API key validity
 
 ```http
 GET /application/discordlink/check
@@ -173,21 +173,21 @@ Authorization: Bearer <your_token>
 
 ### Usage Examples
 
-#### 🔍 Search for a customer by Discord ID with `cURL`
+#### Search for a customer by Discord ID with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/search/123456789"
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### 📌 Get the list of linked customers with `cURL`
+#### Get the list of linked customers with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/getlinkedcustomers"
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### ✅ Verify API key with `cURL`
+#### Verify API key with `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/check"

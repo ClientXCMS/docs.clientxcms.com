@@ -62,10 +62,10 @@ Une fois l'addon activé, vous pouvez accéder à sa configuration dans Espace d
 | **Heures entre les cadeaux**                 | Intervalle avant le prochain lancement automatique | `1` = 1 h                                     |
 | **Expiration (en minutes)**                  | Durée pendant laquelle le code reste valide        | `65`                                          |
 | **Nombre maximum d’utilisations**            | Nombre de personnes pouvant utiliser le code       | `1` ou `∞`                                    |
-| **Afficher le minuteur sur l’espace client** | Barre de décompte visible pour les clients         | ✅ / ❌                                         |
+| **Afficher le minuteur sur l’espace client** | Barre de décompte visible pour les clients         | Oui / Non                                     |
 | **Prochain cadeau Discord défini**           | Date/heure UTC du prochain lancement (modifiable)  | `2025-07-16 01:11:00`                         |
 
-> ℹ️ *Les montants sont stockés en centimes pour éviter les décimales (convention ClientXCMS)*.
+> *Les montants sont stockés en centimes pour éviter les décimales (convention ClientXCMS)*.
 
 ---
 

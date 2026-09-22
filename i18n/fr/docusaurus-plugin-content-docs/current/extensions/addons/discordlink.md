@@ -18,7 +18,7 @@ La synchronisation fonctionne avec l'addon SocialAuth+ est requis avec la connex
 
 ## Configuration
 
-Une fois l'addon activé, vous pouvez accéder à sa configuration dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `DiscordLink`
+Une fois l'addon activé, vous pouvez accéder à sa configuration depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 
@@ -48,7 +48,7 @@ Ajoutez le bot à votre serveur Discord en cliquant sur [ce lien d'invitation](h
 Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.
 
 #### Étape 2
-Copiez la commande suivante dans votre serveur. **⚠ Attention, la clé sera affichée une seule fois !**  
+Copiez la commande suivante dans votre serveur. **Attention, la clé sera affichée une seule fois !**  
 En cas de perte, il faudra la réinitialiser.
 
 
@@ -71,7 +71,7 @@ Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur
 
 
 #### Étape 2
-Copiez le jeton suivant en lieu sûr. **⚠ Attention, il ne sera affiché qu'une seule fois !**  
+Copiez le jeton suivant en lieu sûr. **Attention, il ne sera affiché qu'une seule fois !**  
 En cas de perte, il faudra le réinitialiser.
 
 
@@ -112,7 +112,7 @@ Récupère les informations d'un client en fonction de son ID Discord.
 
 | Nom          | Type     | Requis | Description                    |
 |-------------|---------|--------|--------------------------------|
-| `discord_id` | `integer` | ✅      | L'identifiant de l'utilisateur Discord |
+| `discord_id` | `integer` | Oui     | L'identifiant de l'utilisateur Discord |
 
 ##### Réponses
 
@@ -124,7 +124,7 @@ Récupère les informations d'un client en fonction de son ID Discord.
 
 
 
-#### 📌 Récupérer la liste des clients devant avoir un rôle Discord
+#### Récupérer la liste des clients devant avoir un rôle Discord
 
 ```http
 GET /application/discordlink/getlinkedcustomers
@@ -142,7 +142,7 @@ Renvoie la liste des clients qui devraient avoir un rôle sur le serveur Discord
 
 ---
 
-#### ✅ Vérifier la validité de la clé API
+#### Vérifier la validité de la clé API
 
 ```http
 GET /application/discordlink/check
@@ -169,21 +169,21 @@ Authorization: Bearer <votre_token>
 
 ### Exemples d'utilisation
 
-#### 🔍 Rechercher un client par ID Discord avec `cURL`
+#### Rechercher un client par ID Discord avec `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/search/123456789"
   -H "Authorization: Bearer VOTRE_CLE_API"
 ```
 
-#### 📌 Récupérer la liste des clients liés avec `cURL`
+#### Récupérer la liste des clients liés avec `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/getlinkedcustomers"
   -H "Authorization: Bearer VOTRE_CLE_API"
 ```
 
-#### ✅ Vérifier la clé API avec `cURL`
+#### Vérifier la clé API avec `cURL`
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/check"

@@ -16,7 +16,7 @@ This information is then attached to the customer's profile for later analysis.
 
 ## Admin Configuration
 
-Management of the addon is done in **Settings** > **Extension Settings** > **How Did You Find Us**.
+Management of the addon is done from its settings page, under **Settings** in the admin panel.
 
 ### Source Management (CRUD)
 
