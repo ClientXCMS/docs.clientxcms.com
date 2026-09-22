@@ -37,7 +37,9 @@ $this->app['extension']->addAdminMenuItem(
 );
 
 ```
-#### Résultat
+
+Résultat :
+
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
 
 :::info TIPS
@@ -83,11 +85,9 @@ Les widgets permettent d'ajouter des éléments visuels et interactifs sur le ta
 - **`AdminCountWidget`** : Affiche des statistiques simples (comme le nombre d'utilisateurs, commandes, etc.).
 - **`AdminCardWidget`** : Affiche des widgets plus complexes avec du contenu personnalisé.
 
-### Statistiques simples
+### Statistiques simples : afficher le nombre total de clients
 
 Ce widget est utilisé pour afficher des statistiques dans le tableau de bord admin.
-
-#### Exemple : Afficher le nombre total de clients
 
 ```php
 
@@ -103,15 +103,14 @@ $this->app['extension']->addAdminCountWidget(
     )
 );
 ```
-#### Résultat
+
+Résultat :
 
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
 
-### Widgets complexes
+### Widgets complexes : afficher les 3 derniers utilisateurs connectés
 
 Ce widget permet d'afficher des informations plus complexes ou dynamiques dans le tableau de bord admin.
-
-#### Exemple : Afficher les 3 derniers utilisateurs connectés
 
 ```php
 use App\Core\Admin\Dashboard\AdminCardWidget;
@@ -164,6 +163,7 @@ $this->app['extension']->addFrontMenuItem(
     )
 );
 ```
-### Résultat
+
+Résultat :
 
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)

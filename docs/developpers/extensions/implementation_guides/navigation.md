@@ -40,7 +40,9 @@ $this->app['extension']->addAdminMenuItem(
 );
 
 ```
-#### Result
+
+Result:
+
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
 
 :::info TIPS
@@ -86,11 +88,9 @@ Widgets allow you to add visual and interactive elements to the admin dashboard.
 - **`AdminCountWidget`**: Displays simple statistics (like the number of users, orders, etc.).
 - **`AdminCardWidget`**: Displays more complex widgets with custom content.
 
-### Simple Statistics
+### Simple Statistics: Displaying the Total Number of Clients
 
 This widget is used to display statistics in the admin dashboard.
-
-#### Example: Display Total Number of Clients
 
 ```php
 
@@ -106,15 +106,14 @@ $this->app['extension']->addAdminCountWidget(
     )
 );
 ```
-#### Result
+
+Result:
 
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
 
-### Complex Widgets
+### Complex Widgets: Displaying the Last 3 Logged-In Users
 
 This widget allows you to display more complex or dynamic information in the admin dashboard.
-
-#### Example: Display the Last 3 Logged-In Users
 
 ```php
 use App\Core\Admin\Dashboard\AdminCardWidget;
@@ -167,6 +166,7 @@ $this->app['extension']->addFrontMenuItem(
     )
 );
 ```
-### Result
+
+Result:
 
 ![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)
