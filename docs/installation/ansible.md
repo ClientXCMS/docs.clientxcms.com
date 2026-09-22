@@ -314,7 +314,11 @@ If no specific domain is provided, all detected instances will be updated.
 - Use **Nginx + PHP-FPM** for production
 - Enable **PHP OPcache** (done automatically)
 - Configure **MariaDB** according to your load
-- Monitor server **resources** with Grafana (planned in a future playbook update)
+- Monitor server **resources** with your own tooling
+
+:::info Planned
+Built-in Grafana monitoring is planned for a future version of this playbook, it is not available yet.
+:::
 
 ### Maintenance
 - **Schedule** updates during low traffic periods

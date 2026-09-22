@@ -61,10 +61,10 @@ sudo mv composer.phar /usr/local/bin/composer
 php -r "unlink('composer-setup.php');"
 ```
 
-Install Node.js LTS with NVM:
+Install Node.js LTS with NVM. NVM's install script must be fetched from a pinned release tag (never from `master`) for supply-chain safety - check the [current recommended version](https://github.com/nvm-sh/nvm#install--update-script) and replace `v0.40.8` below if it has moved on:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts

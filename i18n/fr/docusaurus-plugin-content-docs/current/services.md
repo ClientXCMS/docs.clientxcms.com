@@ -22,48 +22,28 @@ Vous pouvez effectuer des actions de masse sur les services, comme les suspendre
 ### Filtre
 Vous pouvez filtrer les services par un ou plusieurs filtres ou rechercher un service spécifique via le nom du client, identifiant, nom de service ou produit.
 ![img](/img/next_gen/services/admin_filter.png)
-### Importation de service
-Il est disponible d'importer des services déjà existants sur votre serveur, pour cela rendez-vous sur `Espace Administration` > `Services` > `Créer`.
+## Création et importation de service
+Il est possible de créer un service depuis zéro ou d'importer un service déjà existant sur votre serveur. Pour y accéder : `Espace Administration` > `Services` > `Créer`
 
 ![img](/img/next_gen/services/create_step1.png)
 
-Dans cette étape, veuillez sélectionner le client, le produit et le type de service. Puis cliquez sur suivant.
-Le type du produit être le même que le type du produit que vous avez déjà créé dans les produits.
+Dans cette première étape, sélectionnez le client, le produit et le type de service, puis cliquez sur suivant. Le type du produit doit être le même que le type du produit que vous avez déjà créé dans les produits. Vous pouvez également sélectionner aucun produit pour créer un service personnalisé en choisissant seulement le type et le client.
 
-![img](/img/next_gen/services/create_import.png)
-
-Dans cette seconde étape, vous pouvez remplir le formulaire et choisir selon le type de module, les VPS ou serveurs de jeux déjà existants que vous avez sur votre serveur. Puis cliquez sur importer
+Dans la seconde étape, remplissez les champs communs, puis choisissez l'onglet **Nouveau** pour créer un service vierge ou l'onglet **Importer** pour rattacher un VPS ou un serveur de jeu déjà existant, selon le type de module :
 
 - **Nom du service** : Nom du service
 - **Expiration** : Date d'expiration du service
-- **Prix** : Prix du service
-- **Prix initial** : Prix initial du service
 - **Serveur** : Serveur où le service est hébergé
-- **Recurrence** : Cycle de facturation
-- **Notes** : Notes sur le service
-- **Renouvellement maximum** : Nombre maximum de renouvellements (vide pour illimité)
-## Création de service
-Il est disponible de créer un service depuis CLIENTXCMS, Pour y accéder : `Espace Administration` > `Services` > `Créer`
-
-Dans cette étape, veuillez sélectionner le client, le produit et le type de service. Puis cliquez sur suivant.
-Le type du produit être le même que le type du produit que vous avez déjà créé dans les produits.
-
-Vous pouvez également sélectionner aucun produit pour créer un service personnalisé en choisissant que le type et le client.
-![img](/img/next_gen/services/create_step1.png)
-
-Dans cette seconde étape, vous pouvez remplir le formulaire et choisir selon le type de module, les VPS ou serveurs de jeux déjà existants que vous avez sur votre serveur. Puis cliquez sur importer
-
-- **Nom du service** : Nom du service
-- **Expiration** : Date d'expiration du service
 - **Description** : Description du service - visible par le client, non modifiable par le client
-- **Prix** : Prix du service
-- **Prix initial** : Prix initial du service
-- **Serveur** : Serveur où le service est hébergé
-- **Recurrence** : Cycle de facturation
 - **Notes** : Notes sur le service
 - **Renouvellement maximum** : Nombre maximum de renouvellements (vide pour illimité)
+- **Récurrence et devise** : Cycle de facturation et devise de tarification
 
 ![img](/img/next_gen/services/create_service.png)
+
+L'onglet import se présente ainsi :
+
+![img](/img/next_gen/services/create_import.png)
 
 :::info
 La création et l'importation de service ne créent pas de facture, il faudra passer par une commande pour générer une facture.
@@ -118,7 +98,7 @@ Vous pouvez modifier les détails du service en modifiant les champs puis en cli
 - **Notes** : Notes sur le service
 - **Description** : Description du service - visible par le client, non modifiable par le client
 - **Renouvellement maximum** : Nombre maximum de renouvellements (vide pour illimité)
-- **Etat** : Etat du service
+- **État** : État du service
 - **Type de service** : Type de service
 :::info
 Nous conseillons de pas modifier le statut du service, via l'édition. Il est préférable de passer par les actions. Il est uniquement là en cas de besoin majeur

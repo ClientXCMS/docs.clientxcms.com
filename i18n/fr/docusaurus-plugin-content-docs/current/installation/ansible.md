@@ -313,7 +313,11 @@ Si aucun domaine spécifique n'est fourni, toutes les instances détectées sero
 - Utiliser **Nginx + PHP-FPM** pour la production
 - Activer **OPcache** PHP (fait automatiquement)
 - Configurer **MariaDB** selon votre charge
-- Monitorer les **ressources** serveur avec Grafana (prévu dans une prochaine mise à jour de la playbook)
+- Monitorer les **ressources** serveur avec votre propre outillage
+
+:::info Prévu
+Le monitoring Grafana intégré est prévu pour une prochaine version de ce playbook, il n'est pas disponible pour le moment.
+:::
 
 ### Maintenance
 - **Planifier** les mises à jour pendant les créneaux de faible trafic

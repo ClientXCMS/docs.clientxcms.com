@@ -19,7 +19,7 @@ Vous pouvez activer les extensions que vous souhaitez utiliser en cliquant sur l
 
 Si vous avez des extensions supplémentaires avec votre licence, vous pouvez les activer par la même occasion.
 
-Par exemple, si vous souhaitez livrer des produits Pterodactyl, vous devez activer l'extension Pterodactyl.
+Par exemple, si vous souhaitez livrer des produits Pterodactyl, vous devez activer le module Pterodactyl.
 ![img](/img/next_gen/extensions/image_1.png)
 
 Plus d'informations sur les extensions sont disponibles [ici](/extensions/).

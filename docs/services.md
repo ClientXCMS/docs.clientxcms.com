@@ -23,48 +23,28 @@ You can perform bulk actions on services, such as suspending, cancelling, termin
 ### Filter
 You can filter services by one or more filters or search for a specific service by customer name, identifier, service name, or product.
 ![img](/img/next_gen/services/admin_filter.png)
-### Service Import
-You can import services that already exist on your server. To do this, go to `Administration Area` > `Services` > `Create`.
+## Service Creation and Import
+You can create a service from scratch or import one that already exists on your server. To access it: `Administration Area` > `Services` > `Create`
 
 ![img](/img/next_gen/services/create_step1.png)
 
-In this step, please select the customer, product, and service type. Then click next.
-The product type must be the same as the product type you already created in products.
+In this first step, select the customer, product, and service type, then click next. The product type must be the same as the product type you already created in products. You can also select no product to create a custom service by choosing only the type and customer.
 
-![img](/img/next_gen/services/create_import.png)
-
-In this second step, you can fill out the form and choose, depending on the module type, existing VPS or game servers that you have on your server. Then click import.
+In the second step, fill out the shared fields, then choose the **New** tab to create a blank service or the **Import** tab to pick an existing VPS or game server on your server, depending on the module type:
 
 - **Service Name**: Service name
 - **Expiration**: Service expiration date
-- **Price**: Service price
-- **Initial Price**: Initial service price
 - **Server**: Server where the service is hosted
-- **Recurrence**: Billing cycle
-- **Notes**: Notes about the service
-- **Maximum Renewals**: Maximum number of renewals (empty for unlimited)
-## Service Creation
-You can create a service from CLIENTXCMS. To access it: `Administration Area` > `Services` > `Create`
-
-In this step, please select the customer, product, and service type. Then click next.
-The product type must be the same as the product type you already created in products.
-
-You can also select no product to create a custom service by choosing only the type and customer.
-![img](/img/next_gen/services/create_step1.png)
-
-In this second step, you can fill out the form and choose, depending on the module type, existing VPS or game servers that you have on your server. Then click import.
-
-- **Service Name**: Service name
-- **Expiration**: Service expiration date
 - **Description**: Service description - visible to the customer, not editable by the customer
-- **Price**: Service price
-- **Initial Price**: Initial service price
-- **Server**: Server where the service is hosted
-- **Recurrence**: Billing cycle
 - **Notes**: Notes about the service
 - **Maximum Renewals**: Maximum number of renewals (empty for unlimited)
+- **Recurrence and currency**: Billing cycle and pricing currency
 
 ![img](/img/next_gen/services/create_service.png)
+
+The import tab looks like this:
+
+![img](/img/next_gen/services/create_import.png)
 
 :::info
 Service creation and import do not create an invoice; you will need to go through an order to generate an invoice.

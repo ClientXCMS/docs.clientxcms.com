@@ -9,17 +9,15 @@ You can create a service in just a few clicks from your admin panel. To do so, g
 In this step, please select the client, the product you created, and the service type. Then click next.
 ![img](/img/next_gen/services/create_step1.png)
 
-In this second step, you can fill out the form and choose, based on the module type, the existing VPS or game servers that you have on your server. Then click import.
+In this second step, fill out the form, then click **New** and **Create** to deliver a blank service, or pick the **Import** tab to attach an existing VPS or game server that you already have.
 
 - **Service Name**: The display name for this service
 - **Expiration**: Service expiration date
-- **Description**: Service description - visible to the customer, not editable by the customer
-- **Price**: Service price
-- **Initial Price**: Initial service price
 - **Server**: Server where the service is hosted
-- **Billing Cycle**: How often the service is billed (monthly, yearly, etc.)
+- **Description**: Service description - visible to the customer, not editable by the customer
 - **Notes**: Notes about the service
 - **Maximum Renewals**: Maximum number of renewals (empty for unlimited)
+- **Recurrence and currency**: How often the service is billed and in which currency
 
 ![img](/img/next_gen/services/create_service.png)
 
