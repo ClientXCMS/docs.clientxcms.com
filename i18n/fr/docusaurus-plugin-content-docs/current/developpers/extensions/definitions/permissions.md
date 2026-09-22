@@ -105,8 +105,8 @@ Pour créer une permission, vous devez ajouter une nouvelle entrée dans le fich
         "name": "admin.fund",
         "label": "permissions.fund",
         "group": "permissions.store"
-    },
-],
+    }
+]
 ```
 Avec `name` qui est le nom de la permission, `label` qui est la traduction de la permission dans le fichier de langue et `group` qui est le groupe de la permission.
 

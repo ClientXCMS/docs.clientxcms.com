@@ -23,9 +23,9 @@ And a file `resources/views/sections/sections.json` with the following content:
         "path": "sections.hero",
         "uuid": "hero",
         "default": true,
-        "thumbnail": "https://via.placeholder.com/150", // Hosted preview image
-        "default_url": "/", // Default URL
-        "section_type": 1,
+        "thumbnail": "https://via.placeholder.com/150",
+        "default_url": "/",
+        "section_type": 1
     }
 ]
 ```
@@ -42,3 +42,5 @@ And a file `resources/views/sections/sections.json` with the following content:
 **default_url** (optional): Default section URL
 
 **section_type**: Section type
+
+**protected** (optional): If the section cannot be removed from the page

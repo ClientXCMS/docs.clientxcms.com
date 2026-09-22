@@ -53,7 +53,7 @@ Pour les utiliser :
 | rows            | nombre de ligne                       | Integer | Non         |
 | disabled        | Champ désactiver                      | Bool    | Non         |
 | help            | Aide du champ                         | String  | Non         |
-| Inverifiedvalue | Valeur non vérifié (HTML non échappé) | String  | Non         |
+| Inverifiedvalue | Valeur forcée, prend le pas sur `old($name, $value)` si définie | String  | Non         |
 ------------------------------------------------
 
 ### Select

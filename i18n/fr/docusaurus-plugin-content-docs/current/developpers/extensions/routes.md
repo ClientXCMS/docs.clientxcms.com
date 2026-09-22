@@ -50,14 +50,14 @@ class FundServiceProvider extends BaseAddonServiceProvider
         // Routes d'administration
         \Route::middleware(['web', 'admin'])
             ->prefix(admin_prefix())
-            ->name($this->uuid . '.')
+            ->name($this->uuid . '.admin.')
             ->group(function () {
                 require addon_path($this->uuid, 'routes/admin.php');
             });
 
         // Routes publiques
         \Route::middleware(['web'])
-            ->name($this->uuid . '.admin.')
+            ->name($this->uuid . '.')
             ->group(function () {
                 require addon_path($this->uuid, 'routes/web.php');
             });

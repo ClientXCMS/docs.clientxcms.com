@@ -22,9 +22,9 @@ Et un fichier `resources/views/sections/sections.json` avec le contenu suivant :
         "path": "sections.hero",
         "uuid": "hero",
         "default": true,
-        "thumbnail": "https://via.placeholder.com/150", // Image de prévisualisation hébergée
-        "default_url": "/", // URL par défaut
-        "section_type": 1,
+        "thumbnail": "https://via.placeholder.com/150",
+        "default_url": "/",
+        "section_type": 1
     }
 ]
 ```
@@ -34,12 +34,14 @@ Et un fichier `resources/views/sections/sections.json` avec le contenu suivant :
 
 **uuid** : Identifiant unique de la section
 
-**default** (faculatif): Si la section est la section par défaut
+**default** (facultatif) : Si la section est la section par défaut
 
-**thumbnail**(faculatif) : Image de prévisualisation de la section
+**thumbnail** (facultatif) : Image de prévisualisation de la section
 
-**default_url**(faculatif) : URL par défaut de la section
+**default_url** (facultatif) : URL par défaut de la section
 
 **section_type** : Type de section
+
+**protected** (facultatif) : Si la section ne peut pas être retirée de la page
 
 

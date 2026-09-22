@@ -54,7 +54,7 @@ To use them:
 | rows            | Number of rows                        | Integer | No       |
 | disabled        | Disabled field                        | Bool    | No       |
 | help            | Field help                            | String  | No       |
-| Inverifiedvalue | Unverified value (unescaped HTML)     | String  | No       |
+| Inverifiedvalue | Forced value, takes precedence over `old($name, $value)` when set | String  | No       |
 ------------------------------------------------
 
 ### Select

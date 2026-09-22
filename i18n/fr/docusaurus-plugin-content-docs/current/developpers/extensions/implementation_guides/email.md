@@ -49,7 +49,7 @@ class FundMail extends Notification implements ShouldQueue
         $context = [
             'invoice' => $this->invoice,
         ];
-        $route = route('front.invoice.show', $this->invoice->idn true);
+        $route = route('front.invoices.show', $this->invoice->uuid);
         return EmailTemplate::getMailMessage("fund", $route, $context, $notifiable);
     }
 }
@@ -64,7 +64,7 @@ Par exemple :
         $context = [
             'invoice' => $this->invoice,
         ];
-        $route = route('front.invoice.show', $this->invoice->idn true);
+        $route = route('front.invoices.show', $this->invoice->uuid);
         $mail = EmailTemplate::getMailMessage("fund", $route, $context, $notifiable);
         $mail->metadata('disable_save', true);
         return $mail;

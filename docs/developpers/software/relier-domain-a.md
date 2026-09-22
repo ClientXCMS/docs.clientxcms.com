@@ -43,4 +43,4 @@ After DNS propagation, your domain will be linked to your LWS hosting.
 7. In the "IP Address" field, enter your hosting IP address.
 8. Save the changes.
 
-After DNS propagation, your domain will be linked to Cloudflare, which will act as a proxy between your visitors
+After DNS propagation, your domain will be linked to Cloudflare, which will act as a proxy between your visitors and your hosting server.

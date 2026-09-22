@@ -37,17 +37,17 @@ CLIENTXCMS is becoming an open source, self-hosted, and free software starting S
      1. Log in to phpMyAdmin on your local server (for example `https://your-server/phpmyadmin`).
      2. Select the database `clientxcms_local`.
      3. Click **Import** → **Choose a file** → select `clientxcms_backup_12345.sql` → click **Execute**.
-    1. Wait for the import to complete (this may take a few minutes depending on the database size).
-    2. Verify that all tables are present (e.g., `customers`, etc.).
+     4. Wait for the import to complete (this may take a few minutes depending on the database size).
+     5. Verify that all tables are present (e.g., `customers`, etc.).
 
     __Via command line__:
-    3. Connect to your server via SSH.
-    4. Execute the following commands to create the database and import the backup:
+     1. Connect to your server via SSH.
+     2. Execute the following commands to create the database and import the backup:
      ```bash
      mysql -u root -p clientxcms_local < /path/to/clientxcms_backup_12345.sql
      # Enter LocalPassword when prompted
      ```
-     5. Verify that the import was successful by listing the tables:
+     3. Verify that the import was successful by listing the tables:
      ```bash
      mysql -u root -p -e "USE clientxcms_local; SHOW TABLES;"
      # You should see all CLIENTXCMS Cloud tables (e.g., customers, settings.)

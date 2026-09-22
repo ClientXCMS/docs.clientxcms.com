@@ -42,4 +42,4 @@ Après la propagation DNS, votre domaine sera lié à votre hébergement LWS.
 7. Dans le champ "Adresse IP", saisissez l'adresse IP de votre hébergement.
 8. Enregistrez les modifications.
 
-Après la propagation DNS, votre domaine sera relié à Cloudflare, qui agira comme un proxy entre vos visiteurs
+Après la propagation DNS, votre domaine sera relié à Cloudflare, qui agira comme un proxy entre vos visiteurs et votre serveur d'hébergement.
