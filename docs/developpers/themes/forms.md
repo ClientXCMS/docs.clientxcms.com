@@ -98,7 +98,7 @@ ClientXCMS supports flash messages for forms. You can display them using the fol
 ```
 
 ### Validation
-ClientXCMS supports form validation and displays the error message next to the relevant field. You can check the [Laravel documentation](https://laravel.com/docs/11.x/validation) for more information on validation.
+ClientXCMS supports form validation and displays the error message next to the relevant field. You can check the [Laravel documentation](https://laravel.com/docs/validation) for more information on validation.
 To debug validation errors, you can use Laravel's `errors()` method or `@dump($errors);`.
 ```blade
 @if ($errors->any())

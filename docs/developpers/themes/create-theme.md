@@ -104,7 +104,7 @@ The `theme.json` file is the theme configuration file. It contains the theme inf
 You can add a preview image for your theme by adding a `screenshot.png` file in the `resources/themes/theme_name/` folder.
 
 ## Technology
-We use the [Blade](https://laravel.com/docs/11.x/blade) template engine for views. For assets, we use [vite](https://vitejs.dev/) with [preline](https://preline.io/) based on [tailwindcss](https://tailwindcss.com/).
+We use the [Blade](https://laravel.com/docs/blade) template engine for views. For assets, we use [vite](https://vitejs.dev/) with [preline](https://preline.io/) based on [tailwindcss](https://tailwindcss.com/).
 You are free to use whatever technologies you want for your theme in terms of CSS.
 
 You can run the following command to compile your theme's assets.
@@ -116,7 +116,7 @@ npm run dev
 Theme views allow you to customize the appearance of your website. You can modify theme views by editing files in the `resources/themes/theme_name/views/` folder of your installation.
 We recommend not modifying the default theme files. You can override them by creating a child theme.
 
-If you are not familiar with Blade, you can consult the Blade [documentation](https://laravel.com/docs/11.x/blade) to learn their syntax for conditions, loops, etc.
+If you are not familiar with Blade, you can consult the Blade [documentation](https://laravel.com/docs/blade) to learn their syntax for conditions, loops, etc.
 :::info Information
 If you haven't implemented a view in your theme, the default theme will be used.
 :::

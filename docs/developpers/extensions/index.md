@@ -9,10 +9,10 @@ This guide covers addons and modules: how to create one, how to structure it, an
 ## Prerequisites
 We recommend having good knowledge of **PHP** and **Laravel**, as well as being comfortable with the following concepts:
 
-- [Controllers](https://laravel.com/docs/11.x/controllers)
-- [Views](https://laravel.com/docs/11.x/views)
-- [Eloquent Models](https://laravel.com/docs/11.x/eloquent)
-- [Service Providers](https://laravel.com/docs/11.x/providers)
+- [Controllers](https://laravel.com/docs/controllers)
+- [Views](https://laravel.com/docs/views)
+- [Eloquent Models](https://laravel.com/docs/eloquent)
+- [Service Providers](https://laravel.com/docs/providers)
 - And any other Laravel concept
 
 These topics will not necessarily be covered in detail in this documentation.

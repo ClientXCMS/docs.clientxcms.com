@@ -104,7 +104,7 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
 Vous pouvez ajouter une image de prévisualisation pour votre thème en ajoutant un fichier `screenshot.png` dans le dossier `resources/themes/theme_name/`.
 
 ## Technologie
-Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/11.x/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
+Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
 Vous êtes libre d'utiliser les technologies que vous souhaitez pour votre thème en termes de CSS.
 
 Vous pouvez lancez la commande suivante pour compiler les assets de votre thème.
@@ -116,7 +116,7 @@ npm run dev
 Les vues du thème permettent de personnaliser l'apparence de votre site web. Vous pouvez modifier les vues du thème en modifiant les fichiers dans le dossier `resources/themes/theme_name/views/` de votre installation.
 Nous conseillons de ne pas modifier les fichiers du thème par défaut. Vous pouvez l'écraser en créant un thème enfant.
 
-Si vous n'êtes pas habitué à Blade, vous pouvez consulter la [documentation](https://laravel.com/docs/11.x/blade) de Blade pour vous adapter à leur syntaxe de condition, boucle, etc.
+Si vous n'êtes pas habitué à Blade, vous pouvez consulter la [documentation](https://laravel.com/docs/blade) de Blade pour vous adapter à leur syntaxe de condition, boucle, etc.
 :::info Information
 Si vous avez pas implémenté une vue dans votre thème, le thème par défaut sera utilisé.
 :::
