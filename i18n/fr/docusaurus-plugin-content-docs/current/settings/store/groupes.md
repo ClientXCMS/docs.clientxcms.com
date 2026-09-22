@@ -23,16 +23,11 @@ Prenez donc un moment pour structurer vos groupes avant d’ajouter de nouveaux 
 
 ## Pourquoi utiliser des groupes ?
 
-Imaginons que vous vendiez des services d’hébergement pterodactyl, des VPS, et des noms de domaine.
-Créer un groupe distinct pour chacun de ces types de produits permet à vos clients de :
+Si vous vendez des services d’hébergement pterodactyl, des VPS, et des noms de domaine, créer un groupe distinct pour chacun de ces types de produits permet à vos clients de :
 
 * Voir tout ce qui est lié à un même service au même endroit
 * Comprendre rapidement les différences entre les offres
 * Gagner du temps pour vos clients dans leur parcours d’achat
-
-:::tip Astuce
-C’est un peu comme organiser les rayons d’un magasin 🛒 — plus c’est clair, plus c’est efficace.
-:::
 
 ## Interfaces utilisateur
 
@@ -140,7 +135,7 @@ Une fois cette action lancée, **deux choix s’offrent à vous** :
 ![Vue du groupe cloner sans les groupes dans l'administration](/img/next_gen/settings/store/groups/view_after_cloning_without_product_into_group_in_admin.png)
 
 
-### Editer un groupe
+### Éditer un groupe
 
 Pour éditer un groupe, appuyez sur le bouton "Afficher" présent dans la liste de vos groupes sur l'interface d'administration.<br />
 ![Vue de la liste des groupes dans l'administration](/img/next_gen/settings/store/groups/view_group_in_admin.png)
@@ -189,7 +184,7 @@ La qualité de vos traductions peut grandement améliorer la perception de votre
 La suppression d’un groupe est possible uniquement s’il ne contient aucun produit.<br />
 Cette restriction permet d’éviter toute suppression accidentelle de services visibles en boutique.
 
-✅ **Étapes à suivre :**
+**Étapes à suivre :**
 
 1. Assurez-vous que le groupe concerné ne contient **aucun produit actif**.
 2. Une fois cette condition remplie, vous pourrez supprimer ce dernier depuis la page de gestion des groupes au sein de votre espace d'adminsitration.
@@ -213,7 +208,7 @@ Lorsque cette case est cochée :
 
 C’est une solution idéale si vous souhaitez **désactiver temporairement une gamme de services** sans la supprimer.
 
-✅ **Comment faire ?**<br />
+**Comment faire ?**<br />
 Changer simplement le Statut de votre groupe **dans le menu déroulant** située au sein de l'édition de votre groupe.
 
 ![Cacher un groupe dans l'administration](/img/next_gen/settings/store/groups/cached_group_in_admin.png)

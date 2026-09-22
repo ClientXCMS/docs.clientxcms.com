@@ -27,10 +27,6 @@ Proposer le virement bancaire vous permet de :
 * Répondre aux besoins des entreprises et administrations
 * Offrir une alternative en cas de problème avec d'autres passerelles
 
-:::tip Astuce
-Le virement bancaire est comme un **chèque numérique** 🏛️ — il rassure par sa simplicité et sa sécurité, particulièrement pour les clients corporate ou les achats importants.
-:::
-
 ## Fonctionnement du système
 
 ### Processus de paiement

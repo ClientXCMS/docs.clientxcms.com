@@ -31,10 +31,6 @@ Créer des coupons efficaces vous permet de :
 * Écouler des stocks ou promouvoir des services spécifiques
 * Récompenser les clients fidèles ou les premiers acheteurs
 
-:::tip Astuce
-Les coupons sont comme des **tickets d'entrée privilégiés** pour vos services 🎫 — vos clients se sentent valorisés, et vous gardez le contrôle sur vos marges et votre stratégie commerciale.
-:::
-
 ## Interfaces utilisateur
 
 ### Vue côté boutique

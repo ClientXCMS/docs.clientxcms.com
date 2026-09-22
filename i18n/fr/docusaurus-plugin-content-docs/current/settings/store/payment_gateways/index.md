@@ -28,10 +28,6 @@ Configurer plusieurs passerelles vous permet de :
 * Sécuriser vos transactions avec des systèmes fiables
 * Optimiser vos coûts de transaction selon les montants
 
-:::tip Astuce
-C'est comme avoir **plusieurs caisses dans un magasin** 🏪 — certains clients préfèrent payer en espèces, d'autres par carte. Plus vous offrez de choix, plus vous fidélisez votre clientèle.
-:::
-
 ## Passerelles disponibles
 
 CLIENTXCMS supporte nativement plusieurs passerelles de paiement populaires :

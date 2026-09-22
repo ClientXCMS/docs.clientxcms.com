@@ -31,10 +31,6 @@ Creating well-defined products allows you to:
 * Precisely define the characteristics, prices, and options for each offer
 * Easily manage billing, duration, and renewal of your services
 
-:::tip Tip
-It's a bit like labeling each item in a store 🏷️ — your customers know exactly what they're buying, and you keep control over every aspect of the sale.
-:::
-
 ## User Interfaces
 ### Store-side View
 
@@ -153,7 +149,7 @@ Allows you to highlight this product. It will be displayed at the top of the lis
 
 Write a short description here that will be displayed in the product description. This field supports HTML and CSS via the integrated editor (compatible with TailwindCSS).
 
-> ⚠️ Be rigorous: poorly structured code or an unclosed tag can affect the CMS display.
+> Be rigorous: poorly structured code or an unclosed tag can affect the CMS display.
 
 HTML description example
 
@@ -166,8 +162,8 @@ HTML description example
     <li class="ql-align-center"><strong>Storage</strong>: 200 GB SSD</li>
     <li class="ql-align-center"><strong>Connectivity</strong>: IPv4 included, 1 Gbps burst</li>
 </ol>
-<p class="ql-align-center">🛡️ | Anti-DDoS Protection (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
-<p class="ql-align-center">🚚 | Delivery in <strong>just a few minutes</strong></p>
+<p class="ql-align-center">Anti-DDoS Protection (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
+<p class="ql-align-center">Delivery in <strong>just a few minutes</strong></p>
 ```
 
 :::tip Tip
@@ -184,8 +180,8 @@ Each billing cycle can have:
 - a distinct **price**
 - optional **setup fees**
 
-🟢 A product with a price of `0` is **considered free**.
-🔴 If you leave the price field empty for a cycle, **it will be disabled**.
+- A product with a price of `0` is **considered free**.
+- If you leave the price field empty for a cycle, **it will be disabled**.
 
 ### Using the Integrated Calculator
 

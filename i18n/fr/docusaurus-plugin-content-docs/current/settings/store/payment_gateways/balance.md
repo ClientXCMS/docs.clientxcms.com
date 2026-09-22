@@ -27,10 +27,6 @@ Mettre en place un système de balance vous permet de :
 * Fidéliser votre clientèle avec un système de crédit pratique
 * Éviter les problèmes de paiement récurrent
 
-:::tip Astuce
-C'est comme avoir un **porte-monnaie numérique dédié** à votre boutique 💳 — vos clients rechargent leur solde quand ils le souhaitent et payent instantanément leurs services.
-:::
-
 ## Fonctionnement du système
 
 ### Processus de paiement

@@ -28,10 +28,6 @@ Intégrer Stripe vous permet de :
 * Garantir une sécurité maximale avec les dernières innovations
 * S'appuyer sur une infrastructure mondiale ultra-fiable
 
-:::tip Astuce
-Stripe est comme la **Ferrari des paiements** 🏎️ — performance maximale, technologie de pointe et prestige international. C'est le choix des entreprises qui ne veulent aucun compromis sur la qualité.
-:::
-
 ## Fonctionnement du système
 
 ### Processus de paiement de pointe

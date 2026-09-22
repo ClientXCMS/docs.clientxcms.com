@@ -31,10 +31,6 @@ Integrating Stripe allows you to:
 * Guarantee maximum security with the latest innovations
 * Rely on an ultra-reliable global infrastructure
 
-:::tip Tip
-Stripe is like the **Ferrari of payments** 🏎️ — maximum performance, cutting-edge technology, and international prestige. It's the choice of businesses that want no compromise on quality.
-:::
-
 ## System Operation
 
 ### Cutting-Edge Payment Process

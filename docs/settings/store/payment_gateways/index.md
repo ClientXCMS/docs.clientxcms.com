@@ -31,10 +31,6 @@ Configuring multiple gateways allows you to:
 * Secure your transactions with reliable systems
 * Optimize your transaction costs based on amounts
 
-:::tip Tip
-It's like having **multiple checkouts in a store** 🏪 — some customers prefer to pay cash, others by card. The more choices you offer, the more you retain your clientele.
-:::
-
 ## Available Gateways
 
 CLIENTXCMS natively supports several popular payment gateways:
