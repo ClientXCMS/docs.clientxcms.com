@@ -26,7 +26,7 @@ Two options available:
 * **Upgrade**: The customer receives a basic service during the trial. They can then upgrade it with additional services.
 * **Simple Trial**: The customer can test the service for free for a defined period. At the end of this period, the service is automatically deleted if not converted to a paid purchase.
 
-  ⚠️ **Important**: If upgrades don't appear on the service, you need to save the products in the corresponding group.
+  **Important**: If upgrades don't appear on the service, you need to save the products in the corresponding group.
 
 ### Trial Type
 

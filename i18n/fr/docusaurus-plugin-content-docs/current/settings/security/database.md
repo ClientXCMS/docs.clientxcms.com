@@ -27,10 +27,6 @@ La gestion directe de la base de données est utile pour :
 * **Initialiser des données** avec les seeders système
 * **Diagnostiquer les problèmes** de structure ou de données
 
-:::tip Astuce
-C'est comme avoir accès au moteur de votre voiture 🔧 — puissant, mais nécessite de l'expertise pour éviter les dommages.
-:::
-
 ## Informations de connexion
 
 ### Paramètres d'accès
@@ -79,15 +75,15 @@ Les migrations sont des scripts qui modifient la structure de votre base de donn
 
 ### Exécution des migrations
 
-**Sélection du module** | (menu déroulant)
-Choisissez le module ou l'extension pour lequel exécuter les migrations :
+**Sélection de l'extension** | (menu déroulant)
+Choisissez l'extension pour laquelle exécuter les migrations :
 
 - **Core** : Migrations du système principal ClientXCMS
-- **Extensions** : Migrations spécifiques aux modules installés
+- **Extensions** : Migrations spécifiques aux extensions installées
 
 **Processus de migration** :
 
-1. Sélectionnez le module approprié
+1. Sélectionnez l'extension appropriée
 2. Cliquez sur **"Migrer"** pour lancer l'opération
 3. Surveillez la sortie pour détecter d'éventuelles erreurs
 4. Vérifiez le bon fonctionnement de votre système

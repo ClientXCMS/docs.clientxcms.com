@@ -3,7 +3,7 @@ translated: true
 ---
 # Events
 
-In **CLIENTXCMS**, you can leverage [Laravel events](https://laravel.com/docs/11.x/events) to execute specific actions in response to certain actions. An event triggers logic, and a **listener** is attached to listen for that event and execute code when it occurs.
+In **CLIENTXCMS**, you can leverage [Laravel events](https://laravel.com/docs/events) to execute specific actions in response to certain actions. An event triggers logic, and a **listener** is attached to listen for that event and execute code when it occurs.
 
 ## List of Available Events
 

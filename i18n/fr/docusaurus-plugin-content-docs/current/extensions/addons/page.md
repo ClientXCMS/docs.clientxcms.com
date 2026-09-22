@@ -6,7 +6,7 @@ sidebar_position: 4
 L'addon Page permet de créer des pages personnalisées.
 
 ## Configuration
-Vous pouvez gérer la configuration de l'anti double compte dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `Page` > `Créer`
+Vous pouvez gérer la configuration de la page depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 
 ![img](/img/next_gen/extensions/addons/page/configuration.png)
 
@@ -23,5 +23,5 @@ Ici vous pouvez créer vos pages.
 ## Panel de gestion
 ![img](/img/next_gen/extensions/addons/page/gestion.png)
 
-Ici, vous pouvez voir tout les rapport que le système à trouver comme double compte. Vous pouvez aussi accepter ou refuser le compte.
+Ici, vous pouvez voir toutes les pages qui ont été créées. Vous pouvez aussi les modifier ou les supprimer.
 

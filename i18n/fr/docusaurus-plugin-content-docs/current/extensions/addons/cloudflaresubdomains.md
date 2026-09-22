@@ -1,6 +1,6 @@
 # Cloudflare Subdomains
 
-Cette extension permet de gérer les sous-domaines avec Cloudflare. Elle est utile pour les utilisateurs qui souhaitent offrir à leurs clients la possibilité de créer des sous-domaines personnalisés pour leurs services.
+Cet addon permet de gérer les sous-domaines avec Cloudflare. Elle est utile pour les utilisateurs qui souhaitent offrir à leurs clients la possibilité de créer des sous-domaines personnalisés pour leurs services.
 
 ## Type supporté
 - cPanel
@@ -19,7 +19,7 @@ Vous pouvez l’activer depuis la section **Extensions**, puis le configurer via
 
 ### Création de l'API Cloudflare
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/api.png)
-Pour utiliser cette extension, vous devez créer une clé API dans votre compte Cloudflare. Voici comment
+Pour utiliser cet addon, vous devez créer une clé API dans votre compte Cloudflare. Voici comment
 1. Connectez-vous à votre compte Cloudflare.
 2. Allez dans la section **Mon profil**.
 3. Cliquez sur **API Tokens**.
@@ -40,7 +40,7 @@ Pour utiliser cette extension, vous devez créer une clé API dans votre compte 
 Puis vous pouvez cliquer sur **Enregistrer** pour sauvegarder vos paramètres.
 
 ## Configurer un sous-domaine
-Pour configurer un sous-domaine, allez dans les paramètres > Approvisionnement > Sous-domaines et selectionnez le domaine que vous souhaitez automatiser.
+Pour configurer un sous-domaine, allez dans les paramètres > Approvisionnement > Sous-domaines et sélectionnez le domaine que vous souhaitez automatiser.
 
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/config2.png)
 
@@ -50,7 +50,7 @@ Vous pouvez trouver l'ID de la zone dans votre tableau de bord Cloudflare, dans 
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/zone_id.png)
 
 ## Liste des sous-domaines
-Vous pouvez consulter la liste des sous-domaines créés dans la section **Sous-domaines** de l'extension Cloudflare Subdomains. Cette liste affiche les sous-domaines créés, leur statut et les actions possibles.
+Vous pouvez consulter la liste des sous-domaines créés dans la section **Sous-domaines** de l'addon Cloudflare Subdomains. Cette liste affiche les sous-domaines créés, leur statut et les actions possibles.
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/domains.png)
 
 Ils se supprimeront automatiquement si le service est expiré ou supprimé.

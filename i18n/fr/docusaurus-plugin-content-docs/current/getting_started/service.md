@@ -7,17 +7,15 @@ Vous pouvez créer un service en quelques clics depuis votre espace client. Pour
 Dans cette étape, veuillez sélectionner le client, le produit que vous avez créé et le type de service. Puis cliquez sur suivant.
 ![img](/img/next_gen/services/create_step1.png)
 
-Dans cette seconde étape, vous pouvez remplir le formulaire et choisir selon le type de module, les VPS ou serveurs de jeux déjà existants que vous avez sur votre serveur. Puis cliquez sur importer
+Dans cette seconde étape, remplissez le formulaire puis cliquez sur **Nouveau** et **Créer** pour livrer un service vierge, ou choisissez l'onglet **Importer** pour rattacher un VPS ou un serveur de jeu déjà existant.
 
 - **Nom du service** : Nom du service
 - **Expiration** : Date d'expiration du service
-- **Description** : Description du service - visible par le client, non modifiable par le client
-- **Prix** : Prix du service
-- **Prix initial** : Prix initial du service
 - **Serveur** : Serveur où le service est hébergé
-- **Recurrence** : Cycle de facturation
+- **Description** : Description du service - visible par le client, non modifiable par le client
 - **Notes** : Notes sur le service
 - **Renouvellement maximum** : Nombre maximum de renouvellements (vide pour illimité)
+- **Récurrence et devise** : Fréquence de facturation et devise
 
 ![img](/img/next_gen/services/create_service.png)
 

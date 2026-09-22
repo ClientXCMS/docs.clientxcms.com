@@ -74,7 +74,7 @@ This key allows ClientXCMS to **create and manage servers**.
 
 ![Pelican Application API Permissions](/img/next_gen/extensions/modules/pelican/pelican_app_key_permissions.png)
 
-⚠️ Make sure the key has the necessary permissions (servers, users, nodes, eggs, allocations...).
+Make sure the key has the necessary permissions (servers, users, nodes, eggs, allocations...).
 
 ---
 

@@ -76,4 +76,15 @@ public function data(?Product $product = null): ?\App\Contracts\Store\ProductDat
 
 ### Implémentation pour demander un nom de domaine
 
-Voici un exemple basé sur la collecte du nom de domaine pour un produit d'hébergement web, en utilisant la classe `App\Abstracts\WebHostingProductData`.
+Voici un exemple basé sur la collecte du nom de domaine pour un produit d'hébergement web, en utilisant la classe `App\Abstracts\WebHostingProductData`. Héritez-en directement au lieu de `AbstractProductData` quand votre produit nécessite un nom de domaine à la commande - elle implémente déjà les paramètres `domain`, `domain_subdomain` et `subdomain`, avec leurs règles de validation (format FQDN, disponibilité du domaine, collision de sous-domaine) :
+
+```php
+namespace App\Addons\Fund;
+
+use App\Abstracts\WebHostingProductData;
+
+class CustomWebHostingProductData extends WebHostingProductData
+{
+    // Ne surchargez render(), renderAdmin() ou validate() que si vous devez personnaliser le comportement par défaut.
+}
+```

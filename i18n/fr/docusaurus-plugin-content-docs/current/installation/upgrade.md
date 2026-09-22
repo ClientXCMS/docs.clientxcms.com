@@ -1,3 +1,6 @@
+---
+sidebar_position: 9
+---
 # Mise à jour
 
 L'espace est régulièrement mis à jour pour corriger des bugs, ajouter de nouvelles fonctionnalités ou extensions.

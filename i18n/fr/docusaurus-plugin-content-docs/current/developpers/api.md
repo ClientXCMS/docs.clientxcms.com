@@ -4,7 +4,8 @@ sidebar_position: 3
 # API
 CLIENTXCMS met à disposition une API RESTful pour permettre aux développeurs de créer des applications qui interagissent avec les données de CLIENTXCMS. Cette API est basée sur les standards RESTful et utilise des codes d'état HTTP pour indiquer les erreurs. Les réponses peuvent être retournées en JSON ou en XML selon l'entête demandé.
 
-![image](/img/next_gen/developpers/api.png)
+L'API est auto-documentée via une interface Swagger (OpenAPI 3.0) générée, accessible sur `/api/documentation` de votre instance. Elle liste chaque endpoint groupé par tag, un tag par domaine fonctionnel plus un par extension installée qui expose des routes API, et elle propose un bouton **Authorize** pour attacher votre token Bearer et tester les requêtes directement depuis le navigateur.
+
 ## Authentification
 Pour utiliser l'API, vous devez fournir une clé d'API dans l'en-tête de chaque requête.
 
@@ -37,7 +38,7 @@ Le premier argument est le nom de la clé d'API, le second est le compte adminis
 
 Vous pouvez régénérer une clé d'API dans l'interface **Paramètres > Sécurité > API Keys**. Cliquez sur **Regénérer**.
 
-## Exemple
+## Appeler l'API
 
 ### PHP
 ```php

@@ -25,11 +25,11 @@ ClientXCMS utilise le système d'API de PVE (Proxmox Virtual Environment) pour g
 
 Pour connecter ClientXCMS à votre serveur Proxmox, suivez ces étapes :
 
-#### 1. Activer le module Proxmox
+**1. Activer le module Proxmox**
 
 Assurez-vous que le module Proxmox est activé dans **ClientXCMS**.
 
-#### 2. Configurer un serveur Proxmox dans ClientXCMS
+**2. Configurer un serveur Proxmox dans ClientXCMS**
 
 1. Connectez-vous à votre espace d'administration ClientXCMS.
 2. Allez dans **Paramètres** > **Paramètres généraux** > **Serveurs**.
@@ -47,7 +47,7 @@ Remplissez les informations suivantes :
 
 ![img](/img/next_gen/extensions/modules/proxmox/image_1.png)
 
-#### 3. Générer un Token API dans Proxmox
+**3. Générer un Token API dans Proxmox**
 
 1. Connectez-vous à votre interface Proxmox VE.
 2. Accédez à **Datacenter (XXX)** > **Permissions** > **API Tokens**.
@@ -63,13 +63,13 @@ Remplissez les informations suivantes :
 
 4. Cliquez sur **Add** pour finaliser la création du jeton.
 
-#### 4. Récupérer le Token ID et le Secret
+**4. Récupérer le Token ID et le Secret**
 
 Dans le **modal** qui s'ouvre, copiez les valeurs **Token ID** et **Secret**. Ces informations seront nécessaires lors de la création du serveur dans ClientXCMS (étape 2).
 
 ![img](/img/next_gen/extensions/modules/proxmox/image_3.png)
 
-#### 5. Tester la connexion
+**5. Tester la connexion**
 
 Une fois les informations d'authentification saisies dans la page de création du serveur, cliquez sur **Vérifier** pour tester la connexion. Si le statut renvoyé est `200` et que le message ``Connection successful`` apparaît, vous pouvez cliquer sur **Créer** pour ajouter votre serveur Proxmox à ClientXCMS.
 
@@ -240,14 +240,17 @@ import TabItem from '@theme/TabItem';
 Les menus déroulants permettent de définir des valeurs prédéfinies pour les ressources avec un prix pour chaque valeur, tandis que les curseurs permettent de définir des valeurs personnalisées à partir d'un prix unitaire. Plus d'informations sur la configuration des options sont disponibles dans la [documentation des options supplémentaires](/settings/provisioning/configoptions).
 
 ### Exemple de configuration
-#### Espace disque supplémentaire
+
+**Espace disque supplémentaire**
 ![img](/img/next_gen/settings/provisioning/configoptions/example_disk.png)
-#### Node Proxmox personnalisé
+
+**Node Proxmox personnalisé**
 ![img](/img/next_gen/settings/provisioning/configoptions/example_node.png)
 
 Cette configuration permet de sélectionner un nœud Proxmox spécifique si par exemple vous avez un noeud dans un autre datacenter ou un autre pays.
 Chaque option peut avoir un prix différent selon l'option sélectionnée.
-#### Coeurs CPU supplémentaires
+
+**Coeurs CPU supplémentaires**
 ![img](/img/next_gen/settings/provisioning/configoptions/example_core.png)
 
 Cette configuration permet de sélectionner le nombre de coeurs CPU supplémentaires pour le VPS.

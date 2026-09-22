@@ -1,0 +1,21 @@
+---
+sidebar_position: 1
+---
+# Thèmes
+Les thèmes sont l'un des trois types d'extension de ClientXCMS, aux côtés des [addons et modules](../extensions). CLIENTXCMS propose un système de thèmes pour personnaliser l'apparence de votre site web. Les thèmes sont des dossiers contenant des fichiers de configuration et des fichiers de templates. Les thèmes sont disponible partir de l'interface d'administration depuis `Paramètres`> `Themes`> `Paramètre du thème`.
+
+Pour distribuer un thème à la communauté, suivez le [guide de publication sur le marketplace](../publish-resource), puis consultez [Publier un thème](./publish-marketplace) pour les règles concernant la démonstration, le dépôt GitHub, l'archive et les mises à jour.
+
+Vous pouvez activer ou désactiver un thème en cliquant sur le bouton `Activer` ou `Désactiver` correspondant au thème. Chaque thème est présenté sous forme de carte avec une miniature d'aperçu, son statut, son nom et sa description.
+
+## Installation d'un thème
+:::info Information
+Pour les offres cloud, vous ne pouvez pas installer de thème personnalisé. Vous pouvez seulement activer un thème parmi les thèmes disponibles. Nous travaillons sur une solution pour permettre l'installation de thèmes personnalisés.
+:::
+Pour installer un thème, vous devez télécharger le thème depuis le site de CLIENTXCMS. Vous pouvez ensuite mettre dans le dossier `resources/themes` de votre installation. Il sera ensuite disponible dans la liste des thèmes. Vous devez ensuite relancer le build de npm pour que le thème soit pris en compte. Vous pouvez le faire en exécutant la commande suivante dans le terminal à la racine de votre installation :
+```bash
+npm run build
+```
+
+
+

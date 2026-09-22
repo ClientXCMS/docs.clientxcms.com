@@ -1,4 +1,4 @@
-# Configuration
+# Configuration du produit
 
 Les produits peuvent avoir des configurations permettant de contrôler les performances comme la mémoire ou la RAM. Ils permettent par la suite de livrer des services à partir de cette configuration.
 
@@ -176,7 +176,7 @@ Une fois la classe de configuration et le modèle créé, vous devez associer ce
 ```php
 public function config(): ?\App\Contracts\Store\ProductConfigInterface
 {
-    return new \App\Addons\Fund\GameserverConfig(); // Retourne la classe de configuration pour ce produit
+    return new \App\Addons\Fund\CustomProductConfig(); // Retourne la classe de configuration pour ce produit
 }
 ```
 

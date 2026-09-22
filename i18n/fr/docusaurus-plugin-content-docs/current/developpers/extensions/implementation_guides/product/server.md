@@ -46,7 +46,7 @@ class CustomGameServerType extends AbstractServerType
         // Logique pour créer le compte sur l'API distance
         // Retourner l'état de changement de service
         $data = $service->data; // Données lors de la commande
-        $config = \App\Addons\Fund\Models\GameServerConfig::where('product_id', $service->product_id)->first(); // Configuration du produit
+        $config = \App\Addons\Fund\Models\GameserverConfigModel::where('product_id', $service->product_id)->first(); // Configuration du produit
         return new ServiceStateChangeDTO($service, true, 'Account created successfully');
     }
 
@@ -105,12 +105,12 @@ class CustomGameServerType extends AbstractServerType
     }
 }
 ```
-## Enregister de la classe dans le produit
+## Enregistrement de la classe dans le produit
 
 Pour associer cette classe de gestion de serveurs à un produit, vous devez implémenter la méthode **`server()`** dans la classe du produit.
 
 ```php
 public function server(): ?\App\Contracts\Provisioning\ServerTypeInterface
 {
-    return new \App\Fund\CustomGameServerType(); // Associe le type de serveur CustomGameServerType au produit
+    return new \App\Addons\Fund\CustomGameServerType(); // Associe le type de serveur CustomGameServerType au produit
 }

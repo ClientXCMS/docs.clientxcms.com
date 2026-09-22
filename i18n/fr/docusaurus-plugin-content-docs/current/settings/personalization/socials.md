@@ -11,11 +11,6 @@ Vous pouvez gérer vos réseaux sociaux depuis :
 
 ![Configuration des réseaux sociaux](/img/next_gen/settings/personalization/socials/admin.png)
 
-:::tip Astuce
-Vos réseaux sociaux sont vos **ambassadeurs numériques**. 
-Ils humanisent votre marque et créent une relation de proximité que votre site seul ne peut pas offrir.
-:::
-
 ## Pourquoi intégrer les réseaux sociaux ?
 
 L'intégration sociale permet de :
@@ -25,10 +20,6 @@ L'intégration sociale permet de :
 * **Créer de l'engagement** et fidéliser votre communauté
 * **Améliorer votre référencement** avec des signaux sociaux positifs
 * **Faciliter le partage** de votre contenu et de vos offres
-
-:::tip Astuce
-C'est comme ouvrir des succursales de votre magasin 🏪 dans différents quartiers digitaux — chaque réseau vous connecte à une communauté spécifique.
-:::
 
 ## Gestion des réseaux sociaux
 

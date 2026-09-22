@@ -5,16 +5,14 @@ translated: true
 
 # Publishing an Addon or Module
 
-Complete the [common marketplace publication guide](../publish-resource) before following this page.
-
-CLIENTXCMS supports two extension types:
+Complete the [common marketplace publication guide](../publish-resource) before following this page. This guide covers two of the three extension types, addons and modules (for themes, see [Publishing a Theme](../themes/publish-marketplace)):
 
 - a **module** delivers and manages a service through a provider such as Pterodactyl, Proxmox, or Plesk;
 - an **addon** adds functionality such as a payment method, business logic, or custom pages.
 
-If the extension has not been created yet, start with [Creating an Extension](./create).
+If the addon or module has not been created yet, start with [Creating an Addon or Module](./create).
 
-## Identifier and Extension Type
+## Identifier and Type
 
 Choose the same type in the marketplace as in your extension metadata. The marketplace UUID must remain identical across:
 
@@ -36,11 +34,11 @@ Use **Add provider** when the extension requires more than one. Each declared cl
 
 The **Pricing** field defines the selling price of the extension. Paid pricing is available only to **certified developers**. You must request certification and confirm that you can issue invoices before CLIENTXCMS can pay out your earnings. Verify your certification and the amount before submitting the resource for validation.
 
-![Service providers and extension pricing](/img/next_gen/developpers/marketplace/mettre-a-jour-extension.png)
+The **Service providers** section lets you declare one namespace per field, with an **Add provider** button to declare more, and a trash icon to remove one. Below it, the **Monetization** section holds a single **Pricing** field and a note reminding you to indicate the resource's selling price, followed by the **Submit resource for validation** button that closes the form.
 
 ## Preparing the GitHub Repository
 
-Use a public GitHub repository to keep the source auditable and the history of every release accessible. The official [ClientXCMS Pterodactyl module](https://github.com/ClientXCMS/module-pterodactyl) is the reference layout: its `master` branch contains `modules/pterodactyl`, a bilingual README, and versioned GitHub releases.
+Use a public GitHub repository to keep the source auditable and the history of every release accessible. The official [ClientXCMS Pterodactyl module](https://github.com/ClientXCMS/module-pterodactyl) is the reference layout, and its `master` branch contains `modules/pterodactyl`, a bilingual README, and versioned GitHub releases.
 
 Recommended module layout:
 

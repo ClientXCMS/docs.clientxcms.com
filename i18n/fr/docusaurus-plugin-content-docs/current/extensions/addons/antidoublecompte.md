@@ -6,7 +6,7 @@ sidebar_position: 1
 L'anti double compte est un système qui permet de vérifier que les utilisateurs ne créer pas plusieurs compte et permet de vous prévenir si c'est le cas.
 
 ## Configuration
-Vous pouvez gérer la configuration de l'anti double compte dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions ` > `Double Comptes` > `Paramètre`
+Vous pouvez gérer la configuration de l'anti double compte depuis sa page de paramètres dans l'espace d'administration, sous **Paramètres**.
 
 ![img](/img/next_gen/extensions/addons/antidoublecompte/parametre.png)
 

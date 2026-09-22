@@ -4,9 +4,9 @@ translated: true
 # Sending Emails & Notifications
 
 ClientXCMS uses Laravel's notification system to send emails to users and administrators. Notifications allow you to customize messages sent via email using **CLIENTXCMS templates**.
-For more details on configuring mail in Laravel, see the official documentation [here](https://laravel.com/docs/11.x/mail#introduction)
+For more details on configuring mail in Laravel, see the official documentation [here](https://laravel.com/docs/mail#introduction)
 
-## Configuration
+## Configuring Mail Services
 
 Before sending emails, it's essential to configure the mail services.
 You can configure mail settings in the [mail section](/settings/core/mail) of the administration.
@@ -52,7 +52,7 @@ class FundMail extends Notification implements ShouldQueue
         $context = [
             'invoice' => $this->invoice,
         ];
-        $route = route('front.invoice.show', $this->invoice->idn true);
+        $route = route('front.invoices.show', $this->invoice->uuid);
         return EmailTemplate::getMailMessage("fund", $route, $context, $notifiable);
     }
 }
@@ -67,7 +67,7 @@ For example:
         $context = [
             'invoice' => $this->invoice,
         ];
-        $route = route('front.invoice.show', $this->invoice->idn true);
+        $route = route('front.invoices.show', $this->invoice->uuid);
         $mail = EmailTemplate::getMailMessage("fund", $route, $context, $notifiable);
         $mail->metadata('disable_save', true);
         return $mail;

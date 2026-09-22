@@ -32,10 +32,6 @@ Creating effective coupons allows you to:
 * Clear stock or promote specific services
 * Reward loyal customers or first-time buyers
 
-:::tip Tip
-Coupons are like **privileged entry tickets** to your services 🎫 — your customers feel valued, and you keep control over your margins and commercial strategy.
-:::
-
 ## User Interfaces
 
 ### Store-side View

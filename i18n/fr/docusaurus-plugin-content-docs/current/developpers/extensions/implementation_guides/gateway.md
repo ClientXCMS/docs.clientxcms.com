@@ -78,10 +78,10 @@ public function configForm(array $context = [])
 ```blade
 <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
     <div>
-        @include('admin/shared/password', ['name' => 'secret_key', 'label' => __('admin.settings.store.gateways.fields.client_id'), 'value' => env('FUND_SECRET_KEY')])
+        @include('admin/shared/password', ['name' => 'secret_key', 'label' => __('admin.settings.store.gateways.fields.client_secret'), 'value' => env('FUND_SECRET_KEY')])
     </div>
     <div>
-        @include('admin/shared/password', ['name' => 'public_key', 'label' => __('admin.settings.store.gateways.fields.client_secret'), 'value' => env('FUND_PUBLIC_KEY')])
+        @include('admin/shared/password', ['name' => 'public_key', 'label' => __('admin.settings.store.gateways.fields.client_id'), 'value' => env('FUND_PUBLIC_KEY')])
     </div>
 </div>
 ```

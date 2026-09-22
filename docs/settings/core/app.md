@@ -64,8 +64,8 @@ Determines the operating mode:
 
 **Debug mode** | (checkbox)<br />
 Enables detailed error display. Use only in development:
-- ✅ **Enabled**: Displays detailed technical errors
-- ❌ **Disabled**: Displays generic error messages
+- **Enabled**: Displays detailed technical errors
+- **Disabled**: Displays generic error messages
 
 **Timezone** | (dropdown menu)<br />
 Sets the time reference for:

@@ -91,4 +91,4 @@ Ce fonctionnement informe vos clients tout en aidant votre équipe à identifier
 
 ## Découvrir Idea en action
 
-L'addon Idea est utilisé par CLIENTXCMS pour son propre portail public de suggestions. Rendez-vous sur [clientxcms.com/ideas](https://clientxcms.com/ideas) pour découvrir l'extension en conditions réelles, voter pour les prochaines améliorations et voir comment elle crée un lien direct et transparent avec la communauté.
+L'addon Idea est utilisé par CLIENTXCMS pour son propre portail public de suggestions. Rendez-vous sur [clientxcms.com/ideas](https://clientxcms.com/ideas) pour découvrir l'addon en conditions réelles, voter pour les prochaines améliorations et voir comment elle crée un lien direct et transparent avec la communauté.

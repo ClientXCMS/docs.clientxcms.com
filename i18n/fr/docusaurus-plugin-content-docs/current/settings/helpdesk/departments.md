@@ -14,11 +14,6 @@ Vous pouvez gérer les départements depuis :
 
 ![Interface de gestion des départements](/img/next_gen/settings/helpdesk/departments/index_admin.png)
 
-:::tip Astuce
-Des départements bien organisés transforment le chaos des demandes en **flux de travail structuré**.
-Chaque client est dirigé vers l'expert le plus qualifié pour son problème.
-:::
-
 ## Pourquoi organiser en départements ?
 
 La structuration départementale est essentielle pour :
@@ -29,10 +24,6 @@ La structuration départementale est essentielle pour :
 * **Optimiser la charge** de travail entre les équipes
 * **Faciliter le suivi** des métriques par domaine
 
-:::tip Astuce
-C'est comme organiser un hôpital en services spécialisés 🏥 — cardiologie, pédiatrie, urgences... chaque patient va au bon endroit du premier coup.
-:::
-
 ## Départements par défaut
 
 ### Configuration initiale
@@ -41,10 +32,10 @@ CLIENTXCMS propose une structure départementale standard pour démarrer rapidem
 
 | Département            | Utilisation                               | Expertise requise            |
 | ----------------------- | ----------------------------------------- | ---------------------------- |
-| 🔧**Technique**   | Problèmes serveurs, bugs, configurations | Informatique, développement |
-| 💰**Facturation** | Factures, paiements, remboursements       | Comptabilité, commercial    |
-| 🏢**Commercial**  | Ventes, devis, négociations              | Business, relation client    |
-| 📋**Général**   | Demandes diverses, informations           | Support généraliste        |
+| **Technique**   | Problèmes serveurs, bugs, configurations | Informatique, développement |
+| **Facturation** | Factures, paiements, remboursements       | Comptabilité, commercial    |
+| **Commercial**  | Ventes, devis, négociations              | Business, relation client    |
+| **Général**   | Demandes diverses, informations           | Support généraliste        |
 
 ### Adaptation à votre activité
 
@@ -56,19 +47,19 @@ Ces départements par défaut peuvent être :
 
 **Exemples d'adaptations** :
 
-#### Hébergeur web
+**Hébergeur web**
 
-- 🔧 **Technique** : Serveurs, DNS, SSL
-- 💰 **Facturation** : Paiements, renouvellements
-- 🚀 **Migration** : Transferts de sites
-- 📈 **Commercial** : Nouvelles offres
+- **Technique** : Serveurs, DNS, SSL
+- **Facturation** : Paiements, renouvellements
+- **Migration** : Transferts de sites
+- **Commercial** : Nouvelles offres
 
-#### Agence de développement
+**Agence de développement**
 
-- 💻 **Développement** : Bugs, nouvelles fonctionnalités
-- 🎨 **Design** : Interface, UX/UI
-- 📋 **Projet** : Planning, spécifications
-- 💰 **Facturation** : Devis, paiements
+- **Développement** : Bugs, nouvelles fonctionnalités
+- **Design** : Interface, UX/UI
+- **Projet** : Planning, spécifications
+- **Facturation** : Devis, paiements
 
 ## Création d'un département
 
@@ -91,9 +82,9 @@ Utilisez un terme clair et immédiatement compréhensible.
 
 **Exemples de noms efficaces** :
 
-- ✅ "Support Technique" plutôt que "Tech"
-- ✅ "Facturation & Paiements" plutôt que "Compta"
-- ✅ "Assistance Commerciale" plutôt que "Ventes"
+- "Support Technique" plutôt que "Tech"
+- "Facturation & Paiements" plutôt que "Compta"
+- "Assistance Commerciale" plutôt que "Ventes"
 
 **Icône** | (sélecteur d'icône)
 Représentation visuelle du département pour une identification rapide.
@@ -126,7 +117,7 @@ L'affichage comprend :
 
 Vous pouvez diriger automatiquement les clients vers un département via des paramètres URL :
 
-#### Paramètres disponibles
+**Paramètres disponibles**
 
 | Paramètre     | Description         | Exemple de valeur                      |
 | -------------- | ------------------- | -------------------------------------- |
@@ -136,7 +127,7 @@ Vous pouvez diriger automatiquement les clients vers un département via des par
 | `content`    | Message pré-rempli | `Bonjour, j'ai un problème avec...` |
 | `related_id` | Service concerné   | `123` (ID du service)                |
 
-#### Exemples d'URLs pré-configurées
+**Exemples d'URLs pré-configurées**
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

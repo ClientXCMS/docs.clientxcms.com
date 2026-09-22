@@ -1,5 +1,5 @@
 # Avis clients
-L'extension **Avis clients** permet de collecter et d'afficher les avis de vos clients sur votre espace client. Les avis clients sont essentiels pour renforcer la confiance des acheteurs potentiels et améliorer la crédibilité de votre hébergeur en ligne.
+L'addon **Avis clients** permet de collecter et d'afficher les avis de vos clients sur votre espace client. Les avis clients sont essentiels pour renforcer la confiance des acheteurs potentiels et améliorer la crédibilité de votre hébergeur en ligne.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
 
@@ -7,7 +7,7 @@ L'extension **Avis clients** permet de collecter et d'afficher les avis de vos c
 
 ## Configuration
 
-Pour configurer l’extension **Avis clients**, rendez-vous dans :
+Pour configurer l’addon **Avis clients**, rendez-vous dans :
 `Espace d’administration` → `Paramètres` → `Avis clients` → `Configuration`
 
 L’onglet **Configuration** est découpé en plusieurs sections accessibles via les sous-onglets :
@@ -152,36 +152,11 @@ Selon la configuration, l’approbation d’un avis peut également créditer au
 
 ## Configuration des questions
 
-Pour gérer les questions posées aux clients lors de la soumission d’un avis :
-`Espace d’administration` → `Paramètres` → `Avis clients` → `Questionnaires`
-
-* **Identifiant unique**
-  Identifiant interne unique de la question.
-
-* **Type de question**
-  Type de réponse attendu : notation par étoiles, texte libre, choix multiple, etc.
-
-* **Ordre d’affichage**
-  Position de la question dans le formulaire.
-
-* **Question**
-  Texte affiché au client.
-
-* **Question facultative**
-  Définit si la question est obligatoire ou non.
-
-* **Question principale**
-  Met en avant la question dans le formulaire.
-
-* **Question globale**
-  Applique la question à tous les produits.
-
-### Configuration des questions
 Pour configurer les questions d'avis, accédez à `Espace d'administration` > `Paramètres` > `Avis clients` > `Questionnaires`. Vous pouvez ajouter, modifier ou supprimer des questions que vos clients devront répondre lors de la soumission de leur avis.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/questions.png)
 
-#### Création d'une question
+### Création d'une question
 Pour créer une nouvelle question, cliquez sur le bouton `Créer`. Vous pouvez définir le type de question (texte, évaluation par étoiles, choix multiple, etc.) et les options associées.
 
 **Identifiant unique** : Chaque question doit avoir un identifiant unique pour faciliter la gestion des réponses.
@@ -204,13 +179,13 @@ Pour créer une nouvelle question, cliquez sur le bouton `Créer`. Vous pouvez d
 
 **Produits associés** : Affiche les produits liés à cette question.
 
-#### Edition d'une question
+### Edition d'une question
 
 Pour modifier une question existante, cliquez sur l'icône d'édition à côté de la question dans la liste. Apportez les modifications nécessaires et enregistrez.
 
 ## Rendu sur les produits
 
-L'extension permet d'afficher les avis clients directement sur les pages produits de votre boutique. Cela affiche la note moyenne, le nombre d'avis.
+L'addon permet d'afficher les avis clients directement sur les pages produits de votre boutique. Cela affiche la note moyenne, le nombre d'avis.
 ![img](/img/next_gen/extensions/addons/customers_reviews/products.png)
 
 ### Support des thèmes
@@ -223,7 +198,7 @@ Pour supporter l'affichage des avis clients sur les produits, votre thème doit 
 ## Inviter des clients à laisser un avis
 Pour inviter vos clients à laisser un avis, vous pouvez utiliser la fonctionnalité d'envoi automatique d'emails de demande d'avis. Cette fonctionnalité est disponible dans les `paramètres` > `Avis clients` > `Inviter des clients à laisser un avis`.
 
-Vous pourrez selectionner les services auprès desquels envoyer une demande d'avis pour recevoir vos premiers retours clients de clients enregistrés.
+Vous pourrez sélectionner les services auprès desquels envoyer une demande d'avis pour recevoir vos premiers retours clients de clients enregistrés.
 
 ## Statistiques des avis
 Vous pouvez consulter les statistiques des avis clients dans `Espace d'administration` > `Avis client` > `Statistiques des clients`. Vous y trouverez meilleures produits, les produits à améliorer, ainsi que des statistiques globales sur les avis reçus.

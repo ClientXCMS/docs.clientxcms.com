@@ -37,8 +37,8 @@ $this->app['extension']->addAdminMenuItem(
 );
 
 ```
-#### Résultat
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
+
+L'item s'insère alors dans le menu admin à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. Chaque admin choisit individuellement un menu horizontal en haut de page ou une sidebar verticale pour sa propre session grâce à un bouton dans l'en-tête admin, mais les deux affichages rendent la même liste d'items sous-jacente, donc seul l'aspect change.
 
 :::info TIPS
 Cela affichera pas le menu, mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
@@ -72,7 +72,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+Une nouvelle card apparaît alors sur la page des paramètres, affichant le titre et la description résolus, et l'item est listé en dessous sous forme d'icône plus son propre titre et description, pointant vers l'action du contrôleur donnée.
 
 Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../../../settings).
 
@@ -83,11 +83,9 @@ Les widgets permettent d'ajouter des éléments visuels et interactifs sur le ta
 - **`AdminCountWidget`** : Affiche des statistiques simples (comme le nombre d'utilisateurs, commandes, etc.).
 - **`AdminCardWidget`** : Affiche des widgets plus complexes avec du contenu personnalisé.
 
-### Statistiques simples
+### Statistiques simples : afficher le nombre total de clients
 
 Ce widget est utilisé pour afficher des statistiques dans le tableau de bord admin.
-
-#### Exemple : Afficher le nombre total de clients
 
 ```php
 
@@ -103,15 +101,12 @@ $this->app['extension']->addAdminCountWidget(
     )
 );
 ```
-#### Résultat
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
+Un petit widget en carte apparaît alors sur le tableau de bord admin, affichant l'icône, le titre ("Total Clients") et le compte en direct renvoyé par la closure.
 
-### Widgets complexes
+### Widgets complexes : afficher les 3 derniers utilisateurs connectés
 
 Ce widget permet d'afficher des informations plus complexes ou dynamiques dans le tableau de bord admin.
-
-#### Exemple : Afficher les 3 derniers utilisateurs connectés
 
 ```php
 use App\Core\Admin\Dashboard\AdminCardWidget;
@@ -164,6 +159,5 @@ $this->app['extension']->addFrontMenuItem(
     )
 );
 ```
-### Résultat
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)
+L'item s'insère alors dans le menu de l'espace client à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. `FrontMenuItem` ne fait qu'enregistrer la donnée, donc la mise en forme réelle du menu (horizontal, sidebar, menu déroulant...) dépend du thème actif et de ses vues pour décider comment la rendre.

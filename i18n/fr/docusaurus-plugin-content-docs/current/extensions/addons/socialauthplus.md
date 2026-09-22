@@ -4,26 +4,26 @@ sidebar_position: 3
 
 # SocialAuth+
 
-L'extension SocialAuth+ permet de faciliter les connexions avec OAuth2 pour les plateformes suivantes : [Google](#google), [Discord](#discord), [GitHub](#github), [Facebook](#facebook), [Microsoft](#microsoft), [Minecraft](#minecraft), [Twitch](#twitch) et [ClientXCMS](#clientxcms).
-> Facilitez l'accès à votre plateforme pour vos clients potentiels avec SocialAuth+. Cette solution utilise la technologie OAuth+ pour une connexion rapide et sécurisée. Vos utilisateurs peuvent s'inscrire et se connecter en un clic via leurs comptes, sans craindre de perdre leur mot de passe. Simplifiez leur expérience utilisateur et augmentez votre taux de conversion grâce à cette extension d'authentification avancée.
+L'addon SocialAuth+ permet de faciliter les connexions avec OAuth2 pour les plateformes suivantes : [Google](#google), [Discord](#discord), [GitHub](#github), [Facebook](#facebook), [Microsoft](#microsoft), [Minecraft](#minecraft), [Twitch](#twitch) et [ClientXCMS](#clientxcms).
+> Facilitez l'accès à votre plateforme pour vos clients potentiels avec SocialAuth+. Cette solution utilise la technologie OAuth+ pour une connexion rapide et sécurisée. Vos utilisateurs peuvent s'inscrire et se connecter en un clic via leurs comptes, sans craindre de perdre leur mot de passe. Simplifiez leur expérience utilisateur et augmentez votre taux de conversion grâce à cet addon d'authentification avancée.
 
 
 ## Configuration dans ClientXCMS
 
-L'extension **SocialAuth+** est disponible __gratuitement__, et activable depuis l'onglet "Personnalisation" de votre espace d'administration de votre site ClientXCMS.
+L'addon **SocialAuth+** est disponible __gratuitement__, et activable depuis l'onglet "Personnalisation" de votre espace d'administration de votre site ClientXCMS.
 
-### Activation de l'extension
+### Activation de l'addon
 
-Pour activer l'extension SocialAuth+ gratuitement, procédez comme suit :
+Pour activer l'addon SocialAuth+ gratuitement, procédez comme suit :
 1. Connectez-vous à l'espace d'administration de ClientXCMS.
 2. Cliquez sur le bouton "Paramètres" sur la barre de navigation en haut.
 2. Dans la section "Personalisation", cliquez sur la page "Extensions".
-3. Recherchez l'extension "Social Auth+" dans la liste des extensions disponibles.
+3. Recherchez l'addon "Social Auth+" dans la liste des extensions disponibles.
 4. Cliquez sur le bouton "Activer" en dessous de cette dernière pour la mettre en place gratuitement.
 
 ### Configuration des identifiants OAuth sur ClientXCMS
 
-Une fois l'extension SocialAuth+ activée depuis votre espace d'administration ClientXCMS, ré-accédez à l'onglet "Paramètres".
+Une fois l'addon SocialAuth+ activé depuis votre espace d'administration ClientXCMS, ré-accédez à l'onglet "Paramètres".
 
 ![Image: SocialAuth+ Onglet](/img/next_gen/extensions/addons/socialauth/SA+_extension.png)
 
@@ -65,9 +65,9 @@ Pour pouvoir utiliser cette extension, vous devez obtenir les clés d'authentifi
 **4.** Une fois votre projet créé, cliquez sur le raccourci d'accès rapide "**API et services**"
 ![Image: Google Config - Raccourci accès rapide "API et services"](/img/next_gen/extensions/addons/socialauth/SA+_Google2.png)
 
-**5.** Accédez à la section "**Ecran de consentement OAuth**" dans la colonne de gauche.
+**5.** Accédez à la section "**Écran de consentement OAuth**" dans la colonne de gauche.
 
-![Image: Google Config - Section "Ecran de consentement OAuth"](/img/next_gen/extensions/addons/socialauth/SA+_Google3.png)
+![Image: Google Config - Section "Écran de consentement OAuth"](/img/next_gen/extensions/addons/socialauth/SA+_Google3.png)
 
 **6.** Sélectionnez l'option "**Externes**", cliquez ensuite sur le bouton "**Créer**".
 ![Image: Google Config - Bouton "Externes" consentement](/img/next_gen/extensions/addons/socialauth/SA+_Google4.png)
@@ -295,5 +295,5 @@ Pour régler ce problème, rendez-vous sur votre panel de gestion Plesk, puis We
 Re-testez la connexion via Google.
 
 
-## Félicitations 👏
-Vous avez maintenant configuré l'extension SocialAuth+ avec les clés d'authentification OAuth2. Vos clients pourront désormais se connecter et s'inscrire plus facilement, plus rapidement et en toute sécurité sur votre espace client !
+## Félicitations
+Vous avez maintenant configuré l'addon SocialAuth+ avec les clés d'authentification OAuth2. Vos clients pourront désormais se connecter et s'inscrire plus facilement, plus rapidement et en toute sécurité sur votre espace client !

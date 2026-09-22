@@ -36,10 +36,6 @@ La messagerie automatique est au cœur de l'expérience client dans CLIENTXCMS. 
 * Notifier les clients des changements sur leurs services
 * Gérer les réinitialisations de mot de passe en toute sécurité
 
-:::tip Astuce
-C'est un peu comme avoir un assistant personnel qui envoie automatiquement tous vos courriers importants 📬 — fiable, rapide et professionnel.
-:::
-
 ## Configuration de base
 
 ### Paramètres d'identité
@@ -72,7 +68,7 @@ Par exemple : "Cordialement, L'équipe ClientXCMS" ou "Merci de votre confiance"
 
 **Désactiver les e-mails** | (case à cocher)
 Empêche l'envoi de tous les e-mails depuis le système.
-⚠️ À utiliser uniquement en développement ou en maintenance.
+À utiliser uniquement en développement ou en maintenance.
 
 ## Configuration SMTP
 
@@ -144,9 +140,9 @@ Après avoir configuré vos paramètres SMTP, il est **essentiel** de tester la 
 
 ### Indicateurs de succès
 
-- ✅ **Connexion réussie** : Message de confirmation affiché
-- ✅ **E-mail reçu** : Vérifiez votre boîte de réception
-- ✅ **Bon formatage** : L'e-mail s'affiche correctement
+- **Connexion réussie** : Message de confirmation affiché
+- **E-mail reçu** : Vérifiez votre boîte de réception
+- **Bon formatage** : L'e-mail s'affiche correctement
 
 
 ## Résolution des problèmes

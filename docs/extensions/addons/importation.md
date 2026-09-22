@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 Import is used to import your data from ClientXCMS V1 or even WHMCS.
 
 ## Configuration
-You can manage the import configuration in `Admin Panel` > `Settings` > `Extension Settings` > `Import`
+You can manage the import configuration from its settings page in the admin panel, under **Settings**.
 
 ![img](/img/next_gen/extensions/addons/importation/importation.png)
 

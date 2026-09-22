@@ -1,6 +1,6 @@
 # How Did You Find Us
 
-The **How Did You Find Us** extension is an essential tool for understanding the origin of your customer base and optimizing your marketing channels. it allows you to collect valuable data during customer registration and analyze it through a comprehensive dashboard.
+The **How Did You Find Us** addon is an essential tool for understanding the origin of your customer base and optimizing your marketing channels. it allows you to collect valuable data during customer registration and analyze it through a comprehensive dashboard.
 
 ![Customer Map](/img/next_gen/extensions/addons/how-did-you-find-us/map.png)
 
@@ -10,13 +10,13 @@ To use these features, the **How did you find us** addon must be enabled on your
 
 ## Client Side
 
-Once the extension is enabled, a new field appears on the registration form. Your new customers can then indicate how they discovered your services (for example: Google, Social Media, Word of mouth, etc.).
+Once the addon is enabled, a new field appears on the registration form. Your new customers can then indicate how they discovered your services (for example: Google, Social Media, Word of mouth, etc.).
 
 This information is then attached to the customer's profile for later analysis.
 
 ## Admin Configuration
 
-Management of the extension is done in **Settings** > **Extension Settings** > **How Did You Find Us**.
+Management of the addon is done from its settings page, under **Settings** in the admin panel.
 
 ### Source Management (CRUD)
 
@@ -29,7 +29,7 @@ These sources will appear in the dropdown menu during registration.
 
 ## Origin Analysis
 
-The real strength of this extension lies in its analysis tool, accessible via the **"Origin Analysis"** button in the addon configuration.
+The real strength of this addon lies in its analysis tool, accessible via the **"Origin Analysis"** button in the addon configuration.
 
 ### Breakdown by Source
 A detailed table displays the number of customers per source as well as their percentage of the total. This allows for immediate identification of which channel is the most effective.

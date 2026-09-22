@@ -29,7 +29,7 @@
 
 Une fois L'addon activé :
 
-* **Administration → Paramètres → Paramètres des extensions → Paramètres des cartes-cadeaux**
+* **Administration → Paramètres**, dans la page de paramètres de l'addon
 * Interface de gestion : **Administration → Paramètres → Paramètres de la boutique → Cartes-cadeaux**
 
 | Élément     | Version / Détail                                                |
@@ -40,13 +40,13 @@ Une fois L'addon activé :
 
 ---
 
-## 3. Paramètres globaux (extension)
+## 3. Paramètres globaux (addon)
 
 | Champ                          | Description                                               | Exemple                      |
 | ------------------------------ | --------------------------------------------------------- | ---------------------------- |
 | **Montants autorisés**         | Valeurs proposées à l’achat, séparées par virgule         | `10,20,50,100,200`           |
 | **Expiration (jours)**         | Durée de validité par défaut des cartes créées ou vendues | `365`                        |
-| **Autoriser l’achat**          | Active/désactive la vente dans l’espace client            | ✅                            |
+| **Autoriser l’achat**          | Active/désactive la vente dans l’espace client            | Oui                           |
 | **Préfixe des cartes-cadeaux** | Ajouté automatiquement devant chaque code généré          | `CC` (donnera `CC-6MCP9IC8`) |
 
 > Les montants sont exprimés dans la devise principale de votre boutique.

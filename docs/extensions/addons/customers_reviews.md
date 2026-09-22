@@ -3,7 +3,7 @@ translated: true
 ---
 
 # Customer Reviews
-The **Customer Reviews** extension allows you to collect and display customer reviews on your client area. Customer reviews are essential for building trust with potential buyers and improving your online hosting service's credibility.
+The **Customer Reviews** addon allows you to collect and display customer reviews on your client area. Customer reviews are essential for building trust with potential buyers and improving your online hosting service's credibility.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
 
@@ -11,7 +11,7 @@ The **Customer Reviews** extension allows you to collect and display customer re
 
 ## Configuration
 
-To configure the **Customer Reviews** extension, go to:
+To configure the **Customer Reviews** addon, go to:
 `Admin Panel` → `Settings` → `Customer Reviews` → `Configuration`
 
 The **Configuration** tab is divided into several sections accessible via sub-tabs:
@@ -156,36 +156,11 @@ Depending on the configuration, approving a review can also automatically credit
 
 ## Question Configuration
 
-To manage the questions asked to customers when submitting a review:
-`Admin Panel` → `Settings` → `Customer Reviews` → `Questionnaires`
-
-* **Unique identifier**
-  Unique internal identifier for the question.
-
-* **Question type**
-  Type of expected response: star rating, free text, multiple choice, etc.
-
-* **Display order**
-  Position of the question in the form.
-
-* **Question**
-  Text displayed to the customer.
-
-* **Optional question**
-  Defines whether the question is required or not.
-
-* **Main question**
-  Highlights the question in the form.
-
-* **Global question**
-  Applies the question to all products.
-
-### Question Configuration
 To configure review questions, go to `Admin Panel` > `Settings` > `Customer Reviews` > `Questionnaires`. You can add, edit, or delete questions that your customers will need to answer when submitting their review.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/questions.png)
 
-#### Creating a Question
+### Creating a Question
 To create a new question, click the `Create` button. You can define the question type (text, star rating, multiple choice, etc.) and associated options.
 
 **Unique identifier**: Each question must have a unique identifier to facilitate response management.
@@ -208,13 +183,13 @@ To create a new question, click the `Create` button. You can define the question
 
 **Associated products**: Displays the products related to this question.
 
-#### Editing a Question
+### Editing a Question
 
 To edit an existing question, click the edit icon next to the question in the list. Make the necessary changes and save.
 
 ## Product Display
 
-The extension allows displaying customer reviews directly on your store's product pages. This shows the average rating and number of reviews.
+The addon allows displaying customer reviews directly on your store's product pages. This shows the average rating and number of reviews.
 ![img](/img/next_gen/extensions/addons/customers_reviews/products.png)
 
 ### Theme Support

@@ -20,13 +20,11 @@ Open the [CLIENTXCMS resources area](https://clientxcms.com/client/ressources) w
 
 Choose stable public information and keep your contact details up to date.
 
-![Developer program registration form](/img/next_gen/developpers/marketplace/rejoindre-developpeur.png)
+The registration page introduces the program above a single form holding the four fields listed above, followed by an **Activate my developer area** button.
 
 ## Developer Dashboard
 
 The developer dashboard centralizes your published resources and profile. For every resource, it displays the number of downloads, views, and its current status. You can also check your developer certification, update your public profile, open an existing resource, or create a new one.
-
-![CLIENTXCMS developer dashboard](/img/next_gen/developpers/marketplace/espace-developpeur.png)
 
 ### Certification and Paid Resources
 
@@ -50,8 +48,6 @@ Select **Create** from the developer dashboard, then complete the common fields.
 
 The UUID must match the identifier used by the code and its installation folder. Refer to the specialized guide for the exact convention of your resource type.
 
-![Basic information for a marketplace resource](/img/next_gen/developpers/marketplace/soumettre-ressource-informations.png)
-
 ### Content and Media
 
 - **Short description**: one clear sentence summarizing the resource and its main benefit.
@@ -60,7 +56,7 @@ The UUID must match the identifier used by the code and its installation folder.
 
 Only promise features that are included in the submitted version. Never put credentials, API keys, or other secrets in the description or screenshots.
 
-![Description and thumbnail fields](/img/next_gen/developpers/marketplace/soumettre-ressource-contenu.png)
+**Description** is written in Markdown, edited through [EasyMDE](https://github.com/Ionaru/easy-markdown-editor).
 
 ## Submitting and Maintaining Your Resource
 
@@ -85,7 +81,5 @@ Create and publish resource versions directly from the CLIENTXCMS developer inte
 - **Changelog**: add entries under Addition, Removal, Change, Fix, Other, or Security.
 
 Review the changelog and select **Publish version**. Do not create another marketplace resource for an update and do not reuse a version number for different code.
-
-![Creating a resource version from the developer interface](/img/next_gen/developpers/marketplace/creer-version.png)
 
 GitHub remains the recommended place to host and maintain the source, but marketplace versions are managed from the CLIENTXCMS interface. The [extension guide](./extensions/publish-marketplace#preparing-the-github-repository) and [theme guide](./themes/publish-marketplace#preparing-the-github-repository) provide the expected repository structures.

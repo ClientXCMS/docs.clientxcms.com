@@ -30,10 +30,6 @@ Implementing a balance system allows you to:
 * Build customer loyalty with a convenient credit system
 * Avoid recurring payment problems
 
-:::tip Tip
-It's like having a **dedicated digital wallet** for your store 💳 — your customers top up their balance whenever they want and instantly pay for their services.
-:::
-
 ## System Operation
 
 ### Payment Process

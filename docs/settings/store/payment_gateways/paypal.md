@@ -31,10 +31,6 @@ Integrating PayPal allows you to:
 * Simplify refund and dispute management
 * Offer payments in multiple currencies
 
-:::tip Tip
-PayPal is like the **universal passport** for online payment 🌍 — recognized everywhere, it opens your store to the whole world and instantly reassures your customers.
-:::
-
 ## System Operation
 
 ### Payment Process

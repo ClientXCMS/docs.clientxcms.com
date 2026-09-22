@@ -4,7 +4,7 @@ translated: true
 
 # Cloudflare Subdomains
 
-This extension allows managing subdomains with Cloudflare. It is useful for users who want to offer their customers the ability to create custom subdomains for their services.
+This addon allows managing subdomains with Cloudflare. It is useful for users who want to offer their customers the ability to create custom subdomains for their services.
 
 ## Supported Types
 - cPanel
@@ -24,7 +24,7 @@ You can enable it from the **Extensions** section, then configure it via **exten
 
 ### Creating the Cloudflare API
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/api.png)
-To use this extension, you must create an API key in your Cloudflare account. Here's how:
+To use this addon, you must create an API key in your Cloudflare account. Here's how:
 1. Log in to your Cloudflare account.
 2. Go to the **My Profile** section.
 3. Click on **API Tokens**.
@@ -55,7 +55,7 @@ You can find the zone ID in your Cloudflare dashboard, in the **Overview** secti
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/zone_id.png)
 
 ## Subdomain List
-You can view the list of created subdomains in the **Subdomains** section of the Cloudflare Subdomains extension. This list displays created subdomains, their status, and possible actions.
+You can view the list of created subdomains in the **Subdomains** section of the Cloudflare Subdomains addon. This list displays created subdomains, their status, and possible actions.
 ![img](/img/next_gen/extensions/addons/cloudflaresubdomains/domains.png)
 
 They will be automatically deleted if the service is expired or deleted.

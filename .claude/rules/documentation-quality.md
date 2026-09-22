@@ -15,6 +15,7 @@ Sources : [Google Developer Documentation Style Guide](https://developers.google
 - Aucune affirmation technique non vérifiée : si un comportement, un nom de champ ou une commande n'a pas été contrôlé à la source (code, doc officielle de la techno documentée), ne pas l'écrire comme un fait.
 - Dates, versions, formats : toujours non ambigus.
 - Ne pas laisser une page mélanger plusieurs objectifs (voir Diátaxis ci-dessous) : ça dilue la précision de chaque partie.
+- **Un libellé d'interface (menu, section, bouton) vérifié à la source aujourd'hui n'est pas garanti demain** : c'est un texte que ClientXCMS peut renommer à tout moment, même si la vérification au moment de l'écriture était juste. Même risque que recopier un numéro de version (voir `versioning.md`). Décrire la fonction et l'emplacement général (« dans la page de paramètres de l'addon, sous Settings ») plutôt que le chemin exact multi-niveaux (« Settings > Extension Settings > X ») : le premier reste vrai après un renommage de menu, le second devient silencieusement faux.
 
 ## Structure : les 4 types de contenu (Diátaxis)
 

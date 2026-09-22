@@ -15,11 +15,6 @@ You can manage staff members from:
 
 ![Staff accounts list](/img/next_gen/settings/security/staffs/staff_list.png)
 
-:::tip Tip
-Each administrator account is an **access key** to your system.
-Treat them with the same care as your house keys — limit the number and monitor their usage.
-:::
-
 ## Why manage staff accounts?
 
 Administrator management is essential for:
@@ -29,10 +24,6 @@ Administrator management is essential for:
 * **Tracking actions** for audit and accountability
 * **Limiting risks** related to compromised accounts
 * **Facilitating collaboration** in teams with appropriate access
-
-:::tip Tip
-It's like managing access to a safe 🔐 — each person should have exactly the rights they need, no more, no less.
-:::
 
 ## Creating a Staff Account
 

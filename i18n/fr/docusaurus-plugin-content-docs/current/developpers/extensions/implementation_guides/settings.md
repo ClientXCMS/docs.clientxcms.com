@@ -61,7 +61,7 @@ public function boot(): void
 
 Dans cet exemple, l'item renvoie à l'action `showFund` du `FundAdminController`, qui affiche une vue dédiée dans l'administration de l'extension.
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+La card apparaît alors sur la page des paramètres, affichant le titre et la description résolus, et l'item est listé en dessous sous forme d'icône plus son propre titre et description, pointant vers l'action du contrôleur.
 
 ## Signature des méthodes
 

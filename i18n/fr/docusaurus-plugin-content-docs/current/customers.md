@@ -90,8 +90,6 @@ Les actions sont les suivantes :
 ### Actions disponibles
 Vous pouvez effectuer des actions sur le client via la fiche client. Les actions sont les suivantes :
 
-![img](/img/next_gen/customers/actions.png)
-
 #### Renvoyer le mail de confirmation
 Vous pouvez renvoyer le mail de confirmation au client. Cela permet au client de confirmer son compte.
 #### Confirmer le compte

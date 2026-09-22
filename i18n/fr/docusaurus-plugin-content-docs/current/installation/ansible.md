@@ -1,10 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 ---
 
 # Ansible
 
-**Ansible** permet un déploiement entièrement automatisé de ClientXCMS, de l'installation des prérequis jusqu'à la mise en production. Cette méthode est recommandée pour les environnements de production et les déploiements multi-serveurs.
+:::danger Pas utilisable actuellement
+Ce playbook est **obsolète** et n'est pas maintenu à jour avec les exigences actuelles de ClientXCMS : il installe PHP 8.2, alors que ClientXCMS nécessite désormais PHP 8.3 ou supérieur (voir [Prérequis](./requis)). Ne l'utilisez pas pour un déploiement de production en l'état. Utilisez le [guide manuel VPS/serveur dédié](./selfhosted) en attendant que ce playbook soit repris.
+:::
+
+**Ansible** permet un déploiement entièrement automatisé de ClientXCMS, de l'installation des prérequis jusqu'à la mise en production.
 
 ## Prérequis
 
@@ -14,7 +18,7 @@ sidebar_position: 5
 - **Accès SSH** aux serveurs cibles
 
 ### Sur les serveurs cibles
-- **Ubuntu 22.04+**, **Debian 11+** ou **Rocky/AlmaLinux 9+**
+- Toute distribution Linux capable de fournir la version de PHP requise et une base de données compatible (voir [Prérequis](./requis)) - le playbook cible actuellement les distributions Debian/Ubuntu et de la famille RedHat
 - **Accès root** ou utilisateur avec privilèges sudo
 - **Connexion internet** pour télécharger les paquets
 
@@ -122,8 +126,8 @@ Les identifiants OAuth sont requis en production et s'obtiennent depuis votre co
 Le playbook Ansible installe et configure automatiquement :
 
 ### Infrastructure système
-- **PHP 8.3** avec toutes les extensions requises
-- **MariaDB 10.11+** (base de données)
+- **PHP** avec toutes les extensions requises (le playbook cible actuellement PHP 8.2, obsolète par rapport aux [prérequis](./requis) actuels - voir l'avertissement ci-dessus)
+- **MariaDB** (base de données)
 - **Nginx** ou **Apache** (serveur web)
 - **PHP-FPM** (gestionnaire de processus)
 
@@ -309,7 +313,11 @@ Si aucun domaine spécifique n'est fourni, toutes les instances détectées sero
 - Utiliser **Nginx + PHP-FPM** pour la production
 - Activer **OPcache** PHP (fait automatiquement)
 - Configurer **MariaDB** selon votre charge
-- Monitorer les **ressources** serveur avec Grafana (prévu dans une prochaine mise à jour de la playbook)
+- Monitorer les **ressources** serveur avec votre propre outillage
+
+:::info Prévu
+Le monitoring Grafana intégré est prévu pour une prochaine version de ce playbook, il n'est pas disponible pour le moment.
+:::
 
 ### Maintenance
 - **Planifier** les mises à jour pendant les créneaux de faible trafic

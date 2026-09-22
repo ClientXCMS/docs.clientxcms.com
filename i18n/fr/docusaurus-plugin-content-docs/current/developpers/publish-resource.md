@@ -19,13 +19,11 @@ Connectez-vous puis ouvrez l'[espace des ressources CLIENTXCMS](https://clientxc
 
 Choisissez des informations publiques durables et gardez votre moyen de contact à jour.
 
-![Formulaire d'inscription au programme développeur](/img/next_gen/developpers/marketplace/rejoindre-developpeur.png)
+La page d'inscription présente le programme au-dessus d'un formulaire unique regroupant les quatre champs listés ci-dessus, suivi d'un bouton **Activer mon espace développeur**.
 
 ## Espace développeur
 
 L'espace développeur centralise vos ressources publiées et votre profil. Pour chaque ressource, il affiche le nombre de téléchargements, les vues et son statut actuel. Vous pouvez également consulter votre certification, actualiser votre profil public, ouvrir une ressource existante ou en créer une nouvelle.
-
-![Espace développeur CLIENTXCMS](/img/next_gen/developpers/marketplace/espace-developpeur.png)
 
 ### Certification et ressources payantes
 
@@ -49,8 +47,6 @@ Sélectionnez **Créer** depuis l'espace développeur, puis renseignez les champ
 
 L'UUID doit correspondre à l'identifiant employé par le code et son dossier d'installation. Consultez le guide spécialisé pour connaître la convention exacte de votre type de ressource.
 
-![Informations de base d'une ressource marketplace](/img/next_gen/developpers/marketplace/soumettre-ressource-informations.png)
-
 ### Contenu et média
 
 - **Description courte** : une phrase claire résumant la ressource et son principal bénéfice.
@@ -59,7 +55,7 @@ L'UUID doit correspondre à l'identifiant employé par le code et son dossier d'
 
 Promettez uniquement les fonctionnalités présentes dans la version soumise. N'insérez jamais d'identifiants, de clés API ou d'autres secrets dans la description ou les captures.
 
-![Champs de description et de miniature](/img/next_gen/developpers/marketplace/soumettre-ressource-contenu.png)
+**Description** s'écrit en Markdown, édité via [EasyMDE](https://github.com/Ionaru/easy-markdown-editor).
 
 ## Soumettre et maintenir votre ressource
 
@@ -84,7 +80,5 @@ La création et la publication des versions s'effectuent directement depuis l'in
 - **Journal des modifications** : ajoutez les entrées dans Ajout, Suppression, Modification, Correction, Autre ou Sécurité.
 
 Vérifiez le journal, puis sélectionnez **Publier la version**. Ne créez pas une nouvelle ressource marketplace pour une mise à jour et ne réutilisez pas un numéro de version pour un code différent.
-
-![Création d'une version depuis l'interface développeur](/img/next_gen/developpers/marketplace/creer-version.png)
 
 GitHub reste l'emplacement recommandé pour héberger et maintenir les sources, mais les versions du marketplace sont gérées depuis l'interface CLIENTXCMS. Le [guide des extensions](./extensions/publish-marketplace#préparer-le-dépôt-github) et le [guide des thèmes](./themes/publish-marketplace#préparer-le-dépôt-github) décrivent les structures de dépôt attendues.

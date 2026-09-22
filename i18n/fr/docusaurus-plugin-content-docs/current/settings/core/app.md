@@ -63,8 +63,8 @@ Détermine le mode de fonctionnement :
 
 **Mode debug** | (case à cocher)<br />
 Active l'affichage détaillé des erreurs. À utiliser uniquement en développement :
-- ✅ **Activé** : Affiche les erreurs techniques détaillées
-- ❌ **Désactivé** : Affiche des messages d'erreur génériques
+- **Activé** : Affiche les erreurs techniques détaillées
+- **Désactivé** : Affiche des messages d'erreur génériques
 
 **Fuseau horaire** | (menu déroulant)<br />
 Définit la référence temporelle pour :

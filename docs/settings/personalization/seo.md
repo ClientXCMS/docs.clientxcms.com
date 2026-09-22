@@ -54,19 +54,19 @@ Main terms defining your activity and searched by your audience.
 
 **Examples by Sector**:
 
-#### Web Hosting Provider
+**Web Hosting Provider**
 ```
 web hosting, VPS server, dedicated server, domain name,
 French hosting, cloud hosting, automatic backup
 ```
 
-#### Digital Agency
+**Digital Agency**
 ```
 website creation, web development, website redesign,
 e-commerce, SEO, site maintenance, digital agency
 ```
 
-#### B2B Service
+**B2B Service**
 ```
 SaaS solution, business software, digitalization, automation,
 CRM, management tools, digital transformation

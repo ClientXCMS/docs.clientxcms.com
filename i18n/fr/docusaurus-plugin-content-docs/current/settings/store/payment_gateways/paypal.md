@@ -28,10 +28,6 @@ Intégrer PayPal vous permet de :
 * Simplifier la gestion des remboursements et litiges
 * Proposer des paiements en plusieurs devises
 
-:::tip Astuce
-PayPal est comme le **passeport universel** du paiement en ligne 🌍 — reconnu partout, il ouvre votre boutique au monde entier et rassure instantanément vos clients.
-:::
-
 ## Fonctionnement du système
 
 ### Processus de paiement

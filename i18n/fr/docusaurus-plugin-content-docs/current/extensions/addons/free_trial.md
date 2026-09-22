@@ -22,7 +22,7 @@ Deux options disponibles :
 * **Amélioration** : Le client reçoit un service de base pendant l’essai. Il peut ensuite l’améliorer avec des services supplémentaires.
 * **Essaie simple** : Le client peut tester le service gratuitement pendant une période définie. À la fin de cette période, le service est automatiquement supprimé s'il n'est pas converti en achat payant.
 
-  ⚠️ **Important** : Si les upgrades n’apparaissent pas sur le service, il faut sauvegarder les produits dans le groupe correspondant.
+  **Important** : Si les upgrades n’apparaissent pas sur le service, il faut sauvegarder les produits dans le groupe correspondant.
 
 ### Type d'essai
 
@@ -39,7 +39,7 @@ Détermine le comportement d'accès à l'essai :
   * Un bouton d’appel à l’action (CTA) propose de tester le produit.
 
 ![img](/img/next_gen/extensions/addons/free_trial/image2.png)
-### 🔹 Nombre d’essais maximum par client
+### Nombre d’essais maximum par client
 
 Indique combien de fois un client peut bénéficier de l’essai.
 `0` pour désactiver la limite.

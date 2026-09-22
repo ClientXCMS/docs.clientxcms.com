@@ -30,10 +30,6 @@ Créer des produits bien définis vous permet de :
 * Définir précisément les caractéristiques, les prix et les options de chaque offre
 * Gérer facilement la facturation, la durée, et le renouvellement de vos services
 
-:::tip Astuce
-C’est un peu comme étiqueter chaque article dans un magasin 🏷️ — vos clients savent exactement ce qu’ils achètent, et vous, vous gardez le contrôle sur chaque aspect de la vente.
-:::
-
 ## Interfaces utilisateur
 ### Vue côté boutique
 
@@ -152,7 +148,7 @@ Permet de mettre en avant ce produit. Il sera affiché en tête de liste dans so
 
 Rédigez ici une courte description qui sera affichée dans la description du produit. Ce champ prend en charge le HTML et le CSS via l'éditeur intégré (compatible avec TailwindCSS).
 
-> ⚠️ Soyez rigoureux : un code mal structuré ou une balise non fermée peut altérer l'affichage du CMS.
+> Soyez rigoureux : un code mal structuré ou une balise non fermée peut altérer l'affichage du CMS.
 
 Exemple de description en HTML
 
@@ -165,8 +161,8 @@ Exemple de description en HTML
     <li class="ql-align-center"><strong>Stockage</strong> : 200 Go SSD</li>
     <li class="ql-align-center"><strong>Connectivité</strong> : IPv4 incluse, 1 Gbps en burst</li>
 </ol>
-<p class="ql-align-center">🛡️ | Protection Anti-DDoS (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
-<p class="ql-align-center">🚚 | Livraison en <strong>quelques minutes seulement</strong></p>
+<p class="ql-align-center">Protection Anti-DDoS (L3/L4 & L7) via <a href="https://demo.clientxcms.com" target="_blank" rel="noopener noreferrer">ClientXCMS</a></p>
+<p class="ql-align-center">Livraison en <strong>quelques minutes seulement</strong></p>
 ```
 
 :::tip Astuce
@@ -183,8 +179,8 @@ Chaque cycle de facturation peut avoir :
 - un **prix** distinct
 - des **frais d’installation** facultatifs
 
-🟢 Un produit avec un prix de `0` est **considéré comme gratuit**.  
-🔴 Si vous laissez le champ prix vide pour un cycle, **il sera désactivé**.
+- Un produit avec un prix de `0` est **considéré comme gratuit**.
+- Si vous laissez le champ prix vide pour un cycle, **il sera désactivé**.
 
 ### Utiliser la calculatrice intégrée
 
@@ -224,7 +220,7 @@ Par exemple, pour présélectionner un cycle **annuel**, ajoutez ce paramètre �
 Ce qui donne une URL complète comme :
 https://demo.clientxcms.com/store/basket/add/4?billing=annually
 
-#### Paramètres disponibles pour préselectionner le cycle de facturation
+**Paramètres disponibles pour préselectionner le cycle de facturation**
 
 Voici les valeurs possibles du paramètre `billing` :
 

@@ -30,10 +30,6 @@ Offering bank transfer allows you to:
 * Meet the needs of businesses and administrations
 * Offer an alternative in case of problems with other gateways
 
-:::tip Tip
-Bank transfer is like a **digital check** 🏛️ — it reassures by its simplicity and security, particularly for corporate clients or large purchases.
-:::
-
 ## System Operation
 
 ### Payment Process

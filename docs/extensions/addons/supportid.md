@@ -10,8 +10,8 @@ This code becomes the central reference for instantly recognizing a user, whethe
 The Support ID addon requires CLIENTXCMS version 2.14.9 or higher.
 :::
 
-## Extension Configuration
-You can configure the extension by going to `Admin Panel` > `Settings` > `Extension Settings` > `Support ID`.
+## Addon Configuration
+You can configure the addon from its settings page in the admin panel, under **Settings**.
 ![img](/img/next_gen/extensions/addons/supportid/config.png)
 - **Support ID Prefix**: Defines the prefix used to generate Support IDs (default: CTX-).
 - **Code Format**: Choose between alphanumeric or numeric-only code for the Support ID.
@@ -59,7 +59,7 @@ curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Auth
 }
 ```
 
-You can reset the API key by clicking the "Reset Key" button in the extension configuration section.
+You can reset the API key by clicking the "Reset Key" button in the addon's configuration section.
 
 ## Site Display
 ![img](/img/next_gen/extensions/addons/supportid/image.png)

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Les thèmes peuvent définir des seeders Laravel pour peupler la base de données avec des données initiales lors de l'exécution de `php artisan db:seed`. C'est utile pour créer des liens de menu par défaut, des sections, du contenu d'exemple, ou toute donnée dont votre thème dépend.
 
-## Configuration
+## Enregistrer un seeder
 
 Pour enregistrer un seeder, ajoutez une entrée `seeder` dans le fichier `theme.json` de votre thème :
 

@@ -13,7 +13,3 @@ You can manage sections from:
 
 `Settings` > `Personalization` > `Sections`
 
-:::tip Tip
-Sections are your **marketing building blocks**.
-Each section is an opportunity to convince, reassure or guide your visitors toward the desired action.
-:::

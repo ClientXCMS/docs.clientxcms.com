@@ -22,7 +22,7 @@ Synchronization works with the SocialAuth+ addon which is required with Discord 
 
 ## Configuration
 
-Once the extension is activated, you can access the addon configuration in `Admin Panel` > `Settings` > `Extension Settings` > `DiscordLink`
+Once the addon is activated, you can access its configuration from its settings page in the admin panel, under **Settings**.
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 
@@ -39,53 +39,29 @@ You can also reset the key if you have lost it.
 :::warning
 If your domain is protected by anti-DDoS or a firewall, make sure to disable these protections on the routes specified in the API to avoid any service interruption.
 :::
-### Bot Installation
 
+## Bot Installation
 
 <Tabs>
 
 <TabItem value="community" label="Community Bot Installation">
 
 Interval: 15 seconds
-#### Step 1
-Add the bot to your Discord server by clicking [this invitation link](https://clientxcms.com/ref/discordbot).
-It will link your Discord server with your hosting service.
 
-#### Step 2
-Copy the following command to your server. **⚠ Warning, the key will only be displayed once!**
-If lost, it will need to be reset.
-
-
-#### Step 3
-Execute the following command on your Discord server while adding the customer role.
-If the operation succeeds, the bot will reply with a success message.
-
-#### Step 4
-Make sure the bot has the necessary permissions to add the role.
-*(The bot must be above the role to add in the role hierarchy.)*
+1. Add the bot to your Discord server by clicking [this invitation link](https://clientxcms.com/ref/discordbot). It will link your Discord server with your hosting service.
+2. Copy the following command to your server. **Warning, the key will only be displayed once!** If lost, it will need to be reset.
+3. Execute the following command on your Discord server while adding the customer role. If the operation succeeds, the bot will reply with a success message.
+4. Make sure the bot has the necessary permissions to add the role. *(The bot must be above the role to add in the role hierarchy.)*
 
 </TabItem>
 <TabItem value="personnalise" label="Custom Bot Installation">
 
 Interval: Customizable
 
-#### Step 1
-Download the custom bot purchased beforehand by clicking [this link](https://clientxcms.com/client/download).
-It will link your Discord server with your hosting service.
-
-
-#### Step 2
-Copy the following token to a safe place. **⚠ Warning, it will only be displayed once!**
-If lost, it will need to be reset.
-
-
-#### Step 3
-Extract the downloaded file and follow the `README` file to install and add the bot to your server.
-
-
-#### Step 4
-Make sure the bot has the necessary permissions to add the role.
-*(The bot must be above the role to add in the role hierarchy.)*
+1. Download the custom bot purchased beforehand by clicking [this link](https://clientxcms.com/client/download). It will link your Discord server with your hosting service.
+2. Copy the following token to a safe place. **Warning, it will only be displayed once!** If lost, it will need to be reset.
+3. Extract the downloaded file and follow the `README` file to install and add the bot to your server.
+4. Make sure the bot has the necessary permissions to add the role. *(The bot must be above the role to add in the role hierarchy.)*
 
 </TabItem>
 
@@ -103,22 +79,21 @@ https://clientxcms.app/api
 
 ### Endpoints
 
-#### Search for a customer via their Discord ID
+**Search for a customer via their Discord ID**
 
 ```http
 GET /application/discordlink/search/{discord_id}
 ```
 
-##### Description
-Retrieves customer information based on their Discord ID.
+*Description*: retrieves customer information based on their Discord ID.
 
-##### Parameters
+**Parameters**:
 
 | Name         | Type      | Required | Description                        |
 |-------------|---------|--------|--------------------------------|
-| `discord_id` | `integer` | ✅      | The Discord user identifier |
+| `discord_id` | `integer` | Yes     | The Discord user identifier |
 
-##### Responses
+**Responses**:
 
 | Code  | Description                            |
 |-------|----------------------------------------|
@@ -126,18 +101,17 @@ Retrieves customer information based on their Discord ID.
 | `403` | Invalid API key                       |
 | `404` | Customer not found                      |
 
+---
 
-
-#### 📌 Get the list of customers who should have a Discord role
+**Get the list of customers who should have a Discord role**
 
 ```http
 GET /application/discordlink/getlinkedcustomers
 ```
 
-##### Description
-Returns the list of customers who should have a role on the Discord server.
+*Description*: returns the list of customers who should have a role on the Discord server.
 
-##### Responses
+**Responses**:
 
 | Code  | Description                        |
 |-------|------------------------------------|
@@ -146,16 +120,15 @@ Returns the list of customers who should have a role on the Discord server.
 
 ---
 
-#### ✅ Verify API key validity
+**Verify API key validity**
 
 ```http
 GET /application/discordlink/check
 ```
 
-##### Description
-Checks if the API key is valid and if customers should have a Discord role.
+*Description*: checks if the API key is valid and if customers should have a Discord role.
 
-##### Responses
+**Responses**:
 
 | Code  | Description                        |
 |-------|------------------------------------|
@@ -173,21 +146,21 @@ Authorization: Bearer <your_token>
 
 ### Usage Examples
 
-#### 🔍 Search for a customer by Discord ID with `cURL`
+**Search for a customer by Discord ID with `cURL`**:
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/search/123456789"
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### 📌 Get the list of linked customers with `cURL`
+**Get the list of linked customers with `cURL`**:
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/getlinkedcustomers"
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-#### ✅ Verify API key with `cURL`
+**Verify API key with `cURL`**:
 
 ```sh
 curl -X GET "https://clientxcms.app/api/application/discordlink/check"

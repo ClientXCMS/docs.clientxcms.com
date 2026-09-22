@@ -29,24 +29,21 @@ The corresponding plans are available on the following page:
 [https://clientxcms.com/pricing](https://clientxcms.com/pricing)
 
 ### Technical Requirements
-- **Operating System**: Linux (Ubuntu 22.04+, Debian 11+, CentOS 8+) or Windows Server
+- **Operating System**: any Linux distribution or Windows Server capable of providing the PHP version required below, a compatible database, and Composer. There is no fixed list of "supported" distributions to maintain here - what matters is whether your distribution's package repositories (default or third-party) can provide the required software versions.
 - **Disk Space**: minimum **25 GB** required
 - **RAM**: minimum **2 GB** (4 GB recommended)
 
-
-
 ### PHP
 
-ClientXCMS requires **PHP 8.3 or higher** to run.
-PHP 8.4 is also fully supported and offers the latest improvements in **performance**, **security**, and **compatibility**.
+The PHP version required by ClientXCMS is declared in the `composer.json` file of the version you are installing (`require.php`) - this is the source of truth, not a version number written on this page. Check it directly in your downloaded copy:
 
-| Version | Support Status | Security Fixes Until |
-|---------|----------------|----------------------|
-| **PHP 8.3** | Stable (recommended) | December 31, 2027 |
-| **PHP 8.4** | Active | December 31, 2028 |
+```bash
+grep '"php"' composer.json
+```
 
-To check currently supported and recommended PHP versions, please visit the official website:
-[https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php)
+:::warning
+Most Linux distributions ship an older PHP version in their default package repository than the one ClientXCMS requires. Rather than compiling PHP from source, use your distribution's official third-party PHP repository: [Sury's repository](https://packages.sury.org/php/) for Debian/Ubuntu, [Remi's repository](https://blog.remirepo.net/) for RHEL/CentOS/Rocky/AlmaLinux.
+:::
 
 #### Checking the Installed PHP Version
 
@@ -56,41 +53,19 @@ You can check the PHP version installed on your server using the following comma
 php -v
 ```
 
-:::warning End of Life for PHP 8.1
-PHP 8.1 reached its end of life (EOL) in January 2026.
-This means it no longer receives security updates or official patches.
-
-It is strongly advised to update your PHP environment to PHP 8.3 or higher to ensure the security and stability of your application.
+:::warning
+An out-of-support PHP version no longer receives security updates. Check your installed version's status on [php.net/supported-versions.php](https://www.php.net/supported-versions.php) and upgrade if it has reached end of life.
 :::
 
 #### PHP Extensions
 
-ClientXCMS requires several **PHP extensions** to function properly.
-Make sure the following extensions are **installed and enabled** on your server:
+The exact list of required PHP extensions is declared in the `composer.json` file of the version you are installing (`require`, keys prefixed with `ext-`). Check it directly:
 
-**Essential Extensions:**
+```bash
+grep '"ext-' composer.json
+```
 
-*Extensions required by ClientXCMS:*
-- **php-dom** - DOM/XML document manipulation
-- **php-gd** - Image manipulation and generation (QR codes, captchas)
-- **php-intl** - Internationalization functions (ICU)
-- **php-libxml** - Base XML library
-- **php-simplexml** - Simplified XML data processing
-- **php-zip** - Archive compression and decompression
-
-*Standard Laravel extensions (included with php-common):*
-- **php-common** (includes: ctype, fileinfo, json, tokenizer, filter)
-- **php-curl** - HTTP/HTTPS communication and external APIs
-- **php-mbstring** - Multi-byte string support (UTF-8)
-- **php-bcmath** - Arbitrary precision mathematical calculations
-- **php-openssl** - SSL/TLS encryption and certificates
-- **php-pdo** - Database access interface
-- **php-pdo-mysql** - MySQL/MariaDB driver for PDO
-- **php-xml** - Additional XML support
-
-*Recommended extensions:*
-- **php-fpm** - FastCGI process manager (production)
-- **php-opcache** - Opcode cache for better performance
+`php-fpm` and `php-opcache` are also recommended for production, even though they are not Composer-declared extensions.
 
 #### Checking Installed PHP Extensions
 
@@ -106,28 +81,28 @@ php -m | grep -i "extension_name"
 # Example: php -m | grep -i "curl"
 ```
 
-For PHP 8.3 installation and its extensions, please refer to the detailed installation guide for your environment:
+For PHP installation and its extensions, please refer to the detailed installation guide for your environment:
 - [Dedicated Server/VPS Installation](./selfhosted)
 - [Plesk Installation](./plesk)
 - [Docker Installation](./docker)
 
 ### Database
 
-ClientXCMS requires a database to store your application information.
+ClientXCMS requires a database to store your application information. It relies on Laravel's database layer, so the minimum supported version for each engine is whatever [Laravel officially supports](https://laravel.com/docs/database#introduction) for the Laravel version declared in `composer.json` - not a version number maintained on this page.
 
 #### MariaDB (Recommended)
-**MariaDB 10.11+** is the recommended solution for ClientXCMS due to:
+MariaDB is the recommended solution for ClientXCMS due to:
 - **Optimal performance** with Laravel queries
 - **Full compatibility** with the MySQL ecosystem
 - **Stability** and long-term support (LTS)
 - **Open source** without license restrictions
 
 #### MySQL
-**MySQL 8.0.38+** is also supported and offers excellent compatibility.
+Also supported, and offers excellent compatibility.
 
 #### Other Supported Databases
 ClientXCMS can work with other Laravel-compatible DBMS:
-- **PostgreSQL 15+** (robust alternative)
+- **PostgreSQL** (robust alternative)
 - **SQLite** (for testing and development only)
 
 :::info Production Recommendation

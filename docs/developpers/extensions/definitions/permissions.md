@@ -108,8 +108,8 @@ To create a permission, you must add a new entry in the `permissions.json` file 
         "name": "admin.fund",
         "label": "permissions.fund",
         "group": "permissions.store"
-    },
-],
+    }
+]
 ```
 Where `name` is the permission name, `label` is the permission translation in the language file, and `group` is the permission group.
 

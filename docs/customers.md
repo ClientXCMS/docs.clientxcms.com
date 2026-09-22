@@ -91,8 +91,6 @@ The actions are as follows:
 ### Available Actions
 You can perform actions on the customer through the customer profile. The actions are as follows:
 
-![img](/img/next_gen/customers/actions.png)
-
 #### Resend Confirmation Email
 You can resend the confirmation email to the customer. This allows the customer to confirm their account.
 #### Confirm Account

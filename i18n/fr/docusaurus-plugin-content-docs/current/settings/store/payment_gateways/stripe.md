@@ -11,10 +11,6 @@ Vous pouvez configurer Stripe depuis :
 
 ![Configuration de la passerelle Stripe](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
 
-:::tip Astuce
-**Stripe** est considéré comme la **Rolls-Royce** des passerelles de paiement avec une technologie de pointe, des outils exceptionnels et une réputation mondiale inégalée.
-:::
-
 ## Pourquoi choisir Stripe ?
 
 Stripe représente l'excellence technologique dans le domaine des paiements en ligne, utilisé par des millions d'entreprises dans le monde, des startups aux plus grandes corporations internationales.
@@ -27,10 +23,6 @@ Intégrer Stripe vous permet de :
 * Utiliser des fonctionnalités avancées (abonnements, paiements différés, etc.)
 * Garantir une sécurité maximale avec les dernières innovations
 * S'appuyer sur une infrastructure mondiale ultra-fiable
-
-:::tip Astuce
-Stripe est comme la **Ferrari des paiements** 🏎️ — performance maximale, technologie de pointe et prestige international. C'est le choix des entreprises qui ne veulent aucun compromis sur la qualité.
-:::
 
 ## Fonctionnement du système
 

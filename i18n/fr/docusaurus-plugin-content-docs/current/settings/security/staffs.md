@@ -14,11 +14,6 @@ Vous pouvez gérer les personnels depuis :
 
 ![Liste des comptes personnels](/img/next_gen/settings/security/staffs/staff_list.png)
 
-:::tip Astuce
-Chaque compte administrateur est une **clé d'accès** à votre système.
-Traitez-les avec le même soin que les clés de votre domicile — limitez le nombre et surveillez leur usage.
-:::
-
 ## Pourquoi gérer les comptes personnels ?
 
 La gestion des administrateurs est essentielle pour :
@@ -28,10 +23,6 @@ La gestion des administrateurs est essentielle pour :
 * **Tracer les actions** pour l'audit et la responsabilité
 * **Limiter les risques** liés aux comptes compromis
 * **Faciliter la collaboration** en équipe avec des accès appropriés
-
-:::tip Astuce
-C'est comme gérer les accès à un coffre-fort 🔐 — chaque personne doit avoir exactement les droits dont elle a besoin, ni plus, ni moins.
-:::
 
 ## Création d'un compte personnel
 

@@ -1,11 +1,15 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 translated: true
 ---
 
 # Ansible
 
-**Ansible** enables fully automated deployment of ClientXCMS, from prerequisite installation to production deployment. This method is recommended for production environments and multi-server deployments.
+:::danger Not currently usable
+This playbook is **out of date** and not maintained in sync with the current ClientXCMS requirements: it installs PHP 8.2, while ClientXCMS now requires PHP 8.3 or higher (see [Requirements](./requis)). Do not use it for a production deployment as-is. Use the [manual VPS/dedicated server guide](./selfhosted) instead until this playbook is reworked.
+:::
+
+**Ansible** enables fully automated deployment of ClientXCMS, from prerequisite installation to production deployment.
 
 ## Prerequisites
 
@@ -15,7 +19,7 @@ translated: true
 - **SSH access** to target servers
 
 ### On the target servers
-- **Ubuntu 22.04+**, **Debian 11+** or **Rocky/AlmaLinux 9+**
+- Any Linux distribution able to provide the required PHP version and a compatible database (see [Requirements](./requis)) - the playbook currently targets Debian/Ubuntu and RedHat-family distributions
 - **Root access** or user with sudo privileges
 - **Internet connection** to download packages
 
@@ -123,8 +127,8 @@ OAuth credentials are required in production and can be obtained from your Clien
 The Ansible playbook automatically installs and configures:
 
 ### System Infrastructure
-- **PHP 8.3** with all required extensions
-- **MariaDB 10.11+** (database)
+- **PHP** with all required extensions (the playbook currently targets PHP 8.2, outdated compared to the current [requirements](./requis) - see the warning above)
+- **MariaDB** (database)
 - **Nginx** or **Apache** (web server)
 - **PHP-FPM** (process manager)
 
@@ -310,7 +314,11 @@ If no specific domain is provided, all detected instances will be updated.
 - Use **Nginx + PHP-FPM** for production
 - Enable **PHP OPcache** (done automatically)
 - Configure **MariaDB** according to your load
-- Monitor server **resources** with Grafana (planned in a future playbook update)
+- Monitor server **resources** with your own tooling
+
+:::info Planned
+Built-in Grafana monitoring is planned for a future version of this playbook, it is not available yet.
+:::
 
 ### Maintenance
 - **Schedule** updates during low traffic periods

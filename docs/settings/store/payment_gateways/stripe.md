@@ -14,10 +14,6 @@ You can configure Stripe from:
 
 ![Stripe gateway configuration](/img/next_gen/settings/store/payment_gateways/stripe/config.png)
 
-:::tip Tip
-**Stripe** is considered the **Rolls-Royce** of payment gateways with cutting-edge technology, exceptional tools, and an unmatched global reputation.
-:::
-
 ## Why choose Stripe?
 
 Stripe represents technological excellence in online payments, used by millions of businesses worldwide, from startups to the largest international corporations.
@@ -30,10 +26,6 @@ Integrating Stripe allows you to:
 * Use advanced features (subscriptions, deferred payments, etc.)
 * Guarantee maximum security with the latest innovations
 * Rely on an ultra-reliable global infrastructure
-
-:::tip Tip
-Stripe is like the **Ferrari of payments** 🏎️ — maximum performance, cutting-edge technology, and international prestige. It's the choice of businesses that want no compromise on quality.
-:::
 
 ## System Operation
 

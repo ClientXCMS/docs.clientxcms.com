@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs';
@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Autohébergement
 
-Cette page vous guide dans l'installation de ClientXCMS Next Gen sur un VPS ou un serveur dédié. Elle cible une installation Debian 12 avec PHP 8.3, MariaDB et un serveur web Apache ou Nginx.
+Cette page vous guide dans l'installation de ClientXCMS Next Gen sur un VPS ou un serveur dédié. Elle cible une installation Debian 12 avec MariaDB et un serveur web Apache ou Nginx, avec la version de PHP requise par votre version de ClientXCMS (voir les [prérequis](./requis)).
 
 L'autohébergement est recommandé si vous voulez gérer vous-même le serveur, les mises à jour, les sauvegardes et la configuration système. Si vous voulez une installation plus automatisée, consultez plutôt l'installation [Cloud](./cloud), [Plesk](./plesk) ou [Docker](./docker).
 
@@ -37,7 +37,7 @@ sudo apt upgrade -y
 sudo apt install ca-certificates apt-transport-https software-properties-common wget curl git unzip nano lsb-release -y
 ```
 
-Installez PHP 8.3 et les extensions nécessaires :
+Vérifiez la version de PHP requise par votre version dans les [prérequis](./requis), puis installez-la avec ses extensions (les commandes ci-dessous utilisent 8.3 à titre d'exemple, remplacez-la par votre version requise) :
 
 ```bash
 curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
@@ -60,10 +60,10 @@ sudo mv composer.phar /usr/local/bin/composer
 php -r "unlink('composer-setup.php');"
 ```
 
-Installez Node.js LTS avec NVM :
+Installez Node.js LTS avec NVM. Le script d'installation de NVM doit être récupéré depuis un tag de release figé (jamais depuis `master`) pour la sécurité de la chaîne d'approvisionnement - vérifiez la [version actuellement recommandée](https://github.com/nvm-sh/nvm#install--update-script) et remplacez `v0.40.8` ci-dessous si elle a évolué :
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 nvm use --lts
@@ -166,7 +166,7 @@ server {
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        fastcgi_pass unix:/run/php/phpX.Y-fpm.sock; # Remplacez X.Y par votre version de PHP installée, ex. php -v
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
@@ -191,7 +191,7 @@ sudo systemctl reload nginx
 Installez Apache et le module PHP :
 
 ```bash
-sudo apt install apache2 libapache2-mod-php8.3 -y
+sudo apt install apache2 libapache2-mod-phpX.Y -y # Remplacez X.Y par la version de PHP installée ci-dessus
 sudo a2enmod rewrite
 ```
 

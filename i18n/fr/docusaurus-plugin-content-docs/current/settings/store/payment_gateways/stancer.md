@@ -28,10 +28,6 @@ Adopter Stancer vous permet de :
 * Réduire vos coûts de transaction comparé aux géants américains
 * Soutenir l'écosystème technologique européen
 
-:::tip Astuce
-Stancer est comme le **champion européen** du paiement par carte 🇫🇷 — performance internationale avec des valeurs et un service à la française, idéal pour les entreprises soucieuses de leurs données et coûts.
-:::
-
 ## Fonctionnement du système
 
 ### Processus de paiement optimisé

@@ -53,7 +53,7 @@ Pour les utiliser :
 | rows            | nombre de ligne                       | Integer | Non         |
 | disabled        | Champ désactiver                      | Bool    | Non         |
 | help            | Aide du champ                         | String  | Non         |
-| Inverifiedvalue | Valeur non vérifié (HTML non échappé) | String  | Non         |
+| Inverifiedvalue | Valeur forcée, prend le pas sur `old($name, $value)` si définie | String  | Non         |
 ------------------------------------------------
 
 ### Select
@@ -97,7 +97,7 @@ ClientXCMS prend en charge les messages flash pour les formulaires. Vous pouvez 
 ```
 
 ### Validation
-ClientXCMS prend en charge la validation des formulaires et affiche le message d'erreur à côté du champ concerné. Vous pouvez consulter la [documentation de Laravel](https://laravel.com/docs/11.x/validation) pour plus d'informations sur la validation.
+ClientXCMS prend en charge la validation des formulaires et affiche le message d'erreur à côté du champ concerné. Vous pouvez consulter la [documentation de Laravel](https://laravel.com/docs/validation) pour plus d'informations sur la validation.
 Pour debuguer les erreurs de validation, vous pouvez utiliser la méthode `errors()` ou `@dump($errors);`de Laravel.
 ```blade
 @if ($errors->any())

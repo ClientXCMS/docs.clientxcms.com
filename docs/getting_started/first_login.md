@@ -22,7 +22,7 @@ You can activate the extensions you want to use by clicking the `Activate` butto
 
 If you have additional extensions with your license, you can activate them at the same time.
 
-For example, if you want to deliver Pterodactyl products, you need to activate the Pterodactyl extension.
+For example, if you want to deliver Pterodactyl products, you need to activate the Pterodactyl module.
 
 ![Extensions](/img/next_gen/extensions/image_1.png)
 

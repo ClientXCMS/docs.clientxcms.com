@@ -7,7 +7,7 @@ translated: true
 The anti duplicate account is a system that verifies users don't create multiple accounts and alerts you if they do.
 
 ## Configuration
-You can manage the anti duplicate account configuration in `Admin Panel` > `Settings` > `Extension Settings` > `Duplicate Accounts` > `Settings`
+You can manage the anti duplicate account configuration from its settings page in the admin panel, under **Settings**.
 
 ![img](/img/next_gen/extensions/addons/antidoublecompte/parametre.png)
 

@@ -31,10 +31,6 @@ Adopting PayPal Express Checkout allows you to:
 * Reduce cart abandonment thanks to a smoother process
 * Get more detailed reports and analytics
 
-:::tip Tip
-PayPal Express Checkout is like the **premium version** of PayPal 🚀 — same trust, but with cutting-edge technology that boosts your conversion performance.
-:::
-
 ## System Operation
 
 ### Optimized Payment Process

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 translated: true
 ---
 # Cloud
@@ -22,7 +22,7 @@ After this, the system will indicate the server on which your client area will b
 
 ![CNAME Record](/img/next_gen/Installation/Cloud/cname.png)
 
-For more information on adding the CNAME, a dedicated page is available [here](../developpers/software/relier-domain-cname.md).
+For more information on adding the CNAME, a dedicated page is available [here](./domain/relier-domain-cname.md).
 
 To verify that your domain is properly linked to CLIENTXCMS servers, you can use the [CheckHost](https://check-host.net) website and enter your domain. It should indicate that the CNAME record is properly linked to the CLIENTXCMS server IP address.
 

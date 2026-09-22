@@ -24,16 +24,11 @@ Take a moment to structure your groups before adding new services.
 
 ## Why use groups?
 
-Imagine you sell pterodactyl hosting services, VPS, and domain names.
-Creating a distinct group for each of these product types allows your customers to:
+If you sell pterodactyl hosting services, VPS, and domain names, creating a distinct group for each of these product types allows your customers to:
 
 * See everything related to the same service in one place
 * Quickly understand the differences between offers
 * Save time for your customers in their purchasing journey
-
-:::tip Tip
-It's a bit like organizing store aisles 🛒 — the clearer it is, the more effective it is.
-:::
 
 ## User Interfaces
 
@@ -148,7 +143,7 @@ Modify the necessary information for the initiated edit, then save your changes 
 
 ![Edit a group in administration](/img/next_gen/settings/store/groups/edit_group_in_admin.png)
 
-#### Group Status
+**Group Status**
 
 The **status** determines the product's visibility and accessibility:
 
@@ -170,7 +165,7 @@ The **status** determines the product's visibility and accessibility:
 
 </div>
 
-#### Translating a Group
+**Translating a Group**
 
 CLIENTXCMS integrates a **complete translation system** allowing you to adapt each group to different languages, without compromising precision or user experience.
 
@@ -188,7 +183,7 @@ The quality of your translations can greatly improve the perception of your stor
 Group deletion is only possible if it contains no products.<br />
 This restriction prevents accidental deletion of services visible in the store.
 
-✅ **Steps to follow:**
+**Steps to follow:**
 
 1. Make sure the group in question contains **no active products**.
 2. Once this condition is met, you can delete it from the group management page in your administration area.
@@ -212,7 +207,7 @@ When this box is checked:
 
 This is an ideal solution if you want to **temporarily disable a range of services** without deleting it.
 
-✅ **How to do it?**<br />
+**How to do it?**<br />
 Simply change the Status of your group **in the dropdown menu** located within your group edit.
 
 ![Hide a group in administration](/img/next_gen/settings/store/groups/cached_group_in_admin.png)

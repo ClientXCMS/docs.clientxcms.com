@@ -50,19 +50,19 @@ Termes principaux définissant votre activité et recherchés par votre audience
 
 **Exemples par secteur** :
 
-#### Hébergeur web
+**Hébergeur web**
 ```
 hébergement web, serveur VPS, serveur dédié, nom de domaine, 
 hébergement français, cloud hosting, backup automatique
 ```
 
-#### Agence digitale
+**Agence digitale**
 ```
 création site web, développement web, refonte site internet, 
 e-commerce, SEO, maintenance site, agence digitale
 ```
 
-#### Service B2B
+**Service B2B**
 ```
 solution SaaS, logiciel métier, digitalisation, automatisation, 
 CRM, outils gestion, transformation digitale

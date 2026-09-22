@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Plesk
@@ -20,7 +20,7 @@ Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les vers
    ![Extension "Laravel ToolKit" - Plesk](/img/next_gen/Installation/Plesk/Plesk_extension_LaravelTK.png)
 5. Générez un certificat SSL gratuitement via Let's Encrypt.
    ![Certificat SSL - Plesk](/img/next_gen/Installation/Plesk/Plesk_ssl.png)
-6. Dans le tableau de bord de votre domaine, cliquez sur "PHP" sous les outils de développement. Utilisez la version **8.3** de PHP pour une compatibilité optimale.
+6. Dans le tableau de bord de votre domaine, cliquez sur "PHP" sous les outils de développement. Utilisez la version de PHP requise par votre version de ClientXCMS pour une compatibilité optimale (voir les [prérequis](./requis)).
    ![PHP version - Plesk](/img/next_gen/Installation/Plesk/Plesk_PHP83.png)
 
 ## Installation de l'environnement Laravel
@@ -46,7 +46,7 @@ Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les vers
    ![Fichier .env.example (renommage) - Plesk](/img/next_gen/Installation/Plesk/Plesk_envexample_rename.png)
 
 5. Cliquez sur le fichier `.env` et modifiez les valeurs :
-    - `APP_ENV=production` → `APP_ENV=dev`
+    - `APP_ENV=production` → `APP_ENV=production` (conservez la valeur production pour la sécurité)
     - `APP_URL=http://localhost` → `APP_URL=https://votre.domaine.com` (mettez bien le domaine de votre espace client)
     - `DB_DATABASE=laravel` → Nom de votre base de données
     - `DB_USERNAME=root` → Nom d'utilisateur de la base de données
@@ -60,8 +60,8 @@ Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les vers
    ![Laravel env (gestion) - Plesk](/img/next_gen/Installation/Plesk/Plesk_Laravel_env_manage.png)
 3. Exécutez les commandes suivantes dans cet ordre :
     - `key:generate`
-    - `db:seed --force`
     - `migrate --force`
+    - `db:seed --force`
     - `storage:link`
       ![Laravel env (commandes Artisan)](/img/next_gen/Installation/Plesk/Plesk_Laravel_ArtisanCMD.png)
 4. Cliquez sur la section "Node.js".
@@ -83,8 +83,12 @@ Cette page vous guidera dans l'installation de ClientXCMS Next Gen pour les vers
    Les identifiants "**OAuth Client ID**" et "**OAuth Secret**" sont nécessaires pour connecter la licence ClientXCMS à votre site. Cliquez ensuite sur le bouton "Se connecter" sur votre instance.
 
 
-## Configuration des taches cron
+## Configuration des tâches cron
 1. Dans le tableau de bord de gestion du domaine, cliquez sur "Tâches planifiées" sous "Outils et paramètres".
 2. Cliquez sur "Ajouter une tâche planifiée".
-3. Configurez les tâches cron suivantes
+3. Configurez la tâche cron suivante pour qu'elle s'exécute toutes les minutes :
+   ```
+   * * * * * php /chemin/vers/votre/site/artisan schedule:run >> /dev/null 2>&1
+   ```
+   Remplacez `/chemin/vers/votre/site/` par le chemin réel de votre projet Laravel (par exemple `/var/www/vhosts/votredomaine.com/httpdocs/`).
    ![Tâches planifiées - Plesk](/img/next_gen/Installation/Plesk/Plesk_cron.png)

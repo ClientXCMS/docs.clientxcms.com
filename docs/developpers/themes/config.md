@@ -17,7 +17,7 @@ return [
     'config_1' => 'required|string',
 ];
 ```
-You can check the [Laravel documentation](https://laravel.com/docs/11.x/validation) for more information on validation.
+You can check the [Laravel documentation](https://laravel.com/docs/validation) for more information on validation.
 ## Configuration Storage
 The theme configuration is stored in a `config.json` file in the `resources/themes/theme_name/config/` folder of your installation.
 ```json

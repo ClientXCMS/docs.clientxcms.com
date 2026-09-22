@@ -7,7 +7,7 @@ translated: true
 L'addon **Quote Manager** permet à votre personnel de créer et de gérer des devis professionnels directement depuis CLIENTXCMS. Vos clients pourront ainsi consulter les offres, les accepter ou les refuser directement depuis leur espace client.
 
 ## Configuration et Paramètres
-Pour configurer l'extension, rendez-vous dans `Panel d'administration` > `Paramètres` > `Quote Manager` > `Settings`.
+Pour configurer l'addon, rendez-vous dans `Panel d'administration` > `Paramètres` > `Quote Manager` > `Settings`.
 
 ![img](/img/next_gen/extensions/addons/quote_manager/settings.png)
 
@@ -51,6 +51,6 @@ Une fois le devis accepté par le client, vous pouvez le convertir en facture en
 ![img](/img/next_gen/extensions/addons/quote_manager/convert_to_invoice.png)
 
 ### KPI
-Vous pouvez consulter les indicateurs clés de performance de l'extension dans le menu `Panel d'administration` > `Quote Manager` > `Statistiques`.
+Vous pouvez consulter les indicateurs clés de performance de l'addon dans le menu `Panel d'administration` > `Quote Manager` > `Statistiques`.
 
 ![img](/img/next_gen/extensions/addons/quote_manager/kpi.png)

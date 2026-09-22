@@ -37,12 +37,11 @@ resources/themes/
     └── menus.json
 ```
 ## Commande de création d'un thème
-Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI.
+Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme` de l'artisan CLI. Les options `--name` et `--uuid` sont obligatoires et la commande échoue immédiatement sans elles :
 ```bash
-php artisan clientxcms:create-theme
+php artisan clientxcms:create-theme --name="Mon theme" --uuid="mon-theme"
 ```
-La commande vous demandera le nom du thème et créera la structure du thème pour vous selon vos réponses.
-![Commande clientxcms:create-theme](/img/next_gen/developpers/themes/cli.png)
+Une fois le nom et l'UUID fournis, la commande demande tout ce que vous n'avez pas passé en option (description, nom d'auteur, email d'auteur), puis une question oui/non pour chaque fichier optionnel (CSS, JS, config, lang), avant d'afficher `Theme created successfully.` une fois terminé.
 
 
 ### Création via CLI avec options
@@ -63,7 +62,7 @@ php artisan clientxcms:create-theme \
   --lang=1
 ```
 
-#### Détail des options
+Options :
 
 * `--name` : nom affiché du thème.
 * `--uuid` : identifiant unique du thème.
@@ -104,7 +103,7 @@ Le fichier `theme.json` est le fichier de configuration du thème. Il contient l
 Vous pouvez ajouter une image de prévisualisation pour votre thème en ajoutant un fichier `screenshot.png` dans le dossier `resources/themes/theme_name/`.
 
 ## Technologie
-Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/11.x/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
+Nous utilisons le moteur de modèle [Blade](https://laravel.com/docs/blade) pour les vues. Pour les assets, nous utilisons [vite](https://vitejs.dev/). avec [preline](https://preline.io/) basé sur [tailwindcss](https://tailwindcss.com/).
 Vous êtes libre d'utiliser les technologies que vous souhaitez pour votre thème en termes de CSS.
 
 Vous pouvez lancez la commande suivante pour compiler les assets de votre thème.
@@ -116,7 +115,7 @@ npm run dev
 Les vues du thème permettent de personnaliser l'apparence de votre site web. Vous pouvez modifier les vues du thème en modifiant les fichiers dans le dossier `resources/themes/theme_name/views/` de votre installation.
 Nous conseillons de ne pas modifier les fichiers du thème par défaut. Vous pouvez l'écraser en créant un thème enfant.
 
-Si vous n'êtes pas habitué à Blade, vous pouvez consulter la [documentation](https://laravel.com/docs/11.x/blade) de Blade pour vous adapter à leur syntaxe de condition, boucle, etc.
+Si vous n'êtes pas habitué à Blade, vous pouvez consulter la [documentation](https://laravel.com/docs/blade) de Blade pour vous adapter à leur syntaxe de condition, boucle, etc.
 :::info Information
 Si vous avez pas implémenté une vue dans votre thème, le thème par défaut sera utilisé.
 :::

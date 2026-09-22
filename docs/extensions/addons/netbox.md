@@ -3,7 +3,7 @@ translated: true
 ---
 
 # Netbox
-Use NetBox as a Source of Truth for managing your IP addresses in CLIENTXCMS. This extension replaces the default IPAM from the Proxmox module to allow you to assign and manage your IP addresses directly from your NetBox instance, ensuring better organization and avoiding IP conflicts.
+Use NetBox as a Source of Truth for managing your IP addresses in CLIENTXCMS. This addon replaces the default IPAM from the Proxmox module to allow you to assign and manage your IP addresses directly from your NetBox instance, ensuring better organization and avoiding IP conflicts.
 
 :::info Prerequisites
 - Have an operational NetBox instance.
@@ -11,11 +11,11 @@ Use NetBox as a Source of Truth for managing your IP addresses in CLIENTXCMS. Th
 :::
 
 :::info
-This extension requires the Proxmox module to be enabled on your CLIENTXCMS. [click here to enable it](../modules/Proxmox.md)
+This addon requires the Proxmox module to be enabled on your CLIENTXCMS. [click here to enable it](../modules/Proxmox.md)
 :::
 
-## Extension Configuration
-To configure the extension, go to your `.env` environment file and add the following variables:
+## Addon Configuration
+To configure the addon, go to your `.env` environment file and add the following variables:
 
 ```env
 NETBOX_URL=https://your-netbox-instance/
@@ -25,7 +25,7 @@ NETBOX_TOKEN=your_netbox_api_token
 - **NETBOX_TOKEN**: The API token to access the NetBox API
 
 ## Admin Panel
-Once the extension is installed, you can configure NetBox settings in `Admin Panel` > `Settings` > `Extension Settings` > `Netbox`.
+Once the addon is installed, you can configure NetBox settings from its settings page in the admin panel, under **Settings**.
 ![img](/img/next_gen/extensions/addons/netbox/netbox.png)
 
 You will find all available IPs in NetBox with their status. The Proxmox module will use these IPs for automatic assignment when creating virtual machines or containers.
@@ -38,7 +38,7 @@ You can view a specific IP to modify its status (Available, Assigned, Reserved).
 - **Unavailable**: The IP is not available for assignment.
 
 :::info
-This extension was developed for specific uses. Feel free to contact us for any feature request or improvement.
+This addon was developed for specific uses. Feel free to contact us for any feature request or improvement.
 :::
 
 ### Integration
