@@ -26,10 +26,10 @@ apt-get install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod
 ```
 cd /var/www/pterodactyl/public
 apt-get install zip unzip
-wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip
-unzip phpMyAdmin-5.2.0-all-languages.zip
-rm phpMyAdmin-5.2.0-all-languages.zip
-mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin/
+wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip -O phpmyadmin.zip
+unzip phpmyadmin.zip
+rm phpmyadmin.zip
+mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
@@ -59,10 +59,10 @@ Add an A record with this information in your DNS zone:
 ```
 cd /var/www/
 apt-get install zip unzip
-wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip
-unzip phpMyAdmin-5.2.0-all-languages.zip
-rm phpMyAdmin-5.2.0-all-languages.zip
-mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin/
+wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip -O phpmyadmin.zip
+unzip phpmyadmin.zip
+rm phpmyadmin.zip
+mv phpMyAdmin-*-all-languages/ phpmyadmin/
 cd phpmyadmin/
 cp config.sample.inc.php config.inc.php
 ```
@@ -133,7 +133,7 @@ server {
     error_page 404 /index.php;
 
     location ~ \.php$ {
-        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        fastcgi_pass unix:/var/run/php/phpX.Y-fpm.sock; # Replace X.Y with your installed PHP version, e.g. php -v
         fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
         include fastcgi_params;
     }
