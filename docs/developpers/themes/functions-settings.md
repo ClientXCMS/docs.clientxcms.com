@@ -22,6 +22,7 @@ This page lists the functions and setting keys usable for themes.
 | `{{ basket()->items() }}`                                    | Returns the basket items                         |
 | `{{ is_darkmode() }}`                                        | Returns true if the page is in dark mode         |
 | `{{ is_lightmode() }}`                                       | Returns true if the page is in light mode        |
+| `{{ darkmode_html_class() }}`                                | Returns `dark` (or an empty string) - use it on your layout's `<html>` tag, the only element the dark mode toggle actually targets |
 | `{{ format_bytes($bytes, $precision = 2, $suffix = true) }}` | Returns the formatted byte size (KB, MB, GB, etc.) |
 | `{{ currency() }}`                                           | Returns the current currency in ISO format       |
 | `{{ currency_symbol(?$currency = null) }}`                   | Returns the current currency symbol              |
