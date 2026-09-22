@@ -221,7 +221,7 @@ For example, to pre-select an **annual** cycle, add this parameter to your URL:
 This gives a complete URL like:
 https://demo.clientxcms.com/store/basket/add/4?billing=annually
 
-#### Available Parameters for Pre-selecting the Billing Cycle
+**Available Parameters for Pre-selecting the Billing Cycle**
 
 Here are the possible values for the `billing` parameter:
 

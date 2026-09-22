@@ -31,10 +31,6 @@ Adopting Stancer allows you to:
 * Reduce your transaction costs compared to American giants
 * Support the European technology ecosystem
 
-:::tip Tip
-Stancer is like the **European champion** of card payments 🇫🇷 — international performance with French values and service, ideal for businesses concerned about their data and costs.
-:::
-
 ## System Operation
 
 ### Optimized Payment Process

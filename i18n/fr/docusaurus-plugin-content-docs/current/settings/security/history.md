@@ -12,11 +12,6 @@ Vous pouvez consulter l'historique depuis :
 
 `Paramètres` > `Sécurité` > `Historique`
 
-:::tip Astuce
-Les logs sont votre **boîte noire** système.
-Consultez-les régulièrement pour anticiper les problèmes avant qu'ils n'impactent vos utilisateurs.
-:::
-
 ## Pourquoi surveiller l'historique ?
 
 La surveillance des logs est essentielle pour :

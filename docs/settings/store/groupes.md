@@ -143,7 +143,7 @@ Modify the necessary information for the initiated edit, then save your changes 
 
 ![Edit a group in administration](/img/next_gen/settings/store/groups/edit_group_in_admin.png)
 
-#### Group Status
+**Group Status**
 
 The **status** determines the product's visibility and accessibility:
 
@@ -165,7 +165,7 @@ The **status** determines the product's visibility and accessibility:
 
 </div>
 
-#### Translating a Group
+**Translating a Group**
 
 CLIENTXCMS integrates a **complete translation system** allowing you to adapt each group to different languages, without compromising precision or user experience.
 

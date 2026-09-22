@@ -7,11 +7,6 @@ translated: true
 In **CLIENTXCMS**, **help center settings** define the behavior and operational rules of your support system.
 The goal is strategic: **optimize support efficiency**, **automate repetitive processes**, and **ensure a consistent experience** for your clients and team. Proper configuration improves productivity, reduces manual workload, and maintains a high level of service.
 
-:::tip Tip
-Well-configured settings transform your help center into a **well-oiled machine**.
-Each automation saves you time to focus on complex cases.
-:::
-
 ## Why Configure These Settings?
 
 Help center configuration is essential for:
@@ -213,19 +208,19 @@ Defines which file types are accepted in tickets.
 
 **Recommended configurations**:
 
-#### Standard Support
+**Standard Support**
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log
 ```
 
-#### Advanced Technical Support
+**Advanced Technical Support**
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
 ```
 
-#### Secure Support (restrictive)
+**Secure Support (restrictive)**
 
 ```
 jpg,jpeg,png,pdf,txt

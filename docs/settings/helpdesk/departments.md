@@ -15,11 +15,6 @@ You can manage departments from:
 
 ![Department management interface](/img/next_gen/settings/helpdesk/departments/index_admin.png)
 
-:::tip Tip
-Well-organized departments transform the chaos of requests into a **structured workflow**.
-Each client is directed to the most qualified expert for their problem.
-:::
-
 ## Why Organize into Departments?
 
 Departmental structuring is essential for:

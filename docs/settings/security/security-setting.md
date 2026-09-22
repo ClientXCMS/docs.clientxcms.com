@@ -103,7 +103,7 @@ This command disables forced MFA for both administrators and customers. Correct 
 
 In the MFA by SMS settings, select your SMS provider. The available providers are **OVH** and **Twilio**. Once a provider is selected, complete the fields displayed for that provider.
 
-#### OVH
+**OVH**
 
 | Field | Expected value |
 |-------|----------------|
@@ -114,7 +114,7 @@ In the MFA by SMS settings, select your SMS provider. The available providers ar
 | **Service name** | Name of the OVH SMS service |
 | **Sender** | Sender displayed for SMS messages |
 
-#### Twilio
+**Twilio**
 
 | Field | Expected value |
 |-------|----------------|

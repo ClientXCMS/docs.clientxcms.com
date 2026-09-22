@@ -9,7 +9,3 @@ Vous pouvez gérer les sections depuis :
 
 `Paramètres` > `Personnalisation` > `Sections`
 
-:::tip Astuce
-Les sections sont vos **blocs de construction marketing**. 
-Chaque section est une opportunité de convaincre, rassurer ou orienter vos visiteurs vers l'action souhaitée.
-:::

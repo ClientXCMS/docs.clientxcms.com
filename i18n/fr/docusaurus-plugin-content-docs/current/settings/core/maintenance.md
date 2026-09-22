@@ -15,11 +15,6 @@ Il permet d'informer les utilisateurs de la raison de la maintenance et de la du
 - **URL de l'image de maintenance** : L'URL de l'image de maintenance.
 - **Icône de maintenance** : L'icone de maintenance.
 
-:::tip Astuce
-Le mode maintenance est votre **bouclier de protection** pendant les opérations sensibles.
-Il permet de travailler sereinement tout en gardant vos clients informés de la situation.
-:::
-
 ## Pourquoi utiliser le mode maintenance ?
 
 Le mode maintenance est indispensable pour :

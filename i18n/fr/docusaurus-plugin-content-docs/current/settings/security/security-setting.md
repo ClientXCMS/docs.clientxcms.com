@@ -102,7 +102,7 @@ Cette commande désactive la MFA obligatoire pour les administrateurs et les cli
 
 Dans les paramètres de la MFA par SMS, vous pourrez sélectionner votre fournisseur SMS. Les fournisseurs disponibles sont **OVH** et **Twilio**. Une fois le fournisseur sélectionné, remplissez les champs affichés pour celui-ci.
 
-#### OVH
+**OVH**
 
 | Champ | Valeur attendue |
 |-------|-----------------|
@@ -113,7 +113,7 @@ Dans les paramètres de la MFA par SMS, vous pourrez sélectionner votre fournis
 | **Nom du service** | Nom du service SMS OVH |
 | **Expéditeur** | Expéditeur affiché dans les SMS |
 
-#### Twilio
+**Twilio**
 
 | Champ | Valeur attendue |
 |-------|-----------------|

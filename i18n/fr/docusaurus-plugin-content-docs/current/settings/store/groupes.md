@@ -144,7 +144,7 @@ Modifiez les informations nécessaire à l'édition initié puis enregistrer vos
 
 ![Éditer un groupe dans l'administration](/img/next_gen/settings/store/groups/edit_group_in_admin.png)
 
-#### Statut du groupe
+**Statut du groupe**
 
 Le **statut** détermine la visibilité et l’accessibilité du produit :
 
@@ -166,7 +166,7 @@ Le **statut** détermine la visibilité et l’accessibilité du produit :
 
 </div>
 
-#### Traduire un groupe
+**Traduire un groupe**
 
 CLIENTXCMS intègre un **système de traduction complet** vous permettant d’adapter chaque groupe à différentes langues, sans compromis sur la précision ou l’expérience utilisateur.
 

@@ -36,11 +36,11 @@ CLIENTXCMS currently offers the following languages:
 
 | Language | Code | Status |
 |----------|------|--------|
-| 🇫🇷 **French** | `fr` | Default language |
-| 🇬🇧 **English** | `en` | Available |
-| 🇪🇸 **Spanish** | `es` | Available |
-| 🇩🇪 **German** | `de` | Available |
-| 🇮🇹 **Italian** | `it` | Available |
+| **French** | `fr` | Default language |
+| **English** | `en` | Available |
+| **Spanish** | `es` | Available |
+| **German** | `de` | Available |
+| **Italian** | `it` | Available |
 
 :::info Note
 Additional languages can be added upon community request. Translations are regularly maintained and improved.

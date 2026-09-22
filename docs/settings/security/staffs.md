@@ -15,11 +15,6 @@ You can manage staff members from:
 
 ![Staff accounts list](/img/next_gen/settings/security/staffs/staff_list.png)
 
-:::tip Tip
-Each administrator account is an **access key** to your system.
-Treat them with the same care as your house keys — limit the number and monitor their usage.
-:::
-
 ## Why manage staff accounts?
 
 Administrator management is essential for:

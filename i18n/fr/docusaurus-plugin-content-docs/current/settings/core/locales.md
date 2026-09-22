@@ -35,11 +35,11 @@ CLIENTXCMS propose actuellement les langues suivantes :
 
 | Langue | Code | Statut |
 |--------|------|---------|
-| 🇫🇷 **Français** | `fr` | Langue par défaut |
-| 🇬🇧 **Anglais** | `en` | Disponible |
-| 🇪🇸 **Espagnol** | `es` | Disponible |
-| 🇩🇪 **Allemand** | `de` | Disponible |
-| 🇮🇹 **Italien** | `it` | Disponible |
+| **Français** | `fr` | Langue par défaut |
+| **Anglais** | `en` | Disponible |
+| **Espagnol** | `es` | Disponible |
+| **Allemand** | `de` | Disponible |
+| **Italien** | `it` | Disponible |
 
 :::info Note
 D'autres langues peuvent être ajoutées sur demande de la communauté. Les traductions sont maintenues et améliorées régulièrement.

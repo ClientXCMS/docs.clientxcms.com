@@ -13,11 +13,6 @@ You can view history from:
 
 `Settings` > `Security` > `History`
 
-:::tip Tip
-Logs are your system's **black box**.
-Check them regularly to anticipate problems before they impact your users.
-:::
-
 ## Why monitor history?
 
 Log monitoring is essential for:

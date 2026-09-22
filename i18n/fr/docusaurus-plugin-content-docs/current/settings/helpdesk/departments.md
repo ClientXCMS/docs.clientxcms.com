@@ -14,11 +14,6 @@ Vous pouvez gérer les départements depuis :
 
 ![Interface de gestion des départements](/img/next_gen/settings/helpdesk/departments/index_admin.png)
 
-:::tip Astuce
-Des départements bien organisés transforment le chaos des demandes en **flux de travail structuré**.
-Chaque client est dirigé vers l'expert le plus qualifié pour son problème.
-:::
-
 ## Pourquoi organiser en départements ?
 
 La structuration départementale est essentielle pour :

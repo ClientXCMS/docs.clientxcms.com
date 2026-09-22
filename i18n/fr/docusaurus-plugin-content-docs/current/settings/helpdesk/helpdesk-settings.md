@@ -6,11 +6,6 @@ sidebar_position: 1
 Dans **CLIENTXCMS**, les **paramètres du centre d'aide** définissent le comportement et les règles de fonctionnement de votre système de support.
 L'objectif est stratégique : **optimiser l'efficacité du support**, **automatiser les processus répétitifs** et **garantir une expérience cohérente** pour vos clients et votre équipe. Une configuration appropriée améliore la productivité, réduit la charge de travail manuelle et maintient un niveau de service élevé.
 
-:::tip Astuce
-Des paramètres bien configurés transforment votre centre d'aide en **machine bien huilée**.
-Chaque automatisation vous fait gagner du temps pour vous concentrer sur les cas complexes.
-:::
-
 ## Pourquoi configurer ces paramètres ?
 
 La configuration du centre d'aide est essentielle pour :
@@ -212,19 +207,19 @@ Définit quels types de fichiers sont acceptés dans les tickets.
 
 **Configurations recommandées** :
 
-#### Support standard
+**Support standard**
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log
 ```
 
-#### Support technique avancé
+**Support technique avancé**
 
 ```
 jpg,jpeg,png,gif,pdf,doc,docx,txt,log,zip,rar,sql,json,xml
 ```
 
-#### Support sécurisé (restrictif)
+**Support sécurisé (restrictif)**
 
 ```
 jpg,jpeg,png,pdf,txt

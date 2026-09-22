@@ -15,11 +15,6 @@ You can manage your social networks from:
 
 ![Social networks configuration](/img/next_gen/settings/personalization/socials/admin.png)
 
-:::tip Tip
-Your social networks are your **digital ambassadors**.
-They humanize your brand and create a relationship of proximity that your website alone cannot offer.
-:::
-
 ## Why Integrate Social Networks?
 
 Social integration allows you to:

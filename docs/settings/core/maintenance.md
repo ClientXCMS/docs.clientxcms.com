@@ -16,11 +16,6 @@ It allows you to inform users of the reason for the maintenance and the estimate
 - **Maintenance image URL**: The URL of the maintenance image.
 - **Maintenance icon**: The maintenance icon.
 
-:::tip Tip
-Maintenance mode is your **protective shield** during sensitive operations.
-It allows you to work peacefully while keeping your clients informed of the situation.
-:::
-
 ## Why Use Maintenance Mode?
 
 Maintenance mode is essential for:
