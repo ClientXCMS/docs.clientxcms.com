@@ -14,7 +14,7 @@ Log in to your Pterodactyl control panel using your administrator credentials.
 
 Navigate to the "Eggs" section in the left menu and select the Egg you want to modify to add the default FiveM key.
 
-![Step 1](/img/tutorial/step.png)
+The **Nest Eggs** list shows one row per Egg, with its ID, name, description, and the number of servers currently using it; click the Egg's name to open its configuration page.
 
 **Step 3: Modify the variables**
 
@@ -23,7 +23,7 @@ On the Egg configuration page, look for the "Variables" section which contains t
 **Step 4: Modify the FiveM key variable**
 Find the FiveM Licence environment variable where you can modify the default value like this
 
-![Step 4](/img/tutorial/step2.png)
+Each variable's edit panel exposes **Name**, **Description**, the **Environment Variable** name it maps to (e.g. `FIVEM_LICENSE`), its **Default Value**, **Permissions** (whether users can view and/or edit it), and **Input Rules** (a standard Laravel validation string, e.g. `required|string|max:33`). Set the **Default Value** field to your default FiveM key and save.
 
 **Step 5: Save the changes**
 

@@ -38,9 +38,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Résultat :
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
+Résultat : l'item s'insère dans le menu admin du haut à la position donnée, aux côtés des items natifs (Tableau de bord, Gains, Clients, Services, Factures, Centre d'aide, Paramètres, Emails), avec l'icône et le libellé résolu depuis la clé de traduction.
 
 :::info TIPS
 Cela affichera pas le menu, mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
@@ -74,7 +72,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+Résultat : une nouvelle card apparaît sur la page des paramètres, affichant le titre et la description résolus, avec l'item listé en dessous sous forme d'icône plus son propre titre et description, pointant vers l'action du contrôleur donnée.
 
 Pour plus d'informations sur la gestion des cards et des items dans les paramètres, consultez la [page dédié](../../../settings).
 
@@ -104,9 +102,7 @@ $this->app['extension']->addAdminCountWidget(
 );
 ```
 
-Résultat :
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
+Résultat : un petit widget en carte apparaît sur le tableau de bord admin, affichant l'icône, le titre ("Total Clients") et le compte en direct renvoyé par la closure.
 
 ### Widgets complexes : afficher les 3 derniers utilisateurs connectés
 
@@ -164,6 +160,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Résultat :
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)
+Résultat : l'item s'insère dans le menu horizontal de l'espace client à la position donnée, aux côtés des items natifs (Espace client, Services, Factures, Emails, Centre d'aide, Mon profil, Mes moyens de paiement), avec l'icône et le libellé résolu depuis la clé de traduction.

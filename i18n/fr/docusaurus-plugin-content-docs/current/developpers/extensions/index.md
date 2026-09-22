@@ -23,8 +23,7 @@ De plus, il est recommandé d'être à l'aise avec **TailwindCSS**, **Blade**, e
 Nous pouvons vous fournir une licence de développement avec les mêmes extensions que votre licence principale et 15 clients autorisés pour votre développement. Pour plus d'informations, veuillez nous contacter.
 ## Activation
 
-Les extensions chargées peuvent s'activer ou se désactiver dans la page Extensions
-![img](/img/next_gen/extensions/image_1.png)
+Les extensions chargées peuvent s'activer ou se désactiver dans la page **Paramètres > Extensions**. Elle présente trois onglets - **Mes extensions**, **Découvrir** et **Thèmes** - affichant chacun les éléments installés et disponibles sous forme de cartes (nom, version, prix, statut). Selon l'état de l'extension, les actions disponibles sont **Mettre à jour**, **Activer**/**Désactiver**, **Désinstaller**, et **Détails** (ou **Acheter** pour une ressource payante non installée). Un bouton **Vider le cache** dans l'en-tête de la page permet de forcer le rechargement des métadonnées des extensions après une modification manuelle de fichiers.
 
 ## Choisir entre un module et un addon
 

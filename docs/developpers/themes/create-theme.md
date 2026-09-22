@@ -43,7 +43,7 @@ To create a theme, you can use the `clientxcms:create-theme` command from the ar
 php artisan clientxcms:create-theme
 ```
 The command will ask you for the theme name and will create the theme structure for you based on your answers.
-![clientxcms:create-theme command](/img/next_gen/developpers/themes/cli.png)
+The command prompts you interactively for the theme name, its UUID, and a yes/no question for each optional file (CSS, JS, config...), then prints `Theme created successfully.` once done.
 
 ### Creation via CLI with options
 

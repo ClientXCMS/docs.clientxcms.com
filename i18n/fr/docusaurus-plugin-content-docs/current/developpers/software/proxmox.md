@@ -45,7 +45,7 @@ Pour finir, il faut juste configurer l'espace de stockage pour qu'il accepte les
 
 Pour cela, il faut aller dans `Datacenter` > `Storage` > `local` et ajouter dans `content` `Disk Image`:
 
-![img](/img/tutorial/proxmox.png)
+Dans la boîte de dialogue **Edit: Directory** du stockage, ouvrez le menu déroulant **Content** (une sélection multiple) et cochez **Disk image** en plus de ce qui est déjà sélectionné, puis validez avec **OK**.
 
 Voilà vous venez d'installer les modèles sur votre proxmox. Nous vous remercions pour votre confiance et restons à votre disposition pour toute question.
 

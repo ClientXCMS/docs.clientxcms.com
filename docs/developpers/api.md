@@ -5,7 +5,8 @@ translated: true
 # API
 CLIENTXCMS provides a RESTful API that allows developers to create applications that interact with CLIENTXCMS data. This API is based on RESTful standards and uses HTTP status codes to indicate errors. Responses can be returned in JSON or XML format depending on the requested header.
 
-![image](/img/next_gen/developpers/api.png)
+The API is self-documented via a generated Swagger (OpenAPI 3.0) interface, reachable at `/api/documentation` on your instance. It lists every endpoint grouped by tag - **Client API**, **Products**, **Groups**, **Core**, **Services**, **Customers**, plus one tag per installed extension that exposes API routes (e.g. **Discordlink**, **Purchase Alert**) - and an **Authorize** button to attach your Bearer token so you can try requests directly from the browser.
+
 ## Authentication
 To use the API, you must provide an API key in the header of each request.
 

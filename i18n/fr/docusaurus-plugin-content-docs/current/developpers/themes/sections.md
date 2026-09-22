@@ -2,8 +2,7 @@
 sidebar_position: 6
 ---
 # Sections
-Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personalisation.
-![Sections](/img/next_gen/developpers/themes/section_admin.png)
+Les sections sont des éléments de contenu qui peuvent être ajoutés à une page CLIENTXCMS. Elles sont pilotées par les thèmes et peuvent être personnalisées dans l'interface d'administration depuis la page section dans les paramètres de personnalisation : un sélecteur de page à gauche (ex. Accueil, Panier), la liste des sections présentes sur la page sélectionnée juste en dessous, et un aperçu en direct de la section actuellement sélectionnée à droite, rendu avec son contenu réel (ou par défaut).
 
 ## Création d'une section personnalisée
 Pour des sections personnalisées vous pouvez créer un fichier `sections.json` dans le dossier `resources/views/sections` de votre thème. Par exemple, pour une section `hero` vous pouvez créer un fichier `resources/views/sections/hero.blade.php` avec le contenu suivant :

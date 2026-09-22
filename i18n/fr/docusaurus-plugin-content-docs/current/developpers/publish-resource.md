@@ -19,13 +19,13 @@ Connectez-vous puis ouvrez l'[espace des ressources CLIENTXCMS](https://clientxc
 
 Choisissez des informations publiques durables et gardez votre moyen de contact à jour.
 
-![Formulaire d'inscription au programme développeur](/img/next_gen/developpers/marketplace/rejoindre-developpeur.png)
+La page d'inscription présente le programme ("C'est gratuit", "Innovez", "Aidez la communauté") au-dessus d'un formulaire unique regroupant les quatre champs listés ci-dessus, suivi d'un bouton **Activer mon espace développeur**.
 
 ## Espace développeur
 
 L'espace développeur centralise vos ressources publiées et votre profil. Pour chaque ressource, il affiche le nombre de téléchargements, les vues et son statut actuel. Vous pouvez également consulter votre certification, actualiser votre profil public, ouvrir une ressource existante ou en créer une nouvelle.
 
-![Espace développeur CLIENTXCMS](/img/next_gen/developpers/marketplace/espace-developpeur.png)
+Le tableau de bord se divise en deux colonnes : un tableau **Mes ressources publiées** à gauche (nom, téléchargements, vues, statut), et trois cartes à droite - **Créer une nouvelle ressource** (un simple bouton **Créer**), **Certification développeur** (votre statut de certification et la date à laquelle vous êtes devenu développeur), et **Mettre à jour mon profil** (les mêmes champs que le formulaire d'inscription, avec un bouton **Enregistrer**).
 
 ### Certification et ressources payantes
 
@@ -49,7 +49,7 @@ Sélectionnez **Créer** depuis l'espace développeur, puis renseignez les champ
 
 L'UUID doit correspondre à l'identifiant employé par le code et son dossier d'installation. Consultez le guide spécialisé pour connaître la convention exacte de votre type de ressource.
 
-![Informations de base d'une ressource marketplace](/img/next_gen/developpers/marketplace/soumettre-ressource-informations.png)
+Le formulaire **Informations de base** affiche **Type de ressource** et **Groupe** sous forme de listes déroulantes, **Nom de la ressource** et **Identifiant unique (UUID)** sous forme de champs texte (chacun avec un exemple en placeholder), et **Tags** sous forme de cases à cocher.
 
 ### Contenu et média
 
@@ -59,7 +59,7 @@ L'UUID doit correspondre à l'identifiant employé par le code et son dossier d'
 
 Promettez uniquement les fonctionnalités présentes dans la version soumise. N'insérez jamais d'identifiants, de clés API ou d'autres secrets dans la description ou les captures.
 
-![Champs de description et de miniature](/img/next_gen/developpers/marketplace/soumettre-ressource-contenu.png)
+**Description** utilise un éditeur Markdown avec une barre d'outils (gras, italique, titres, citations, listes, liens, images, aperçu, vue scindée, plein écran), et **Miniature** est une zone de dépôt de fichier limitée aux formats `jpg`, `png` et `jpeg`.
 
 ## Soumettre et maintenir votre ressource
 
@@ -85,6 +85,6 @@ La création et la publication des versions s'effectuent directement depuis l'in
 
 Vérifiez le journal, puis sélectionnez **Publier la version**. Ne créez pas une nouvelle ressource marketplace pour une mise à jour et ne réutilisez pas un numéro de version pour un code différent.
 
-![Création d'une version depuis l'interface développeur](/img/next_gen/developpers/marketplace/creer-version.png)
+La section **Journal des modifications** liste une ligne par catégorie (Ajout, Suppression, Modification, Correction, Autre, Sécurité), chacune avec son propre bouton **Ajouter** pour compléter les entrées, se terminant par un bouton **Publier la version**.
 
 GitHub reste l'emplacement recommandé pour héberger et maintenir les sources, mais les versions du marketplace sont gérées depuis l'interface CLIENTXCMS. Le [guide des extensions](./extensions/publish-marketplace#préparer-le-dépôt-github) et le [guide des thèmes](./themes/publish-marketplace#préparer-le-dépôt-github) décrivent les structures de dépôt attendues.

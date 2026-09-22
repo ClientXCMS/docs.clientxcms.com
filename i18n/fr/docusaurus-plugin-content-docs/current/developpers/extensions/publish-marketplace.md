@@ -33,7 +33,7 @@ Utilisez **Ajouter un provider** si l'extension en nécessite plusieurs. Chaque 
 
 Le champ **Tarification** définit le prix de vente de l'extension. La tarification payante est réservée aux **développeurs certifiés**. Vous devez demander votre certification et certifier que vous pouvez émettre des factures avant que CLIENTXCMS puisse vous reverser vos gains. Vérifiez votre certification et le montant avant de soumettre la ressource pour validation.
 
-![Service Providers et tarification d'une extension](/img/next_gen/developpers/marketplace/mettre-a-jour-extension.png)
+La section **Service providers** permet de déclarer un namespace par champ, avec un bouton **Ajouter un provider** pour en déclarer d'autres, et une icône corbeille pour en retirer un. En dessous, la section **Monétisation** contient un seul champ **Tarification** et une note rappelant d'indiquer le prix de vente de la ressource, suivie du bouton **Soumettre la ressource pour validation** qui clôt le formulaire.
 
 ## Préparer le dépôt GitHub
 

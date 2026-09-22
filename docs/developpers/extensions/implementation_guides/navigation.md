@@ -41,9 +41,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Result:
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_4.png)
+Result: the item is inserted into the admin top menu at the given position, alongside the built-in items (Dashboard, Earnings, Customers, Services, Invoices, Help Center, Settings, Emails), using the icon and the label resolved from the translation key.
 
 :::info TIPS
 This will not display the menu, but the user can access the URL directly. To block URL access, you must add a check in the controller.
@@ -77,7 +75,7 @@ $this->app['settings']->addCardItem(
 );
 ```
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+Result: a new card appears on the settings page, showing the resolved card title and description, with the item listed underneath as an icon plus its own title and description, linking to the given controller action.
 
 For more information on managing cards and items in settings, see the [dedicated page](../../../settings).
 
@@ -107,9 +105,7 @@ $this->app['extension']->addAdminCountWidget(
 );
 ```
 
-Result:
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_2.png)
+Result: a small card widget appears on the admin dashboard, showing the icon, the title ("Total Clients"), and the live count returned by the closure.
 
 ### Complex Widgets: Displaying the Last 3 Logged-In Users
 
@@ -167,6 +163,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Result:
-
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_1.png)
+Result: the item is inserted into the client area's horizontal menu at the given position, alongside the built-in items (Client Area, Services, Invoices, Emails, Help Center, My Profile, Payment Methods), using the icon and the label resolved from the translation key.

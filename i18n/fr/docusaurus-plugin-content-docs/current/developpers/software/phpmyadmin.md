@@ -53,7 +53,7 @@ Ajoutez un enregistrement A avec cette informations dans votre zone DNS:
 - Type: A
 - Name: phpmyadmin
 - IPv4 : L'ip de votre pterodactyl
-![img](https://media.discordapp.net/attachments/475073153509490689/1040939792348749874/image.png)
+
 ### Installation des fichiers (installation sur un sous domaine)
 
 ```

@@ -42,7 +42,7 @@ Pour créer un thème, vous pouvez utiliser la commande `clientxcms:create-theme
 php artisan clientxcms:create-theme
 ```
 La commande vous demandera le nom du thème et créera la structure du thème pour vous selon vos réponses.
-![Commande clientxcms:create-theme](/img/next_gen/developpers/themes/cli.png)
+La commande vous interroge de manière interactive sur le nom du thème, son UUID, puis une question oui/non pour chaque fichier optionnel (CSS, JS, config...), avant d'afficher `Theme created successfully.` une fois terminé.
 
 
 ### Création via CLI avec options

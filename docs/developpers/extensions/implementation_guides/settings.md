@@ -64,7 +64,7 @@ public function boot(): void
 
 In this example, the item links to the `showFund` action of the `FundAdminController`, which displays a dedicated view in the extension administration.
 
-![img](/img/next_gen/developpers/extensions/implementation_guides/navigation_3.png)
+Result: the card appears on the settings page, showing the resolved card title and description, with the item listed underneath as an icon plus its own title and description, linking to the controller action.
 
 ## Method Signatures
 

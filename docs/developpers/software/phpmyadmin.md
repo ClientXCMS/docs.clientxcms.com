@@ -54,7 +54,7 @@ Add an A record with this information in your DNS zone:
 - Type: A
 - Name: phpmyadmin
 - IPv4: Your pterodactyl IP
-![img](https://media.discordapp.net/attachments/475073153509490689/1040939792348749874/image.png)
+
 ### Installing files (subdomain installation)
 
 ```

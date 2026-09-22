@@ -48,7 +48,7 @@ To finish, you just need to configure the storage space to accept the templates.
 
 To do this, go to `Datacenter` > `Storage` > `local` and add `Disk Image` in `content`:
 
-![img](/img/tutorial/proxmox.png)
+In the storage's **Edit: Directory** dialog, open the **Content** dropdown (a multi-select) and check **Disk image** in addition to whatever is already selected, then confirm with **OK**.
 
 There you go, you have just installed the templates on your Proxmox. Thank you for your trust and we remain available for any questions.
 

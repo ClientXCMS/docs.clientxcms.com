@@ -7,8 +7,7 @@ Themes are one of the three extension types in ClientXCMS, alongside [addons and
 
 If you want to distribute a theme to the community, follow the [marketplace publication guide](../publish-resource), then read [Publishing a Theme](./publish-marketplace) for demo, GitHub repository, packaging, and update requirements.
 
-You can enable or disable a theme by clicking the `Enable` or `Disable` button corresponding to the theme.
-![Themes](/img/next_gen/developpers/themes/themes.png)
+You can enable or disable a theme by clicking the `Enable` or `Disable` button corresponding to the theme. Each theme is shown as a card with a preview thumbnail, its status (Enabled/Disabled), name, and description; the active theme's card exposes a **Configure my theme** action, while a disabled theme's card exposes **Demo** and **Enable**.
 
 ## Installing a Theme
 :::info Information

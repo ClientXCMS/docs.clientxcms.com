@@ -34,7 +34,7 @@ Use **Add provider** when the extension requires more than one. Each declared cl
 
 The **Pricing** field defines the selling price of the extension. Paid pricing is available only to **certified developers**. You must request certification and confirm that you can issue invoices before CLIENTXCMS can pay out your earnings. Verify your certification and the amount before submitting the resource for validation.
 
-![Service providers and extension pricing](/img/next_gen/developpers/marketplace/mettre-a-jour-extension.png)
+The **Service providers** section lets you declare one namespace per field, with an **Add provider** button to declare more, and a trash icon to remove one. Below it, the **Monetization** section holds a single **Pricing** field and a note reminding you to indicate the resource's selling price, followed by the **Submit resource for validation** button that closes the form.
 
 ## Preparing the GitHub Repository
 
