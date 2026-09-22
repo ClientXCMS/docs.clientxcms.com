@@ -21,6 +21,7 @@ Cette page liste les fonctions et clés de paramètres utilisables pour les thè
 | `{{ basket()->items() }}`                                    | Retourne les articles du panier                  |
 | `{{ is_darkmode() }}`                                        | Retourne vrai si la page est en mode sombre      |
 | `{{ is_lightmode() }}`                                       | Retourne vrai si la page est en mode clair       |
+| `{{ darkmode_html_class() }}`                                | Retourne `dark` (ou une chaîne vide) - à poser sur la balise `<html>` du layout, le seul élément réellement ciblé par le switch de mode sombre |
 | `{{ format_bytes($bytes, $precision = 2, $suffix = true) }}` | Retourne la taille en octets formatée (Ko, Mo, Go, etc.) |
 | `{{ currency() }}`                                           | Renvoie la devise actuelle au format ISO         |
 | `{{ currency_symbol(?$currency = null) }}`                   | Renvoie le symbole de la devise actuelle         |
