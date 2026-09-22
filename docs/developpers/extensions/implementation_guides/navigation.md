@@ -41,7 +41,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Result: the item is inserted into the admin top menu at the given position, alongside the built-in items (Dashboard, Earnings, Customers, Services, Invoices, Help Center, Settings, Emails), using the icon and the label resolved from the translation key.
+Result: the item is inserted into the admin menu at the given position, alongside the other native items, using the icon and the label resolved from the translation key. Each admin individually chooses a horizontal top menu or a vertical sidebar for their own session (a toggle in the admin header); both layouts render the same underlying list of items, only their look changes.
 
 :::info TIPS
 This will not display the menu, but the user can access the URL directly. To block URL access, you must add a check in the controller.
@@ -163,4 +163,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Result: the item is inserted into the client area's horizontal menu at the given position, alongside the built-in items (Client Area, Services, Invoices, Emails, Help Center, My Profile, Payment Methods), using the icon and the label resolved from the translation key.
+Result: the item is inserted into the client area's menu at the given position, alongside the other native items, using the icon and the label resolved from the translation key. The menu's actual layout (horizontal, sidebar, dropdown...) depends on the active theme, since `FrontMenuItem` only registers the data - each theme's views decide how to render it.

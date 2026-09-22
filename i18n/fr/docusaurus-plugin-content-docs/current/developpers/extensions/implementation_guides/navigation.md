@@ -38,7 +38,7 @@ $this->app['extension']->addAdminMenuItem(
 
 ```
 
-Résultat : l'item s'insère dans le menu admin du haut à la position donnée, aux côtés des items natifs (Tableau de bord, Gains, Clients, Services, Factures, Centre d'aide, Paramètres, Emails), avec l'icône et le libellé résolu depuis la clé de traduction.
+Résultat : l'item s'insère dans le menu admin à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. Chaque admin choisit individuellement un menu horizontal en haut de page ou une sidebar verticale pour sa propre session (un bouton dans l'en-tête admin) ; les deux affichages rendent la même liste d'items sous-jacente, seul l'aspect change.
 
 :::info TIPS
 Cela affichera pas le menu, mais l'utilisateur pourra accéder à l'URL directement. Pour bloquer l'accès à l'URL, vous devez ajouter une vérification dans le contrôleur.
@@ -160,4 +160,4 @@ $this->app['extension']->addFrontMenuItem(
 );
 ```
 
-Résultat : l'item s'insère dans le menu horizontal de l'espace client à la position donnée, aux côtés des items natifs (Espace client, Services, Factures, Emails, Centre d'aide, Mon profil, Mes moyens de paiement), avec l'icône et le libellé résolu depuis la clé de traduction.
+Résultat : l'item s'insère dans le menu de l'espace client à la position donnée, aux côtés des autres items natifs, avec l'icône et le libellé résolu depuis la clé de traduction. La mise en forme réelle du menu (horizontal, sidebar, menu déroulant...) dépend du thème actif, car `FrontMenuItem` ne fait qu'enregistrer la donnée - c'est aux vues de chaque thème de décider comment la rendre.
