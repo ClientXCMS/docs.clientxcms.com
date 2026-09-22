@@ -61,9 +61,10 @@ You can execute the backup task with the command:
 `php artisan backup:run --force`
 
 The force option allows forcing execution even if the time between two backups has not yet elapsed.
-### Backup Provider Configuration
 
-#### Important Concepts: Root vs Sub-folder
+## Backup Provider Configuration
+
+**Important concepts: root vs sub-folder**
 
 Before configuring a provider, it is crucial to understand the difference between these two settings:
 
@@ -77,7 +78,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 
 <TabItem value="local" label="Local">
-#### Local (Storage on Current Server)
+### Local (Storage on Current Server)
 
 Useful for temporary backups or if you then manually synchronize the folder.
 
@@ -86,7 +87,7 @@ Useful for temporary backups or if you then manually synchronize the folder.
 - **Sub-folder:** The subfolder in this path (e.g., `storage`).
 </TabItem>
 <TabItem value="ftp_sftp" label="FTP / SFTP">
-#### FTP / SFTP (Storage on Remote Server)
+### FTP / SFTP (Storage on Remote Server)
 
 For sending your backups to an external server.
 
@@ -103,7 +104,7 @@ For sending your backups to an external server.
 :::
 </TabItem>
 <TabItem value="s3" label="S3 (Amazon S3, Minio, DigitalOcean Spaces)">
-#### S3 (Amazon S3, Minio, DigitalOcean Spaces)
+### S3 (Amazon S3, Minio, DigitalOcean Spaces)
 For S3-compatible cloud object storage.
 - **Access Key:** Your API identifier.
 - **Secret Key:** Your API secret key.
@@ -114,7 +115,7 @@ For S3-compatible cloud object storage.
 
 </TabItem>
 <TabItem value="google_drive" label="Google Drive">
-#### Google Drive
+### Google Drive
 
 For backing up to your personal or shared Google Drive space.
 
@@ -126,9 +127,9 @@ For backing up to your personal or shared Google Drive space.
 > This driver requires the `masbug/flysystem-google-drive-ext` and `google/apiclient` packages.
 :::
 
-### Obtaining Google Drive Credentials
+## Obtaining Google Drive Credentials
 
-#### Step 1 — Create a Google Cloud Project
+### Step 1 — Create a Google Cloud Project
 
 1. Go to the **Google Cloud Console** [https://console.cloud.google.com/](https://console.cloud.google.com/)
 2. Click **Select a project** → **New project**
@@ -136,13 +137,13 @@ For backing up to your personal or shared Google Drive space.
 4. Validate the creation
 
 
-#### Step 2 — Enable the Google Drive API
+### Step 2 — Enable the Google Drive API
 
 1. In the **APIs & Services** menu → **Library**
 2. Search for **Google Drive API**
 3. Click **Enable**
 
-#### Step 3 — Configure the OAuth Consent Screen
+### Step 3 — Configure the OAuth Consent Screen
 
 1. Menu **APIs & Services** → **OAuth consent screen**
 2. User type: **External**
@@ -154,7 +155,7 @@ For backing up to your personal or shared Google Drive space.
    * Add only: `https://www.googleapis.com/auth/drive.file`
 5. Save
 
-#### Step 4 — Create OAuth 2.0 Credentials
+### Step 4 — Create OAuth 2.0 Credentials
 
 1. Menu **Credentials** → **Create credentials**
 2. Type: **OAuth client ID**
@@ -169,7 +170,7 @@ For backing up to your personal or shared Google Drive space.
    * Client ID
    * Client Secret
 
-#### Step 5 — Obtain the Refresh Token with OAuth 2.0 Playground
+### Step 5 — Obtain the Refresh Token with OAuth 2.0 Playground
 
 1. Open:
    [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)

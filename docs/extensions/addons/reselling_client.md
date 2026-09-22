@@ -6,29 +6,29 @@ translated: true
 
 ClientXCMS offers a VPS and CLIENTXCMS license reselling system. All information is available on our showcase website along with reselling prices.
 
-### VPS
+## VPS
 All information, including prices, is available [here](https://ctxhosting.fr/ctxreselling).
 **Prerequisite**: You must have a valid and active CLIENTXCMS license.
 
-### CLIENTXCMS License
+## CLIENTXCMS License
 All information, including prices, is available [here](https://clientxcms.com/partners).
 **Prerequisite**: You must have a valid and active CLIENTXCMS license.
 
 For any request or to become a partner, please contact support.
 
-#### Regarding CLIENTXCMS licenses:
+### Regarding CLIENTXCMS licenses:
 - No API key is required.
 - Orders must be placed via [clientxcms.com](https://clientxcms.com) using the partner promo code indicated on the reseller page.
 - You can also order licenses for your customers and access the reseller area to manage their licenses.
 
-#### Regarding VPS:
+### Regarding VPS:
 - You will receive an API key that will allow you to manage your customers' VPS directly from your CLIENTXCMS client area.
 - Billing is based on services ordered by you or your customers.
 - For renewals or expiration date changes, fees will be calculated pro-rata based on remaining days until expiration, with a minimum amount of €0.50.
 
 This system ensures simplified management of licenses and VPS services for your customers, while offering flexibility and automation.
 
-### Supported Features
+## Supported Features
 - Automate VPS creation and provisioning
 - VPS management from client area
 - Send login credentials by email

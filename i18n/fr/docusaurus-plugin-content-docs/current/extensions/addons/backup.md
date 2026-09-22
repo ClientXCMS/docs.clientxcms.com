@@ -57,9 +57,10 @@ Vous pouvez éxecuter la tâche de sauvegarde avec la commande :
 `php artisan backup:run --force`
 
 L'option force permet de forcer l'exécution même si la durée entre deux sauvegardes n'est pas encore écoulée.
-### Configuration des fournisseurs de sauvegarde
 
-#### Concepts Importants : Root vs Sub-folder
+## Configuration des fournisseurs de sauvegarde
+
+**Concepts importants : root vs sub-folder**
 
 Avant de configurer un fournisseur, il est crucial de comprendre la différence entre ces deux réglages :
 
@@ -73,7 +74,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 
 <TabItem value="local" label="Local">
-#### Local (Stockage sur le serveur actuel)
+### Local (Stockage sur le serveur actuel)
 
 Utile pour les sauvegardes temporaires ou si vous synchronisez ensuite le dossier manuellement.
 
@@ -82,7 +83,7 @@ Utile pour les sauvegardes temporaires ou si vous synchronisez ensuite le dossie
 - **Sub-folder :** Le sous-dossier dans ce chemin (ex: `storage`).
 </TabItem>
 <TabItem value="ftp_sftp" label="FTP / SFTP">
-#### FTP / SFTP (Stockage sur un serveur distant)
+### FTP / SFTP (Stockage sur un serveur distant)
 
 Pour envoyer vos sauvegardes vers un serveur externe.
 
@@ -99,7 +100,7 @@ Le **SFTP** nécessite l'installation du package `league/flysystem-sftp-v3`.
 :::
 </TabItem>
 <TabItem value="s3" label="S3 (Amazon S3, Minio, DigitalOcean Spaces)">
-#### S3 (Amazon S3, Minio, DigitalOcean Spaces)
+### S3 (Amazon S3, Minio, DigitalOcean Spaces)
 Pour le stockage objet cloud compatible S3.
 - **Clé d'accès (Access Key) :** Votre identifiant d'API.
 - **Clé Secrète (Secret Key) :** Votre clé secrète d'API.
@@ -110,7 +111,7 @@ Pour le stockage objet cloud compatible S3.
 
 </TabItem>
 <TabItem value="google_drive" label="Google Drive">
-#### Google Drive
+### Google Drive
 
 Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
 
@@ -122,9 +123,9 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
 > Ce driver nécessite les packages `masbug/flysystem-google-drive-ext` et `google/apiclient`.
 :::
 
-### Obtention des identifiants Google Drive
+## Obtention des identifiants Google Drive
 
-#### Étape 1 — Créer un projet Google Cloud
+### Étape 1 — Créer un projet Google Cloud
 
 1. Accédez à la **Google Cloud Console** [https://console.cloud.google.com/](https://console.cloud.google.com/)
 2. Cliquez sur **Sélectionner un projet** → **Nouveau projet**
@@ -132,13 +133,13 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
 4. Validez la création
 
 
-#### Étape 2 — Activer l’API Google Drive
+### Étape 2 — Activer l’API Google Drive
 
 1. Dans le menu **API et services** → **Bibliothèque**
 2. Recherchez **Google Drive API**
 3. Cliquez sur **Activer**
 
-#### Étape 3 — Configurer l’écran de consentement OAuth
+### Étape 3 — Configurer l’écran de consentement OAuth
 
 1. Menu **API et services** → **Écran de consentement OAuth**
 2. Type d’utilisateur : **Externe**
@@ -150,7 +151,7 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
    * Ajoutez uniquement :`https://www.googleapis.com/auth/drive.file`
 5. Enregistrez
 
-#### Étape 4 — Créer les identifiants OAuth 2.0
+### Étape 4 — Créer les identifiants OAuth 2.0
 
 1. Menu **Identifiants** → **Créer des identifiants**
 2. Type : **ID client OAuth**
@@ -165,7 +166,7 @@ Pour sauvegarder sur votre espace Google Drive personnel ou partagé.
    * Client ID
    * Client Secret
 
-#### Étape 5 — Obtenir le Refresh Token avec OAuth 2.0 Playground
+### Étape 5 — Obtenir le Refresh Token avec OAuth 2.0 Playground
 
 1. Ouvrez :
    [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)

@@ -152,36 +152,11 @@ Selon la configuration, l’approbation d’un avis peut également créditer au
 
 ## Configuration des questions
 
-Pour gérer les questions posées aux clients lors de la soumission d’un avis :
-`Espace d’administration` → `Paramètres` → `Avis clients` → `Questionnaires`
-
-* **Identifiant unique**
-  Identifiant interne unique de la question.
-
-* **Type de question**
-  Type de réponse attendu : notation par étoiles, texte libre, choix multiple, etc.
-
-* **Ordre d’affichage**
-  Position de la question dans le formulaire.
-
-* **Question**
-  Texte affiché au client.
-
-* **Question facultative**
-  Définit si la question est obligatoire ou non.
-
-* **Question principale**
-  Met en avant la question dans le formulaire.
-
-* **Question globale**
-  Applique la question à tous les produits.
-
-### Configuration des questions
 Pour configurer les questions d'avis, accédez à `Espace d'administration` > `Paramètres` > `Avis clients` > `Questionnaires`. Vous pouvez ajouter, modifier ou supprimer des questions que vos clients devront répondre lors de la soumission de leur avis.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/questions.png)
 
-#### Création d'une question
+### Création d'une question
 Pour créer une nouvelle question, cliquez sur le bouton `Créer`. Vous pouvez définir le type de question (texte, évaluation par étoiles, choix multiple, etc.) et les options associées.
 
 **Identifiant unique** : Chaque question doit avoir un identifiant unique pour faciliter la gestion des réponses.
@@ -204,7 +179,7 @@ Pour créer une nouvelle question, cliquez sur le bouton `Créer`. Vous pouvez d
 
 **Produits associés** : Affiche les produits liés à cette question.
 
-#### Edition d'une question
+### Edition d'une question
 
 Pour modifier une question existante, cliquez sur l'icône d'édition à côté de la question dans la liste. Apportez les modifications nécessaires et enregistrez.
 

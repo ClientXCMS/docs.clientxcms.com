@@ -2,32 +2,29 @@
 
 ClientXCMS propose un système de revente de VPS et de licence CLIENTXCMS. Toute les informations sont disponible sur notre site vitrine ainsi que les prix de revente.
 
-### VPS
+## VPS
 Toutes les informations, y compris les prix, sont disponibles [ici](https://ctxhosting.fr/ctxreselling).  
 **Prérequis** : Vous devez disposer d'une licence CLIENTXCMS valide et active.
 
-### Licence CLIENTXCMS
+## Licence CLIENTXCMS
 Toutes les informations, y compris les prix, sont disponibles [ici](https://clientxcms.com/partners).  
 **Prérequis** : Vous devez disposer d'une licence CLIENTXCMS valide et active.
 
 Pour toute demande ou pour devenir partenaire, veuillez contacter le support.
 
-#### Concernant les licences CLIENTXCMS :
+### Concernant les licences CLIENTXCMS :
 - Aucune clé d'API n'est requise.
 - Les commandes doivent être effectuées via [clientxcms.com](https://clientxcms.com) en utilisant le code promo partenaire indiqué sur la page revendeur.
 - Vous pouvez également commander des licences pour vos clients et accéder à l'espace revendeur pour gérer leurs licences.
 
-#### Concernant les VPS :
+### Concernant les VPS :
 - Vous recevrez une clé d'API qui vous permettra de gérer les VPS de vos clients directement depuis votre espace client CLIENTXCMS.
 - La facturation est basée sur les services commandés par vous ou vos clients.
 - Pour les renouvellements ou les modifications de dates d'expiration, les frais seront calculés au prorata des jours restants jusqu'à la date d'expiration, avec un montant minimum de 0,50 €.
 
 Ce système garantit une gestion simplifiée des licences et des services VPS pour vos clients, tout en offrant flexibilité et automatisation.
-:::info Modules
-Pour utiliser les fonctionnalités suivantes, il faut que le module Plesk soit activé sur votre CLIENTXCMS. [cliquez ici pour l'activer](../)
-:::
 
-### Fonctionnalité supportées
+## Fonctionnalité supportées
 - Automatisez la création et l'approvisionnement des VPS
 - Gestion des VPS depuis l'espace client
 - Envoie des identifiants de connexion par E-mail
