@@ -28,7 +28,7 @@ translated: true
 
 ## 2. Prerequisites
 
-Once the extension is activated:
+Once the addon is activated:
 
 * **Administration → Settings → Extension Settings → Funds**
 * Transfer management: **Administration → Settings → Extension Settings → Funds** (*Transfers* tab)

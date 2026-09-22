@@ -6,8 +6,8 @@ Ce code devient la référence centrale pour reconnaître instantanément un uti
 L'addon Support ID demande la version 2.14.9 ou supérieure de CLIENTXCMS.
 :::
 
-## Configuration de l'extension
-Vous pouvez configurer l'extension en accédant à `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Support ID`.
+## Configuration de l'addon
+Vous pouvez configurer l'addon en accédant à `Espace d'administration ` > `Paramètres` > `Paramètres des extensions` > `Support ID`.
 ![img](/img/next_gen/extensions/addons/supportid/config.png)
 - **Préfixe du Support ID** : Définit le préfixe utilisé pour générer les Support IDs (par défaut : CTX-).
 - **Format du code** : Choisissez entre un code alphanumérique ou uniquement numérique pour le Support ID.
@@ -55,7 +55,7 @@ curl -X GET "https://clientxcms.app/api/v1/addons/supportid/CTX-RJ347X" -H "Auth
 }
 ```
   
-Vous pouvez réinitialiser la clé d'API en appuyant sur le bouton "Réinitialiser la clé" dans la section de configuration de l'extension.
+Vous pouvez réinitialiser la clé d'API en appuyant sur le bouton "Réinitialiser la clé" dans la section de configuration de l'addon.
 
 ## Rendu sur le site
 ![img](/img/next_gen/extensions/addons/supportid/image.png)

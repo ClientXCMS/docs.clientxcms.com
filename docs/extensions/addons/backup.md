@@ -5,10 +5,10 @@ translated: true
 # Backup
 
 
-This extension allows you to create complete backups of your ClientXCMS installation, including files and database, and store them on various storage providers.
+This addon allows you to create complete backups of your ClientXCMS installation, including files and database, and store them on various storage providers.
 
-## Extension Configuration
-After installing the extension, you can configure backup providers in the admin panel under **Settings > Security > Backup Providers**.
+## Addon Configuration
+After installing the addon, you can configure backup providers in the admin panel under **Settings > Security > Backup Providers**.
 
 You can add multiple providers by clicking the `Create` button. Select the desired provider type (Local, FTP/SFTP, S3, Google Drive) and fill in the required information according to the chosen type.
 

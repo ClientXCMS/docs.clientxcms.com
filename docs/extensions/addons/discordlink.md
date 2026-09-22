@@ -22,7 +22,7 @@ Synchronization works with the SocialAuth+ addon which is required with Discord 
 
 ## Configuration
 
-Once the extension is activated, you can access the addon configuration in `Admin Panel` > `Settings` > `Extension Settings` > `DiscordLink`
+Once the addon is activated, you can access its configuration in `Admin Panel` > `Settings` > `Extension Settings` > `DiscordLink`
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 

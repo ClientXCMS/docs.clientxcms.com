@@ -44,7 +44,7 @@ Once the addon is activated:
 
 ---
 
-## 3. Global Settings (extension)
+## 3. Global Settings (addon)
 
 | Field                          | Description                                               | Example                      |
 | ------------------------------ | --------------------------------------------------------- | ---------------------------- |

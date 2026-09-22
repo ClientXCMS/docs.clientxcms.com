@@ -32,7 +32,7 @@
 
 ## 2. Prérequis
 
-Une fois l'extension activée, vous pouvez accéder à la configuration de l'addon dans Espace d'administration  > Paramètres > Section "Personnalisation" > "Cadeaux Discord"
+Une fois l'addon activé, vous pouvez accéder à sa configuration dans Espace d'administration  > Paramètres > Section "Personnalisation" > "Cadeaux Discord"
 
 | Élément          | Version / Détail                                                                    |
 | ---------------- | ----------------------------------------------------------------------------------- |

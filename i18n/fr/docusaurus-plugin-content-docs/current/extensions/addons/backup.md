@@ -1,10 +1,10 @@
 # Sauvegarde
 
 
-Cet extension permet de créer des sauvegardes complètes de votre installation ClientXCMS, incluant les fichiers et la base de données, et de les stocker sur divers fournisseurs de stockage.
+Cet addon permet de créer des sauvegardes complètes de votre installation ClientXCMS, incluant les fichiers et la base de données, et de les stocker sur divers fournisseurs de stockage.
 
-## Configuration de l'extension
-Après avoir installé l'extension, vous pouvez configurer les fournisseurs de sauvegarde dans le panneau d'administration sous **Paramètres > Sécurité > Fournisseurs de sauvegarde**.
+## Configuration de l'addon
+Après avoir installé l'addon, vous pouvez configurer les fournisseurs de sauvegarde dans le panneau d'administration sous **Paramètres > Sécurité > Fournisseurs de sauvegarde**.
 
 Vous pouvez ajouter plusieurs fournisseurs en cliquant sur le bouton `Créer`. Sélectionnez le type de fournisseur souhaité (Local, FTP/SFTP, S3, Google Drive) et remplissez les informations requises selon le type choisi.
 

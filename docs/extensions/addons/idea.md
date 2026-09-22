@@ -91,4 +91,4 @@ This workflow keeps customers informed while helping your team identify the most
 
 ## See Idea in Action
 
-The Idea addon is used by CLIENTXCMS for its own public feedback portal. Visit [clientxcms.com/ideas](https://clientxcms.com/ideas) to discover the extension in a real-world environment, vote for upcoming improvements, and see how it creates a direct and transparent connection with the community.
+The Idea addon is used by CLIENTXCMS for its own public feedback portal. Visit [clientxcms.com/ideas](https://clientxcms.com/ideas) to discover the addon in a real-world environment, vote for upcoming improvements, and see how it creates a direct and transparent connection with the community.

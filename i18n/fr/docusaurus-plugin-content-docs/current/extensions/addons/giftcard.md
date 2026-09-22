@@ -40,7 +40,7 @@ Une fois L'addon activé :
 
 ---
 
-## 3. Paramètres globaux (extension)
+## 3. Paramètres globaux (addon)
 
 | Champ                          | Description                                               | Exemple                      |
 | ------------------------------ | --------------------------------------------------------- | ---------------------------- |

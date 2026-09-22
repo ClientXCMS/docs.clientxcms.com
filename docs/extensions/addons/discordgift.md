@@ -36,7 +36,7 @@ translated: true
 
 ## 2. Prerequisites
 
-Once the extension is activated, you can access the addon configuration in Admin Panel > Settings > "Customization" Section > "Discord Gifts"
+Once the addon is activated, you can access its configuration in Admin Panel > Settings > "Customization" Section > "Discord Gifts"
 
 | Element          | Version / Detail                                                                    |
 | ---------------- | ----------------------------------------------------------------------------------- |

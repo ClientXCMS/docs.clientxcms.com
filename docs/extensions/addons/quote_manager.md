@@ -7,7 +7,7 @@ translated: true
 The **Quote Manager** addon allows your staff to create and manage professional quotes directly from CLIENTXCMS. Your customers will be able to view offers, accept or reject them directly from their client area.
 
 ## Configuration and Settings
-To configure the extension, go to `Admin Panel` > `Settings` > `Quote Manager` > `Settings`.
+To configure the addon, go to `Admin Panel` > `Settings` > `Quote Manager` > `Settings`.
 
 ![img](/img/next_gen/extensions/addons/quote_manager/settings.png)
 
@@ -51,6 +51,6 @@ Once the quote is accepted by the client, you can convert it into an invoice in 
 ![img](/img/next_gen/extensions/addons/quote_manager/convert_to_invoice.png)
 
 ### KPI
-You can view the key performance indicators of the extension in the `Admin Panel` > `Quote Manager` > `Statistics` menu.
+You can view the key performance indicators of the addon in the `Admin Panel` > `Quote Manager` > `Statistics` menu.
 
 ![img](/img/next_gen/extensions/addons/quote_manager/kpi.png)

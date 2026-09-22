@@ -3,7 +3,7 @@ translated: true
 ---
 
 # Customer Reviews
-The **Customer Reviews** extension allows you to collect and display customer reviews on your client area. Customer reviews are essential for building trust with potential buyers and improving your online hosting service's credibility.
+The **Customer Reviews** addon allows you to collect and display customer reviews on your client area. Customer reviews are essential for building trust with potential buyers and improving your online hosting service's credibility.
 
 ![img](/img/next_gen/extensions/addons/customers_reviews/reviews.png)
 
@@ -11,7 +11,7 @@ The **Customer Reviews** extension allows you to collect and display customer re
 
 ## Configuration
 
-To configure the **Customer Reviews** extension, go to:
+To configure the **Customer Reviews** addon, go to:
 `Admin Panel` → `Settings` → `Customer Reviews` → `Configuration`
 
 The **Configuration** tab is divided into several sections accessible via sub-tabs:
@@ -214,7 +214,7 @@ To edit an existing question, click the edit icon next to the question in the li
 
 ## Product Display
 
-The extension allows displaying customer reviews directly on your store's product pages. This shows the average rating and number of reviews.
+The addon allows displaying customer reviews directly on your store's product pages. This shows the average rating and number of reviews.
 ![img](/img/next_gen/extensions/addons/customers_reviews/products.png)
 
 ### Theme Support

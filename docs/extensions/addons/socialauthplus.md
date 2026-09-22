@@ -5,26 +5,26 @@ translated: true
 
 # SocialAuth+
 
-The SocialAuth+ extension makes it easy to connect with OAuth2 for the following platforms: [Google](#google), [Discord](#discord), [GitHub](#github), [Facebook](#facebook), [Microsoft](#microsoft), [Minecraft](#minecraft), [Twitch](#twitch) and [ClientXCMS](#clientxcms).
-> Make it easier for your potential customers to access your platform with SocialAuth+. This solution uses OAuth+ technology for fast and secure login. Your users can register and log in with one click via their accounts, without worrying about losing their password. Simplify their user experience and increase your conversion rate with this advanced authentication extension.
+The SocialAuth+ addon makes it easy to connect with OAuth2 for the following platforms: [Google](#google), [Discord](#discord), [GitHub](#github), [Facebook](#facebook), [Microsoft](#microsoft), [Minecraft](#minecraft), [Twitch](#twitch) and [ClientXCMS](#clientxcms).
+> Make it easier for your potential customers to access your platform with SocialAuth+. This solution uses OAuth+ technology for fast and secure login. Your users can register and log in with one click via their accounts, without worrying about losing their password. Simplify their user experience and increase your conversion rate with this advanced authentication addon.
 
 
 ## Configuration in ClientXCMS
 
-The **SocialAuth+** extension is available __for free__, and can be enabled from the "Customization" tab of your ClientXCMS site administration area.
+The **SocialAuth+** addon is available __for free__, and can be enabled from the "Customization" tab of your ClientXCMS site administration area.
 
-### Enabling the Extension
+### Enabling the Addon
 
-To enable the SocialAuth+ extension for free, proceed as follows:
+To enable the SocialAuth+ addon for free, proceed as follows:
 1. Log in to the ClientXCMS administration area.
 2. Click on the "Settings" button on the navigation bar at the top.
 2. In the "Customization" section, click on the "Extensions" page.
-3. Search for the "Social Auth+" extension in the list of available extensions.
+3. Search for the "Social Auth+" addon in the list of available extensions.
 4. Click on the "Enable" button below it to set it up for free.
 
 ### Configuring OAuth Credentials on ClientXCMS
 
-Once the SocialAuth+ extension is enabled from your ClientXCMS administration area, re-access the "Settings" tab.
+Once the SocialAuth+ addon is enabled from your ClientXCMS administration area, re-access the "Settings" tab.
 
 ![Image: SocialAuth+ Tab](/img/next_gen/extensions/addons/socialauth/SA+_extension.png)
 
@@ -299,4 +299,4 @@ Re-test the connection via Google.
 
 
 ## Congratulations
-You have now configured the SocialAuth+ extension with OAuth2 authentication keys. Your customers will now be able to log in and register more easily, faster, and securely on your client area!
+You have now configured the SocialAuth+ addon with OAuth2 authentication keys. Your customers will now be able to log in and register more easily, faster, and securely on your client area!

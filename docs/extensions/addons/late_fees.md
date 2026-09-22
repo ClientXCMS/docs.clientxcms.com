@@ -1,6 +1,6 @@
 # Late Fees
 
-The **Late Fees** extension allows you to automate the application of additional charges on unpaid invoices after their due date. It offers great flexibility to configure fixed or percentage amounts, manage grace periods, and even exempt certain customers.
+The **Late Fees** addon allows you to automate the application of additional charges on unpaid invoices after their due date. It offers great flexibility to configure fixed or percentage amounts, manage grace periods, and even exempt certain customers.
 
 :::info
 Penalty processing is performed automatically every day at **06:00 AM** via a scheduled task.

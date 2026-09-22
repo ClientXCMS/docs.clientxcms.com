@@ -24,7 +24,7 @@
 
 ## 2. Prérequis
 
-Une fois l’extension activée :
+Une fois l’addon activé :
 
 * **Administration → Paramètres → Paramètres des extensions → Fonds**
 * Gestion des transferts : **Administration → Paramètres → Paramètres des extensions → Fonds » (onglet *Transferts*)**

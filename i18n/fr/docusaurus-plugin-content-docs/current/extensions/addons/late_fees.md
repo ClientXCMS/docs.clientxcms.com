@@ -1,6 +1,6 @@
 # Pénalités de retard
 
-L'extension **Pénalités de retard** vous permet d'automatiser l'application de frais supplémentaires sur les factures impayées après leur date d'échéance. Elle offre une grande flexibilité pour configurer des montants fixes ou en pourcentage, gérer des périodes de grâce et même excepter certains clients.
+L'addon **Pénalités de retard** vous permet d'automatiser l'application de frais supplémentaires sur les factures impayées après leur date d'échéance. Elle offre une grande flexibilité pour configurer des montants fixes ou en pourcentage, gérer des périodes de grâce et même excepter certains clients.
 
 :::info
 Le traitement des pénalités s'effectue automatiquement chaque jour à **06:00** via une tâche planifiée.

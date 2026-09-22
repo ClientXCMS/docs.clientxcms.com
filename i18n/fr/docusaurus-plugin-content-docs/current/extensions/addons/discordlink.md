@@ -18,7 +18,7 @@ La synchronisation fonctionne avec l'addon SocialAuth+ est requis avec la connex
 
 ## Configuration
 
-Une fois l'extension activée, vous pouvez accéder à la configuration de l'addon dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `DiscordLink`
+Une fois l'addon activé, vous pouvez accéder à sa configuration dans `Espace d'administration ` > `Paramètres` > `Paramètre des extensions` > `DiscordLink`
 
 ![img](/img/next_gen/extensions/addons/discordlink/config.png)
 
