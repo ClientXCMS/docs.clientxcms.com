@@ -26,7 +26,6 @@ Découvrez les nouveautés principales et les captures dans notre [présentation
 - ➕ Ajout de [**EU VAT Check**](/fr/extensions/addons/vat-check-eu) pour vérifier les numéros de TVA européens avec VIES et une durée de cache configurable.
 - ➕ Ajout de l'identité fiscale du vendeur, du régime de TVA, du fuseau fiscal, de la date d'activation et des providers principal et public.
 - ➕ Ajout d'un historique des transmissions électroniques et des statuts retournés par les providers.
-- ➕ Ajout du paiement des factures en plusieurs échéances avec débit atomique du solde client et conservation précise de la TVA.
 - ➕ Ajout de la détection des mots de passe compromis avec HaveIBeenPwned et d'une longueur minimale renforcée.
 - ➕ Ajout d'un moteur fermé pour les modèles d'e-mails, avec migration automatique et assainissement strict du contenu.
 - ➕ Ajout de la vérification d'intégrité des extensions avec sommes SHA-256, signatures et extraction confinée.

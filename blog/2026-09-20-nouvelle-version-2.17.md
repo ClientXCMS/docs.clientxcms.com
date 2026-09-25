@@ -15,10 +15,10 @@ We are pleased to announce the release of version **2.17** of ClientXCMS!
 Discover the major new features and screenshots in our [complete overview of ClientXCMS 2.17](/blog/clientxcms-v2-17-domaines-securite-facturation).
 
 ### Additions
+
 - ➕ Added dynamic CSS variables for the theme's primary color, allowing instant brand palette modification from the admin panel.
 - ➕ Added an automated i18n pipeline with French as the source of truth, DeepL/Azure synchronization, and reliable release builds.
 - ➕ Added support for JPG/JPEG assets in Vite bundling rules.
-
 - ➕ Officially launched **domain-name management** with progressive search, real-time availability checking, and cached results.
 - ➕ Added the [**OpenProvider** registrar module](/extensions/modules/openprovider) with production and sandbox support, automatic TLD import, fixed or percentage-based bulk pricing, and reusable nameserver/DNS configuration.
 - ➕ Added filtering and selection when importing registrar catalogs.
@@ -29,7 +29,6 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - ➕ Added [**EU VAT Check**](/extensions/addons/vat-check-eu) to validate European VAT numbers through VIES with configurable caching.
 - ➕ Added seller tax identity, VAT regime, tax timezone, activation date, active provider, and public-sector provider settings.
 - ➕ Added an electronic-transmission history to follow documents and provider statuses.
-- ➕ Added **invoice installment payments** with atomic customer-balance debit and precise VAT preservation on each installment.
 - ➕ Added **compromised-password detection** via HaveIBeenPwned and enforced minimum password length.
 - ➕ Added a **closed-grammar email-template engine** replacing arbitrary Blade execution, with automatic migration of existing templates and strict content sanitization.
 - ➕ Added **extension integrity verification**: SHA-256 checksum and signature validation on downloaded archives, with extraction confined to the extension's own directory.
@@ -39,10 +38,10 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - ➕ Added the [**Brevo newsletter addon**](/extensions/addons/brevo).
 
 ### Changes
+
 - 🔄 Enhanced the Extension Updater: automatic cleanup of obsolete files, exact local version resolution, and auto-registration of unlisted extensions.
 - 🔄 Improved theme-section editing: repaired page sections accordion, added a sticky action bar, and ensured ARIA/contrast compliance.
 - 🔄 Refactored Dark Mode toggle: moved the `dark` class to the `<html>` tag and fixed toggle-icon synchronization.
-
 - 🔄 Redesigned the **mobile navigation** as a side panel with 44 px touch targets, focus-trap fix for Preline, `aria-expanded` attributes, and WCAG AA–compliant contrast.
 - 🔄 Harmonized all buttons via `btn.css` with `@layer components`, corrected contrasts on both themes, and aligned the primary color with the theme palette.
 - 🔄 Improved **GDPR compliance**: personal-data exports are now more complete, and account deletion performs a deeper cleanup of associated resources while preserving the audit trail.
