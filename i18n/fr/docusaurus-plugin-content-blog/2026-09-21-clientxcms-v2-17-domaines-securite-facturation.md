@@ -69,7 +69,7 @@ Les administrateurs peuvent choisir entre une barre latérale verticale et la na
 
 ![Choix de la disposition de l'administration](/img/blog/v2.17/toggle_orientation.png)
 
-![Nouvelle disposition de l'administration](/img/blog/v2.17/domains3.png)
+![Nouvelle disposition de l'administration](/img/blog/v2.17/domains4.png)
 
 ## 🔒 Renforcement approfondi de la sécurité
 

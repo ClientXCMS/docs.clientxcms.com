@@ -73,7 +73,7 @@ Combined with the new **compromised-password detection** (powered by HaveIBeenPw
 Administrators can now switch between a **vertical sidebar** and the classic **horizontal navigation**. The choice is presented on first login and can be changed at any time from the top bar or profile settings.
 
 ![Modal for choosing between vertical and horizontal navigation layout](/img/blog/v2.17/toggle_orientation.png)
-![New administration layout](/img/blog/v2.17/domains3.png)
+![New administration layout](/img/blog/v2.17/domains4.png)
 
 
 ## 🔒 Deep Security Hardening
