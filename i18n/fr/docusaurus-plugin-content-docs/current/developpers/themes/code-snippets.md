@@ -7,7 +7,7 @@ Voici quelques exemples de code pour vous aider à personnaliser votre thème.
 Fichier `resources/themes/theme_name/includes/head.blade.php`
 ```blade
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full {{ darkmode_html_class() }}">
 <head>
     {{-- ... --}}
     <title>@yield('title') {{ translated_setting('seo_site_title') }}</title>
@@ -51,6 +51,11 @@ Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
 </a>
 ```
 ### Switch de mode sombre
+
+:::warning Important
+Le script de bascule ne togglé la classe `dark` que sur l'élément `<html>`. La balise `<html>` de votre layout (voir le snippet [Head](#head) ci-dessus) doit rendre `{{ darkmode_html_class() }}` - ne jamais poser la classe sur `<body>` ou ailleurs, sinon le clic sur le bouton n'aura aucun effet visible tant que la page n'est pas rechargée.
+:::
+
 Fichier `resources/themes/theme_name/views/shared/layouts/iconright.blade.php`
 ```blade
 
