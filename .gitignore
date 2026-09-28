@@ -3,11 +3,13 @@
 
 # Production
 /build
-/old
 
 # Generated files
 .docusaurus
 .cache-loader
+
+# IDE
+.idea
 
 # Misc
 .DS_Store
@@ -16,10 +18,6 @@
 .env.development.local
 .env.test.local
 .env.production.local
-package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-ai.py
-documentation_compilée.txt
-documentation_resumee.txt

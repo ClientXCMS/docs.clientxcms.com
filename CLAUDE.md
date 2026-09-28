@@ -1,90 +1,35 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Documentation officielle ClientXCMS (Docusaurus, https://docs.clientxcms.com). Version exacte : `package.json`.
 
-## Project Overview
+## Commandes
 
-Official documentation website for ClientXCMS, built with Docusaurus 3. French-language documentation for the ClientXCMS content management system.
+Ne jamais exécuter de commande npm/build/déploiement directement : demander à l'utilisateur de lancer les commandes documentées dans `README.md`.
 
-## Core Development Commands
+## Structure
 
-```bash
-npm install          # Install dependencies
-npm run start        # Development server at http://localhost:3000
-npm run build        # Production build
-npm run serve        # Serve built version
-npm run prod         # Build and serve combined
-npm run typecheck    # TypeScript type checking
-npm run clear        # Clear Docusaurus cache
-```
+- `/docs/` - contenu anglais (source de vérité)
+- `/i18n/fr/docusaurus-plugin-content-docs/current/` - miroir français, même arborescence
+- `/blog/`, `/src/`, `/static/` - blog, composants, assets
+- Les assets locaux suivent le chemin de la doc (`/docs/settings/core/x` -> `/static/img/next_gen/settings/core/x`) ; certaines pages référencent aussi des images externes (`cdn.clientxcms.com` notamment)
 
-## Architecture
+## Branches
 
-### Content Structure
-- `/docs/` - Markdown documentation files
-- `/blog/` - Blog posts
-- `/src/components/` - Custom React components
-- `/src/css/` - Custom styles
-- `/static/` - Static assets
+| Branche | Rôle |
+|---|---|
+| `V2` | Production (branche par défaut) |
+| `preprod` | Pré-production |
 
-### Documentation Hierarchy
-```
-docs/
-  introductions/     # Project overview
-  installation/      # Installation guides (cloud, self-hosted, Plesk)
-  getting_started/   # Initial setup
-  settings/          # Configuration by feature
-  extensions/        # Modules and addons
-  developpers/       # API, themes, extensions guides
-```
+Détail du workflow git et des remotes : `.claude/rules/git-workflow.md` (chargé automatiquement).
+Parité i18n et qualité de contenu : `.claude/rules/content-i18n.md` (chargé automatiquement).
+Style de rédaction : `.claude/rules/writing-style.md` (chargé automatiquement).
+Qualité rédactionnelle (clarté, précision, structure) : `.claude/rules/documentation-quality.md` (chargé automatiquement).
+Architecture de l'information et présentation : `.claude/rules/information-architecture.md` (chargé automatiquement).
+Captures d'écran : `.claude/rules/screenshots.md` (chargé automatiquement).
+Terminologie : `.claude/rules/terminology.md` (chargé automatiquement).
+Signaler une info liée à une version : `.claude/rules/versioning.md` (chargé automatiquement).
 
-### Asset Mirror Structure
-Assets must mirror the documentation path:
-- Doc: `/docs/settings/core/maintenance`
-- Assets: `/static/img/next_gen/settings/core/maintenance`
+## Nommage
 
-All images must be hosted within the repository (no external hosting).
-
-### Configuration
-- `docusaurus.config.ts` - Main config, presets, plugins, theme
-- `sidebars.ts` - Auto-generated from folder structure
-- `static/api-docs.json` - OpenAPI spec for `/api` route (Redocusaurus)
-
-### Key Technical Details
-- Docs served at root (`routeBasePath: '/'`)
-- Single locale: French (`fr`)
-- Local search via `@easyops-cn/docusaurus-search-local`
-- API documentation via Redocusaurus preset
-- Version label: "NEXT GEN" (no active versioning currently)
-
-## Branching & Deployment
-
-| Branch | Environment | URL |
-|--------|-------------|-----|
-| `V2` | Production | https://docs.clientxcms.com |
-| `preprod` | Pre-production | https://preprod-docs.clientxcms.com |
-
-- Feature branches: `feat/feature-name`
-- Fix branches: `fix/issue-name`
-- Never push directly to `V2`
-- PRs to `preprod` for new content, `V2` for hotfixes only
-
-### CI/CD
-- PRs trigger `npm run build` test (non-dependabot)
-- Push to `V2` triggers Docker build and deployment
-
-## Content Guidelines
-
-### File Naming
-- Lowercase only
-- English names
-- Kebab-case for multi-word names
-
-### Category Configuration
-Each folder can have `_category_.json`:
-```json
-{
-  "label": "Display Name",
-  "position": 1
-}
-```
+- Fichiers en minuscules, kebab-case, noms en anglais
+- `_category_.json` par dossier : `{"label": "...", "position": N}`

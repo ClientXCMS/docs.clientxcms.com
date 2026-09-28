@@ -58,6 +58,78 @@ Incluez :
 - Pays
 - Numéro SIRET/TVA si applicable
 
+### Paramètres des factures
+
+**Lien des conditions générales de vente**<br />
+Lien public vers vos conditions générales de vente.
+
+**Termes et conditions de la facture**<br />
+Texte affiché sur les factures générées, par exemple les conditions de paiement ou l'acompte demandé avant la prestation.
+
+**Mode de facturation**<br />
+Sélectionne le type de document commercial généré par défaut.
+
+**Préfixe des factures**<br />
+Préfixe placé avant les numéros de facture, par exemple `CTX`.
+
+**Autoriser l'ajout du solde aux factures**<br />
+Permet d'utiliser le crédit disponible du client pour régler une facture.
+
+**Le client doit être confirmé pour commander**<br />
+Impose la confirmation du client avant l'envoi d'une commande.
+
+**Action sur les factures en attente après (jours)**<br />
+Définit l'action automatique appliquée aux factures qui restent en attente. Utilisez `0` pour désactiver ce délai.
+
+## Identité fiscale du vendeur
+
+Complétez cette section avant d'activer Factur-X ou un provider de facturation électronique :
+
+- **Raison sociale** : nom légal enregistré du vendeur ;
+- **SIREN** : identifiant à neuf chiffres de l'entité juridique française ;
+- **SIRET** : identifiant facultatif à quatorze chiffres de l'établissement vendeur ;
+- **Numéro de TVA** : numéro de TVA intracommunautaire facultatif ;
+- **Nature habituelle des opérations** : par exemple, prestations de services ;
+- **TVA exigible d'après les débits** : activez cette option uniquement si ce régime fiscal s'applique à votre entreprise ;
+- **Voie**, **complément d'adresse**, **code postal**, **ville** et **pays du vendeur**.
+
+Ces valeurs sont intégrées aux factures électroniques. Vérifiez qu'elles correspondent aux informations officielles d'immatriculation et fiscales de votre entreprise.
+
+## Factur-X et e-reporting
+
+Cette section contrôle la génération et la transmission des documents électroniques.
+
+**Activer pour les nouveaux documents**<br />
+Active Factur-X et l'e-reporting pour les documents créés après l'activation. Testez les connecteurs sélectionnés avant d'activer cette option.
+
+**Provider actif**<br />
+Sélectionne le provider principal des factures électroniques :
+
+- `LOCAL` : génère et conserve le document dans ClientXCMS sans l'envoyer à un provider externe ;
+- `QONTO` : transmet les documents avec [l'addon de facturation électronique Qonto](/fr/extensions/addons/qonto-einvoicing) ;
+- `PENNYLANE` : transmet les documents avec [l'addon Pennylane](/fr/extensions/addons/pennylane).
+
+Sélectionnez Qonto ou Pennylane uniquement après avoir configuré et testé le connecteur correspondant dans **Paramètres > Facturation**.
+
+**Provider du secteur public**<br />
+Sélectionne le traitement des factures destinées aux entités publiques françaises :
+
+- `LOCAL` : conserve localement les documents du secteur public ;
+- `CHORUS-PRO` : les transmet avec [l'addon Chorus Pro](/fr/extensions/addons/chorus-pro).
+
+**Régime de TVA**<br />
+Sélectionnez le régime déclaratif applicable au vendeur.
+
+**Fuseau fiscal**<br />
+Fuseau horaire utilisé pour déterminer les dates réglementaires et les périodes de déclaration, par exemple `Europe/Paris`.
+
+**Date d'activation**<br />
+Date facultative à partir de laquelle la configuration de facturation électronique devient effective.
+
+:::warning
+Changer de provider ne configure pas automatiquement ses identifiants API. Configurez et testez d'abord l'addon, puis sélectionnez-le ici.
+:::
+
 ## Configuration des taxes
 
 ### Mode de taxe
