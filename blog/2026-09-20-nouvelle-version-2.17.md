@@ -15,14 +15,10 @@ We are pleased to announce the release of version **2.17** of ClientXCMS!
 Discover the major new features and screenshots in our [complete overview of ClientXCMS 2.17](/blog/clientxcms-v2-17-domaines-securite-facturation).
 
 ### Additions
-- ➕ Added systematic logging and health monitoring for scheduled tasks (Cron Scheduler) with execution duration, error capture, and a dashboard indicator.
-- ➕ Added real-time queue and worker monitoring (Worker Heartbeat) with alerts and a dedicated interface in the administration security settings.
-- ➕ Added a modal component for rich, multilingual editing of product descriptions with live preview in the administration catalog.
-- ➕ Added the ability to cancel pending service deliveries directly from the administration list.
+
 - ➕ Added dynamic CSS variables for the theme's primary color, allowing instant brand palette modification from the admin panel.
 - ➕ Added an automated i18n pipeline with French as the source of truth, DeepL/Azure synchronization, and reliable release builds.
 - ➕ Added support for JPG/JPEG assets in Vite bundling rules.
-
 - ➕ Officially launched **domain-name management** with progressive search, real-time availability checking, and cached results.
 - ➕ Added the [**OpenProvider** registrar module](/extensions/modules/openprovider) with production and sandbox support, automatic TLD import, fixed or percentage-based bulk pricing, and reusable nameserver/DNS configuration.
 - ➕ Added filtering and selection when importing registrar catalogs.
@@ -33,8 +29,7 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - ➕ Added [**EU VAT Check**](/extensions/addons/vat-check-eu) to validate European VAT numbers through VIES with configurable caching.
 - ➕ Added seller tax identity, VAT regime, tax timezone, activation date, active provider, and public-sector provider settings.
 - ➕ Added an electronic-transmission history to follow documents and provider statuses.
-- ➕ Added **invoice installment payments** with atomic customer-balance debit and precise VAT preservation on each installment.
-- ➕ Added a **global configurable password policy**: centralized configuration for minimum length, casing, numbers, symbols, and compromised password detection (Pwned), enforced across the platform with a frontend strength indicator.
+- ➕ Added **compromised-password detection** via HaveIBeenPwned and enforced minimum password length.
 - ➕ Added a **closed-grammar email-template engine** replacing arbitrary Blade execution, with automatic migration of existing templates and strict content sanitization.
 - ➕ Added **extension integrity verification**: SHA-256 checksum and signature validation on downloaded archives, with extraction confined to the extension's own directory.
 - ➕ Added **layout toggle** for the administration panel: choice between vertical sidebar and horizontal navigation.
