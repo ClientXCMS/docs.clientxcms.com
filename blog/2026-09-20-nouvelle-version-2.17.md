@@ -15,10 +15,10 @@ We are pleased to announce the release of version **2.17** of ClientXCMS!
 Discover the major new features and screenshots in our [complete overview of ClientXCMS 2.17](/blog/clientxcms-v2-17-domaines-securite-facturation).
 
 ### Additions
+
 - ➕ Added dynamic CSS variables for the theme's primary color, allowing instant brand palette modification from the admin panel.
 - ➕ Added an automated i18n pipeline with French as the source of truth, DeepL/Azure synchronization, and reliable release builds.
 - ➕ Added support for JPG/JPEG assets in Vite bundling rules.
-
 - ➕ Officially launched **domain-name management** with progressive search, real-time availability checking, and cached results.
 - ➕ Added the [**OpenProvider** registrar module](/extensions/modules/openprovider) with production and sandbox support, automatic TLD import, fixed or percentage-based bulk pricing, and reusable nameserver/DNS configuration.
 - ➕ Added filtering and selection when importing registrar catalogs.
@@ -29,7 +29,6 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - ➕ Added [**EU VAT Check**](/extensions/addons/vat-check-eu) to validate European VAT numbers through VIES with configurable caching.
 - ➕ Added seller tax identity, VAT regime, tax timezone, activation date, active provider, and public-sector provider settings.
 - ➕ Added an electronic-transmission history to follow documents and provider statuses.
-- ➕ Added **invoice installment payments** with atomic customer-balance debit and precise VAT preservation on each installment.
 - ➕ Added **compromised-password detection** via HaveIBeenPwned and enforced minimum password length.
 - ➕ Added a **closed-grammar email-template engine** replacing arbitrary Blade execution, with automatic migration of existing templates and strict content sanitization.
 - ➕ Added **extension integrity verification**: SHA-256 checksum and signature validation on downloaded archives, with extraction confined to the extension's own directory.
@@ -39,6 +38,9 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - ➕ Added the [**Brevo newsletter addon**](/extensions/addons/brevo).
 
 ### Changes
+- 🔄 Standardized console command exit codes (0 for success, 1 for failure).
+- 🔄 Uniformized administration route names and view folders to strictly use kebab-case.
+- 🔄 Enhanced the `ThemeManager` with improved theme metadata handling and reorganized the `ThemeSeeder`.
 - 🔄 Enhanced the Extension Updater: automatic cleanup of obsolete files, exact local version resolution, and auto-registration of unlisted extensions.
 - 🔄 Improved theme-section editing: repaired page sections accordion, added a sticky action bar, and ensured ARIA/contrast compliance.
 - 🔄 Refactored Dark Mode toggle: moved the `dark` class to the `<html>` tag and fixed toggle-icon synchronization.
@@ -56,11 +58,18 @@ Discover the major new features and screenshots in our [complete overview of Cli
 - 🔄 Vite 8 now preserves symlinks when building theme and addon assets.
 
 ### Fixes
+- 🔧 Fixed coupon abuse through concurrency protection: pending orders now temporarily reserve coupon quotas to prevent race conditions during simultaneous checkouts.
+- 🔧 Fixed the additional pricing toggle (accordion) in the administration which could not be closed after opening.
+- 🔧 Fixed the error handler to prevent form validation errors from being transformed into 500 error pages in production.
+- 🔧 Fixed the reset of the delivery state when renewing services, and corrected the exact calculation of domain renewal prices.
 
 - 🔧 Fixed the server connectivity test in provisioning and secured stored connection credentials from leaking in the interface.
 - 🔧 Fixed the customer factory to generate valid phone numbers (stabilizing `SmsServiceTest`) and maintained `install.php` tracking in git.
 
 ### Security
+- 🔒 **Secured server credentials**: Passwords are no longer exposed in the admin HTML DOM, and re-entry is required when modifying the host or IP.
+- 🔒 **Secured payment webhooks & closed invoice immutability**: Strict validation of paid amount, currency, and status in Stripe/Mollie/PayPal IPN, and blocking the reopening of closed invoices.
+- 🔒 **Hardened Client API**: Restricted access to active Sanctum client tokens, enforced 2FA, implemented anti-timing attack hashes, masked sensitive metadata, and bounded pagination.
 
 - 🔒 **Encrypted sensitive data at rest**: TOTP / 2FA secrets and system settings marked as encrypted are now actually encrypted in the database.
 - 🔒 **Strict API authentication**: the application API now rejects web sessions as proof; API-key abilities are filtered and expiration is enforced.

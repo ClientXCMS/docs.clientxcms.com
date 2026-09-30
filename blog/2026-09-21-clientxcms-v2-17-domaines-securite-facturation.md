@@ -94,3 +94,5 @@ This release includes an extensive security overhaul:
 Version 2.17 also brings service lifecycle controls, mass-action components, UI harmonization, button and color-palette consistency, Vite 8 compatibility, and the new [Brevo newsletter addon](/extensions/addons/brevo). Brevo connects the footer subscription form to a selected contact list while supporting API-key and server-IP security.
 
 Read the [complete ClientXCMS 2.17 changelog](/blog/nouvelle-version-2.17) for every technical detail.
+
+Ready to upgrade your system? Follow our [Upgrade Guide](/docs/installation/upgrade) to install version 2.17.

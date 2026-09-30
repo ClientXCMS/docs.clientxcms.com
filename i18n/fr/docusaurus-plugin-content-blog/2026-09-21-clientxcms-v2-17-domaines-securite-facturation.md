@@ -88,3 +88,5 @@ Cette version comprend notamment :
 La version 2.17 apporte également des contrôles du cycle de vie des services, des actions groupées, une interface harmonisée, la compatibilité Vite 8 et le nouvel [addon de newsletter Brevo](/fr/extensions/addons/brevo). Brevo relie le formulaire du pied de page à une liste de contacts tout en sécurisant l'accès avec une clé API et l'autorisation de l'adresse IP du serveur.
 
 Consultez le [journal complet de ClientXCMS 2.17](/fr/blog/nouvelle-version-2.17) pour découvrir tous les changements techniques.
+
+Prêt à mettre à jour votre système ? Suivez notre [guide de mise à jour](/docs/installation/upgrade) pour installer la version 2.17.
