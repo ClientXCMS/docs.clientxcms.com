@@ -30,7 +30,7 @@ import TabItem from '@theme/TabItem';
 1. Download the latest release from GitHub and save it as `clientxcms.zip`:
 
 ```bash
-curl -L -o clientxcms.zip "https://github.com/ClientXCMS/ClientXCMS/releases/latest"
+curl -fsSL -o clientxcms.zip "https://github.com/ClientXCMS/ClientXCMS/archive/refs/tags/$(curl -fsSLI -o /dev/null -w '%{url_effective}' https://github.com/ClientXCMS/ClientXCMS/releases/latest | sed 's#.*/##').zip"
 ```
 
 2. Put your application in maintenance mode:
@@ -42,9 +42,7 @@ php artisan down
 3. Extract the archive and replace the files:
 
 ```bash
-unzip clientxcms.zip -d /var/www/clientxcms
-mv /var/www/clientxcms/ClientXCMS-*/* /var/www/clientxcms
-rm -r /var/www/clientxcms/ClientXCMS-*
+unzip -q clientxcms.zip -d /tmp/cx && shopt -s dotglob && mv /tmp/cx/ClientXCMS-*/* /var/www/clientxcms/ && rm -rf /tmp/cx
 ```
 
 4. Install dependencies and run migrations:
@@ -77,7 +75,7 @@ php artisan clientxcms:on-update
 
 ```bash
 cd /var/www/clientxcms
-git fetch --all --prune
+git fetch --all --tags --prune
 git checkout master
 git pull origin master
 ```
