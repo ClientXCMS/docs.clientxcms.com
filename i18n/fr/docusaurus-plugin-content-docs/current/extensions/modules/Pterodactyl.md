@@ -47,7 +47,7 @@ Clé d'api client (Account) disponible sur votre Pterodactyl `/admin/api/new`
 
 Depuis sa version 1.5.0, le module fonctionne avec Pterodactyl 1.x et 2.0 : il détecte seul la version de chaque panel, il n'y a rien à configurer.
 
-- **Après la mise à jour d'un panel en 2.0**, vos clés, vos offres et vos services existants continuent de fonctionner, sans rien ressaisir. Le module bascule dans les 10 minutes ; pour basculer tout de suite, videz le cache CLIENTXCMS dans `Paramètres` > `Extensions`.
+- **Après la mise à jour d'un panel en 2.0**, vos clés, vos offres et vos services existants continuent de fonctionner, sans rien ressaisir. Le module bascule de lui-même dès la première opération qui touche un egg, sans vider de cache.
 - **Nouvelle clé application en 2.0** : page « API Keys » de l'administration du panel, à l'adresse `/panel/api` (relevé sur la 2.0.0-beta.2). La permission « Nests » n'existe plus en 2.0, la lecture des « Eggs » suffit.
 - **Clé client** : inchangée, `/account/api`.
 - **Configuration de l'offre** : en 2.0, les eggs s'affichent avec leurs tags, par exemple « Mumble Server (Voice Servers) ».
