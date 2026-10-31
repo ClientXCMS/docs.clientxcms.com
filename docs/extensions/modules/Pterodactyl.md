@@ -44,6 +44,18 @@ Application API key available on your Pterodactyl at `/admin/api/new`
 
 **Description**: CLIENTXCMS API
 
+### Pterodactyl 2.0
+
+Since version 1.5.0, the module works with Pterodactyl 1.x and 2.0: it detects the version of each panel on its own, there is nothing to configure.
+
+- **After a panel is upgraded to 2.0**, your existing keys, offers and services keep working, with nothing to enter again. The module switches on its own at the first operation that involves an egg, with no cache to clear.
+- **Upgrade the module before the panel**: a version older than 1.5.0 lists no egg at all on a 2.0 panel and reports suspensions that did not happen.
+- **New application key on 2.0**: "API Keys" page of the panel administration, at `/panel/api` (checked on 2.0.0-beta.2). The "Nests" permission no longer exists on 2.0, reading "Eggs" is enough.
+- **Client key**: unchanged, `/account/api`.
+- **Offer configuration**: on 2.0, eggs are listed with their tags, for example "Mumble Server (Voice Servers)".
+
+Permissions the module uses: read and write on servers and users; read on locations, nodes, allocations and eggs (and nests on 1.x).
+
 ## Offer Configuration
 ![img](/img/next_gen/extensions/modules/pterodactyl/images_4.png)
 - **Memory (MB)**: Server memory
